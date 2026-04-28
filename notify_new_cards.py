@@ -93,9 +93,10 @@ def card_line(row: dict[str, str]) -> str:
     return f"{summary}\n{url}" if url else summary
 
 
-def email_body(rows: list[dict[str, str]], store: str) -> str:
+def email_body(rows: list[dict[str, str]], store: str, mode: str) -> str:
+    label = "All missing cards available" if mode == "all" else "New missing cards available"
     lines = [
-        f"New missing cards available for {store}: {len(rows)}",
+        f"{label} for {store}: {len(rows)}",
         "",
     ]
     for index, row in enumerate(rows, start=1):
@@ -116,7 +117,7 @@ def write_latest_text(body: str) -> None:
     LATEST_NEW_CARDS.write_text(body, encoding="utf-8")
 
 
-def send_email(rows: list[dict[str, str]], store: str) -> None:
+def send_email(rows: list[dict[str, str]], store: str, mode: str) -> None:
     smtp_host = env_required("SMTP_HOST")
     smtp_port = int(os.environ.get("SMTP_PORT", "587"))
     smtp_user = env_required("SMTP_USER")
@@ -125,10 +126,11 @@ def send_email(rows: list[dict[str, str]], store: str) -> None:
     email_from = os.environ.get("EMAIL_FROM", "").strip() or smtp_user
 
     message = EmailMessage()
-    message["Subject"] = f"One Piece cards: {len(rows)} new available ({store})"
+    subject_label = "available" if mode == "all" else "new available"
+    message["Subject"] = f"One Piece cards: {len(rows)} {subject_label} ({store})"
     message["From"] = email_from
     message["To"] = email_to
-    message.set_content(email_body(rows, store))
+    message.set_content(email_body(rows, store, mode))
 
     with smtplib.SMTP(smtp_host, smtp_port, timeout=30) as smtp:
         smtp.starttls()
@@ -153,8 +155,15 @@ def main() -> int:
         default=os.environ.get("CARD_STORE", "all"),
         help="Store to check: all, knightly, bigbang, marvellous, or tanuki.",
     )
+    parser.add_argument(
+        "--mode",
+        choices=["new", "all"],
+        default=os.environ.get("CARD_NOTIFY_MODE", "new"),
+        help="Use 'new' to email only new listings, or 'all' to email every current listing.",
+    )
     args = parser.parse_args()
     store = normalized_store(args.store)
+    mode = args.mode
     current = current_report(store)
     previous = previous_report(store)
 
@@ -167,6 +176,14 @@ def main() -> int:
 
     today = read_rows(current)
     previous_rows = read_rows(previous)
+
+    if mode == "all":
+        body = email_body(today, store, mode)
+        write_latest_text(body)
+        send_email(today, store, mode)
+        update_snapshot(current, previous)
+        print(f"Sent email for all {len(today)} current card listing(s). Snapshot updated.")
+        return 0
 
     if not previous_rows:
         write_latest_text(f"No previous snapshot found for {store}. Saved today's report as the baseline.\n")
@@ -181,9 +198,9 @@ def main() -> int:
         print(f"No new cards found for {store}. Snapshot updated.")
         return 0
 
-    body = email_body(additions, store)
+    body = email_body(additions, store, mode)
     write_latest_text(body)
-    send_email(additions, store)
+    send_email(additions, store, mode)
     update_snapshot(current, previous)
     print(f"Sent email for {len(additions)} new card listing(s). Snapshot updated.")
     return 0
