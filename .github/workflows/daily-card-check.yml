@@ -31,16 +31,25 @@ jobs:
           EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
         run: python one-piece/notify_new_cards.py --store all --mode all
 
+      - name: Run release radar
+        run: python release-radar/scrape_releases.py
+
+      - name: Run coming soon radar
+        env:
+          TMDB_BEARER_TOKEN: ${{ secrets.TMDB_BEARER_TOKEN }}
+        run: python release-radar/scrape_coming_soon.py
+
       - name: Update dashboard data
         run: |
           mkdir -p docs/data
           cp one-piece/data/*.csv docs/data/
           cp one-piece/data/*.json docs/data/
+          cp release-radar/data/*.json docs/data/
 
       - name: Commit updated reports
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add .scrape/previous_*_missing_available.csv .scrape/latest_new_cards.txt one-piece/data/*.csv one-piece/data/*.md one-piece/data/*.json docs events/data/.gitkeep
+          git add .scrape/previous_*_missing_available.csv .scrape/latest_new_cards.txt one-piece/data/*.csv one-piece/data/*.md one-piece/data/*.json release-radar/data/*.json docs events/data/.gitkeep
           git diff --cached --quiet || git commit -m "Update daily card scrape"
           git push

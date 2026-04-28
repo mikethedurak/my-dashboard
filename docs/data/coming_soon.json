@@ -1,0 +1,75 @@
+{
+  "source": "https://api.themoviedb.org/3/movie/upcoming",
+  "dates": {
+    "maximum": "2026-05-20",
+    "minimum": "2026-04-29"
+  },
+  "items": [
+    {
+      "title": "The Devil Wears Prada 2",
+      "url": "https://www.themoviedb.org/movie/1314481",
+      "image": "https://image.tmdb.org/t/p/w342/sRTYF65JvbHLoC3LoBj4UKYqIlA.jpg",
+      "release_date": "2026-05-01"
+    },
+    {
+      "title": "Mortal Kombat II",
+      "url": "https://www.themoviedb.org/movie/931285",
+      "image": "https://image.tmdb.org/t/p/w342/lIsMeDbwntNXSUVHmWMMRXEZOVc.jpg",
+      "release_date": "2026-05-08"
+    },
+    {
+      "title": "Normal",
+      "url": "https://www.themoviedb.org/movie/1242332",
+      "image": "https://image.tmdb.org/t/p/w342/nVIOGKbUdRxud0EXYJDMGCGcYbo.jpg",
+      "release_date": "2026-05-01"
+    },
+    {
+      "title": "The Sheep Detectives",
+      "url": "https://www.themoviedb.org/movie/1301421",
+      "image": "https://image.tmdb.org/t/p/w342/hTirV44jiLh6NqdiB6jtxPsDIoG.jpg",
+      "release_date": "2026-05-08"
+    },
+    {
+      "title": "Obsession",
+      "url": "https://www.themoviedb.org/movie/1339713",
+      "image": "https://image.tmdb.org/t/p/w342/40I66L7QKguTFDPvcLcdiTbAD7I.jpg",
+      "release_date": "2026-05-15"
+    },
+    {
+      "title": "Fuze",
+      "url": "https://www.themoviedb.org/movie/1242265",
+      "image": "https://image.tmdb.org/t/p/w342/oWehDe6fFR4eUdUMDy4jz6XiinO.jpg",
+      "release_date": "2026-05-01"
+    },
+    {
+      "title": "Beast",
+      "url": "https://www.themoviedb.org/movie/1292415",
+      "image": "https://image.tmdb.org/t/p/w342/7NrvUI3vnW8H3rD7ExKcTL7KRcQ.jpg",
+      "release_date": "2026-05-01"
+    },
+    {
+      "title": "Ek Din",
+      "url": "https://www.themoviedb.org/movie/1171094",
+      "image": "https://image.tmdb.org/t/p/w342/yYkJylaY1TJT9iEBkWnc2Tiw6jN.jpg",
+      "release_date": "2026-05-01"
+    },
+    {
+      "title": "Iron Maiden: Burning Ambition",
+      "url": "https://www.themoviedb.org/movie/1642859",
+      "image": "https://image.tmdb.org/t/p/w342/yZqhFJDenLfgF1VygOOCNmAdS1P.jpg",
+      "release_date": "2026-05-08"
+    },
+    {
+      "title": "Variations on a Theme",
+      "url": "https://www.themoviedb.org/movie/1599249",
+      "image": "https://image.tmdb.org/t/p/w342/cNbpR6hE1rIeb13xCFmv75PVaAx.jpg",
+      "release_date": "2026-05-08"
+    },
+    {
+      "title": "The Metropolitan Opera: Eugene Onegin",
+      "url": "https://www.themoviedb.org/movie/1479651",
+      "image": "https://image.tmdb.org/t/p/w342/zvfz5Dds1LFtHv76XcSnYWjyoes.jpg",
+      "release_date": "2026-05-15"
+    }
+  ]
+}

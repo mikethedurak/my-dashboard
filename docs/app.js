@@ -1,5 +1,7 @@
 const CSV_PATH = "data/all_stores_missing_available.csv";
 const NEW_CARDS_PATH = "data/new_missing_cards.json";
+const RELEASES_PATH = "data/pahe_latest.json";
+const COMING_SOON_PATH = "data/coming_soon.json";
 
 const state = {
   rows: [],
@@ -9,23 +11,17 @@ const state = {
   rarity: "",
   minPrice: 0,
   maxPrice: 200,
-  section: "one-piece",
 };
 
 const elements = {
-  onePieceSection: document.querySelector("#one-piece-section"),
-  eventsSection: document.querySelector("#events-section"),
-  sectionFilter: document.querySelector("#section-filter"),
   body: document.querySelector("#cards-body"),
-  listingCount: document.querySelector("#listing-count"),
-  cardCount: document.querySelector("#card-count"),
-  storeCount: document.querySelector("#store-count"),
-  cheapestPrice: document.querySelector("#cheapest-price"),
   search: document.querySelector("#search"),
   storeFilter: document.querySelector("#store-filter"),
   rarityFilter: document.querySelector("#rarity-filter"),
   minPrice: document.querySelector("#min-price"),
   maxPrice: document.querySelector("#max-price"),
+  releaseGrid: document.querySelector("#release-grid"),
+  comingSoonGrid: document.querySelector("#coming-soon-grid"),
 };
 
 function parseCsv(text) {
@@ -118,17 +114,6 @@ function filteredRows() {
   });
 }
 
-function renderSummary(rows) {
-  const cards = unique(rows.map((row) => row.card_number));
-  const stores = unique(rows.map((row) => row.store));
-  const prices = rows.map((row) => Number.parseFloat(row.price || "0")).filter(Number.isFinite);
-
-  elements.listingCount.textContent = rows.length.toString();
-  elements.cardCount.textContent = cards.length.toString();
-  elements.storeCount.textContent = stores.length.toString();
-  elements.cheapestPrice.textContent = prices.length ? money(Math.min(...prices)) : "R 0.00";
-}
-
 function renderTable(rows) {
   if (!rows.length) {
     elements.body.innerHTML = '<tr><td colspan="7" class="empty">No cards match the filters.</td></tr>';
@@ -179,14 +164,35 @@ function renderTable(rows) {
   }
 }
 
-function render() {
-  elements.onePieceSection.hidden = state.section !== "one-piece";
-  elements.eventsSection.hidden = state.section !== "events";
-
-  if (state.section !== "one-piece") {
+function renderPosters(container, items, emptyText) {
+  if (!items.length) {
+    container.innerHTML = `<p class="empty">${emptyText}</p>`;
     return;
   }
 
+  container.innerHTML = "";
+  for (const item of items) {
+    const link = document.createElement("a");
+    link.className = "poster-card";
+    link.href = item.url;
+    link.target = "_blank";
+    link.rel = "noreferrer";
+    link.title = item.title;
+
+    const image = document.createElement("img");
+    image.src = item.image;
+    image.alt = item.title;
+    image.loading = "lazy";
+
+    const title = document.createElement("span");
+    title.textContent = item.release_date ? `${item.title} (${item.release_date})` : item.title;
+
+    link.append(image, title);
+    container.append(link);
+  }
+}
+
+function render() {
   const rows = filteredRows().sort((left, right) => {
     const price = Number.parseFloat(left.price || "0") - Number.parseFloat(right.price || "0");
     if (price !== 0) {
@@ -197,8 +203,33 @@ function render() {
     );
   });
 
-  renderSummary(rows);
   renderTable(rows);
+}
+
+async function loadReleases() {
+  try {
+    const response = await fetch(RELEASES_PATH, { cache: "no-store" });
+    if (!response.ok) {
+      throw new Error(`Could not load ${RELEASES_PATH}`);
+    }
+    const payload = await response.json();
+    renderPosters(elements.releaseGrid, payload.items || [], "No releases found.");
+  } catch (error) {
+    elements.releaseGrid.innerHTML = `<p class="empty">${error.message}</p>`;
+  }
+}
+
+async function loadComingSoon() {
+  try {
+    const response = await fetch(COMING_SOON_PATH, { cache: "no-store" });
+    if (!response.ok) {
+      throw new Error(`Could not load ${COMING_SOON_PATH}`);
+    }
+    const payload = await response.json();
+    renderPosters(elements.comingSoonGrid, payload.items || [], "No coming soon movies found.");
+  } catch (error) {
+    elements.comingSoonGrid.innerHTML = `<p class="empty">${error.message}</p>`;
+  }
 }
 
 async function load() {
@@ -250,9 +281,6 @@ elements.maxPrice.addEventListener("input", (event) => {
   render();
 });
 
-elements.sectionFilter.addEventListener("change", (event) => {
-  state.section = event.target.value;
-  render();
-});
-
 load();
+loadReleases();
+loadComingSoon();
