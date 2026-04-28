@@ -93,15 +93,29 @@ def card_line(row: dict[str, str]) -> str:
     return f"{summary}\n{url}" if url else summary
 
 
-def email_body(rows: list[dict[str, str]], store: str, mode: str) -> str:
-    label = "All missing cards available" if mode == "all" else "New missing cards available"
-    lines = [
-        f"{label} for {store}: {len(rows)}",
-        "",
-    ]
+def card_section(title: str, rows: list[dict[str, str]]) -> list[str]:
+    lines = [f"{title}: {len(rows)}", ""]
     for index, row in enumerate(rows, start=1):
         lines.append(f"{index}. {card_line(row)}")
         lines.append("")
+    return lines
+
+
+def email_body(
+    rows: list[dict[str, str]],
+    store: str,
+    mode: str,
+    additions: list[dict[str, str]] | None = None,
+) -> str:
+    if mode == "all":
+        lines = [f"Missing card report for {store}", ""]
+        if additions:
+            lines.extend(card_section("New since last email", additions))
+        else:
+            lines.extend(["New since last email: 0", ""])
+        lines.extend(card_section("All missing cards available", rows))
+    else:
+        lines = card_section(f"New missing cards available for {store}", rows)
     return "\n".join(lines).strip() + "\n"
 
 
@@ -117,7 +131,12 @@ def write_latest_text(body: str) -> None:
     LATEST_NEW_CARDS.write_text(body, encoding="utf-8")
 
 
-def send_email(rows: list[dict[str, str]], store: str, mode: str) -> None:
+def send_email(
+    rows: list[dict[str, str]],
+    store: str,
+    mode: str,
+    additions: list[dict[str, str]] | None = None,
+) -> None:
     smtp_host = env_required("SMTP_HOST")
     smtp_port = int(os.environ.get("SMTP_PORT", "587"))
     smtp_user = env_required("SMTP_USER")
@@ -127,10 +146,14 @@ def send_email(rows: list[dict[str, str]], store: str, mode: str) -> None:
 
     message = EmailMessage()
     subject_label = "available" if mode == "all" else "new available"
-    message["Subject"] = f"One Piece cards: {len(rows)} {subject_label} ({store})"
+    if mode == "all" and additions:
+        subject = f"One Piece cards: {len(additions)} new, {len(rows)} total ({store})"
+    else:
+        subject = f"One Piece cards: {len(rows)} {subject_label} ({store})"
+    message["Subject"] = subject
     message["From"] = email_from
     message["To"] = email_to
-    message.set_content(email_body(rows, store, mode))
+    message.set_content(email_body(rows, store, mode, additions))
 
     with smtplib.SMTP(smtp_host, smtp_port, timeout=30) as smtp:
         smtp.starttls()
@@ -176,13 +199,17 @@ def main() -> int:
 
     today = read_rows(current)
     previous_rows = read_rows(previous)
+    additions = new_rows(today, previous_rows) if previous_rows else []
 
     if mode == "all":
-        body = email_body(today, store, mode)
+        body = email_body(today, store, mode, additions)
         write_latest_text(body)
-        send_email(today, store, mode)
+        send_email(today, store, mode, additions)
         update_snapshot(current, previous)
-        print(f"Sent email for all {len(today)} current card listing(s). Snapshot updated.")
+        print(
+            f"Sent email for {len(additions)} new and "
+            f"{len(today)} total card listing(s). Snapshot updated."
+        )
         return 0
 
     if not previous_rows:
@@ -191,7 +218,6 @@ def main() -> int:
         print(f"No previous snapshot found for {store}. Saved today's report as the baseline.")
         return 0
 
-    additions = new_rows(today, previous_rows)
     if not additions:
         write_latest_text(f"No new cards found for {store}.\n")
         update_snapshot(current, previous)

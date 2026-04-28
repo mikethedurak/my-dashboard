@@ -2,7 +2,7 @@ name: Daily card check
 
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "0 4 * * *"
   workflow_dispatch:
 
 permissions:
@@ -29,7 +29,7 @@ jobs:
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
           EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
-        run: python notify_new_cards.py --store knightly --mode all
+        run: python notify_new_cards.py --store all --mode all
 
       - name: Commit updated reports
         run: |

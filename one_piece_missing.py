@@ -4,6 +4,7 @@ import csv
 import html
 import json
 import re
+import sys
 import urllib.request
 import xml.etree.ElementTree as ET
 from pathlib import Path
@@ -447,37 +448,53 @@ def run_tanuki() -> list[dict[str, object]]:
 
 def run_all() -> list[dict[str, object]]:
     missing = missing_card_numbers()
+    failures: list[str] = []
 
-    knightly_products = fetch_knightly_products()
-    knightly_matches = sorted_matches(match_knightly(missing, knightly_products))
-    write_reports(
-        "knightly_missing_available",
+    def scrape_store(
+        store: str,
+        heading: str,
+        prefix: str,
+        fetcher,
+        matcher,
+    ) -> tuple[list[dict], list[dict[str, object]]]:
+        try:
+            products = fetcher()
+            matches = sorted_matches(matcher(missing, products))
+        except Exception as error:
+            failures.append(f"{store}: {error}")
+            print(f"{store} scrape failed: {error}", file=sys.stderr)
+            return [], []
+
+        write_reports(prefix, heading, matches)
+        return products, matches
+
+    knightly_products, knightly_matches = scrape_store(
+        "Knightly Gaming",
         "Knightly Gaming Missing Cards Available",
-        knightly_matches,
+        "knightly_missing_available",
+        fetch_knightly_products,
+        match_knightly,
     )
-
-    big_bang_products = fetch_big_bang_products()
-    big_bang_matches = sorted_matches(match_big_bang(missing, big_bang_products))
-    write_reports(
-        "big_bang_missing_available",
+    big_bang_products, big_bang_matches = scrape_store(
+        "Big Bang Shop",
         "Big Bang Shop Missing Cards Available",
-        big_bang_matches,
+        "big_bang_missing_available",
+        fetch_big_bang_products,
+        match_big_bang,
     )
-
-    marvellous_products = fetch_marvellous_products()
-    marvellous_matches = sorted_matches(match_marvellous(missing, marvellous_products))
-    write_reports(
-        "marvellous_missing_available",
+    marvellous_products, marvellous_matches = scrape_store(
+        "Marvellous Hobbies",
         "Marvellous Hobbies Missing Cards Available",
-        marvellous_matches,
+        "marvellous_missing_available",
+        fetch_marvellous_products,
+        match_marvellous,
     )
-
-    tanuki_products = fetch_tanuki_products()
-    tanuki_matches = sorted_matches(match_tanuki(missing, tanuki_products))
-    write_reports(
-        "tanuki_missing_available",
+    tanuki_products, tanuki_matches = scrape_store(
+        "Tanuki Trader",
         "Tanuki Trader Missing Cards Available",
-        tanuki_matches,
+        "tanuki_missing_available",
+        fetch_tanuki_products,
+        match_tanuki,
     )
 
     combined = sorted_matches(
@@ -494,6 +511,10 @@ def run_all() -> list[dict[str, object]]:
     print(f"Marvellous available missing listings: {len(marvellous_matches)}")
     print(f"Tanuki products fetched: {len(tanuki_products)}")
     print(f"Tanuki available missing listings: {len(tanuki_matches)}")
+    if failures:
+        print("Store scrape failures:")
+        for failure in failures:
+            print(f"- {failure}")
     print_match_summary("Combined", combined)
     print("Wrote knightly, big_bang, marvellous, tanuki, and all_stores reports as CSV and Markdown")
     return combined
