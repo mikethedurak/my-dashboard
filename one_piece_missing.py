@@ -152,8 +152,8 @@ def sorted_matches(matches: list[dict[str, object]]) -> list[dict[str, object]]:
     return sorted(
         matches,
         key=lambda item: (
-            str(item["card_number"]),
             float(item["price"]),
+            str(item["card_number"]),
             str(item["store"]),
             str(item["title"]),
         ),
