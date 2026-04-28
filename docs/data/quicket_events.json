@@ -1,31 +1,5 @@
 [
   {
-    "title": "Echoes of Eden - Anna Beulah, Durbanville",
-    "start": "2026-04-28T18:00:00+02:00",
-    "end": "2026-04-28T22:01:00+02:00",
-    "venue": "Anna Beulah Farm",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "Cnr Visserhok & Contermanskloof Road, Durbanville, Cape Town, 7550, South Africa, , Cape Farms, 7550, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/0887266_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/363012-echoes-of-eden-anna-beulah-durbanville/"
-  },
-  {
-    "title": "THE DELI COMEDY NIGHT",
-    "start": "2026-04-28T20:00:00+02:00",
-    "end": "2026-04-28T22:00:00+02:00",
-    "venue": "133 Bree St",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "133 Bree Street, , Cape Town City Centre, 8001, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/0907194_247_247.png",
-    "url": "https://www.quicket.co.za/events/370585-the-deli-comedy-night/"
-  },
-  {
     "title": "Art Under the Bed 2026 - Cape Town 29 April - 2 May 2026",
     "start": "2026-04-29T08:00:00+02:00",
     "end": "2026-05-02T13:00:00+02:00",
@@ -36,7 +10,9 @@
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/0902427_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/368985-art-under-the-bed-2026-cape-town-29-april-2-may-2026/"
+    "url": "https://www.quicket.co.za/events/368985-art-under-the-bed-2026-cape-town-29-april-2-may-2026/",
+    "lat": -34.2532491,
+    "lng": 18.4522507
   },
   {
     "title": "PRINCE ALBERT JOURNEY TO JAZZ",
@@ -49,7 +25,9 @@
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/0855037_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/348950-prince-albert-journey-to-jazz/"
+    "url": "https://www.quicket.co.za/events/348950-prince-albert-journey-to-jazz/",
+    "lat": -33.9288301,
+    "lng": 18.4172197
   },
   {
     "title": "Kirstenhof Community Business Network Breakfast - 30 April 2026",
@@ -62,7 +40,9 @@
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/0904893_247_247.png",
-    "url": "https://www.quicket.co.za/events/369838-kirstenhof-community-business-network-breakfast-30-april-2026/"
+    "url": "https://www.quicket.co.za/events/369838-kirstenhof-community-business-network-breakfast-30-april-2026/",
+    "lat": -33.9288301,
+    "lng": 18.4172197
   },
   {
     "title": "Amy Tjasink LIVE! The “Feels like Mzansi” Tour",
@@ -75,7 +55,9 @@
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/0889402_247_247.png",
-    "url": "https://www.quicket.co.za/events/363636-amy-tjasink-live-the-feels-like-mzansi-tour/"
+    "url": "https://www.quicket.co.za/events/363636-amy-tjasink-live-the-feels-like-mzansi-tour/",
+    "lat": -34.0973174,
+    "lng": 18.3777971
   },
   {
     "title": "BYU Living Legends - Cape Town",
@@ -88,7 +70,9 @@
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/0884824_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/361313-byu-living-legends-cape-town/"
+    "url": "https://www.quicket.co.za/events/361313-byu-living-legends-cape-town/",
+    "lat": -33.9288301,
+    "lng": 18.4172197
   },
   {
     "title": "DISTRICT SIX MUSEUM: MAY 2026 ADMISSION TICKETS",
@@ -101,7 +85,9 @@
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/0893359_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/365055-district-six-museum-may-2026-admission-tickets/"
+    "url": "https://www.quicket.co.za/events/365055-district-six-museum-may-2026-admission-tickets/",
+    "lat": -33.9278161,
+    "lng": 18.4237518
   },
   {
     "title": "ENTER LAN Fire & Ice!",
@@ -114,7 +100,9 @@
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/0872676_247_247.png",
-    "url": "https://www.quicket.co.za/events/357003-enter-lan-fire-ice/"
+    "url": "https://www.quicket.co.za/events/357003-enter-lan-fire-ice/",
+    "lat": -33.9268526,
+    "lng": 18.4114206
   },
   {
     "title": "Entanglements - Cape Town",
@@ -127,7 +115,9 @@
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/0888505_247_247.png",
-    "url": "https://www.quicket.co.za/events/363364-entanglements-cape-town/"
+    "url": "https://www.quicket.co.za/events/363364-entanglements-cape-town/",
+    "lat": -33.9392362,
+    "lng": 18.4693092
   },
   {
     "title": "Tina's Turn LIVE! @ café Roux",
@@ -140,7 +130,24 @@
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/0874609_247_247.png",
-    "url": "https://www.quicket.co.za/events/359103-tinas-turn-live-caf-roux/"
+    "url": "https://www.quicket.co.za/events/359103-tinas-turn-live-caf-roux/",
+    "lat": -34.0973174,
+    "lng": 18.3777971
+  },
+  {
+    "title": "RaveCult Ft Grimehouse - Warehouse Rave - 1 May - All Black Dress Code - The Bunker - Book Now",
+    "start": "2026-05-01T20:00:00+02:00",
+    "end": "2026-05-02T04:00:00+02:00",
+    "venue": "41A Mansell Rd",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "41A Mansell Road, , Killarney Gardens, 7441, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/0886384_247_247.jpeg",
+    "url": "https://www.quicket.co.za/events/362724-ravecult-ft-grimehouse-warehouse-rave-1-may-all-black-dress-code-the-bunker-boo/",
+    "lat": -33.8265204,
+    "lng": 18.5344839
   },
   {
     "title": "Cape Town Yarn Festival 2026",
@@ -153,7 +160,9 @@
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/0880937_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/356552-cape-town-yarn-festival-2026/"
+    "url": "https://www.quicket.co.za/events/356552-cape-town-yarn-festival-2026/",
+    "lat": -33.9288301,
+    "lng": 18.4172197
   },
   {
     "title": "COME THRU - A Millennial R&B Experience",
@@ -166,7 +175,9 @@
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/0903461_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/369092-come-thru-a-millennial-rb-experience/"
+    "url": "https://www.quicket.co.za/events/369092-come-thru-a-millennial-rb-experience/",
+    "lat": -33.9038149,
+    "lng": 18.4292907
   },
   {
     "title": "Night of the stars",
@@ -179,7 +190,9 @@
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/0894655_247_247.png",
-    "url": "https://www.quicket.co.za/events/365533-night-of-the-stars/"
+    "url": "https://www.quicket.co.za/events/365533-night-of-the-stars/",
+    "lat": -33.915806,
+    "lng": 18.4184727
   },
   {
     "title": "VWS Trail Challenge 2026",
@@ -192,7 +205,9 @@
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/0899161_247_247.png",
-    "url": "https://www.quicket.co.za/events/367912-vws-trail-challenge-2026/"
+    "url": "https://www.quicket.co.za/events/367912-vws-trail-challenge-2026/",
+    "lat": -33.9288301,
+    "lng": 18.4172197
   },
   {
     "title": "2nd ANNUAL RIDE FOR MOBILITY - REV-UP FOR RECOVERY",
@@ -205,7 +220,9 @@
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/0888137_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/363040-2nd-annual-ride-for-mobility-rev-up-for-recovery/"
+    "url": "https://www.quicket.co.za/events/363040-2nd-annual-ride-for-mobility-rev-up-for-recovery/",
+    "lat": -33.9288301,
+    "lng": 18.4172197
   },
   {
     "title": "Dj Tease & Friends",
@@ -218,7 +235,9 @@
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/0908647_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/370945-dj-tease-friends/"
+    "url": "https://www.quicket.co.za/events/370945-dj-tease-friends/",
+    "lat": -33.9271949,
+    "lng": 18.4231681
   },
   {
     "title": "True Voices in Concert",
@@ -231,7 +250,9 @@
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/0904486_247_247.png",
-    "url": "https://www.quicket.co.za/events/369706-true-voices-in-concert/"
+    "url": "https://www.quicket.co.za/events/369706-true-voices-in-concert/",
+    "lat": -34.0210018,
+    "lng": 18.4387707
   },
   {
     "title": "Footloose | The Musical",
@@ -244,7 +265,9 @@
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/0883486_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/361698-footloose-the-musical/"
+    "url": "https://www.quicket.co.za/events/361698-footloose-the-musical/",
+    "lat": -33.9288301,
+    "lng": 18.4172197
   },
   {
     "title": "World in Union Musical Journey",
@@ -257,7 +280,9 @@
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/0897745_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/367441-world-in-union-musical-journey/"
+    "url": "https://www.quicket.co.za/events/367441-world-in-union-musical-journey/",
+    "lat": -33.9288301,
+    "lng": 18.4172197
   },
   {
     "title": "Fashion Meets Film: Fashion Show 2026",
@@ -270,7 +295,9 @@
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/0906002_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/370172-fashion-meets-film-fashion-show-2026/"
+    "url": "https://www.quicket.co.za/events/370172-fashion-meets-film-fashion-show-2026/",
+    "lat": -33.9288301,
+    "lng": 18.4172197
   },
   {
     "title": "Afroasis | Hexagon Club | 7 May 2026 (First Thursday)",
@@ -283,7 +310,9 @@
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/0901124_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/362248-afroasis-hexagon-club-7-may-2026-first-thursday/"
+    "url": "https://www.quicket.co.za/events/362248-afroasis-hexagon-club-7-may-2026-first-thursday/",
+    "lat": -33.9457175,
+    "lng": 18.4679472
   },
   {
     "title": "ANNIE Jr - The Drama Lab",
@@ -296,7 +325,9 @@
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/0898087_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/310487-annie-jr-the-drama-lab/"
+    "url": "https://www.quicket.co.za/events/310487-annie-jr-the-drama-lab/",
+    "lat": -33.8344196,
+    "lng": 18.5137255
   },
   {
     "title": "Clutch/Cntrl (EP Launch Edition)",
@@ -309,7 +340,9 @@
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/0904221_247_247.png",
-    "url": "https://www.quicket.co.za/events/363219-clutchcntrl-ep-launch-edition/"
+    "url": "https://www.quicket.co.za/events/363219-clutchcntrl-ep-launch-edition/",
+    "lat": -33.9288301,
+    "lng": 18.4172197
   },
   {
     "title": "CPT / One Man Show Picnic /  Saturday 09 May2026 / The Ostrich Cape Townn",
@@ -322,7 +355,9 @@
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/0884096_247_247.png",
-    "url": "https://www.quicket.co.za/events/361930-cpt-one-man-show-picnic-saturday-09-may2026-the-ostrich-cape-townn/"
+    "url": "https://www.quicket.co.za/events/361930-cpt-one-man-show-picnic-saturday-09-may2026-the-ostrich-cape-townn/",
+    "lat": -34.2523913,
+    "lng": 18.4509376
   },
   {
     "title": "LY Muzic — The New Horizon | Live Concert",
@@ -335,7 +370,9 @@
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/Q1_247_247.jpg",
-    "url": "https://www.quicket.co.za/events/350198-ly-muzic-the-new-horizon-live-concert/"
+    "url": "https://www.quicket.co.za/events/350198-ly-muzic-the-new-horizon-live-concert/",
+    "lat": -33.9288301,
+    "lng": 18.4172197
   },
   {
     "title": "Mdzananda Gala Dinner & Auction",
@@ -348,7 +385,9 @@
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/0906071_247_247.png",
-    "url": "https://www.quicket.co.za/events/369665-mdzananda-gala-dinner-auction/"
+    "url": "https://www.quicket.co.za/events/369665-mdzananda-gala-dinner-auction/",
+    "lat": -33.9080275,
+    "lng": 18.4174786
   },
   {
     "title": "Dope Room : B2B Edition (Cape Town)",
@@ -361,7 +400,9 @@
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/0898685_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/367745-dope-room-b2b-edition-cape-town/"
+    "url": "https://www.quicket.co.za/events/367745-dope-room-b2b-edition-cape-town/",
+    "lat": -33.9288301,
+    "lng": 18.4172197
   },
   {
     "title": "Fish Hoek High School presents Annie",
@@ -374,7 +415,9 @@
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/0906004_247_247.png",
-    "url": "https://www.quicket.co.za/events/370121-fish-hoek-high-school-presents-annie/"
+    "url": "https://www.quicket.co.za/events/370121-fish-hoek-high-school-presents-annie/",
+    "lat": -34.133934,
+    "lng": 18.4189707
   },
   {
     "title": "DevConf 2026 Cape Town",
@@ -387,7 +430,9 @@
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/0839799_247_247.png",
-    "url": "https://www.quicket.co.za/events/345686-devconf-2026-cape-town/"
+    "url": "https://www.quicket.co.za/events/345686-devconf-2026-cape-town/",
+    "lat": -33.8957478,
+    "lng": 18.505127
   },
   {
     "title": "InnovateEDU 2026",
@@ -400,7 +445,9 @@
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/0793776_247_247.png",
-    "url": "https://www.quicket.co.za/events/329322-innovateedu-2026/"
+    "url": "https://www.quicket.co.za/events/329322-innovateedu-2026/",
+    "lat": -33.9288301,
+    "lng": 18.4172197
   },
   {
     "title": "Sannie in One-der-Land",
@@ -413,7 +460,9 @@
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/0903677_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/362054-sannie-in-one-der-land/"
+    "url": "https://www.quicket.co.za/events/362054-sannie-in-one-der-land/",
+    "lat": -33.9288301,
+    "lng": 18.4172197
   },
   {
     "title": "Wings Over Winelands Airshow",
@@ -426,7 +475,9 @@
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/0902759_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/364079-wings-over-winelands-airshow/"
+    "url": "https://www.quicket.co.za/events/364079-wings-over-winelands-airshow/",
+    "lat": -33.9288301,
+    "lng": 18.4172197
   },
   {
     "title": "The Sleeping Princess",
@@ -439,7 +490,9 @@
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/0904979_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/369863-the-sleeping-princess/"
+    "url": "https://www.quicket.co.za/events/369863-the-sleeping-princess/",
+    "lat": -34.0413699,
+    "lng": 18.4520836
   },
   {
     "title": "Nights of Anointing - Mitchell's Plain",
@@ -452,7 +505,9 @@
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/0910641_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/371768-nights-of-anointing-mitchells-plain/"
+    "url": "https://www.quicket.co.za/events/371768-nights-of-anointing-mitchells-plain/",
+    "lat": -34.0448445,
+    "lng": 18.6056743
   },
   {
     "title": "Wynberg Campus of Schools Orchestral Concert",
@@ -465,7 +520,9 @@
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/0894174_247_247.png",
-    "url": "https://www.quicket.co.za/events/363951-wynberg-campus-of-schools-orchestral-concert/"
+    "url": "https://www.quicket.co.za/events/363951-wynberg-campus-of-schools-orchestral-concert/",
+    "lat": -33.9288301,
+    "lng": 18.4172197
   },
   {
     "title": "BeerEx Africa 2026",
@@ -478,7 +535,9 @@
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/0849691_247_247.png",
-    "url": "https://www.quicket.co.za/events/348738-beerex-africa-2026/"
+    "url": "https://www.quicket.co.za/events/348738-beerex-africa-2026/",
+    "lat": -33.9288301,
+    "lng": 18.4172197
   },
   {
     "title": "Throwback Party 30 May 2026",
@@ -491,7 +550,9 @@
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/0894883_247_247.png",
-    "url": "https://www.quicket.co.za/events/365478-throwback-party-30-may-2026/"
+    "url": "https://www.quicket.co.za/events/365478-throwback-party-30-may-2026/",
+    "lat": -33.9288301,
+    "lng": 18.4172197
   },
   {
     "title": "DISTRICT SIX MUSEUM: JUNE 2026 ADMISSION TICKETS",
@@ -504,7 +565,9 @@
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/0893370_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/365058-district-six-museum-june-2026-admission-tickets/"
+    "url": "https://www.quicket.co.za/events/365058-district-six-museum-june-2026-admission-tickets/",
+    "lat": -33.9278161,
+    "lng": 18.4237518
   },
   {
     "title": "Cape Town Business Summit 2026",
@@ -517,7 +580,9 @@
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/0903646_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/262019-cape-town-business-summit-2026/"
+    "url": "https://www.quicket.co.za/events/262019-cape-town-business-summit-2026/",
+    "lat": -33.915361,
+    "lng": 18.4263691
   },
   {
     "title": "The AfroDiaspora Connection (Part 3 )",
@@ -530,7 +595,9 @@
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/0909334_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/371331-the-afrodiaspora-connection-part-3/"
+    "url": "https://www.quicket.co.za/events/371331-the-afrodiaspora-connection-part-3/",
+    "lat": -33.9274527,
+    "lng": 18.457579
   },
   {
     "title": "The Great Mass: Mozart's Mass in C Minor, K. 427/417, and Vesperae Solennes de Confessore KV 339 (Vespers for the Saints)",
@@ -543,7 +610,9 @@
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/Q1_247_247.jpg",
-    "url": "https://www.quicket.co.za/events/362128-the-great-mass-mozarts-mass-in-c-minor-k-427417-and-vesperae-solennes-de-confes/"
+    "url": "https://www.quicket.co.za/events/362128-the-great-mass-mozarts-mass-in-c-minor-k-427417-and-vesperae-solennes-de-confes/",
+    "lat": -33.9254298,
+    "lng": 18.4237257
   },
   {
     "title": "Musical Mondays June",
@@ -556,7 +625,9 @@
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/Q5_247_247.jpg",
-    "url": "https://www.quicket.co.za/events/371861-musical-mondays-june/"
+    "url": "https://www.quicket.co.za/events/371861-musical-mondays-june/",
+    "lat": -33.9288301,
+    "lng": 18.4172197
   },
   {
     "title": "DISTRICT SIX MUSEUM: JULY 2026 ADMISSION TICKETS",
@@ -569,7 +640,9 @@
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/0893373_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/365059-district-six-museum-july-2026-admission-tickets/"
+    "url": "https://www.quicket.co.za/events/365059-district-six-museum-july-2026-admission-tickets/",
+    "lat": -33.9278161,
+    "lng": 18.4237518
   },
   {
     "title": "DISTRICT SIX MUSEUM: AUGUST 2026 ADMISSION TICKETS",
@@ -582,7 +655,9 @@
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/0893376_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/365060-district-six-museum-august-2026-admission-tickets/"
+    "url": "https://www.quicket.co.za/events/365060-district-six-museum-august-2026-admission-tickets/",
+    "lat": -33.9278161,
+    "lng": 18.4237518
   },
   {
     "title": "DISTRICT SIX MUSEUM: SEPTEMBER 2026 ADMISSION TICKETS",
@@ -595,7 +670,9 @@
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/0893379_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/365061-district-six-museum-september-2026-admission-tickets/"
+    "url": "https://www.quicket.co.za/events/365061-district-six-museum-september-2026-admission-tickets/",
+    "lat": -33.9278161,
+    "lng": 18.4237518
   },
   {
     "title": "DISTRICT SIX MUSEUM: OCTOBER 2026 ADMISSION TICKETS",
@@ -608,7 +685,9 @@
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/0893381_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/365062-district-six-museum-october-2026-admission-tickets/"
+    "url": "https://www.quicket.co.za/events/365062-district-six-museum-october-2026-admission-tickets/",
+    "lat": -33.9278161,
+    "lng": 18.4237518
   },
   {
     "title": "Watershed Concert at The Loft Hout Bay",
@@ -621,7 +700,9 @@
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/0898017_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/367542-watershed-concert-at-the-loft-hout-bay/"
+    "url": "https://www.quicket.co.za/events/367542-watershed-concert-at-the-loft-hout-bay/",
+    "lat": -33.9288301,
+    "lng": 18.4172197
   },
   {
     "title": "DISTRICT SIX MUSEUM: NOVEMBER 2026 ADMISSION TICKETS",
@@ -634,7 +715,9 @@
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/0893383_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/365063-district-six-museum-november-2026-admission-tickets/"
+    "url": "https://www.quicket.co.za/events/365063-district-six-museum-november-2026-admission-tickets/",
+    "lat": -33.9278161,
+    "lng": 18.4237518
   },
   {
     "title": "DISTRICT SIX MUSEUM: DECEMBER 2026 ADMISSION TICKETS",
@@ -647,6 +730,23 @@
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/0893385_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/365064-district-six-museum-december-2026-admission-tickets/"
+    "url": "https://www.quicket.co.za/events/365064-district-six-museum-december-2026-admission-tickets/",
+    "lat": -33.9278161,
+    "lng": 18.4237518
+  },
+  {
+    "title": "DISTRICT SIX MUSEUM: JANUARY 2027 ADMISSION TICKETS",
+    "start": "2027-01-02T09:00:00+02:00",
+    "end": "2027-01-30T15:00:00+02:00",
+    "venue": "25A Buitenkant St",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "25A Buitenkant Street, , District Six, 8000, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/0893392_247_247.jpeg",
+    "url": "https://www.quicket.co.za/events/365067-district-six-museum-january-2027-admission-tickets/",
+    "lat": -33.9278161,
+    "lng": 18.4237518
   }
 ]

@@ -4,6 +4,8 @@ import argparse
 import html
 import json
 import re
+import time
+import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -13,6 +15,7 @@ BASE_URL = "https://www.quicket.co.za/events/{page}/"
 OUTPUT_DIR = Path(__file__).resolve().parent / "data"
 JSON_OUTPUT = OUTPUT_DIR / "quicket_events.json"
 TEXT_OUTPUT = OUTPUT_DIR / "quicket_events.txt"
+GEOCODE_CACHE_OUTPUT = OUTPUT_DIR / "quicket_geocode_cache.json"
 LOCAL_TZ = timezone(timedelta(hours=2), "SAST")
 
 
@@ -103,6 +106,110 @@ def normalize_url(url: str) -> str:
     return url
 
 
+def load_geocode_cache() -> dict[str, dict[str, float]]:
+    if not GEOCODE_CACHE_OUTPUT.exists():
+        return {}
+    try:
+        payload = json.loads(GEOCODE_CACHE_OUTPUT.read_text(encoding="utf-8"))
+        if isinstance(payload, dict):
+            return payload
+    except json.JSONDecodeError:
+        pass
+    return {}
+
+
+def save_geocode_cache(cache: dict[str, dict[str, float]]) -> None:
+    GEOCODE_CACHE_OUTPUT.write_text(json.dumps(cache, indent=2, ensure_ascii=False), encoding="utf-8")
+
+
+def geocode_query_for_event(event: dict) -> str:
+    bits = [
+        event.get("venue", ""),
+        event.get("address", ""),
+        event.get("locality", ""),
+        event.get("region", ""),
+        "South Africa",
+    ]
+    return ", ".join(bit for bit in bits if bit).strip()
+
+
+def geocode_queries_for_event(event: dict) -> list[str]:
+    venue = event.get("venue", "").strip()
+    address = event.get("address", "").strip()
+    locality = event.get("locality", "").strip()
+    region = event.get("region", "").strip()
+    queries = [
+        geocode_query_for_event(event),
+        ", ".join(part for part in [address, locality, region, "South Africa"] if part),
+        ", ".join(part for part in [venue, locality, region, "South Africa"] if part),
+        ", ".join(part for part in [locality, region, "South Africa"] if part),
+    ]
+    deduped: list[str] = []
+    seen: set[str] = set()
+    for query in queries:
+        normalized = query.strip().lower()
+        if normalized and normalized not in seen:
+            seen.add(normalized)
+            deduped.append(query.strip())
+    return deduped
+
+
+def geocode_address(query: str) -> dict[str, float] | None:
+    if not query:
+        return None
+    url = (
+        "https://nominatim.openstreetmap.org/search"
+        f"?format=json&limit=1&q={urllib.parse.quote(query)}"
+    )
+    request = urllib.request.Request(
+        url,
+        headers={
+            "User-Agent": "my-dashboard/1.0 (contact: local)",
+            "Accept": "application/json",
+        },
+    )
+    with urllib.request.urlopen(request, timeout=30) as response:
+        payload = json.loads(response.read().decode("utf-8"))
+    if not isinstance(payload, list) or not payload:
+        return None
+    first = payload[0]
+    try:
+        lat = float(first.get("lat"))
+        lng = float(first.get("lon"))
+    except (TypeError, ValueError):
+        return None
+    return {"lat": lat, "lng": lng}
+
+
+def add_coordinates(events: list[dict]) -> None:
+    cache = load_geocode_cache()
+    cache_changed = False
+    for event in events:
+        resolved = False
+        for query in geocode_queries_for_event(event):
+            cached = cache.get(query)
+            if cached:
+                event["lat"] = cached["lat"]
+                event["lng"] = cached["lng"]
+                resolved = True
+                break
+            coords = geocode_address(query)
+            # Be polite to Nominatim.
+            time.sleep(1.0)
+            if coords:
+                event["lat"] = coords["lat"]
+                event["lng"] = coords["lng"]
+                cache[query] = coords
+                cache_changed = True
+                resolved = True
+                break
+        if not resolved:
+            continue
+
+    if cache_changed:
+        save_geocode_cache(cache)
+
+
 def format_date(value: str) -> str:
     if not value:
         return "Date unknown"
@@ -161,6 +268,7 @@ def main() -> int:
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     events = scrape(max_pages=args.pages, days=args.days, limit=args.limit)
+    add_coordinates(events)
     JSON_OUTPUT.write_text(json.dumps(events, indent=2, ensure_ascii=False), encoding="utf-8")
     write_text(events, args.days, args.limit)
     print(f"Wrote {len(events)} Quicket event(s) to {JSON_OUTPUT}")

@@ -15,7 +15,7 @@ const state = {
   maxPrice: 200,
   specialsPayload: null,
   quicketEvents: [],
-  specialsMapRange: "today",
+  specialsMapRange: "next-7",
   mapSources: {
     places: true,
     specials: true,
@@ -44,12 +44,16 @@ const elements = {
   mapSourceEvents: document.querySelector("#map-source-events"),
   mapTypeFilters: document.querySelector("#map-type-filters"),
   mapCategoryFilters: document.querySelector("#map-category-filters"),
+  mapDetailPanel: document.querySelector("#map-detail-panel"),
   quicketEventsList: document.querySelector("#quicket-events-list"),
 };
 
 let specialsMap;
 let specialsMarkerLayer;
 let hasAutoFitMap = false;
+let forceNextMapFit = false;
+let selectedMapItemKey = "";
+let currentMapItems = [];
 const markerIcons = {
   places: L.icon({
     iconUrl: "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
@@ -498,6 +502,23 @@ function selectedMapDays(rollingWeek) {
   return rollingWeek;
 }
 
+function mapRangeWindow() {
+  const now = new Date();
+  const start = new Date(now);
+  let end;
+  if (state.specialsMapRange === "today") {
+    end = new Date(now);
+    end.setHours(23, 59, 59, 999);
+  } else if (state.specialsMapRange === "next-7") {
+    end = new Date(now.getTime() + 7 * 24 * 60 * 60 * 1000);
+  } else if (state.specialsMapRange === "next-month") {
+    end = new Date(now.getTime() + 30 * 24 * 60 * 60 * 1000);
+  } else {
+    end = new Date(now.getTime() + 365 * 24 * 60 * 60 * 1000);
+  }
+  return { start, end };
+}
+
 function specialsItemsForRange(groups, rollingWeek) {
   const days = selectedMapDays(rollingWeek);
   const items = [];
@@ -565,8 +586,17 @@ function mapItemFromEvent(event) {
   if (!Number.isFinite(event.lat) || !Number.isFinite(event.lng)) {
     return null;
   }
+  const startAt = event.start ? new Date(event.start) : null;
+  if (!startAt || Number.isNaN(startAt.getTime())) {
+    return null;
+  }
+  const window = mapRangeWindow();
+  if (startAt < window.start || startAt > window.end) {
+    return null;
+  }
   return {
     source: "events",
+    id: `event:${event.url || `${event.title}|${event.start}`}`,
     lat: event.lat,
     lng: event.lng,
     title: event.title,
@@ -574,7 +604,115 @@ function mapItemFromEvent(event) {
     types: [],
     categories: [],
     details: [displayDateTime(event.start), [event.venue, event.locality].filter(Boolean).join(", ")],
+    event,
   };
+}
+
+function mapItemKey(item) {
+  if (!item) {
+    return "";
+  }
+  if (item.id) {
+    return item.id;
+  }
+  return `${item.source}:${item.title}:${item.lat}:${item.lng}`;
+}
+
+function eventListCard(event) {
+  const when = displayDateTime(event.start);
+  const where = [event.venue, event.locality].filter(Boolean).join(", ");
+  const imageHtml = event.image ? `<img src="${event.image}" alt="${event.title || "Event"}">` : "";
+  return `
+    <article class="map-event-list-card">
+      ${imageHtml}
+      <div class="map-event-list-body">
+        <h5>${event.title || "Untitled event"}</h5>
+        <p><strong>When:</strong> ${when}</p>
+        <p><strong>Where:</strong> ${where || "-"}</p>
+        <p><a href="${event.url}" target="_blank" rel="noreferrer">Open event</a></p>
+      </div>
+    </article>
+  `;
+}
+
+function renderMapEventList() {
+  if (!specialsMap) {
+    elements.mapDetailPanel.innerHTML = '<p class="empty">Map is loading...</p>';
+    return;
+  }
+  const bounds = specialsMap.getBounds();
+  const visibleEvents = currentMapItems.filter((item) =>
+    item.source === "events" && bounds.contains([item.lat, item.lng]),
+  );
+  if (!visibleEvents.length) {
+    elements.mapDetailPanel.innerHTML = '<p class="empty">No events in this map view.</p>';
+    return;
+  }
+  const list = visibleEvents.map((item) => eventListCard(item.event)).join("");
+  elements.mapDetailPanel.innerHTML = `
+    <div class="map-event-list-header">
+      <p class="map-detail-source">Events In View</p>
+      <p>${visibleEvents.length} visible</p>
+    </div>
+    <div class="map-event-list">${list}</div>
+  `;
+}
+
+function renderMapDetail(item) {
+  if (!item) {
+    selectedMapItemKey = "";
+    renderMapEventList();
+    return;
+  }
+
+  if (item.source === "events" && item.event) {
+    const event = item.event;
+    const when = displayDateTime(event.start);
+    const where = [event.venue, event.locality].filter(Boolean).join(", ");
+    const address = event.address || "";
+    const imageHtml = event.image
+      ? `<img src="${event.image}" alt="${event.title || "Event"}">`
+      : "";
+    elements.mapDetailPanel.innerHTML = `
+      <article class="map-detail-card">
+        ${imageHtml}
+        <div class="map-detail-body">
+          <button type="button" class="map-back-button" id="map-back-button">Back to event list</button>
+          <p class="map-detail-source">Event</p>
+          <h4>${event.title || "Untitled event"}</h4>
+          <p><strong>When:</strong> ${when}</p>
+          <p><strong>Where:</strong> ${where || "-"}</p>
+          <p><strong>Address:</strong> ${address || "-"}</p>
+          <p><a href="${event.url}" target="_blank" rel="noreferrer">Open event</a></p>
+        </div>
+      </article>
+    `;
+    const backButton = document.querySelector("#map-back-button");
+    if (backButton) {
+      backButton.addEventListener("click", () => renderMapDetail(null));
+    }
+    return;
+  }
+
+  const details = (item.details || []).map((detail) => `<li>${detail}</li>`).join("");
+  const sourceLabel = item.source === "places" ? "Place" : "Special";
+  const title = item.url
+    ? `<a href="${item.url}" target="_blank" rel="noreferrer">${item.title}</a>`
+    : item.title;
+  elements.mapDetailPanel.innerHTML = `
+    <article class="map-detail-card">
+      <div class="map-detail-body">
+        <button type="button" class="map-back-button" id="map-back-button">Back to event list</button>
+        <p class="map-detail-source">${sourceLabel}</p>
+        <h4>${title}</h4>
+        <ul>${details}</ul>
+      </div>
+    </article>
+  `;
+  const backButton = document.querySelector("#map-back-button");
+  if (backButton) {
+    backButton.addEventListener("click", () => renderMapDetail(null));
+  }
 }
 
 async function geocodeAddress(address) {
@@ -720,16 +858,24 @@ function renderMap() {
       attribution: "&copy; OpenStreetMap contributors &copy; CARTO",
     }).addTo(specialsMap);
     specialsMarkerLayer = L.layerGroup().addTo(specialsMap);
+    specialsMap.on("moveend zoomend", () => {
+      if (!selectedMapItemKey) {
+        renderMapEventList();
+      }
+    });
   }
 
   specialsMarkerLayer.clearLayers();
   const mapItems = buildMapItems();
+  currentMapItems = mapItems;
   if (!mapItems.length) {
     const emptyText = "No mapped places for this filter.";
     const empty = L.popup({ closeButton: false, autoClose: false, closeOnClick: false })
       .setLatLng([-33.9249, 18.4241])
       .setContent(`<p class="map-empty-popup">${emptyText}</p>`)
       .openOn(specialsMap);
+    selectedMapItemKey = "";
+    renderMapDetail(null);
     setTimeout(() => specialsMap.invalidateSize(), 0);
     return;
   }
@@ -750,17 +896,33 @@ function renderMap() {
     const marker = L.marker([item.lat, item.lng], { icon }).bindPopup(
       `<strong>${title}</strong><p>${sourceLabel}</p><ul>${details}</ul>`,
     );
+    marker.on("click", () => {
+      selectedMapItemKey = mapItemKey(item);
+      renderMapDetail(item);
+    });
     marker.addTo(specialsMarkerLayer);
     bounds.push([item.lat, item.lng]);
   }
 
-  if (!hasAutoFitMap) {
+  if (!hasAutoFitMap || forceNextMapFit) {
     if (bounds.length === 1) {
       specialsMap.setView(bounds[0], 14);
     } else {
       specialsMap.fitBounds(bounds, { padding: [24, 24] });
     }
     hasAutoFitMap = true;
+    forceNextMapFit = false;
+  }
+  if (selectedMapItemKey) {
+    const selected = currentMapItems.find((item) => mapItemKey(item) === selectedMapItemKey);
+    if (selected) {
+      renderMapDetail(selected);
+    } else {
+      selectedMapItemKey = "";
+      renderMapDetail(null);
+    }
+  } else {
+    renderMapDetail(null);
   }
   setTimeout(() => specialsMap.invalidateSize(), 0);
 }
@@ -966,6 +1128,7 @@ elements.maxPrice.addEventListener("input", (event) => {
 
 elements.specialsMapRange.addEventListener("change", (event) => {
   state.specialsMapRange = event.target.value;
+  forceNextMapFit = true;
   renderMap();
 });
 
@@ -981,6 +1144,9 @@ elements.mapSourceSpecials.addEventListener("change", (event) => {
 
 elements.mapSourceEvents.addEventListener("change", (event) => {
   state.mapSources.events = event.target.checked;
+  if (event.target.checked) {
+    forceNextMapFit = true;
+  }
   renderMap();
 });
 

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Card Watch Dashboard</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-    <link rel="stylesheet" href="styles.css?v=20260428-3">
+    <link rel="stylesheet" href="styles.css?v=20260428-6">
   </head>
   <body>
     <header class="topbar">
@@ -31,7 +31,7 @@
               Show
               <select id="specials-map-range">
                 <option value="today">Today</option>
-                <option value="next-7">Next 7 days</option>
+                <option value="next-7" selected>Next 7 days</option>
                 <option value="next-month">Next month</option>
                 <option value="next-year">Next year</option>
               </select>
@@ -60,6 +60,9 @@
               </div>
             </aside>
             <div id="specials-map" class="specials-map"></div>
+            <aside id="map-detail-panel" class="map-detail-panel">
+              <p class="empty">Click a map marker to view details.</p>
+            </aside>
           </div>
           <details class="subsection-panel" open>
             <summary>Specials</summary>
@@ -153,6 +156,6 @@
     </main>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script src="app.js?v=20260428-5"></script>
+    <script src="app.js?v=20260428-10"></script>
   </body>
 </html>

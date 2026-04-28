@@ -243,7 +243,7 @@ td.card-number {
 }
 
 .specials-map {
-  min-height: 320px;
+  height: 520px;
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -336,7 +336,8 @@ td.card-number {
 
 .map-layout {
   display: grid;
-  grid-template-columns: 260px minmax(0, 1fr);
+  grid-template-columns: 260px minmax(0, 1fr) 320px;
+  align-items: stretch;
   gap: 12px;
   margin-top: 12px;
 }
@@ -394,6 +395,134 @@ td.card-number {
   margin: 4px;
   color: var(--muted);
   font-size: 13px;
+}
+
+.map-detail-panel {
+  height: 520px;
+  overflow: auto;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fbfcfe;
+}
+
+.map-detail-card {
+  display: grid;
+  gap: 10px;
+}
+
+.map-detail-card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #eef3f7;
+}
+
+.map-detail-body {
+  display: grid;
+  gap: 6px;
+}
+
+.map-detail-source {
+  margin: 0;
+  color: var(--accent-strong);
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.map-detail-body h4 {
+  margin: 0;
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+.map-detail-body p {
+  margin: 0;
+  color: #344054;
+  font-size: 13px;
+}
+
+.map-detail-body ul {
+  margin: 0;
+  padding-left: 18px;
+  color: #344054;
+  font-size: 13px;
+}
+
+.map-back-button {
+  width: fit-content;
+  min-height: 28px;
+  padding: 4px 10px;
+  color: var(--accent-strong);
+  background: #eef3f7;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.map-back-button:hover {
+  background: #e4edf5;
+}
+
+.map-event-list-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.map-event-list-header p {
+  margin: 0;
+  color: #344054;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.map-event-list {
+  display: grid;
+  gap: 8px;
+}
+
+.map-event-list-card {
+  display: grid;
+  grid-template-columns: 74px 1fr;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+}
+
+.map-event-list-card img {
+  width: 74px;
+  height: 100%;
+  object-fit: cover;
+  background: #eef3f7;
+}
+
+.map-event-list-body {
+  display: grid;
+  gap: 4px;
+  padding: 8px;
+}
+
+.map-event-list-body h5 {
+  margin: 0;
+  color: var(--text);
+  font-size: 13px;
+  line-height: 1.3;
+}
+
+.map-event-list-body p {
+  margin: 0;
+  color: #344054;
+  font-size: 12px;
 }
 
 .subsection-panel {
