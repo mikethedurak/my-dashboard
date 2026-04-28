@@ -324,6 +324,17 @@ td.card-number {
   text-transform: uppercase;
 }
 
+.subsection-row {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.compact-label {
+  min-width: 170px;
+}
+
 .poster-grid {
   display: grid;
   grid-template-columns: repeat(10, minmax(72px, 1fr));
@@ -399,6 +410,10 @@ td.card-number {
   .section-hint {
     grid-column: 2;
     margin-left: 0;
+  }
+
+  .subsection-row {
+    display: grid;
   }
 }
 

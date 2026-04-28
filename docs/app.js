@@ -12,6 +12,8 @@ const state = {
   rarity: "",
   minPrice: 0,
   maxPrice: 200,
+  specialsPayload: null,
+  specialsMapRange: "today",
 };
 
 const elements = {
@@ -25,6 +27,7 @@ const elements = {
   comingSoonGrid: document.querySelector("#coming-soon-grid"),
   specialsList: document.querySelector("#specials-list"),
   specialsMap: document.querySelector("#specials-map"),
+  specialsMapRange: document.querySelector("#specials-map-range"),
 };
 
 let specialsMap;
@@ -233,6 +236,7 @@ function renderPosters(container, items, emptyText) {
 }
 
 function renderSpecials(payload) {
+  state.specialsPayload = payload;
   const groups = payload.groups || payload.items || [];
   const locations = payload.locations || {};
   if (payload.error) {
@@ -260,6 +264,7 @@ function renderSpecials(payload) {
   }).format(new Date());
   const todayIndex = dayOrder.indexOf(today);
   const rollingWeek = [...dayOrder.slice(todayIndex), ...dayOrder.slice(0, todayIndex)];
+  renderSpecialsMapForRange(groups, locations, rollingWeek);
 
   for (const day of rollingWeek) {
     const dayItems = [];
@@ -269,11 +274,32 @@ function renderSpecials(payload) {
       }
     }
 
-    if (day === today) {
-      renderSpecialsMap(dayItems, locations);
-    }
     elements.specialsList.append(specialDayElement(day, dayItems, day === today));
   }
+}
+
+function selectedMapDays(rollingWeek) {
+  if (state.specialsMapRange === "today") {
+    return rollingWeek.slice(0, 1);
+  }
+  if (state.specialsMapRange === "next-7") {
+    return rollingWeek;
+  }
+  return rollingWeek;
+}
+
+function renderSpecialsMapForRange(groups, locations, rollingWeek) {
+  const days = selectedMapDays(rollingWeek);
+  const items = [];
+  for (const group of groups) {
+    const matchingDays = (group.days || []).filter((day) => days.includes(day));
+    for (const item of group.items || []) {
+      for (const day of matchingDays) {
+        items.push({ ...item, mapDay: day });
+      }
+    }
+  }
+  renderSpecialsMap(items, locations);
 }
 
 function normalizeVenue(value) {
@@ -315,7 +341,7 @@ function renderSpecialsMap(items, locations) {
 
   if (!specialsMap) {
     specialsMap = L.map(elements.specialsMap, {
-      scrollWheelZoom: false,
+      scrollWheelZoom: true,
     }).setView([-33.9249, 18.4241], 12);
     L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
       maxZoom: 19,
@@ -328,7 +354,9 @@ function renderSpecialsMap(items, locations) {
   const bounds = [];
   for (const group of venueGroups) {
     const location = group.location;
-    const deals = group.items.map((item) => `<li>${item.deal || item.description || item.title}</li>`).join("");
+    const deals = group.items
+      .map((item) => `<li>${item.mapDay}: ${item.deal || item.description || item.title}</li>`)
+      .join("");
     const title = location.url
       ? `<a href="${location.url}" target="_blank" rel="noreferrer">${group.venue}</a>`
       : group.venue;
@@ -525,6 +553,13 @@ elements.minPrice.addEventListener("input", (event) => {
 elements.maxPrice.addEventListener("input", (event) => {
   state.maxPrice = event.target.value === "" ? Number.POSITIVE_INFINITY : Number(event.target.value);
   render();
+});
+
+elements.specialsMapRange.addEventListener("change", (event) => {
+  state.specialsMapRange = event.target.value;
+  if (state.specialsPayload) {
+    renderSpecials(state.specialsPayload);
+  }
 });
 
 load();
