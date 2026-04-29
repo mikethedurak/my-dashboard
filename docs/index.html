@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Card Watch Dashboard</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-    <link rel="stylesheet" href="styles.css?v=20260428-6">
+    <link rel="stylesheet" href="styles.css?v=20260429-2">
   </head>
   <body>
     <header class="topbar">
@@ -19,6 +19,15 @@
     </header>
 
     <main>
+      <section class="weather-strip" aria-label="Cape Town weather">
+        <div class="weather-strip-head">
+          <h2>Cape Town Weather</h2>
+        </div>
+        <div id="weather-cards" class="weather-cards">
+          <p class="empty">Loading weather...</p>
+        </div>
+      </section>
+
       <details class="dashboard-section" open>
         <summary>
           <span>Events</span>
@@ -156,6 +165,6 @@
     </main>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script src="app.js?v=20260428-12"></script>
+    <script src="app.js?v=20260429-2"></script>
   </body>
 </html>

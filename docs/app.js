@@ -4,6 +4,8 @@ const RELEASES_PATH = "data/pahe_latest.json";
 const COMING_SOON_PATH = "data/coming_soon.json";
 const SPECIALS_PATH = "data/specials.json";
 const QUICKET_EVENTS_PATH = "data/quicket_events.json";
+const WEATHER_PATH =
+  "https://api.open-meteo.com/v1/forecast?latitude=-33.9249&longitude=18.4241&daily=weathercode,temperature_2m_max,temperature_2m_min&timezone=Africa%2FJohannesburg&forecast_days=7";
 
 const state = {
   rows: [],
@@ -36,6 +38,7 @@ const elements = {
   maxPrice: document.querySelector("#max-price"),
   releaseGrid: document.querySelector("#release-grid"),
   comingSoonGrid: document.querySelector("#coming-soon-grid"),
+  weatherCards: document.querySelector("#weather-cards"),
   specialsList: document.querySelector("#specials-list"),
   specialsMap: document.querySelector("#specials-map"),
   specialsMapRange: document.querySelector("#specials-map-range"),
@@ -299,6 +302,65 @@ function renderPosters(container, items, emptyText) {
 
     link.append(image, title);
     container.append(link);
+  }
+}
+
+function weatherIcon(weatherCode) {
+  if (weatherCode === 0) {
+    return "☀";
+  }
+  if ([1, 2, 3].includes(weatherCode)) {
+    return "⛅";
+  }
+  if ([45, 48].includes(weatherCode)) {
+    return "🌫";
+  }
+  if ([51, 53, 55, 56, 57, 61, 63, 65, 66, 67, 80, 81, 82].includes(weatherCode)) {
+    return "🌧";
+  }
+  if ([71, 73, 75, 77, 85, 86].includes(weatherCode)) {
+    return "❄";
+  }
+  if ([95, 96, 99].includes(weatherCode)) {
+    return "⛈";
+  }
+  return "☁";
+}
+
+function weatherDayLabel(dateValue) {
+  const date = new Date(`${dateValue}T00:00:00`);
+  return new Intl.DateTimeFormat("en-ZA", {
+    weekday: "short",
+    day: "2-digit",
+    month: "short",
+    timeZone: "Africa/Johannesburg",
+  }).format(date);
+}
+
+function renderWeather(payload) {
+  const daily = payload?.daily;
+  if (!daily?.time?.length) {
+    elements.weatherCards.innerHTML = '<p class="empty">Weather data not available.</p>';
+    return;
+  }
+
+  const items = daily.time.map((date, index) => ({
+    date,
+    code: daily.weathercode[index],
+    max: daily.temperature_2m_max[index],
+    min: daily.temperature_2m_min[index],
+  }));
+
+  elements.weatherCards.innerHTML = "";
+  for (const item of items) {
+    const card = document.createElement("article");
+    card.className = "weather-card";
+    card.innerHTML = `
+      <p class="weather-day">${weatherDayLabel(item.date)}</p>
+      <p class="weather-icon">${weatherIcon(item.code)}</p>
+      <p class="weather-temp">${Math.round(item.max)}° / ${Math.round(item.min)}°</p>
+    `;
+    elements.weatherCards.append(card);
   }
 }
 
@@ -1033,6 +1095,19 @@ async function loadReleases() {
   }
 }
 
+async function loadWeather() {
+  try {
+    const response = await fetch(WEATHER_PATH, { cache: "no-store" });
+    if (!response.ok) {
+      throw new Error("Could not load weather.");
+    }
+    const payload = await response.json();
+    renderWeather(payload);
+  } catch (error) {
+    elements.weatherCards.innerHTML = `<p class="empty">${error.message}</p>`;
+  }
+}
+
 async function loadComingSoon() {
   try {
     const response = await fetch(COMING_SOON_PATH, { cache: "no-store" });
@@ -1147,6 +1222,7 @@ elements.mapSourceEvents.addEventListener("change", (event) => {
 });
 
 load();
+loadWeather();
 loadReleases();
 loadComingSoon();
 loadSpecials();

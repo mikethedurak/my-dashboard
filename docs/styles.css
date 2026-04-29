@@ -73,6 +73,57 @@ main {
   padding: 24px clamp(16px, 4vw, 48px) 48px;
 }
 
+.weather-strip {
+  margin-bottom: 14px;
+  padding: 14px 16px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.weather-strip-head h2 {
+  margin: 0;
+  color: #344054;
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.weather-cards {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.weather-card {
+  padding: 8px 6px;
+  text-align: center;
+  background: #fbfcfe;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.weather-day {
+  margin: 0;
+  color: #344054;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.weather-icon {
+  margin: 4px 0 3px;
+  font-size: 19px;
+  line-height: 1;
+}
+
+.weather-temp {
+  margin: 0;
+  color: var(--text);
+  font-size: 12px;
+  font-weight: 900;
+}
+
 .dashboard-section {
   margin-bottom: 14px;
   background: var(--panel);
@@ -710,6 +761,10 @@ td.card-number {
 }
 
 @media (max-width: 980px) {
+  .weather-cards {
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  }
+
   .poster-grid {
     grid-template-columns: repeat(auto-fill, minmax(86px, 1fr));
   }
