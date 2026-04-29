@@ -1396,20 +1396,12 @@ function renderMap() {
   specialsMap.closePopup();
   const bounds = [];
   for (const item of mapItems) {
-    const title = item.url
-      ? `<a href="${item.url}" target="_blank" rel="noreferrer">${item.title}</a>`
-      : item.title;
-    const details = item.details.map((detail) => `<li>${detail}</li>`).join("");
-    const sourceLabel = item.source === "events" ? "Event" : item.source === "places" ? "Place" : "Special";
     const icon = item.source === "places"
       ? markerIcons.places
       : item.source === "events"
         ? markerIcons.events
         : markerIcons.specials;
     const marker = L.marker([item.lat, item.lng], { icon });
-    if (item.source !== "specials") {
-      marker.bindPopup(`<strong>${title}</strong><p>${sourceLabel}</p><ul>${details}</ul>`);
-    }
     if (item.source === "specials" || item.source === "places") {
       mapMarkersByKey.set(`${item.source}:${venueKey(item.title)}`, marker);
     }
@@ -1571,7 +1563,6 @@ function showMyLocation() {
   if (myLocationMarker) {
     const markerPos = myLocationMarker.getLatLng();
     specialsMap.setView(markerPos, 13, { animate: true });
-    myLocationMarker.openPopup();
   } else if (myLocationLatLng) {
     specialsMap.setView(myLocationLatLng, 13, { animate: true });
   }
@@ -1585,11 +1576,10 @@ function showMyLocation() {
       } else {
         myLocationMarker = L.marker(myLocationLatLng, {
           icon: markerIcons.myLocation,
-        }).bindPopup("<strong>You are here</strong>", { autoPan: false });
+        });
         myLocationMarker.addTo(specialsMap);
       }
       specialsMap.setView(myLocationLatLng, 13, { animate: true });
-      myLocationMarker.openPopup();
     },
     () => {
       alert("Could not get your location. Check browser location permissions.");

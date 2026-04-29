@@ -111,10 +111,16 @@
 :root[data-theme="dark"] .map-event-list-body p,
 :root[data-theme="dark"] .map-event-list-header p,
 :root[data-theme="dark"] .map-detail-body p,
+:root[data-theme="dark"] .map-detail-body li,
 :root[data-theme="dark"] .special-card p,
 :root[data-theme="dark"] .weather-day,
 :root[data-theme="dark"] .custom-date-separator {
   color: #a9bad3;
+}
+
+:root[data-theme="dark"] .map-detail-body a,
+:root[data-theme="dark"] .map-event-list-body a {
+  color: #8fb7ff;
 }
 
 :root[data-theme="dark"] input::placeholder {
