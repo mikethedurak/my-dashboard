@@ -1,9 +1,11 @@
 from __future__ import annotations
 
 import argparse
+import json
 import shutil
 import subprocess
 import sys
+from datetime import datetime, timezone
 from pathlib import Path
 
 
@@ -44,6 +46,9 @@ def copy_outputs() -> None:
         for path in source_dir.glob("*"):
             if path.suffix.lower() in {".csv", ".json"}:
                 shutil.copy2(path, DOCS_DATA_DIR / path.name)
+    metadata_path = DOCS_DATA_DIR / "metadata.json"
+    metadata = {"last_scraped_at": datetime.now(timezone.utc).isoformat()}
+    metadata_path.write_text(json.dumps(metadata, indent=2), encoding="utf-8")
 
 
 def main() -> int:

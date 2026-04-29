@@ -7,6 +7,7 @@ const QUICKET_EVENTS_PATH = "data/quicket_events.json";
 const WEATHER_PATH =
   "https://api.open-meteo.com/v1/forecast?latitude=-33.9249&longitude=18.4241&daily=weathercode,temperature_2m_max,temperature_2m_min&timezone=Africa%2FJohannesburg&forecast_days=7";
 const HOLIDAYS_PATH = "https://date.nager.at/api/v3/publicholidays/{year}/ZA";
+const METADATA_PATH = "data/metadata.json";
 
 const state = {
   rows: [],
@@ -52,6 +53,7 @@ const elements = {
   mapDetailPanel: document.querySelector("#map-detail-panel"),
   quicketEventsList: document.querySelector("#quicket-events-list"),
   todayDate: document.querySelector("#today-date"),
+  lastScraped: document.querySelector("#last-scraped"),
 };
 
 let specialsMap;
@@ -330,6 +332,32 @@ function setHeaderDate() {
     year: "numeric",
     timeZone: "Africa/Johannesburg",
   }).format(now);
+}
+
+function setLastScrapedText(value) {
+  if (!elements.lastScraped) {
+    return;
+  }
+  if (!value) {
+    elements.lastScraped.textContent = "Last scraped: -";
+    return;
+  }
+  const parsed = new Date(value);
+  if (Number.isNaN(parsed.getTime())) {
+    elements.lastScraped.textContent = `Last scraped: ${value}`;
+    return;
+  }
+  const formatted = new Intl.DateTimeFormat("en-ZA", {
+    day: "2-digit",
+    month: "short",
+    year: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: false,
+    timeZone: "Africa/Johannesburg",
+  }).format(parsed);
+  elements.lastScraped.textContent = `Last scraped: ${formatted}`;
 }
 
 function weatherIcon(weatherCode) {
@@ -1216,6 +1244,20 @@ async function loadWeather() {
   }
 }
 
+async function loadMetadata() {
+  try {
+    const response = await fetch(METADATA_PATH, { cache: "no-store" });
+    if (!response.ok) {
+      setLastScrapedText("");
+      return;
+    }
+    const payload = await response.json();
+    setLastScrapedText(payload.last_scraped_at || payload.scraped_at || "");
+  } catch {
+    setLastScrapedText("");
+  }
+}
+
 async function loadComingSoon() {
   try {
     const response = await fetch(COMING_SOON_PATH, { cache: "no-store" });
@@ -1335,6 +1377,7 @@ if (elements.locateMe) {
 
 load();
 setHeaderDate();
+loadMetadata();
 loadWeather();
 loadReleases();
 loadComingSoon();

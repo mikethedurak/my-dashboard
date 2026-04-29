@@ -55,6 +55,13 @@ h1 {
   line-height: 1.1;
 }
 
+.subtle-meta {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+}
+
 .source-link,
 .buy-link {
   color: var(--accent-strong);

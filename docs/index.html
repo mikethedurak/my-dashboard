@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Card Watch Dashboard</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-    <link rel="stylesheet" href="styles.css?v=20260429-7">
+    <link rel="stylesheet" href="styles.css?v=20260429-8">
   </head>
   <body>
     <header class="topbar">
       <div>
-        <p class="eyebrow">Dashboard</p>
+        <p class="eyebrow">My Dashboard</p>
         <h1 id="today-date">Today</h1>
+        <p id="last-scraped" class="subtle-meta">Last scraped: -</p>
       </div>
       <div class="header-actions">
         <a class="source-link" href="data/all_stores_missing_available.csv">CSV</a>
@@ -166,6 +167,6 @@
     </main>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script src="app.js?v=20260429-12"></script>
+    <script src="app.js?v=20260429-13"></script>
   </body>
 </html>
