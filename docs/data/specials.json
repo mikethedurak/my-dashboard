@@ -1,6 +1,6 @@
 {
-  "source": "https://www.notion.so/Specials-082fa9625a9f4f949d03a8d1517c76f8",
-  "title": "Specials",
+  "source": "https://www.notion.so/Places-082fa9625a9f4f949d03a8d1517c76f8",
+  "title": "Places",
   "locations": {
     "Jooma": {
       "venue": "Jooma",
@@ -1552,94 +1552,6 @@
   },
   "groups": [
     {
-      "title": "Everyday",
-      "days": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday"
-      ],
-      "items": [
-        {
-          "venue": "Jooma",
-          "title": "Jooma",
-          "deal": "R25 Americano + Pastry",
-          "description": "Jooma - R25 Americano + Pastry",
-          "url": ""
-        },
-        {
-          "venue": "Jooma",
-          "title": "Jooma",
-          "deal": "R35 Americano + Muffin",
-          "description": "Jooma - R35 Americano + Muffin",
-          "url": ""
-        },
-        {
-          "venue": "Jooma",
-          "title": "Jooma",
-          "deal": "R115 Pizza + Glass Wine",
-          "description": "Jooma - R115 Pizza + Glass Wine",
-          "url": ""
-        },
-        {
-          "venue": "Jooma",
-          "title": "Jooma",
-          "deal": "R110 Burger Chips + Beer",
-          "description": "Jooma - R110 Burger Chips + Beer",
-          "url": ""
-        },
-        {
-          "venue": "Brauhaus",
-          "title": "Brauhaus",
-          "deal": "specials every day of the week",
-          "description": "Brauhaus -  specials every day of the week",
-          "url": ""
-        },
-        {
-          "venue": "Rocomamas",
-          "title": "Rocomamas",
-          "deal": "R139 for 3 course meal (excl drinks)",
-          "description": "Rocomamas - R139 for 3 course meal (excl drinks)",
-          "url": ""
-        },
-        {
-          "venue": "Kloof Street House",
-          "title": "Kloof Street House",
-          "deal": "R99 Bottomless mimosas (10 - AM \u2013 12PM, except Mondays)",
-          "description": "Kloof Street House - R99 Bottomless mimosas (10 - AM \u2013 12PM, except Mondays)",
-          "url": ""
-        }
-      ]
-    },
-    {
-      "title": "Monday to Thursday",
-      "days": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday"
-      ],
-      "items": [
-        {
-          "venue": "Cal\u2019cachios",
-          "title": "Cal\u2019cachios",
-          "deal": "R120 any pizza and beer (before 16:00)",
-          "description": "Cal\u2019cachios - R120 any pizza and beer (before 16:00)",
-          "url": ""
-        },
-        {
-          "venue": "Rockpool Cafe",
-          "title": "Rockpool Cafe",
-          "deal": "Buy 1 get 1 free on selected pizza\u2019s",
-          "description": "Rockpool Cafe - Buy 1 get 1 free on selected pizza\u2019s",
-          "url": ""
-        }
-      ]
-    },
-    {
       "title": "Monday",
       "days": [
         "Monday"
@@ -1648,16 +1560,52 @@
         {
           "venue": "Butlers",
           "title": "Butlers",
-          "deal": "get third cheapest pizza free",
-          "description": "Butlers - get third cheapest pizza free",
-          "url": ""
+          "deal": "Get third cheapest pizza free",
+          "description": "Get third cheapest pizza free",
+          "details": "Get third cheapest pizza free",
+          "price": "",
+          "time": "",
+          "url": "https://app.notion.com/p/Butlers-35157df819188032ac48ddff42f83d48"
+        },
+        {
+          "venue": "Kloof Street House",
+          "title": "Kloof Street House",
+          "deal": "Bottomless mimosas | R99 | 10 AM \u2013 12 PM",
+          "description": "Bottomless mimosas | R99 | 10 AM \u2013 12 PM",
+          "details": "Bottomless mimosas",
+          "price": "R99",
+          "time": "10 AM \u2013 12 PM",
+          "url": "https://app.notion.com/p/Kloof-Street-House-35157df8191880858a26e4d84a8e9795"
+        },
+        {
+          "venue": "Rockpool Cafe",
+          "title": "Rockpool Cafe",
+          "deal": "Buy 1 get 1 free on selected pizza\u2019s",
+          "description": "Buy 1 get 1 free on selected pizza\u2019s",
+          "details": "Buy 1 get 1 free on selected pizza\u2019s",
+          "price": "",
+          "time": "",
+          "url": "https://app.notion.com/p/Rockpool-Cafe-35157df8191880b69cefd21ef07070aa"
         },
         {
           "venue": "Cattle Baron",
           "title": "Cattle Baron",
-          "deal": "R65 for burger and sides",
-          "description": "Cattle Baron - R65 for burger and sides",
-          "url": ""
+          "deal": "Burger and sides | R65",
+          "description": "Burger and sides | R65",
+          "details": "Burger and sides",
+          "price": "R65",
+          "time": "",
+          "url": "https://app.notion.com/p/Cattle-Baron-35157df8191880cebcd8d7a364fdfbaa"
+        },
+        {
+          "venue": "Cal\u2019cachios",
+          "title": "Cal\u2019cachios",
+          "deal": "Any pizza and beer | R120 | Before 16:00",
+          "description": "Any pizza and beer | R120 | Before 16:00",
+          "details": "Any pizza and beer",
+          "price": "R120",
+          "time": "Before 16:00",
+          "url": "https://app.notion.com/p/Cal-cachios-35157df8191880fe8d69d7d62782c947"
         }
       ]
     },
@@ -1668,32 +1616,44 @@
       ],
       "items": [
         {
+          "venue": "Kloof Street House",
+          "title": "Kloof Street House",
+          "deal": "Bottomless mimosas | R99 | 10 AM \u2013 12 PM",
+          "description": "Bottomless mimosas | R99 | 10 AM \u2013 12 PM",
+          "details": "Bottomless mimosas",
+          "price": "R99",
+          "time": "10 AM \u2013 12 PM",
+          "url": "https://app.notion.com/p/Kloof-Street-House-35157df8191880858a26e4d84a8e9795"
+        },
+        {
           "venue": "Clarkes",
           "title": "Clarkes",
-          "deal": "2 for 1 = R100 Burger (19:00 - 20:00)",
-          "description": "Clarkes - 2 for 1 = R100 Burger (19:00 - 20:00)",
-          "url": ""
+          "deal": "2 for 1 Burgers | R100 per Burger | 19:00 - 20:00",
+          "description": "2 for 1 Burgers | R100 per Burger | 19:00 - 20:00",
+          "details": "2 for 1 Burgers",
+          "price": "R100 per Burger",
+          "time": "19:00 - 20:00",
+          "url": "https://app.notion.com/p/Clarkes-35157df81918809b951dd2fef2e61924"
         },
         {
-          "venue": "Burger and Lobster",
-          "title": "Burger and Lobster",
-          "deal": "R110 Chili Cheese Smash Burger",
-          "description": "Burger and Lobster - R110 Chili Cheese Smash Burger",
-          "url": ""
+          "venue": "Rockpool Cafe",
+          "title": "Rockpool Cafe",
+          "deal": "Buy 1 get 1 free on selected pizza\u2019s",
+          "description": "Buy 1 get 1 free on selected pizza\u2019s",
+          "details": "Buy 1 get 1 free on selected pizza\u2019s",
+          "price": "",
+          "time": "",
+          "url": "https://app.notion.com/p/Rockpool-Cafe-35157df8191880b69cefd21ef07070aa"
         },
         {
-          "venue": "The Shed",
-          "title": "The Shed",
-          "deal": "(R349) 8 piece sushi starter, 2 x double patty house burger and chips, and a desert pizza",
-          "description": "The Shed - (R349) 8 piece sushi starter, 2 x double patty house burger and chips, and a desert pizza",
-          "url": ""
-        },
-        {
-          "venue": "The Shed",
-          "title": "The Shed",
-          "deal": "(R99) Double patty house burger and chips",
-          "description": "The Shed - (R99) Double patty house burger and chips",
-          "url": ""
+          "venue": "Cal\u2019cachios",
+          "title": "Cal\u2019cachios",
+          "deal": "Any pizza and beer | R120 | Before 16:00",
+          "description": "Any pizza and beer | R120 | Before 16:00",
+          "details": "Any pizza and beer",
+          "price": "R120",
+          "time": "Before 16:00",
+          "url": "https://app.notion.com/p/Cal-cachios-35157df8191880fe8d69d7d62782c947"
         }
       ]
     },
@@ -1706,30 +1666,62 @@
         {
           "venue": "Iron Steak",
           "title": "Iron Steak",
-          "deal": "R100 Double Wagyu Burger",
-          "description": "Iron Steak - R100 Double Wagyu Burger",
-          "url": ""
+          "deal": "Double Wagyu Burger | R100",
+          "description": "Double Wagyu Burger | R100",
+          "details": "Double Wagyu Burger",
+          "price": "R100",
+          "time": "",
+          "url": "https://app.notion.com/p/Iron-Steak-35157df819188001ba9ef6ebad0be00d"
         },
         {
-          "venue": "The Village Idiot",
-          "title": "The Village Idiot",
-          "deal": "R110 (Pizza and drink) TBC",
-          "description": "The Village Idiot - R110 (Pizza and drink) TBC",
-          "url": ""
+          "venue": "Burger and Lobster",
+          "title": "Burger and Lobster",
+          "deal": "Chili Cheese Smash Burger | R110",
+          "description": "Chili Cheese Smash Burger | R110",
+          "details": "Chili Cheese Smash Burger",
+          "price": "R110",
+          "time": "",
+          "url": "https://app.notion.com/p/Burger-and-Lobster-35157df81918805180e3ef5222d755eb"
         },
         {
-          "venue": "Hudsons",
-          "title": "Hudsons",
-          "deal": "Half price nachos TBC",
-          "description": "Hudsons \u2013 Half price nachos TBC",
-          "url": ""
+          "venue": "Carlyle\u2019s",
+          "title": "Carlyle\u2019s",
+          "deal": "Killer Pork Ribs served with 2 sides | R199",
+          "description": "Killer Pork Ribs served with 2 sides | R199",
+          "details": "Killer Pork Ribs served with 2 sides",
+          "price": "R199",
+          "time": "",
+          "url": "https://app.notion.com/p/Carlyle-s-35157df81918805297ebef7ffb8def37"
         },
         {
-          "venue": "Oblivion",
-          "title": "Oblivion",
-          "deal": "2 Burgers for R200",
-          "description": "Oblivion - 2 Burgers for R200",
-          "url": ""
+          "venue": "Kloof Street House",
+          "title": "Kloof Street House",
+          "deal": "Bottomless mimosas | R99 | 10 AM \u2013 12 PM",
+          "description": "Bottomless mimosas | R99 | 10 AM \u2013 12 PM",
+          "details": "Bottomless mimosas",
+          "price": "R99",
+          "time": "10 AM \u2013 12 PM",
+          "url": "https://app.notion.com/p/Kloof-Street-House-35157df8191880858a26e4d84a8e9795"
+        },
+        {
+          "venue": "Rockpool Cafe",
+          "title": "Rockpool Cafe",
+          "deal": "Buy 1 get 1 free on selected pizza\u2019s",
+          "description": "Buy 1 get 1 free on selected pizza\u2019s",
+          "details": "Buy 1 get 1 free on selected pizza\u2019s",
+          "price": "",
+          "time": "",
+          "url": "https://app.notion.com/p/Rockpool-Cafe-35157df8191880b69cefd21ef07070aa"
+        },
+        {
+          "venue": "Cal\u2019cachios",
+          "title": "Cal\u2019cachios",
+          "deal": "Any pizza and beer | R120 | Before 16:00",
+          "description": "Any pizza and beer | R120 | Before 16:00",
+          "details": "Any pizza and beer",
+          "price": "R120",
+          "time": "Before 16:00",
+          "url": "https://app.notion.com/p/Cal-cachios-35157df8191880fe8d69d7d62782c947"
         }
       ]
     },
@@ -1740,11 +1732,80 @@
       ],
       "items": [
         {
+          "venue": "Kloof Street House",
+          "title": "Kloof Street House",
+          "deal": "Bottomless mimosas | R99 | 10 AM \u2013 12 PM",
+          "description": "Bottomless mimosas | R99 | 10 AM \u2013 12 PM",
+          "details": "Bottomless mimosas",
+          "price": "R99",
+          "time": "10 AM \u2013 12 PM",
+          "url": "https://app.notion.com/p/Kloof-Street-House-35157df8191880858a26e4d84a8e9795"
+        },
+        {
+          "venue": "Rockpool Cafe",
+          "title": "Rockpool Cafe",
+          "deal": "Buy 1 get 1 free on selected pizza\u2019s",
+          "description": "Buy 1 get 1 free on selected pizza\u2019s",
+          "details": "Buy 1 get 1 free on selected pizza\u2019s",
+          "price": "",
+          "time": "",
+          "url": "https://app.notion.com/p/Rockpool-Cafe-35157df8191880b69cefd21ef07070aa"
+        },
+        {
           "venue": "The Shed",
           "title": "The Shed",
-          "deal": "R249 (12 pieces sushi platter, 2 x Margherita pizzas)",
-          "description": "The Shed - R249 (12 pieces sushi platter, 2 x Margherita pizzas)",
-          "url": ""
+          "deal": "12 pieces sushi platter, 2 x Margherita pizzas | R249",
+          "description": "12 pieces sushi platter, 2 x Margherita pizzas | R249",
+          "details": "12 pieces sushi platter, 2 x Margherita pizzas",
+          "price": "R249",
+          "time": "",
+          "url": "https://app.notion.com/p/The-Shed-35157df8191880bd91badf2bb3b96955"
+        },
+        {
+          "venue": "Cal\u2019cachios",
+          "title": "Cal\u2019cachios",
+          "deal": "Any pizza and beer | R120 | Before 16:00",
+          "description": "Any pizza and beer | R120 | Before 16:00",
+          "details": "Any pizza and beer",
+          "price": "R120",
+          "time": "Before 16:00",
+          "url": "https://app.notion.com/p/Cal-cachios-35157df8191880fe8d69d7d62782c947"
+        }
+      ]
+    },
+    {
+      "title": "Friday",
+      "days": [
+        "Friday"
+      ],
+      "items": [
+        {
+          "venue": "Kloof Street House",
+          "title": "Kloof Street House",
+          "deal": "Bottomless mimosas | R99 | 10 AM \u2013 12 PM",
+          "description": "Bottomless mimosas | R99 | 10 AM \u2013 12 PM",
+          "details": "Bottomless mimosas",
+          "price": "R99",
+          "time": "10 AM \u2013 12 PM",
+          "url": "https://app.notion.com/p/Kloof-Street-House-35157df8191880858a26e4d84a8e9795"
+        }
+      ]
+    },
+    {
+      "title": "Saturday",
+      "days": [
+        "Saturday"
+      ],
+      "items": [
+        {
+          "venue": "Kloof Street House",
+          "title": "Kloof Street House",
+          "deal": "Bottomless mimosas | R99 | 10 AM \u2013 12 PM",
+          "description": "Bottomless mimosas | R99 | 10 AM \u2013 12 PM",
+          "details": "Bottomless mimosas",
+          "price": "R99",
+          "time": "10 AM \u2013 12 PM",
+          "url": "https://app.notion.com/p/Kloof-Street-House-35157df8191880858a26e4d84a8e9795"
         }
       ]
     },
@@ -1755,11 +1816,24 @@
       ],
       "items": [
         {
+          "venue": "Kloof Street House",
+          "title": "Kloof Street House",
+          "deal": "Bottomless mimosas | R99 | 10 AM \u2013 12 PM",
+          "description": "Bottomless mimosas | R99 | 10 AM \u2013 12 PM",
+          "details": "Bottomless mimosas",
+          "price": "R99",
+          "time": "10 AM \u2013 12 PM",
+          "url": "https://app.notion.com/p/Kloof-Street-House-35157df8191880858a26e4d84a8e9795"
+        },
+        {
           "venue": "The Shed",
           "title": "The Shed",
           "deal": "Buy 1-get-1 free Margherita special",
-          "description": "The Shed - Buy 1-get-1 free Margherita special",
-          "url": ""
+          "description": "Buy 1-get-1 free Margherita special",
+          "details": "Buy 1-get-1 free Margherita special",
+          "price": "",
+          "time": "",
+          "url": "https://app.notion.com/p/The-Shed-35157df8191880b48468c47b7712f582"
         }
       ]
     }

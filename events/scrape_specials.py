@@ -9,8 +9,11 @@ from pathlib import Path
 
 
 NOTION_VERSION = "2022-06-28"
-PAGE_URL = "https://www.notion.so/Specials-082fa9625a9f4f949d03a8d1517c76f8"
+PAGE_URL = "https://www.notion.so/Places-082fa9625a9f4f949d03a8d1517c76f8"
 PAGE_ID = "082fa9625a9f4f949d03a8d1517c76f8"
+SPECIALS_DATABASE_ID = "NOTION_SPECIALS_DATABASE_ID"
+SPECIALS_DATABASE_URL = "NOTION_SPECIALS_DATABASE_URL"
+DEFAULT_SPECIALS_DATABASE_ID = "35157df8191880f7accedf40168acee7"
 REPO_DIR = Path(__file__).resolve().parents[1]
 DATA_DIR = Path(__file__).resolve().parent / "data"
 OUTPUT_FILE = DATA_DIR / "specials.json"
@@ -47,6 +50,26 @@ SECTION_TITLES = {
     "Location",
     "Locations",
     *DAY_ORDER,
+}
+DAY_ALIASES = {
+    "mon": "Monday",
+    "monday": "Monday",
+    "tue": "Tuesday",
+    "tues": "Tuesday",
+    "tuesday": "Tuesday",
+    "wed": "Wednesday",
+    "weds": "Wednesday",
+    "wednesday": "Wednesday",
+    "thu": "Thursday",
+    "thur": "Thursday",
+    "thurs": "Thursday",
+    "thursday": "Thursday",
+    "fri": "Friday",
+    "friday": "Friday",
+    "sat": "Saturday",
+    "saturday": "Saturday",
+    "sun": "Sunday",
+    "sunday": "Sunday",
 }
 
 def local_secret(name: str) -> str:
@@ -121,11 +144,98 @@ def notion_request(path: str, token: str) -> dict:
         return json.loads(response.read().decode("utf-8"))
 
 
+def notion_post(path: str, token: str, body: dict) -> dict:
+    request = urllib.request.Request(
+        f"https://api.notion.com/v1/{path}",
+        data=json.dumps(body).encode("utf-8"),
+        headers={
+            "Authorization": f"Bearer {token}",
+            "Notion-Version": NOTION_VERSION,
+            "Accept": "application/json",
+            "Content-Type": "application/json",
+            "User-Agent": "Mozilla/5.0",
+        },
+        method="POST",
+    )
+    with urllib.request.urlopen(request, timeout=30) as response:
+        return json.loads(response.read().decode("utf-8"))
+
+
 def page_title(page: dict) -> str:
     for property_value in page.get("properties", {}).values():
         if property_value.get("type") == "title":
             return rich_text_plain(property_value.get("title", []))
     return "Specials"
+
+
+def property_plain_text(value: dict) -> str:
+    prop_type = (value or {}).get("type")
+    if prop_type == "title":
+        return rich_text_plain((value or {}).get("title", []))
+    if prop_type == "rich_text":
+        return rich_text_plain((value or {}).get("rich_text", []))
+    if prop_type == "select":
+        selected = (value or {}).get("select") or {}
+        return (selected.get("name") or "").strip()
+    if prop_type == "status":
+        selected = (value or {}).get("status") or {}
+        return (selected.get("name") or "").strip()
+    if prop_type == "number":
+        number = (value or {}).get("number")
+        return "" if number is None else str(number)
+    if prop_type == "phone_number":
+        return str((value or {}).get("phone_number") or "").strip()
+    if prop_type == "url":
+        return str((value or {}).get("url") or "").strip()
+    if prop_type == "email":
+        return str((value or {}).get("email") or "").strip()
+    if prop_type == "date":
+        date_value = (value or {}).get("date") or {}
+        return str(date_value.get("start") or "").strip()
+    if prop_type == "formula":
+        formula = (value or {}).get("formula") or {}
+        formula_type = formula.get("type")
+        if formula_type == "string":
+            return (formula.get("string") or "").strip()
+        if formula_type == "number":
+            number = formula.get("number")
+            return "" if number is None else str(number)
+    return ""
+
+
+def property_multi_select_names(value: dict) -> list[str]:
+    prop_type = (value or {}).get("type")
+    if prop_type != "multi_select":
+        return []
+    tags = (value or {}).get("multi_select") or []
+    return [str(tag.get("name") or "").strip() for tag in tags if str(tag.get("name") or "").strip()]
+
+
+def property_by_name(properties: dict, names: list[str]) -> dict:
+    lookup = {key.lower().strip(): val for key, val in (properties or {}).items()}
+    for name in names:
+        value = lookup.get(name.lower().strip())
+        if value is not None:
+            return value
+    return {}
+
+
+def normalize_day_tag(day_value: str) -> str:
+    cleaned = (day_value or "").strip().lower().replace(".", "")
+    if not cleaned:
+        return ""
+    return DAY_ALIASES.get(cleaned, "")
+
+
+def database_id_from_secret_or_url() -> str:
+    direct = secret(SPECIALS_DATABASE_ID)
+    if direct:
+        return direct.replace("-", "").strip()
+    url_value = secret(SPECIALS_DATABASE_URL)
+    if not url_value:
+        return DEFAULT_SPECIALS_DATABASE_ID
+    match = re.search(r"([0-9a-fA-F]{32})", url_value.replace("-", ""))
+    return match.group(1) if match else DEFAULT_SPECIALS_DATABASE_ID
 
 
 def block_text(block: dict) -> str:
@@ -298,6 +408,63 @@ def split_specials_and_locations(groups: list[dict]) -> tuple[list[dict], dict[s
     return special_groups, locations
 
 
+def specials_from_database(token: str, database_id: str) -> list[dict]:
+    results: list[dict] = []
+    cursor = ""
+    while True:
+        body: dict = {"page_size": 100}
+        if cursor:
+            body["start_cursor"] = cursor
+        payload = notion_post(f"databases/{database_id}/query", token, body)
+        results.extend(payload.get("results", []))
+        if not payload.get("has_more"):
+            break
+        cursor = payload.get("next_cursor") or ""
+
+    per_day: dict[str, list[dict]] = {day: [] for day in DAY_ORDER}
+
+    for row in results:
+        properties = row.get("properties", {}) or {}
+        location = property_plain_text(property_by_name(properties, ["Location", "Venue", "Place", "Name"]))
+        details = property_plain_text(property_by_name(properties, ["Details", "Detail", "Special", "Deal"]))
+        price = property_plain_text(property_by_name(properties, ["Price", "Cost"]))
+        time_text = property_plain_text(property_by_name(properties, ["Time", "Hours"]))
+        days_raw = property_multi_select_names(
+            property_by_name(properties, ["Multi-select", "Days", "Day", "Weekdays"])
+        )
+        days = [normalize_day_tag(day) for day in days_raw]
+        days = [day for day in days if day]
+        if not location or not days:
+            continue
+
+        deal_parts = [details.strip()]
+        if price.strip():
+            deal_parts.append(price.strip())
+        if time_text.strip():
+            deal_parts.append(time_text.strip())
+        deal_text = " | ".join([part for part in deal_parts if part])
+
+        item = {
+            "venue": location.strip(),
+            "title": location.strip(),
+            "deal": deal_text or details.strip() or "Special",
+            "description": deal_text or details.strip() or "Special",
+            "details": details.strip(),
+            "price": price.strip(),
+            "time": time_text.strip(),
+            "url": row.get("url", ""),
+        }
+        for day in days:
+            per_day[day].append(item)
+
+    groups: list[dict] = []
+    for day in DAY_ORDER:
+        items = per_day[day]
+        if items:
+            groups.append({"title": day, "days": [day], "items": items})
+    return groups
+
+
 def write_payload(payload: dict) -> None:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     OUTPUT_FILE.write_text(json.dumps(payload, indent=2), encoding="utf-8")
@@ -316,7 +483,11 @@ def scrape_specials() -> dict:
     try:
         page = notion_request(f"pages/{PAGE_ID}", token)
         blocks = flatten_blocks(get_block_children(PAGE_ID, token), token)
-        groups, locations = split_specials_and_locations(specials_from_blocks(blocks))
+        legacy_groups, locations = split_specials_and_locations(specials_from_blocks(blocks))
+        database_id = database_id_from_secret_or_url()
+        groups = legacy_groups
+        if database_id:
+            groups = specials_from_database(token, database_id)
         return {
             "source": PAGE_URL,
             "title": page_title(page),

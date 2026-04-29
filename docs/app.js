@@ -529,6 +529,23 @@ function renderSpecials(payload) {
   }).format(new Date());
   const todayIndex = dayOrder.indexOf(today);
   const rollingWeek = [...dayOrder.slice(todayIndex), ...dayOrder.slice(0, todayIndex)];
+  const dayIndex = new Map(dayOrder.map((name, index) => [name, index]));
+  const itemDaysByKey = new Map();
+
+  for (const group of groups) {
+    const groupDays = (group.days || []).filter((day) => dayIndex.has(day));
+    for (const item of group.items || []) {
+      const key = specialItemKey(item);
+      if (!itemDaysByKey.has(key)) {
+        itemDaysByKey.set(key, new Set());
+      }
+      const bucket = itemDaysByKey.get(key);
+      for (const day of groupDays) {
+        bucket.add(day);
+      }
+    }
+  }
+
   renderTagFilters(locations);
   renderMap();
 
@@ -536,12 +553,74 @@ function renderSpecials(payload) {
     const dayItems = [];
     for (const group of groups) {
       if ((group.days || []).includes(day)) {
-        dayItems.push(...(group.items || []));
+        for (const item of group.items || []) {
+          const fullDays = [...(itemDaysByKey.get(specialItemKey(item)) || new Set([day]))];
+          dayItems.push({ ...item, allDays: fullDays });
+        }
       }
     }
 
     elements.specialsList.append(specialDayElement(day, dayItems, day === today));
   }
+}
+
+function specialItemKey(item) {
+  return [
+    item.venue || item.title || "",
+    item.details || "",
+    item.price || "",
+    item.time || "",
+    item.deal || item.description || "",
+  ]
+    .join("|")
+    .toLowerCase()
+    .trim();
+}
+
+function formatDaysSummary(days) {
+  const dayOrder = [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday",
+  ];
+  const dayIndex = new Map(dayOrder.map((name, index) => [name, index]));
+  const sorted = [...new Set((days || []).filter((day) => dayIndex.has(day)))].sort(
+    (left, right) => dayIndex.get(left) - dayIndex.get(right),
+  );
+  if (!sorted.length) {
+    return "";
+  }
+
+  const ranges = [];
+  let start = sorted[0];
+  let previous = sorted[0];
+  for (let index = 1; index < sorted.length; index += 1) {
+    const current = sorted[index];
+    if (dayIndex.get(current) === dayIndex.get(previous) + 1) {
+      previous = current;
+      continue;
+    }
+    ranges.push([start, previous]);
+    start = current;
+    previous = current;
+  }
+  ranges.push([start, previous]);
+
+  const parts = ranges.map(([rangeStart, rangeEnd]) => {
+    const span = dayIndex.get(rangeEnd) - dayIndex.get(rangeStart) + 1;
+    if (span >= 3) {
+      return `${rangeStart} to ${rangeEnd}`;
+    }
+    if (span === 2) {
+      return `${rangeStart}, ${rangeEnd}`;
+    }
+    return rangeStart;
+  });
+  return parts.join(", ");
 }
 
 function typesFromLocations(locations) {
@@ -752,6 +831,28 @@ function locationForVenue(venue, locations) {
 
 function mapItemFromSpecialGroup(group) {
   const location = group.location;
+  const bySpecial = new Map();
+  for (const item of group.items || []) {
+    const key = specialItemKey(item);
+    if (!bySpecial.has(key)) {
+      bySpecial.set(key, {
+        details: item.details || item.deal || item.description || "",
+        price: item.price || "",
+        time: item.time || "",
+        days: new Set(),
+      });
+    }
+    const entry = bySpecial.get(key);
+    if (item.mapDay) {
+      entry.days.add(item.mapDay);
+    }
+  }
+  const specialEntries = [...bySpecial.values()].map((entry) => ({
+    details: entry.details,
+    price: entry.price,
+    time: entry.time,
+    daysText: formatDaysSummary([...entry.days]) || [...entry.days].join(", "),
+  }));
   return {
     source: "specials",
     lat: location.lat,
@@ -759,6 +860,7 @@ function mapItemFromSpecialGroup(group) {
     title: group.venue,
     url: location.url,
     tags: location.tags || [],
+    specialEntries,
     details: group.items.map((item) => `${item.mapDay}: ${item.deal || item.description || item.title}`),
   };
 }
@@ -833,7 +935,6 @@ function focusSpecialOnMap(venueName) {
   if (marker) {
     const latLng = marker.getLatLng();
     specialsMap.setView(latLng, 14, { animate: true });
-    marker.openPopup();
     if (selectedItem) {
       selectedMapItemKey = mapItemKey(selectedItem);
       renderMapDetail(selectedItem);
@@ -927,11 +1028,39 @@ function renderMapDetail(item) {
     return;
   }
 
-  const details = (item.details || []).map((detail) => `<li>${detail}</li>`).join("");
-  const sourceLabel = item.source === "places" ? "Place" : "Special";
   const title = item.url
     ? `<a href="${item.url}" target="_blank" rel="noreferrer">${item.title}</a>`
     : item.title;
+  if (item.source === "specials") {
+    const entries = (item.specialEntries || [])
+      .map(
+        (entry) => {
+          const lines = [entry.details, entry.price, entry.time, entry.daysText]
+            .filter((value) => (value || "").trim())
+            .map((value) => `<p>${value}</p>`)
+            .join("");
+          return `<div class="map-special-entry">${lines}</div>`;
+        },
+      )
+      .join("");
+    elements.mapDetailPanel.innerHTML = `
+      <article class="map-detail-card">
+        <div class="map-detail-body">
+          <button type="button" class="map-back-button" id="map-back-button">Back to event list</button>
+          <p class="map-detail-source">Special</p>
+          <h4>${title}</h4>
+          ${entries || ""}
+        </div>
+      </article>
+    `;
+    const backButton = document.querySelector("#map-back-button");
+    if (backButton) {
+      backButton.addEventListener("click", () => renderMapDetail(null));
+    }
+    return;
+  }
+  const details = (item.details || []).map((detail) => `<li>${detail}</li>`).join("");
+  const sourceLabel = item.source === "places" ? "Place" : "Special";
   elements.mapDetailPanel.innerHTML = `
     <article class="map-detail-card">
       <div class="map-detail-body">
@@ -1127,9 +1256,10 @@ function renderMap() {
       : item.source === "events"
         ? markerIcons.events
         : markerIcons.specials;
-    const marker = L.marker([item.lat, item.lng], { icon }).bindPopup(
-      `<strong>${title}</strong><p>${sourceLabel}</p><ul>${details}</ul>`,
-    );
+    const marker = L.marker([item.lat, item.lng], { icon });
+    if (item.source !== "specials") {
+      marker.bindPopup(`<strong>${title}</strong><p>${sourceLabel}</p><ul>${details}</ul>`);
+    }
     if (item.source === "specials" || item.source === "places") {
       mapMarkersByKey.set(`${item.source}:${venueKey(item.title)}`, marker);
     }
@@ -1190,32 +1320,44 @@ function specialDayElement(day, items, isToday) {
     return section;
   }
 
-  for (const venueGroup of groupItemsByVenue(items)) {
+  for (const item of items) {
     const card = document.createElement("article");
     card.className = "special-card";
     card.style.cursor = "pointer";
     card.addEventListener("click", () => {
-      focusSpecialOnMap(venueGroup.venue);
+      focusSpecialOnMap(item.venue || item.title || "");
     });
 
     const title = document.createElement("h5");
-    title.textContent = venueGroup.venue;
+    title.textContent = item.venue || item.title || "Special";
     card.append(title);
 
-    for (const item of venueGroup.items) {
-      const line = document.createElement("p");
-      const text = item.deal || item.description || item.title;
-      if (item.url) {
-        const link = document.createElement("a");
-        link.href = item.url;
-        link.target = "_blank";
-        link.rel = "noreferrer";
-        link.textContent = text;
-        line.append(link);
-      } else {
-        line.textContent = text;
-      }
-      card.append(line);
+    const details = document.createElement("p");
+    const detailsText = item.details || item.deal || item.description || "";
+    if (detailsText) {
+      details.textContent = detailsText;
+      card.append(details);
+    }
+
+    const price = document.createElement("p");
+    const priceText = item.price || "";
+    if (priceText) {
+      price.textContent = priceText;
+      card.append(price);
+    }
+
+    const time = document.createElement("p");
+    const timeText = item.time || "";
+    if (timeText) {
+      time.textContent = timeText;
+      card.append(time);
+    }
+
+    const daysText = formatDaysSummary(item.allDays || [day]) || day;
+    if (daysText) {
+      const days = document.createElement("p");
+      days.textContent = daysText;
+      card.append(days);
     }
 
     track.append(card);

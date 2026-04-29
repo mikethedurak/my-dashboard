@@ -640,6 +640,23 @@ td.card-number {
   font-size: 13px;
 }
 
+.map-special-entry {
+  display: grid;
+  gap: 4px;
+  padding: 10px;
+  border: 1px solid #d7e0ea;
+  border-radius: 8px;
+  background: #f6f9fc;
+}
+
+.map-special-entry + .map-special-entry {
+  margin-top: 8px;
+}
+
+.map-special-entry p {
+  margin: 0;
+}
+
 .map-detail-body ul {
   margin: 0;
   padding-left: 18px;
