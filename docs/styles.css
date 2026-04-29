@@ -1004,7 +1004,15 @@ td.card-number {
   }
 
   .map-layout {
-    grid-template-columns: 1fr;
+    grid-template-columns: 180px minmax(0, 1fr) 200px;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  .specials-map,
+  .map-sidebar,
+  .map-detail-panel {
+    height: 440px;
   }
 }
 
