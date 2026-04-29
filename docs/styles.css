@@ -10,6 +10,130 @@
   --danger: #b42318;
 }
 
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0b1220;
+  --panel: #111a2b;
+  --text: #e6edf7;
+  --muted: #9fb0c8;
+  --line: #26344f;
+  --accent: #5eead4;
+  --accent-strong: #99f6e4;
+  --danger: #fda4af;
+}
+
+:root[data-theme="dark"] .weather-strip,
+:root[data-theme="dark"] .dashboard-section,
+:root[data-theme="dark"] .section-content,
+:root[data-theme="dark"] .table-shell,
+:root[data-theme="dark"] .special-group,
+:root[data-theme="dark"] .special-card,
+:root[data-theme="dark"] .subsection-panel,
+:root[data-theme="dark"] .map-sidebar,
+:root[data-theme="dark"] .map-detail-panel,
+:root[data-theme="dark"] .map-detail-card,
+:root[data-theme="dark"] .map-event-list-card,
+:root[data-theme="dark"] .event-card,
+:root[data-theme="dark"] .poster-card,
+:root[data-theme="dark"] .weather-card {
+  background: #111a2b;
+  border-color: #26344f;
+}
+
+:root[data-theme="dark"] .topbar {
+  background: #111a2b;
+  border-bottom-color: #26344f;
+}
+
+:root[data-theme="dark"] .weather-strip-head h2,
+:root[data-theme="dark"] .subsection-title,
+:root[data-theme="dark"] .map-sidebar h4,
+:root[data-theme="dark"] .map-filter-title,
+:root[data-theme="dark"] .subsection-panel summary,
+:root[data-theme="dark"] th {
+  color: #c9d7eb;
+}
+
+:root[data-theme="dark"] th {
+  background: #182339;
+  border-bottom-color: #26344f;
+}
+
+:root[data-theme="dark"] td,
+:root[data-theme="dark"] th {
+  border-bottom-color: #26344f;
+}
+
+:root[data-theme="dark"] input,
+:root[data-theme="dark"] select,
+:root[data-theme="dark"] .map-range-button,
+:root[data-theme="dark"] .map-locate-button,
+:root[data-theme="dark"] .map-back-button,
+:root[data-theme="dark"] .theme-toggle,
+:root[data-theme="dark"] .special-like-button {
+  background: #182339;
+  border-color: #314563;
+  color: #e6edf7;
+}
+
+:root[data-theme="dark"] .map-range-button:hover,
+:root[data-theme="dark"] .map-locate-button:hover,
+:root[data-theme="dark"] .map-back-button:hover,
+:root[data-theme="dark"] .theme-toggle:hover,
+:root[data-theme="dark"] .special-like-button:hover,
+:root[data-theme="dark"] input:hover,
+:root[data-theme="dark"] select:hover {
+  background: #1e2b45;
+}
+
+:root[data-theme="dark"] .map-range-button.is-selected,
+:root[data-theme="dark"] .map-date-button.is-selected,
+:root[data-theme="dark"] .weather-card.is-selected {
+  background: #1f2f4f;
+  border-color: #4f79b2;
+  color: #cfe2ff;
+  box-shadow: inset 0 0 0 1px #4f79b2;
+}
+
+:root[data-theme="dark"] .today-special-group {
+  background: #173126;
+  border-color: #2f6b51;
+}
+
+:root[data-theme="dark"] .map-special-entry {
+  background: #182339;
+  border-color: #314563;
+}
+
+:root[data-theme="dark"] .map-empty-popup,
+:root[data-theme="dark"] .empty,
+:root[data-theme="dark"] .event-venue,
+:root[data-theme="dark"] .map-event-list-body p,
+:root[data-theme="dark"] .map-event-list-header p,
+:root[data-theme="dark"] .map-detail-body p,
+:root[data-theme="dark"] .special-card p,
+:root[data-theme="dark"] .weather-day,
+:root[data-theme="dark"] .custom-date-separator {
+  color: #a9bad3;
+}
+
+:root[data-theme="dark"] input::placeholder {
+  color: #93a8c6;
+}
+
+:root[data-theme="dark"] .new-card-row {
+  background: #162936;
+}
+
+:root[data-theme="dark"] .new-card-row td {
+  border-bottom-color: #2e4a63;
+}
+
+:root[data-theme="dark"] .specials-map {
+  background: #111a2b;
+  border-color: #26344f;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -72,6 +196,22 @@ h1 {
 .source-link:hover,
 .buy-link:hover {
   text-decoration: underline;
+}
+
+.theme-toggle {
+  min-height: 36px;
+  padding: 7px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  color: var(--text);
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  background: color-mix(in oklab, var(--panel) 88%, white 12%);
 }
 
 main {

@@ -62,6 +62,7 @@ const elements = {
   quicketEventsList: document.querySelector("#quicket-events-list"),
   todayDate: document.querySelector("#today-date"),
   lastScraped: document.querySelector("#last-scraped"),
+  themeToggle: document.querySelector("#theme-toggle"),
 };
 const mapRangeButtons = [...document.querySelectorAll(".map-range-button[data-range]")];
 
@@ -368,6 +369,34 @@ function setLastScrapedText(value) {
     timeZone: "Africa/Johannesburg",
   }).format(parsed);
   elements.lastScraped.textContent = `Last scraped: ${formatted}`;
+}
+
+function themeStorageKey() {
+  return "my-dashboard:theme:v1";
+}
+
+function applyTheme(theme) {
+  const finalTheme = theme === "dark" ? "dark" : "light";
+  document.documentElement.setAttribute("data-theme", finalTheme);
+  if (elements.themeToggle) {
+    elements.themeToggle.textContent = finalTheme === "dark" ? "Day mode" : "Night mode";
+  }
+}
+
+function loadThemePreference() {
+  try {
+    return localStorage.getItem(themeStorageKey()) || "";
+  } catch {
+    return "";
+  }
+}
+
+function saveThemePreference(theme) {
+  try {
+    localStorage.setItem(themeStorageKey(), theme);
+  } catch {
+    // Ignore storage failures.
+  }
 }
 
 function weatherIcon(weatherCode) {
@@ -1753,6 +1782,22 @@ elements.mapSourceEvents.addEventListener("change", (event) => {
 
 if (elements.locateMe) {
   elements.locateMe.addEventListener("click", showMyLocation);
+}
+
+if (elements.themeToggle) {
+  elements.themeToggle.addEventListener("click", () => {
+    const current = document.documentElement.getAttribute("data-theme") || "light";
+    const next = current === "dark" ? "light" : "dark";
+    applyTheme(next);
+    saveThemePreference(next);
+  });
+}
+
+const storedTheme = loadThemePreference();
+if (storedTheme) {
+  applyTheme(storedTheme);
+} else {
+  applyTheme("light");
 }
 
 load();
