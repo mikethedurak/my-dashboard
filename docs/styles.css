@@ -415,6 +415,10 @@ td.card-number {
 }
 
 .map-sidebar {
+  height: 520px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
   padding: 12px;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -427,10 +431,19 @@ td.card-number {
   font-size: 13px;
   font-weight: 900;
   text-transform: uppercase;
+  flex: 0 0 auto;
 }
 
 .map-filter-block {
   margin-top: 12px;
+  flex: 0 0 auto;
+}
+
+.map-filter-block:last-of-type {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .map-locate-button {
@@ -478,6 +491,9 @@ td.card-number {
 .map-tag-filters {
   display: grid;
   gap: 4px;
+  min-height: 0;
+  overflow-y: auto;
+  padding-right: 4px;
 }
 
 .map-empty-popup {
