@@ -9,6 +9,7 @@ const WEATHER_PATH =
 const HOLIDAYS_PATH = "https://date.nager.at/api/v3/publicholidays/{year}/ZA";
 const METADATA_PATH = "data/metadata.json";
 const GOOGLE_CALENDAR_EVENTS_PATH = "data/google_calendar_events.json";
+const WEEK_DAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 
 const state = {
   rows: [],
@@ -30,6 +31,9 @@ const state = {
   availableMapTypes: [],
   selectedMapCategories: new Set(),
   availableMapCategories: [],
+  weatherPayload: null,
+  customStartDate: "",
+  customEndDate: "",
 };
 
 const elements = {
@@ -44,7 +48,10 @@ const elements = {
   weatherCards: document.querySelector("#weather-cards"),
   specialsList: document.querySelector("#specials-list"),
   specialsMap: document.querySelector("#specials-map"),
-  specialsMapRange: document.querySelector("#specials-map-range"),
+  customStartDate: document.querySelector("#custom-start-date"),
+  customEndDate: document.querySelector("#custom-end-date"),
+  customStartDateButton: document.querySelector("#custom-start-date-button"),
+  customEndDateButton: document.querySelector("#custom-end-date-button"),
   mapSourcePlaces: document.querySelector("#map-source-places"),
   mapSourceSpecials: document.querySelector("#map-source-specials"),
   mapSourceEvents: document.querySelector("#map-source-events"),
@@ -56,6 +63,7 @@ const elements = {
   todayDate: document.querySelector("#today-date"),
   lastScraped: document.querySelector("#last-scraped"),
 };
+const mapRangeButtons = [...document.querySelectorAll(".map-range-button")];
 
 let specialsMap;
 let specialsMarkerLayer;
@@ -394,6 +402,14 @@ function weatherDayLabel(dateValue) {
   }).format(date);
 }
 
+function weekdayFromDate(dateValue) {
+  const date = new Date(`${dateValue}T00:00:00`);
+  return new Intl.DateTimeFormat("en-US", {
+    weekday: "long",
+    timeZone: "Africa/Johannesburg",
+  }).format(date);
+}
+
 function renderWeather(payload) {
   const daily = payload?.daily;
   if (!daily?.time?.length) {
@@ -415,8 +431,18 @@ function renderWeather(payload) {
     .then(([holidayByDate, calendarByDate]) => {
       elements.weatherCards.innerHTML = "";
       for (const item of items) {
-        const card = document.createElement("article");
+        const card = document.createElement("button");
+        card.type = "button";
         card.className = "weather-card";
+        const weekday = weekdayFromDate(item.date);
+        if (WEEK_DAYS.includes(state.specialsMapRange) && state.specialsMapRange === weekday) {
+          card.classList.add("is-selected");
+        }
+        card.addEventListener("click", () => {
+          clearCustomDateRange();
+          state.specialsMapRange = weekday;
+          applyMapRangeChange();
+        });
         const holidayName = holidayByDate.get(item.date) || "";
         const holidayHtml = holidayName ? `<p class="weather-holiday">${holidayName}</p>` : "";
         const calendarItems = calendarByDate.get(item.date) || [];
@@ -440,8 +466,18 @@ function renderWeather(payload) {
     .catch(() => {
       elements.weatherCards.innerHTML = "";
       for (const item of items) {
-        const card = document.createElement("article");
+        const card = document.createElement("button");
+        card.type = "button";
         card.className = "weather-card";
+        const weekday = weekdayFromDate(item.date);
+        if (WEEK_DAYS.includes(state.specialsMapRange) && state.specialsMapRange === weekday) {
+          card.classList.add("is-selected");
+        }
+        card.addEventListener("click", () => {
+          clearCustomDateRange();
+          state.specialsMapRange = weekday;
+          applyMapRangeChange();
+        });
         card.innerHTML = `
           <p class="weather-day">${weatherDayLabel(item.date)}</p>
           <p class="weather-icon">${weatherIcon(item.code)}</p>
@@ -578,15 +614,7 @@ function specialItemKey(item) {
 }
 
 function formatDaysSummary(days) {
-  const dayOrder = [
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-    "Sunday",
-  ];
+  const dayOrder = WEEK_DAYS;
   const dayIndex = new Map(dayOrder.map((name, index) => [name, index]));
   const sorted = [...new Set((days || []).filter((day) => dayIndex.has(day)))].sort(
     (left, right) => dayIndex.get(left) - dayIndex.get(right),
@@ -770,19 +798,66 @@ function renderQuicketEvents(events) {
 }
 
 function selectedMapDays(rollingWeek) {
+  if (state.customStartDate || state.customEndDate) {
+    const nowDate = new Date();
+    const defaultStart = `${nowDate.getFullYear()}-${String(nowDate.getMonth() + 1).padStart(2, "0")}-${String(nowDate.getDate()).padStart(2, "0")}`;
+    const start = state.customStartDate || defaultStart;
+    const end = state.customEndDate || start;
+    const weekdays = weekdaysInRange(start, end);
+    return weekdays.length ? weekdays : rollingWeek;
+  }
   if (state.specialsMapRange === "today") {
     return rollingWeek.slice(0, 1);
   }
   if (state.specialsMapRange === "next-7") {
     return rollingWeek;
   }
+  if (WEEK_DAYS.includes(state.specialsMapRange)) {
+    return [state.specialsMapRange];
+  }
   return rollingWeek;
+}
+
+function weekdaysInRange(startDateValue, endDateValue) {
+  if (!startDateValue || !endDateValue) {
+    return [];
+  }
+  const start = new Date(`${startDateValue}T00:00:00`);
+  const end = new Date(`${endDateValue}T23:59:59`);
+  if (Number.isNaN(start.getTime()) || Number.isNaN(end.getTime()) || end < start) {
+    return [];
+  }
+  const days = new Set();
+  const cursor = new Date(start);
+  while (cursor <= end) {
+    const day = new Intl.DateTimeFormat("en-US", {
+      weekday: "long",
+      timeZone: "Africa/Johannesburg",
+    }).format(cursor);
+    if (WEEK_DAYS.includes(day)) {
+      days.add(day);
+    }
+    cursor.setDate(cursor.getDate() + 1);
+  }
+  return WEEK_DAYS.filter((day) => days.has(day));
 }
 
 function mapRangeWindow() {
   const now = new Date();
   const start = new Date(now);
   let end;
+  if (state.customStartDate || state.customEndDate) {
+    const startCustom = state.customStartDate ? new Date(`${state.customStartDate}T00:00:00`) : new Date(now);
+    const endCustom = state.customEndDate
+      ? new Date(`${state.customEndDate}T23:59:59`)
+      : new Date(startCustom.getTime() + 365 * 24 * 60 * 60 * 1000);
+    if (!Number.isNaN(startCustom.getTime()) && !Number.isNaN(endCustom.getTime())) {
+      if (endCustom < startCustom) {
+        return { start: startCustom, end: startCustom };
+      }
+      return { start: startCustom, end: endCustom };
+    }
+  }
   if (state.specialsMapRange === "today") {
     end = new Date(now);
     end.setHours(23, 59, 59, 999);
@@ -790,10 +865,56 @@ function mapRangeWindow() {
     end = new Date(now.getTime() + 7 * 24 * 60 * 60 * 1000);
   } else if (state.specialsMapRange === "next-month") {
     end = new Date(now.getTime() + 30 * 24 * 60 * 60 * 1000);
+  } else if (WEEK_DAYS.includes(state.specialsMapRange)) {
+    const targetIndex = WEEK_DAYS.indexOf(state.specialsMapRange);
+    const currentIndex = new Intl.DateTimeFormat("en-US", {
+      weekday: "long",
+      timeZone: "Africa/Johannesburg",
+    }).format(now);
+    const currentPos = WEEK_DAYS.indexOf(currentIndex);
+    const dayDelta = (targetIndex - currentPos + 7) % 7;
+    start.setHours(0, 0, 0, 0);
+    start.setDate(start.getDate() + dayDelta);
+    end = new Date(start);
+    end.setHours(23, 59, 59, 999);
   } else {
     end = new Date(now.getTime() + 365 * 24 * 60 * 60 * 1000);
   }
   return { start, end };
+}
+
+function syncRangeButtons() {
+  const usingDateRange = Boolean(state.customStartDate || state.customEndDate);
+  for (const button of mapRangeButtons) {
+    button.classList.toggle("is-selected", !usingDateRange && button.dataset.range === state.specialsMapRange);
+  }
+  if (elements.customStartDateButton) {
+    elements.customStartDateButton.classList.toggle("is-selected", Boolean(state.customStartDate));
+    elements.customStartDateButton.textContent = state.customStartDate || "dd/mm/yyyy";
+  }
+  if (elements.customEndDateButton) {
+    elements.customEndDateButton.classList.toggle("is-selected", Boolean(state.customEndDate));
+    elements.customEndDateButton.textContent = state.customEndDate || "dd/mm/yyyy";
+  }
+}
+
+function applyMapRangeChange() {
+  renderMap();
+  if (state.weatherPayload) {
+    renderWeather(state.weatherPayload);
+  }
+  syncRangeButtons();
+}
+
+function clearCustomDateRange() {
+  state.customStartDate = "";
+  state.customEndDate = "";
+  if (elements.customStartDate) {
+    elements.customStartDate.value = "";
+  }
+  if (elements.customEndDate) {
+    elements.customEndDate.value = "";
+  }
 }
 
 function specialsItemsForRange(groups, rollingWeek) {
@@ -1459,6 +1580,7 @@ async function loadWeather() {
       throw new Error("Could not load weather.");
     }
     const payload = await response.json();
+    state.weatherPayload = payload;
     renderWeather(payload);
   } catch (error) {
     elements.weatherCards.innerHTML = `<p class="empty">${error.message}</p>`;
@@ -1572,10 +1694,47 @@ elements.maxPrice.addEventListener("input", (event) => {
   render();
 });
 
-elements.specialsMapRange.addEventListener("change", (event) => {
-  state.specialsMapRange = event.target.value;
-  renderMap();
-});
+for (const button of mapRangeButtons) {
+  button.addEventListener("click", () => {
+    clearCustomDateRange();
+    state.specialsMapRange = button.dataset.range || "next-7";
+    applyMapRangeChange();
+  });
+}
+
+if (elements.customStartDate) {
+  elements.customStartDate.addEventListener("change", (event) => {
+    state.customStartDate = event.target.value || "";
+    applyMapRangeChange();
+  });
+}
+
+if (elements.customEndDate) {
+  elements.customEndDate.addEventListener("change", (event) => {
+    state.customEndDate = event.target.value || "";
+    applyMapRangeChange();
+  });
+}
+
+if (elements.customStartDateButton && elements.customStartDate) {
+  elements.customStartDateButton.addEventListener("click", () => {
+    if (typeof elements.customStartDate.showPicker === "function") {
+      elements.customStartDate.showPicker();
+    } else {
+      elements.customStartDate.click();
+    }
+  });
+}
+
+if (elements.customEndDateButton && elements.customEndDate) {
+  elements.customEndDateButton.addEventListener("click", () => {
+    if (typeof elements.customEndDate.showPicker === "function") {
+      elements.customEndDate.showPicker();
+    } else {
+      elements.customEndDate.click();
+    }
+  });
+}
 
 elements.mapSourcePlaces.addEventListener("change", (event) => {
   state.mapSources.places = event.target.checked;
@@ -1604,5 +1763,6 @@ loadReleases();
 loadComingSoon();
 loadSpecials();
 loadQuicketEvents();
+syncRangeButtons();
 
 
