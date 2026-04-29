@@ -183,7 +183,7 @@ main {
 .dashboard-section summary {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 16px;
   padding: 15px 18px;
   color: var(--text);
@@ -666,6 +666,10 @@ td.card-number {
 }
 
 .subsection-panel summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
   padding: 13px 14px;
   color: #344054;
   cursor: pointer;
@@ -685,10 +689,11 @@ td.card-number {
   place-items: center;
   width: 20px;
   height: 20px;
-  margin-right: 8px;
+  margin-left: auto;
   color: var(--accent-strong);
   border: 1px solid var(--line);
   border-radius: 999px;
+  order: 2;
 }
 
 .subsection-panel[open] summary::before {
