@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import argparse
 import json
 import os
 import re
@@ -22,8 +23,10 @@ DOCS_OUTPUT_FILE = DOCS_DATA_DIR / "watchlist.json"
 LOCAL_SECRETS_FILE = REPO_DIR / "secrets.env"
 TMDB_IMAGE_BASE = "https://image.tmdb.org/t/p/w342"
 TMDB_SITE_MOVIE_BASE = "https://www.themoviedb.org/movie"
-MOVIE_DETAIL_FIELDS = {
+TMDB_SITE_TV_BASE = "https://www.themoviedb.org/tv"
+DETAIL_FIELDS = {
     "tmdb_id",
+    "media_type",
     "rating",
     "poster_url",
     "release_date",
@@ -72,6 +75,14 @@ def rich_text_plain(rich_text: list[dict]) -> str:
     return "".join(part.get("plain_text", "") for part in rich_text).strip()
 
 
+def rich_text_has_bold(rich_text: list[dict]) -> bool:
+    for part in rich_text:
+        annotations = part.get("annotations") or {}
+        if annotations.get("bold"):
+            return True
+    return False
+
+
 def notion_request(path: str, token: str) -> dict:
     request = urllib.request.Request(
         f"https://api.notion.com/v1/{path}",
@@ -113,6 +124,14 @@ def block_text(block: dict) -> str:
         prefix = "[x] " if checked else "[ ] "
         return f"{prefix}{text}".strip() if text else ""
     return text
+
+
+def block_is_bold(block: dict) -> bool:
+    block_type = block.get("type", "")
+    if block_type not in TEXT_BLOCK_TYPES:
+        return False
+    value = block.get(block_type, {}) or {}
+    return rich_text_has_bold(value.get("rich_text", []))
 
 
 def get_block_children(block_id: str, token: str) -> list[dict]:
@@ -172,6 +191,50 @@ def movie_key(title: str) -> str:
     return normalized
 
 
+def detail_key(media_type: str, title: str) -> str:
+    return f"{media_type}:{movie_key(title)}"
+
+
+def metadata_query_title(title: str, media_type: str) -> str:
+    cleaned = str(title or "").strip()
+    if media_type != "series":
+        return cleaned
+    cleaned = re.sub(r"\s+S\d{2}(?:(?:\s*,\s*(?:S)?\d{2})|(?:\s*-\s*(?:S)?\d{2}))*\s*$", "", cleaned, flags=re.IGNORECASE)
+    return cleaned.strip() or str(title or "").strip()
+
+
+def normalize_watch_title(title: str, media_type: str) -> str:
+    cleaned = str(title or "").strip()
+    if media_type == "series":
+        return metadata_query_title(cleaned, media_type)
+    return cleaned
+
+
+def metadata_query_titles(title: str, media_type: str) -> list[str]:
+    original = str(title or "").strip()
+    if media_type != "series":
+        return [original] if original else []
+
+    variants = []
+    season_stripped = metadata_query_title(original, media_type)
+    if season_stripped:
+        variants.append(season_stripped)
+
+    # Handle more casual suffixes like "Show S01, 02", "Show Season 1", or repeated spaces.
+    variants.append(re.sub(r"\s+season\s+\d+(?:\s*-\s*\d+)?\s*$", "", original, flags=re.IGNORECASE).strip())
+    variants.append(re.sub(r"\s+s\d{1,2}(?:[,\-\s]+(?:s)?\d{1,2})*\s*$", "", original, flags=re.IGNORECASE).strip())
+    variants.append(original)
+
+    deduped = []
+    seen = set()
+    for value in variants:
+      normalized = re.sub(r"\s+", " ", value).strip()
+      if normalized and normalized.lower() not in seen:
+          seen.add(normalized.lower())
+          deduped.append(normalized)
+    return deduped
+
+
 def parse_watchlist(flat_blocks: list[tuple[dict, int]]) -> dict:
     current_domain = "movie"
     in_currently_watching = False
@@ -184,6 +247,7 @@ def parse_watchlist(flat_blocks: list[tuple[dict, int]]) -> dict:
     for block, _depth in flat_blocks:
         block_type = block.get("type", "")
         text = block_text(block)
+        is_bold = block_is_bold(block)
         if not text:
             continue
 
@@ -239,18 +303,19 @@ def parse_watchlist(flat_blocks: list[tuple[dict, int]]) -> dict:
             continue
 
         title = clean_title(text)
+        title = normalize_watch_title(title, current_domain)
         if not title:
             continue
 
         if in_currently_watching and ((not in_now_section) or in_must_watch):
             if current_domain == "series":
-                current["series"].append(title)
+                current["series"].append({"title": title, "loved": is_bold})
             else:
-                current["movies"].append(title)
+                current["movies"].append({"title": title, "loved": is_bold})
             continue
 
         if active_year:
-            years.setdefault(active_year, []).append({"type": current_domain, "title": title})
+            years.setdefault(active_year, []).append({"type": current_domain, "title": title, "loved": is_bold})
 
     history_by_year: list[dict] = []
     for year in sorted(years.keys(), reverse=True):
@@ -299,18 +364,25 @@ def progress_bar(processed: int, total: int, width: int = 24) -> str:
     return "[" + ("#" * filled) + ("-" * (width - filled)) + "]"
 
 
-def extract_movie_titles(payload: dict) -> list[str]:
+def extract_titles(payload: dict, media_type: str) -> list[str]:
     titles: list[str] = []
-    current_movies = payload.get("currently_watching", {}).get("movies", [])
-    if isinstance(current_movies, list):
-        titles.extend(str(title).strip() for title in current_movies if str(title).strip())
+    current_key = "series" if media_type == "series" else "movies"
+    current_items = payload.get("currently_watching", {}).get(current_key, [])
+    if isinstance(current_items, list):
+        for item in current_items:
+            if isinstance(item, dict):
+                title = str(item.get("title", "")).strip()
+            else:
+                title = str(item).strip()
+            if title:
+                titles.append(title)
 
     for group in payload.get("history_by_year", []):
         entries = group.get("entries", [])
         if not isinstance(entries, list):
             continue
         for entry in entries:
-            if str(entry.get("type", "")).strip().lower() != "movie":
+            if str(entry.get("type", "")).strip().lower() != media_type:
                 continue
             title = str(entry.get("title", "")).strip()
             if title:
@@ -318,23 +390,31 @@ def extract_movie_titles(payload: dict) -> list[str]:
     return sorted(set(titles))
 
 
-def fetch_movie_detail(title: str, tmdb_token: str) -> dict:
-    result = {"title": title}
-    try:
-        search_payload = tmdb_request(
-            "search/movie",
-            tmdb_token,
-            {
-                "query": title,
-                "include_adult": "false",
-                "language": "en-US",
-                "page": "1",
-            },
-        )
-    except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError, ValueError):
-        return result
+def fetch_title_detail(title: str, media_type: str, tmdb_token: str) -> dict:
+    result = {"title": title, "media_type": media_type}
+    search_path = "search/tv" if media_type == "series" else "search/movie"
+    detail_path = "tv" if media_type == "series" else "movie"
+    site_base = TMDB_SITE_TV_BASE if media_type == "series" else TMDB_SITE_MOVIE_BASE
+    results = []
+    for query_title in metadata_query_titles(title, media_type):
+        try:
+            search_payload = tmdb_request(
+                search_path,
+                tmdb_token,
+                {
+                    "query": query_title,
+                    "include_adult": "false",
+                    "language": "en-US",
+                    "page": "1",
+                },
+            )
+        except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError, ValueError):
+            continue
 
-    results = search_payload.get("results", [])
+        results = search_payload.get("results", [])
+        if isinstance(results, list) and results:
+            break
+
     if not isinstance(results, list) or not results:
         return result
     first = results[0]
@@ -346,7 +426,7 @@ def fetch_movie_detail(title: str, tmdb_token: str) -> dict:
 
     try:
         details_payload = tmdb_request(
-            f"movie/{tmdb_id}",
+            f"{detail_path}/{tmdb_id}",
             tmdb_token,
             {
                 "language": "en-US",
@@ -359,9 +439,13 @@ def fetch_movie_detail(title: str, tmdb_token: str) -> dict:
     chosen = details_payload if isinstance(details_payload, dict) and details_payload else first
     poster_path = str(chosen.get("poster_path") or "").strip()
     vote_average = chosen.get("vote_average")
-    release_date = str(chosen.get("release_date") or "").strip()
+    release_date = str(chosen.get("release_date") or chosen.get("first_air_date") or "").strip()
     overview = str(chosen.get("overview") or "").strip()
     runtime = chosen.get("runtime")
+    if media_type == "series" and not isinstance(runtime, (int, float)):
+        runtimes = details_payload.get("episode_run_time", []) if isinstance(details_payload, dict) else []
+        if isinstance(runtimes, list) and runtimes:
+            runtime = runtimes[0]
 
     credits = details_payload.get("credits", {}) if isinstance(details_payload, dict) else {}
     cast = credits.get("cast", []) if isinstance(credits, dict) else []
@@ -370,11 +454,18 @@ def fetch_movie_detail(title: str, tmdb_token: str) -> dict:
     video_results = videos.get("results", []) if isinstance(videos, dict) else []
     genres = details_payload.get("genres", []) if isinstance(details_payload, dict) else []
 
-    directors = [
-        str(person.get("name") or "").strip()
-        for person in crew
-        if str(person.get("job") or "").strip().lower() == "director" and str(person.get("name") or "").strip()
-    ]
+    if media_type == "series":
+        directors = [
+            str(person.get("name") or "").strip()
+            for person in details_payload.get("created_by", [])
+            if str(person.get("name") or "").strip()
+        ] if isinstance(details_payload, dict) else []
+    else:
+        directors = [
+            str(person.get("name") or "").strip()
+            for person in crew
+            if str(person.get("job") or "").strip().lower() == "director" and str(person.get("name") or "").strip()
+        ]
     actors = [
         str(person.get("name") or "").strip()
         for person in cast[:8]
@@ -411,34 +502,63 @@ def fetch_movie_detail(title: str, tmdb_token: str) -> dict:
     result["actors"] = actors
     result["trailer_url"] = trailer_url
     result["genres"] = genre_names
-    result["tmdb_url"] = f"{TMDB_SITE_MOVIE_BASE}/{tmdb_id}"
+    result["tmdb_url"] = f"{site_base}/{tmdb_id}"
     return result
 
 
 def merge_movie_details(existing: dict, fetched: dict) -> dict:
     merged = dict(existing)
     merged.setdefault("title", str(existing.get("title") or fetched.get("title") or "").strip())
-    for key in MOVIE_DETAIL_FIELDS:
+    for key in DETAIL_FIELDS:
         if key in merged:
             continue
         merged[key] = fetched.get(key)
     return merged
 
 
+def normalize_cached_detail(entry: dict, media_type: str, title: str) -> dict:
+    normalized = dict(entry) if isinstance(entry, dict) else {}
+    normalized["title"] = str(normalized.get("title") or title).strip()
+    normalized["media_type"] = str(normalized.get("media_type") or media_type).strip() or media_type
+
+    if not normalized.get("description") and normalized.get("overview"):
+        normalized["description"] = normalized.get("overview")
+
+    if not normalized.get("tmdb_url") and normalized.get("tmdb_id"):
+        tmdb_id = normalized.get("tmdb_id")
+        if isinstance(tmdb_id, int):
+            base = TMDB_SITE_TV_BASE if normalized["media_type"] == "series" else TMDB_SITE_MOVIE_BASE
+            normalized["tmdb_url"] = f"{base}/{tmdb_id}"
+
+    return normalized
+
+
 def movie_detail_needs_fetch(entry: dict) -> bool:
     if not isinstance(entry, dict):
         return True
-    return any(field not in entry for field in MOVIE_DETAIL_FIELDS)
+    return any(field not in entry for field in DETAIL_FIELDS)
 
 
-def enrich_payload_with_movie_details(payload: dict) -> dict:
+def enrich_payload_with_movie_details(payload: dict, selected_types: set[str] | None = None, hard: bool = False) -> dict:
     tmdb_token = secret("TMDB_BEARER_TOKEN")
-    titles = extract_movie_titles(payload)
-    keys_in_use = {movie_key(title) for title in titles if movie_key(title)}
+    movie_titles = extract_titles(payload, "movie")
+    series_titles = extract_titles(payload, "series")
+    all_titles = [("movie", title) for title in movie_titles] + [("series", title) for title in series_titles]
+    selected = selected_types or {"movie", "series"}
+    titles = [(media_type, title) for media_type, title in all_titles if media_type in selected]
+    keys_in_use = {
+        detail_key(media_type, title)
+        for media_type, title in all_titles
+        if movie_key(title)
+    }
     cache = load_movie_details_cache()
 
     # Remove cache entries no longer present in watchlist.
-    cache = {key: value for key, value in cache.items() if key in keys_in_use}
+    cache = {
+        key: value
+        for key, value in cache.items()
+        if key in keys_in_use or (not key.startswith(("movie:", "series:")) and f"movie:{key}" in keys_in_use)
+    }
 
     total = len(titles)
     processed = 0
@@ -446,6 +566,7 @@ def enrich_payload_with_movie_details(payload: dict) -> dict:
     def persist(status: str, current_title: str) -> None:
         percent = int(round((processed / total) * 100)) if total else 100
         payload["movie_details"] = cache
+        payload["watchlist_details"] = cache
         payload["enrichment_progress"] = {
             "status": status,
             "processed": processed,
@@ -459,22 +580,28 @@ def enrich_payload_with_movie_details(payload: dict) -> dict:
     persist("running", "")
 
     try:
-        for title in titles:
-            key = movie_key(title)
+        for media_type, title in titles:
+            key = detail_key(media_type, title)
             source = "cached"
             if key:
-                existing = cache.get(key, {"title": title})
-                if movie_detail_needs_fetch(existing) and tmdb_token:
-                    fetched = fetch_movie_detail(title, tmdb_token)
+                fallback_key = movie_key(title) if media_type == "movie" else ""
+                existing = cache.get(key) or (cache.get(fallback_key) if fallback_key else None) or {
+                    "title": title,
+                    "media_type": media_type,
+                }
+                existing = normalize_cached_detail(existing, media_type, title)
+                needs_fetch = hard or movie_detail_needs_fetch(existing)
+                if needs_fetch and tmdb_token:
+                    fetched = fetch_title_detail(title, media_type, tmdb_token)
                     cache[key] = merge_movie_details(existing, fetched)
                 else:
                     cache[key] = existing
                 source = "fetched"
-                if not movie_detail_needs_fetch(existing):
+                if not needs_fetch:
                     source = "cached"
             processed += 1
             persist("running", title)
-            print(f"{progress_bar(processed, total)} {processed}/{total} {source}: {title}")
+            print(f"{progress_bar(processed, total)} {processed}/{total} {source}: {media_type} {title}")
     except KeyboardInterrupt:
         persist("interrupted", "")
         print("Interrupted: partial watchlist details were saved.")
@@ -484,7 +611,7 @@ def enrich_payload_with_movie_details(payload: dict) -> dict:
     return payload
 
 
-def scrape_watchlist() -> dict:
+def scrape_watchlist(selected_types: set[str] | None = None, hard: bool = False) -> dict:
     token = secret("NOTION_TOKEN") or secret("NOTION_API_TOKEN")
     page_id = extract_page_id()
     page_url = secret("NOTION_WATCHLIST_PAGE_URL").strip() or DEFAULT_WATCHLIST_URL
@@ -505,7 +632,7 @@ def scrape_watchlist() -> dict:
         payload = parse_watchlist(flat)
         payload["source"] = page_url
         payload["page_id"] = page_id
-        return enrich_payload_with_movie_details(payload)
+        return enrich_payload_with_movie_details(payload, selected_types=selected_types, hard=hard)
     except urllib.error.HTTPError as error:
         detail = error.read().decode("utf-8", errors="replace")
         return {
@@ -528,7 +655,27 @@ def scrape_watchlist() -> dict:
 
 
 def main() -> int:
-    payload = scrape_watchlist()
+    parser = argparse.ArgumentParser(description="Scrape watchlist from Notion and enrich titles from TMDB.")
+    parser.add_argument(
+        "--type",
+        choices=["all", "movies", "series"],
+        default="all",
+        help="Which media type to enrich.",
+    )
+    parser.add_argument(
+        "--hard",
+        action="store_true",
+        help="Re-fetch selected entries even if cached details already exist.",
+    )
+    args = parser.parse_args()
+
+    selected_types = {"movie", "series"}
+    if args.type == "movies":
+        selected_types = {"movie"}
+    elif args.type == "series":
+        selected_types = {"series"}
+
+    payload = scrape_watchlist(selected_types=selected_types, hard=args.hard)
     write_payload(payload)
     total_entries = sum(len(group.get("entries", [])) for group in payload.get("history_by_year", []))
     print(

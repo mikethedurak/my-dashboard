@@ -35,7 +35,7 @@ const state = {
   weatherPayload: null,
   customStartDate: "",
   customEndDate: "",
-  watchlistType: "movie",
+  watchlistTypes: new Set(["movie"]),
   watchlistPayload: null,
   watchlistYearFilter: "all",
   watchlistGenreFilter: "all",
@@ -407,6 +407,25 @@ function safeWatchType(item) {
   return "";
 }
 
+function safeWatchLoved(item) {
+  return Boolean(item && typeof item === "object" && item.loved);
+}
+
+function watchlistHasType(type) {
+  return state.watchlistTypes.has(type);
+}
+
+function toggleWatchlistType(type) {
+  if (watchlistHasType(type)) {
+    if (state.watchlistTypes.size === 1) {
+      return;
+    }
+    state.watchlistTypes.delete(type);
+  } else {
+    state.watchlistTypes.add(type);
+  }
+}
+
 function escapeHtml(value) {
   return String(value || "")
     .replace(/&/g, "&amp;")
@@ -435,58 +454,53 @@ function movieLookupKey(title) {
     .trim();
 }
 
-function movieDetailsForTitle(payload, title) {
-  const details = payload?.movie_details || {};
-  const key = movieLookupKey(title);
+function detailsLookupKey(type, title) {
+  return `${type}:${movieLookupKey(title)}`;
+}
+
+function detailsForTitle(payload, type, title) {
+  const details = payload?.watchlist_details || payload?.movie_details || {};
+  const key = detailsLookupKey(type, title);
   if (!key) {
     return null;
   }
-  const value = details[key];
+  const fallbackKey = type === "movie" ? movieLookupKey(title) : "";
+  const value = details[key] || (fallbackKey ? details[fallbackKey] : null);
   if (!value || typeof value !== "object") {
     return null;
   }
   return value;
 }
 
-function renderWatchlistTitleCard(type, title, payload) {
-  const movieDetails = type === "movie" ? movieDetailsForTitle(payload, title) : null;
-  const posterUrl = String(movieDetails?.poster_url || "").trim();
-  const ratingValue = movieDetails?.rating;
+function renderWatchlistTitleCard(type, title, payload, item = null) {
+  const mediaDetails = detailsForTitle(payload, type, title);
+  const posterUrl = String(mediaDetails?.poster_url || "").trim();
+  const ratingValue = mediaDetails?.rating;
   const hasRating = Number.isFinite(Number(ratingValue));
   const ratingText = hasRating ? `${Number(ratingValue).toFixed(1)} / 10` : "No rating";
   const safeTitle = escapeHtml(title);
+  const loved = safeWatchLoved(item);
+  const lovedBadge = loved ? '<span class="watchlist-loved-badge">Loved</span>' : "";
 
   const posterHtml = posterUrl
     ? `<img class="watchlist-entry-poster" src="${posterUrl}" alt="${safeTitle} poster" loading="lazy">`
     : '<div class="watchlist-entry-poster watchlist-entry-poster-empty">No poster</div>';
 
   const badgeLabel = type === "series" ? "Series" : "Movie";
-  if (type === "movie") {
-    return `
-      <button
-        type="button"
-        class="watchlist-entry watchlist-current-entry watchlist-entry-button"
-        data-watch-type="${type}"
-        data-watch-title="${encodeURIComponent(title)}"
-      >
-        ${posterHtml}
-        <div class="watchlist-entry-body">
-          <p class="watchlist-entry-type">${badgeLabel}</p>
-          <p class="watchlist-entry-title">${safeTitle}</p>
-          <p class="watchlist-entry-rating">${ratingText}</p>
-        </div>
-      </button>
-    `;
-  }
   return `
-    <article class="watchlist-entry watchlist-current-entry" data-watch-type="${type}">
+    <button
+      type="button"
+      class="watchlist-entry watchlist-current-entry watchlist-entry-button${loved ? " is-loved" : ""}"
+      data-watch-type="${type}"
+      data-watch-title="${encodeURIComponent(title)}"
+    >
       ${posterHtml}
       <div class="watchlist-entry-body">
-        <p class="watchlist-entry-type">${badgeLabel}</p>
+        <p class="watchlist-entry-type">${badgeLabel}${lovedBadge}</p>
         <p class="watchlist-entry-title">${safeTitle}</p>
-        ${type === "movie" ? `<p class="watchlist-entry-rating">${ratingText}</p>` : ""}
+        <p class="watchlist-entry-rating">${ratingText}</p>
       </div>
-    </article>
+    </button>
   `;
 }
 
@@ -498,18 +512,23 @@ function joinList(values) {
 }
 
 function watchlistHistoryLabel() {
-  return state.watchlistType === "series" ? "Series watched" : "Movies watched";
+  const hasMovies = watchlistHasType("movie");
+  const hasSeries = watchlistHasType("series");
+  if (hasMovies && hasSeries) {
+    return "Movies and series watched";
+  }
+  return hasSeries ? "Series watched" : "Movies watched";
 }
 
 function compareReleaseDateDescending(left, right, payload) {
-  const leftDate = String(movieDetailsForTitle(payload, left.title)?.release_date || "");
-  const rightDate = String(movieDetailsForTitle(payload, right.title)?.release_date || "");
+  const leftDate = String(detailsForTitle(payload, safeWatchType(left) || "movie", left.title)?.release_date || "");
+  const rightDate = String(detailsForTitle(payload, safeWatchType(right) || "movie", right.title)?.release_date || "");
   return rightDate.localeCompare(leftDate);
 }
 
 function compareScoreDescending(left, right, payload) {
-  const leftScore = Number(movieDetailsForTitle(payload, left.title)?.rating || -1);
-  const rightScore = Number(movieDetailsForTitle(payload, right.title)?.rating || -1);
+  const leftScore = Number(detailsForTitle(payload, safeWatchType(left) || "movie", left.title)?.rating || -1);
+  const rightScore = Number(detailsForTitle(payload, safeWatchType(right) || "movie", right.title)?.rating || -1);
   if (rightScore !== leftScore) {
     return rightScore - leftScore;
   }
@@ -517,16 +536,17 @@ function compareScoreDescending(left, right, payload) {
 }
 
 function watchlistGenres(payload) {
-  if (state.watchlistType !== "movie") {
+  if (!watchlistHasType("movie") && !watchlistHasType("series")) {
     return [];
   }
   const genres = new Set();
   for (const group of payload?.history_by_year || []) {
     for (const entry of group?.entries || []) {
-      if (safeWatchType(entry) !== "movie") {
+      const entryType = safeWatchType(entry) || "movie";
+      if (!watchlistHasType(entryType)) {
         continue;
       }
-      const details = movieDetailsForTitle(payload, safeWatchTitle(entry)) || {};
+      const details = detailsForTitle(payload, entryType, safeWatchTitle(entry)) || {};
       for (const genre of details.genres || []) {
         if (genre) {
           genres.add(String(genre));
@@ -572,7 +592,7 @@ function updateWatchlistFilterOptions(payload) {
 
   if (elements.watchlistGenreFilter) {
     const genres = watchlistGenres(payload);
-    const genreDisabled = state.watchlistType !== "movie";
+    const genreDisabled = !genres.length;
     if (!genres.includes(state.watchlistGenreFilter)) {
       state.watchlistGenreFilter = "all";
     }
@@ -608,12 +628,13 @@ function filteredWatchlistHistory(payload) {
 
     let entries = Array.isArray(group?.entries) ? [...group.entries].reverse() : [];
     entries = entries
-      .filter((entry) => safeWatchType(entry) === state.watchlistType)
+      .filter((entry) => watchlistHasType(safeWatchType(entry) || "movie"))
       .filter((entry) => {
-        if (state.watchlistType !== "movie" || state.watchlistGenreFilter === "all") {
+        const entryType = safeWatchType(entry) || "movie";
+        if (state.watchlistGenreFilter === "all") {
           return true;
         }
-        const details = movieDetailsForTitle(payload, safeWatchTitle(entry)) || {};
+        const details = detailsForTitle(payload, entryType, safeWatchTitle(entry)) || {};
         return (details.genres || []).includes(state.watchlistGenreFilter);
       });
 
@@ -646,11 +667,11 @@ function filteredWatchlistHistory(payload) {
   return results;
 }
 
-function openWatchlistMovieDetail(title) {
+function openWatchlistDetail(type, title) {
   if (!elements.watchlistDetailPanel || !elements.watchlistDetailContent || !state.watchlistPayload) {
     return;
   }
-  const details = movieDetailsForTitle(state.watchlistPayload, title) || {};
+  const details = detailsForTitle(state.watchlistPayload, type, title) || {};
   const posterUrl = String(details.poster_url || "").trim();
   const ratingValue = details.rating;
   const hasRating = Number.isFinite(Number(ratingValue));
@@ -664,6 +685,7 @@ function openWatchlistMovieDetail(title) {
   const trailerUrl = String(details.trailer_url || "").trim();
   const tmdbUrl = String(details.tmdb_url || "").trim();
   const safeTitle = escapeHtml(title);
+  const safeLabel = escapeHtml(type === "series" ? "Series" : "Movie");
 
   const metaBits = [releaseDate, runtime, genres].filter(Boolean);
   const posterHtml = posterUrl
@@ -674,12 +696,12 @@ function openWatchlistMovieDetail(title) {
     <div class="watchlist-detail-layout">
       ${posterHtml}
       <div class="watchlist-detail-body">
-        <p class="watchlist-detail-kicker">Movie</p>
+        <p class="watchlist-detail-kicker">${safeLabel}</p>
         <h3>${safeTitle}</h3>
         <p class="watchlist-detail-rating">${escapeHtml(ratingText)}</p>
         ${metaBits.length ? `<p class="watchlist-detail-meta">${escapeHtml(metaBits.join(" • "))}</p>` : ""}
         <p class="watchlist-detail-description">${escapeHtml(description)}</p>
-        <p><strong>Directors:</strong> ${escapeHtml(directors)}</p>
+        <p><strong>${type === "series" ? "Creators" : "Directors"}:</strong> ${escapeHtml(directors)}</p>
         <p><strong>Actors:</strong> ${escapeHtml(actors)}</p>
         <div class="watchlist-detail-links">
           ${trailerUrl ? `<a href="${trailerUrl}" target="_blank" rel="noreferrer">Trailer</a>` : ""}
@@ -697,27 +719,35 @@ function renderWatchlistCurrent(payload) {
   const current = payload?.currently_watching || {};
   const movies = Array.isArray(current.movies) ? current.movies.filter(Boolean) : [];
   const series = Array.isArray(current.series) ? current.series.filter(Boolean) : [];
-  const activeList = state.watchlistType === "series" ? series : movies;
-  const heading = state.watchlistType === "series" ? "Series" : "Movies";
+  const sections = [];
+  if (watchlistHasType("movie") && movies.length) {
+    sections.push({ type: "movie", heading: "Movies", items: movies });
+  }
+  if (watchlistHasType("series") && series.length) {
+    sections.push({ type: "series", heading: "Series", items: series });
+  }
 
-  if (!activeList.length) {
+  if (!sections.length) {
     elements.watchlistCurrent.innerHTML = '<p class="empty">No current titles listed.</p>';
     return;
   }
 
-  const cards = activeList
-    .map((title) => {
-      const safeTitle = safeWatchTitle(title);
-      return renderWatchlistTitleCard(state.watchlistType, safeTitle, payload);
+  elements.watchlistCurrent.innerHTML = sections
+    .map((section) => {
+      const cards = section.items
+        .map((title) => {
+          const safeTitle = safeWatchTitle(title);
+          return renderWatchlistTitleCard(section.type, safeTitle, payload, title);
+        })
+        .join("");
+      return `
+        <article class="watchlist-current-card">
+          <h4>${section.heading}</h4>
+          <div class="watchlist-current-grid">${cards}</div>
+        </article>
+      `;
     })
     .join("");
-
-  elements.watchlistCurrent.innerHTML = `
-    <article class="watchlist-current-card">
-      <h4>${heading}</h4>
-      <div class="watchlist-current-grid">${cards}</div>
-    </article>
-  `;
 }
 
 function renderWatchlistHistory(payload) {
@@ -748,14 +778,14 @@ function renderWatchlistHistory(payload) {
     list.className = "watchlist-year-list";
     for (const entry of entries) {
       const entryType = safeWatchType(entry) || "movie";
-      if (entryType !== state.watchlistType) {
+      if (!watchlistHasType(entryType)) {
         continue;
       }
       const title = safeWatchTitle(entry);
       if (!title) {
         continue;
       }
-      const cardHtml = renderWatchlistTitleCard(entryType, title, payload);
+      const cardHtml = renderWatchlistTitleCard(entryType, title, payload, entry);
       const wrapper = document.createElement("div");
       wrapper.innerHTML = cardHtml;
       const card = wrapper.firstElementChild;
@@ -781,11 +811,12 @@ function applyWatchlistTabState() {
   if (!elements.watchlistTabMovies || !elements.watchlistTabSeries) {
     return;
   }
-  const isMovies = state.watchlistType === "movie";
+  const isMovies = watchlistHasType("movie");
+  const isSeries = watchlistHasType("series");
   elements.watchlistTabMovies.classList.toggle("is-selected", isMovies);
-  elements.watchlistTabSeries.classList.toggle("is-selected", !isMovies);
+  elements.watchlistTabSeries.classList.toggle("is-selected", isSeries);
   elements.watchlistTabMovies.setAttribute("aria-pressed", isMovies ? "true" : "false");
-  elements.watchlistTabSeries.setAttribute("aria-pressed", isMovies ? "false" : "true");
+  elements.watchlistTabSeries.setAttribute("aria-pressed", isSeries ? "true" : "false");
 }
 
 function renderWatchlistAll() {
@@ -2225,16 +2256,17 @@ if (elements.themeToggle) {
 
 if (elements.watchlistTabMovies) {
   elements.watchlistTabMovies.addEventListener("click", () => {
-    state.watchlistType = "movie";
-    state.watchlistGenreFilter = "all";
+    toggleWatchlistType("movie");
+    if (!watchlistHasType("movie")) {
+      state.watchlistGenreFilter = "all";
+    }
     renderWatchlistAll();
   });
 }
 
 if (elements.watchlistTabSeries) {
   elements.watchlistTabSeries.addEventListener("click", () => {
-    state.watchlistType = "series";
-    state.watchlistGenreFilter = "all";
+    toggleWatchlistType("series");
     renderWatchlistAll();
   });
 }
@@ -2269,12 +2301,13 @@ for (const container of [elements.watchlistCurrent, elements.watchlistHistory]) 
     if (!button) {
       return;
     }
+    const type = button.dataset.watchType || "movie";
     const encodedTitle = button.dataset.watchTitle || "";
     const title = decodeURIComponent(encodedTitle);
     if (!title) {
       return;
     }
-    openWatchlistMovieDetail(title);
+    openWatchlistDetail(type, title);
   });
 }
 

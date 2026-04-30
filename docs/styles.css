@@ -1347,12 +1347,31 @@ td.card-number {
   border-color: #9fb3c8;
 }
 
+.watchlist-entry.is-loved {
+  border-color: #f59e0b;
+  box-shadow: inset 0 0 0 1px rgba(245, 158, 11, 0.28);
+  background: linear-gradient(180deg, rgba(245, 158, 11, 0.08), rgba(245, 158, 11, 0.02));
+}
+
 .watchlist-entry-type {
   margin: 0 0 4px;
   color: #344054;
   font-size: 11px;
   font-weight: 900;
   text-transform: uppercase;
+}
+
+.watchlist-loved-badge {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 6px;
+  border-radius: 999px;
+  background: #fff1cc;
+  color: #8a4b00;
+  border: 1px solid #f0c36a;
+  font-size: 10px;
+  font-weight: 900;
+  vertical-align: middle;
 }
 
 .watchlist-entry[data-watch-type="movie"] .watchlist-entry-type {
@@ -1369,6 +1388,18 @@ td.card-number {
 
 :root[data-theme="dark"] .watchlist-entry[data-watch-type="series"] .watchlist-entry-type {
   color: #93c5fd;
+}
+
+:root[data-theme="dark"] .watchlist-entry.is-loved {
+  border-color: #fbbf24;
+  box-shadow: inset 0 0 0 1px rgba(251, 191, 36, 0.24);
+  background: linear-gradient(180deg, rgba(251, 191, 36, 0.08), rgba(251, 191, 36, 0.02));
+}
+
+:root[data-theme="dark"] .watchlist-loved-badge {
+  background: #4b3312;
+  color: #ffd37a;
+  border-color: #b7821c;
 }
 
 .watchlist-entry-title {
