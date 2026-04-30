@@ -318,5 +318,13 @@
   "event_url::https://www.quicket.co.za/events/365067-district-six-museum-january-2027-admission-tickets/": {
     "lat": -33.9277354,
     "lng": 18.423694
+  },
+  "event_url::https://www.quicket.co.za/events/371445-freeplay-thursday-playalot-durbanville-30-april-2026/": {
+    "lat": -33.8262997,
+    "lng": 18.7004769
+  },
+  "event_url::https://www.quicket.co.za/events/339787-horskool-bellville-laerskole-koorfees/": {
+    "lat": -33.9072139,
+    "lng": 18.5888089
   }
 }

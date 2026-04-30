@@ -1,48 +1,18 @@
 [
   {
-    "title": "Libation Bakery Presents Seasons",
-    "start": "2026-04-29T19:00:00+02:00",
-    "end": "2026-04-30T00:00:00+02:00",
-    "venue": "1 Park Rd",
+    "title": "Freeplay Thursday @ Playalot Durbanville - 30 April 2026",
+    "start": "2026-04-30T17:00:00+02:00",
+    "end": "2026-04-30T20:00:00+02:00",
+    "venue": "Playalot Indoor Adventure Park - Pinehurst - Durbanville",
     "locality": "Cape Town",
     "region": "Western Cape",
-    "address": "1 Park Road, , Gardens, 8001, Cape Town, Western Cape, South Africa",
+    "address": "3 Tanzanite Crescent, Durbanville, 7550, Cape Town, Western Cape, South Africa",
     "price": 0.0,
     "currency": "",
-    "image": "https://images.quicket.co.za/Q7_247_247.jpg",
-    "url": "https://www.quicket.co.za/events/371432-libation-bakery-presents-seasons/",
-    "lat": -33.9290951,
-    "lng": 18.4109802
-  },
-  {
-    "title": "PRINCE ALBERT JOURNEY TO JAZZ",
-    "start": "2026-04-30T06:00:00+02:00",
-    "end": "2026-05-03T12:00:00+02:00",
-    "venue": "Prince Albert",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "Prince Albert, 6930, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/0855037_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/348950-prince-albert-journey-to-jazz/",
-    "lat": -33.2256,
-    "lng": 22.03741
-  },
-  {
-    "title": "Kirstenhof Community Business Network Breakfast - 30 April 2026",
-    "start": "2026-04-30T07:00:00+02:00",
-    "end": "2026-04-30T09:00:00+02:00",
-    "venue": "CHS Life Centre",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "38 Raapkraal Road, Kirstenhof, 7945, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/0904893_247_247.png",
-    "url": "https://www.quicket.co.za/events/369838-kirstenhof-community-business-network-breakfast-30-april-2026/",
-    "lat": -34.0788077,
-    "lng": 18.4545953
+    "image": "https://images.quicket.co.za/0909705_247_247.jpeg",
+    "url": "https://www.quicket.co.za/events/371445-freeplay-thursday-playalot-durbanville-30-april-2026/",
+    "lat": -33.8262997,
+    "lng": 18.7004769
   },
   {
     "title": "Timeless Classics Rooftop Party",
@@ -165,6 +135,21 @@
     "lng": 18.3778069
   },
   {
+    "title": "RaveCult Ft Grimehouse - Warehouse Rave - 1 May - All Black Dress Code - The Bunker - Book Now",
+    "start": "2026-05-01T20:00:00+02:00",
+    "end": "2026-05-02T04:00:00+02:00",
+    "venue": "41A Mansell Rd",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "41A Mansell Road, , Killarney Gardens, 7441, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/0886384_247_247.jpeg",
+    "url": "https://www.quicket.co.za/events/362724-ravecult-ft-grimehouse-warehouse-rave-1-may-all-black-dress-code-the-bunker-boo/",
+    "lat": -33.8280477,
+    "lng": 18.5318231
+  },
+  {
     "title": "Cape Town Yarn Festival 2026",
     "start": "2026-05-02T08:30:00+02:00",
     "end": "2026-05-03T16:00:00+02:00",
@@ -204,7 +189,7 @@
     "address": "13 Prestwich Street, , Cape Town City Centre, 8000, Cape Town, Western Cape, South Africa",
     "price": 0.0,
     "currency": "",
-    "image": "https://images.quicket.co.za/0897841_247_247.png",
+    "image": "https://images.quicket.co.za/0913730_247_247.jpeg",
     "url": "https://www.quicket.co.za/events/367330-surreal-sessions-friends/",
     "lat": -33.9184383,
     "lng": 18.4219849
@@ -328,6 +313,21 @@
     "url": "https://www.quicket.co.za/events/367441-world-in-union-musical-journey/",
     "lat": -34.0653904,
     "lng": 18.8365323
+  },
+  {
+    "title": "Hoërskool Bellville Laerskole Koorfees",
+    "start": "2026-05-07T19:00:00+02:00",
+    "end": "2026-05-07T21:30:00+02:00",
+    "venue": "Hugo Lambrechts Auditorium",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "Picton Street , Parow, 7500, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/0903918_247_247.png",
+    "url": "https://www.quicket.co.za/events/339787-horskool-bellville-laerskole-koorfees/",
+    "lat": -33.9072139,
+    "lng": 18.5888089
   },
   {
     "title": "Fashion Meets Film: Fashion Show 2026",

@@ -3,39 +3,9 @@
     "title": "Suidoosterfees at the Iziko South African Museum",
     "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1593766711",
     "image": "https://content.webtickets.co.za/Izikomuseum/panel_Museum_20260423_110024.jpg",
-    "date_text": "From 29 Apr 2026 11:00",
+    "date_text": "From 30 Apr 2026 11:00",
     "venue": "Iziko South African Museum, Queen Victoria Street, Gardens, Cape Town, South Africa",
     "price": "R0",
-    "source": "Webtickets",
-    "region": "Western Cape"
-  },
-  {
-    "title": "The Galileo Open Air Cinema 2025/2026",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1573555378",
-    "image": "https://content.webtickets.co.za/galileo/panel_Kirstenbosch-webtickets_20260427_130702.jpg",
-    "date_text": "From 27 September 2025",
-    "venue": "",
-    "price": "From R155",
-    "source": "Webtickets",
-    "region": "Western Cape"
-  },
-  {
-    "title": "Richard O'Brien's The Rocky Horror Show (CPT)",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1588915971",
-    "image": "https://content.webtickets.co.za/PTProductions/panel_Webtickets 2026_20260211_164743.jpg",
-    "date_text": "From 29 Apr 2026 20:00",
-    "venue": "Theatre On The Bay, Camps Bay",
-    "price": "R295 - R495",
-    "source": "Webtickets",
-    "region": "Western Cape"
-  },
-  {
-    "title": "Cape Town Abseil",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1531472391",
-    "image": "https://content.webtickets.co.za/WildHorizons/panel_DSC06292_20230725_105701.jpg",
-    "date_text": "From 29 Apr 2026",
-    "venue": "Table Mountain",
-    "price": "R995 - R1100",
     "source": "Webtickets",
     "region": "Western Cape"
   },
@@ -56,6 +26,36 @@
     "date_text": "30 Apr 2026 18:30",
     "venue": "Nasdak, Media 24 Building",
     "price": "R250",
+    "source": "Webtickets",
+    "region": "Western Cape"
+  },
+  {
+    "title": "The Galileo Open Air Cinema 2025/2026",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1573555378",
+    "image": "https://content.webtickets.co.za/galileo/panel_Kirstenbosch-webtickets_20260427_130702.jpg",
+    "date_text": "From 27 September 2025",
+    "venue": "",
+    "price": "From R155",
+    "source": "Webtickets",
+    "region": "Western Cape"
+  },
+  {
+    "title": "Richard O'Brien's The Rocky Horror Show (CPT)",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1588915971",
+    "image": "https://content.webtickets.co.za/PTProductions/panel_Webtickets 2026_20260211_164743.jpg",
+    "date_text": "From 30 Apr 2026 20:00",
+    "venue": "Theatre On The Bay, Camps Bay",
+    "price": "R295 - R495",
+    "source": "Webtickets",
+    "region": "Western Cape"
+  },
+  {
+    "title": "Cape Town Abseil",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1531472391",
+    "image": "https://content.webtickets.co.za/WildHorizons/panel_DSC06292_20230725_105701.jpg",
+    "date_text": "From 30 Apr 2026",
+    "venue": "Table Mountain",
+    "price": "R995 - R1100",
     "source": "Webtickets",
     "region": "Western Cape"
   },
@@ -96,16 +96,6 @@
     "date_text": "02 May 2026 12:00",
     "venue": "Protea Hotel Fire & Ice (64 New Church Street, Tamboerskloof, Cape Town, 8018)",
     "price": "R120-R180 (excl service fee)",
-    "source": "Webtickets",
-    "region": "Western Cape"
-  },
-  {
-    "title": "Early B & Salome Cancelled",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1588762672",
-    "image": "https://content.webtickets.co.za/Suidoosterfees/panel_banner_early b salome_20260330_152858.jpg",
-    "date_text": "03 May 2026 12:30",
-    "venue": "Artscape, Opera House, Cape Town",
-    "price": "R140 - R180",
     "source": "Webtickets",
     "region": "Western Cape"
   },
@@ -170,12 +160,12 @@
     "region": "Western Cape"
   },
   {
-    "title": "The Human League & Blancmange live in Cape Town",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1586884529",
-    "image": "https://content.webtickets.co.za/breakout/panel_120526GW_1110_740_20260129_124503.jpg",
-    "date_text": "12 May 2026 19:00",
-    "venue": "Grand Arena,GrandWest,  1 Jakes Gerwel Dr, Acacia Park, Cape Town",
-    "price": "From R795 (Excluding Booking Fee)",
+    "title": "FIRE & ICE MOTHER'S DAY LUNCH",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1593243593",
+    "image": "https://content.webtickets.co.za/FirenIce/panel_BANNER_20260414_133112.jpg",
+    "date_text": "10 May 2026 12:30",
+    "venue": "Protea Hotel Fire & Ice",
+    "price": "R380",
     "source": "Webtickets",
     "region": "Western Cape"
   },
@@ -340,19 +330,19 @@
     "region": "Western Cape"
   },
   {
-    "title": "Killer Queen - A LAMTA Dance Production",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1590419134",
-    "image": "https://content.webtickets.co.za/PTProductions/panel_2fa14078-fa95-4083-9b94-0f282e084bf5_20260311_171208.jpeg",
-    "date_text": "From 04 Jun 2026 20:00",
-    "venue": "Theatre On The Bay, Camps Bay",
-    "price": "R200 - R320",
+    "title": "Please, don’t call me moffie",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1591455210",
+    "image": "https://content.webtickets.co.za/artscape/panel_Pleae don't call me moffie Image_20260429_094457.png",
+    "date_text": "From 02 Jun 2026 19:00",
+    "venue": "Artscape, Arena, Cape Town",
+    "price": "R150",
     "source": "Webtickets",
     "region": "Western Cape"
   },
   {
     "title": "FynArts Festival 2026",
     "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1588256840",
-    "image": "https://content.webtickets.co.za/fynarts/panel_5 - 16 JUNE ‘26 (1110 x 740 px) (1)_20260422_122515.png",
+    "image": "https://content.webtickets.co.za/fynarts/panel_FYNARTS2026_20260429_163009.jpg",
     "date_text": "From 06 Jun 2026 14:30",
     "venue": "",
     "price": "From R120",
@@ -482,7 +472,7 @@
   {
     "title": "“Dear Michael”",
     "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1592259396",
-    "image": "https://content.webtickets.co.za/",
+    "image": "https://content.webtickets.co.za/iHeartTravelTours/panel_Dear Michael jpg_20260429_130739.jpg",
     "date_text": "From 04 Jul 2026 12:00",
     "venue": "Inanda Club (The Glass House), Forrest Rd & 6th Ave, Inanda, Sandton, 2196",
     "price": "R2570 - R2990",
@@ -496,6 +486,16 @@
     "date_text": "From 04 Jul 2026 19:30",
     "venue": "Artscape, Theatre, Cape Town",
     "price": "R275 - R350",
+    "source": "Webtickets",
+    "region": "Western Cape"
+  },
+  {
+    "title": "Franschhoek Iconic Bastille",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1594211711",
+    "image": "https://content.webtickets.co.za/franschhoek/panel_FHKBastille2026-1_20260428_160102.jpg",
+    "date_text": "From 11 Jul 2026 11:00",
+    "venue": "Church Street, Franschhoek",
+    "price": "R450",
     "source": "Webtickets",
     "region": "Western Cape"
   }
