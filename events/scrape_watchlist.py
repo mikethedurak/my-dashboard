@@ -33,6 +33,7 @@ DETAIL_FIELDS = {
     "overview",
     "description",
     "runtime_minutes",
+    "number_of_seasons",
     "directors",
     "actors",
     "trailer_url",
@@ -442,10 +443,13 @@ def fetch_title_detail(title: str, media_type: str, tmdb_token: str) -> dict:
     release_date = str(chosen.get("release_date") or chosen.get("first_air_date") or "").strip()
     overview = str(chosen.get("overview") or "").strip()
     runtime = chosen.get("runtime")
+    number_of_seasons = chosen.get("number_of_seasons")
     if media_type == "series" and not isinstance(runtime, (int, float)):
         runtimes = details_payload.get("episode_run_time", []) if isinstance(details_payload, dict) else []
         if isinstance(runtimes, list) and runtimes:
             runtime = runtimes[0]
+    if media_type == "series" and not isinstance(number_of_seasons, (int, float)):
+        number_of_seasons = details_payload.get("number_of_seasons") if isinstance(details_payload, dict) else None
 
     credits = details_payload.get("credits", {}) if isinstance(details_payload, dict) else {}
     cast = credits.get("cast", []) if isinstance(credits, dict) else []
@@ -498,6 +502,7 @@ def fetch_title_detail(title: str, media_type: str, tmdb_token: str) -> dict:
     result["overview"] = overview
     result["description"] = overview
     result["runtime_minutes"] = int(runtime) if isinstance(runtime, (int, float)) else None
+    result["number_of_seasons"] = int(number_of_seasons) if isinstance(number_of_seasons, (int, float)) else None
     result["directors"] = list(dict.fromkeys(directors))
     result["actors"] = actors
     result["trailer_url"] = trailer_url

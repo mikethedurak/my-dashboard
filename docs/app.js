@@ -682,12 +682,14 @@ function openWatchlistDetail(type, title) {
   const genres = joinList(details.genres) || "";
   const releaseDate = String(details.release_date || "").trim();
   const runtime = Number.isFinite(Number(details.runtime_minutes)) ? `${Number(details.runtime_minutes)} min` : "";
+  const seasonsCount = Number.isFinite(Number(details.number_of_seasons)) ? Number(details.number_of_seasons) : 0;
+  const seasonsText = seasonsCount > 0 ? `${seasonsCount} ${seasonsCount === 1 ? "season" : "seasons"}` : "";
   const trailerUrl = String(details.trailer_url || "").trim();
   const tmdbUrl = String(details.tmdb_url || "").trim();
   const safeTitle = escapeHtml(title);
   const safeLabel = escapeHtml(type === "series" ? "Series" : "Movie");
 
-  const metaBits = [releaseDate, runtime, genres].filter(Boolean);
+  const metaBits = [releaseDate, type === "series" ? seasonsText : runtime, genres].filter(Boolean);
   const posterHtml = posterUrl
     ? `<img class="watchlist-detail-poster" src="${posterUrl}" alt="${safeTitle} poster">`
     : '<div class="watchlist-detail-poster watchlist-entry-poster-empty">No poster</div>';
