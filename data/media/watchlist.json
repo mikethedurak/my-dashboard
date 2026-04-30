@@ -4,37 +4,37 @@
     "movies": [
       {
         "title": "Ready Or Not 2: Here I Come",
-        "loved": false
+        "opinion": ""
       },
       {
         "title": "Good Luck, Have Fun, Don’t Die",
-        "loved": false
+        "opinion": ""
       },
       {
         "title": "One Battle After Another",
-        "loved": false
+        "opinion": ""
       },
       {
         "title": "Valley Uprising",
-        "loved": false
+        "opinion": ""
       },
       {
         "title": "Iron Lung",
-        "loved": false
+        "opinion": ""
       },
       {
         "title": "Hoppers",
-        "loved": false
+        "opinion": ""
       }
     ],
     "series": [
       {
         "title": "The Boys",
-        "loved": false
+        "opinion": ""
       },
       {
         "title": "Star Wars: Maul",
-        "loved": false
+        "opinion": ""
       }
     ],
     "anime_movies": [],
@@ -47,282 +47,282 @@
         {
           "type": "movie",
           "title": "Zootopia 2",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Fackham Hall",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Predator: Killer of Killers",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Phoenician Scheme",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Happy Gilmore 2",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Now You See Me: Now You Don't",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Freakier Friday",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Animal Farm",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Lord of the Flies",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Good Fortune",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Running Man",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Tag",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Nobody 2",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Rango",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Lilo and Stitch Live Action",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Peaky Blinders: The Immortal Man",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Predator: Badlands",
-          "loved": true
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "How to Train Your Dragon Live Action",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Eternal Sunshine of the Spotless Mind",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Years Later: The Bone Temple",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Mickey 17",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Frankenstein",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
-          "title": "Marty Supreme 👍",
-          "loved": true
+          "title": "Marty Supreme",
+          "opinion": "Liked"
         },
         {
           "type": "movie",
           "title": "Roofman",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Life of Chuck",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
-          "title": "The Long Walk😐",
-          "loved": false
+          "title": "The Long Walk",
+          "opinion": "Mixed"
         },
         {
           "type": "movie",
           "title": "Caught Stealing",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Ballad of Wallis Island",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Warfare",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Friendship",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
-          "title": "Weapons 🔥",
-          "loved": true
+          "title": "Weapons",
+          "opinion": "Loved"
         },
         {
           "type": "movie",
-          "title": "Secret of NIMH 🔥",
-          "loved": true
+          "title": "Secret of NIMH",
+          "opinion": "Loved"
         },
         {
           "type": "movie",
           "title": "Memories",
-          "loved": false
+          "opinion": "Disliked"
         },
         {
           "type": "movie",
           "title": "Jacob’s Ladder",
-          "loved": false
+          "opinion": "Hated"
         },
         {
           "type": "movie",
-          "title": "Together 😐",
-          "loved": false
+          "title": "Together",
+          "opinion": "Mixed"
         },
         {
           "type": "movie",
-          "title": "Nirvana The Band The Show The Movie 👍",
-          "loved": false
+          "title": "Nirvana The Band The Show The Movie",
+          "opinion": "Liked"
         },
         {
           "type": "movie",
-          "title": "Bring Her Back 😐",
-          "loved": false
+          "title": "Bring Her Back",
+          "opinion": "Mixed"
         },
         {
           "type": "movie",
-          "title": "The Housemaid 👍",
-          "loved": false
+          "title": "The Housemaid",
+          "opinion": "Liked"
         },
         {
           "type": "movie",
-          "title": "Project Hail Mary 🔥",
-          "loved": false
+          "title": "Project Hail Mary",
+          "opinion": "Loved"
         },
         {
           "type": "movie",
-          "title": "Send Help 👍",
-          "loved": true
+          "title": "Send Help",
+          "opinion": "Liked"
         },
         {
           "type": "movie",
-          "title": "Super Mario Galaxy 😐",
-          "loved": false
+          "title": "Super Mario Galaxy",
+          "opinion": "Mixed"
         },
         {
           "type": "movie",
-          "title": "The Naked Gun 👍",
-          "loved": true
+          "title": "The Naked Gun",
+          "opinion": "Liked"
         },
         {
           "type": "series",
           "title": "Stranger Things",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "South Park",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "I Think You Should Leave",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "Haha, You Clowns",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "Smiling Friends",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "Love, Death + Robots",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "Fallout",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "A Knight of the Seven Kingdoms",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "One Piece",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "Ted",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "Primal",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "Gen V",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "Malcolm in the Middle: Life’s Still Unfair",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "Invincible",
-          "loved": false
+          "opinion": ""
         }
       ]
     },
@@ -332,302 +332,302 @@
         {
           "type": "movie",
           "title": "Wolfs",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Jungle",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Woman of the Hour",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Sonic the Hedgehog 3",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Wallace and Gromit:  Vengeance Most Fowl",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Romy and Michelle’s High School Reunion",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "El Camino: A Breaking Bad Movie",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Flow",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Am I Racist?",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Gorge",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Mean Creek",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Nosferatu",
-          "loved": true
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Monkey",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Assessment",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Better Man",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Mad God",
-          "loved": true
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Fokofpolisiekar: Forgive Them for They Know Not What They Do",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Straight Outta Compton",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Companion",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Sinners",
-          "loved": true
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Wild Robot",
-          "loved": true
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Croods",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "F1",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Surfer",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Kpop Demon Hunters",
-          "loved": true
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Frog Prince",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Years Later",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Superman 2025",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Fired Up",
-          "loved": true
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Age of Disclosure",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Bugonia",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Wake Up Dead Man: A Knives Out Mystery",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Avatar 3: Fire and Ash",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Tusk",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "Arcane",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "Silo",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "Severance",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "Pantheon",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "Common Side Effects",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "You",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "Black Mirror",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "Adolescence",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "And Then There Were None",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "The White Lotus",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "Lazarus",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "Squid Game",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "The Bear",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "Tires",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "The Inspired Unemployed Impractical Jokers",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "The Last of Us",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "Shogun",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "X-Men ‘97",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "Aunt Donna’s Coffee Café",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "Family Guy",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "Stick",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "Secret Level",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "Rick and Morty",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "It’s Always Sunny In Philadelphia",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "Wednesday",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "Pluribus",
-          "loved": false
+          "opinion": ""
         }
       ]
     },
@@ -637,387 +637,387 @@
         {
           "type": "movie",
           "title": "Road House",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Licorice Pizza",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Leon",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Godfather",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Godfather 2",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Wonderful World of Henry Sugar",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Mr. Monk's Last Case: A Monk Movie",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Days Later",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Late Night with the Devil",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Passengers",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Office Space",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Apocalypse Now",
-          "loved": true
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Burn After Reading",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Natural Born Killers",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Cool World",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Happening",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Monkey Man",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Arcadian",
-          "loved": true
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Unfrosted",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Godzilla Minus One",
-          "loved": true
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Love Lies Bleeding",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "War Dogs",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Snack Shack",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Abigail",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Ministry of Ungentlemanly Warfare",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Happy Gilmore",
-          "loved": true
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Water Boy",
-          "loved": true
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Get Hard",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "American Made",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Fall Guy",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Civil War",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Beetlejuice Beetlejuice",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Boy Kills World",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Edward Scissorhands",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Sweeney Todd: The Demon Barber of Fleet Street",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Galaxy Quest",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Green Mile",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Space Balls",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "I Saw The TV Glow",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "A Clockwork Orange",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Bikeriders",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Mean Girls",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Kingdom of the Planet of the Apes",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Escape From Pretoria",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Wedding Singer",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Retirement Plan",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Furiosa: A Mad Max Saga",
-          "loved": true
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Alien: Romulus",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Inside Out 2",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "A Quiet Place: Day One",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Watchmen",
-          "loved": true
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Longlegs",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Oddity",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "MaXXXine",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Deadpool and Wolverine",
-          "loved": true
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Speak No Evil 2024",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Strange Darling",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Idiocracy",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Substance",
-          "loved": true
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "What is a Woman?",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Conclave",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Smile 2",
-          "loved": true
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Mystic River",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Perfume",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Dogma",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Joker: Folie à Deux",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Gladiator 2",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Heretic",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Transformers One",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "The Fall of the House of Usher",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "Baby Reindeer",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "Rings or Power",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "Body Problem",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "The Umbrella Academy",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "Chasing the Sun",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "The Penguin",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "The Righteous Gemstones",
-          "loved": false
+          "opinion": ""
         }
       ]
     },
@@ -1027,827 +1027,827 @@
         {
           "type": "movie",
           "title": "Zodiac",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Creed",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Beavis and Butthead do America",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Beavis and Butthead do the Universe",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Triangle of Sadness",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Inside",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Die Hard",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Die Hard 2",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Die Hard 3",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Die Hard 4",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Prisoners",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Revenant",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Killing of a Sacred Deer",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Her",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "It Follows",
-          "loved": true
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Babadook",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Coherence",
-          "loved": true
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Endless",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Vast of Night",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Mandy",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Green Room",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "All Quiet on the Western Front",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Gladiator",
-          "loved": true
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Drive",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Nightcrawler",
-          "loved": true
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Nice Guys",
-          "loved": true
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "What We Do in the Shadows",
-          "loved": true
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Super Bad",
-          "loved": true
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The World’s End",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Tropic Thunder",
-          "loved": true
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Prestige",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Annihilation",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Arrival",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Ex Machina",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Blade Runner 2049",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Interstellar",
-          "loved": true
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Coherence",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Mother!",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "One Flew Over The Cuckoo’s Nest",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Taxi Driver",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Apocalypse Now",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Thing",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Snowpiercer",
-          "loved": true
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Whiplash",
-          "loved": true
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Menu",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Renfield",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Scream 6",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "You Won't Be Alone",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Bodies Bodies Bodies",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Northman",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Glass Onion",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Barbarian",
-          "loved": true
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Top Gun: Maverick",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Guillermo del Toro's Pinocchio",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Prey",
-          "loved": true
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Climax",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Under The Silver Lake",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Hereditary",
-          "loved": true
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Midsommar",
-          "loved": true
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Witch",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Saint Maud",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Invitation",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Palm Springs",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Jojo Rabbit",
-          "loved": true
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Popstar: Never Stop Never Stopping",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "X",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Dungeons and Dragons: Honor Among Thieves",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Guardians of the Galaxy Vol. 3",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Evil Dead Rise",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Covenant",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Air",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Akira",
-          "loved": true
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Artifice Girl",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Significant Other",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Super Mario Bros.",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Sisu",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "I Like Movies!",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Nights at Freddies",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Crimson Peak",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "This Place Rules",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Blackberry",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Equalizer 3",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Extraction",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Knock at the Cabin",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Visit",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Vesper",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "They Cloned Tyrone",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Teenage Mutant Ninja Turtles",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Strays",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Meg 2",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Blackening",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Chip ’n Dale: Rescue Rangers",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Talk To Me",
-          "loved": true
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Theatre Camp",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "No One Will Save You",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Last Voyage of the Demeter",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Gran Torismo",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Totally Killer",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Fair Play",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Boogeyman",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "When Evil Lurks",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "One Flew Over the Cuckoo’s Nest",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Beau is Afraid",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Game",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Godzilla Minus One",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Leave The World Behind",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Saltburn",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Dream Scenario",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Thanksgiving",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Eileen",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Self Reliance",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Exam",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Titane",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Wonka",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Beekeeper",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Iron Claw",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Starship Trooper",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Dune 2",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Poor Things",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Yesterday",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "What We Do In The Shadows",
-          "loved": true
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Next Goal Wins",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Zone of Interest",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Ricky Stanicky",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Ballad of Buster Scruggs",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Big Lebowski",
-          "loved": true
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Stopmotion",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Conjuring",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Conjuring 2",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "A Star is Born",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Fargo",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Boat that Rocked",
-          "loved": true
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Beetlejuice",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Smile",
-          "loved": true
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Inside Out",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Joker",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "A Quiet Place",
-          "loved": true
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "A Quiet Place 2",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Dead Pool",
-          "loved": true
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Dead Pool 2",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Pearl",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "movie",
           "title": "Speak No Evil",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "The Mentalist",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "Prison Break",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "Flight of the Conchords",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "Band of Brothers",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "Sherlock",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "Pacific",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "Beef",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "Queens Gambit",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "Eastbound and Down",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "A.P. Bio",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "World War ll: From the Frontlines",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "Blue Eye Samurai",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "Scott Pilgrim Takes Off",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "The Boys Presents: Diabolical",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "Star Wars Visions",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "Star Wars Andor",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "The Patient",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "Ted Lasso",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "Barry",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "Our Flag Means Death",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "Brooklyn 99",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "Futurama",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "series",
           "title": "Adventure Time: Fionna and Cake",
-          "loved": false
+          "opinion": ""
         }
       ]
     },
@@ -1857,372 +1857,372 @@
         {
           "type": "anime_movie",
           "title": "Hayao Miyazaki",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_movie",
           "title": "Studio Ghibli",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_movie",
           "title": "The Animatrix",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_movie",
           "title": "Ghost in the Shell",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_movie",
           "title": "Wolf Children",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_movie",
           "title": "A Silent Voice",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_movie",
           "title": "Weathering With You",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_movie",
           "title": "Centimetres Per Second",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_movie",
           "title": "Your Name",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_movie",
           "title": "Ghost in the Shell",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_movie",
           "title": "The Girl Who Leapt Through Time",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_movie",
           "title": "Cowboy Bebop: The Movie",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_movie",
           "title": "Batman Ninja",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_movie",
           "title": "Weathering With You",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_movie",
           "title": "Wolf Children",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_movie",
           "title": "A Silent Voice",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_movie",
           "title": "Mary and the Witch’s Flower",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_movie",
           "title": "Dragon Ball Z: Battle of the Gods",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_movie",
           "title": "Dragon Ball Z: Resurrection F",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_movie",
           "title": "Dragon Ball: Broly",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_movie",
           "title": "Dragon Ball: Super Hero",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_movie",
           "title": "Suzume",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_movie",
           "title": "Akira",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_movie",
           "title": "The Tunnel to Summer, the Exit of Goodbye’s",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_movie",
           "title": "The End of Evangelion",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_movie",
           "title": "Evangelion 1.0: You Are (Not) Alone",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_movie",
           "title": "Evangelion 2.0: You Can (Not) Advance",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_movie",
           "title": "Evangelion 3.0: You Can (Not) Redo",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_movie",
           "title": "Evangelion 3.0 + 1.0: Thrice Upon a Time",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_movie",
           "title": "Jujutsu Kaisen 0",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_movie",
           "title": "The First Slam Dunk",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_movie",
           "title": "Summer Wars",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_movie",
           "title": "Look Back",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_movie",
           "title": "Ninja Scroll",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_movie",
           "title": "Redline",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_movie",
           "title": "Perfect Blue",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_movie",
           "title": "Maboroshi",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_movie",
           "title": "Demon Slayer: Infinity Castle",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_movie",
           "title": "Chainsaw Man: Reze Arc",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_movie",
           "title": "Paprika",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_movie",
           "title": "One Piece: Baron Omatsuri and the Secret Island",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_movie",
           "title": "One Piece: Strong World",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_movie",
           "title": "One Piece: Z",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_movie",
           "title": "One Piece: Gold",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_movie",
           "title": "One Piece: Stampede",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_movie",
           "title": "One Piece: Red",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_movie",
           "title": "Meters",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_series",
           "title": "Dragon Ball Z",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_series",
           "title": "High School of the Dead",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_series",
           "title": "Death Note",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_series",
           "title": "Sword Art Online",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_series",
           "title": "Full Metal Alchemist",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_series",
           "title": "Tokyo Ghoul",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_series",
           "title": "Steins Gate",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_series",
           "title": "Attack On Titan",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_series",
           "title": "Code Geass",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_series",
           "title": "One Punch Man",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_series",
           "title": "Cowboy Bebop",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_series",
           "title": "Cyberpunk: Edgerunners",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_series",
           "title": "Demon Slayer",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_series",
           "title": "Neon Genesis Evangelion",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_series",
           "title": "Hunter x Hunter",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_series",
           "title": "Chainsaw Man S01, Reze Arc Movie",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_series",
           "title": "Dan Da Dan",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_series",
           "title": "Jujutsu Kaisen",
-          "loved": true
+          "opinion": ""
         },
         {
           "type": "anime_series",
           "title": "The Promised Neverland",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_series",
           "title": "Solo Levelling",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_series",
           "title": "Orb: On the Movements of the Earth",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_series",
           "title": "One Piece",
-          "loved": true
+          "opinion": ""
         },
         {
           "type": "anime_series",
           "title": "Baccano!",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_series",
           "title": "Vinland Saga",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_series",
           "title": "My Hero Academia?",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_series",
           "title": "Mob Psycho 100?",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "anime_series",
           "title": "Beserk?",
-          "loved": false
+          "opinion": ""
         }
       ]
     }

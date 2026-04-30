@@ -5,119 +5,119 @@
       "aaa": [
         {
           "title": "Ghost of Yotei",
-          "loved": false
+          "opinion": ""
         }
       ],
       "indie": [
         {
           "title": "Reanimal",
-          "loved": false
+          "opinion": ""
         },
         {
           "title": "Replaced",
-          "loved": false
+          "opinion": ""
         },
         {
           "title": "P.I. Mouse",
-          "loved": false
+          "opinion": ""
         }
       ],
       "coop": [
         {
           "title": "Path of Exile 2",
-          "loved": false
+          "opinion": ""
         },
         {
           "title": "Schedule 1",
-          "loved": false
+          "opinion": ""
         },
         {
           "title": "The Outlast Trials",
-          "loved": false
+          "opinion": ""
         },
         {
           "title": "Risk of Rain 2",
-          "loved": false
+          "opinion": ""
         }
       ],
       "couch_coop": [
         {
           "title": "Minecraft Dungeons",
-          "loved": false
+          "opinion": ""
         },
         {
           "title": "Reanimal",
-          "loved": false
+          "opinion": ""
         },
         {
           "title": "Moving Out",
-          "loved": false
+          "opinion": ""
         },
         {
           "title": "Sonic Racing: CrossWorlds",
-          "loved": false
+          "opinion": ""
         }
       ],
       "lan": [
         {
           "title": "Black4Blood\nPummel Party\nRainbow Six Vegas 2\nGolf With Your Friends\nDead by Daylight",
-          "loved": false
+          "opinion": ""
         },
         {
           "title": "Overcooked\nOvercooked 2\nHalo 3\nPhasmaphobia\nWarcraft 3",
-          "loved": false
+          "opinion": ""
         },
         {
           "title": "Gears of War 5 (Horde Mode)",
-          "loved": false
+          "opinion": ""
         },
         {
           "title": "Black Ops 2 (Zombie Maps)",
-          "loved": false
+          "opinion": ""
         },
         {
           "title": "Who’s Your Daddy?",
-          "loved": false
+          "opinion": ""
         },
         {
           "title": "The Outlast Trials",
-          "loved": false
+          "opinion": ""
         },
         {
           "title": "R.E.P.O",
-          "loved": false
+          "opinion": ""
         },
         {
           "title": "Fall Guys",
-          "loved": false
+          "opinion": ""
         },
         {
           "title": "Peak",
-          "loved": false
+          "opinion": ""
         },
         {
           "title": "Killing Floor 3",
-          "loved": false
+          "opinion": ""
         },
         {
           "title": "Grounded 2",
-          "loved": false
+          "opinion": ""
         },
         {
           "title": "Straftat",
-          "loved": false
+          "opinion": ""
         },
         {
           "title": "Payday 2",
-          "loved": false
+          "opinion": ""
         },
         {
           "title": "Rainbow Six Siege (Terrorist Hunt)",
-          "loved": false
+          "opinion": ""
         },
         {
           "title": "Tear down",
-          "loved": false
+          "opinion": ""
         }
       ]
     }
@@ -129,22 +129,22 @@
         {
           "type": "game_aaa",
           "title": "Resident Evil 9: Requiem",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "High On Life 2",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Pragmata",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Creature Kitchen",
-          "loved": false
+          "opinion": ""
         }
       ]
     },
@@ -154,212 +154,212 @@
         {
           "type": "game_aaa",
           "title": "Doom Eternal",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Sonic x Shadow Generations",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Diablo 4",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Ninja Gaiden 2 Black",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Stalker 2: Heart of Chornobyl",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Expedition 33",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Silent Hill 2 Remake",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Doom: The Dark Ages",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Call of Duty 19: Modern Warfare 2",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Batman: Arkham Asylum",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Batman: Arkham City",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Batman: Arkham Knight",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Tony Hawk’s Pro Skater 3 + 4<<<",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Split Fiction",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Metal Gear Solid △: Snake Eater",
-          "loved": true
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Balatro",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Nine Sols",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Hollow Knight",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Look Outside",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Lego Voyagers",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Hollow Knight: Silksong",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Hades 2",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "MegaBonk",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Ball x Pit",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Escape From Duckov",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Plants vs Zombies: Fusion",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Dispatch",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_coop",
           "title": "Diablo 4",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_coop",
           "title": "Lego Voyagers",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_coop",
           "title": "Killing Floor 3",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_coop",
           "title": "Fall Guys",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_coop",
           "title": "Peak",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_coop",
           "title": "R.E.P.O",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_coop",
           "title": "Grounded 2",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_coop",
           "title": "RV There Yet?",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_couch_coop",
           "title": "Overcooked 2",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_couch_coop",
           "title": "Golf With Your Friends",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_couch_coop",
           "title": "I’m On Observation Duty 6",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_couch_coop",
           "title": "Platform 8",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_couch_coop",
           "title": "Split Fiction",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_couch_coop",
           "title": "Lego Voyagers",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_couch_coop",
           "title": "Rayman Legends",
-          "loved": false
+          "opinion": ""
         }
       ]
     },
@@ -369,337 +369,337 @@
         {
           "type": "game_aaa",
           "title": "Prince of Persia: The Lost Crown",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Sekiro: Shadows Die Twice",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Tekken 8",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Bloodbourne (and The Old Hunters DLC)",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Star Wars: Jedi Survivor",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Demon Souls",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Elden Ring",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Lies of P",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Dark Souls (and Artorias of the Abyss DLC)",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Dark Souls 2",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Dark Souls 3 (and Ashes of Adriandel and The Ringed City DLC)",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Suicide Squad: Kill the Justice League",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Death Stranding",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "God of War Ragnorak (and Valhalla DLC)",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "The Witcher 3 (and Heart of Stone and Blood and Wine DLC)",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Neon White",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "The Callisto Protocol (and Final Transmission DLC)",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "South Park: Snow Day!",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Dishonoured (and The Knife of Dunwall and The Brigmore Witches DLC)",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Dishonoured 2 (and Death of the Outsider  DLC)",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Far Cry 6",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Devil May Cry 5",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Far Cry: New Dawn",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Hellblade 2: Senu’s Saga",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Still Wakes the Deep",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Psychonauts 2",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Half-Life (and Opposing Force and Blue Shift and Decay)",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Black Mesa",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Half-Life 2 (and Lost Coast and Episode 1 and 2)",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Alan Wake 2 (and Night Springs DLC)",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Worms: WMD",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Nobody Wants to Die",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Super Mario Bros: Wonder",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Astrobot",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Minecraft Dungeons",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Age of Mythology: Retold",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Warhammer 40,000: Space Marine 2",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Spiderman 2",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Call of Duty 20: Modern Warfare 3",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Call of Duty 21: Black Ops 6",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Indiana Jones and the Great Circle",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Trepang 2",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Pizza Tower",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "ULTRAKILL",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Beat Hazard 3",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Anger Foot",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "World of Goo 2",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Soulstone Survivor",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Minutes Till Dawn",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Brotato",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Deep Rock Survivor",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Death Must Die",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Halls of Torment",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Harold Halibut",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Another Crabs Treasure",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Minishoot Adventures",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Squirrel with a Gun",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Goat Simulator",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Goat Simulator 3 (and Multiverse of Nonsense DLC)",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "The Plucky Squire",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Mouthwashing",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Before Your Eyes",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_coop",
           "title": "Phasmophobia",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_coop",
           "title": "Sons of The Forest",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_coop",
           "title": "The Remnant 2",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_couch_coop",
           "title": "Worms WMD",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_couch_coop",
           "title": "Super Mario Bros: Wonder",
-          "loved": false
+          "opinion": ""
         }
       ]
     },
@@ -709,317 +709,317 @@
         {
           "type": "game_aaa",
           "title": "Titanfall 2",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Hi-Fi Rush",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "The Quarry",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Star Wars: Fallen Jedi",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Dead Space Remake",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Metroid Prime Remastered",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Battlefield 1",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Hellblade: Senu’s Sacrifice",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Horizon Forbidden West",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "A Plague Tale:  Innocence",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Destroy All Humans!",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Destroy All Humans 2!",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Control",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Keanu: Bridge of Spirits",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Call of Duty 10: Ghosts",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Call of Duty 13: Infinite Warfare",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "South Park: Fractured Butt Whole",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Warhammer 40k: Boltgun",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Little Nightmares II",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Battlefield 5",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Serious Sam 4",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Serious Sam Siberian Mayhem",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Battlefield 4",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Battlefield Hardline",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Final Fantasy 7 Remake",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Final Fantasy 7 Intergrade",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Wolfenstein: The New Order",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Wolfenstein: The Old Blood",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Wolfenstein II: The New Colossus",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Hogwarts Legacy",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Ratchet and Clank: Rifts Apart",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "High On Life (and High On Knife DLC)",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Sonic: Frontiers",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Pokemon Legends: Arceus",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Mario + Rabbids Kingdom Battle",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Ghostrunner (and Project_Hel DLC)",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Ghostrunner 2",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Alan Wake (and The Signal and The Writer DLC’s)",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Resident Evil 2: Remake",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Resident Evil 3: Remake",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Resident Evil 4: Remake",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Resident Evil 7: Biohazard",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Resident Evil 8: Village",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "A Plague Tale:  Requiem",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Mortal Kombat 1",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Armored Core 6: Fires of Rubicon",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "GTA V",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Cyberpunk 2077 (and Phantom Liberty DLC)",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Dead Island 2",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Robocop Rogue City",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Tiny Tina’s Wonderland",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Halo Infinite",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Hextech Mayhem - A League of Legends Story",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Inside",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Convergence - A League of Legends Story",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Planet of Lana",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Gris",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Halls of Torment",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Oxenfree 2: Lost Signals",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Metal: Hellsinger",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Vampire Survivor",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Dead Cells",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Cocoon",
-          "loved": false
+          "opinion": ""
         }
       ]
     },
@@ -1029,762 +1029,762 @@
         {
           "type": "game_aaa",
           "title": "Call of Duty 2",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Call of Duty 3",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Call of Duty 4: Modern Warfare",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Call of Duty 5: World At War",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Call of Duty 6: Modern Warfare 2",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Call of Duty 7: Black Ops",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Call of Duty 8: Modern Warfare 3",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Call of Duty 9: Black Ops 2",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Call of Duty 11: Advanced Warfare",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Call of Duty 12: Black Ops 3",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Call of Duty 15: Black Ops 4?",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Call of Duty 17: Black Ops 5 Cold War",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Serious Sam: The Second Encounter",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Serious Sam 2",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Transformers: The Game",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Transformers: War for Cybertron",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Starcraft",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "DmC: Devil May Cry",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Rage",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Portal",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Portal 2",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Bulletstorm",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Alice: Madness",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Alice: Madness Returns",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Need for Speed: Hot Pursuit 2",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Need for Speed: Most Wanted",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Need for Speed: Carbon",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Warcraft 2",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Warcraft 3: Frozen Throne",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Borderlands",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Borderlands 2",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Borderlands Presequel",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Battlefield 3",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Assassin’s Creed 2",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Blur",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Lara Croft and the Guardian of Light",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Minecraft",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Worms 2",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Worms Armageddon",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Worms World Party",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Worms Forts: Under Siege",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Worms 4: Mayhem",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Worms: Ultimate Mayhem",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Worms Reloaded",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Worms Revolution",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Bioshock",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Bioshock 2",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Bioshock Infinite",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Far Cry 3",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "The Stanley Parable",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "South Park: Stick of Truth",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Uncharted 4: A Thief’s End",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Until Dawn",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Far Cry 4",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Little Nightmares",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Ratchet and Clank 2016",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Doom",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Super Mario Odyssey",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Shadow of the Colossus",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Detroit: Become Human",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Spiderman",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Alien: Isolation",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Call of Duty 14: WW2",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Borderlands 3",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Red Dead Redemption 2",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Little Nightmares",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Last of Us",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Brothers: A Tale of Two Sons",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "A Way Out",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "It Takes Two",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Horizon: Zero Dawn",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Call of Duty 16: Modern Warfare",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "God of War",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Last of Us: Part II",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Tony Hawk’s Pro Skater 1 + 2",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Spiderman: Miles Morale",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Ghost of Tsushima",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Crash Bandicoot 4: It’s About Time",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Metroid Dread",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Pokemon: Sword and Shield",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Kirby and the Forgotten Lands",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Age of Empire 3",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Doom Eternal",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Mirrors Edge",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Mirrors Edge 2",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Captain Toad: Treasure Tracker",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Far Cry 5",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Age of Empires 4",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Back4Blood",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Stray",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Geometry Wars",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Geometry Wars 3",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Beat Hazard",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Limbo",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Terraria",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Journey",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Abzu",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "World of Goo",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Fez",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Subnautica",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Pony Island",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Super Meat Boy",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "The Binding Of Isaac",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Monument Valley",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Hotline Miami",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Untitled Goose Game",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Hotline Miami 2",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Braid",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Deadbolt",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Superhot",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Celeste",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Stardew Valley",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Ape Out",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Hades",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "The Witness",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Bloon TD 6",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Bastion",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Don’t Starve",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Firewatch",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Enter the Gungeon",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Starbound",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Geometry Dash",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Gorogoa",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Cuphead",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Oxenfree",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Rollerdome",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Papers, Please",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "What Remains of Edith Finch",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "The Mageseeker - A League of Legends Story",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Cult Of The Lamb",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Shovel Knight",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_indie",
           "title": "Hyper light drifter",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_coop",
           "title": "Left 4 Dead",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_coop",
           "title": "Left 4 Dead 2",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_coop",
           "title": "Back 4 Blood",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_coop",
           "title": "Borderlands",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_coop",
           "title": "Borderlands 2",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_coop",
           "title": "Borderlands Presequel",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_coop",
           "title": "Borderlands 3",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_coop",
           "title": "Alien Swarm",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_coop",
           "title": "A Way Out",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_coop",
           "title": "It Takes Two",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_coop",
           "title": "Destiny 2",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_coop",
           "title": "Diablo 2 Remastered",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_coop",
           "title": "Deep Rock Galactic",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_coop",
           "title": "The Forest",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_couch_coop",
           "title": "Cup Head",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_couch_coop",
           "title": "Overcooked",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_couch_coop",
           "title": "Mario Kart 8 Deluxe",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_couch_coop",
           "title": "Rocket League",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_couch_coop",
           "title": "Mario Party",
-          "loved": false
+          "opinion": ""
         },
         {
           "type": "game_couch_coop",
           "title": "Super Mario Party",
-          "loved": false
+          "opinion": ""
         }
       ]
     }

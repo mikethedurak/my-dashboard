@@ -63,6 +63,7 @@ const state = {
   watchlistGenreFilter: "all",
   watchlistSort: "default",
   watchlistOpinionFilter: "all",
+  watchlistSearchFilter: "",
 };
 
 const elements = {
@@ -80,6 +81,7 @@ const elements = {
   watchlistHistory: document.querySelector("#watchlist-history"),
   watchlistHistorySummary: document.querySelector("#watchlist-history-summary"),
   watchlistYearFilter: document.querySelector("#watchlist-year-filter"),
+  watchlistSearchFilter: document.querySelector("#watchlist-search-filter"),
   watchlistGenreFilter: document.querySelector("#watchlist-genre-filter"),
   watchlistSort: document.querySelector("#watchlist-sort"),
   watchlistOpinionFilter: document.querySelector("#watchlist-opinion-filter"),
@@ -417,11 +419,16 @@ function setLastScrapedText(value) {
 }
 
 function safeWatchTitle(item) {
+  const sanitize = (value) =>
+    String(value || "")
+      .replace(/[🔥👍😐🤔👎💀]/g, "")
+      .replace(/\s+/g, " ")
+      .trim();
   if (typeof item === "string") {
-    return item.trim();
+    return sanitize(item);
   }
   if (item && typeof item.title === "string") {
-    return item.title.trim();
+    return sanitize(item.title);
   }
   return "";
 }
@@ -459,8 +466,42 @@ function safeWatchType(item) {
   return "";
 }
 
-function safeWatchLoved(item) {
-  return Boolean(item && typeof item === "object" && item.loved);
+function safeWatchOpinion(item) {
+  if (!item || typeof item !== "object") {
+    return "";
+  }
+  const raw = String(item.opinion || "").trim();
+  const lowered = raw.toLowerCase();
+  const opinionMap = {
+    loved: "Loved",
+    liked: "Liked",
+    mixed: "Mixed",
+    disliked: "Disliked",
+    hated: "Hated",
+  };
+  if (opinionMap[lowered]) {
+    return opinionMap[lowered];
+  }
+  const title = String(item.title || "");
+  if (title.includes("🔥")) {
+    return "Loved";
+  }
+  if (title.includes("👍")) {
+    return "Liked";
+  }
+  if (title.includes("🤔")) {
+    return "Mixed";
+  }
+  if (title.includes("👎")) {
+    return "Disliked";
+  }
+  if (title.includes("💀")) {
+    return "Hated";
+  }
+  if (item.loved === true) {
+    return "Loved";
+  }
+  return "";
 }
 
 function watchlistHasType(type) {
@@ -590,8 +631,8 @@ function renderWatchlistTitleCard(type, title, payload, item = null) {
   const hasRating = Number.isFinite(Number(ratingValue));
   const ratingText = hasRating ? `${Number(ratingValue).toFixed(1)} / 10` : "No rating";
   const safeTitle = escapeHtml(title);
-  const loved = safeWatchLoved(item);
-  const lovedBadge = loved ? '<span class="watchlist-loved-badge">Loved</span>' : "";
+  const opinion = safeWatchOpinion(item);
+  const opinionClass = opinion ? ` opinion-${opinion.toLowerCase()}` : "";
 
   const posterHtml = posterUrl
     ? `<img class="watchlist-entry-poster" src="${posterUrl}" alt="${safeTitle} poster" loading="lazy">`
@@ -601,13 +642,14 @@ function renderWatchlistTitleCard(type, title, payload, item = null) {
   return `
     <button
       type="button"
-      class="watchlist-entry watchlist-current-entry watchlist-entry-button${loved ? " is-loved" : ""}"
+      class="watchlist-entry watchlist-current-entry watchlist-entry-button${opinion === "Loved" ? " is-loved" : ""}${opinionClass}"
       data-watch-type="${type}"
       data-watch-title="${encodeURIComponent(title)}"
+      data-watch-opinion="${opinion.toLowerCase()}"
     >
       ${posterHtml}
       <div class="watchlist-entry-body">
-        <p class="watchlist-entry-type">${badgeLabel}${lovedBadge}</p>
+        <p class="watchlist-entry-type">${badgeLabel}</p>
         <p class="watchlist-entry-title">${safeTitle}</p>
         <p class="watchlist-entry-rating">${ratingText}</p>
       </div>
@@ -665,16 +707,18 @@ function findWatchlistItem(payload, type, title) {
 
 function watchlistHistoryLabel() {
   const labels = [...state.watchlistTypes].map((type) => WATCHLIST_TYPE_LABELS[type]).filter(Boolean);
+  const gameOnly = [...state.watchlistTypes].every((type) => String(type || "").startsWith("game_"));
+  const actionWord = gameOnly ? "played" : "watched";
   if (!labels.length) {
-    return "Watched";
+    return gameOnly ? "Played" : "Watched";
   }
   if (labels.length === 1) {
-    return `${labels[0]} watched`;
+    return `${labels[0]} ${actionWord}`;
   }
   if (labels.length === 2) {
-    return `${labels[0]} and ${labels[1]} watched`;
+    return `${labels[0]} and ${labels[1]} ${actionWord}`;
   }
-  return `${labels.slice(0, -1).join(", ")} and ${labels[labels.length - 1]} watched`;
+  return `${labels.slice(0, -1).join(", ")} and ${labels[labels.length - 1]} ${actionWord}`;
 }
 
 function compareReleaseDateDescending(left, right, payload) {
@@ -791,11 +835,18 @@ function filteredWatchlistHistory(payload) {
     entries = entries
       .filter((entry) => watchlistHasType(safeWatchType(entry) || "movie"))
       .filter((entry) => {
+        const searchTerm = state.watchlistSearchFilter.trim().toLowerCase();
+        if (!searchTerm) {
+          return true;
+        }
+        return safeWatchTitle(entry).toLowerCase().includes(searchTerm);
+      })
+      .filter((entry) => {
         if (state.watchlistOpinionFilter === "all") {
           return true;
         }
         if (state.watchlistOpinionFilter === "loved") {
-          return safeWatchLoved(entry);
+          return safeWatchOpinion(entry) === "Loved";
         }
         return true;
       })
@@ -864,8 +915,8 @@ function openWatchlistDetail(type, title) {
   const safeTitle = escapeHtml(title);
   const safeLabel = escapeHtml(WATCHLIST_TYPE_LABELS[type] || "Title");
   const sourceItem = findWatchlistItem(state.watchlistPayload, type, title);
-  const loved = safeWatchLoved(sourceItem);
-  const lovedBadge = loved ? '<span class="watchlist-loved-badge">Loved</span>' : "";
+  const opinion = safeWatchOpinion(sourceItem);
+  const opinionClass = opinion ? ` opinion-${opinion.toLowerCase()}` : "";
   const isSeriesLike = type === "series" || type === "anime_series";
   const isMovieLike = type === "movie" || type === "anime_movie";
   const isGameLike = type.startsWith("game_");
@@ -878,7 +929,7 @@ function openWatchlistDetail(type, title) {
     <div class="watchlist-detail-layout">
       ${posterHtml}
       <div class="watchlist-detail-body">
-        <p class="watchlist-detail-kicker">${safeLabel}${lovedBadge}</p>
+        <p class="watchlist-detail-kicker">${safeLabel}</p>
         <h3>${safeTitle}</h3>
         <p class="watchlist-detail-rating">${escapeHtml(ratingText)}</p>
         ${metaBits.length ? `<p class="watchlist-detail-meta">${escapeHtml(metaBits.join(" • "))}</p>` : ""}
@@ -901,12 +952,13 @@ function openWatchlistDetail(type, title) {
   `;
   elements.watchlistDetailPanel.hidden = false;
   elements.watchlistDetailPanel.classList.add("is-open");
-  elements.watchlistDetailPanel.classList.toggle("is-loved", loved);
+  elements.watchlistDetailPanel.classList.toggle("is-loved", opinion === "Loved");
   document.body.classList.add("watchlist-detail-open");
 }
 
 function renderWatchlistCurrent(payload) {
   const current = payload?.currently_watching || {};
+  const searchTerm = state.watchlistSearchFilter.trim().toLowerCase();
   const asItems = (value) => (Array.isArray(value) ? value.filter(Boolean) : []);
   const gameBucket = current.games && typeof current.games === "object" ? current.games : {};
   const sourceByType = {
@@ -921,10 +973,15 @@ function renderWatchlistCurrent(payload) {
     game_lan: asItems(current.game_lan || gameBucket.lan),
   };
   const sections = [...state.watchlistTypes]
-    .map((type) => ({ type, heading: WATCHLIST_TYPE_LABELS[type] || "Titles", items: sourceByType[type] || [] }))
+    .map((type) => ({
+      type,
+      heading: WATCHLIST_TYPE_LABELS[type] || "Titles",
+      items: (sourceByType[type] || []).filter((item) => !searchTerm || safeWatchTitle(item).toLowerCase().includes(searchTerm)),
+    }))
     .filter((section) => section.items.length);
   if (elements.watchlistCurrentTitle) {
-    elements.watchlistCurrentTitle.textContent = "Currently watching";
+    const gameOnly = [...state.watchlistTypes].every((type) => String(type || "").startsWith("game_"));
+    elements.watchlistCurrentTitle.textContent = gameOnly ? "Currently playing" : "Currently watching";
   }
 
   if (!sections.length) {
@@ -2611,6 +2668,13 @@ if (elements.watchlistCategoryButtons) {
 if (elements.watchlistYearFilter) {
   elements.watchlistYearFilter.addEventListener("change", (event) => {
     state.watchlistYearFilter = event.target.value || "all";
+    renderWatchlistAll();
+  });
+}
+
+if (elements.watchlistSearchFilter) {
+  elements.watchlistSearchFilter.addEventListener("input", (event) => {
+    state.watchlistSearchFilter = String(event.target.value || "");
     renderWatchlistAll();
   });
 }

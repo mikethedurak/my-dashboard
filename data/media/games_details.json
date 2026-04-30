@@ -990,7 +990,17 @@
     "release_date": null,
     "description": null,
     "genres": null,
-    "rawg_url": null
+    "rawg_url": null,
+    "developers": [
+      "Raven Software",
+      "Treyarch",
+      "n-Space"
+    ],
+    "publishers": [
+      "Square Enix",
+      "Activision Blizzard",
+      "Activison"
+    ]
   },
   "game_aaa:call of duty 15 black ops 4": {
     "title": "Call of Duty 15: Black Ops 4?",
@@ -1002,7 +1012,17 @@
     "platforms": null,
     "rawg_url": null,
     "release_date": null,
-    "description": null
+    "description": null,
+    "developers": [
+      "Raven Software",
+      "Treyarch",
+      "n-Space"
+    ],
+    "publishers": [
+      "Square Enix",
+      "Activision Blizzard",
+      "Activison"
+    ]
   },
   "game_aaa:call of duty 16 modern warfare": {
     "title": "Call of Duty 16: Modern Warfare",
@@ -1014,7 +1034,13 @@
     "release_date": null,
     "description": null,
     "genres": null,
-    "rawg_url": null
+    "rawg_url": null,
+    "developers": [
+      "Infinity Ward"
+    ],
+    "publishers": [
+      "Activison"
+    ]
   },
   "game_aaa:call of duty 17 black ops 5 cold war": {
     "title": "Call of Duty 17: Black Ops 5 Cold War",
@@ -1026,7 +1052,17 @@
     "platforms": null,
     "rawg_url": null,
     "release_date": null,
-    "description": null
+    "description": null,
+    "developers": [
+      "Raven Software",
+      "Treyarch",
+      "n-Space"
+    ],
+    "publishers": [
+      "Square Enix",
+      "Activision Blizzard",
+      "Activison"
+    ]
   },
   "game_aaa:call of duty 19 modern warfare 2": {
     "title": "Call of Duty 19: Modern Warfare 2",
@@ -1038,7 +1074,13 @@
     "release_date": null,
     "description": null,
     "genres": null,
-    "rawg_url": null
+    "rawg_url": null,
+    "developers": [
+      "Infinity Ward"
+    ],
+    "publishers": [
+      "Activison"
+    ]
   },
   "game_aaa:call of duty 2": {
     "title": "Call of Duty 2",
@@ -1058,7 +1100,14 @@
     ],
     "rawg_url": "https://rawg.io/games/call-of-duty-2",
     "release_date": "2005-10-25",
-    "description": ""
+    "description": "",
+    "developers": [
+      "Infinity Ward"
+    ],
+    "publishers": [
+      "Aspyr",
+      "Activison"
+    ]
   },
   "game_aaa:call of duty 20 modern warfare 3": {
     "title": "Call of Duty 20: Modern Warfare 3",
@@ -1070,7 +1119,13 @@
     "release_date": null,
     "description": null,
     "genres": null,
-    "rawg_url": null
+    "rawg_url": null,
+    "developers": [
+      "Infinity Ward"
+    ],
+    "publishers": [
+      "Activison"
+    ]
   },
   "game_aaa:call of duty 21 black ops 6": {
     "title": "Call of Duty 21: Black Ops 6",
@@ -1082,7 +1137,17 @@
     "release_date": null,
     "description": null,
     "genres": null,
-    "rawg_url": null
+    "rawg_url": null,
+    "developers": [
+      "Raven Software",
+      "Treyarch",
+      "n-Space"
+    ],
+    "publishers": [
+      "Square Enix",
+      "Activision Blizzard",
+      "Activison"
+    ]
   },
   "game_aaa:call of duty 3": {
     "title": "Call of Duty 3",
@@ -1102,7 +1167,14 @@
     ],
     "rawg_url": "https://rawg.io/games/call-of-duty-3",
     "release_date": "2006-11-07",
-    "description": ""
+    "description": "",
+    "developers": [
+      "Treyarch",
+      "Exakt Entertainment"
+    ],
+    "publishers": [
+      "Activision Blizzard"
+    ]
   },
   "game_aaa:call of duty 4 modern warfare": {
     "title": "Call of Duty 4: Modern Warfare",
@@ -1126,7 +1198,20 @@
     ],
     "rawg_url": "https://rawg.io/games/modern-warfare",
     "release_date": "2007-11-05",
-    "description": ""
+    "description": "",
+    "developers": [
+      "Raven Software",
+      "Treyarch",
+      "Infinity Ward",
+      "n-Space"
+    ],
+    "publishers": [
+      "Square Enix",
+      "Aspyr",
+      "Activision Blizzard",
+      "Activison",
+      "Active"
+    ]
   },
   "game_aaa:call of duty 5 world at war": {
     "title": "Call of Duty 5: World At War",
@@ -1138,7 +1223,17 @@
     "platforms": null,
     "rawg_url": null,
     "release_date": null,
-    "description": null
+    "description": null,
+    "developers": [
+      "Raven Software",
+      "Treyarch",
+      "n-Space"
+    ],
+    "publishers": [
+      "Square Enix",
+      "Activision Blizzard",
+      "Activison"
+    ]
   },
   "game_aaa:call of duty 6 modern warfare 2": {
     "title": "Call of Duty 6: Modern Warfare 2",
@@ -1150,7 +1245,13 @@
     "platforms": null,
     "rawg_url": null,
     "release_date": null,
-    "description": null
+    "description": null,
+    "developers": [
+      "Infinity Ward"
+    ],
+    "publishers": [
+      "Activison"
+    ]
   },
   "game_aaa:call of duty 7 black ops": {
     "title": "Call of Duty 7: Black Ops",
@@ -1162,7 +1263,17 @@
     "platforms": null,
     "rawg_url": null,
     "release_date": null,
-    "description": null
+    "description": null,
+    "developers": [
+      "Raven Software",
+      "Treyarch",
+      "n-Space"
+    ],
+    "publishers": [
+      "Square Enix",
+      "Activision Blizzard",
+      "Activison"
+    ]
   },
   "game_aaa:call of duty 8 modern warfare 3": {
     "title": "Call of Duty 8: Modern Warfare 3",
@@ -1174,7 +1285,13 @@
     "platforms": null,
     "rawg_url": null,
     "release_date": null,
-    "description": null
+    "description": null,
+    "developers": [
+      "Infinity Ward"
+    ],
+    "publishers": [
+      "Activison"
+    ]
   },
   "game_aaa:call of duty 9 black ops 2": {
     "title": "Call of Duty 9: Black Ops 2",
@@ -1186,7 +1303,17 @@
     "platforms": null,
     "rawg_url": null,
     "release_date": null,
-    "description": null
+    "description": null,
+    "publishers": [
+      "Square Enix",
+      "Activision Blizzard",
+      "Activison"
+    ],
+    "developers": [
+      "Raven Software",
+      "Treyarch",
+      "n-Space"
+    ]
   },
   "game_aaa:captain toad treasure tracker": {
     "title": "Captain Toad: Treasure Tracker",
@@ -1204,7 +1331,13 @@
     "genres": [
       "Puzzle"
     ],
-    "rawg_url": "https://rawg.io/games/captain-toad-treasure-tracker"
+    "rawg_url": "https://rawg.io/games/captain-toad-treasure-tracker",
+    "publishers": [
+      "Nintendo"
+    ],
+    "developers": [
+      "Nintendo"
+    ]
   },
   "game_aaa:control": {
     "title": "Control",
@@ -1220,7 +1353,14 @@
     "genres": [
       "Platformer"
     ],
-    "rawg_url": "https://rawg.io/games/controller-controller"
+    "rawg_url": "https://rawg.io/games/controller-controller",
+    "publishers": [
+      "505 Games"
+    ],
+    "developers": [
+      "505 Games",
+      "Remedy Entertainment"
+    ]
   },
   "game_aaa:crash bandicoot 4 its about time": {
     "title": "Crash Bandicoot 4: It’s About Time",

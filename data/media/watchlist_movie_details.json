@@ -6684,22 +6684,36 @@
     "media_type": "movie",
     "number_of_seasons": null
   },
-  "movie:bring her back ": {
-    "title": "Bring Her Back 😐",
+  "movie:bring her back": {
+    "title": "Bring Her Back",
     "media_type": "movie",
-    "runtime_minutes": null,
-    "overview": null,
-    "trailer_url": null,
-    "tmdb_id": null,
-    "rating": null,
-    "genres": null,
+    "overview": "Following the death of their father, a brother and sister are sent to live with a foster mother, only to learn that she is hiding a terrifying secret.",
+    "poster_url": "https://image.tmdb.org/t/p/w342/1Q3GlCXGYWELifxANYZ5OVMRVZl.jpg",
+    "genres": [
+      "Horror"
+    ],
+    "release_date": "2025-05-28",
+    "description": "Following the death of their father, a brother and sister are sent to live with a foster mother, only to learn that she is hiding a terrifying secret.",
     "number_of_seasons": null,
-    "release_date": null,
-    "directors": null,
-    "actors": null,
-    "poster_url": null,
-    "tmdb_url": null,
-    "description": null
+    "tmdb_id": 1151031,
+    "trailer_url": "https://www.youtube.com/watch?v=vBuYDMxD71c",
+    "tmdb_url": "https://www.themoviedb.org/movie/1151031",
+    "runtime_minutes": 104,
+    "directors": [
+      "Michael Philippou",
+      "Danny Philippou"
+    ],
+    "rating": 7.3,
+    "actors": [
+      "Billy Barratt",
+      "Sally Hawkins",
+      "Mischa Heywood",
+      "Jonah Wren Phillips",
+      "Stephen Phillips",
+      "Sally-Anne Upton",
+      "Sora Wong",
+      "Kathryn Adams"
+    ]
   },
   "movie:bugonia": {
     "title": "Bugonia",
@@ -9529,22 +9543,36 @@
     "media_type": "movie",
     "number_of_seasons": null
   },
-  "movie:marty supreme ": {
-    "title": "Marty Supreme 👍",
+  "movie:marty supreme": {
+    "title": "Marty Supreme",
     "media_type": "movie",
-    "runtime_minutes": null,
-    "overview": null,
-    "trailer_url": null,
-    "tmdb_id": null,
-    "rating": null,
-    "genres": null,
+    "overview": "Marty Mauser, a young man with a dream no one respects, goes to hell and back in pursuit of greatness.",
+    "poster_url": "https://image.tmdb.org/t/p/w342/lYWEXbQgRTR4ZQleSXAgRbxAjvq.jpg",
+    "genres": [
+      "Drama",
+      "Thriller"
+    ],
+    "release_date": "2025-12-19",
+    "description": "Marty Mauser, a young man with a dream no one respects, goes to hell and back in pursuit of greatness.",
     "number_of_seasons": null,
-    "release_date": null,
-    "directors": null,
-    "actors": null,
-    "poster_url": null,
-    "tmdb_url": null,
-    "description": null
+    "tmdb_id": 1317288,
+    "trailer_url": "https://www.youtube.com/watch?v=pwE3ZG1kIqw",
+    "tmdb_url": "https://www.themoviedb.org/movie/1317288",
+    "runtime_minutes": 150,
+    "directors": [
+      "Josh Safdie"
+    ],
+    "rating": 7.4,
+    "actors": [
+      "Timothée Chalamet",
+      "Gwyneth Paltrow",
+      "Odessa A'zion",
+      "Kevin O'Leary",
+      "Tyler, The Creator",
+      "Fran Drescher",
+      "Abel Ferrara",
+      "Emory Cohen"
+    ]
   },
   "movie:maxxxine": {
     "title": "MaXXXine",
@@ -9977,22 +10005,22 @@
     "media_type": "movie",
     "number_of_seasons": null
   },
-  "movie:nirvana the band the show the movie ": {
-    "title": "Nirvana The Band The Show The Movie 👍",
+  "movie:nirvana the band the show the movie": {
+    "title": "Nirvana The Band The Show The Movie",
     "media_type": "movie",
-    "runtime_minutes": null,
     "overview": null,
-    "trailer_url": null,
-    "tmdb_id": null,
-    "rating": null,
-    "genres": null,
-    "number_of_seasons": null,
-    "release_date": null,
-    "directors": null,
-    "actors": null,
     "poster_url": null,
+    "genres": null,
+    "release_date": null,
+    "description": null,
+    "number_of_seasons": null,
+    "tmdb_id": null,
+    "trailer_url": null,
     "tmdb_url": null,
-    "description": null
+    "runtime_minutes": null,
+    "directors": null,
+    "rating": null,
+    "actors": null
   },
   "movie:no one will save you": {
     "title": "No One Will Save You",
@@ -10592,22 +10620,37 @@
     "media_type": "movie",
     "number_of_seasons": null
   },
-  "movie:project hail mary ": {
-    "title": "Project Hail Mary 🔥",
+  "movie:project hail mary": {
+    "title": "Project Hail Mary",
     "media_type": "movie",
-    "poster_url": null,
-    "tmdb_id": null,
-    "release_date": null,
-    "trailer_url": null,
-    "directors": null,
-    "tmdb_url": null,
-    "overview": null,
-    "description": null,
-    "genres": null,
-    "rating": null,
+    "overview": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction.",
+    "poster_url": "https://image.tmdb.org/t/p/w342/yihdXomYb5kTeSivtFndMy5iDmf.jpg",
+    "genres": [
+      "Science Fiction",
+      "Adventure"
+    ],
+    "release_date": "2026-03-15",
+    "description": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction.",
     "number_of_seasons": null,
-    "runtime_minutes": null,
-    "actors": null
+    "tmdb_id": 687163,
+    "trailer_url": "https://www.youtube.com/watch?v=jnly2BcwCVA",
+    "tmdb_url": "https://www.themoviedb.org/movie/687163",
+    "runtime_minutes": 157,
+    "directors": [
+      "Phil Lord",
+      "Christopher Miller"
+    ],
+    "rating": 8.2,
+    "actors": [
+      "Ryan Gosling",
+      "James Ortiz",
+      "Sandra Hüller",
+      "Lionel Boyce",
+      "Milana Vayntrub",
+      "Ken Leung",
+      "Priya Kansara",
+      "Mia Soteriou"
+    ]
   },
   "movie:rango": {
     "title": "Rango",
@@ -10928,22 +10971,41 @@
     "media_type": "movie",
     "number_of_seasons": null
   },
-  "movie:secret of nimh ": {
-    "title": "Secret of NIMH 🔥",
+  "movie:secret of nimh": {
+    "title": "Secret of NIMH",
     "media_type": "movie",
-    "poster_url": null,
-    "tmdb_id": null,
-    "release_date": null,
-    "trailer_url": null,
-    "directors": null,
-    "tmdb_url": null,
-    "overview": null,
-    "description": null,
-    "genres": null,
-    "rating": null,
+    "overview": "A widowed field mouse must move her family -- including an ailing son -- to escape a farmer's plow. Aided by a crow and a pack of superintelligent, escaped lab rats, the brave mother struggles to transplant her home to firmer ground.",
+    "poster_url": "https://image.tmdb.org/t/p/w342/prNrnOKlkV9wl5Sl3zwHu1f3t2z.jpg",
+    "genres": [
+      "Family",
+      "Animation",
+      "Fantasy",
+      "Adventure",
+      "Mystery",
+      "Drama",
+      "Science Fiction"
+    ],
+    "release_date": "1982-06-17",
+    "description": "A widowed field mouse must move her family -- including an ailing son -- to escape a farmer's plow. Aided by a crow and a pack of superintelligent, escaped lab rats, the brave mother struggles to transplant her home to firmer ground.",
     "number_of_seasons": null,
-    "runtime_minutes": null,
-    "actors": null
+    "tmdb_id": 11704,
+    "trailer_url": "https://www.youtube.com/watch?v=q8skJYBxvNk",
+    "tmdb_url": "https://www.themoviedb.org/movie/11704",
+    "runtime_minutes": 83,
+    "directors": [
+      "Don Bluth"
+    ],
+    "rating": 7.5,
+    "actors": [
+      "Elizabeth Hartman",
+      "Derek Jacobi",
+      "Arthur Malet",
+      "Dom DeLuise",
+      "Hermione Baddeley",
+      "Shannen Doherty",
+      "Wil Wheaton",
+      "Jodi Hicks"
+    ]
   },
   "movie:self reliance": {
     "title": "Self Reliance",
@@ -10976,22 +11038,37 @@
     "media_type": "movie",
     "number_of_seasons": null
   },
-  "movie:send help ": {
-    "title": "Send Help 👍",
+  "movie:send help": {
+    "title": "Send Help",
     "media_type": "movie",
-    "runtime_minutes": null,
-    "overview": null,
-    "trailer_url": null,
-    "tmdb_id": null,
-    "rating": null,
-    "genres": null,
+    "overview": "Two colleagues become stranded on a deserted island, the only survivors of a plane crash. On the island, they must overcome past grievances and work together to survive, but ultimately, it's a battle of wills and wits to make it out alive.",
+    "poster_url": "https://image.tmdb.org/t/p/w342/mjkS2iAgWj3ik1DTjvI15nHZ7yl.jpg",
+    "genres": [
+      "Horror",
+      "Thriller",
+      "Comedy"
+    ],
+    "release_date": "2026-01-22",
+    "description": "Two colleagues become stranded on a deserted island, the only survivors of a plane crash. On the island, they must overcome past grievances and work together to survive, but ultimately, it's a battle of wills and wits to make it out alive.",
     "number_of_seasons": null,
-    "release_date": null,
-    "directors": null,
-    "actors": null,
-    "poster_url": null,
-    "tmdb_url": null,
-    "description": null
+    "tmdb_id": 1198994,
+    "trailer_url": "https://www.youtube.com/watch?v=VXWye0z9mfU",
+    "tmdb_url": "https://www.themoviedb.org/movie/1198994",
+    "runtime_minutes": 113,
+    "directors": [
+      "Sam Raimi"
+    ],
+    "rating": 7.0,
+    "actors": [
+      "Rachel McAdams",
+      "Dylan O'Brien",
+      "Edyll Ismail",
+      "Dennis Haysbert",
+      "Xavier Samuel",
+      "Chris Pang",
+      "Thaneth Warakulnukroh",
+      "Emma Raimi"
+    ]
   },
   "movie:significant other": {
     "title": "Significant Other",
@@ -11503,22 +11580,40 @@
     "media_type": "movie",
     "number_of_seasons": null
   },
-  "movie:super mario galaxy ": {
-    "title": "Super Mario Galaxy 😐",
+  "movie:super mario galaxy": {
+    "title": "Super Mario Galaxy",
     "media_type": "movie",
-    "runtime_minutes": null,
-    "overview": null,
-    "trailer_url": null,
-    "tmdb_id": null,
-    "rating": null,
-    "genres": null,
+    "overview": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.",
+    "poster_url": "https://image.tmdb.org/t/p/w342/eJGWx219ZcEMVQJhAgMiqo8tYY.jpg",
+    "genres": [
+      "Family",
+      "Comedy",
+      "Adventure",
+      "Fantasy",
+      "Animation"
+    ],
+    "release_date": "2026-04-01",
+    "description": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.",
     "number_of_seasons": null,
-    "release_date": null,
-    "directors": null,
-    "actors": null,
-    "poster_url": null,
-    "tmdb_url": null,
-    "description": null
+    "tmdb_id": 1226863,
+    "trailer_url": "https://www.youtube.com/watch?v=fm3oeAGbcd4",
+    "tmdb_url": "https://www.themoviedb.org/movie/1226863",
+    "runtime_minutes": 98,
+    "directors": [
+      "Aaron Horvath",
+      "Michael Jelenic"
+    ],
+    "rating": 6.7,
+    "actors": [
+      "Chris Pratt",
+      "Charlie Day",
+      "Anya Taylor-Joy",
+      "Jack Black",
+      "Keegan-Michael Key",
+      "Benny Safdie",
+      "Donald Glover",
+      "Luis Guzmán"
+    ]
   },
   "movie:superman 2025": {
     "title": "Superman 2025",
@@ -12549,22 +12644,36 @@
     "media_type": "movie",
     "number_of_seasons": null
   },
-  "movie:the housemaid ": {
-    "title": "The Housemaid 👍",
+  "movie:the housemaid": {
+    "title": "The Housemaid",
     "media_type": "movie",
-    "runtime_minutes": null,
-    "overview": null,
-    "trailer_url": null,
-    "tmdb_id": null,
-    "rating": null,
-    "genres": null,
+    "overview": "Trying to escape her past, Millie Calloway accepts a job as a live-in housemaid for the wealthy Nina and Andrew Winchester. But what begins as a dream job quickly unravels into something far more dangerous—a sexy, seductive game of secrets, scandal, and power.",
+    "poster_url": "https://image.tmdb.org/t/p/w342/cWsBscZzwu5brg9YjNkGewRUvJX.jpg",
+    "genres": [
+      "Mystery",
+      "Thriller"
+    ],
+    "release_date": "2025-12-18",
+    "description": "Trying to escape her past, Millie Calloway accepts a job as a live-in housemaid for the wealthy Nina and Andrew Winchester. But what begins as a dream job quickly unravels into something far more dangerous—a sexy, seductive game of secrets, scandal, and power.",
     "number_of_seasons": null,
-    "release_date": null,
-    "directors": null,
-    "actors": null,
-    "poster_url": null,
-    "tmdb_url": null,
-    "description": null
+    "tmdb_id": 1368166,
+    "trailer_url": "https://www.youtube.com/watch?v=M_HwDp-zKBI",
+    "tmdb_url": "https://www.themoviedb.org/movie/1368166",
+    "runtime_minutes": 131,
+    "directors": [
+      "Paul Feig"
+    ],
+    "rating": 7.2,
+    "actors": [
+      "Sydney Sweeney",
+      "Amanda Seyfried",
+      "Brandon Sklenar",
+      "Michele Morrone",
+      "Elizabeth Perkins",
+      "Indiana Elle",
+      "Amanda Joy Erickson",
+      "Sarah Cooper"
+    ]
   },
   "movie:the invitation": {
     "title": "The Invitation",
@@ -12880,22 +12989,37 @@
     "media_type": "movie",
     "number_of_seasons": null
   },
-  "movie:the naked gun ": {
-    "title": "The Naked Gun 👍",
+  "movie:the naked gun": {
+    "title": "The Naked Gun",
     "media_type": "movie",
-    "runtime_minutes": null,
-    "overview": null,
-    "trailer_url": null,
-    "tmdb_id": null,
-    "rating": null,
-    "genres": null,
+    "overview": "Only one man has the particular set of skills... to lead Police Squad and save the world: Lt. Frank Drebin Jr. Following in his father's footsteps, he must solve a murder case to prevent Police Squad from closure.",
+    "poster_url": "https://image.tmdb.org/t/p/w342/rwla9vqzrKVVKVKiOuROTIXGsxj.jpg",
+    "genres": [
+      "Action",
+      "Comedy",
+      "Crime"
+    ],
+    "release_date": "2025-07-30",
+    "description": "Only one man has the particular set of skills... to lead Police Squad and save the world: Lt. Frank Drebin Jr. Following in his father's footsteps, he must solve a murder case to prevent Police Squad from closure.",
     "number_of_seasons": null,
-    "release_date": null,
-    "directors": null,
-    "actors": null,
-    "poster_url": null,
-    "tmdb_url": null,
-    "description": null
+    "tmdb_id": 1035259,
+    "trailer_url": "https://www.youtube.com/watch?v=WW5gu9D1exU",
+    "tmdb_url": "https://www.themoviedb.org/movie/1035259",
+    "runtime_minutes": 85,
+    "directors": [
+      "Akiva Schaffer"
+    ],
+    "rating": 6.4,
+    "actors": [
+      "Liam Neeson",
+      "Pamela Anderson",
+      "Paul Walter Hauser",
+      "Danny Huston",
+      "CCH Pounder",
+      "Kevin Durand",
+      "Liza Koshy",
+      "Eddie Yu"
+    ]
   },
   "movie:the nice guys": {
     "title": "The Nice Guys",
@@ -13620,22 +13744,36 @@
     "media_type": "movie",
     "number_of_seasons": null
   },
-  "movie:together ": {
-    "title": "Together 😐",
+  "movie:together": {
+    "title": "Together",
     "media_type": "movie",
-    "runtime_minutes": null,
-    "overview": null,
-    "trailer_url": null,
-    "tmdb_id": null,
-    "rating": null,
-    "genres": null,
+    "overview": "Years into their relationship, Tim and Millie find themselves at a crossroads as they move to the country, abandoning all that is familiar in their lives except each other. With tensions already flaring, a nightmarish encounter with a mysterious, unnatural force threatens to corrupt their lives, their love, and their flesh.",
+    "poster_url": "https://image.tmdb.org/t/p/w342/80slKYVM5teFH3kz6ouWrZXveqj.jpg",
+    "genres": [
+      "Horror",
+      "Romance"
+    ],
+    "release_date": "2025-07-28",
+    "description": "Years into their relationship, Tim and Millie find themselves at a crossroads as they move to the country, abandoning all that is familiar in their lives except each other. With tensions already flaring, a nightmarish encounter with a mysterious, unnatural force threatens to corrupt their lives, their love, and their flesh.",
     "number_of_seasons": null,
-    "release_date": null,
-    "directors": null,
-    "actors": null,
-    "poster_url": null,
-    "tmdb_url": null,
-    "description": null
+    "tmdb_id": 1242011,
+    "trailer_url": "https://www.youtube.com/watch?v=PMYbNyLd3AA",
+    "tmdb_url": "https://www.themoviedb.org/movie/1242011",
+    "runtime_minutes": 102,
+    "directors": [
+      "Michael Shanks"
+    ],
+    "rating": 6.9,
+    "actors": [
+      "Dave Franco",
+      "Alison Brie",
+      "Damon Herriman",
+      "Mia Morrissey",
+      "Karl Richmond",
+      "Jack Kenny",
+      "Francesca Waters",
+      "Aljin Abella"
+    ]
   },
   "movie:top gun maverick": {
     "title": "Top Gun: Maverick",
@@ -14145,22 +14283,36 @@
     "media_type": "movie",
     "number_of_seasons": null
   },
-  "movie:weapons ": {
-    "title": "Weapons 🔥",
+  "movie:weapons": {
+    "title": "Weapons",
     "media_type": "movie",
-    "poster_url": null,
-    "tmdb_id": null,
-    "release_date": null,
-    "trailer_url": null,
-    "directors": null,
-    "tmdb_url": null,
-    "overview": null,
-    "description": null,
-    "genres": null,
-    "rating": null,
+    "overview": "When all but one child from the same class mysteriously vanish on the same night at exactly the same time, a community is left questioning who or what is behind their disappearance.",
+    "poster_url": "https://image.tmdb.org/t/p/w342/cpf7vsRZ0MYRQcnLWteD5jK9ymT.jpg",
+    "genres": [
+      "Horror",
+      "Mystery"
+    ],
+    "release_date": "2025-08-04",
+    "description": "When all but one child from the same class mysteriously vanish on the same night at exactly the same time, a community is left questioning who or what is behind their disappearance.",
     "number_of_seasons": null,
-    "runtime_minutes": null,
-    "actors": null
+    "tmdb_id": 1078605,
+    "trailer_url": "https://www.youtube.com/watch?v=t41avNnPsaA",
+    "tmdb_url": "https://www.themoviedb.org/movie/1078605",
+    "runtime_minutes": 129,
+    "directors": [
+      "Zach Cregger"
+    ],
+    "rating": 7.3,
+    "actors": [
+      "Julia Garner",
+      "Josh Brolin",
+      "Alden Ehrenreich",
+      "Austin Abrams",
+      "Benedict Wong",
+      "Amy Madigan",
+      "Cary Christopher",
+      "Toby Huss"
+    ]
   },
   "movie:what is a woman": {
     "title": "What is a Woman?",

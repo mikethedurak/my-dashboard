@@ -78,6 +78,14 @@ TEXT_BLOCK_TYPES = {
     "toggle",
 }
 
+OPINION_EMOJI_MAP = {
+    "🔥": "Loved",
+    "👍": "Liked",
+    "🤔": "Mixed",
+    "👎": "Disliked",
+    "💀": "Hated",
+}
+
 
 def local_secret(name: str) -> str:
     if not LOCAL_SECRETS_FILE.exists():
@@ -299,6 +307,17 @@ def clean_title(text: str) -> str:
     return cleaned
 
 
+def extract_title_and_opinion(text: str) -> tuple[str, str]:
+    title = clean_title(text)
+    opinion = ""
+    for emoji, mapped in OPINION_EMOJI_MAP.items():
+        if emoji in title:
+            title = title.replace(emoji, "").strip()
+            opinion = mapped
+            break
+    return title, opinion
+
+
 def movie_key(title: str) -> str:
     normalized = re.sub(r"\s+", " ", title).strip().lower()
     normalized = re.sub(r"[^\w\s]", "", normalized)
@@ -462,7 +481,7 @@ def parse_watchlist(flat_blocks: list[tuple[dict, int]]) -> dict:
         if block_type not in {"bulleted_list_item", "numbered_list_item", "to_do", "paragraph", "toggle"}:
             continue
 
-        title = clean_title(text)
+        title, opinion = extract_title_and_opinion(text)
         title = normalize_watch_title(title, current_domain)
         if not title:
             continue
@@ -472,21 +491,21 @@ def parse_watchlist(flat_blocks: list[tuple[dict, int]]) -> dict:
 
         if in_currently_watching and ((not in_now_section) or in_must_watch):
             if current_domain == "series":
-                current["series"].append({"title": title, "loved": is_bold})
+                current["series"].append({"title": title, "opinion": opinion})
             elif current_domain == "anime_movie":
-                current["anime_movies"].append({"title": title, "loved": is_bold})
+                current["anime_movies"].append({"title": title, "opinion": opinion})
             elif current_domain == "anime_series":
-                current["anime_series"].append({"title": title, "loved": is_bold})
+                current["anime_series"].append({"title": title, "opinion": opinion})
             else:
-                current["movies"].append({"title": title, "loved": is_bold})
+                current["movies"].append({"title": title, "opinion": opinion})
             continue
 
         if active_year:
-            years.setdefault(active_year, []).append({"type": current_domain, "title": title, "loved": is_bold})
+            years.setdefault(active_year, []).append({"type": current_domain, "title": title, "opinion": opinion})
             continue
 
         if current_domain in {"anime_movie", "anime_series"}:
-            anime_ungrouped.append({"type": current_domain, "title": title, "loved": is_bold})
+            anime_ungrouped.append({"type": current_domain, "title": title, "opinion": opinion})
 
     history_by_year: list[dict] = []
     for year in sorted(years.keys(), reverse=True):
@@ -602,24 +621,24 @@ def parse_games(flat_blocks: list[tuple[dict, int]]) -> dict:
         if not current_type:
             continue
 
-        title = clean_title(text)
+        title, opinion = extract_title_and_opinion(text)
         if not title:
             continue
         if normalize_label(title) in structural_labels:
             continue
 
-        entry = {"type": current_type, "title": title, "loved": is_bold}
+        entry = {"type": current_type, "title": title, "opinion": opinion}
         if in_now_playing or in_lan_flat_mode:
             if current_type == "game_aaa":
-                current_games["aaa"].append({"title": title, "loved": is_bold})
+                current_games["aaa"].append({"title": title, "opinion": opinion})
             elif current_type == "game_indie":
-                current_games["indie"].append({"title": title, "loved": is_bold})
+                current_games["indie"].append({"title": title, "opinion": opinion})
             elif current_type == "game_coop":
-                current_games["coop"].append({"title": title, "loved": is_bold})
+                current_games["coop"].append({"title": title, "opinion": opinion})
             elif current_type == "game_couch_coop":
-                current_games["couch_coop"].append({"title": title, "loved": is_bold})
+                current_games["couch_coop"].append({"title": title, "opinion": opinion})
             elif current_type == "game_lan":
-                current_games["lan"].append({"title": title, "loved": is_bold})
+                current_games["lan"].append({"title": title, "opinion": opinion})
             continue
 
         if active_year:
