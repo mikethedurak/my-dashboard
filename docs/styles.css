@@ -1078,6 +1078,30 @@ td.card-number {
   order: 2;
 }
 
+.watchlist-summary-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--muted);
+  user-select: none;
+}
+
+.watchlist-summary-toggle input[type="checkbox"] {
+  width: 14px;
+  height: 14px;
+  min-height: 14px;
+  margin: 0;
+}
+
+.watchlist-history-actions {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 8px;
+}
+
 .subsection-panel[open] summary::before {
   content: "-";
 }
@@ -1760,6 +1784,22 @@ td.card-number {
 .watchlist-opinion-text.opinion-hated {
   border-color: var(--opinion-hated);
   color: #111827;
+}
+
+:root.hide-watch-opinion-indicators .watchlist-opinion-text {
+  display: none;
+}
+
+:root.hide-watch-opinion-indicators .watchlist-entry[data-watch-opinion] {
+  border-color: var(--line) !important;
+  box-shadow: none !important;
+  background: var(--panel) !important;
+}
+
+:root.hide-watch-opinion-indicators .watchlist-detail-panel[data-watch-opinion] {
+  border-left-color: var(--line) !important;
+  box-shadow: -16px 0 32px rgba(15, 23, 42, 0.14) !important;
+  background: var(--panel) !important;
 }
 
 :root[data-theme="dark"] .watchlist-loved-badge {

@@ -134,7 +134,9 @@
             </div>
           </section>
           <details id="watchlist-history-panel" class="subsection-panel watchlist-history-panel">
-            <summary id="watchlist-history-summary">Movies watched</summary>
+            <summary id="watchlist-history-summary">
+              <span id="watchlist-history-summary-label">Movies watched</span>
+            </summary>
             <div class="watchlist-history-shell">
               <section class="watchlist-filters" aria-label="Watchlist filters">
                 <label>
@@ -173,6 +175,12 @@
                   <input id="watchlist-search-filter" type="search" placeholder="Search Title...">
                 </label>
               </section>
+              <div class="watchlist-history-actions">
+                <label class="watchlist-summary-toggle" for="watchlist-opinion-indicators-toggle">
+                  <input id="watchlist-opinion-indicators-toggle" type="checkbox" checked>
+                  <span>Indicators</span>
+                </label>
+              </div>
               <div id="watchlist-history" class="watchlist-history">
                 <p class="empty">Loading watch history...</p>
               </div>

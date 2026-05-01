@@ -73,6 +73,7 @@ const state = {
   watchlistOpinionFilter: "all",
   watchlistSearchFilter: "",
   opinionLevels: DEFAULT_OPINION_LEVELS,
+  showOpinionIndicators: true,
 };
 
 const elements = {
@@ -82,6 +83,7 @@ const elements = {
   rarityFilter: document.querySelector("#rarity-filter"),
   minPrice: document.querySelector("#min-price"),
   maxPrice: document.querySelector("#max-price"),
+  watchlistOpinionIndicatorsToggle: document.querySelector("#watchlist-opinion-indicators-toggle"),
   releaseGrid: document.querySelector("#release-grid"),
   comingSoonGrid: document.querySelector("#coming-soon-grid"),
   gameReleaseGrid: document.querySelector("#game-release-grid"),
@@ -89,6 +91,7 @@ const elements = {
   watchlistCurrent: document.querySelector("#watchlist-current"),
   watchlistHistory: document.querySelector("#watchlist-history"),
   watchlistHistorySummary: document.querySelector("#watchlist-history-summary"),
+  watchlistHistorySummaryLabel: document.querySelector("#watchlist-history-summary-label"),
   watchlistYearFilter: document.querySelector("#watchlist-year-filter"),
   watchlistSearchFilter: document.querySelector("#watchlist-search-filter"),
   watchlistGenreFilter: document.querySelector("#watchlist-genre-filter"),
@@ -560,7 +563,7 @@ function safeWatchOpinion(item) {
 
 function watchlistTypeWithOpinionLabel(type, opinion) {
   const typeLabel = escapeHtml(WATCHLIST_TYPE_LABELS[type] || "Title");
-  if (!opinion) {
+  if (!opinion || !state.showOpinionIndicators) {
     return typeLabel;
   }
   const safeOpinion = escapeHtml(opinionDisplayText(opinion));
@@ -878,8 +881,8 @@ function watchlistYears(payload) {
 }
 
 function updateWatchlistFilterOptions(payload) {
-  if (elements.watchlistHistorySummary) {
-    elements.watchlistHistorySummary.textContent = watchlistHistoryLabel();
+  if (elements.watchlistHistorySummaryLabel) {
+    elements.watchlistHistorySummaryLabel.textContent = watchlistHistoryLabel();
   }
 
   if (elements.watchlistYearFilter) {
@@ -1230,6 +1233,7 @@ function renderWatchlistAll() {
   if (!state.watchlistPayload) {
     return;
   }
+  document.documentElement.classList.toggle("hide-watch-opinion-indicators", !state.showOpinionIndicators);
   renderWatchlistSelectorControls();
   renderWatchlistSelectorState();
   renderWatchlistCurrent(state.watchlistPayload);
@@ -2740,6 +2744,17 @@ elements.maxPrice.addEventListener("input", (event) => {
   state.maxPrice = event.target.value === "" ? Number.POSITIVE_INFINITY : Number(event.target.value);
   render();
 });
+
+if (elements.watchlistOpinionIndicatorsToggle) {
+  elements.watchlistOpinionIndicatorsToggle.checked = state.showOpinionIndicators;
+  elements.watchlistOpinionIndicatorsToggle.addEventListener("click", (event) => {
+    event.stopPropagation();
+  });
+  elements.watchlistOpinionIndicatorsToggle.addEventListener("change", (event) => {
+    state.showOpinionIndicators = Boolean(event.target.checked);
+    renderWatchlistAll();
+  });
+}
 
 for (const button of mapRangeButtons) {
   button.addEventListener("click", () => {
