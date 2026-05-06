@@ -1595,6 +1595,22 @@ td.card-number {
   text-transform: uppercase;
 }
 
+.bandsintown-genre-buttons {
+  padding-right: 2px;
+}
+
+.bandsintown-genre-button.is-selected {
+  border-color: #22d3ee;
+  color: #083344;
+  background: #cffafe;
+}
+
+:root[data-theme="dark"] .bandsintown-genre-button.is-selected {
+  border-color: #22d3ee;
+  color: #67e8f9;
+  background: #0a2530;
+}
+
 .events-cards-rail {
   max-width: 100%;
   overflow-x: scroll;

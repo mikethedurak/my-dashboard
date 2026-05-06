@@ -178,6 +178,19 @@ def first_image(value: object) -> str:
     return ""
 
 
+def extract_genres(value: object) -> list[str]:
+    if isinstance(value, str):
+        parts = re.split(r"[,/|]", value)
+        genres = [clean_text(part) for part in parts if clean_text(part)]
+        return genres
+    if isinstance(value, list):
+        genres: list[str] = []
+        for item in value:
+            genres.extend(extract_genres(item))
+        return list(dict.fromkeys(genres))
+    return []
+
+
 def event_from_json_ld(payload: dict, fallback: dict[str, str]) -> dict:
     location = payload.get("location") if isinstance(payload.get("location"), dict) else {}
     address = location.get("address") if isinstance(location.get("address"), dict) else {}
@@ -189,6 +202,8 @@ def event_from_json_ld(payload: dict, fallback: dict[str, str]) -> dict:
     image = first_image(payload.get("image")) or fallback.get("image", "")
     locality = clean_text(str(address.get("addressLocality") or "Cape Town"))
     region = clean_text(str(address.get("addressRegion") or "Western Cape"))
+    performer = payload.get("performer") if isinstance(payload.get("performer"), dict) else {}
+    genre_tags = extract_genres(performer.get("genre", ""))
 
     return {
         "title": title,
@@ -202,6 +217,8 @@ def event_from_json_ld(payload: dict, fallback: dict[str, str]) -> dict:
         "image": image,
         "url": url,
         "source": "Bandsintown",
+        "genre": ", ".join(genre_tags),
+        "genre_tags": genre_tags,
         "categories": tag_event(title, venue),
     }
 
@@ -246,6 +263,8 @@ def event_from_listing(link: dict[str, str]) -> dict:
         "image": link.get("image", ""),
         "url": link.get("url", ""),
         "source": "Bandsintown",
+        "genre": "",
+        "genre_tags": [],
         "categories": tag_event(title, ""),
     }
 

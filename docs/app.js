@@ -11,6 +11,7 @@ const NEWS_PATH = "./data/news/news.json";
 const CONFIG_PATH = "../config.json";
 const SPECIALS_PATH = "./data/events/specials.json";
 const BANDSINTOWN_EVENTS_PATH = "./data/events/bandsintown_events.json";
+const BANDSINTOWN_GENRE_FILTERS_PATH = "./data/events/bandsintown_genre_filters.json";
 const QUICKET_EVENTS_PATH = "./data/events/quicket_events.json";
 const WEATHER_PATH =
   "https://api.open-meteo.com/v1/forecast?latitude=-33.9249&longitude=18.4241&daily=weathercode,temperature_2m_max,temperature_2m_min&timezone=Africa%2FJohannesburg&forecast_days=7";
@@ -63,6 +64,8 @@ const state = {
   specialsPayload: null,
   quicketEvents: [],
   bandsintownEvents: [],
+  bandsintownGenreFilters: [],
+  selectedBandsintownGenre: "all",
   specialsMapRange: "next-7",
   mapSources: {
     places: true,
@@ -2332,6 +2335,35 @@ function renderBandsintownEvents(events) {
 
   elements.bandsintownEventsList.innerHTML = "";
 
+  const configured = Array.isArray(state.bandsintownGenreFilters) ? state.bandsintownGenreFilters : [];
+  const discovered = unique(
+    events.flatMap((event) => Array.isArray(event.genre_tags) ? event.genre_tags : []),
+  );
+  const configuredFiltered = configured.filter((genre) => discovered.includes(genre));
+  const genres = configuredFiltered.length ? configuredFiltered : discovered;
+  const availableKeys = new Set(["all", ...genres.map((genre) => normalizeGenreKey(genre))]);
+  if (!availableKeys.has(state.selectedBandsintownGenre)) {
+    state.selectedBandsintownGenre = "all";
+  }
+
+  const genreControls = document.createElement("div");
+  genreControls.className = "watchlist-category-buttons bandsintown-genre-buttons";
+  const allButton = document.createElement("button");
+  allButton.type = "button";
+  allButton.className = `watchlist-category-button bandsintown-genre-button${state.selectedBandsintownGenre === "all" ? " is-selected" : ""}`;
+  allButton.dataset.bandsintownGenre = "all";
+  allButton.textContent = "All";
+  genreControls.append(allButton);
+  for (const genre of genres) {
+    const key = normalizeGenreKey(genre);
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = `watchlist-category-button bandsintown-genre-button${state.selectedBandsintownGenre === key ? " is-selected" : ""}`;
+    button.dataset.bandsintownGenre = key;
+    button.textContent = genre;
+    genreControls.append(button);
+  }
+
   const title = document.createElement("h4");
   title.className = "events-rail-title";
   title.textContent = "Bandsintown concerts";
@@ -2341,42 +2373,85 @@ function renderBandsintownEvents(events) {
   const track = document.createElement("div");
   track.className = "events-cards-track";
 
-  for (const event of events) {
-    const card = document.createElement("a");
-    card.className = "bandsintown-event-card";
-    card.href = event.url;
-    card.target = "_blank";
-    card.rel = "noreferrer";
+  const filtered = state.selectedBandsintownGenre === "all"
+    ? events
+    : events.filter((event) =>
+      (Array.isArray(event.genre_tags) ? event.genre_tags : [])
+        .map((genre) => normalizeGenreKey(genre))
+        .includes(state.selectedBandsintownGenre),
+    );
+  filtered.sort(compareBandsintownDateAsc);
 
-    if (event.image) {
-      const image = document.createElement("img");
-      image.src = event.image;
-      image.alt = event.title || "Bandsintown concert";
-      image.loading = "lazy";
-      card.append(image);
+  if (!filtered.length) {
+    const empty = document.createElement("p");
+    empty.className = "empty";
+    empty.textContent = "No concerts found for this genre.";
+    track.append(empty);
+  } else {
+    for (const event of filtered) {
+      const card = document.createElement("a");
+      card.className = "bandsintown-event-card";
+      card.href = event.url;
+      card.target = "_blank";
+      card.rel = "noreferrer";
+
+      if (event.image) {
+        const image = document.createElement("img");
+        image.src = event.image;
+        image.alt = event.title || "Bandsintown concert";
+        image.loading = "lazy";
+        card.append(image);
+      }
+
+      const body = document.createElement("div");
+      body.className = "bandsintown-event-body";
+
+      const date = document.createElement("span");
+      date.className = "event-date";
+      date.textContent = event.start ? displayDateTime(event.start) : event.date_text || "";
+
+      const eventTitle = document.createElement("strong");
+      eventTitle.textContent = event.title || "Untitled concert";
+
+      const venue = document.createElement("span");
+      venue.className = "event-venue";
+      venue.textContent = [event.venue, event.locality].filter(Boolean).join(", ");
+
+      body.append(date, eventTitle, venue);
+      card.append(body);
+      track.append(card);
     }
-
-    const body = document.createElement("div");
-    body.className = "bandsintown-event-body";
-
-    const date = document.createElement("span");
-    date.className = "event-date";
-    date.textContent = event.start ? displayDateTime(event.start) : event.date_text || "";
-
-    const eventTitle = document.createElement("strong");
-    eventTitle.textContent = event.title || "Untitled concert";
-
-    const venue = document.createElement("span");
-    venue.className = "event-venue";
-    venue.textContent = [event.venue, event.locality].filter(Boolean).join(", ");
-
-    body.append(date, eventTitle, venue);
-    card.append(body);
-    track.append(card);
   }
 
   rail.append(track);
-  elements.bandsintownEventsList.append(title, rail);
+  elements.bandsintownEventsList.append(title, genreControls, rail);
+}
+
+function normalizeGenreKey(value) {
+  return String(value || "")
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+function compareBandsintownDateAsc(left, right) {
+  const leftTime = Date.parse(String(left?.start || ""));
+  const rightTime = Date.parse(String(right?.start || ""));
+  const leftHas = Number.isFinite(leftTime);
+  const rightHas = Number.isFinite(rightTime);
+  if (leftHas && rightHas) {
+    return leftTime - rightTime;
+  }
+  if (leftHas) {
+    return -1;
+  }
+  if (rightHas) {
+    return 1;
+  }
+  const leftDateText = String(left?.date_text || "").trim().toLowerCase();
+  const rightDateText = String(right?.date_text || "").trim().toLowerCase();
+  return leftDateText.localeCompare(rightDateText);
 }
 
 function selectedMapDays(rollingWeek) {
@@ -3338,14 +3413,26 @@ async function loadBandsintownEvents() {
     return;
   }
   try {
-    const response = await fetch(BANDSINTOWN_EVENTS_PATH, { cache: "no-store" });
-    if (!response.ok) {
+    const [eventsResponse, configResponse] = await Promise.all([
+      fetch(BANDSINTOWN_EVENTS_PATH, { cache: "no-store" }),
+      fetch(BANDSINTOWN_GENRE_FILTERS_PATH, { cache: "no-store" }),
+    ]);
+    if (!eventsResponse.ok) {
       throw new Error(`Could not load ${BANDSINTOWN_EVENTS_PATH}`);
     }
-    const events = await response.json();
+    const events = await eventsResponse.json();
+    let configuredGenres = [];
+    if (configResponse.ok) {
+      const config = await configResponse.json();
+      configuredGenres = Array.isArray(config?.genres)
+        ? unique(config.genres.map((genre) => String(genre || "").trim()).filter(Boolean))
+        : [];
+    }
+    state.bandsintownGenreFilters = configuredGenres;
     state.bandsintownEvents = Array.isArray(events) ? events : [];
     renderBandsintownEvents(state.bandsintownEvents);
   } catch (error) {
+    state.bandsintownGenreFilters = [];
     state.bandsintownEvents = [];
     elements.bandsintownEventsList.innerHTML = `<p class="empty">${error.message}</p>`;
   }
@@ -3600,6 +3687,19 @@ if (elements.releaseGrid) {
       return;
     }
     openReleaseDetail(state.releaseItems[index]);
+  });
+}
+
+if (elements.bandsintownEventsList) {
+  elements.bandsintownEventsList.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-bandsintown-genre]");
+    if (!button) {
+      return;
+    }
+    event.preventDefault();
+    const next = button.dataset.bandsintownGenre || "all";
+    state.selectedBandsintownGenre = next;
+    renderBandsintownEvents(state.bandsintownEvents);
   });
 }
 

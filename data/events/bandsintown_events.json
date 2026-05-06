@@ -11,6 +11,10 @@
     "image": "https://photos.bandsintown.com/thumb/24643292.jpeg",
     "url": "https://www.bandsintown.com/e/108152105-joshua-na-die-reen-at-the-daisy-jones-bar?came_from=209",
     "source": "Bandsintown",
+    "genre": "Afrikaans",
+    "genre_tags": [
+      "Afrikaans"
+    ],
     "categories": [
       "bar"
     ]
@@ -27,6 +31,10 @@
     "image": "https://photos.bandsintown.com/thumb/24834389.jpeg",
     "url": "https://www.bandsintown.com/e/108240516-jabulile-majola-at-baxter-theatre-centre?came_from=209",
     "source": "Bandsintown",
+    "genre": "Folk",
+    "genre_tags": [
+      "Folk"
+    ],
     "categories": [
       "theatre"
     ]
@@ -43,6 +51,10 @@
     "image": "https://photos.bandsintown.com/thumb/24425340.jpeg",
     "url": "https://www.bandsintown.com/e/1038279216-appel-at-the-daisy-jones-bar?came_from=209",
     "source": "Bandsintown",
+    "genre": "Afrikaans",
+    "genre_tags": [
+      "Afrikaans"
+    ],
     "categories": [
       "bar"
     ]
@@ -59,6 +71,10 @@
     "image": "https://photos.bandsintown.com/thumb/23242437.jpeg",
     "url": "https://www.bandsintown.com/e/108138901-spoegwolf-at-the-daisy-jones-bar?came_from=209",
     "source": "Bandsintown",
+    "genre": "Rock",
+    "genre_tags": [
+      "Rock"
+    ],
     "categories": [
       "bar"
     ]
@@ -75,6 +91,10 @@
     "image": "https://photos.bandsintown.com/thumb/21426350.jpeg",
     "url": "https://www.bandsintown.com/e/108004150-bongeziwe-mabandla-at-hearty-collective?came_from=209",
     "source": "Bandsintown",
+    "genre": "Urban Traditional Folk",
+    "genre_tags": [
+      "Urban Traditional Folk"
+    ],
     "categories": [
       "art"
     ]
@@ -91,6 +111,10 @@
     "image": "https://photos.bandsintown.com/thumb/24887448.jpeg",
     "url": "https://www.bandsintown.com/e/107998022-francois-van-coke-at-die-boer?came_from=209",
     "source": "Bandsintown",
+    "genre": "Rock",
+    "genre_tags": [
+      "Rock"
+    ],
     "categories": []
   },
   {
@@ -105,6 +129,10 @@
     "image": "https://photos.bandsintown.com/thumb/18141779.jpeg",
     "url": "https://www.bandsintown.com/e/1037043778-ub40-featuring-ali-campbell-at-grand-arena-at-grandwest?came_from=209",
     "source": "Bandsintown",
+    "genre": "Reggae",
+    "genre_tags": [
+      "Reggae"
+    ],
     "categories": []
   },
   {
@@ -119,6 +147,10 @@
     "image": "https://photos.bandsintown.com/thumb/24672250.jpeg",
     "url": "https://www.bandsintown.com/e/108163321-elandre-at-the-barnyard-theatre-tyger-valley?came_from=209",
     "source": "Bandsintown",
+    "genre": "Contemporary",
+    "genre_tags": [
+      "Contemporary"
+    ],
     "categories": [
       "bar",
       "theatre"
@@ -136,6 +168,10 @@
     "image": "https://photos.bandsintown.com/thumb/24096942.jpeg",
     "url": "https://www.bandsintown.com/e/107879938-ntokozo-mbambo-at-grand-arena-at-grandwest?came_from=209",
     "source": "Bandsintown",
+    "genre": "Classical",
+    "genre_tags": [
+      "Classical"
+    ],
     "categories": []
   },
   {
@@ -150,20 +186,26 @@
     "image": "https://photos.bandsintown.com/thumb/24858370.jpeg",
     "url": "https://www.bandsintown.com/e/108253102-tamia-at-grand-arena-at-grandwest?came_from=209",
     "source": "Bandsintown",
+    "genre": "00s",
+    "genre_tags": [
+      "00s"
+    ],
     "categories": []
   },
   {
-    "title": "Maxwell",
-    "artist": "Maxwell",
-    "start": "2026-08-11T10:00:00+02:00",
+    "title": "calendarIcon",
+    "artist": "calendarIcon",
+    "start": "",
     "date_text": "Aug 11 - 10:00 am",
-    "venue": "Grand Arena at GrandWest",
+    "venue": "",
     "locality": "Cape Town",
     "region": "Western Cape",
-    "address": "1 Jakes Gerwel Dr",
-    "image": "https://photos.bandsintown.com/thumb/22942368.jpeg",
-    "url": "https://www.bandsintown.com/e/108258579-maxwell-at-grand-arena-at-grandwest?came_from=209",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/calendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/108258579-maxwell-at-grand-arena-at-grandwest?came_from=253&utm_medium=web&utm_source=city_page&utm_campaign=top_event",
     "source": "Bandsintown",
+    "genre": "",
+    "genre_tags": [],
     "categories": []
   },
   {
@@ -178,6 +220,10 @@
     "image": "https://photos.bandsintown.com/thumb/24384899.jpeg",
     "url": "https://www.bandsintown.com/e/108016362-ziyanda-tshangana-at-joseph-stone-auditorium?came_from=209",
     "source": "Bandsintown",
+    "genre": "Gospel",
+    "genre_tags": [
+      "Gospel"
+    ],
     "categories": []
   },
   {
@@ -192,6 +238,10 @@
     "image": "https://photos.bandsintown.com/thumb/9403372.jpeg",
     "url": "https://www.bandsintown.com/e/108128206-dave-at-grand-arena-at-grandwest?came_from=209",
     "source": "Bandsintown",
+    "genre": "Hip Hop",
+    "genre_tags": [
+      "Hip Hop"
+    ],
     "categories": []
   },
   {
@@ -206,6 +256,10 @@
     "image": "https://photos.bandsintown.com/thumb/19924575.jpeg",
     "url": "https://www.bandsintown.com/e/107876984-kip-moore-at-grand-arena-at-grandwest?came_from=209",
     "source": "Bandsintown",
+    "genre": "Country",
+    "genre_tags": [
+      "Country"
+    ],
     "categories": []
   },
   {
@@ -220,6 +274,10 @@
     "image": "https://photos.bandsintown.com/thumb/24463098.jpeg",
     "url": "https://www.bandsintown.com/e/108054163-jill-scott-at-sunbet-arena?came_from=209",
     "source": "Bandsintown",
+    "genre": "Hip Hop",
+    "genre_tags": [
+      "Hip Hop"
+    ],
     "categories": []
   },
   {
@@ -234,6 +292,10 @@
     "image": "https://photos.bandsintown.com/thumb/24893704.jpeg",
     "url": "https://www.bandsintown.com/e/108277399-live-at-kirstenbosch-gardens-concert-stage?came_from=209",
     "source": "Bandsintown",
+    "genre": "Alternative Rock",
+    "genre_tags": [
+      "Alternative Rock"
+    ],
     "categories": [
       "music",
       "theatre"
@@ -251,6 +313,10 @@
     "image": "https://photos.bandsintown.com/thumb/23242437.jpeg",
     "url": "https://www.bandsintown.com/e/108335743-spoegwolf-at-sandringham-farm?came_from=209",
     "source": "Bandsintown",
+    "genre": "Afrikaans",
+    "genre_tags": [
+      "Afrikaans"
+    ],
     "categories": []
   },
   {
@@ -265,6 +331,10 @@
     "image": "https://photos.bandsintown.com/thumb/19550751.jpeg",
     "url": "https://www.bandsintown.com/e/1038850712-trevor-noah-at-grand-arena-at-grandwest?came_from=209",
     "source": "Bandsintown",
+    "genre": "Standup Comedy",
+    "genre_tags": [
+      "Standup Comedy"
+    ],
     "categories": []
   },
   {
@@ -279,6 +349,10 @@
     "image": "https://photos.bandsintown.com/thumb/18404432.jpeg",
     "url": "https://www.bandsintown.com/e/1038852550-jorja-smith-at-cloof-wine-estate?came_from=209",
     "source": "Bandsintown",
+    "genre": "R&b",
+    "genre_tags": [
+      "R&b"
+    ],
     "categories": [
       "bar"
     ]
@@ -295,6 +369,8 @@
     "image": "https://photos.bandsintown.com/thumb/25024339.jpeg",
     "url": "https://www.bandsintown.com/e/108328912-karen-zoid-at-lourensford-wine-estate?came_from=209",
     "source": "Bandsintown",
+    "genre": "",
+    "genre_tags": [],
     "categories": [
       "bar"
     ]
@@ -311,6 +387,10 @@
     "image": "https://photos.bandsintown.com/thumb/23374446.jpeg",
     "url": "https://www.bandsintown.com/e/1038852814-steve-hofmeyr-at-heroes-restaurant?came_from=209",
     "source": "Bandsintown",
+    "genre": "Pop",
+    "genre_tags": [
+      "Pop"
+    ],
     "categories": [
       "food"
     ]
@@ -327,6 +407,10 @@
     "image": "https://photos.bandsintown.com/thumb/25013867.jpeg",
     "url": "https://www.bandsintown.com/e/108323273-elandre-at-kapstadt-brauhaus-durbanville?came_from=209",
     "source": "Bandsintown",
+    "genre": "Contemporary",
+    "genre_tags": [
+      "Contemporary"
+    ],
     "categories": []
   },
   {
@@ -341,6 +425,10 @@
     "image": "https://photos.bandsintown.com/thumb/25025134.jpeg",
     "url": "https://www.bandsintown.com/e/108329439-the-unpopular-department-at-aandklas-stellenbosch?came_from=209",
     "source": "Bandsintown",
+    "genre": "Metal",
+    "genre_tags": [
+      "Metal"
+    ],
     "categories": [
       "art"
     ]
@@ -357,6 +445,8 @@
     "image": "https://photos.bandsintown.com/thumb/null.jpeg",
     "url": "https://www.bandsintown.com/e/1038861692-jan-rhaap-at-heroes-restaurant?came_from=209",
     "source": "Bandsintown",
+    "genre": "",
+    "genre_tags": [],
     "categories": [
       "food"
     ]
@@ -373,6 +463,10 @@
     "image": "https://photos.bandsintown.com/thumb/24684906.jpeg",
     "url": "https://www.bandsintown.com/e/108176419-dan-patlansky-at-the-barnyard-theatre-tyger-valley?came_from=209",
     "source": "Bandsintown",
+    "genre": "Rock",
+    "genre_tags": [
+      "Rock"
+    ],
     "categories": [
       "bar",
       "theatre"
@@ -390,6 +484,8 @@
     "image": "https://photos.bandsintown.com/thumb/24954460.jpeg",
     "url": "https://www.bandsintown.com/e/108293173-tete-mbambisa-at-the-athletic-club-and-social?came_from=209",
     "source": "Bandsintown",
+    "genre": "",
+    "genre_tags": [],
     "categories": [
       "club"
     ]
@@ -406,6 +502,10 @@
     "image": "https://photos.bandsintown.com/thumb/24825105.jpeg",
     "url": "https://www.bandsintown.com/e/108236412-halvar-at-woodstock-brewery?came_from=209",
     "source": "Bandsintown",
+    "genre": "Thrash Metal",
+    "genre_tags": [
+      "Thrash Metal"
+    ],
     "categories": [
       "bar"
     ]
@@ -422,6 +522,10 @@
     "image": "https://photos.bandsintown.com/thumb/24643292.jpeg",
     "url": "https://www.bandsintown.com/e/108152105-joshua-na-die-reen-at-the-daisy-jones-bar?came_from=209",
     "source": "Bandsintown",
+    "genre": "Afrikaans",
+    "genre_tags": [
+      "Afrikaans"
+    ],
     "categories": [
       "bar"
     ]
@@ -438,6 +542,10 @@
     "image": "https://photos.bandsintown.com/thumb/25028293.jpeg",
     "url": "https://www.bandsintown.com/e/108332287-gordon-rocker-at-the-galley-fish-hoek?came_from=209",
     "source": "Bandsintown",
+    "genre": "Adult Contemporary",
+    "genre_tags": [
+      "Adult Contemporary"
+    ],
     "categories": []
   },
   {
@@ -452,6 +560,10 @@
     "image": "https://photos.bandsintown.com/thumb/24684906.jpeg",
     "url": "https://www.bandsintown.com/e/108176424-dan-patlansky-at-cafe-roux-noordhoek?came_from=209",
     "source": "Bandsintown",
+    "genre": "Rock",
+    "genre_tags": [
+      "Rock"
+    ],
     "categories": []
   },
   {
@@ -466,6 +578,10 @@
     "image": "https://photos.bandsintown.com/thumb/24834389.jpeg",
     "url": "https://www.bandsintown.com/e/108240516-jabulile-majola-at-baxter-theatre-centre?came_from=209",
     "source": "Bandsintown",
+    "genre": "Folk",
+    "genre_tags": [
+      "Folk"
+    ],
     "categories": [
       "theatre"
     ]
@@ -482,6 +598,10 @@
     "image": "https://photos.bandsintown.com/thumb/25011160.jpeg",
     "url": "https://www.bandsintown.com/e/108324821-the-unpopular-department-at-the-armchair-theatre?came_from=209",
     "source": "Bandsintown",
+    "genre": "Metal",
+    "genre_tags": [
+      "Metal"
+    ],
     "categories": [
       "art",
       "theatre"
@@ -499,6 +619,10 @@
     "image": "https://photos.bandsintown.com/thumb/24684906.jpeg",
     "url": "https://www.bandsintown.com/e/108176429-dan-patlansky-at-cafe-roux-noordhoek?came_from=209",
     "source": "Bandsintown",
+    "genre": "Rock",
+    "genre_tags": [
+      "Rock"
+    ],
     "categories": []
   },
   {
@@ -513,6 +637,10 @@
     "image": "https://photos.bandsintown.com/thumb/24684906.jpeg",
     "url": "https://www.bandsintown.com/e/108176438-dan-patlansky-at-the-daisy-jones-bar?came_from=209",
     "source": "Bandsintown",
+    "genre": "Rock",
+    "genre_tags": [
+      "Rock"
+    ],
     "categories": [
       "bar"
     ]
@@ -529,6 +657,10 @@
     "image": "https://photos.bandsintown.com/thumb/24713520.jpeg",
     "url": "https://www.bandsintown.com/e/108181378-raaf-at-allee-bleue-wine-estate?came_from=209",
     "source": "Bandsintown",
+    "genre": "Folk",
+    "genre_tags": [
+      "Folk"
+    ],
     "categories": [
       "bar"
     ]
@@ -545,6 +677,10 @@
     "image": "https://photos.bandsintown.com/thumb/24425373.jpeg",
     "url": "https://www.bandsintown.com/e/1038581300-chris-steyn-at-kapstadt-brauhaus-stellenbosch?came_from=209",
     "source": "Bandsintown",
+    "genre": "Afrikaans",
+    "genre_tags": [
+      "Afrikaans"
+    ],
     "categories": []
   },
   {
@@ -559,6 +695,10 @@
     "image": "https://photos.bandsintown.com/thumb/24633799.jpeg",
     "url": "https://www.bandsintown.com/e/108146411-watershed-at-simon's-restaurant?came_from=209",
     "source": "Bandsintown",
+    "genre": "Acoustic",
+    "genre_tags": [
+      "Acoustic"
+    ],
     "categories": [
       "food"
     ]
@@ -575,6 +715,10 @@
     "image": "https://photos.bandsintown.com/thumb/24987398.jpeg",
     "url": "https://www.bandsintown.com/e/108314994-tanika-paschke-moloi-at-artvark-gallery?came_from=209",
     "source": "Bandsintown",
+    "genre": "Indigenous Instruments",
+    "genre_tags": [
+      "Indigenous Instruments"
+    ],
     "categories": [
       "art"
     ]
@@ -591,6 +735,10 @@
     "image": "https://photos.bandsintown.com/thumb/24964628.jpeg",
     "url": "https://www.bandsintown.com/e/108300283-mel-malisch-at-the-house-of-machines?came_from=209",
     "source": "Bandsintown",
+    "genre": "Indie Folk",
+    "genre_tags": [
+      "Indie Folk"
+    ],
     "categories": [
       "dj"
     ]
@@ -607,6 +755,10 @@
     "image": "https://photos.bandsintown.com/thumb/24425340.jpeg",
     "url": "https://www.bandsintown.com/e/1038279216-appel-at-the-daisy-jones-bar?came_from=209",
     "source": "Bandsintown",
+    "genre": "Afrikaans",
+    "genre_tags": [
+      "Afrikaans"
+    ],
     "categories": [
       "bar"
     ]
