@@ -487,7 +487,7 @@ def google_places_search_text_new(api_key: str, text_query: str, lat: float, lng
 
 
 def enrich_locations_with_ratings(locations: dict[str, dict]) -> dict[str, dict]:
-    api_key = secret("GOOGLE_MAPS_API_KEY") or secret("GOOGLE_API_KEY")
+    api_key = secret("GOOGLE_PLACES_API_KEY") or secret("GOOGLE_MAPS_API_KEY") or secret("GOOGLE_API_KEY")
     if not api_key:
         return locations
 

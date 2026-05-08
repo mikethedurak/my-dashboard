@@ -93,9 +93,9 @@ def main() -> int:
     if maps_url == "-":
         maps_url = ""
 
-    api_key = secret("GOOGLE_MAPS_API_KEY") or secret("GOOGLE_API_KEY")
+    api_key = secret("GOOGLE_PLACES_API_KEY") or secret("GOOGLE_MAPS_API_KEY") or secret("GOOGLE_API_KEY")
     if not api_key:
-        print("Missing GOOGLE_MAPS_API_KEY or GOOGLE_API_KEY in env/secrets.env")
+        print("Missing GOOGLE_PLACES_API_KEY (or GOOGLE_MAPS_API_KEY / GOOGLE_API_KEY) in env/secrets.env")
         return 1
 
     text_query = text_query_from_maps_url(maps_url, place_name, lat, lng)
