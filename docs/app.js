@@ -178,6 +178,7 @@ let forceNextMapFit = false;
 let selectedMapItemKey = "";
 let currentMapItems = [];
 let mapMarkersByKey = new Map();
+let selectedMarkerHighlight = null;
 const markerIcons = {
   places: L.icon({
     iconUrl: "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
@@ -3013,18 +3014,24 @@ function focusSpecialOnMap(venueName) {
   }
 }
 
-function eventListCard(event) {
+function eventListCard(event, options = {}) {
+  const { includeLink = true, interactive = false, eventKey = "" } = options;
   const when = displayDateTime(event.start);
   const where = [event.venue, event.locality].filter(Boolean).join(", ");
   const imageHtml = event.image ? `<img src="${event.image}" alt="${event.title || "Event"}">` : "";
+  const linkHtml = includeLink
+    ? `<p><a href="${event.url}" target="_blank" rel="noreferrer">Open event</a></p>`
+    : "";
+  const interactiveAttrs = interactive ? ` data-map-event-key="${eventKey}" role="button" tabindex="0"` : "";
+  const interactiveClass = interactive ? " map-clickable-card map-event-list-card-event" : "";
   return `
-    <article class="map-event-list-card">
+    <article class="map-event-list-card${interactiveClass}"${interactiveAttrs}>
       ${imageHtml}
       <div class="map-event-list-body">
         <h5>${event.title || "Untitled event"}</h5>
         <p><strong>When:</strong> ${when}</p>
         <p><strong>Where:</strong> ${where || "-"}</p>
-        <p><a href="${event.url}" target="_blank" rel="noreferrer">Open event</a></p>
+        ${linkHtml}
       </div>
     </article>
   `;
@@ -3033,8 +3040,20 @@ function eventListCard(event) {
 function linkedSpecialsForPlace(placeName) {
   const groups = state.specialsPayload?.groups || [];
   const needle = venueKey(placeName);
+  const dayOrder = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+  const today = new Intl.DateTimeFormat("en-US", {
+    weekday: "long",
+    timeZone: "Africa/Johannesburg",
+  }).format(new Date());
+  const todayIndex = dayOrder.indexOf(today);
+  const rollingWeek = [...dayOrder.slice(todayIndex), ...dayOrder.slice(0, todayIndex)];
+  const activeDays = new Set(selectedMapDays(rollingWeek));
   const byKey = new Map();
   for (const group of groups) {
+    const groupDays = (group.days || []).filter((day) => activeDays.has(day));
+    if (!groupDays.length) {
+      continue;
+    }
     for (const item of group.items || []) {
       const itemPlace = String(item?.place_key || item?.place || item?.venue || "").trim();
       if (!itemPlace) {
@@ -3058,7 +3077,7 @@ function linkedSpecialsForPlace(placeName) {
           });
         }
         const record = byKey.get(key);
-        for (const day of group.days || []) {
+        for (const day of groupDays) {
           if (day) {
             record.days.add(day);
           }
@@ -3082,13 +3101,22 @@ function linkedEventsForPlace(place) {
   const placeKey = venueKey(placeName);
   const addressKey = venueKey(placeAddress);
   const combined = [...(state.quicketEvents || []), ...(state.bandsintownEvents || [])];
+  const window = mapRangeWindow();
   const linked = [];
   for (const event of combined) {
     const venueMatch = venueKey(event?.venue || "") === placeKey;
     const addressMatch = addressKey && venueKey(event?.address || "") === addressKey;
-    if (venueMatch || addressMatch) {
-      linked.push(event);
+    if (!(venueMatch || addressMatch)) {
+      continue;
     }
+    const startAt = event?.start ? new Date(event.start) : null;
+    if (!startAt || Number.isNaN(startAt.getTime())) {
+      continue;
+    }
+    if (startAt < window.start || startAt > window.end) {
+      continue;
+    }
+    linked.push(event);
   }
   linked.sort((left, right) => String(left?.start || "").localeCompare(String(right?.start || "")));
   return linked;
@@ -3138,32 +3166,189 @@ function placeMatchForEvent(event, placeVenueKeys, placeAddressKeys) {
   return false;
 }
 
+function findPlaceItemForEvent(event) {
+  const placeKey = venueKey(String(event?.place_key || event?.place || "").trim());
+  const venue = venueKey(String(event?.venue || "").trim());
+  const address = venueKey(String(event?.address || "").trim());
+  for (const item of currentMapItems) {
+    if (item.source !== "places") {
+      continue;
+    }
+    const itemVenue = venueKey(String(item?.title || "").trim());
+    const itemAddress = venueKey(String(item?.address || "").trim());
+    if ((placeKey && placeKey === itemVenue) || (venue && venue === itemVenue) || (address && address === itemAddress)) {
+      return item;
+    }
+  }
+  return null;
+}
+
+function visiblePlaceItems(bounds) {
+  return currentMapItems.filter((item) =>
+    item.source === "places" && bounds.contains([item.lat, item.lng]));
+}
+
+function dedupeEvents(events) {
+  const byKey = new Map();
+  for (const event of events) {
+    const key = String(event?.url || `${event?.title || ""}|${event?.start || ""}|${event?.venue || ""}`);
+    if (!byKey.has(key)) {
+      byKey.set(key, event);
+    }
+  }
+  return [...byKey.values()];
+}
+
+function dedupeSpecials(specials) {
+  const byKey = new Map();
+  for (const special of specials) {
+    const key = [
+      special?.venue || "",
+      special?.deal || special?.details || "",
+      special?.price || "",
+      special?.time || "",
+      special?.day || "",
+    ].join("|").toLowerCase();
+    if (!byKey.has(key)) {
+      byKey.set(key, special);
+    }
+  }
+  return [...byKey.values()];
+}
+
+function updateSelectedMarkerHighlight(item) {
+  if (!specialsMap) {
+    return;
+  }
+  if (selectedMarkerHighlight) {
+    specialsMap.removeLayer(selectedMarkerHighlight);
+    selectedMarkerHighlight = null;
+  }
+  if (!item) {
+    return;
+  }
+  selectedMarkerHighlight = L.circleMarker([item.lat, item.lng], {
+    radius: 13,
+    color: "#facc15",
+    weight: 3,
+    fill: false,
+    opacity: 1,
+    interactive: false,
+  });
+  selectedMarkerHighlight.addTo(specialsMap);
+}
+
 function renderMapEventList() {
   if (!specialsMap) {
     elements.mapDetailPanel.innerHTML = '<p class="empty">Map is loading...</p>';
     return;
   }
   const bounds = specialsMap.getBounds();
-  const visibleEvents = currentMapItems.filter((item) =>
+  const standaloneEvents = currentMapItems.filter((item) =>
     item.source === "events" && bounds.contains([item.lat, item.lng]),
   );
-  if (!visibleEvents.length) {
-    elements.mapDetailPanel.innerHTML = '<p class="empty">No events in this map view.</p>';
+  const placesInView = visiblePlaceItems(bounds);
+  let linkedEvents = [];
+  let linkedSpecials = [];
+  for (const placeItem of placesInView) {
+    linkedEvents.push(...linkedEventsForPlace({ name: placeItem.title || "", address: placeItem.address || "" }));
+    linkedSpecials.push(...linkedSpecialsForPlace(placeItem.title || ""));
+  }
+  const visibleEvents = dedupeEvents([
+    ...standaloneEvents.map((item) => item.event).filter(Boolean),
+    ...linkedEvents,
+  ]);
+  const visibleSpecials = dedupeSpecials(linkedSpecials);
+  const eventsWithKeys = visibleEvents.map((event, index) => ({
+    event,
+    key: String(event?.url || `${event?.title || ""}|${event?.start || ""}|${event?.venue || ""}|${index}`),
+  }));
+
+  if ((!state.mapSources.events || !visibleEvents.length) && (!state.mapSources.specials || !visibleSpecials.length)) {
+    elements.mapDetailPanel.innerHTML = '<p class="empty">No events or specials in this map view.</p>';
     return;
   }
-  const list = visibleEvents.map((item) => eventListCard(item.event)).join("");
+  const eventsBlock = state.mapSources.events && visibleEvents.length
+    ? `
+      <div class="map-event-list-header">
+        <p class="map-detail-source">Events In View</p>
+        <p>${visibleEvents.length} visible</p>
+      </div>
+      <div class="map-event-list">${eventsWithKeys.map(({ event, key }) => eventListCard(event, { includeLink: false, interactive: true, eventKey: key })).join("")}</div>
+    `
+    : "";
+  const specialsBlock = state.mapSources.specials && visibleSpecials.length
+    ? `
+      <div class="map-event-list-header map-event-list-header-specials">
+        <p class="map-detail-source">Specials In View</p>
+        <p>${visibleSpecials.length} visible</p>
+      </div>
+      <div class="map-linked-cards">
+        ${visibleSpecials.map((entry, index) => {
+          const lines = [
+            (entry.deal || entry.details) ? `<p><strong>Deal:</strong> ${entry.deal || entry.details}</p>` : "",
+            entry.price ? `<p><strong>Price:</strong> ${entry.price}</p>` : "",
+            entry.time ? `<p><strong>Time:</strong> ${entry.time}</p>` : "",
+            entry.day ? `<p><strong>Days:</strong> ${entry.day}</p>` : "",
+          ].filter(Boolean).join("");
+          const specialKey = `${entry.venue || "special"}|${entry.day || ""}|${index}`;
+          return `<article class="map-linked-card map-linked-card-special map-clickable-card" data-map-special-key="${specialKey}" role="button" tabindex="0"><h5>${entry.venue || "Special"}</h5>${lines}</article>`;
+        }).join("")}
+      </div>
+    `
+    : "";
   elements.mapDetailPanel.innerHTML = `
-    <div class="map-event-list-header">
-      <p class="map-detail-source">Events In View</p>
-      <p>${visibleEvents.length} visible</p>
-    </div>
-    <div class="map-event-list">${list}</div>
+    ${eventsBlock}
+    ${specialsBlock}
   `;
+
+  const eventsByKey = new Map(eventsWithKeys.map(({ key, event }) => [key, event]));
+  const focusEvent = (event) => {
+    if (!event || !specialsMap) {
+      return;
+    }
+    const matchedItem = currentMapItems.find((item) => item.source === "events" && item.event && String(item.event.url || "") === String(event.url || ""));
+    const detailItem = matchedItem || mapItemFromEvent(event);
+    if (!detailItem) {
+      return;
+    }
+    selectedMapItemKey = mapItemKey(detailItem);
+    specialsMap.setView([detailItem.lat, detailItem.lng], 14, { animate: true });
+    renderMapDetail(detailItem);
+  };
+
+  for (const node of elements.mapDetailPanel.querySelectorAll("[data-map-event-key]")) {
+    const key = node.getAttribute("data-map-event-key") || "";
+    const event = eventsByKey.get(key);
+    if (!event) {
+      continue;
+    }
+    node.addEventListener("click", () => focusEvent(event));
+    node.addEventListener("keydown", (ev) => {
+      if (ev.key === "Enter" || ev.key === " ") {
+        ev.preventDefault();
+        focusEvent(event);
+      }
+    });
+  }
+
+  for (const node of elements.mapDetailPanel.querySelectorAll("[data-map-special-key]")) {
+    const titleNode = node.querySelector("h5");
+    const venue = titleNode ? titleNode.textContent || "" : "";
+    node.addEventListener("click", () => focusSpecialOnMap(venue));
+    node.addEventListener("keydown", (ev) => {
+      if (ev.key === "Enter" || ev.key === " ") {
+        ev.preventDefault();
+        focusSpecialOnMap(venue);
+      }
+    });
+  }
 }
 
 function renderMapDetail(item) {
   if (!item) {
     selectedMapItemKey = "";
+    updateSelectedMarkerHighlight(null);
     renderMapEventList();
     return;
   }
@@ -3178,9 +3363,11 @@ function renderMapDetail(item) {
       selectedMapItemKey = mapItemKey(matchedPlace);
     }
   }
+  updateSelectedMarkerHighlight(item);
 
   if (item.source === "events" && item.event) {
     const event = item.event;
+    const linkedPlaceItem = findPlaceItemForEvent(event);
     const when = displayDateTime(event.start);
     const where = [event.venue, event.locality].filter(Boolean).join(", ");
     const address = event.address || "";
@@ -3192,7 +3379,10 @@ function renderMapDetail(item) {
       <article class="map-detail-card">
         ${imageHtml}
         <div class="map-detail-body">
-          <button type="button" class="map-back-button" id="map-back-button">Back to event list</button>
+          <div class="map-detail-actions">
+            <button type="button" class="map-back-button" id="map-back-button">Back to map view</button>
+            ${linkedPlaceItem ? '<button type="button" class="map-back-button" id="map-show-place-button">Show place</button>' : ""}
+          </div>
           <p class="map-detail-source">Event</p>
           <h4>${event.title || "Untitled event"}</h4>
           <p><strong>When:</strong> ${when}</p>
@@ -3206,6 +3396,14 @@ function renderMapDetail(item) {
     const backButton = document.querySelector("#map-back-button");
     if (backButton) {
       backButton.addEventListener("click", () => renderMapDetail(null));
+    }
+    const showPlaceButton = document.querySelector("#map-show-place-button");
+    if (showPlaceButton && linkedPlaceItem) {
+      showPlaceButton.addEventListener("click", () => {
+        selectedMapItemKey = mapItemKey(linkedPlaceItem);
+        specialsMap.setView([linkedPlaceItem.lat, linkedPlaceItem.lng], 14, { animate: true });
+        renderMapDetail(linkedPlaceItem);
+      });
     }
     return;
   }
@@ -3269,7 +3467,7 @@ function renderMapDetail(item) {
     elements.mapDetailPanel.innerHTML = `
       <article class="map-detail-card">
         <div class="map-detail-body">
-          <button type="button" class="map-back-button" id="map-back-button">Back to event list</button>
+          <button type="button" class="map-back-button" id="map-back-button">Back to map view</button>
           <p class="map-detail-source">Place</p>
           <h4>${placeLink}</h4>
           ${item.address ? `<p><strong>Address:</strong> ${item.address}</p>` : ""}
@@ -3293,7 +3491,7 @@ function renderMapDetail(item) {
   elements.mapDetailPanel.innerHTML = `
     <article class="map-detail-card">
       <div class="map-detail-body">
-        <button type="button" class="map-back-button" id="map-back-button">Back to event list</button>
+        <button type="button" class="map-back-button" id="map-back-button">Back to map view</button>
         <p class="map-detail-source">${sourceLabel}</p>
         <h4>${title}</h4>
         <ul>${details}</ul>
@@ -3423,6 +3621,7 @@ function renderMap() {
       .setContent(`<p class="map-empty-popup">${emptyText}</p>`)
       .openOn(specialsMap);
     selectedMapItemKey = "";
+    updateSelectedMarkerHighlight(null);
     renderMapDetail(null);
     setTimeout(() => specialsMap.invalidateSize(), 0);
     return;
@@ -3481,9 +3680,11 @@ function renderMap() {
       renderMapDetail(selected);
     } else {
       selectedMapItemKey = "";
+      updateSelectedMarkerHighlight(null);
       renderMapDetail(null);
     }
   } else {
+    updateSelectedMarkerHighlight(null);
     renderMapDetail(null);
   }
   setTimeout(() => specialsMap.invalidateSize(), 0);

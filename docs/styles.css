@@ -1484,12 +1484,22 @@ td.card-number {
   background: #e4edf5;
 }
 
+.map-detail-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
 .map-event-list-header {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   gap: 8px;
   margin-bottom: 8px;
+}
+
+.map-event-list-header-specials {
+  margin-top: 14px;
 }
 
 .map-event-list-header p {
@@ -1511,6 +1521,10 @@ td.card-number {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--panel);
+}
+
+.map-event-list-card-event {
+  border-color: rgba(2, 122, 72, 0.45);
 }
 
 .map-event-list-card img {
@@ -1537,6 +1551,15 @@ td.card-number {
   margin: 0;
   color: #344054;
   font-size: 12px;
+}
+
+.map-clickable-card {
+  cursor: pointer;
+}
+
+.map-clickable-card:focus-visible {
+  outline: 2px solid #facc15;
+  outline-offset: 2px;
 }
 
 .subsection-panel {
