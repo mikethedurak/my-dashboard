@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Snake</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="snake-shell">
+      <section class="snake-board-wrap" aria-label="Snake game">
+        <canvas id="snake-board" width="420" height="420"></canvas>
+      </section>
+      <aside class="snake-panel">
+        <div>
+          <p class="snake-kicker">Game Lab</p>
+          <h1>Snake</h1>
+        </div>
+        <div class="snake-stats">
+          <p><span>Score</span><strong id="score">0</strong></p>
+          <p><span>Best</span><strong id="best-score">0</strong></p>
+        </div>
+        <div class="snake-actions">
+          <button id="start-button" type="button">Start</button>
+          <button id="pause-button" type="button">Pause</button>
+        </div>
+        <div class="snake-pad" aria-label="Touch controls">
+          <button type="button" data-direction="up">Up</button>
+          <button type="button" data-direction="left">Left</button>
+          <button type="button" data-direction="down">Down</button>
+          <button type="button" data-direction="right">Right</button>
+        </div>
+        <p id="status" class="snake-status">Press Start or use arrow keys.</p>
+      </aside>
+    </main>
+    <script src="snake.js"></script>
+  </body>
+</html>

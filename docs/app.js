@@ -21,6 +21,8 @@ const HOLIDAYS_PATH = "https://date.nager.at/api/v3/publicholidays/{year}/ZA";
 const METADATA_PATH = "./data/metadata.json";
 const GOOGLE_CALENDAR_EVENTS_PATH = "./data/events/google_calendar_events.json";
 const GAME_HUB_CONFIG_PATH = "./data/game_hub/config.json";
+const TIMELINE_MANIFEST_PATH = "./data/timeline/manifest.json";
+const GAME_LAB_MANIFEST_PATH = "./games/manifest.json";
 const WEEK_DAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 const WATCHLIST_MEDIA_CONFIG = {
   screen: { label: "Movies + Series", types: ["movie", "series"] },
@@ -111,12 +113,15 @@ const state = {
   selectedNewsCategory: "all",
   isNewsExpanded: false,
   releaseItems: [],
+  timelineItems: [],
   gameHubGames: [],
   gameHubSelectedGame: "",
   gameHubModules: [],
   gameHubSelectedModule: "",
   gameHubManifest: [],
   gameHubInfo: {},
+  gameLabGames: [],
+  gameLabSelectedGame: "",
 };
 
 const elements = {
@@ -175,9 +180,19 @@ const elements = {
   lastScraped: document.querySelector("#last-scraped"),
   themeToggle: document.querySelector("#theme-toggle"),
   layoutEditToggle: document.querySelector("#layout-edit-toggle"),
+  timelineList: document.querySelector("#timeline-list"),
+  timelineLightbox: document.querySelector("#timeline-lightbox"),
+  timelineLightboxImage: document.querySelector("#timeline-lightbox-image"),
+  timelineLightboxDate: document.querySelector("#timeline-lightbox-date"),
+  timelineLightboxCaption: document.querySelector("#timeline-lightbox-caption"),
+  timelineLightboxClose: document.querySelector("#timeline-lightbox-close"),
+  timelineLightboxPrev: document.querySelector("#timeline-lightbox-prev"),
+  timelineLightboxNext: document.querySelector("#timeline-lightbox-next"),
   gameHubGameButtons: document.querySelector("#game-hub-game-buttons"),
   gameHubModuleButtons: document.querySelector("#game-hub-module-buttons"),
   gameHubContent: document.querySelector("#game-hub-content"),
+  gameLabButtons: document.querySelector("#game-lab-buttons"),
+  gameLabContent: document.querySelector("#game-lab-content"),
 };
 const mapRangeButtons = [...document.querySelectorAll(".map-range-button[data-range]")];
 const mapViewTabButtons = [...document.querySelectorAll(".map-view-tab[data-map-view-tab]")];
@@ -193,6 +208,7 @@ let currentMapItems = [];
 let mapMarkersByKey = new Map();
 let selectedMarkerHighlight = null;
 let mapDetailTab = "all";
+let timelineLightboxIndex = -1;
 const markerIcons = {
   places: L.icon({
     iconUrl: "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
@@ -4507,6 +4523,192 @@ function gameHubLabel(name) {
   return name.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
 }
 
+function closeTimelineLightbox() {
+  if (!elements.timelineLightbox) {
+    return;
+  }
+  elements.timelineLightbox.hidden = true;
+  if (elements.timelineLightboxImage) {
+    elements.timelineLightboxImage.src = "";
+  }
+  if (elements.timelineLightboxCaption) {
+    elements.timelineLightboxCaption.textContent = "";
+  }
+  if (elements.timelineLightboxDate) {
+    elements.timelineLightboxDate.textContent = "";
+  }
+  timelineLightboxIndex = -1;
+  if (elements.timelineLightboxPrev) {
+    elements.timelineLightboxPrev.disabled = false;
+  }
+  if (elements.timelineLightboxNext) {
+    elements.timelineLightboxNext.disabled = false;
+  }
+}
+
+function openTimelineLightboxByIndex(index) {
+  if (!Array.isArray(state.timelineItems) || !state.timelineItems.length) {
+    return;
+  }
+  const maxIndex = state.timelineItems.length - 1;
+  const safeIndex = Math.max(0, Math.min(index, maxIndex));
+  const item = state.timelineItems[safeIndex];
+  if (!item) {
+    return;
+  }
+  openTimelineLightbox(item.src, item.caption || "", timelineDateLabel(item.dateKey));
+  timelineLightboxIndex = safeIndex;
+  if (elements.timelineLightboxPrev) {
+    elements.timelineLightboxPrev.disabled = safeIndex <= 0;
+  }
+  if (elements.timelineLightboxNext) {
+    elements.timelineLightboxNext.disabled = safeIndex >= maxIndex;
+  }
+}
+
+function openTimelineLightbox(src, caption, dateLabel = "") {
+  if (!elements.timelineLightbox || !elements.timelineLightboxImage) {
+    return;
+  }
+  elements.timelineLightboxImage.src = src;
+  const cleanDateLabel = String(dateLabel || "").trim();
+  if (elements.timelineLightboxDate) {
+    elements.timelineLightboxDate.textContent = cleanDateLabel;
+    elements.timelineLightboxDate.hidden = !cleanDateLabel;
+  }
+  const cleanCaption = String(caption || "").trim();
+  if (elements.timelineLightboxCaption) {
+    elements.timelineLightboxCaption.textContent = cleanCaption;
+    elements.timelineLightboxCaption.hidden = !cleanCaption;
+  }
+  elements.timelineLightbox.hidden = false;
+}
+
+function moveTimelineLightbox(direction) {
+  if (timelineLightboxIndex < 0 || !Array.isArray(state.timelineItems) || !state.timelineItems.length) {
+    return;
+  }
+  const maxIndex = state.timelineItems.length - 1;
+  const nextIndex = Math.max(0, Math.min(maxIndex, timelineLightboxIndex + direction));
+  if (nextIndex === timelineLightboxIndex) {
+    return;
+  }
+  openTimelineLightboxByIndex(nextIndex);
+}
+
+function parseTimelineId(id) {
+  const match = String(id || "").trim().match(/^(\d{2})-(\d{2})-(\d{4})-(\d+)$/);
+  if (!match) {
+    return null;
+  }
+  const day = Number(match[1]);
+  const month = Number(match[2]);
+  const year = Number(match[3]);
+  const index = Number(match[4]);
+  if (!day || !month || !year || !index) {
+    return null;
+  }
+  return {
+    id: `${match[1]}-${match[2]}-${match[3]}-${match[4]}`,
+    day,
+    month,
+    year,
+    index,
+    dateKey: `${match[3]}-${match[2]}-${match[1]}`,
+    timestamp: Date.UTC(year, month - 1, day),
+  };
+}
+
+function timelineDateLabel(dateKey) {
+  if (!dateKey) {
+    return "Unknown date";
+  }
+  const [year, month, day] = dateKey.split("-").map(Number);
+  if (!year || !month || !day) {
+    return dateKey;
+  }
+  const date = new Date(Date.UTC(year, month - 1, day));
+  return new Intl.DateTimeFormat("en-ZA", {
+    weekday: "short",
+    day: "2-digit",
+    month: "long",
+    year: "numeric",
+    timeZone: "UTC",
+  }).format(date);
+}
+
+function renderTimeline() {
+  if (!elements.timelineList) {
+    return;
+  }
+  const items = state.timelineItems;
+  if (!items.length) {
+    elements.timelineList.innerHTML = "<p class=\"empty\">No timeline entries yet.</p>";
+    return;
+  }
+
+  const cards = items
+    .map((item, index) => {
+      const caption = String(item.caption || "").trim();
+      const type = String(item.type || "").trim();
+      const captionHtml = caption ? `<p class="timeline-caption">${escapeHtml(caption)}</p>` : "";
+      const typeHtml = type ? `<span class="timeline-type">${escapeHtml(type)}</span>` : "";
+      return `
+        <article class="timeline-card">
+          <p class="timeline-card-meta">${escapeHtml(timelineDateLabel(item.dateKey))}${typeHtml ? ` · ${typeHtml}` : ""}</p>
+          <img class="timeline-image" src="${escapeHtml(item.src)}" alt="${escapeHtml(item.id)}" loading="lazy" data-timeline-index="${index}" data-timeline-src="${escapeHtml(item.src)}" data-timeline-caption="${escapeHtml(caption)}">
+          ${captionHtml}
+        </article>
+      `;
+    })
+    .join("");
+
+  elements.timelineList.innerHTML = cards;
+}
+
+async function loadTimeline() {
+  if (!elements.timelineList) {
+    return;
+  }
+  try {
+    const manifestResp = await fetch(TIMELINE_MANIFEST_PATH, { cache: "no-store" });
+
+    if (!manifestResp.ok) {
+      throw new Error(`Could not load ${TIMELINE_MANIFEST_PATH}`);
+    }
+
+    const manifestPayload = await manifestResp.json();
+    const rawItems = Array.isArray(manifestPayload?.items) ? manifestPayload.items : [];
+    const parsedItems = rawItems
+      .map((entry) => {
+        const id = String(entry?.id || "").trim();
+        const parsed = parseTimelineId(id);
+        if (!parsed) {
+          return null;
+        }
+        const extension = String(entry?.extension || "jpg").trim().replace(/^\./, "") || "jpg";
+        return {
+          ...parsed,
+          type: String(entry?.type || "").trim(),
+          caption: String(entry?.caption || "").trim(),
+          src: `./data/timeline/photos/${id}.${extension}`,
+        };
+      })
+      .filter(Boolean)
+      .sort((a, b) => {
+        if (a.timestamp !== b.timestamp) {
+          return b.timestamp - a.timestamp;
+        }
+        return b.index - a.index;
+      });
+
+    state.timelineItems = parsedItems;
+    renderTimeline();
+  } catch (error) {
+    elements.timelineList.innerHTML = `<p class="empty">${error.message}</p>`;
+  }
+}
+
 async function loadGameHub() {
   try {
     const resp = await fetch(GAME_HUB_CONFIG_PATH, { cache: "no-store" });
@@ -4649,6 +4851,116 @@ if (elements.gameHubModuleButtons) {
   });
 }
 
+async function loadGameLab() {
+  if (!elements.gameLabContent) {
+    return;
+  }
+  try {
+    const response = await fetch(GAME_LAB_MANIFEST_PATH, { cache: "no-store" });
+    if (!response.ok) {
+      throw new Error(`Could not load ${GAME_LAB_MANIFEST_PATH}`);
+    }
+    const payload = await response.json();
+    state.gameLabGames = Array.isArray(payload.games) ? payload.games : [];
+    renderGameLabButtons();
+    if (state.gameLabGames.length) {
+      renderGameLab(state.gameLabGames[0].id);
+    } else {
+      elements.gameLabContent.innerHTML = `<p class="empty">No games added yet.</p>`;
+    }
+  } catch (error) {
+    elements.gameLabContent.innerHTML = `<p class="empty">${error.message}</p>`;
+  }
+}
+
+function renderGameLabButtons() {
+  if (!elements.gameLabButtons) {
+    return;
+  }
+  elements.gameLabButtons.innerHTML = state.gameLabGames
+    .map((game) => {
+      const isSelected = game.id === state.gameLabSelectedGame ? " is-selected" : "";
+      return `<button class="watchlist-category-button${isSelected}" type="button" data-game-lab-id="${escapeHtml(game.id)}">${escapeHtml(game.title || game.id)}</button>`;
+    })
+    .join("");
+}
+
+function renderGameLab(gameId) {
+  const game = state.gameLabGames.find((entry) => entry.id === gameId) || state.gameLabGames[0];
+  if (!elements.gameLabContent || !game) {
+    return;
+  }
+  state.gameLabSelectedGame = game.id;
+  renderGameLabButtons();
+  elements.gameLabContent.innerHTML = `
+    <iframe
+      class="game-lab-frame"
+      title="${escapeHtml(game.title || game.id)}"
+      src="${escapeHtml(game.path)}"
+      loading="lazy"
+    ></iframe>
+  `;
+}
+
+if (elements.gameLabButtons) {
+  elements.gameLabButtons.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-game-lab-id]");
+    if (!button) {
+      return;
+    }
+    renderGameLab(button.dataset.gameLabId || "");
+  });
+}
+
+if (elements.timelineList) {
+  elements.timelineList.addEventListener("click", (event) => {
+    const image = event.target.closest(".timeline-image[data-timeline-src]");
+    if (!image) {
+      return;
+    }
+    const index = Number(image.dataset.timelineIndex);
+    if (Number.isInteger(index) && index >= 0) {
+      openTimelineLightboxByIndex(index);
+      return;
+    }
+    openTimelineLightbox(image.dataset.timelineSrc || "", image.dataset.timelineCaption || "");
+  });
+}
+
+if (elements.timelineLightboxClose) {
+  elements.timelineLightboxClose.addEventListener("click", closeTimelineLightbox);
+}
+
+if (elements.timelineLightbox) {
+  elements.timelineLightbox.addEventListener("click", (event) => {
+    if (event.target === elements.timelineLightbox) {
+      closeTimelineLightbox();
+    }
+  });
+}
+
+if (elements.timelineLightboxPrev) {
+  elements.timelineLightboxPrev.addEventListener("click", () => moveTimelineLightbox(-1));
+}
+
+if (elements.timelineLightboxNext) {
+  elements.timelineLightboxNext.addEventListener("click", () => moveTimelineLightbox(1));
+}
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && elements.timelineLightbox && !elements.timelineLightbox.hidden) {
+    closeTimelineLightbox();
+    return;
+  }
+  if (elements.timelineLightbox && !elements.timelineLightbox.hidden && event.key === "ArrowLeft") {
+    moveTimelineLightbox(-1);
+    return;
+  }
+  if (elements.timelineLightbox && !elements.timelineLightbox.hidden && event.key === "ArrowRight") {
+    moveTimelineLightbox(1);
+  }
+});
+
 load();
 setHeaderDate();
 loadMetadata();
@@ -4661,5 +4973,7 @@ loadWatchlist();
 loadSpecials();
 loadBandsintownEvents();
 loadQuicketEvents();
+loadTimeline();
 loadGameHub();
+loadGameLab();
 syncRangeButtons();

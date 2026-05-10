@@ -261,6 +261,30 @@
 
       <details class="dashboard-section">
         <summary>
+          <span>Timeline</span>
+        </summary>
+        <div class="section-content">
+          <p class="timeline-hint">Name files like <code>01-01-2026-1.jpg</code>, <code>01-01-2026-2.jpg</code>, etc.</p>
+          <div id="timeline-list" class="timeline-list">
+            <p class="empty">Loading timeline...</p>
+          </div>
+        </div>
+      </details>
+
+      <details class="dashboard-section">
+        <summary>
+          <span>Game Lab</span>
+        </summary>
+        <div class="section-content">
+          <div id="game-lab-buttons" class="watchlist-category-buttons game-lab-buttons" role="group" aria-label="Playable games"></div>
+          <div id="game-lab-content" class="game-lab-content">
+            <p class="empty">Loading games...</p>
+          </div>
+        </div>
+      </details>
+
+      <details class="dashboard-section">
+        <summary>
           <span>One Piece Cards</span>
         </summary>
 
@@ -320,6 +344,15 @@
       <button id="watchlist-detail-close" type="button" class="watchlist-detail-close" aria-label="Close">Close</button>
       <div id="watchlist-detail-content" class="watchlist-detail-content"></div>
     </aside>
+
+    <div id="timeline-lightbox" class="timeline-lightbox" hidden>
+      <button id="timeline-lightbox-prev" type="button" class="timeline-lightbox-nav timeline-lightbox-prev" aria-label="Previous image">‹</button>
+      <button id="timeline-lightbox-next" type="button" class="timeline-lightbox-nav timeline-lightbox-next" aria-label="Next image">›</button>
+      <button id="timeline-lightbox-close" type="button" class="timeline-lightbox-close" aria-label="Close image">Close</button>
+      <img id="timeline-lightbox-image" class="timeline-lightbox-image" alt="Timeline preview">
+      <p id="timeline-lightbox-date" class="timeline-lightbox-date"></p>
+      <p id="timeline-lightbox-caption" class="timeline-lightbox-caption"></p>
+    </div>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="app.js?v=20260508-82"></script>
