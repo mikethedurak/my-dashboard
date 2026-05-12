@@ -4,7 +4,7 @@
     "games": {
       "aaa": [
         {
-          "title": "Ghost of Yotei",
+          "title": "Returnal",
           "opinion": ""
         },
         {
@@ -15,10 +15,6 @@
       "indie": [
         {
           "title": "Reanimal",
-          "opinion": ""
-        },
-        {
-          "title": "Replaced",
           "opinion": ""
         },
         {
@@ -207,10 +203,6 @@
       {
         "title": "Ghost of Yotei",
         "opinion": ""
-      },
-      {
-        "title": "Returnal",
-        "opinion": ""
       }
     ],
     "game_indie": [
@@ -302,6 +294,11 @@
         {
           "type": "game_indie",
           "title": "Mixtape",
+          "opinion": ""
+        },
+        {
+          "type": "game_indie",
+          "title": "Replaced",
           "opinion": ""
         },
         {

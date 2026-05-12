@@ -2,6 +2,22 @@
   "source": "https://api.rawg.io/api/games",
   "new_releases": [
     {
+      "title": "Clockwork Ambrosia",
+      "url": "https://rawg.io/games/clockwork-ambrosia",
+      "image": "https://media.rawg.io/media/screenshots/3ef/3ef0787f01a9fd890ff7949fb49f8a8f.jpg",
+      "release_date": "2026-05-12",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Directive 8020",
+      "url": "https://rawg.io/games/the-dark-pictures-directive-8020",
+      "image": "https://media.rawg.io/media/games/10d/10dd957940dbaedc77a08730995194c7.jpg",
+      "release_date": "2026-05-12",
+      "rating": "2.4",
+      "platforms": "PC, PlayStation 5, Xbox Series S/X"
+    },
+    {
       "title": "Uncle Lee\u2019s Cookbook: Five Recipes for Disaster",
       "url": "https://rawg.io/games/uncle-lees-cookbook-five-recipes-for-disaster",
       "image": "https://media.rawg.io/media/screenshots/b32/b32dd3a1e02fa4651f46fce4a308f798.jpg",
@@ -114,6 +130,14 @@
       "platforms": "PC, macOS, Linux"
     },
     {
+      "title": "Librarian: Tidy Up the Arcane Library!",
+      "url": "https://rawg.io/games/librarian-tidy-up-the-arcane-library",
+      "image": "https://media.rawg.io/media/screenshots/f55/f55e26672d03de9bf9e974d03159fc5e.jpg",
+      "release_date": "2026-04-30",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
       "title": "Saros",
       "url": "https://rawg.io/games/saros",
       "image": "https://media.rawg.io/media/games/be8/be86ee5cf3a427c784efec1661f9b194.jpg",
@@ -130,12 +154,12 @@
       "platforms": "PC"
     },
     {
-      "title": "Invincible VS",
-      "url": "https://rawg.io/games/invincible-vs",
-      "image": "https://media.rawg.io/media/screenshots/fdf/fdfec2a343d751fec655f551146976cb.jpg",
+      "title": "inKonbini: One Store. Many Stories",
+      "url": "https://rawg.io/games/inkonbini-one-store-many-stories",
+      "image": "https://media.rawg.io/media/games/a24/a24a8acc39da3c992cbe9fb33a36dfd5.jpg",
       "release_date": "2026-04-30",
       "rating": "0.0",
-      "platforms": "PC, PlayStation 5, Xbox Series S/X"
+      "platforms": ""
     },
     {
       "title": "Heroes of Might & Magic: Olden Era",
@@ -146,12 +170,12 @@
       "platforms": "PC"
     },
     {
-      "title": "inKonbini: One Store. Many Stories",
-      "url": "https://rawg.io/games/inkonbini-one-store-many-stories",
-      "image": "https://media.rawg.io/media/games/a24/a24a8acc39da3c992cbe9fb33a36dfd5.jpg",
+      "title": "Invincible VS",
+      "url": "https://rawg.io/games/invincible-vs",
+      "image": "https://media.rawg.io/media/screenshots/fdf/fdfec2a343d751fec655f551146976cb.jpg",
       "release_date": "2026-04-30",
       "rating": "0.0",
-      "platforms": ""
+      "platforms": "PC, PlayStation 5, Xbox Series S/X"
     },
     {
       "title": "\u56e2\u6218\u4e0d\u80fd\u8f93",
@@ -234,20 +258,20 @@
       "platforms": "PC, Linux"
     },
     {
-      "title": "Far Far West",
-      "url": "https://rawg.io/games/far-far-west",
-      "image": "https://media.rawg.io/media/screenshots/b1c/b1c249429ecaf020027f327c87ecd49c.jpg",
-      "release_date": "2026-04-28",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
       "title": "Aphelion",
       "url": "https://rawg.io/games/aphelion-2",
       "image": "https://media.rawg.io/media/games/ecc/ecc6e59e4bc50409d844fdc1607e86a9.jpg",
       "release_date": "2026-04-28",
       "rating": "0.0",
       "platforms": "PC, PlayStation 5, Xbox Series S/X"
+    },
+    {
+      "title": "Far Far West",
+      "url": "https://rawg.io/games/far-far-west",
+      "image": "https://media.rawg.io/media/screenshots/b1c/b1c249429ecaf020027f327c87ecd49c.jpg",
+      "release_date": "2026-04-28",
+      "rating": "0.0",
+      "platforms": "PC"
     },
     {
       "title": "Aphelion (2026)",
@@ -376,49 +400,9 @@
       "release_date": "2026-04-24",
       "rating": "0.0",
       "platforms": "PC"
-    },
-    {
-      "title": "Flock Around",
-      "url": "https://rawg.io/games/flock-around",
-      "image": "https://media.rawg.io/media/screenshots/770/770efb0b873b30b3be56eb2307769358.jpg",
-      "release_date": "2026-04-24",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Elise and the Spellbinding Marionette",
-      "url": "https://rawg.io/games/elise-and-the-spellbinding-marionette",
-      "image": "https://media.rawg.io/media/screenshots/0d9/0d9cb476726b2857c9c3edf26d1cfbd5.jpg",
-      "release_date": "2026-04-24",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Hero and Monster",
-      "url": "https://rawg.io/games/hero-and-monster",
-      "image": "https://media.rawg.io/media/screenshots/070/07098e45bdf9baf998bf955e0c1575f2.jpg",
-      "release_date": "2026-04-24",
-      "rating": "0.0",
-      "platforms": "PC"
     }
   ],
   "coming_soon": [
-    {
-      "title": "Clockwork Ambrosia",
-      "url": "https://rawg.io/games/clockwork-ambrosia",
-      "image": "https://media.rawg.io/media/screenshots/3ef/3ef0787f01a9fd890ff7949fb49f8a8f.jpg",
-      "release_date": "2026-05-12",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Directive 8020",
-      "url": "https://rawg.io/games/the-dark-pictures-directive-8020",
-      "image": "https://media.rawg.io/media/games/10d/10dd957940dbaedc77a08730995194c7.jpg",
-      "release_date": "2026-05-12",
-      "rating": "2.4",
-      "platforms": "PC, PlayStation 5, Xbox Series S/X"
-    },
     {
       "title": "Outbound",
       "url": "https://rawg.io/games/outbound",
@@ -594,6 +578,22 @@
       "release_date": "2026-08-06",
       "rating": "0.0",
       "platforms": "PC, PlayStation 5"
+    },
+    {
+      "title": "Clockwork Ambrosia",
+      "url": "https://rawg.io/games/clockwork-ambrosia",
+      "image": "https://media.rawg.io/media/screenshots/3ef/3ef0787f01a9fd890ff7949fb49f8a8f.jpg",
+      "release_date": "2026-05-12",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Directive 8020",
+      "url": "https://rawg.io/games/the-dark-pictures-directive-8020",
+      "image": "https://media.rawg.io/media/games/10d/10dd957940dbaedc77a08730995194c7.jpg",
+      "release_date": "2026-05-12",
+      "rating": "2.4",
+      "platforms": "PC, PlayStation 5, Xbox Series S/X"
     },
     {
       "title": "Mixtape (2025)",
