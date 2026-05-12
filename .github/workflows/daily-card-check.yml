@@ -18,6 +18,7 @@ on:
           - releases
           - coming-soon
           - game-releases
+          - news
           - media
           - digest
 
@@ -60,6 +61,10 @@ jobs:
         env:
           RAWG_API_KEY: ${{ secrets.RAWG_API_KEY }}
         run: python services/release_radar/scrape_game_releases.py
+
+      - name: Run news radar
+        if: ${{ github.event_name == 'schedule' || inputs.task == 'all' || inputs.task == 'news' }}
+        run: python services/scrape_news.py
 
       - name: Run media watchlists
         if: ${{ github.event_name == 'schedule' || inputs.task == 'all' || inputs.task == 'media' }}

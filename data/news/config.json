@@ -1,4 +1,217 @@
 {
-  "sources": ["local-file"],
-  "categories": ["Global", "Local", "Games", "Entertainment", "Climbing"]
+  "sources": ["rss"],
+  "categories": ["Global", "South Africa", "Cape Town", "Cape Town Events", "Games", "F1", "Entertainment", "Climbing"],
+  "max_items_per_category": 10,
+  "max_top_items_per_category": 5,
+  "importance_mode": "balanced",
+  "importance_threshold": 5,
+  "breaking_threshold": 8,
+  "max_article_age_hours": 72,
+  "category_max_age_hours": {
+    "Global": 48,
+    "South Africa": 48,
+    "Cape Town": 48,
+    "Cape Town Events": 168,
+    "Games": 72,
+    "F1": 72,
+    "Entertainment": 72,
+    "Climbing": 168
+  },
+  "source_weights": {
+    "BBC World": 2,
+    "Al Jazeera": 2,
+    "The Guardian World": 2,
+    "GroundUp": 2,
+    "IOL South Africa": 1,
+    "GameSpot": 1,
+    "PC Gamer": 1,
+    "PlayStation Blog": 1,
+    "F1 Snapshot": 4,
+    "BBC Sport F1": 2,
+    "Motorsport.com F1": 2,
+    "Variety": 2,
+    "The Hollywood Reporter": 2,
+    "Deadline": 2,
+    "Cape Town ETC": 1,
+    "IOL Cape Times": 1,
+    "What's On in Cape Town Events": 2,
+    "What's On Weekend": 3,
+    "Events in Cape Town": 2,
+    "Wesgro Travel Events": 2,
+    "Gripped": 1,
+    "GearJunkie Climbing": 1,
+    "Alpinist": 1
+  },
+  "importance_keywords": {
+    "high": [
+      "breaking",
+      "just in",
+      "live updates",
+      "earthquake",
+      "flood",
+      "wildfire",
+      "evacuation",
+      "election",
+      "court",
+      "ruling",
+      "parliament",
+      "sanction",
+      "war",
+      "ceasefire",
+      "attack",
+      "security breach",
+      "outage",
+      "shutdown",
+      "recall",
+      "merger",
+      "acquisition",
+      "bankruptcy",
+      "strike",
+      "protest",
+      "death",
+      "killed",
+      "missing"
+    ],
+    "medium": [
+      "policy",
+      "regulation",
+      "investigation",
+      "launch",
+      "release date",
+      "confirmed",
+      "delay",
+      "lawsuit",
+      "trial",
+      "injury",
+      "record",
+      "forecast",
+      "inflation",
+      "interest rate",
+      "power cuts",
+      "load shedding",
+      "eskom",
+      "weekend",
+      "this week",
+      "festival",
+      "live music",
+      "concert",
+      "market",
+      "exhibition",
+      "workshop",
+      "tickets",
+      "grand prix",
+      "qualifying",
+      "race weekend",
+      "podium",
+      "cape town",
+      "waterfront",
+      "city bowl",
+      "seapoint",
+      "festival",
+      "market"
+    ]
+  },
+  "request_timeout_seconds": 25,
+  "feeds": [
+    {
+      "name": "BBC World",
+      "category": "Global",
+      "url": "https://feeds.bbci.co.uk/news/world/rss.xml"
+    },
+    {
+      "name": "Al Jazeera",
+      "category": "Global",
+      "url": "https://www.aljazeera.com/xml/rss/all.xml"
+    },
+    {
+      "name": "The Guardian World",
+      "category": "Global",
+      "url": "https://www.theguardian.com/world/rss"
+    },
+    {
+      "name": "GroundUp",
+      "category": "South Africa",
+      "url": "https://groundup.news/sitenews/rss/"
+    },
+    {
+      "name": "IOL South Africa",
+      "category": "South Africa",
+      "url": "https://www.iol.co.za/rss/iol/news/south-africa"
+    },
+    {
+      "name": "Cape Town ETC",
+      "category": "Cape Town",
+      "url": "https://www.capetownetc.com/feed/"
+    },
+    {
+      "name": "IOL Cape Times",
+      "category": "Cape Town",
+      "url": "https://www.iol.co.za/rss/iol/news/south-africa/western-cape"
+    },
+    {
+      "name": "What's On in Cape Town Events",
+      "category": "Cape Town Events",
+      "url": "https://whatsonincapetown.com/event/feed/"
+    },
+    {
+      "name": "Events in Cape Town",
+      "category": "Cape Town Events",
+      "url": "https://eventsincapetown.com/feed/"
+    },
+    {
+      "name": "GameSpot",
+      "category": "Games",
+      "url": "https://www.gamespot.com/feeds/news/"
+    },
+    {
+      "name": "PC Gamer",
+      "category": "Games",
+      "url": "https://www.pcgamer.com/rss/"
+    },
+    {
+      "name": "PlayStation Blog",
+      "category": "Games",
+      "url": "https://blog.playstation.com/feed/"
+    },
+    {
+      "name": "BBC Sport F1",
+      "category": "F1",
+      "url": "https://feeds.bbci.co.uk/sport/formula1/rss.xml"
+    },
+    {
+      "name": "Motorsport.com F1",
+      "category": "F1",
+      "url": "https://www.motorsport.com/rss/f1/news/"
+    },
+    {
+      "name": "Variety",
+      "category": "Entertainment",
+      "url": "https://variety.com/feed/"
+    },
+    {
+      "name": "The Hollywood Reporter",
+      "category": "Entertainment",
+      "url": "https://www.hollywoodreporter.com/feed/"
+    },
+    {
+      "name": "Deadline",
+      "category": "Entertainment",
+      "url": "https://deadline.com/feed/"
+    },
+    {
+      "name": "Gripped",
+      "category": "Climbing",
+      "url": "https://gripped.com/feed/"
+    },
+    {
+      "name": "GearJunkie Climbing",
+      "category": "Climbing",
+      "url": "https://gearjunkie.com/climbing/feed"
+    },
+    {
+      "name": "Alpinist",
+      "category": "Climbing",
+      "url": "https://alpinist.com/feed/"
+    }
+  ]
 }

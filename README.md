@@ -215,20 +215,40 @@ Release radar config:
 
 ### News
 
-News currently syncs the local JSON data.
+News pulls curated RSS/Atom feeds for global, South African, games, entertainment, and climbing headlines.
 
 ```powershell
 python services/scrape_news.py
+python services/scrape_news.py --limit 6
+python services/scrape_news.py --source local-file
 ```
 
 Allowed sources:
 
 - `all`
+- `rss`
 - `local-file`
 
 News config:
 
 - `data/news/config.json`
+
+Important/breaking filtering:
+
+- Dashboard now prefers `top_items` from `data/news/news.json` when available.
+- Tune `importance_threshold`, `breaking_threshold`, `max_top_items_per_category`, and `category_max_age_hours` in `data/news/config.json`.
+
+News scraping sources by topic:
+
+- `Global`: BBC World, Al Jazeera, The Guardian World
+- `South Africa`: GroundUp, IOL South Africa
+- `Cape Town`: Cape Town ETC, IOL Cape Times
+- `Cape Town Events`: What’s On in Cape Town (events feed), Events in Cape Town (feed), and Wesgro Travel Events (scraped from event listings)
+- `Games`: GameSpot, PC Gamer, PlayStation Blog
+- `F1`: BBC Sport F1, Motorsport.com F1
+- `F1 Snapshot`: auto-generated pinned module with current Driver/Constructor standings, race schedule, completed race results, and race highlights. Structured standings/results come from Jolpica/Ergast; race highlights are matched from Wikipedia race summaries plus F1 race-report feeds from Autosport, RaceFans, RACER, and Motorsport.com.
+- `Entertainment`: Variety, The Hollywood Reporter, Deadline
+- `Climbing`: Gripped, GearJunkie Climbing, Alpinist
 
 ## Local Full Update
 

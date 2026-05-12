@@ -50,8 +50,11 @@ const DEFAULT_OPINION_LEVELS = [
 const NEWS_CATEGORIES = [
   { key: "all", label: "All" },
   { key: "global", label: "Global" },
-  { key: "local", label: "Local" },
+  { key: "local", label: "South Africa" },
+  { key: "capetown", label: "Cape Town" },
+  { key: "capetownevents", label: "Cape Town Events" },
   { key: "games", label: "Games" },
+  { key: "f1", label: "F1" },
   { key: "entertainment", label: "Entertainment" },
   { key: "climbing", label: "Climbing" },
 ];
@@ -137,9 +140,9 @@ const elements = {
   gameReleaseGrid: document.querySelector("#game-release-grid"),
   gameComingSoonGrid: document.querySelector("#game-coming-soon-grid"),
   newsList: document.querySelector("#news-list"),
+  newsPinned: document.querySelector("#news-pinned"),
   newsDetail: document.querySelector("#news-detail"),
   newsCategoryButtons: document.querySelector("#news-category-buttons"),
-  newsExpandToggle: document.querySelector("#news-expand-toggle"),
   watchlistCurrent: document.querySelector("#watchlist-current"),
   watchlistHistory: document.querySelector("#watchlist-history"),
   watchlistHistorySummary: document.querySelector("#watchlist-history-summary"),
@@ -592,6 +595,50 @@ function formatNewsDate(value) {
   }).format(parsed);
 }
 
+function formatNewsRelativeTime(value) {
+  const raw = String(value || "").trim();
+  if (!raw) {
+    return "";
+  }
+  const parsed = new Date(raw);
+  if (Number.isNaN(parsed.getTime())) {
+    return "";
+  }
+  const now = new Date();
+  const diffMs = now.getTime() - parsed.getTime();
+  if (!Number.isFinite(diffMs)) {
+    return "";
+  }
+  if (diffMs < 0) {
+    return "just now";
+  }
+  const minutes = Math.floor(diffMs / 60000);
+  if (minutes < 1) {
+    return "just now";
+  }
+  if (minutes < 60) {
+    return `${minutes}m ago`;
+  }
+  const hours = Math.floor(minutes / 60);
+  if (hours < 24) {
+    return `${hours}h ago`;
+  }
+  const days = Math.floor(hours / 24);
+  if (days < 7) {
+    return `${days}d ago`;
+  }
+  const weeks = Math.floor(days / 7);
+  if (weeks < 5) {
+    return `${weeks}w ago`;
+  }
+  const months = Math.floor(days / 30);
+  if (months < 12) {
+    return `${months}mo ago`;
+  }
+  const years = Math.floor(days / 365);
+  return `${years}y ago`;
+}
+
 function safeNewsId(item, index) {
   const explicit = String(item?.id || "").trim();
   if (explicit) {
@@ -605,10 +652,23 @@ function safeNewsId(item, index) {
 }
 
 function normalizeNewsCategory(value) {
-  return String(value || "")
+  const normalized = String(value || "")
     .trim()
     .toLowerCase()
     .replace(/\s+/g, " ");
+  if (normalized === "south africa") {
+    return "local";
+  }
+  if (normalized === "cape town") {
+    return "capetown";
+  }
+  if (normalized === "cape town events") {
+    return "capetownevents";
+  }
+  if (normalized === "formula 1" || normalized === "formula1") {
+    return "f1";
+  }
+  return normalized;
 }
 
 function categoryThemeKey(item) {
@@ -640,6 +700,456 @@ function renderNewsCategoryControls() {
   ).join("");
 }
 
+function f1SnapshotScheduleCard(race) {
+  const round = Number.parseInt(race?.round, 10);
+  const roundText = Number.isFinite(round) ? `Race ${round}` : "Race";
+  const raceName = String(race?.race_name || race?.raceName || "").trim() || "Race";
+  const locality = String(race?.locality || "").trim();
+  const country = String(race?.country || "").trim();
+  const circuit = String(race?.circuit || "").trim();
+  const place = [locality, country].filter(Boolean).join(", ");
+  const whenUtc = String(race?.when_utc || "").trim();
+  const whenText = whenUtc || [String(race?.date || "").trim(), String(race?.time || "").trim()].filter(Boolean).join(" ");
+  const untilText = formatNewsRelativeTimeUntil(String(race?.date || "").trim(), String(race?.time || "").trim());
+  const statusClass = race?.is_next ? " is-next" : race?.is_past ? " is-past" : "";
+  return `
+    <button type="button" class="f1-schedule-card${statusClass}" data-f1-round="${escapeHtml(String(race?.round ?? ""))}">
+      <p class="f1-schedule-round">${escapeHtml(roundText)}</p>
+      <h4>${escapeHtml(raceName)}</h4>
+      ${place ? `<p class="f1-schedule-place">${escapeHtml(place)}</p>` : ""}
+      ${circuit ? `<p class="f1-schedule-circuit">${escapeHtml(circuit)}</p>` : ""}
+      ${whenText ? `<p class="f1-schedule-when">${escapeHtml(whenText)} UTC</p>` : ""}
+      ${untilText ? `<p class="f1-schedule-until">${escapeHtml(untilText)}</p>` : ""}
+    </button>
+  `;
+}
+
+function formatNewsRelativeTimeUntil(dateValue, timeValue) {
+  const dateText = String(dateValue || "").trim();
+  if (!dateText) {
+    return "";
+  }
+  const timeText = String(timeValue || "").trim() || "00:00:00Z";
+  const parsed = new Date(`${dateText}T${timeText.replace("Z", "")}Z`);
+  if (Number.isNaN(parsed.getTime())) {
+    return "";
+  }
+  const now = new Date();
+  const diffMs = parsed.getTime() - now.getTime();
+  const absMinutes = Math.floor(Math.abs(diffMs) / 60000);
+  const absHours = Math.floor(absMinutes / 60);
+  const absDays = Math.floor(absHours / 24);
+  let span = "";
+  if (absMinutes < 60) {
+    span = `${absMinutes} min`;
+  } else if (absHours < 24) {
+    span = `${absHours} h`;
+  } else {
+    span = `${absDays} d`;
+  }
+  return diffMs >= 0 ? `In ${span}` : `${span} ago`;
+}
+
+function f1SnapshotTable(rows, columns, emptyText) {
+  if (!Array.isArray(rows) || !rows.length) {
+    return `<p class="empty">${escapeHtml(emptyText)}</p>`;
+  }
+  const header = columns.map((col) => `<th>${escapeHtml(col.label)}</th>`).join("");
+  const body = rows.map((row) => {
+    const cells = columns
+      .map((col) => {
+        const value = String(row?.[col.key] ?? "").trim();
+        if (col.key === "name" && row?.image_url) {
+          return `
+            <td>
+              <span class="f1-driver-cell">
+                <img src="${escapeHtml(row.image_url)}" alt="${escapeHtml(value)}" loading="lazy">
+                <span>${escapeHtml(value)}</span>
+              </span>
+            </td>
+          `;
+        }
+        return `<td>${escapeHtml(value)}</td>`;
+      })
+      .join("");
+    return `<tr>${cells}</tr>`;
+  }).join("");
+  return `
+    <div class="f1-table-wrap">
+      <table class="f1-table">
+        <thead><tr>${header}</tr></thead>
+        <tbody>${body}</tbody>
+      </table>
+    </div>
+  `;
+}
+
+function f1TabButtons(group, activeKey = "drivers", includeInfo = false) {
+  return `
+    <div class="f1-tab-row${includeInfo ? " is-three" : ""}" role="tablist">
+      <button type="button" class="f1-tab-button${activeKey === "drivers" ? " is-active" : ""}" data-f1-tab-group="${escapeHtml(group)}" data-f1-tab="drivers">Drivers</button>
+      <button type="button" class="f1-tab-button${activeKey === "constructors" ? " is-active" : ""}" data-f1-tab-group="${escapeHtml(group)}" data-f1-tab="constructors">Constructors</button>
+      ${includeInfo ? `<button type="button" class="f1-tab-button${activeKey === "highlights" ? " is-active" : ""}" data-f1-tab-group="${escapeHtml(group)}" data-f1-tab="highlights">Highlights</button>` : ""}
+    </div>
+  `;
+}
+
+function f1TopDriverPodium(rows, label) {
+  if (!Array.isArray(rows) || !rows.length) {
+    return "";
+  }
+  const leaders = [rows[1], rows[0], rows[2]].filter(Boolean);
+  const cards = leaders.map((row) => {
+    const name = String(row?.name || "Entry").trim();
+    const team = String(row?.team || row?.nationality || "").trim();
+    const points = String(row?.points || "").trim();
+    const imageUrl = String(row?.image_url || "").trim();
+    const position = String(row?.position || "").trim();
+    const podiumClass = position === "1" ? " f1-podium-winner" : "";
+    const imageHtml = imageUrl
+      ? `<img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(name)}" loading="lazy">`
+      : '<span class="f1-podium-placeholder" aria-hidden="true"></span>';
+    return `
+      <article class="f1-podium-card${podiumClass}">
+        ${imageHtml}
+        <div>
+          <p class="f1-podium-rank">${escapeHtml(position)}</p>
+          <h5>${escapeHtml(name)}</h5>
+          ${team ? `<p>${escapeHtml(team)}</p>` : ""}
+          ${points ? `<strong>${escapeHtml(points)} pts</strong>` : ""}
+        </div>
+      </article>
+    `;
+  }).join("");
+  return `
+    <section class="f1-podium" aria-label="${escapeHtml(label)}">
+      ${cards}
+    </section>
+  `;
+}
+
+function renderF1SnapshotDetail(item, metaText) {
+  const title = String(item.title || "F1 Snapshot").trim();
+  const snapshot = item?.f1_snapshot && typeof item.f1_snapshot === "object" ? item.f1_snapshot : {};
+  const schedule = Array.isArray(snapshot.schedule) ? snapshot.schedule : [];
+  const drivers = Array.isArray(snapshot.drivers) ? snapshot.drivers : [];
+  const constructors = Array.isArray(snapshot.constructors) ? snapshot.constructors : [];
+  const lastResults = Array.isArray(snapshot.last_race_results) ? snapshot.last_race_results : [];
+  const raceMap = snapshot?.race_results_by_round && typeof snapshot.race_results_by_round === "object"
+    ? snapshot.race_results_by_round
+    : {};
+  const latestRace = [...Object.entries(raceMap)]
+    .sort((left, right) => Number(left[0]) - Number(right[0]))
+    .at(-1)?.[1];
+  const standingsHighlights = [
+    latestRace?.race_name ? `Latest completed race: ${latestRace.race_name}` : "",
+    ...f1RaceHighlights(latestRace).slice(0, 6),
+  ].filter(Boolean);
+
+  const scheduleHtml = schedule.length
+    ? schedule.map((race) => f1SnapshotScheduleCard(race)).join("")
+    : '<p class="empty">No schedule found.</p>';
+
+  const driverTable = f1SnapshotTable(
+    drivers,
+    [
+      { key: "position", label: "Pos" },
+      { key: "name", label: "Driver" },
+      { key: "team", label: "Team" },
+      { key: "points", label: "Pts" },
+      { key: "wins", label: "Wins" },
+    ],
+    "No driver standings found.",
+  );
+  const constructorTable = f1SnapshotTable(
+    constructors,
+    [
+      { key: "position", label: "Pos" },
+      { key: "name", label: "Brand" },
+      { key: "nationality", label: "Base" },
+      { key: "points", label: "Pts" },
+      { key: "wins", label: "Wins" },
+    ],
+    "No constructor standings found.",
+  );
+  const lastResultsTable = f1SnapshotTable(
+    lastResults,
+    [
+      { key: "position", label: "Pos" },
+      { key: "name", label: "Driver" },
+      { key: "team", label: "Team" },
+      { key: "points", label: "Pts" },
+      { key: "status", label: "Status" },
+    ],
+    "No race results found.",
+  );
+
+  return `
+    <div class="news-detail-body news-theme-f1 f1-snapshot-detail">
+      <h3>${escapeHtml(title)}</h3>
+      <button type="button" class="f1-focus-toggle is-active" data-f1-focus="standings">F1 Standings</button>
+      <section class="f1-schedule-section">
+        <div class="f1-schedule-strip">${scheduleHtml}</div>
+      </section>
+      <section class="f1-data-section" data-f1-standings>
+        ${f1TabButtons("standings", "drivers", true)}
+        <div data-f1-tab-panel="standings:drivers">
+          <h4>Drivers Championship</h4>
+          ${f1TopDriverPodium(drivers, "Top drivers")}
+          ${driverTable}
+        </div>
+        <div data-f1-tab-panel="standings:constructors" hidden>
+          <h4>Constructors Championship</h4>
+          ${f1TopDriverPodium(constructors, "Top constructors")}
+          ${constructorTable}
+        </div>
+        <div data-f1-tab-panel="standings:highlights" hidden>
+          ${f1InfoList(standingsHighlights)}
+        </div>
+      </section>
+      <section class="f1-data-section" data-f1-race-results hidden>
+        <h4 class="f1-race-results-title">Race Results</h4>
+        <div class="f1-race-results-content">
+        ${lastResultsTable}
+        </div>
+      </section>
+    </div>
+  `;
+}
+
+function f1RaceHighlights(entry) {
+  if (entry && Array.isArray(entry.highlights) && entry.highlights.length) {
+    return entry.highlights.map((highlight) => String(highlight || "").trim()).filter(Boolean);
+  }
+  if (!entry || !Array.isArray(entry.results)) {
+    return ['Results are not available for this race yet.'];
+  }
+  const rows = entry.results;
+  const winner = rows.find((row) => String(row.position) === "1");
+  const podium = rows.filter((row) => ["1", "2", "3"].includes(String(row.position))).map((row) => row.name);
+  const dnfs = rows.filter((row) => {
+    const status = String(row.status || "").toLowerCase();
+    if (!status || status === "finished") return false;
+    if (status.includes("lap")) return false;
+    return true;
+  });
+  const notes = [];
+  if (winner) {
+    notes.push(`Winner: ${winner.name} (${winner.team})`);
+  }
+  if (podium.length === 3) {
+    notes.push(`Podium: ${podium.join(" / ")}`);
+  }
+  if (dnfs.length) {
+    notes.push(`DNFs: ${dnfs.length} drivers`);
+    const accidents = dnfs.filter((row) => {
+      const status = String(row.status || "").toLowerCase();
+      return status.includes("accident") || status.includes("collision") || status.includes("crash");
+    });
+    if (accidents.length) {
+      notes.push(`Incidents: ${accidents.slice(0, 3).map((row) => `${row.name} (${row.status})`).join("; ")}`);
+    }
+  }
+  const pointScorers = rows.filter((row) => Number.parseFloat(String(row.points || "0")) > 0).length;
+  if (pointScorers) {
+    notes.push(`Point scorers: ${pointScorers}`);
+  }
+  return notes.length ? notes : ['No highlights available for this race yet.'];
+}
+
+function f1InfoList(items) {
+  return `
+    <ul class="f1-info-list">
+      ${items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}
+    </ul>
+  `;
+}
+
+function syncNewsListHeight() {
+  if (!elements.newsList || !elements.newsDetail) {
+    return;
+  }
+  const detailHeight = elements.newsDetail.offsetHeight;
+  const pinnedHeight = elements.newsPinned ? elements.newsPinned.offsetHeight : 0;
+  const budget = Math.max(160, detailHeight - pinnedHeight - 10);
+  if (detailHeight > 0) {
+    elements.newsList.style.maxHeight = `${budget}px`;
+  } else {
+    elements.newsList.style.removeProperty("max-height");
+  }
+}
+
+function bindF1SnapshotInteractions(container, item) {
+  if (!container || !item?.f1_snapshot) {
+    return;
+  }
+  const standingsSection = container.querySelector("[data-f1-standings]");
+  const raceSection = container.querySelector("[data-f1-race-results]");
+  const focusToggle = container.querySelector("[data-f1-focus='standings']");
+  const raceTitle = container.querySelector(".f1-race-results-title");
+  const raceContent = container.querySelector(".f1-race-results-content");
+  const raceMap = item?.f1_snapshot?.race_results_by_round && typeof item.f1_snapshot.race_results_by_round === "object"
+    ? item.f1_snapshot.race_results_by_round
+    : {};
+
+  const showStandings = () => {
+    if (standingsSection) standingsSection.hidden = false;
+    if (raceSection) raceSection.hidden = true;
+    if (focusToggle) focusToggle.classList.add("is-active");
+  };
+
+  const showRaceResults = (roundKey, raceName = "") => {
+    const entry = raceMap?.[roundKey];
+    if (!raceContent || !raceTitle || !raceSection || !standingsSection) {
+      return;
+    }
+    standingsSection.hidden = true;
+    raceSection.hidden = false;
+    if (focusToggle) focusToggle.classList.remove("is-active");
+    raceTitle.textContent = `${entry?.race_name || raceName || `Race ${roundKey}`} Results`;
+    const rows = Array.isArray(entry?.results) ? entry.results : [];
+    const constructorRows = Array.isArray(entry?.constructors) ? entry.constructors : [];
+    if (!rows.length && !constructorRows.length) {
+      raceContent.innerHTML = '<p class="empty">Results are not available for this race yet.</p>';
+      return;
+    }
+    const driverTableHtml = f1SnapshotTable(
+      rows,
+      [
+        { key: "position", label: "Pos" },
+        { key: "name", label: "Driver" },
+        { key: "team", label: "Team" },
+        { key: "points", label: "Pts" },
+        { key: "status", label: "Status" },
+      ],
+      "Results are not available for this race yet.",
+    );
+    const constructorTableHtml = f1SnapshotTable(
+      constructorRows,
+      [
+        { key: "position", label: "Pos" },
+        { key: "name", label: "Brand" },
+        { key: "nationality", label: "Base" },
+        { key: "points", label: "Pts" },
+        { key: "wins", label: "Wins" },
+      ],
+      "Constructor results are not available for this race yet.",
+    );
+    const infoHtml = f1InfoList(f1RaceHighlights(entry));
+    raceContent.innerHTML = `
+      ${f1TabButtons("race", "drivers", true)}
+      <div data-f1-tab-panel="race:drivers">
+        ${f1TopDriverPodium(rows, "Top race finishers")}
+        ${driverTableHtml}
+      </div>
+      <div data-f1-tab-panel="race:constructors" hidden>
+        ${f1TopDriverPodium(constructorRows, "Top race constructors")}
+        ${constructorTableHtml}
+      </div>
+      <div data-f1-tab-panel="race:highlights" hidden>
+        ${infoHtml}
+      </div>
+    `;
+    bindF1Tabs(container);
+  };
+
+  const bindF1Tabs = (scope) => {
+    const buttons = scope.querySelectorAll("[data-f1-tab-group][data-f1-tab]");
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const group = button.getAttribute("data-f1-tab-group") || "";
+        const tab = button.getAttribute("data-f1-tab") || "";
+        scope.querySelectorAll("[data-f1-tab-group]").forEach((item) => {
+          item.classList.toggle("is-active", item.getAttribute("data-f1-tab-group") === group && item === button);
+        });
+        scope.querySelectorAll("[data-f1-tab-panel]").forEach((panel) => {
+          const panelKey = panel.getAttribute("data-f1-tab-panel") || "";
+          if (panelKey.startsWith(`${group}:`)) {
+            panel.hidden = panelKey !== `${group}:${tab}`;
+          }
+        });
+      });
+    });
+  };
+
+  focusToggle?.addEventListener("click", showStandings);
+  bindF1Tabs(container);
+  const cards = container.querySelectorAll(".f1-schedule-card[data-f1-round]");
+  const strip = container.querySelector(".f1-schedule-strip");
+  if (strip) {
+    let isPointerDown = false;
+    let isDragging = false;
+    let startX = 0;
+    let startScrollLeft = 0;
+    let suppressClickUntil = 0;
+
+    const onPointerMove = (event) => {
+      if (!isPointerDown) {
+        return;
+      }
+      const delta = event.clientX - startX;
+      if (Math.abs(delta) > 6) {
+        isDragging = true;
+      }
+      if (isDragging) {
+        strip.scrollLeft = startScrollLeft - delta;
+      }
+    };
+
+    const onPointerUp = () => {
+      if (!isPointerDown) {
+        return;
+      }
+      if (isDragging) {
+        suppressClickUntil = Date.now() + 180;
+      }
+      isPointerDown = false;
+      isDragging = false;
+      strip.classList.remove("is-dragging");
+      document.removeEventListener("pointermove", onPointerMove);
+      document.removeEventListener("pointerup", onPointerUp);
+      document.removeEventListener("pointercancel", onPointerUp);
+    };
+
+    strip.addEventListener("pointerdown", (event) => {
+      if (event.button !== 0) {
+        return;
+      }
+      isPointerDown = true;
+      isDragging = false;
+      startX = event.clientX;
+      startScrollLeft = strip.scrollLeft;
+      strip.classList.add("is-dragging");
+      document.addEventListener("pointermove", onPointerMove);
+      document.addEventListener("pointerup", onPointerUp);
+      document.addEventListener("pointercancel", onPointerUp);
+    });
+    strip.addEventListener("pointerleave", () => {
+      if (!isPointerDown) {
+        strip.classList.remove("is-dragging");
+      }
+    });
+
+    cards.forEach((card) => {
+      card.addEventListener("click", (event) => {
+        if (Date.now() < suppressClickUntil) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+      }, true);
+    });
+  }
+
+  cards.forEach((card) => {
+    card.addEventListener("click", () => {
+      const roundKey = String(card.getAttribute("data-f1-round") || "").trim();
+      const raceName = String(card.querySelector("h4")?.textContent || "").trim();
+      showRaceResults(roundKey, raceName);
+    });
+  });
+  showStandings();
+}
+
 function renderNewsDetail(item) {
   if (!elements.newsDetail) {
     return;
@@ -656,6 +1166,23 @@ function renderNewsDetail(item) {
   const imageUrl = String(item.image_url || item.image || "").trim();
   const tags = Array.isArray(item.tags) ? item.tags.filter(Boolean) : [];
   const tagHtml = tags.map((tag) => `<span>${escapeHtml(tag)}</span>`).join("");
+  const metaText = newsMetaText(item);
+  const isF1Snapshot = String(item?.source || "").trim().toLowerCase() === "f1 snapshot" && item?.f1_snapshot;
+
+  if (isF1Snapshot) {
+    elements.newsDetail.innerHTML = renderF1SnapshotDetail(item, metaText);
+    const strip = elements.newsDetail.querySelector(".f1-schedule-strip");
+    if (strip) {
+      const target = strip.querySelector(".f1-schedule-card.is-next");
+      if (target) {
+        const left = target.offsetLeft - Math.max(0, (strip.clientWidth - target.clientWidth) / 2);
+        strip.scrollLeft = Math.max(0, left);
+      }
+    }
+    bindF1SnapshotInteractions(elements.newsDetail, item);
+    return;
+  }
+
   const imageHtml = imageUrl
     ? `<img class="news-detail-image" src="${escapeHtml(imageUrl)}" alt="${escapeHtml(title)} image" loading="lazy">`
     : "";
@@ -663,7 +1190,7 @@ function renderNewsDetail(item) {
   elements.newsDetail.innerHTML = `
     ${imageHtml}
     <div class="news-detail-body news-theme-${categoryThemeKey(item)}">
-      <p class="news-meta">${escapeHtml(newsMetaText(item))}</p>
+      <p class="news-meta">${escapeHtml(metaText)}</p>
       <h3>${escapeHtml(title)}</h3>
       ${summary ? `<p class="news-summary">${escapeHtml(summary)}</p>` : ""}
       ${body ? `<p>${escapeHtml(body)}</p>` : ""}
@@ -679,51 +1206,79 @@ function renderNews(items) {
   }
   renderNewsCategoryControls();
   const normalized = Array.isArray(items) ? items : [];
+  const pinned = normalized.filter((item) => Boolean(item?.is_pinned_module));
   const filtered = state.selectedNewsCategory === "all"
-    ? normalized
-    : normalized.filter((item) => normalizeNewsCategory(item.category) === state.selectedNewsCategory);
-  if (!filtered.length) {
+    ? normalized.filter((item) => !item?.hide_in_all && !item?.is_pinned_module)
+    : normalized.filter((item) => normalizeNewsCategory(item.category) === state.selectedNewsCategory && !item?.is_pinned_module);
+  const visiblePinned = state.selectedNewsCategory === "all"
+    ? []
+    : pinned.filter((item) => normalizeNewsCategory(item.category) === state.selectedNewsCategory);
+
+  if (elements.newsPinned) {
+    elements.newsPinned.innerHTML = "";
+    for (const item of visiblePinned) {
+      const selected = item.id === state.selectedNewsId;
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = `news-card news-theme-${categoryThemeKey(item)} news-card-module${selected ? " is-selected" : ""}`;
+      button.dataset.newsId = item.id;
+      button.innerHTML = `<span class="news-card-title">${escapeHtml(String(item.title || "Pinned module").trim())}</span>`;
+      elements.newsPinned.append(button);
+    }
+  }
+  const ordered = [...visiblePinned, ...filtered];
+  state.newsItems = ordered.map((item, index) => ({ ...item, id: safeNewsId(item, index) }));
+
+  if (!state.newsItems.length) {
     elements.newsList.innerHTML = '<p class="empty">No news articles found.</p>';
     renderNewsDetail(null);
-    if (elements.newsExpandToggle) {
-      elements.newsExpandToggle.hidden = true;
-    }
+    syncNewsListHeight();
     return;
   }
 
-  state.newsItems = filtered.map((item, index) => ({ ...item, id: safeNewsId(item, index) }));
   if (!state.selectedNewsId || !state.newsItems.some((item) => item.id === state.selectedNewsId)) {
     state.selectedNewsId = state.newsItems[0].id;
   }
 
   elements.newsList.innerHTML = "";
-  for (const item of state.newsItems) {
+  const articleItems = state.newsItems.filter((entry) => !entry.is_pinned_module);
+  if (!articleItems.length) {
+    elements.newsList.innerHTML = '<p class="empty">No articles found.</p>';
+  }
+  for (const item of articleItems) {
     const title = String(item.title || "Untitled article").trim();
     const summary = String(item.summary || "").trim();
+    const relative = formatNewsRelativeTime(item.published_at || item.date);
+    const imageUrl = String(item.image_url || item.image || "").trim();
     const selected = item.id === state.selectedNewsId;
     const button = document.createElement("button");
     button.type = "button";
-    button.className = `news-card news-theme-${categoryThemeKey(item)}${selected ? " is-selected" : ""}`;
+    const isPinnedModule = Boolean(item.is_pinned_module);
+    button.className = `news-card news-theme-${categoryThemeKey(item)}${isPinnedModule ? " news-card-module" : ""}${selected ? " is-selected" : ""}`;
     button.dataset.newsId = item.id;
-    button.innerHTML = `
-      <span class="news-meta">${escapeHtml(newsMetaText(item))}</span>
-      <span class="news-card-title">${escapeHtml(title)}</span>
-      ${summary ? `<span class="news-card-summary">${escapeHtml(summary)}</span>` : ""}
-    `;
+    const thumbHtml = imageUrl
+      ? `<img class="news-card-thumb" src="${escapeHtml(imageUrl)}" alt="${escapeHtml(title)} preview" loading="lazy">`
+      : '<span class="news-card-thumb news-card-thumb-placeholder" aria-hidden="true"></span>';
+    button.innerHTML = isPinnedModule
+      ? `<span class="news-card-title">${escapeHtml(title)}</span>`
+      : `
+        <span class="news-card-main">
+          ${thumbHtml}
+          <span class="news-card-copy">
+            <span class="news-card-topline">
+              <span class="news-meta">${escapeHtml(newsMetaText(item))}</span>
+              ${relative ? `<span class="news-relative-time">${escapeHtml(relative)}</span>` : ""}
+            </span>
+            <span class="news-card-title">${escapeHtml(title)}</span>
+            ${summary ? `<span class="news-card-summary">${escapeHtml(summary)}</span>` : ""}
+          </span>
+        </span>
+      `;
     elements.newsList.append(button);
   }
 
-  if (elements.newsExpandToggle) {
-    const canExpand = state.newsItems.length > 3;
-    elements.newsExpandToggle.hidden = !canExpand;
-    if (!canExpand) {
-      state.isNewsExpanded = false;
-    }
-    elements.newsList.classList.toggle("is-expanded", state.isNewsExpanded && canExpand);
-    elements.newsExpandToggle.textContent = state.isNewsExpanded ? "Retract" : "Expand";
-  }
-
   renderNewsDetail(state.newsItems.find((item) => item.id === state.selectedNewsId));
+  syncNewsListHeight();
 }
 
 function setHeaderDate() {
@@ -3892,7 +4447,9 @@ async function loadNews() {
       throw new Error(`Could not load ${NEWS_PATH}`);
     }
     const payload = await response.json();
-    state.newsAllItems = Array.isArray(payload.items) ? payload.items : [];
+    const topItems = Array.isArray(payload.top_items) ? payload.top_items : [];
+    const allItems = Array.isArray(payload.items) ? payload.items : [];
+    state.newsAllItems = topItems.length ? topItems : allItems;
     renderNews(state.newsAllItems);
   } catch (error) {
     elements.newsList.innerHTML = `<p class="empty">${error.message}</p>`;
@@ -4415,7 +4972,17 @@ if (elements.newsList) {
       return;
     }
     state.selectedNewsId = card.dataset.newsId || "";
-    renderNews(state.newsItems);
+    renderNews(state.newsAllItems);
+  });
+}
+if (elements.newsPinned) {
+  elements.newsPinned.addEventListener("click", (event) => {
+    const card = event.target.closest(".news-card");
+    if (!card || !card.dataset.newsId) {
+      return;
+    }
+    state.selectedNewsId = card.dataset.newsId || "";
+    renderNews(state.newsAllItems);
   });
 }
 
@@ -4485,13 +5052,9 @@ if (elements.newsCategoryButtons) {
   });
 }
 
-if (elements.newsExpandToggle && elements.newsList) {
-  elements.newsExpandToggle.addEventListener("click", () => {
-    state.isNewsExpanded = !state.isNewsExpanded;
-    elements.newsList.classList.toggle("is-expanded", state.isNewsExpanded);
-    elements.newsExpandToggle.textContent = state.isNewsExpanded ? "Retract" : "Expand";
-  });
-}
+window.addEventListener("resize", () => {
+  syncNewsListHeight();
+});
 
 if (elements.watchlistDetailClose && elements.watchlistDetailPanel) {
   elements.watchlistDetailClose.addEventListener("click", () => {
