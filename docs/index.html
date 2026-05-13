@@ -301,48 +301,63 @@
         </summary>
 
         <div class="section-content">
-          <section class="one-piece-products" aria-label="One Piece products timeline">
-            <div class="one-piece-products-head">
-              <h3 class="subsection-title">Products Timeline</h3>
+          <details class="subsection-panel">
+            <summary>My Collection</summary>
+            <div class="collection-shell">
+              <div id="collection-set-buttons" class="watchlist-category-buttons" role="group" aria-label="Select set"></div>
+              <p id="collection-stats" class="collection-stats"></p>
+              <label class="collection-missing-toggle">
+                <input id="collection-show-missing" type="checkbox">
+                Show missing cards
+              </label>
+              <div id="collection-grid" class="collection-grid" aria-live="polite">
+                <p class="empty">Loading collection...</p>
+              </div>
             </div>
+          </details>
+
+          <details class="subsection-panel">
+            <summary>Products Timeline</summary>
             <div id="one-piece-product-type-filters" class="watchlist-category-buttons" role="group" aria-label="One Piece product type filters"></div>
             <div class="one-piece-products-strip">
               <div id="one-piece-product-strip" class="one-piece-product-strip" aria-live="polite">
                 <p class="empty">Loading products...</p>
               </div>
             </div>
-          </section>
+          </details>
 
-          <section class="controls" aria-label="Filters">
-          <label>
-            Search
-            <input id="search" type="search" placeholder="Card, name, rarity, store">
-          </label>
-          <label>
-            Store
-            <select id="store-filter">
-              <option value="">All stores</option>
-            </select>
-          </label>
-          <label>
-            Rarity
-            <select id="rarity-filter">
-              <option value="">All rarities</option>
-            </select>
-          </label>
-          <label>
-            Min price
-            <input id="min-price" type="number" min="0" step="1" value="0">
-          </label>
-          <label>
-            Max price
-            <input id="max-price" type="number" min="0" step="1" value="200">
-          </label>
-          </section>
-
-          <div id="cards-grid" class="cards-grid" aria-live="polite">
-            <p class="empty">Loading cards...</p>
-          </div>
+          <details class="subsection-panel">
+            <summary>Missing Cards</summary>
+            <section class="controls" aria-label="Filters">
+            <label>
+              Search
+              <input id="search" type="search" placeholder="Card, name, rarity, store">
+            </label>
+            <label>
+              Store
+              <select id="store-filter">
+                <option value="">All stores</option>
+              </select>
+            </label>
+            <label>
+              Rarity
+              <select id="rarity-filter">
+                <option value="">All rarities</option>
+              </select>
+            </label>
+            <label>
+              Min price
+              <input id="min-price" type="number" min="0" step="1" value="0">
+            </label>
+            <label>
+              Max price
+              <input id="max-price" type="number" min="0" step="1" value="200">
+            </label>
+            </section>
+            <div id="cards-grid" class="cards-grid" aria-live="polite">
+              <p class="empty">Loading cards...</p>
+            </div>
+          </details>
         </div>
       </details>
     </main>

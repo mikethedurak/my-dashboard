@@ -1,0 +1,7377 @@
+{
+  "sets": {
+    "OP01": {
+      "owned": [
+        {
+          "card_number": "OP01-006",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP01-016",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP01-024",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP01-029",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP01-033",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP01-039",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP01-046",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP01-047",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP01-049",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP01-051",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP01-052",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP01-055",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP01-071",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP01-086",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP01-107",
+          "rarity": "Common"
+        }
+      ],
+      "total_owned": 15,
+      "total_cards": 121,
+      "by_rarity": {
+        "Common": 9,
+        "Rare": 3,
+        "Super Rare": 3
+      }
+    },
+    "OP02": {
+      "owned": [
+        {
+          "card_number": "OP02-004",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP02-005",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP02-008",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP02-014",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP02-015",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP02-018",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP02-028",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP02-033",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP02-034",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP02-035",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP02-037",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP02-039",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP02-040",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP02-041",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP02-043",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP02-045",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP02-046",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP02-068",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP02-075",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP02-096",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP02-098",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP02-106",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP02-108",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP02-113",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP02-114",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP02-117",
+          "rarity": "Common"
+        }
+      ],
+      "total_owned": 26,
+      "total_cards": 121,
+      "by_rarity": {
+        "Super Rare": 3,
+        "Common": 16,
+        "Rare": 7
+      }
+    },
+    "OP03": {
+      "owned": [
+        {
+          "card_number": "OP03-002",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-003",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP03-004",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-005",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-006",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-007",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-008",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-009",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-010",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-015",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-017",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-019",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-020",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-023",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-024",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP03-025",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP03-026",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-027",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-028",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP03-030",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP03-031",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-034",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-035",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-036",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-037",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-038",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP03-039",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-042",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-043",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-044",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP03-045",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-046",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-048",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-049",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-050",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-052",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-053",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-054",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-055",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-056",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-060",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-061",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-063",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-064",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-065",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-067",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-068",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-069",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-071",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP03-072",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP03-073",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-075",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-078",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP03-079",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-082",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-083",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-084",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-085",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-087",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-088",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-089",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP03-090",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP03-091",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-093",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-094",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-097",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP03-100",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-101",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-103",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-104",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-105",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-106",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-107",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-108",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP03-109",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-110",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP03-111",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-113",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP03-115",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP03-116",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-117",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-118",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-119",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP03-120",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP03-121",
+          "rarity": "Common"
+        }
+      ],
+      "total_owned": 85,
+      "total_cards": 0,
+      "by_rarity": {
+        "Common": 67,
+        "Rare": 14,
+        "Super Rare": 4
+      }
+    },
+    "OP04": {
+      "owned": [
+        {
+          "card_number": "OP04-002",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP04-003",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-004",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-005",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-006",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-007",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-008",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP04-010",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-011",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-012",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-016",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP04-017",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-018",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-022",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-023",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-025",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-026",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP04-027",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-029",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-031",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP04-032",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-033",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-036",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-037",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-041",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-042",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-043",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP04-045",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP04-047",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-048",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-049",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-050",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-052",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-053",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-054",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-055",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-057",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-059",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-061",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-062",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-065",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-067",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-068",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-070",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-073",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-077",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-078",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-079",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-082",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP04-083",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP04-084",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-086",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-087",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-091",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-094",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP04-095",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-096",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-097",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-100",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP04-106",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-107",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-108",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-109",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-110",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-111",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-112",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP04-113",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-114",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP04-115",
+          "rarity": "Common"
+        }
+      ],
+      "total_owned": 69,
+      "total_cards": 119,
+      "by_rarity": {
+        "Rare": 9,
+        "Common": 57,
+        "Super Rare": 3
+      }
+    },
+    "OP05": {
+      "owned": [
+        {
+          "card_number": "OP05-001",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP05-002",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP05-003",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-004",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-005",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP05-008",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-009",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-010",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-011",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-012",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-013",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-014",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-015",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP05-016",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP05-017",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP05-018",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-019",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP05-020",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-021",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-022",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP05-023",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP05-024",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-025",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-026",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-027",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-028",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-029",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-030",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP05-031",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-032",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP05-033",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-034",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP05-035",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-036",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-037",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP05-038",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-039",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-040",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-041",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP05-042",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP05-043",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP05-044",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-045",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-046",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-047",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-048",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-049",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-050",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP05-052",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-053",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-054",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-055",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP05-056",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-057",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP05-058",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-059",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-061",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-062",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-063",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-064",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP05-065",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-066",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-068",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-070",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-071",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP05-072",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-073",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-075",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-077",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-078",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-079",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-080",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-081",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-083",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-084",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-085",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-086",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP05-087",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-088",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP05-089",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-090",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-091",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP05-092",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-093",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP05-094",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP05-095",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-096",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-097",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-098",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP05-099",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-102",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP05-103",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-104",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-105",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP05-106",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP05-107",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-108",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-109",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-110",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-111",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-112",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-113",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-114",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-115",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-116",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-117",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP05-118",
+          "rarity": "Super Rare"
+        }
+      ],
+      "total_owned": 107,
+      "total_cards": 119,
+      "by_rarity": {
+        "Leader": 5,
+        "Common": 76,
+        "Rare": 21,
+        "Super Rare": 5
+      }
+    },
+    "OP06": {
+      "owned": [
+        {
+          "card_number": "OP06-001",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP06-002",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-003",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-004",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-005",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-006",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-007",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP06-008",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-009",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP06-010",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP06-011",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP06-012",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-013",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP06-014",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-015",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-016",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-017",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-018",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP06-019",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-020",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP06-021",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP06-022",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP06-023",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP06-024",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-025",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP06-026",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-027",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-028",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-029",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-030",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-031",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-032",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-033",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP06-034",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-036",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP06-037",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-038",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-039",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP06-040",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-041",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-042",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP06-043",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP06-044",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-045",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-046",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-048",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-049",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-050",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP06-051",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP06-052",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-053",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-054",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-055",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-056",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-057",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-059",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-060",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-061",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP06-063",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-064",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-065",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP06-066",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-067",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP06-068",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-070",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-071",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-072",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-073",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-074",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP06-075",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-076",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-077",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP06-078",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-079",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-080",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP06-081",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP06-082",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-083",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-084",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-085",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-086",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP06-087",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-088",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-089",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-090",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP06-091",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-092",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP06-093",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP06-094",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-095",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-096",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-097",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP06-098",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-099",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-100",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-102",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-103",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-104",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP06-105",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-107",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP06-108",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-109",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-110",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-111",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-112",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-113",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-114",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-116",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP06-117",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP06-118",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP06-119",
+          "rarity": "Super Rare"
+        }
+      ],
+      "total_owned": 111,
+      "total_cards": 119,
+      "by_rarity": {
+        "Leader": 6,
+        "Common": 75,
+        "Super Rare": 9,
+        "Rare": 21
+      }
+    },
+    "OP07": {
+      "owned": [
+        {
+          "card_number": "OP07-001",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP07-002",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP07-003",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP07-004",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP07-005",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP07-006",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-007",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-008",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-009",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-010",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP07-011",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-012",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-013",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-014",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-015",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP07-016",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP07-017",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-018",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-019",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP07-020",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-021",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP07-022",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP07-023",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-024",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-025",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-026",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP07-027",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-028",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-029",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP07-030",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-031",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-032",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP07-033",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-034",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-035",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-036",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP07-037",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-038",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP07-039",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-040",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-041",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-042",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-043",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-044",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-046",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP07-047",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP07-048",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-049",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-050",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-052",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-053",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP07-054",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP07-055",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-056",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-058",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-059",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP07-060",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-061",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-062",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-063",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-064",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP07-065",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-066",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP07-067",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-068",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-069",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-070",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-071",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP07-073",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP07-074",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-075",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-076",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-077",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP07-078",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-079",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP07-080",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP07-081",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-082",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-083",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-084",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-086",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-087",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-088",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-089",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-090",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-091",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP07-092",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-093",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP07-094",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-095",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-096",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP07-097",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP07-098",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-099",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-100",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-101",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-102",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-103",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-104",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-105",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-106",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-107",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP07-108",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-109",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP07-110",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-111",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP07-112",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP07-113",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-114",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-115",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-116",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP07-117",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP07-118",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP07-119",
+          "rarity": "Super Rare"
+        }
+      ],
+      "total_owned": 114,
+      "total_cards": 119,
+      "by_rarity": {
+        "Leader": 6,
+        "Rare": 25,
+        "Common": 75,
+        "Super Rare": 8
+      }
+    },
+    "OP08": {
+      "owned": [
+        {
+          "card_number": "OP08-001",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP08-002",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP08-003",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-004",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-005",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-006",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-007",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP08-008",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP08-009",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-010",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-011",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-012",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-013",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-014",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP08-015",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP08-016",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP08-017",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-018",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP08-019",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-020",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-021",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP08-022",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-024",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-025",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-026",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-027",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-028",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-029",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-030",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP08-031",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-032",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-033",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-034",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP08-035",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-036",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP08-037",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-038",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-039",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP08-040",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-041",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-042",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-044",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-045",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-046",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP08-048",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-049",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-050",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-051",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-052",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP08-053",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP08-054",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-055",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-056",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-057",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP08-058",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP08-059",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-060",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP08-061",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-062",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-063",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP08-064",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-065",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-066",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-067",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP08-068",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-069",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP08-070",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-071",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-072",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-073",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-074",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP08-075",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-076",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-077",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP08-078",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-080",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP08-081",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-082",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP08-083",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-084",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP08-085",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-086",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-087",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-088",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-089",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-090",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-091",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP08-092",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP08-093",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-094",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP08-095",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-096",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-097",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-098",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP08-099",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-100",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-101",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-102",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-103",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-104",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-107",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-108",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-109",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP08-110",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP08-111",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-112",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP08-113",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-114",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP08-115",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP08-116",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-117",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP08-119",
+          "rarity": "Super Rare"
+        }
+      ],
+      "total_owned": 112,
+      "total_cards": 119,
+      "by_rarity": {
+        "Leader": 6,
+        "Common": 75,
+        "Super Rare": 6,
+        "Rare": 25
+      }
+    },
+    "OP09": {
+      "owned": [
+        {
+          "card_number": "OP09-001",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP09-002",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP09-003",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-004",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP09-005",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP09-006",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-007",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-008",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-009",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP09-010",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-011",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-012",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-013",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP09-014",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-015",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP09-016",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-017",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-018",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-019",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-020",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP09-021",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-022",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP09-024",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-025",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-026",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP09-027",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-028",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-029",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-030",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-031",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP09-032",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-033",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-034",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP09-035",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-036",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-038",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-039",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP09-040",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-041",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-042",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP09-043",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-044",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-045",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-046",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP09-047",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-048",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP09-049",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-050",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP09-051",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP09-052",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-053",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-054",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-055",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-056",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP09-057",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP09-058",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-059",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-060",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-061",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP09-062",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP09-063",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-064",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-065",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP09-066",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-067",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-068",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-069",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP09-070",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-071",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-072",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP09-073",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-074",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-075",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-076",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP09-077",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-078",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP09-079",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-080",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-081",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP09-082",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-083",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP09-084",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-085",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-086",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP09-087",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-088",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-089",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-090",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP09-091",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-092",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-093",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP09-094",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-095",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP09-096",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP09-097",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-098",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-099",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-100",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-101",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP09-102",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP09-103",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP09-104",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP09-105",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-106",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-107",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP09-108",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-109",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-110",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-111",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-112",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-113",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-114",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-115",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-116",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP09-117",
+          "rarity": "Rare"
+        }
+      ],
+      "total_owned": 115,
+      "total_cards": 119,
+      "by_rarity": {
+        "Leader": 6,
+        "Rare": 26,
+        "Common": 75,
+        "Super Rare": 8
+      }
+    },
+    "OP10": {
+      "owned": [
+        {
+          "card_number": "OP10-001",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP10-002",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP10-003",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP10-004",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP10-006",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-007",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-008",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-009",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP10-010",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-011",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP10-012",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-013",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-014",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-015",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-016",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP10-017",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-018",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-019",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP10-020",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-021",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-022",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP10-023",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-024",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-025",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP10-026",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-027",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-028",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-029",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP10-030",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP10-031",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-032",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP10-033",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-034",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-035",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-036",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-037",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP10-038",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-039",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-040",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-041",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP10-042",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP10-043",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-044",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-045",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP10-046",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP10-047",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-048",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-049",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP10-050",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-051",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-052",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-053",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-054",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-055",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP10-056",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-057",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP10-058",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP10-059",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP10-060",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-061",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-062",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP10-063",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP10-064",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-065",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP10-066",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-067",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP10-068",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-069",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-070",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-072",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP10-073",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-074",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-075",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-076",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-077",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-078",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP10-079",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-080",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-081",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-082",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP10-083",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-084",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-085",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-086",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP10-087",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-088",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-089",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-090",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP10-091",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-092",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-093",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-094",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-095",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP10-096",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-097",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-098",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP10-099",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP10-100",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-101",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-102",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-103",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP10-104",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-105",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-106",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-107",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-108",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-109",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP10-110",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-111",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP10-112",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP10-113",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-114",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-115",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-116",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP10-117",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP10-119",
+          "rarity": "Super Rare"
+        }
+      ],
+      "total_owned": 116,
+      "total_cards": 119,
+      "by_rarity": {
+        "Leader": 6,
+        "Rare": 26,
+        "Common": 75,
+        "Super Rare": 9
+      }
+    },
+    "OP11": {
+      "owned": [
+        {
+          "card_number": "OP11-001",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP11-002",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-003",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-004",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP11-005",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-006",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-007",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-008",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP11-009",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-010",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP11-011",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-012",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-013",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP11-014",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP11-015",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-016",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-017",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-019",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-020",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-021",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP11-022",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP11-023",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP11-024",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-025",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-026",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-027",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-028",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP11-029",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-030",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP11-032",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-033",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-034",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-035",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-036",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-037",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-038",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP11-039",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-040",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP11-041",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP11-042",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-043",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-044",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-045",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-046",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-047",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP11-048",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP11-049",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP11-050",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-052",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-053",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-055",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-056",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP11-057",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-058",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-059",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-060",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP11-061",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-062",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP11-063",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-064",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-065",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-066",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP11-068",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-069",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP11-071",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP11-072",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-074",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-075",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-076",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-077",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-078",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-079",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-080",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP11-081",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-082",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP11-083",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP11-084",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP11-085",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-086",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-087",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-088",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-089",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-090",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-091",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-092",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP11-093",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-094",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-096",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-097",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-098",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-099",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP11-100",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-102",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-103",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-104",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP11-105",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-106",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP11-107",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-108",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP11-109",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-110",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-111",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-112",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-113",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-114",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP11-115",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-116",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-117",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP11-118",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP11-119",
+          "rarity": "Super Rare"
+        }
+      ],
+      "total_owned": 110,
+      "total_cards": 119,
+      "by_rarity": {
+        "Leader": 6,
+        "Common": 75,
+        "Super Rare": 5,
+        "Rare": 24
+      }
+    },
+    "OP12": {
+      "owned": [
+        {
+          "card_number": "OP12-001",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP12-002",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-003",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-004",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-005",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-006",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP12-007",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-008",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP12-009",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP12-010",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-011",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-012",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-013",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-014",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP12-015",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP12-016",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-017",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-018",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP12-019",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-020",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP12-021",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-022",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-023",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-024",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-025",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-026",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-027",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-028",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP12-029",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-030",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP12-031",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP12-032",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-033",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-034",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP12-035",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-036",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-037",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP12-038",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-039",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP12-040",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP12-041",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP12-042",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-043",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP12-044",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP12-045",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-046",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-047",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP12-048",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-049",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-050",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-051",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-052",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-053",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP12-054",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-055",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-056",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP12-057",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-058",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-059",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-060",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP12-061",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP12-062",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP12-063",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP12-064",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-065",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-066",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-067",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-068",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-069",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-070",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP12-071",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP12-072",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-073",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP12-074",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-075",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-076",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-077",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-078",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-079",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP12-080",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-081",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP12-082",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-083",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-084",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-085",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-086",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP12-087",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP12-088",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-089",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP12-090",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-091",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-092",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-093",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-094",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP12-095",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-096",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-097",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP12-098",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-099",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP12-100",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP12-101",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-102",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP12-103",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-104",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-105",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-106",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-107",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP12-108",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP12-109",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-110",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-111",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-112",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP12-113",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-114",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-115",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-116",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP12-117",
+          "rarity": "Rare"
+        }
+      ],
+      "total_owned": 117,
+      "total_cards": 119,
+      "by_rarity": {
+        "Leader": 6,
+        "Common": 75,
+        "Rare": 26,
+        "Super Rare": 10
+      }
+    },
+    "OP13": {
+      "owned": [
+        {
+          "card_number": "OP13-001",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP13-002",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP13-003",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP13-004",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP13-005",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-006",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-007",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP13-008",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-009",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-010",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-011",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-012",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP13-013",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-014",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-015",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-016",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP13-017",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP13-018",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-019",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP13-020",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-021",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-022",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-023",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP13-024",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-025",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-026",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-027",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP13-028",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP13-029",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-030",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-031",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP13-032",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-033",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-034",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-035",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-036",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-037",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP13-038",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-039",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-040",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP13-041",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-042",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP13-043",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP13-044",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-045",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-046",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP13-047",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-048",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-049",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-050",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-051",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP13-052",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-053",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-054",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP13-055",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-056",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-057",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP13-058",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP13-059",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-060",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-061",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-062",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-063",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-064",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP13-065",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP13-067",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP13-068",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-069",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-070",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-071",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-072",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP13-073",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-074",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-075",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-076",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP13-077",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-078",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-079",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP13-080",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP13-081",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-082",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP13-083",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP13-084",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP13-085",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-086",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-087",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-088",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-090",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-091",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP13-092",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-093",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-094",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-095",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-096",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP13-097",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-098",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-099",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-100",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP13-101",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-102",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-103",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-104",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP13-105",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-106",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-107",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-109",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-110",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP13-111",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-112",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-113",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP13-114",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP13-115",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-116",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP13-117",
+          "rarity": "Rare"
+        }
+      ],
+      "total_owned": 114,
+      "total_cards": 120,
+      "by_rarity": {
+        "Leader": 6,
+        "Common": 74,
+        "Super Rare": 8,
+        "Rare": 26
+      }
+    },
+    "OP14": {
+      "owned": [
+        {
+          "card_number": "OP14-001",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP14-002",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-003",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-004",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-005",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-006",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-007",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-008",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-009",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP14-010",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-011",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-012",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-013",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP14-014",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP14-015",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP14-016",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP14-017",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-018",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP14-019",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-020",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP14-021",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-022",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-023",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP14-024",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-025",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-026",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-027",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP14-028",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-029",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP14-030",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-032",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-034",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP14-035",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-036",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-037",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP14-038",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-039",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-040",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP14-041",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP14-042",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP14-043",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP14-044",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-045",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-046",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-047",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP14-048",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-049",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP14-050",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-051",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-052",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-053",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-054",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-055",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-056",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-057",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-058",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP14-059",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-060",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP14-061",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP14-062",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-063",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP14-064",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-065",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-066",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-067",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-068",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-070",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-071",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-072",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-073",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-074",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP14-075",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-076",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP14-077",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-078",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-079",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP14-080",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP14-081",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-082",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-083",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-085",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-086",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-087",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP14-088",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-089",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-090",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP14-092",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP14-093",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-094",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-095",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-097",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-098",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-099",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-100",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP14-101",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-102",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-103",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-105",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-106",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-107",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-108",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP14-109",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-110",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP14-111",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP14-113",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-114",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-115",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-116",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-117",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP14-118",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP14-120",
+          "rarity": "Super Rare"
+        }
+      ],
+      "total_owned": 111,
+      "total_cards": 120,
+      "by_rarity": {
+        "Leader": 7,
+        "Common": 75,
+        "Super Rare": 4,
+        "Rare": 25
+      }
+    },
+    "OP15": {
+      "owned": [
+        {
+          "card_number": "OP15-001",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP15-002",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP15-003",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP15-004",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-005",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-006",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-009",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-010",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-011",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP15-012",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-013",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-015",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-016",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-017",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-018",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-019",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-021",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-022",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP15-023",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP15-024",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP15-025",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP15-026",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-027",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-028",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-029",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-030",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-031",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-033",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-034",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-036",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-037",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-038",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP15-039",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP15-041",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-042",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP15-043",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-044",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-045",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-048",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-049",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-050",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-051",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-054",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-055",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP15-056",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-057",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-058",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP15-059",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-060",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "OP15-061",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP15-062",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-063",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP15-064",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-065",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-066",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP15-067",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP15-068",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-069",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-070",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-071",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-072",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-073",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-074",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-075",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-076",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-077",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP15-079",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-080",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP15-081",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-082",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-083",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-084",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-085",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP15-087",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-088",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP15-089",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-090",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-091",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-093",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-094",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-095",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-096",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP15-097",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-098",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "OP15-099",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-100",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-101",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-102",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP15-103",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-104",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-105",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-106",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-107",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-110",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-111",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-112",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-115",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP15-116",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "OP15-117",
+          "rarity": "Common"
+        }
+      ],
+      "total_owned": 99,
+      "total_cards": 119,
+      "by_rarity": {
+        "Leader": 6,
+        "Rare": 19,
+        "Common": 73,
+        "Super Rare": 1
+      }
+    },
+    "ST01": {
+      "owned": [
+        {
+          "card_number": "ST01-002",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST01-005",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST01-008",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST01-009",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST01-010",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST01-011",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST01-014",
+          "rarity": "Common"
+        }
+      ],
+      "total_owned": 7,
+      "total_cards": 17,
+      "by_rarity": {
+        "Common": 7
+      }
+    },
+    "ST02": {
+      "owned": [
+        {
+          "card_number": "ST02-002",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST02-004",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST02-006",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST02-007",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST02-008",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST02-011",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST02-012",
+          "rarity": "Common"
+        }
+      ],
+      "total_owned": 7,
+      "total_cards": 17,
+      "by_rarity": {
+        "Common": 7
+      }
+    },
+    "ST03": {
+      "owned": [
+        {
+          "card_number": "ST03-005",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST03-013",
+          "rarity": "Common"
+        }
+      ],
+      "total_owned": 2,
+      "total_cards": 17,
+      "by_rarity": {
+        "Common": 2
+      }
+    },
+    "ST04": {
+      "owned": [
+        {
+          "card_number": "ST04-003",
+          "rarity": "Super Rare"
+        }
+      ],
+      "total_owned": 1,
+      "total_cards": 17,
+      "by_rarity": {
+        "Super Rare": 1
+      }
+    },
+    "ST06": {
+      "owned": [
+        {
+          "card_number": "ST06-006",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST06-008",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST06-010",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST06-014",
+          "rarity": "Common"
+        }
+      ],
+      "total_owned": 4,
+      "total_cards": 17,
+      "by_rarity": {
+        "Common": 4
+      }
+    },
+    "ST07": {
+      "owned": [
+        {
+          "card_number": "ST07-005",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST07-007",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST07-014",
+          "rarity": "Common"
+        }
+      ],
+      "total_owned": 3,
+      "total_cards": 17,
+      "by_rarity": {
+        "Common": 3
+      }
+    },
+    "ST08": {
+      "owned": [
+        {
+          "card_number": "ST08-002",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "ST08-003",
+          "rarity": "Common"
+        }
+      ],
+      "total_owned": 2,
+      "total_cards": 17,
+      "by_rarity": {
+        "Super Rare": 1,
+        "Common": 1
+      }
+    },
+    "ST09": {
+      "owned": [
+        {
+          "card_number": "ST09-014",
+          "rarity": "Common"
+        }
+      ],
+      "total_owned": 1,
+      "total_cards": 15,
+      "by_rarity": {
+        "Common": 1
+      }
+    },
+    "ST10": {
+      "owned": [
+        {
+          "card_number": "ST10-004",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST10-005",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST10-007",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST10-008",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST10-011",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST10-014",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST10-015",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST10-016",
+          "rarity": "Common"
+        }
+      ],
+      "total_owned": 8,
+      "total_cards": 17,
+      "by_rarity": {
+        "Common": 8
+      }
+    },
+    "ST11": {
+      "owned": [
+        {
+          "card_number": "ST11-001",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "ST11-003",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST11-004",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "ST11-005",
+          "rarity": "Common"
+        }
+      ],
+      "total_owned": 4,
+      "total_cards": 5,
+      "by_rarity": {
+        "Leader": 1,
+        "Common": 2,
+        "Super Rare": 1
+      }
+    },
+    "ST12": {
+      "owned": [
+        {
+          "card_number": "ST12-005",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST12-006",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST12-007",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST12-011",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST12-013",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST12-014",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST12-017",
+          "rarity": "Common"
+        }
+      ],
+      "total_owned": 7,
+      "total_cards": 17,
+      "by_rarity": {
+        "Common": 7
+      }
+    },
+    "ST13": {
+      "owned": [
+        {
+          "card_number": "ST13-001",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "ST13-002",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "ST13-003",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "ST13-004",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST13-007",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST13-008",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "ST13-009",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST13-010",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST13-012",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST13-014",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST13-015",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "ST13-018",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST13-019",
+          "rarity": "Common"
+        }
+      ],
+      "total_owned": 13,
+      "total_cards": 19,
+      "by_rarity": {
+        "Leader": 3,
+        "Common": 8,
+        "Super Rare": 2
+      }
+    },
+    "ST14": {
+      "owned": [
+        {
+          "card_number": "ST14-007",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST14-010",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST14-013",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST14-015",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST14-016",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST14-017",
+          "rarity": "Common"
+        }
+      ],
+      "total_owned": 6,
+      "total_cards": 17,
+      "by_rarity": {
+        "Common": 6
+      }
+    },
+    "ST15": {
+      "owned": [
+        {
+          "card_number": "ST15-002",
+          "rarity": "Super Rare"
+        }
+      ],
+      "total_owned": 1,
+      "total_cards": 5,
+      "by_rarity": {
+        "Super Rare": 1
+      }
+    },
+    "ST16": {
+      "owned": [
+        {
+          "card_number": "ST16-003",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST16-004",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "ST16-005",
+          "rarity": "Common"
+        }
+      ],
+      "total_owned": 3,
+      "total_cards": 5,
+      "by_rarity": {
+        "Common": 2,
+        "Super Rare": 1
+      }
+    },
+    "ST17": {
+      "owned": [
+        {
+          "card_number": "ST17-002",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "ST17-003",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST17-005",
+          "rarity": "Common"
+        }
+      ],
+      "total_owned": 3,
+      "total_cards": 5,
+      "by_rarity": {
+        "Super Rare": 1,
+        "Common": 2
+      }
+    },
+    "ST18": {
+      "owned": [
+        {
+          "card_number": "ST18-002",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST18-003",
+          "rarity": "Common"
+        }
+      ],
+      "total_owned": 2,
+      "total_cards": 5,
+      "by_rarity": {
+        "Common": 2
+      }
+    },
+    "ST19": {
+      "owned": [
+        {
+          "card_number": "ST19-001",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST19-002",
+          "rarity": "Common"
+        }
+      ],
+      "total_owned": 2,
+      "total_cards": 5,
+      "by_rarity": {
+        "Common": 2
+      }
+    },
+    "ST20": {
+      "owned": [
+        {
+          "card_number": "ST20-002",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST20-003",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST20-005",
+          "rarity": "Super Rare"
+        }
+      ],
+      "total_owned": 3,
+      "total_cards": 5,
+      "by_rarity": {
+        "Common": 2,
+        "Super Rare": 1
+      }
+    },
+    "ST21": {
+      "owned": [
+        {
+          "card_number": "ST21-002",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST21-005",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST21-006",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST21-007",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST21-008",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST21-011",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST21-013",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST21-015",
+          "rarity": "Super Rare"
+        }
+      ],
+      "total_owned": 8,
+      "total_cards": 17,
+      "by_rarity": {
+        "Common": 7,
+        "Super Rare": 1
+      }
+    },
+    "ST22": {
+      "owned": [
+        {
+          "card_number": "ST22-004",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST22-005",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "ST22-006",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST22-007",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST22-008",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST22-013",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST22-014",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST22-016",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST22-017",
+          "rarity": "Common"
+        }
+      ],
+      "total_owned": 9,
+      "total_cards": 17,
+      "by_rarity": {
+        "Common": 8,
+        "Super Rare": 1
+      }
+    },
+    "ST23": {
+      "owned": [
+        {
+          "card_number": "ST23-002",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "ST23-003",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST23-004",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST23-005",
+          "rarity": "Common"
+        }
+      ],
+      "total_owned": 4,
+      "total_cards": 5,
+      "by_rarity": {
+        "Super Rare": 1,
+        "Common": 3
+      }
+    },
+    "ST24": {
+      "owned": [
+        {
+          "card_number": "ST24-001",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST24-002",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "ST24-005",
+          "rarity": "Common"
+        }
+      ],
+      "total_owned": 3,
+      "total_cards": 5,
+      "by_rarity": {
+        "Common": 2,
+        "Super Rare": 1
+      }
+    },
+    "ST26": {
+      "owned": [
+        {
+          "card_number": "ST26-004",
+          "rarity": "Common"
+        }
+      ],
+      "total_owned": 1,
+      "total_cards": 5,
+      "by_rarity": {
+        "Common": 1
+      }
+    },
+    "ST27": {
+      "owned": [
+        {
+          "card_number": "ST27-001",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "ST27-005",
+          "rarity": "Super Rare"
+        }
+      ],
+      "total_owned": 2,
+      "total_cards": 5,
+      "by_rarity": {
+        "Common": 1,
+        "Super Rare": 1
+      }
+    },
+    "EB01": {
+      "owned": [
+        {
+          "card_number": "EB01-001",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "EB01-002",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB01-005",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB01-007",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB01-008",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB01-009",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB01-010",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB01-011",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB01-012",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "EB01-014",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB01-016",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB01-018",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB01-019",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB01-020",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB01-021",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "EB01-022",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "EB01-023",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB01-024",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB01-025",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB01-026",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB01-027",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB01-028",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB01-029",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB01-030",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB01-031",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB01-032",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB01-033",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB01-035",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB01-036",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB01-037",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB01-038",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB01-040",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "EB01-041",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB01-042",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB01-043",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB01-044",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB01-045",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB01-046",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "EB01-047",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB01-048",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "EB01-049",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB01-050",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB01-051",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB01-053",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB01-054",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB01-055",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB01-058",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB01-060",
+          "rarity": "Common"
+        }
+      ],
+      "total_owned": 48,
+      "total_cards": 61,
+      "by_rarity": {
+        "Leader": 3,
+        "Rare": 15,
+        "Common": 26,
+        "Super Rare": 4
+      }
+    },
+    "EB02": {
+      "owned": [
+        {
+          "card_number": "EB02-001",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB02-002",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB02-003",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB02-004",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB02-005",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB02-007",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB02-009",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB02-010",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "EB02-012",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB02-013",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB02-014",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB02-016",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB02-018",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB02-019",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB02-021",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB02-022",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB02-023",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB02-024",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB02-025",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB02-027",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB02-028",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB02-029",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB02-030",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB02-032",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB02-033",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB02-034",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB02-036",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB02-037",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB02-038",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB02-039",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB02-042",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB02-043",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB02-046",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB02-047",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB02-048",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB02-049",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB02-050",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB02-051",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB02-053",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB02-054",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB02-055",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB02-057",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB02-059",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB02-060",
+          "rarity": "Common"
+        }
+      ],
+      "total_owned": 44,
+      "total_cards": 61,
+      "by_rarity": {
+        "Common": 29,
+        "Rare": 14,
+        "Leader": 1
+      }
+    },
+    "EB03": {
+      "owned": [
+        {
+          "card_number": "EB03-001",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "EB03-002",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB03-003",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "EB03-004",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB03-005",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB03-006",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB03-007",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB03-008",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB03-009",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB03-010",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB03-011",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB03-012",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB03-013",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB03-014",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB03-015",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB03-016",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB03-017",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB03-018",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "EB03-019",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB03-020",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB03-021",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB03-022",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB03-023",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB03-025",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB03-026",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "EB03-027",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB03-028",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB03-029",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB03-030",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB03-031",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "EB03-032",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB03-033",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB03-034",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB03-035",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB03-036",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB03-037",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB03-038",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB03-039",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB03-040",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB03-041",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB03-043",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB03-044",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB03-045",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "EB03-046",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB03-047",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB03-048",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB03-049",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB03-050",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB03-051",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB03-052",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB03-054",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB03-056",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB03-057",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB03-058",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB03-059",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB03-060",
+          "rarity": "Common"
+        }
+      ],
+      "total_owned": 56,
+      "total_cards": 62,
+      "by_rarity": {
+        "Leader": 1,
+        "Common": 29,
+        "Super Rare": 5,
+        "Rare": 21
+      }
+    },
+    "EB04": {
+      "owned": [
+        {
+          "card_number": "EB04-001",
+          "rarity": "Leader"
+        },
+        {
+          "card_number": "EB04-003",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB04-004",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB04-005",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB04-006",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB04-008",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB04-009",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB04-010",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB04-011",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB04-012",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "EB04-013",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "EB04-014",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB04-015",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB04-016",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB04-017",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB04-018",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB04-019",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB04-020",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB04-021",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB04-022",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB04-023",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB04-024",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB04-025",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "EB04-026",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB04-027",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB04-028",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB04-029",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB04-030",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB04-031",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB04-032",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB04-033",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB04-034",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB04-035",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB04-036",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "EB04-037",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB04-039",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB04-040",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB04-041",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB04-042",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB04-043",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB04-044",
+          "rarity": "Super Rare"
+        },
+        {
+          "card_number": "EB04-045",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB04-046",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB04-047",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB04-049",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB04-050",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB04-051",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB04-052",
+          "rarity": "Rare"
+        },
+        {
+          "card_number": "EB04-053",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB04-055",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB04-056",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB04-057",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "EB04-060",
+          "rarity": "Common"
+        }
+      ],
+      "total_owned": 53,
+      "total_cards": 61,
+      "by_rarity": {
+        "Leader": 1,
+        "Rare": 18,
+        "Common": 29,
+        "Super Rare": 5
+      }
+    }
+  }
+}

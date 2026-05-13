@@ -1576,6 +1576,116 @@ td.card-number {
   padding: 10px 0 8px;
 }
 
+.collection-shell {
+  padding: 12px 0 4px;
+}
+
+.collection-set-group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.collection-set-group-label {
+  font-size: 10px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--muted);
+  min-width: 110px;
+}
+
+.collection-stats {
+  font-size: 12px;
+  color: var(--muted);
+  margin: 8px 0 10px;
+}
+
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 12px;
+  padding: 8px 0;
+}
+
+.collection-card {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--line);
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: default;
+  padding: 0;
+  background: var(--panel);
+}
+
+.collection-card.is-missing {
+  opacity: 0.35;
+  filter: grayscale(0.8);
+  border-color: var(--line);
+}
+
+.collection-missing-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--muted);
+  cursor: pointer;
+  user-select: none;
+}
+
+.collection-missing-toggle input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  flex-shrink: 0;
+  accent-color: var(--accent);
+}
+
+.collection-card-face {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  background: linear-gradient(160deg, #1e2a3a 0%, #0f1620 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.collection-card-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.collection-card-face.collection-card-rarity--common      { background: linear-gradient(160deg, #1a3a20 0%, #0d1f10 100%); }
+.collection-card-face.collection-card-rarity--rare         { background: linear-gradient(160deg, #1a2a4a 0%, #0d1630 100%); }
+.collection-card-face.collection-card-rarity--super-rare   { background: linear-gradient(160deg, #2a1a4a 0%, #180d30 100%); }
+.collection-card-face.collection-card-rarity--leader       { background: linear-gradient(160deg, #4a1a1a 0%, #300d0d 100%); }
+
+.collection-card-footer {
+  padding: 3px 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.collection-card-number {
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--text);
+  line-height: 1.2;
+}
+
+.collection-card-rarity-label {
+  font-size: 11px;
+  color: var(--muted);
+  line-height: 1;
+}
+
 .missing-card-block {
   display: flex;
   flex-direction: column;
@@ -2479,6 +2589,10 @@ td.card-number {
   border-radius: 8px;
   background: #fbfcfe;
   overflow: hidden;
+}
+
+.subsection-panel > *:not(summary) {
+  padding: 0 16px 16px;
 }
 
 .subsection-panel summary {

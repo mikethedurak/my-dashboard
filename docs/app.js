@@ -1,4 +1,5 @@
 ﻿const MISSING_CARDS_PATH = "./data/one_piece/missing_cards.json";
+const COLLECTION_PATH = "./data/one_piece/collection.json";
 const ONE_PIECE_PRODUCTS_PATH = "./data/one_piece/products.json";
 const RELEASES_PATH = "./data/release_radar/pahe_latest.json";
 const COMING_SOON_PATH = "./data/release_radar/coming_soon.json";
@@ -92,6 +93,9 @@ const state = {
   minPrice: 0,
   maxPrice: 200,
   onePieceProducts: [],
+  collectionSets: {},
+  collectionSet: "OP01",
+  collectionShowMissing: false,
   onePieceProductType: "boosters",
   onePieceProductIndex: -1,
   specialsPayload: null,
@@ -157,6 +161,10 @@ const elements = {
   maxPrice: document.querySelector("#max-price"),
   onePieceProductTypeFilters: document.querySelector("#one-piece-product-type-filters"),
   onePieceProductStrip: document.querySelector("#one-piece-product-strip"),
+  collectionSetButtons: document.querySelector("#collection-set-buttons"),
+  collectionGrid: document.querySelector("#collection-grid"),
+  collectionStats: document.querySelector("#collection-stats"),
+  collectionShowMissingToggle: document.querySelector("#collection-show-missing"),
   watchlistOpinionIndicatorsToggle: document.querySelector("#watchlist-opinion-indicators-toggle"),
   releaseGrid: document.querySelector("#release-grid"),
   comingSoonGrid: document.querySelector("#coming-soon-grid"),
@@ -4810,6 +4818,128 @@ function bindOnePieceStripDrag() {
   bindDragScroll(elements.onePieceProductStrip);
 }
 
+
+function collectionCardImageUrl(cardNumber) {
+  const setCode = String(cardNumber || "").split("-")[0];
+  return `https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/${setCode}/${cardNumber}_EN.webp`;
+}
+
+const COLLECTION_SET_GROUPS = [
+  { prefix: "OP", label: "Booster Packs" },
+  { prefix: "ST", label: "Starter Decks" },
+  { prefix: "EB", label: "Extra Boosters" },
+];
+
+function renderCollectionSetButtons() {
+  if (!elements.collectionSetButtons) return;
+  const sets = Object.keys(state.collectionSets).sort();
+  if (!sets.length) return;
+
+  elements.collectionSetButtons.innerHTML = "";
+  for (const { prefix, label } of COLLECTION_SET_GROUPS) {
+    const groupSets = sets.filter((s) => s.startsWith(prefix));
+    if (!groupSets.length) continue;
+    const group = document.createElement("div");
+    group.className = "collection-set-group";
+    const groupLabel = document.createElement("span");
+    groupLabel.className = "collection-set-group-label";
+    groupLabel.textContent = label;
+    group.append(groupLabel);
+    for (const setCode of groupSets) {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "watchlist-category-button" + (setCode === state.collectionSet ? " is-selected" : "");
+      btn.dataset.collectionSet = setCode;
+      btn.textContent = setCode;
+      group.append(btn);
+    }
+    elements.collectionSetButtons.append(group);
+  }
+}
+
+function renderCollectionGrid() {
+  if (!elements.collectionGrid) return;
+  const setData = state.collectionSets[state.collectionSet];
+  if (!setData) {
+    elements.collectionGrid.innerHTML = `<p class="empty">No data for ${state.collectionSet}.</p>`;
+    return;
+  }
+  const cards = setData.owned || [];
+  if (!cards.length) {
+    elements.collectionGrid.innerHTML = `<p class="empty">No cards owned in ${state.collectionSet}.</p>`;
+    return;
+  }
+
+  if (elements.collectionStats) {
+    const byRarity = setData.by_rarity || {};
+    const parts = Object.entries(byRarity)
+      .sort(([a], [b]) => a.localeCompare(b))
+      .map(([rarity, count]) => `${count} ${rarity}`);
+    const total = setData.total_cards ? ` of ${setData.total_cards}` : "";
+    elements.collectionStats.textContent = `${setData.total_owned}${total} owned — ${parts.join(", ")}`;
+  }
+
+  const ownedSet = new Set(cards.map((c) => c.card_number));
+  const ownedByNumber = Object.fromEntries(cards.map((c) => [c.card_number, c]));
+
+  let displayCards;
+  const totalCards = setData.total_cards
+    || Math.max(0, ...cards.map((c) => Number(c.card_number.split("-").pop()) || 0));
+
+  if (state.collectionShowMissing && totalCards) {
+    displayCards = [];
+    for (let i = 1; i <= totalCards; i += 1) {
+      const cardNumber = `${state.collectionSet}-${String(i).padStart(3, "0")}`;
+      const owned = ownedSet.has(cardNumber);
+      displayCards.push({ card_number: cardNumber, owned, rarity: ownedByNumber[cardNumber]?.rarity || "" });
+    }
+  } else {
+    displayCards = cards.map((c) => ({ ...c, owned: true }));
+  }
+
+  elements.collectionGrid.innerHTML = "";
+  for (const card of displayCards) {
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "collection-card" + (card.owned ? "" : " is-missing");
+    btn.dataset.cardNumber = card.card_number;
+    const borderColor = rarityBorderColor(card.rarity);
+    if (borderColor && card.owned) btn.style.borderColor = borderColor;
+
+    const rarityClass = card.rarity ? `collection-card-rarity--${slugify(card.rarity)}` : "";
+    const num = card.card_number.split("-").pop() || card.card_number;
+    const imgUrl = collectionCardImageUrl(card.card_number);
+    btn.innerHTML = `
+      <div class="collection-card-face ${rarityClass}">
+        <img class="collection-card-img" src="${escapeHtml(imgUrl)}" alt="${escapeHtml(card.card_number)}" loading="lazy" onerror="this.style.display='none'">
+      </div>
+      <div class="collection-card-footer">
+        <span class="collection-card-number">${escapeHtml(num)}</span>
+        ${card.rarity ? `<span class="collection-card-rarity-label">${escapeHtml(card.rarity)}</span>` : ""}
+      </div>
+    `;
+    elements.collectionGrid.append(btn);
+  }
+}
+
+async function loadCollection() {
+  if (!elements.collectionGrid) return;
+  try {
+    const response = await fetchFresh(COLLECTION_PATH);
+    if (!response.ok) throw new Error("Could not load collection");
+    const payload = await response.json();
+    state.collectionSets = payload.sets || {};
+    const sets = Object.keys(state.collectionSets).sort();
+    if (sets.length && !state.collectionSets[state.collectionSet]) {
+      state.collectionSet = sets[0];
+    }
+    renderCollectionSetButtons();
+    renderCollectionGrid();
+  } catch (error) {
+    elements.collectionGrid.innerHTML = `<p class="empty">${error.message}</p>`;
+  }
+}
+
 async function loadOnePieceProducts() {
   if (!elements.onePieceProductStrip) {
     return;
@@ -6116,7 +6246,54 @@ document.addEventListener("keydown", (event) => {
   }
 });
 
+if (elements.collectionGrid) {
+  elements.collectionGrid.addEventListener("click", (event) => {
+    const btn = event.target.closest("[data-card-number]");
+    if (!btn) return;
+    const cardNumber = btn.dataset.cardNumber;
+    const setData = state.collectionSets[state.collectionSet] || {};
+    const owned = (setData.owned || []).find((c) => c.card_number === cardNumber);
+    const rarity = owned?.rarity || "";
+    const isOwned = Boolean(owned);
+    const imgUrl = collectionCardImageUrl(cardNumber);
+    const setCode = cardNumber.split("-")[0];
+    const borderColor = rarityBorderColor(rarity);
+    const posterHtml = `<img class="watchlist-detail-poster" src="${escapeHtml(imgUrl)}" alt="${escapeHtml(cardNumber)}" onerror="this.style.display='none'">`;
+    showDetailPanel(`
+      <div class="watchlist-detail-layout">
+        ${posterHtml}
+        <div class="watchlist-detail-body">
+          <p class="watchlist-detail-kicker">${escapeHtml(setCode)}</p>
+          <h3 style="${borderColor ? `color:${borderColor}` : ""}">${escapeHtml(cardNumber)}</h3>
+          ${rarity ? `<p class="watchlist-detail-meta">${escapeHtml(rarity)}</p>` : ""}
+          <p class="watchlist-detail-meta">${isOwned ? "✓ In your collection" : "✗ Not owned"}</p>
+        </div>
+      </div>
+    `);
+  });
+}
+
+if (elements.collectionShowMissingToggle) {
+  elements.collectionShowMissingToggle.addEventListener("change", () => {
+    state.collectionShowMissing = elements.collectionShowMissingToggle.checked;
+    renderCollectionGrid();
+  });
+}
+
+if (elements.collectionSetButtons) {
+  elements.collectionSetButtons.addEventListener("click", (event) => {
+    const btn = event.target.closest("[data-collection-set]");
+    if (!btn) return;
+    state.collectionSet = btn.dataset.collectionSet;
+    elements.collectionSetButtons.querySelectorAll("[data-collection-set]").forEach((b) => {
+      b.classList.toggle("is-selected", b.dataset.collectionSet === state.collectionSet);
+    });
+    renderCollectionGrid();
+  });
+}
+
 loadOnePieceCards();
+loadCollection();
 setHeaderDate();
 loadMetadata();
 loadWeather();

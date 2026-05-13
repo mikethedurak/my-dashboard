@@ -1,32 +1,116 @@
 {
   "listings": [
     {
-      "card_number": "ST01-011",
+      "card_number": "ST16-002",
       "price": 3.0,
-      "title": "Brook (ST01-011) (Reprint) [Premium Booster -The Best- Vol. 2]",
+      "title": "Gordon [Starter Deck: GREEN Uta]",
       "rarity": "Common",
       "store": "Knightly Gaming",
-      "set_name": "Premium Booster -The Best- Vol. 2",
+      "set_name": "Starter Deck: GREEN Uta",
       "condition": "Near Mint",
       "stock": "In stock",
       "available_variants": "Near Mint R3.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/brook-st01-011-reprint-premium-booster-the-best-vol-2",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/656201.jpg?v=1760629659",
-      "scraped_at": "2026-05-13T13:13:39Z"
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/gordon-starter-deck-green-uta",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/581002.jpg?v=1745264082",
+      "scraped_at": "2026-05-13T17:58:07Z"
     },
     {
-      "card_number": "ST01-014",
+      "card_number": "ST24-003",
       "price": 3.0,
-      "title": "Guard Point [Starter Deck: Straw Hat Crew]",
+      "title": "Basil Hawkins [Starter Deck: GREEN Jewelry Bonney]",
       "rarity": "Common",
       "store": "Knightly Gaming",
-      "set_name": "Starter Deck: Straw Hat Crew",
+      "set_name": "Starter Deck: GREEN Jewelry Bonney",
       "condition": "Near Mint",
       "stock": "In stock",
       "available_variants": "Near Mint R3.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/guard-point-starter-deck-straw-hat-crew",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/4ca61e25-ca86-5713-b0ad-f53c577d3324.jpg?v=1733912546",
-      "scraped_at": "2026-05-13T13:13:39Z"
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/basil-hawkins-starter-deck-green-jewelry-bonney",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/634619.jpg?v=1749090934",
+      "scraped_at": "2026-05-13T17:58:07Z"
+    },
+    {
+      "card_number": "ST27-002",
+      "price": 3.0,
+      "title": "Catarina Devon [Starter Deck: Black Marshall.D.Teach]",
+      "rarity": "Common",
+      "store": "Knightly Gaming",
+      "set_name": "Starter Deck: Black Marshall.D.Teach",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R3.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/catarina-devon-starter-deck-black-marshall-d-teach",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/one_placeholder_9dbb7bc6-e954-4657-a050-f3b62d6cf431.png?v=1748614309",
+      "scraped_at": "2026-05-13T17:58:07Z"
+    },
+    {
+      "card_number": "ST20-004",
+      "price": 4.0,
+      "title": "Charlotte Pudding [Starter Deck: YELLOW Charlotte Katakuri]",
+      "rarity": "Common",
+      "store": "Knightly Gaming",
+      "set_name": "Starter Deck: YELLOW Charlotte Katakuri",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R4.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/charlotte-pudding-starter-deck-yellow-charlotte-katakuri",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/581064.jpg?v=1733890711",
+      "scraped_at": "2026-05-13T17:58:07Z"
+    },
+    {
+      "card_number": "ST26-002",
+      "price": 8.0,
+      "title": "Tony Tony.Chopper [Starter Deck: Purple/Black Monkey.D.Luffy]",
+      "rarity": "Common",
+      "store": "Knightly Gaming",
+      "set_name": "Starter Deck: Purple/Black Monkey.D.Luffy",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R8.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/tony-tony-chopper-starter-deck-purple-black-monkey-d-luffy",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/632780.jpg?v=1757952953",
+      "scraped_at": "2026-05-13T17:58:07Z"
+    },
+    {
+      "card_number": "ST08-006",
+      "price": 14.0,
+      "title": "Shirahoshi [Starter Deck: Monkey.D.Luffy]",
+      "rarity": "Common",
+      "store": "Knightly Gaming",
+      "set_name": "Starter Deck: Monkey.D.Luffy",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R14.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/shirahoshi-starter-deck-monkey-d-luffy",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/503234.jpg?v=1733910024",
+      "scraped_at": "2026-05-13T17:58:07Z"
+    },
+    {
+      "card_number": "ST21-017",
+      "price": 20.0,
+      "title": "Gum-Gum Mole Pistol [Starter Deck EX: Gear 5]",
+      "rarity": "Common",
+      "store": "Big Bang Shop",
+      "set_name": "Starter Deck EX: Gear 5",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R20.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/gum-gum-mole-pistol-starter-deck-ex-gear-5",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/615595_e14a633f-70a8-4440-9b66-bdf671208b84.jpg?v=1763494290",
+      "scraped_at": "2026-05-13T17:58:07Z"
+    },
+    {
+      "card_number": "ST15-004",
+      "price": 29.0,
+      "title": "Thatch [Starter Deck: Red Edward.Newgate]",
+      "rarity": "Common",
+      "store": "Knightly Gaming",
+      "set_name": "Starter Deck: Red Edward.Newgate",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R29.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/thatch-starter-deck-red-edward-newgate",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/580989.jpg?v=1748615251",
+      "scraped_at": "2026-05-13T17:58:07Z"
     },
     {
       "card_number": "OP07-072",
@@ -43,6 +127,20 @@
       "scraped_at": "2026-05-13T14:41:45Z"
     },
     {
+      "card_number": "ST02-009",
+      "price": 62.0,
+      "title": "Trafalgar Law [Starter Deck: Worst Generation]",
+      "rarity": "Super Rare",
+      "store": "Knightly Gaming",
+      "set_name": "Starter Deck: Worst Generation",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R62.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-starter-deck-worst-generation",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/62495d31-36b5-5900-8eec-5fb6701af1d1.jpg?v=1733912470",
+      "scraped_at": "2026-05-13T17:58:07Z"
+    },
+    {
       "card_number": "OP10-071",
       "price": 83.0,
       "title": "Donquixote Doflamingo [Royal Blood]",
@@ -55,6 +153,20 @@
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-royal-blood",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/617115.jpg?v=1758380198",
       "scraped_at": "2026-05-13T13:13:39Z"
+    },
+    {
+      "card_number": "ST05-004",
+      "price": 145.0,
+      "title": "Uta (ST05-004) (Premium Card Collection -Uta-) [One Piece Promotion Cards]",
+      "rarity": "Super Rare",
+      "store": "Big Bang Shop",
+      "set_name": "One Piece Promotion Cards",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R145.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-st05-004-premium-card-collection-uta-one-piece-promotion-cards",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/564140.jpg?v=1763498337",
+      "scraped_at": "2026-05-13T17:58:07Z"
     },
     {
       "card_number": "ST01-004",
@@ -72,14 +184,14 @@
     },
     {
       "card_number": "OP02-120",
-      "price": 180.0,
+      "price": 175.0,
       "title": "Uta (OP02-120) (Premium Card Collection -Uta-) [One Piece Promotion Cards]",
       "rarity": "Secret Rare",
       "store": "Big Bang Shop",
       "set_name": "One Piece Promotion Cards",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R180.00",
+      "available_variants": "Near Mint Foil R175.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-op02-120-premium-card-collection-uta-one-piece-promotion-cards",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/564143.jpg?v=1763508739",
       "scraped_at": "2026-05-13T14:41:45Z"
@@ -139,6 +251,20 @@
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/perfume-femur-premium-card-collection-best-selection-vol-4-one-piece-promotion-cards",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/649684.jpg?v=1763494111",
       "scraped_at": "2026-05-13T14:41:45Z"
+    },
+    {
+      "card_number": "ST21-014",
+      "price": 410.0,
+      "title": "Monkey.D.Luffy (Parallel) [Starter Deck EX: Gear 5]",
+      "rarity": "Super Rare",
+      "store": "Big Bang Shop",
+      "set_name": "Starter Deck EX: Gear 5",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R410.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-parallel-starter-deck-ex-gear-5",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/615591_85f42cd9-60a6-4bf9-9f21-08626812b7df.jpg?v=1763494624",
+      "scraped_at": "2026-05-13T17:58:07Z"
     },
     {
       "card_number": "OP06-115",
@@ -211,6 +337,20 @@
       "scraped_at": "2026-05-13T13:13:39Z"
     },
     {
+      "card_number": "ST18-001",
+      "price": 560.0,
+      "title": "Uso-Hachi (Alternate Art) [Premium Booster -The Best- Vol. 2]",
+      "rarity": "Common",
+      "store": "Big Bang Shop",
+      "set_name": "Premium Booster -The Best- Vol. 2",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R560.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/uso-hachi-alternate-art-premium-booster-the-best-vol-2",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/656031.jpg?v=1763491324",
+      "scraped_at": "2026-05-13T17:58:07Z"
+    },
+    {
       "card_number": "OP02-001",
       "price": 655.0,
       "title": "Edward.Newgate (Special Goods Set -Former Four Emperors-) [One Piece Promotion Cards]",
@@ -281,6 +421,20 @@
       "scraped_at": "2026-05-13T14:41:45Z"
     },
     {
+      "card_number": "ST18-004",
+      "price": 985.0,
+      "title": "Zoro-Juurou [Emperors in the New World]",
+      "rarity": "Super Rare",
+      "store": "Big Bang Shop",
+      "set_name": "Emperors in the New World",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R985.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/zoro-juurou-emperors-in-the-new-world",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/600658.jpg?v=1763491099",
+      "scraped_at": "2026-05-13T17:58:07Z"
+    },
+    {
       "card_number": "OP03-114",
       "price": 1015.0,
       "title": "Charlotte Linlin (SP) [Wings of the Captain]",
@@ -293,6 +447,34 @@
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/charlotte-linlin-sp-wings-of-the-captain",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/541666.jpg?v=1763513131",
       "scraped_at": "2026-05-13T14:41:45Z"
+    },
+    {
+      "card_number": "ST12-012",
+      "price": 1180.0,
+      "title": "Charlotte Pudding (SP) [Royal Blood]",
+      "rarity": "Common",
+      "store": "Big Bang Shop",
+      "set_name": "Royal Blood",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R1180.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/charlotte-pudding-sp-royal-blood",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/617174_783cc0ae-36fb-4503-b00d-d8b59054d187.jpg?v=1763506693",
+      "scraped_at": "2026-05-13T17:58:07Z"
+    },
+    {
+      "card_number": "ST03-004",
+      "price": 1235.0,
+      "title": "Gecko Moria (SP)",
+      "rarity": "Common",
+      "store": "Tanuki Trader",
+      "set_name": "Two Legends (OP08)",
+      "condition": "",
+      "stock": "1 in stock",
+      "available_variants": "1 in stock",
+      "url": "https://tanukitrader.co.za/product/gecko-moria-sp/",
+      "image_url": "https://tanukitrader.co.za/wp-content/uploads/2024/09/ST03-004SP.jpg",
+      "scraped_at": "2026-05-13T17:58:07Z"
     },
     {
       "card_number": "OP14-031",
@@ -363,6 +545,20 @@
       "url": "https://tanukitrader.co.za/product/nami-tr/",
       "image_url": "https://tanukitrader.co.za/wp-content/uploads/2024/09/ST01-007TR.jpeg",
       "scraped_at": "2026-05-13T14:41:45Z"
+    },
+    {
+      "card_number": "ST18-004",
+      "price": 3560.0,
+      "title": "Zoro-Juurou (SP) [Legacy of the Master]",
+      "rarity": "Super Rare",
+      "store": "Big Bang Shop",
+      "set_name": "Legacy of the Master",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R3560.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/zoro-juurou-sp-legacy-of-the-master",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/646566_6ff3f551-62c5-4c2d-a265-0b03b6d23163.jpg?v=1763510818",
+      "scraped_at": "2026-05-13T17:58:07Z"
     }
   ]
 }
