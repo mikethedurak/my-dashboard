@@ -1369,18 +1369,30 @@ select {
 .one-piece-product-strip {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: minmax(220px, 250px);
+  grid-auto-columns: minmax(250px, 290px);
   gap: 10px;
   overflow-x: auto;
   padding-bottom: 4px;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
   cursor: grab;
   user-select: none;
 }
 
 .one-piece-product-strip::-webkit-scrollbar {
-  display: none;
+  height: 10px;
+}
+
+.one-piece-product-strip::-webkit-scrollbar-track {
+  background: color-mix(in srgb, var(--panel) 70%, #0b1220);
+  border-radius: 999px;
+}
+
+.one-piece-product-strip::-webkit-scrollbar-thumb {
+  background: color-mix(in srgb, var(--line) 55%, #94a3b8);
+  border-radius: 999px;
+}
+
+.one-piece-product-strip::-webkit-scrollbar-thumb:hover {
+  background: color-mix(in srgb, var(--line) 30%, #cbd5e1);
 }
 
 .one-piece-product-strip.is-dragging {
@@ -1413,6 +1425,9 @@ select {
   border-radius: 6px;
   border: 1px solid color-mix(in srgb, var(--line) 70%, transparent);
   background: rgba(15, 23, 42, 0.28);
+  -webkit-user-drag: none;
+  user-select: none;
+  pointer-events: none;
 }
 
 .one-piece-product-content {
@@ -1455,13 +1470,13 @@ select {
 }
 
 .one-piece-product-title {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 800;
   line-height: 1.25;
   margin: 0;
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
   word-break: normal;
   overflow-wrap: anywhere;
@@ -3379,7 +3394,7 @@ td.card-number {
   object-fit: cover;
   border: 1px solid var(--line);
   border-radius: 10px;
-  background: #eef3f7;
+  background: transparent;
 }
 
 .watchlist-detail-body {

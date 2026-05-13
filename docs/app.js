@@ -4735,7 +4735,7 @@ function renderOnePieceProductCurrent() {
     return `
       <article class="one-piece-product-tile${currentClass}${statusClass}" data-one-piece-product-index="${index}">
         <div class="one-piece-product-layout">
-          ${imageUrl ? `<img class="one-piece-product-image" src="${imageUrl}" data-fallbacks="${imageFallbackAttr}" alt="${title} cover" decoding="async">` : ""}
+          ${imageUrl ? `<img class="one-piece-product-image" src="${imageUrl}" data-fallbacks="${imageFallbackAttr}" alt="${title} cover" decoding="async" draggable="false">` : ""}
           <div class="one-piece-product-content">
             <div class="one-piece-product-meta">
               <span class="one-piece-product-pill">${type}</span>
@@ -4743,7 +4743,6 @@ function renderOnePieceProductCurrent() {
             <h4 class="one-piece-product-title">${title}</h4>
             <p class="one-piece-product-date">${escapeHtml(status)}${releaseText ? ` • ${escapeHtml(releaseText)}` : ""}</p>
             ${relativeText ? `<p class="one-piece-product-age">${escapeHtml(relativeText)}</p>` : ""}
-            ${link ? `<a class="one-piece-product-link" href="${link}" target="_blank" rel="noreferrer">View</a>` : ""}
           </div>
         </div>
       </article>
@@ -4753,8 +4752,57 @@ function renderOnePieceProductCurrent() {
 
   const currentCard = elements.onePieceProductStrip.querySelector(".one-piece-product-tile.is-current");
   if (currentCard && typeof currentCard.scrollIntoView === "function") {
-    currentCard.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+    currentCard.scrollIntoView({ behavior: "auto", inline: "center", block: "nearest" });
   }
+}
+
+function openOnePieceProductDetail(item) {
+  if (!elements.watchlistDetailPanel || !elements.watchlistDetailContent || !item) {
+    return;
+  }
+
+  const title = escapeHtml(String(item.title || "One Piece Product").trim());
+  const source = "One Piece Products";
+  const imageUrl = String(item.image_local_url || item.image_url || "").trim();
+  const status = item?.is_released ? "Released" : "Upcoming";
+  const type = String(item.category_label || item.category || "OTHER").trim();
+  const releaseDate = displayDatePlain(String(item.release_date || "").trim());
+  const releaseText = releaseDate || String(item.release_date_text || "Date TBA").trim();
+  const relativeText = relativeDaysFromDate(String(item.release_date || "").trim(), { allowPast: true });
+  const url = String(item.url || "").trim();
+
+  const posterHtml = imageUrl
+    ? `<img class="watchlist-detail-poster" src="${escapeHtml(imageUrl)}" alt="${title} image">`
+    : '<div class="watchlist-detail-poster watchlist-entry-poster-empty">No image</div>';
+
+  elements.watchlistDetailContent.innerHTML = `
+    <div class="watchlist-detail-layout">
+      ${posterHtml}
+      <div class="watchlist-detail-body">
+        <p class="watchlist-detail-kicker">${escapeHtml(source)}</p>
+        <h3>${title}</h3>
+        <p class="watchlist-detail-meta">${escapeHtml([status, type].filter(Boolean).join(" • "))}</p>
+        ${releaseText ? `<p class="watchlist-detail-meta">${escapeHtml(releaseText)}</p>` : ""}
+        ${relativeText ? `<p class="watchlist-detail-meta">${escapeHtml(relativeText)}</p>` : ""}
+        <div class="watchlist-detail-links">
+          ${url ? `<a href="${escapeHtml(url)}" target="_blank" rel="noreferrer">Open Product</a>` : ""}
+        </div>
+      </div>
+    </div>
+  `;
+
+  elements.watchlistDetailPanel.hidden = false;
+  elements.watchlistDetailPanel.classList.add("is-open");
+  elements.watchlistDetailPanel.classList.remove(
+    "is-loved",
+    "opinion-loved",
+    "opinion-liked",
+    "opinion-mixed",
+    "opinion-disliked",
+    "opinion-hated",
+  );
+  elements.watchlistDetailPanel.dataset.watchOpinion = "";
+  document.body.classList.add("watchlist-detail-open");
 }
 
 function bindOnePieceStripDrag() {
@@ -5271,6 +5319,9 @@ if (elements.onePieceProductStrip) {
   }, true);
 
   elements.onePieceProductStrip.addEventListener("click", (event) => {
+    if (event.target.closest("a")) {
+      return;
+    }
     const card = event.target.closest("[data-one-piece-product-index]");
     if (!card) {
       return;
@@ -5282,6 +5333,7 @@ if (elements.onePieceProductStrip) {
     const items = filteredOnePieceProducts();
     state.onePieceProductIndex = Math.max(0, Math.min(items.length - 1, index));
     renderOnePieceProductCurrent();
+    openOnePieceProductDetail(items[state.onePieceProductIndex]);
   });
 }
 
