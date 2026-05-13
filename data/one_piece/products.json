@@ -1,0 +1,126 @@
+{
+  "source": "https://en.onepiece-cardgame.com/products/",
+  "scraped_at": "2026-05-13T10:11:49.052182Z",
+  "items": [
+    {
+      "title": "ONE PIECE CARD GAME Japanese 3rd ANNIVERSARY SET",
+      "category": "other",
+      "category_label": "OTHER",
+      "date_label": "Delivery Month",
+      "release_date": "2026-03-01",
+      "release_date_text": "March 2026",
+      "url": "https://en.onepiece-cardgame.com/products/other/anniversaryset3rd.php",
+      "is_released": true
+    },
+    {
+      "title": "BOOSTER PACK -ADVENTURE ON KAMI’S ISLAND- [OP15-EB04]",
+      "category": "boosters",
+      "category_label": "BOOSTERS",
+      "date_label": "Release Date",
+      "release_date": "2026-04-03",
+      "release_date_text": "April 3, 2026",
+      "url": "https://en.onepiece-cardgame.com/products/boosters/op15-eb04.php",
+      "is_released": true
+    },
+    {
+      "title": "Double Pack Set Vol.10 [DP-10]",
+      "category": "other",
+      "category_label": "OTHER",
+      "date_label": "Release Date",
+      "release_date": "2026-04-03",
+      "release_date_text": "April 3, 2026",
+      "url": "https://en.onepiece-cardgame.com/products/other/dp10.php",
+      "is_released": true
+    },
+    {
+      "title": "Official Card Sleeve TCG+ Store Edition Vol.6",
+      "category": "other",
+      "category_label": "OTHER",
+      "date_label": "Release Date",
+      "release_date": "2026-04-03",
+      "release_date_text": "April 3, 2026",
+      "url": "https://en.onepiece-cardgame.com/products/other/sleeve029.php",
+      "is_released": true
+    },
+    {
+      "title": "OFFICIAL CARD SLEEVES 14",
+      "category": "other",
+      "category_label": "OTHER",
+      "date_label": "Release Date",
+      "release_date": "2026-04-03",
+      "release_date_text": "April 3, 2026",
+      "url": "https://en.onepiece-cardgame.com/products/other/sleeve033.php",
+      "is_released": true
+    },
+    {
+      "title": "BOOSTER PACK -THE TIME OF BATTLE- [OP-16]",
+      "category": "boosters",
+      "category_label": "BOOSTERS",
+      "date_label": "Release Date",
+      "release_date": "2026-06-12",
+      "release_date_text": "June 12, 2026",
+      "url": "https://en.onepiece-cardgame.com/products/op16.html",
+      "is_released": false
+    },
+    {
+      "title": "Official Playmat Limited Edition Vol.5",
+      "category": "other",
+      "category_label": "OTHER",
+      "date_label": "Delivery Month",
+      "release_date": "2026-07-01",
+      "release_date_text": "July 2026",
+      "url": "https://en.onepiece-cardgame.com/products/other/playmat010.php",
+      "is_released": false
+    },
+    {
+      "title": "ONE PIECE CARD GAME English Version 3rd Anniversary Set",
+      "category": "other",
+      "category_label": "OTHER",
+      "date_label": "Delivery Month",
+      "release_date": "2026-08-01",
+      "release_date_text": "August 2026",
+      "url": "https://en.onepiece-cardgame.com/products/other/3rd_anniversary_set.php",
+      "is_released": false
+    },
+    {
+      "title": "Premium Card Collection -Best Selection Vol.6-",
+      "category": "other",
+      "category_label": "OTHER",
+      "date_label": "Delivery Month",
+      "release_date": "2026-08-01",
+      "release_date_text": "August 2026",
+      "url": "https://en.onepiece-cardgame.com/products/other/cardcollection_bestselection_vol6.php",
+      "is_released": false
+    },
+    {
+      "title": "ONE PIECE Heroines Special Set",
+      "category": "other",
+      "category_label": "OTHER",
+      "date_label": "Delivery Month",
+      "release_date": "2026-09-01",
+      "release_date_text": "September 2026",
+      "url": "https://en.onepiece-cardgame.com/products/heroines-special.html",
+      "is_released": false
+    },
+    {
+      "title": "Premium Card Collection -Live Action Edition vol.2 Baroque Works-",
+      "category": "other",
+      "category_label": "OTHER",
+      "date_label": "Delivery Month",
+      "release_date": "2026-11-01",
+      "release_date_text": "November 2026",
+      "url": "https://en.onepiece-cardgame.com/products/collection-drama003.html",
+      "is_released": false
+    },
+    {
+      "title": "Premium Card Collection -Live Action Edition vol.2 Straw Hat Crew-",
+      "category": "other",
+      "category_label": "OTHER",
+      "date_label": "Delivery Month",
+      "release_date": "2026-11-01",
+      "release_date_text": "November 2026",
+      "url": "https://en.onepiece-cardgame.com/products/collection-drama002.html",
+      "is_released": false
+    }
+  ]
+}
