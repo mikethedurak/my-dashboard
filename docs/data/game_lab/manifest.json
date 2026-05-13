@@ -3,17 +3,17 @@
     {
       "id": "snake",
       "title": "Snake",
-      "path": "./games/snake/index.html"
+      "path": "./data/game_lab/snake/index.html"
     },
     {
       "id": "picture-puzzle",
       "title": "Picture Puzzle",
-      "path": "./games/puzzle/index.html"
+      "path": "./data/game_lab/puzzle/index.html"
     },
     {
       "id": "dvd-survivor",
       "title": "DVD Survivor",
-      "path": "./games/dvd-survivor/index.html"
+      "path": "./data/game_lab/dvd-survivor/index.html"
     }
   ]
 }

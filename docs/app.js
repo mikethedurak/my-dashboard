@@ -64,12 +64,25 @@ const NEWS_CATEGORIES = [
 const DASHBOARD_ORDER_STORAGE_KEY = "my-dashboard:module-order:v1";
 const DASHBOARD_OPEN_STATE_STORAGE_KEY = "my-dashboard:module-open-state:v1";
 const SUBSECTION_OPEN_STATE_STORAGE_KEY = "my-dashboard:subsection-open-state:v1";
+const MS_PER_DAY = 24 * 60 * 60 * 1000;
+const CAPE_TOWN_LATLNG = [-33.9249, 18.4241];
+const TIMEZONE = "Africa/Johannesburg";
+const LOCALE_ZA = "en-ZA";
+const OPINION_PANEL_CLASSES = ["opinion-loved", "opinion-liked", "opinion-mixed", "opinion-disliked", "opinion-hated"];
 const EVENT_GEO_BOUNDS = {
   minLat: -36.5,
   maxLat: -20.0,
   minLng: 14.0,
   maxLng: 36.0,
 };
+
+function fetchFresh(url) {
+  return fetch(url, { cache: "no-store" });
+}
+
+function slugify(value) {
+  return String(value || "").trim().toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+}
 
 const state = {
   rows: [],
@@ -88,7 +101,7 @@ const state = {
   bandsintownEvents: [],
   bandsintownGenreFilters: [],
   selectedBandsintownGenre: "all",
-  specialsMapRange: "next-7",
+  mapRange: "next-7",
   mapSources: {
     places: true,
     specials: true,
@@ -351,35 +364,6 @@ function displayDate(value) {
   return `${ordinal(day)} ${monthName} ${year}`;
 }
 
-function daysAwayFromDate(value) {
-  const raw = String(value || "").trim();
-  if (!raw) {
-    return "";
-  }
-  const dateOnly = raw.match(/^\d{4}-\d{2}-\d{2}$/) ? raw : "";
-  if (!dateOnly) {
-    return "";
-  }
-  const target = new Date(`${dateOnly}T00:00:00`);
-  if (Number.isNaN(target.getTime())) {
-    return "";
-  }
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
-  const msPerDay = 24 * 60 * 60 * 1000;
-  const diffDays = Math.round((target.getTime() - today.getTime()) / msPerDay);
-  if (diffDays < 0) {
-    return "";
-  }
-  if (diffDays === 0) {
-    return "Today";
-  }
-  if (diffDays === 1) {
-    return "1 day away";
-  }
-  return `${diffDays} days away`;
-}
-
 function relativeDaysFromDate(value, options = {}) {
   const raw = String(value || "").trim();
   const match = raw.match(/^(\d{4}-\d{2}-\d{2})/);
@@ -392,8 +376,7 @@ function relativeDaysFromDate(value, options = {}) {
   }
   const today = new Date();
   today.setHours(0, 0, 0, 0);
-  const msPerDay = 24 * 60 * 60 * 1000;
-  const diffDays = Math.round((target.getTime() - today.getTime()) / msPerDay);
+  const diffDays = Math.round((target.getTime() - today.getTime()) / MS_PER_DAY);
   if (diffDays === 0) {
     return "Today";
   }
@@ -472,16 +455,16 @@ function displayDateTime(value) {
     hour: "2-digit",
     minute: "2-digit",
     hour12: false,
-    timeZone: "Africa/Johannesburg",
+    timeZone: TIMEZONE,
   }).format(date);
 }
 
-const NEW_LISTING_MS = 24 * 60 * 60 * 1000;
+
 
 function isNewListing(row) {
   const raw = String(row.scraped_at || "").trim();
   if (!raw) return false;
-  return (Date.now() - new Date(raw).getTime()) < NEW_LISTING_MS;
+  return (Date.now() - new Date(raw).getTime()) < MS_PER_DAY;
 }
 
 function unique(values) {
@@ -583,14 +566,26 @@ function renderCardGrid(rows) {
   }
 }
 
-function openMissingCardDetail(row) {
-  if (!elements.watchlistDetailPanel || !elements.watchlistDetailContent || !row) return;
+function showDetailPanel(html, opinionKey = "") {
+  if (!elements.watchlistDetailPanel || !elements.watchlistDetailContent) return;
+  elements.watchlistDetailContent.innerHTML = html;
+  elements.watchlistDetailPanel.hidden = false;
+  elements.watchlistDetailPanel.classList.add("is-open");
+  elements.watchlistDetailPanel.classList.toggle("is-loved", opinionKey === "loved");
+  elements.watchlistDetailPanel.classList.remove(...OPINION_PANEL_CLASSES);
+  if (opinionKey) {
+    elements.watchlistDetailPanel.classList.add(`opinion-${opinionKey}`);
+  }
+  elements.watchlistDetailPanel.dataset.watchOpinion = opinionKey;
+  document.body.classList.add("watchlist-detail-open");
+}
 
+function openMissingCardDetail(row) {
+  if (!row) return;
   const imageHtml = row.image_url
     ? `<img class="watchlist-detail-poster" src="${escapeHtml(row.image_url)}" alt="${escapeHtml(row.card_number)}">`
     : `<div class="watchlist-detail-poster watchlist-entry-poster-empty">No image</div>`;
-
-  elements.watchlistDetailContent.innerHTML = `
+  showDetailPanel(`
     <div class="watchlist-detail-layout">
       ${imageHtml}
       <div class="watchlist-detail-body">
@@ -607,13 +602,7 @@ function openMissingCardDetail(row) {
         </div>
       </div>
     </div>
-  `;
-
-  elements.watchlistDetailPanel.hidden = false;
-  elements.watchlistDetailPanel.classList.add("is-open");
-  elements.watchlistDetailPanel.classList.remove("is-loved", "opinion-loved", "opinion-liked", "opinion-mixed", "opinion-disliked", "opinion-hated");
-  elements.watchlistDetailPanel.dataset.watchOpinion = "";
-  document.body.classList.add("watchlist-detail-open");
+  `);
 }
 
 function renderPosters(container, items, emptyText, options = {}) {
@@ -807,7 +796,7 @@ function openReleaseDetail(item) {
     : '<div class="watchlist-detail-poster watchlist-entry-poster-empty">No poster</div>';
   const ratingHtml = ratingText ? `<p class="watchlist-detail-rating">${escapeHtml(ratingText)}</p>` : "";
 
-  elements.watchlistDetailContent.innerHTML = `
+  showDetailPanel(`
     <div class="watchlist-detail-layout">
       ${posterHtml}
       <div class="watchlist-detail-body">
@@ -829,20 +818,7 @@ function openReleaseDetail(item) {
         </div>
       </div>
     </div>
-  `;
-
-  elements.watchlistDetailPanel.hidden = false;
-  elements.watchlistDetailPanel.classList.add("is-open");
-  elements.watchlistDetailPanel.classList.remove(
-    "is-loved",
-    "opinion-loved",
-    "opinion-liked",
-    "opinion-mixed",
-    "opinion-disliked",
-    "opinion-hated",
-  );
-  elements.watchlistDetailPanel.dataset.watchOpinion = "";
-  document.body.classList.add("watchlist-detail-open");
+  `);
 }
 
 function formatNewsDate(value) {
@@ -1345,67 +1321,7 @@ function bindF1SnapshotInteractions(container, item) {
   const cards = container.querySelectorAll(".f1-schedule-card[data-f1-round]");
   const strip = container.querySelector(".f1-schedule-strip");
   if (strip) {
-    let isPointerDown = false;
-    let isDragging = false;
-    let startX = 0;
-    let startScrollLeft = 0;
-    let suppressClickUntil = 0;
-
-    const onPointerMove = (event) => {
-      if (!isPointerDown) {
-        return;
-      }
-      const delta = event.clientX - startX;
-      if (Math.abs(delta) > 6) {
-        isDragging = true;
-      }
-      if (isDragging) {
-        strip.scrollLeft = startScrollLeft - delta;
-      }
-    };
-
-    const onPointerUp = () => {
-      if (!isPointerDown) {
-        return;
-      }
-      if (isDragging) {
-        suppressClickUntil = Date.now() + 180;
-      }
-      isPointerDown = false;
-      isDragging = false;
-      strip.classList.remove("is-dragging");
-      document.removeEventListener("pointermove", onPointerMove);
-      document.removeEventListener("pointerup", onPointerUp);
-      document.removeEventListener("pointercancel", onPointerUp);
-    };
-
-    strip.addEventListener("pointerdown", (event) => {
-      if (event.button !== 0) {
-        return;
-      }
-      isPointerDown = true;
-      isDragging = false;
-      startX = event.clientX;
-      startScrollLeft = strip.scrollLeft;
-      strip.classList.add("is-dragging");
-      document.addEventListener("pointermove", onPointerMove);
-      document.addEventListener("pointerup", onPointerUp);
-      document.addEventListener("pointercancel", onPointerUp);
-    });
-    strip.addEventListener("pointerleave", () => {
-      if (!isPointerDown) {
-        strip.classList.remove("is-dragging");
-      }
-    });
-
-    cards.forEach((card) => {
-      card.addEventListener("click", (event) => {
-        if (Date.now() < suppressClickUntil) {
-          event.preventDefault();
-          event.stopPropagation();
-        }
-      }, true);
-    });
+    bindDragScroll(strip, [...cards]);
   }
 
   cards.forEach((card) => {
@@ -1560,7 +1476,7 @@ function setHeaderDate() {
     day: "numeric",
     month: "long",
     year: "numeric",
-    timeZone: "Africa/Johannesburg",
+    timeZone: TIMEZONE,
   }).format(now);
 }
 
@@ -1585,7 +1501,7 @@ function setLastScrapedText(value) {
     minute: "2-digit",
     second: "2-digit",
     hour12: false,
-    timeZone: "Africa/Johannesburg",
+    timeZone: TIMEZONE,
   }).format(parsed);
   elements.lastScraped.textContent = `Last scraped: ${formatted}`;
 }
@@ -1923,19 +1839,7 @@ function findWatchlistItem(payload, type, title) {
     return null;
   }
 
-  const current = payload?.currently_watching || {};
-  const gameBucket = current.games && typeof current.games === "object" ? current.games : {};
-  const sourceByType = {
-    movie: Array.isArray(current.movies) ? current.movies : [],
-    series: Array.isArray(current.series) ? current.series : [],
-    anime_series: Array.isArray(current.anime_series || current.anime) ? (current.anime_series || current.anime) : [],
-    anime_movie: Array.isArray(current.anime_movies || current.anime_movie) ? (current.anime_movies || current.anime_movie) : [],
-    game_aaa: Array.isArray(current.game_aaa || gameBucket.aaa) ? (current.game_aaa || gameBucket.aaa) : [],
-    game_indie: Array.isArray(current.game_indie || gameBucket.indie) ? (current.game_indie || gameBucket.indie) : [],
-    game_coop: Array.isArray(current.game_coop || gameBucket.coop) ? (current.game_coop || gameBucket.coop) : [],
-    game_couch_coop: Array.isArray(current.game_couch_coop || gameBucket.couch_coop) ? (current.game_couch_coop || gameBucket.couch_coop) : [],
-    game_lan: Array.isArray(current.game_lan || gameBucket.lan) ? (current.game_lan || gameBucket.lan) : [],
-  };
+  const sourceByType = watchlistCurrentSources(payload);
 
   for (const item of sourceByType[normalizedType] || []) {
     if (safeWatchTitle(item).toLowerCase() === normalizedTitle) {
@@ -2247,7 +2151,7 @@ function openWatchlistDetail(type, title) {
     : '<div class="watchlist-detail-poster watchlist-entry-poster-empty">No poster</div>';
   const ratingHtml = ratingText ? `<p class="watchlist-detail-rating">${escapeHtml(ratingText)}</p>` : "";
 
-  elements.watchlistDetailContent.innerHTML = `
+  showDetailPanel(`
     <div class="watchlist-detail-layout">
       ${posterHtml}
       <div class="watchlist-detail-body">
@@ -2273,40 +2177,29 @@ function openWatchlistDetail(type, title) {
         </div>
       </div>
     </div>
-  `;
-  elements.watchlistDetailPanel.hidden = false;
-  elements.watchlistDetailPanel.classList.add("is-open");
-  elements.watchlistDetailPanel.classList.toggle("is-loved", opinion === "Loved");
-  elements.watchlistDetailPanel.classList.remove(
-    "opinion-loved",
-    "opinion-liked",
-    "opinion-mixed",
-    "opinion-disliked",
-    "opinion-hated",
-  );
-  if (opinionClass) {
-    elements.watchlistDetailPanel.classList.add(opinionClass.trim());
-  }
-  elements.watchlistDetailPanel.dataset.watchOpinion = opinionKey;
-  document.body.classList.add("watchlist-detail-open");
+  `, opinionKey);
+}
+
+function watchlistCurrentSources(payload) {
+  const current = payload?.currently_watching || {};
+  const gameBucket = current.games && typeof current.games === "object" ? current.games : {};
+  const arr = (value) => (Array.isArray(value) ? value.filter(Boolean) : []);
+  return {
+    movie: arr(current.movies),
+    series: arr(current.series),
+    anime_series: arr(current.anime_series || current.anime),
+    anime_movie: arr(current.anime_movies || current.anime_movie),
+    game_aaa: arr(current.game_aaa || gameBucket.aaa),
+    game_indie: arr(current.game_indie || gameBucket.indie),
+    game_coop: arr(current.game_coop || gameBucket.coop),
+    game_couch_coop: arr(current.game_couch_coop || gameBucket.couch_coop),
+    game_lan: arr(current.game_lan || gameBucket.lan),
+  };
 }
 
 function renderWatchlistCurrent(payload) {
-  const current = payload?.currently_watching || {};
+  const sourceByType = watchlistCurrentSources(payload);
   const searchTerm = state.watchlistSearchFilter.trim().toLowerCase();
-  const asItems = (value) => (Array.isArray(value) ? value.filter(Boolean) : []);
-  const gameBucket = current.games && typeof current.games === "object" ? current.games : {};
-  const sourceByType = {
-    movie: asItems(current.movies),
-    series: asItems(current.series),
-    anime_series: asItems(current.anime_series || current.anime),
-    anime_movie: asItems(current.anime_movies || current.anime_movie),
-    game_aaa: asItems(current.game_aaa || gameBucket.aaa),
-    game_indie: asItems(current.game_indie || gameBucket.indie),
-    game_coop: asItems(current.game_coop || gameBucket.coop),
-    game_couch_coop: asItems(current.game_couch_coop || gameBucket.couch_coop),
-    game_lan: asItems(current.game_lan || gameBucket.lan),
-  };
   const sections = [...state.watchlistTypes]
     .map((type) => ({
       type,
@@ -2465,11 +2358,11 @@ function applyOpinionLevelStyles() {
 async function loadWatchlist() {
   try {
     const [envResponse, watchlistResponse, gameslistResponse, detailsResponse, gamesDetailsResponse] = await Promise.all([
-      fetch(CONFIG_PATH, { cache: "no-store" }),
-      fetch(WATCHLIST_PATH, { cache: "no-store" }),
-      fetch(GAMESLIST_PATH, { cache: "no-store" }),
-      fetch(WATCHLIST_MOVIE_DETAILS_PATH, { cache: "no-store" }),
-      fetch(GAMES_DETAILS_PATH, { cache: "no-store" }),
+      fetchFresh(CONFIG_PATH),
+      fetchFresh(WATCHLIST_PATH),
+      fetchFresh(GAMESLIST_PATH),
+      fetchFresh(WATCHLIST_MOVIE_DETAILS_PATH),
+      fetchFresh(GAMES_DETAILS_PATH),
     ]);
     if (envResponse.ok) {
       try {
@@ -2542,11 +2435,7 @@ function saveThemePreference(theme) {
 }
 
 function normalizeModuleId(label) {
-  return String(label || "")
-    .trim()
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
+  return slugify(label);
 }
 
 function getDashboardSections() {
@@ -2824,7 +2713,7 @@ function weatherDayLabel(dateValue) {
     weekday: "short",
     day: "2-digit",
     month: "short",
-    timeZone: "Africa/Johannesburg",
+    timeZone: TIMEZONE,
   }).format(date);
 }
 
@@ -2832,7 +2721,7 @@ function weekdayFromDate(dateValue) {
   const date = new Date(`${dateValue}T00:00:00`);
   return new Intl.DateTimeFormat("en-US", {
     weekday: "long",
-    timeZone: "Africa/Johannesburg",
+    timeZone: TIMEZONE,
   }).format(date);
 }
 
@@ -2861,12 +2750,12 @@ function renderWeather(payload) {
         card.type = "button";
         card.className = "weather-card";
         const weekday = weekdayFromDate(item.date);
-        if (WEEK_DAYS.includes(state.specialsMapRange) && state.specialsMapRange === weekday) {
+        if (WEEK_DAYS.includes(state.mapRange) && state.mapRange === weekday) {
           card.classList.add("is-selected");
         }
         card.addEventListener("click", () => {
           clearCustomDateRange();
-          state.specialsMapRange = weekday;
+          state.mapRange = weekday;
           applyMapRangeChange();
         });
         const holidayName = holidayByDate.get(item.date) || "";
@@ -2896,12 +2785,12 @@ function renderWeather(payload) {
         card.type = "button";
         card.className = "weather-card";
         const weekday = weekdayFromDate(item.date);
-        if (WEEK_DAYS.includes(state.specialsMapRange) && state.specialsMapRange === weekday) {
+        if (WEEK_DAYS.includes(state.mapRange) && state.mapRange === weekday) {
           card.classList.add("is-selected");
         }
         card.addEventListener("click", () => {
           clearCustomDateRange();
-          state.specialsMapRange = weekday;
+          state.mapRange = weekday;
           applyMapRangeChange();
         });
         card.innerHTML = `
@@ -2918,7 +2807,7 @@ async function loadHolidaysForDates(dateStrings) {
   const years = unique(dateStrings.map((value) => value.split("-")[0]));
   const holidayByDate = new Map();
   for (const year of years) {
-    const response = await fetch(HOLIDAYS_PATH.replace("{year}", year), { cache: "no-store" });
+    const response = await fetchFresh(HOLIDAYS_PATH.replace("{year}", year));
     if (!response.ok) {
       continue;
     }
@@ -2938,7 +2827,7 @@ async function loadHolidaysForDates(dateStrings) {
 async function loadCalendarEventsByDate(dateStrings) {
   const byDate = new Map();
   try {
-    const response = await fetch(GOOGLE_CALENDAR_EVENTS_PATH, { cache: "no-store" });
+    const response = await fetchFresh(GOOGLE_CALENDAR_EVENTS_PATH);
     if (!response.ok) {
       return byDate;
     }
@@ -2977,18 +2866,10 @@ function renderSpecials(payload) {
   }
 
   elements.specialsList.innerHTML = "";
-  const dayOrder = [
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-    "Sunday",
-  ];
+  const dayOrder = WEEK_DAYS;
   const today = new Intl.DateTimeFormat("en-US", {
     weekday: "long",
-    timeZone: "Africa/Johannesburg",
+    timeZone: TIMEZONE,
   }).format(new Date());
   const todayIndex = dayOrder.indexOf(today);
   const rollingWeek = [...dayOrder.slice(todayIndex), ...dayOrder.slice(0, todayIndex)];
@@ -3444,11 +3325,7 @@ function renderBandsintownEvents(events) {
 }
 
 function normalizeGenreKey(value) {
-  return String(value || "")
-    .trim()
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
+  return slugify(value);
 }
 
 function openEventDetail(item) {
@@ -3476,7 +3353,7 @@ function openEventDetail(item) {
     ? `<img class="watchlist-detail-poster" src="${escapeHtml(imageUrl)}" alt="${title} image">`
     : '<div class="watchlist-detail-poster watchlist-entry-poster-empty">No image</div>';
 
-  elements.watchlistDetailContent.innerHTML = `
+  showDetailPanel(`
     <div class="watchlist-detail-layout">
       ${posterHtml}
       <div class="watchlist-detail-body">
@@ -3492,19 +3369,7 @@ function openEventDetail(item) {
         </div>
       </div>
     </div>
-  `;
-  elements.watchlistDetailPanel.hidden = false;
-  elements.watchlistDetailPanel.classList.add("is-open");
-  elements.watchlistDetailPanel.classList.remove(
-    "is-loved",
-    "opinion-loved",
-    "opinion-liked",
-    "opinion-mixed",
-    "opinion-disliked",
-    "opinion-hated",
-  );
-  elements.watchlistDetailPanel.dataset.watchOpinion = "";
-  document.body.classList.add("watchlist-detail-open");
+  `);
 }
 
 function compareBandsintownDateAsc(left, right) {
@@ -3535,14 +3400,14 @@ function selectedMapDays(rollingWeek) {
     const weekdays = weekdaysInRange(start, end);
     return weekdays.length ? weekdays : rollingWeek;
   }
-  if (state.specialsMapRange === "today") {
+  if (state.mapRange === "today") {
     return rollingWeek.slice(0, 1);
   }
-  if (state.specialsMapRange === "next-7") {
+  if (state.mapRange === "next-7") {
     return rollingWeek;
   }
-  if (WEEK_DAYS.includes(state.specialsMapRange)) {
-    return [state.specialsMapRange];
+  if (WEEK_DAYS.includes(state.mapRange)) {
+    return [state.mapRange];
   }
   return rollingWeek;
 }
@@ -3561,7 +3426,7 @@ function weekdaysInRange(startDateValue, endDateValue) {
   while (cursor <= end) {
     const day = new Intl.DateTimeFormat("en-US", {
       weekday: "long",
-      timeZone: "Africa/Johannesburg",
+      timeZone: TIMEZONE,
     }).format(cursor);
     if (WEEK_DAYS.includes(day)) {
       days.add(day);
@@ -3587,18 +3452,18 @@ function mapRangeWindow() {
       return { start: startCustom, end: endCustom };
     }
   }
-  if (state.specialsMapRange === "today") {
+  if (state.mapRange === "today") {
     end = new Date(now);
     end.setHours(23, 59, 59, 999);
-  } else if (state.specialsMapRange === "next-7") {
+  } else if (state.mapRange === "next-7") {
     end = new Date(now.getTime() + 7 * 24 * 60 * 60 * 1000);
-  } else if (state.specialsMapRange === "next-month") {
+  } else if (state.mapRange === "next-month") {
     end = new Date(now.getTime() + 30 * 24 * 60 * 60 * 1000);
-  } else if (WEEK_DAYS.includes(state.specialsMapRange)) {
-    const targetIndex = WEEK_DAYS.indexOf(state.specialsMapRange);
+  } else if (WEEK_DAYS.includes(state.mapRange)) {
+    const targetIndex = WEEK_DAYS.indexOf(state.mapRange);
     const currentIndex = new Intl.DateTimeFormat("en-US", {
       weekday: "long",
-      timeZone: "Africa/Johannesburg",
+      timeZone: TIMEZONE,
     }).format(now);
     const currentPos = WEEK_DAYS.indexOf(currentIndex);
     const dayDelta = (targetIndex - currentPos + 7) % 7;
@@ -3615,7 +3480,7 @@ function mapRangeWindow() {
 function syncRangeButtons() {
   const usingDateRange = Boolean(state.customStartDate || state.customEndDate);
   for (const button of mapRangeButtons) {
-    button.classList.toggle("is-selected", !usingDateRange && button.dataset.range === state.specialsMapRange);
+    button.classList.toggle("is-selected", !usingDateRange && button.dataset.range === state.mapRange);
   }
   if (elements.customStartDateButton) {
     elements.customStartDateButton.classList.toggle("is-selected", Boolean(state.customStartDate));
@@ -3915,10 +3780,10 @@ function eventListCard(event, options = {}) {
 function linkedSpecialsForPlace(placeName) {
   const groups = state.specialsPayload?.groups || [];
   const needle = venueKey(placeName);
-  const dayOrder = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+  const dayOrder = WEEK_DAYS;
   const today = new Intl.DateTimeFormat("en-US", {
     weekday: "long",
-    timeZone: "Africa/Johannesburg",
+    timeZone: TIMEZONE,
   }).format(new Date());
   const todayIndex = dayOrder.indexOf(today);
   const rollingWeek = [...dayOrder.slice(todayIndex), ...dayOrder.slice(0, todayIndex)];
@@ -4407,10 +4272,10 @@ function buildMapItems() {
   const groups = payload.groups || [];
   const locations = payload.locations || {};
 
-  const dayOrder = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+  const dayOrder = WEEK_DAYS;
   const today = new Intl.DateTimeFormat("en-US", {
     weekday: "long",
-    timeZone: "Africa/Johannesburg",
+    timeZone: TIMEZONE,
   }).format(new Date());
   const todayIndex = dayOrder.indexOf(today);
   const rollingWeek = [...dayOrder.slice(todayIndex), ...dayOrder.slice(0, todayIndex)];
@@ -4674,22 +4539,9 @@ function hasValidSpecialLocation(item) {
   return Boolean(location && !item?.missing_place && hasValidEventCoordinates(location));
 }
 
-function groupItemsByVenue(items) {
-  const groups = [];
-  const byVenue = new Map();
-  for (const item of items) {
-    const venue = item.venue || item.title || "Special";
-    if (!byVenue.has(venue)) {
-      const group = { venue, items: [] };
-      byVenue.set(venue, group);
-      groups.push(group);
-    }
-    byVenue.get(venue).items.push(item);
-  }
-  return groups;
-}
 
-function render() {
+
+function renderOnePieceCards() {
   const rows = filteredRows().sort((left, right) => {
     const price = Number.parseFloat(left.price || "0") - Number.parseFloat(right.price || "0");
     if (price !== 0) {
@@ -4822,7 +4674,7 @@ function openOnePieceProductDetail(item) {
     ? `<img class="watchlist-detail-poster" src="${escapeHtml(imageUrl)}" alt="${title} image">`
     : '<div class="watchlist-detail-poster watchlist-entry-poster-empty">No image</div>';
 
-  elements.watchlistDetailContent.innerHTML = `
+  showDetailPanel(`
     <div class="watchlist-detail-layout">
       ${posterHtml}
       <div class="watchlist-detail-body">
@@ -4836,28 +4688,10 @@ function openOnePieceProductDetail(item) {
         </div>
       </div>
     </div>
-  `;
-
-  elements.watchlistDetailPanel.hidden = false;
-  elements.watchlistDetailPanel.classList.add("is-open");
-  elements.watchlistDetailPanel.classList.remove(
-    "is-loved",
-    "opinion-loved",
-    "opinion-liked",
-    "opinion-mixed",
-    "opinion-disliked",
-    "opinion-hated",
-  );
-  elements.watchlistDetailPanel.dataset.watchOpinion = "";
-  document.body.classList.add("watchlist-detail-open");
+  `);
 }
 
-function bindOnePieceStripDrag() {
-  if (!elements.onePieceProductStrip || onePieceStripDragBound) {
-    return;
-  }
-  onePieceStripDragBound = true;
-  const strip = elements.onePieceProductStrip;
+function bindDragScroll(strip, clickTargets = [strip]) {
   let isPointerDown = false;
   let isDragging = false;
   let startX = 0;
@@ -4865,25 +4699,15 @@ function bindOnePieceStripDrag() {
   let suppressClickUntil = 0;
 
   const onPointerMove = (event) => {
-    if (!isPointerDown) {
-      return;
-    }
+    if (!isPointerDown) return;
     const delta = event.clientX - startX;
-    if (Math.abs(delta) > 6) {
-      isDragging = true;
-    }
-    if (isDragging) {
-      strip.scrollLeft = startScrollLeft - delta;
-    }
+    if (Math.abs(delta) > 6) isDragging = true;
+    if (isDragging) strip.scrollLeft = startScrollLeft - delta;
   };
 
   const onPointerUp = () => {
-    if (!isPointerDown) {
-      return;
-    }
-    if (isDragging) {
-      suppressClickUntil = Date.now() + 180;
-    }
+    if (!isPointerDown) return;
+    if (isDragging) suppressClickUntil = Date.now() + 180;
     isPointerDown = false;
     isDragging = false;
     strip.classList.remove("is-dragging");
@@ -4893,9 +4717,7 @@ function bindOnePieceStripDrag() {
   };
 
   strip.addEventListener("pointerdown", (event) => {
-    if (event.button !== 0) {
-      return;
-    }
+    if (event.button !== 0) return;
     isPointerDown = true;
     isDragging = false;
     startX = event.clientX;
@@ -4906,12 +4728,26 @@ function bindOnePieceStripDrag() {
     document.addEventListener("pointercancel", onPointerUp);
   });
 
-  strip.addEventListener("click", (event) => {
-    if (Date.now() < suppressClickUntil) {
-      event.preventDefault();
-      event.stopPropagation();
-    }
-  }, true);
+  strip.addEventListener("pointerleave", () => {
+    if (!isPointerDown) strip.classList.remove("is-dragging");
+  });
+
+  for (const target of clickTargets) {
+    target.addEventListener("click", (event) => {
+      if (Date.now() < suppressClickUntil) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+    }, true);
+  }
+}
+
+function bindOnePieceStripDrag() {
+  if (!elements.onePieceProductStrip || onePieceStripDragBound) {
+    return;
+  }
+  onePieceStripDragBound = true;
+  bindDragScroll(elements.onePieceProductStrip);
 }
 
 async function loadOnePieceProducts() {
@@ -4920,7 +4756,7 @@ async function loadOnePieceProducts() {
   }
   bindOnePieceStripDrag();
   try {
-    const response = await fetch(ONE_PIECE_PRODUCTS_PATH, { cache: "no-store" });
+    const response = await fetchFresh(ONE_PIECE_PRODUCTS_PATH);
     if (!response.ok) {
       throw new Error(`Could not load ${ONE_PIECE_PRODUCTS_PATH}`);
     }
@@ -4945,7 +4781,7 @@ async function loadOnePieceProducts() {
 
 async function loadReleases() {
   try {
-    const response = await fetch(RELEASES_PATH, { cache: "no-store" });
+    const response = await fetchFresh(RELEASES_PATH);
     if (!response.ok) {
       throw new Error(`Could not load ${RELEASES_PATH}`);
     }
@@ -4968,7 +4804,7 @@ async function loadNews() {
     return;
   }
   try {
-    const response = await fetch(NEWS_PATH, { cache: "no-store" });
+    const response = await fetchFresh(NEWS_PATH);
     if (!response.ok) {
       throw new Error(`Could not load ${NEWS_PATH}`);
     }
@@ -5025,7 +4861,7 @@ function showMyLocation() {
 
 async function loadWeather() {
   try {
-    const response = await fetch(WEATHER_PATH, { cache: "no-store" });
+    const response = await fetchFresh(WEATHER_PATH);
     if (!response.ok) {
       throw new Error("Could not load weather.");
     }
@@ -5039,7 +4875,7 @@ async function loadWeather() {
 
 async function loadMetadata() {
   try {
-    const response = await fetch(METADATA_PATH, { cache: "no-store" });
+    const response = await fetchFresh(METADATA_PATH);
     if (!response.ok) {
       setLastScrapedText("");
       return;
@@ -5053,7 +4889,7 @@ async function loadMetadata() {
 
 async function loadComingSoon() {
   try {
-    const response = await fetch(COMING_SOON_PATH, { cache: "no-store" });
+    const response = await fetchFresh(COMING_SOON_PATH);
     if (!response.ok) {
       throw new Error(`Could not load ${COMING_SOON_PATH}`);
     }
@@ -5070,7 +4906,7 @@ async function loadImaxReleases() {
     return;
   }
   try {
-    const response = await fetch(IMAX_RELEASES_PATH, { cache: "no-store" });
+    const response = await fetchFresh(IMAX_RELEASES_PATH);
     if (!response.ok) {
       throw new Error(`Could not load ${IMAX_RELEASES_PATH}`);
     }
@@ -5092,7 +4928,7 @@ async function loadGalileoReleases() {
     return;
   }
   try {
-    const response = await fetch(GALILEO_RELEASES_PATH, { cache: "no-store" });
+    const response = await fetchFresh(GALILEO_RELEASES_PATH);
     if (!response.ok) {
       throw new Error(`Could not load ${GALILEO_RELEASES_PATH}`);
     }
@@ -5123,7 +4959,7 @@ async function loadLabiaShowtimes() {
     return;
   }
   try {
-    const response = await fetch(LABIA_SHOWTIMES_PATH, { cache: "no-store" });
+    const response = await fetchFresh(LABIA_SHOWTIMES_PATH);
     if (!response.ok) {
       throw new Error(`Could not load ${LABIA_SHOWTIMES_PATH}`);
     }
@@ -5142,7 +4978,7 @@ async function loadLabiaShowtimes() {
 
 async function loadGameReleases() {
   try {
-    const response = await fetch(GAME_RELEASES_PATH, { cache: "no-store" });
+    const response = await fetchFresh(GAME_RELEASES_PATH);
     if (!response.ok) {
       throw new Error(`Could not load ${GAME_RELEASES_PATH}`);
     }
@@ -5204,9 +5040,9 @@ async function loadGameReleases() {
 async function loadSpecials() {
   try {
     const [response, placesResponse, locationsResponse] = await Promise.all([
-      fetch(SPECIALS_PATH, { cache: "no-store" }),
-      fetch(PLACES_PATH, { cache: "no-store" }),
-      fetch(LOCATIONS_PATH, { cache: "no-store" }),
+      fetchFresh(SPECIALS_PATH),
+      fetchFresh(PLACES_PATH),
+      fetchFresh(LOCATIONS_PATH),
     ]);
     if (!response.ok) {
       throw new Error(`Could not load ${SPECIALS_PATH}`);
@@ -5231,8 +5067,8 @@ async function loadSpecials() {
 async function loadQuicketEvents() {
   try {
     const [response, locationsResponse] = await Promise.all([
-      fetch(QUICKET_EVENTS_PATH, { cache: "no-store" }),
-      fetch(LOCATIONS_PATH, { cache: "no-store" }),
+      fetchFresh(QUICKET_EVENTS_PATH),
+      fetchFresh(LOCATIONS_PATH),
     ]);
     if (!response.ok) {
       throw new Error(`Could not load ${QUICKET_EVENTS_PATH}`);
@@ -5259,9 +5095,9 @@ async function loadBandsintownEvents() {
   }
   try {
     const [eventsResponse, configResponse, locationsResponse] = await Promise.all([
-      fetch(BANDSINTOWN_EVENTS_PATH, { cache: "no-store" }),
-      fetch(EVENTS_CONFIG_PATH, { cache: "no-store" }),
-      fetch(LOCATIONS_PATH, { cache: "no-store" }),
+      fetchFresh(BANDSINTOWN_EVENTS_PATH),
+      fetchFresh(EVENTS_CONFIG_PATH),
+      fetchFresh(LOCATIONS_PATH),
     ]);
     if (!eventsResponse.ok) {
       throw new Error(`Could not load ${BANDSINTOWN_EVENTS_PATH}`);
@@ -5291,9 +5127,9 @@ async function loadBandsintownEvents() {
   }
 }
 
-async function load() {
+async function loadOnePieceCards() {
   try {
-    const response = await fetch(MISSING_CARDS_PATH, { cache: "no-store" });
+    const response = await fetchFresh(MISSING_CARDS_PATH);
     if (!response.ok) {
       throw new Error(`Could not load ${MISSING_CARDS_PATH}`);
     }
@@ -5313,7 +5149,7 @@ async function load() {
       }
       elements.rarityFilter.append(option);
     }
-    render();
+    renderOnePieceCards();
     await loadOnePieceProducts();
   } catch (error) {
     if (elements.cardsGrid) {
@@ -5327,17 +5163,17 @@ async function load() {
 
 elements.search.addEventListener("input", (event) => {
   state.search = event.target.value;
-  render();
+  renderOnePieceCards();
 });
 
 elements.storeFilter.addEventListener("change", (event) => {
   state.store = event.target.value;
-  render();
+  renderOnePieceCards();
 });
 
 elements.rarityFilter.addEventListener("change", (event) => {
   state.rarity = event.target.value;
-  render();
+  renderOnePieceCards();
 });
 
 const PRICE_STORAGE_KEY = "my-dashboard:card-price-range:v1";
@@ -5369,13 +5205,13 @@ restorePriceRange();
 elements.minPrice.addEventListener("input", (event) => {
   state.minPrice = event.target.value === "" ? Number.NEGATIVE_INFINITY : Number(event.target.value);
   savePriceRange();
-  render();
+  renderOnePieceCards();
 });
 
 elements.maxPrice.addEventListener("input", (event) => {
   state.maxPrice = event.target.value === "" ? Number.POSITIVE_INFINITY : Number(event.target.value);
   savePriceRange();
-  render();
+  renderOnePieceCards();
 });
 
 if (elements.cardsGrid) {
@@ -5465,7 +5301,7 @@ if (elements.watchlistOpinionIndicatorsToggle) {
 for (const button of mapRangeButtons) {
   button.addEventListener("click", () => {
     clearCustomDateRange();
-    state.specialsMapRange = button.dataset.range || "next-7";
+    state.mapRange = button.dataset.range || "next-7";
     applyMapRangeChange();
   });
 }
@@ -5813,7 +5649,7 @@ if (storedTheme) {
 setupDashboardSectionEditor();
 
 function gameHubLabel(name) {
-  return name.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+  return prettyTag(name);
 }
 
 function closeTimelineLightbox() {
@@ -5964,7 +5800,7 @@ async function loadTimeline() {
     return;
   }
   try {
-    const manifestResp = await fetch(TIMELINE_MANIFEST_PATH, { cache: "no-store" });
+    const manifestResp = await fetchFresh(TIMELINE_MANIFEST_PATH);
 
     if (!manifestResp.ok) {
       throw new Error(`Could not load ${TIMELINE_MANIFEST_PATH}`);
@@ -6004,7 +5840,7 @@ async function loadTimeline() {
 
 async function loadGameHub() {
   try {
-    const resp = await fetch(GAME_HUB_CONFIG_PATH, { cache: "no-store" });
+    const resp = await fetchFresh(GAME_HUB_CONFIG_PATH);
     if (!resp.ok) return;
     const config = await resp.json();
     state.gameHubGames = Array.isArray(config.games) ? config.games : [];
@@ -6029,7 +5865,7 @@ async function loadGameHubGame(gameName) {
   if (elements.gameHubModuleButtons) elements.gameHubModuleButtons.hidden = true;
   if (elements.gameHubContent) elements.gameHubContent.innerHTML = `<p class="empty">Loading...</p>`;
   try {
-    const resp = await fetch(`./data/game_hub/${gameName}/modules.json`, { cache: "no-store" });
+    const resp = await fetchFresh(`./data/game_hub/${gameName}/modules.json`);
     state.gameHubModules = resp.ok ? ((await resp.json()).modules || []) : [];
   } catch {
     state.gameHubModules = [];
@@ -6048,8 +5884,8 @@ async function loadGameHubModule(gameName, moduleName) {
   if (elements.gameHubContent) elements.gameHubContent.innerHTML = `<p class="empty">Loading...</p>`;
   try {
     const [manifestResp, infoResp] = await Promise.all([
-      fetch(`./data/game_hub/${gameName}/${moduleName}/manifest.json`, { cache: "no-store" }),
-      fetch(`./data/game_hub/${gameName}/${moduleName}/info.json`, { cache: "no-store" }),
+      fetchFresh(`./data/game_hub/${gameName}/${moduleName}/manifest.json`),
+      fetchFresh(`./data/game_hub/${gameName}/${moduleName}/info.json`),
     ]);
     state.gameHubManifest = manifestResp.ok ? ((await manifestResp.json()).pictures || []) : [];
     try {
@@ -6149,7 +5985,7 @@ async function loadGameLab() {
     return;
   }
   try {
-    const response = await fetch(GAME_LAB_MANIFEST_PATH, { cache: "no-store" });
+    const response = await fetchFresh(GAME_LAB_MANIFEST_PATH);
     if (!response.ok) {
       throw new Error(`Could not load ${GAME_LAB_MANIFEST_PATH}`);
     }
@@ -6269,7 +6105,7 @@ document.addEventListener("keydown", (event) => {
   }
 });
 
-load();
+loadOnePieceCards();
 setHeaderDate();
 loadMetadata();
 loadWeather();
