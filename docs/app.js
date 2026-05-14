@@ -96,6 +96,9 @@ const state = {
   collectionSets: {},
   collectionSet: "OP01",
   collectionShowMissing: false,
+  collectionShowAvailableMissing: false,
+  collectionShowMissingRarity: false,
+  missingListingsByCard: {},
   onePieceProductType: "boosters",
   onePieceProductIndex: -1,
   specialsPayload: null,
@@ -165,6 +168,8 @@ const elements = {
   collectionGrid: document.querySelector("#collection-grid"),
   collectionStats: document.querySelector("#collection-stats"),
   collectionShowMissingToggle: document.querySelector("#collection-show-missing"),
+  collectionShowAvailableMissingToggle: document.querySelector("#collection-show-available-missing"),
+  collectionShowMissingRarityToggle: document.querySelector("#collection-show-missing-rarity"),
   watchlistOpinionIndicatorsToggle: document.querySelector("#watchlist-opinion-indicators-toggle"),
   releaseGrid: document.querySelector("#release-grid"),
   comingSoonGrid: document.querySelector("#coming-soon-grid"),
@@ -4878,7 +4883,9 @@ function renderCollectionGrid() {
     elements.collectionGrid.innerHTML = `<p class="empty">No data for ${state.collectionSet}.</p>`;
     return;
   }
-  const cards = setData.owned || [];
+  const cards = Array.isArray(setData.cards) && setData.cards.length
+    ? setData.cards
+    : (setData.owned || []).map((c) => ({ ...c, owned: true }));
   if (!cards.length && !state.collectionShowMissing) {
     elements.collectionGrid.innerHTML = `<p class="empty">No cards owned in ${state.collectionSet}.</p>`;
     return;
@@ -4897,8 +4904,8 @@ function renderCollectionGrid() {
     elements.collectionStats.textContent = [totalPart, ...rarityParts].join(" · ");
   }
 
-  const ownedSet = new Set(cards.map((c) => c.card_number));
-  const ownedByNumber = Object.fromEntries(cards.map((c) => [c.card_number, c]));
+  const ownedSet = new Set(cards.filter((c) => c.owned).map((c) => c.card_number));
+  const cardsByNumber = Object.fromEntries(cards.map((c) => [c.card_number, c]));
 
   let displayCards;
   const totalCards = setData.total_cards
@@ -4909,10 +4916,16 @@ function renderCollectionGrid() {
     for (let i = 1; i <= totalCards; i += 1) {
       const cardNumber = `${state.collectionSet}-${String(i).padStart(3, "0")}`;
       const owned = ownedSet.has(cardNumber);
-      displayCards.push({ card_number: cardNumber, owned, rarity: ownedByNumber[cardNumber]?.rarity || "" });
+      const src = cardsByNumber[cardNumber] || {};
+      displayCards.push({
+        card_number: cardNumber,
+        owned,
+        rarity: src.rarity || "",
+        image_url: src.image_url || "",
+      });
     }
   } else {
-    displayCards = cards.map((c) => ({ ...c, owned: true }));
+    displayCards = cards.filter((c) => c.owned).map((c) => ({ ...c, owned: true }));
   }
 
   elements.collectionGrid.innerHTML = "";
@@ -4922,11 +4935,20 @@ function renderCollectionGrid() {
     btn.className = "collection-card" + (card.owned ? "" : " is-missing");
     btn.dataset.cardNumber = card.card_number;
     const borderColor = rarityBorderColor(card.rarity);
-    if (borderColor && card.owned) btn.style.borderColor = borderColor;
+    const showMissingRarity = state.collectionShowMissing && state.collectionShowMissingRarity;
+    if (borderColor && (card.owned || (!card.owned && showMissingRarity))) {
+      btn.style.borderColor = borderColor;
+    }
 
     const rarityClass = card.rarity ? `collection-card-rarity--${slugify(card.rarity)}` : "";
     const num = card.card_number.split("-").pop() || card.card_number;
-    const imgUrl = collectionCardImageUrl(card.card_number);
+    const imgUrl = String(card.image_url || "").trim() || collectionCardImageUrl(card.card_number);
+    const listings = state.missingListingsByCard[card.card_number] || [];
+    const showAvailability = state.collectionShowMissing && state.collectionShowAvailableMissing && !card.owned;
+    const hasAvailability = showAvailability && listings.length > 0;
+    const bestPrice = hasAvailability
+      ? Math.min(...listings.map((item) => Number.parseFloat(item.price || "0")).filter((value) => Number.isFinite(value)))
+      : null;
     btn.innerHTML = `
       <div class="collection-card-face ${rarityClass}">
         <img class="collection-card-img" src="${escapeHtml(imgUrl)}" alt="${escapeHtml(card.card_number)}" loading="lazy" onerror="this.style.display='none'">
@@ -4934,9 +4956,35 @@ function renderCollectionGrid() {
       <div class="collection-card-footer">
         <span class="collection-card-number">${escapeHtml(num)}</span>
         ${card.rarity ? `<span class="collection-card-rarity-label">${escapeHtml(card.rarity)}</span>` : ""}
+        ${hasAvailability ? `<span class="collection-card-rarity-label collection-card-availability">${escapeHtml(`Available ${money(bestPrice)}`)}</span>` : ""}
       </div>
     `;
     elements.collectionGrid.append(btn);
+  }
+}
+
+function syncCollectionMissingOptionVisibility() {
+  if (elements.collectionShowMissingToggle) {
+    state.collectionShowMissing = Boolean(elements.collectionShowMissingToggle.checked);
+  }
+  const showMissing = state.collectionShowMissing;
+  if (elements.collectionShowAvailableMissingToggle) {
+    elements.collectionShowAvailableMissingToggle.disabled = !showMissing;
+    const label = elements.collectionShowAvailableMissingToggle.closest("label");
+    if (label) label.hidden = !showMissing;
+    if (!showMissing) {
+      state.collectionShowAvailableMissing = false;
+      elements.collectionShowAvailableMissingToggle.checked = false;
+    }
+  }
+  if (elements.collectionShowMissingRarityToggle) {
+    elements.collectionShowMissingRarityToggle.disabled = !showMissing;
+    const label = elements.collectionShowMissingRarityToggle.closest("label");
+    if (label) label.hidden = !showMissing;
+    if (!showMissing) {
+      state.collectionShowMissingRarity = false;
+      elements.collectionShowMissingRarityToggle.checked = false;
+    }
   }
 }
 
@@ -4951,6 +4999,7 @@ async function loadCollection() {
     if (sets.length && !state.collectionSets[state.collectionSet]) {
       state.collectionSet = sets[0];
     }
+    syncCollectionMissingOptionVisibility();
     renderCollectionSetButtons();
     renderCollectionGrid();
   } catch (error) {
@@ -5333,6 +5382,14 @@ async function loadOnePieceCards() {
     }
     const payload = await response.json();
     state.rows = payload.listings || [];
+    const byCard = {};
+    for (const row of state.rows) {
+      const key = String(row.card_number || "").trim().toUpperCase();
+      if (!key) continue;
+      if (!Array.isArray(byCard[key])) byCard[key] = [];
+      byCard[key].push(row);
+    }
+    state.missingListingsByCard = byCard;
     optionList(elements.storeFilter, unique(state.rows.map((row) => row.store)), "All stores");
     const rarities = unique(state.rows.map((row) => row.rarity));
     elements.rarityFilter.innerHTML = '<option value="">All rarities</option>';
@@ -5348,6 +5405,7 @@ async function loadOnePieceCards() {
       elements.rarityFilter.append(option);
     }
     renderOnePieceCards();
+    renderCollectionGrid();
     await loadOnePieceProducts();
   } catch (error) {
     if (elements.cardsGrid) {
@@ -6270,21 +6328,51 @@ if (elements.collectionGrid) {
     if (!btn) return;
     const cardNumber = btn.dataset.cardNumber;
     const setData = state.collectionSets[state.collectionSet] || {};
-    const owned = (setData.owned || []).find((c) => c.card_number === cardNumber);
-    const rarity = owned?.rarity || "";
-    const isOwned = Boolean(owned);
-    const imgUrl = collectionCardImageUrl(cardNumber);
+    const cards = Array.isArray(setData.cards) && setData.cards.length
+      ? setData.cards
+      : (setData.owned || []).map((c) => ({ ...c, owned: true }));
+    const row = cards.find((c) => c.card_number === cardNumber);
+    const rarity = row?.rarity || "";
+    const isOwned = Boolean(row?.owned);
+    const imgUrl = String(row?.image_url || "").trim() || collectionCardImageUrl(cardNumber);
     const setCode = cardNumber.split("-")[0];
     const borderColor = rarityBorderColor(rarity);
     const posterHtml = `<img class="watchlist-detail-poster" src="${escapeHtml(imgUrl)}" alt="${escapeHtml(cardNumber)}" onerror="this.style.display='none'">`;
+    const color = String(row?.color || "").trim();
+    const attribute = String(row?.attribute || "").trim();
+    const life = String(row?.life || "").trim();
+    const power = String(row?.power || "").trim();
+    const family = String(row?.family || "").trim();
+    const description = String(row?.description || "").trim();
+    const name = String(row?.name || "").trim();
+    const listings = state.missingListingsByCard[cardNumber] || [];
+    const listingsHtml = listings.length
+      ? `<div class="watchlist-detail-links">${listings
+          .slice()
+          .sort((a, b) => Number.parseFloat(a.price || "0") - Number.parseFloat(b.price || "0"))
+          .map((item) => {
+            const store = String(item.store || "").trim() || "Store";
+            const price = money(item.price || 0);
+            const url = String(item.url || "").trim();
+            return `<a href="${escapeHtml(url)}" target="_blank" rel="noreferrer">${escapeHtml(`${store} · ${price}`)}</a>`;
+          })
+          .join("")}</div>`
+      : "";
     showDetailPanel(`
       <div class="watchlist-detail-layout">
         ${posterHtml}
         <div class="watchlist-detail-body">
           <p class="watchlist-detail-kicker">${escapeHtml(setCode)}</p>
           <h3 style="${borderColor ? `color:${borderColor}` : ""}">${escapeHtml(cardNumber)}</h3>
+          ${name ? `<p class="watchlist-detail-meta">${escapeHtml(name)}</p>` : ""}
           ${rarity ? `<p class="watchlist-detail-meta">${escapeHtml(rarity)}</p>` : ""}
+          ${(color || attribute || life) ? `<p class="watchlist-detail-meta">${escapeHtml([color, attribute, life ? `${life} Life` : ""].filter(Boolean).join(" · "))}</p>` : ""}
+          ${power ? `<p class="watchlist-detail-meta">${escapeHtml(power)} Power</p>` : ""}
+          ${family ? `<p class="watchlist-detail-meta">${escapeHtml(family)}</p>` : ""}
+          ${description ? `<p class="watchlist-detail-meta">${escapeHtml(description)}</p>` : ""}
           <p class="watchlist-detail-meta">${isOwned ? "✓ In your collection" : "✗ Not owned"}</p>
+          ${listings.length ? `<p class="watchlist-detail-meta">${escapeHtml(`${listings.length} listing(s) available`)}</p>` : ""}
+          ${listingsHtml}
         </div>
       </div>
     `);
@@ -6294,6 +6382,21 @@ if (elements.collectionGrid) {
 if (elements.collectionShowMissingToggle) {
   elements.collectionShowMissingToggle.addEventListener("change", () => {
     state.collectionShowMissing = elements.collectionShowMissingToggle.checked;
+    syncCollectionMissingOptionVisibility();
+    renderCollectionGrid();
+  });
+}
+
+if (elements.collectionShowAvailableMissingToggle) {
+  elements.collectionShowAvailableMissingToggle.addEventListener("change", () => {
+    state.collectionShowAvailableMissing = elements.collectionShowAvailableMissingToggle.checked;
+    renderCollectionGrid();
+  });
+}
+
+if (elements.collectionShowMissingRarityToggle) {
+  elements.collectionShowMissingRarityToggle.addEventListener("change", () => {
+    state.collectionShowMissingRarity = elements.collectionShowMissingRarityToggle.checked;
     renderCollectionGrid();
   });
 }
@@ -6309,6 +6412,8 @@ if (elements.collectionSetButtons) {
     renderCollectionGrid();
   });
 }
+
+syncCollectionMissingOptionVisibility();
 
 loadOnePieceCards();
 loadCollection();

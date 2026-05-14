@@ -106,11 +106,28 @@ def scrape_collection() -> dict:
         total_cards = set_totals.get(set_code, 0)
         if not cards and not total_cards:
             continue
+        owned_set = {card["card_number"] for card in cards}
+        owned_by_number = {card["card_number"]: card for card in cards}
+        all_cards: list[dict] = []
+        if total_cards > 0:
+            for i in range(1, total_cards + 1):
+                card_number = f"{set_code}-{i:03d}"
+                owned_card = owned_by_number.get(card_number)
+                all_cards.append(
+                    {
+                        "card_number": card_number,
+                        "owned": card_number in owned_set,
+                        "rarity": owned_card.get("rarity", "") if owned_card else "",
+                        "image_url": "",
+                        "image_hash": "",
+                    }
+                )
         by_rarity: dict[str, int] = {}
         for card in cards:
             by_rarity[card["rarity"]] = by_rarity.get(card["rarity"], 0) + 1
         result[set_code] = {
             "owned": sorted(cards, key=lambda c: c["card_number"]),
+            "cards": all_cards,
             "total_owned": len(cards),
             "total_cards": total_cards,
             "by_rarity": by_rarity,
@@ -119,13 +136,44 @@ def scrape_collection() -> dict:
         print(f"  {set_code}: {len(cards)}/{total_cards} cards owned", flush=True)
 
     print(f"Total: {sum(v['total_owned'] for v in result.values())} cards across {len(result)} sets", flush=True)
-    return {"sets": result}
+    return {"sets": result, "_listing_match_cache": {}}
 
 
 def main() -> int:
-    data = scrape_collection()
-    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     output_file = OUTPUT_DIR / "collection.json"
+    existing: dict = {}
+    if output_file.exists():
+        try:
+            existing = json.loads(output_file.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            existing = {}
+
+    data = scrape_collection()
+    existing_sets = existing.get("sets", {}) if isinstance(existing, dict) else {}
+    for set_code, set_payload in data.get("sets", {}).items():
+        existing_set = existing_sets.get(set_code, {}) if isinstance(existing_sets, dict) else {}
+        existing_cards = existing_set.get("cards", []) if isinstance(existing_set, dict) else []
+        hash_by_number = {
+            str(card.get("card_number") or ""): {
+                "image_url": str(card.get("image_url") or ""),
+                "image_hash": str(card.get("image_hash") or ""),
+                "rarity": str(card.get("rarity") or ""),
+            }
+            for card in existing_cards
+            if isinstance(card, dict)
+        }
+        for card in set_payload.get("cards", []):
+            card_number = str(card.get("card_number") or "")
+            existing_row = hash_by_number.get(card_number) or {}
+            if existing_row.get("image_url"):
+                card["image_url"] = existing_row["image_url"]
+            if existing_row.get("image_hash"):
+                card["image_hash"] = existing_row["image_hash"]
+            if not card.get("rarity") and existing_row.get("rarity"):
+                card["rarity"] = existing_row["rarity"]
+
+    data["_listing_match_cache"] = existing.get("_listing_match_cache", {}) if isinstance(existing, dict) else {}
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     output_file.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
     print(f"Wrote {output_file}", flush=True)
     return 0

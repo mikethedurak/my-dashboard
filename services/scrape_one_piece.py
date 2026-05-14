@@ -13,7 +13,7 @@ DATA_DIR = REPO_DIR / "docs" / "data" / "one_piece"
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Run One Piece missing-card scrapes.")
-    parser.add_argument("--source", choices=["all", "bigbang", "knightly", "marvellous", "toad", "tanuki"], default="all", help="Which store source to scrape.")
+    parser.add_argument("--source", choices=["all", "bigbang", "geekhaven", "knightly", "marvellous", "toad", "tanuki"], default="all", help="Which store source to scrape.")
     parser.add_argument("--hard", action="store_true", help="Remove selected report outputs before scraping.")
     parser.add_argument("--limit", type=int, default=0, help="Accepted for wrapper consistency; store scraping is not item-limited.")
     parser.add_argument("--max-pages", type=int, default=0, help="Accepted for wrapper consistency; store pagination is source-defined.")
@@ -25,6 +25,12 @@ def main() -> int:
             for path in DATA_DIR.glob(pattern):
                 print(f"Removing stale One Piece output: {path}", flush=True)
                 path.unlink()
+
+    update_command = [sys.executable, "services/one_piece/update_collection.py"]
+    if args.hard:
+        update_command.append("--hard")
+    print(f"Updating One Piece collection: {' '.join(update_command)}", flush=True)
+    subprocess.run(update_command, cwd=REPO_DIR, check=True)
 
     command = [sys.executable, "services/one_piece/find_missing_cards.py", args.source]
     print(f"Running One Piece scrape: {' '.join(command)}", flush=True)

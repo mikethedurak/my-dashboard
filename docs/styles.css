@@ -1621,9 +1621,13 @@ td.card-number {
 }
 
 .collection-card.is-missing {
-  opacity: 0.35;
-  filter: grayscale(0.8);
   border-color: var(--line);
+}
+
+.collection-card.is-missing .collection-card-face,
+.collection-card.is-missing .collection-card-face {
+  opacity: 0.4;
+  filter: grayscale(0.8);
 }
 
 .collection-missing-toggle {
@@ -1634,6 +1638,10 @@ td.card-number {
   color: var(--muted);
   cursor: pointer;
   user-select: none;
+}
+
+.collection-missing-toggle[hidden] {
+  display: none !important;
 }
 
 .collection-missing-toggle input[type="checkbox"] {
@@ -1684,6 +1692,11 @@ td.card-number {
   font-size: 11px;
   color: var(--muted);
   line-height: 1;
+}
+
+.collection-card-availability {
+  color: #22c55e;
+  font-weight: 800;
 }
 
 .missing-card-block {
