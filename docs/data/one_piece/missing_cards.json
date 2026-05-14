@@ -1,6 +1,23 @@
 {
   "listings": [
     {
+<<<<<<< HEAD
+=======
+      "card_number": "EB02-006",
+      "price": 5.0,
+      "title": "Yamato [Extra Booster: Anime 25th Collection]",
+      "rarity": "",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/yamato-extra-booster-anime-25th-collection/p/676506134",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/544533_1024x1024_2x_UtyBuHzqn.webp",
+      "scraped_at": "2026-05-14T08:46:39Z"
+    },
+    {
+>>>>>>> 482027c (added fixed)
       "card_number": "OP03-096",
       "price": 6.0,
       "title": "Tempest Kick Sky Slicer [Pillars of Strength]",
@@ -57,6 +74,7 @@
       "scraped_at": "2026-05-14T08:04:04Z"
     },
     {
+<<<<<<< HEAD
       "card_number": "P-053",
       "price": 8.0,
       "title": "Nami (P-053) (Reprint) [Premium Booster -The Best-]",
@@ -85,6 +103,8 @@
       "scraped_at": "2026-05-14T18:30:14Z"
     },
     {
+=======
+>>>>>>> 482027c (added fixed)
       "card_number": "OP01-061",
       "price": 10.0,
       "title": "Kaido [Romance Dawn]",
@@ -127,6 +147,23 @@
       "scraped_at": "2026-05-14T08:04:04Z"
     },
     {
+<<<<<<< HEAD
+=======
+      "card_number": "OP05-100",
+      "price": 16.0,
+      "title": "Enel OP05-100",
+      "rarity": "",
+      "store": "Toad Trader TCG",
+      "set_name": "",
+      "condition": "",
+      "stock": "",
+      "available_variants": "",
+      "url": "https://www.toadtradertcg.com/product-page/enel-op05-100",
+      "image_url": "",
+      "scraped_at": "2026-05-14T08:04:04Z"
+    },
+    {
+>>>>>>> 482027c (added fixed)
       "card_number": "OP15-020",
       "price": 17.0,
       "title": "Fire Fist OP15-020",
@@ -197,6 +234,7 @@
       "scraped_at": "2026-05-14T08:04:04Z"
     },
     {
+<<<<<<< HEAD
       "card_number": "OP01-078",
       "price": 22.0,
       "title": "Boa Hancock (OP01-078) (Reprint) [Premium Booster -The Best-]",
@@ -211,6 +249,8 @@
       "scraped_at": "2026-05-14T18:30:14Z"
     },
     {
+=======
+>>>>>>> 482027c (added fixed)
       "card_number": "EB01-015",
       "price": 25.0,
       "title": "Scratchmen Apoo [Extra Booster: Memorial Collection]",
@@ -292,7 +332,11 @@
       "available_variants": "",
       "url": "https://www.bobshop.co.za/o-nami-wings-of-the-captain/p/676771475",
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/539491_1024x1024_2x_xxcQ4qlfAN.webp",
+<<<<<<< HEAD
       "scraped_at": "2026-05-14T13:22:16Z"
+=======
+      "scraped_at": "2026-05-14T14:41:56Z"
+>>>>>>> 482027c (added fixed)
     },
     {
       "card_number": "OP05-082",
@@ -349,6 +393,20 @@
       "url": "https://www.toadtradertcg.com/product-page/trafalgar-law-eb02-045",
       "image_url": "",
       "scraped_at": "2026-05-14T08:04:04Z"
+    },
+    {
+      "card_number": "OP05-006",
+      "price": 40.0,
+      "title": "Koala [Awakening of the New Era]",
+      "rarity": "",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/koala-awakening-of-the-new-era/p/676507164",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/527663_1024x1024_2x_2YJSybPS7.webp",
+      "scraped_at": "2026-05-14T14:41:56Z"
     },
     {
       "card_number": "OP06-058",
@@ -530,7 +588,11 @@
       "available_variants": "",
       "url": "https://www.bobshop.co.za/sengoku-extra-booster-anime-25th-collection/p/679747497",
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/629142_1024x1024_2x_loW6hCHwK.jpg",
+<<<<<<< HEAD
       "scraped_at": "2026-05-14T13:22:16Z"
+=======
+      "scraped_at": "2026-05-14T14:41:56Z"
+>>>>>>> 482027c (added fixed)
     },
     {
       "card_number": "EB02-044",
@@ -726,7 +788,11 @@
       "available_variants": "",
       "url": "https://www.bobshop.co.za/law-bepo-starter-deck-green-jewelry-bonney/p/679761066",
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/634621_1024x1024_2x_XjrEylz3I.jpg",
+<<<<<<< HEAD
       "scraped_at": "2026-05-14T13:22:16Z"
+=======
+      "scraped_at": "2026-05-14T14:41:56Z"
+>>>>>>> 482027c (added fixed)
     },
     {
       "card_number": "ST13-017",
@@ -799,6 +865,20 @@
       "scraped_at": "2026-05-14T08:04:04Z"
     },
     {
+      "card_number": "OP02-011",
+      "price": 90.0,
+      "title": "Vista [Paramount War]",
+      "rarity": "",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/vista-paramount-war/p/676508941",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/b16d56b1-3b69-551d-a88b-5c030c096ec3_1024x1024_2x_rHNgap255.webp",
+      "scraped_at": "2026-05-14T14:41:56Z"
+    },
+    {
       "card_number": "ST24-004",
       "price": 90.0,
       "title": "Law & Bepo ST24-004",
@@ -824,7 +904,11 @@
       "available_variants": "",
       "url": "https://www.bobshop.co.za/kuzan-starter-deck-black-marshall-d-teach/p/676699851",
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/images__1__Jql6WXB4A.jpeg",
+<<<<<<< HEAD
       "scraped_at": "2026-05-14T13:22:16Z"
+=======
+      "scraped_at": "2026-05-14T14:41:56Z"
+>>>>>>> 482027c (added fixed)
     },
     {
       "card_number": "ST10-010",
@@ -936,7 +1020,11 @@
       "available_variants": "",
       "url": "https://www.bobshop.co.za/kouzuki-hiyori-wings-of-the-captain/p/676770103",
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/539501_1024x1024_2x_sUH7Ioc79.webp",
+<<<<<<< HEAD
       "scraped_at": "2026-05-14T13:22:16Z"
+=======
+      "scraped_at": "2026-05-14T14:41:56Z"
+>>>>>>> 482027c (added fixed)
     },
     {
       "card_number": "OP06-106",
@@ -964,7 +1052,11 @@
       "available_variants": "",
       "url": "https://www.bobshop.co.za/hody-jones-wings-of-the-captain/p/679685199",
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/539772_1024x1024_2x_IkCMlmur7.webp",
+<<<<<<< HEAD
       "scraped_at": "2026-05-14T13:22:16Z"
+=======
+      "scraped_at": "2026-05-14T14:41:56Z"
+>>>>>>> 482027c (added fixed)
     },
     {
       "card_number": "OP06-035",
@@ -978,7 +1070,11 @@
       "available_variants": "",
       "url": "https://www.bobshop.co.za/hody-jones-wings-of-the-captain/p/679747451",
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/539772_1024x1024_2x_IkCMlmur7.webp",
+<<<<<<< HEAD
       "scraped_at": "2026-05-14T13:22:16Z"
+=======
+      "scraped_at": "2026-05-14T14:41:56Z"
+>>>>>>> 482027c (added fixed)
     },
     {
       "card_number": "OP14-031",

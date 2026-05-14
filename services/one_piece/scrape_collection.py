@@ -123,6 +123,8 @@ def scrape_collection() -> dict:
                         "rarity": owned_card.get("rarity", "") if owned_card else "",
                         "image_url": "",
                         "image_hash": "",
+                        "alternate_arts": [],
+                        "alternate_art_checked": False,
                     }
                 )
         by_rarity: dict[str, int] = {}
@@ -161,6 +163,8 @@ def main() -> int:
                 "image_url": str(card.get("image_url") or ""),
                 "image_hash": str(card.get("image_hash") or ""),
                 "rarity": str(card.get("rarity") or ""),
+                "alternate_arts": card.get("alternate_arts") if isinstance(card.get("alternate_arts"), list) else [],
+                "alternate_art_checked": bool(card.get("alternate_art_checked")),
             }
             for card in existing_cards
             if isinstance(card, dict)
@@ -172,6 +176,24 @@ def main() -> int:
                 card["image_url"] = existing_row["image_url"]
             if existing_row.get("image_hash"):
                 card["image_hash"] = existing_row["image_hash"]
+            existing_alt_rows = existing_row.get("alternate_arts")
+            if isinstance(existing_alt_rows, list):
+                cleaned_alt_rows = []
+                for alt in existing_alt_rows:
+                    if not isinstance(alt, dict):
+                        continue
+                    image_url = str(alt.get("image_url") or "").strip()
+                    if not image_url:
+                        continue
+                    cleaned_alt_rows.append(
+                        {
+                            "image_url": image_url,
+                            "label": str(alt.get("label") or "").strip(),
+                            "name": str(alt.get("name") or "").strip(),
+                        }
+                    )
+                card["alternate_arts"] = cleaned_alt_rows
+            card["alternate_art_checked"] = bool(existing_row.get("alternate_art_checked"))
             if not card.get("rarity") and existing_row.get("rarity"):
                 card["rarity"] = existing_row["rarity"]
 

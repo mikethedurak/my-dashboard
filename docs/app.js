@@ -65,6 +65,7 @@ const NEWS_CATEGORIES = [
 const DASHBOARD_ORDER_STORAGE_KEY = "my-dashboard:module-order:v1";
 const DASHBOARD_OPEN_STATE_STORAGE_KEY = "my-dashboard:module-open-state:v1";
 const SUBSECTION_OPEN_STATE_STORAGE_KEY = "my-dashboard:subsection-open-state:v1";
+const COLLECTION_ART_PREFS_STORAGE_KEY = "my-dashboard:collection-art-prefs:v1";
 const MS_PER_DAY = 24 * 60 * 60 * 1000;
 const CAPE_TOWN_LATLNG = [-33.9249, 18.4241];
 const TIMEZONE = "Africa/Johannesburg";
@@ -93,6 +94,8 @@ const state = {
   rarity: "",
   onePieceProducts: [],
   collectionSets: {},
+  collectionCardLookup: {},
+  collectionArtPrefs: {},
   collectionSet: "OP01",
   collectionShowMissing: false,
   collectionShowAvailableMissing: false,
@@ -616,12 +619,108 @@ function showDetailPanel(html, opinionKey = "") {
   document.body.classList.add("watchlist-detail-open");
 }
 
+function loadCollectionArtPrefs() {
+  try {
+    const raw = localStorage.getItem(COLLECTION_ART_PREFS_STORAGE_KEY) || "";
+    const parsed = raw ? JSON.parse(raw) : {};
+    if (!parsed || typeof parsed !== "object" || Array.isArray(parsed)) {
+      return {};
+    }
+    const out = {};
+    for (const [cardNumber, value] of Object.entries(parsed)) {
+      const key = String(cardNumber || "").trim().toUpperCase();
+      if (!key) continue;
+      // Backward compatibility: older versions stored an ordered URL list.
+      if (Array.isArray(value)) {
+        const first = value.map((url) => String(url || "").trim()).find(Boolean) || "";
+        if (first) out[key] = first;
+        continue;
+      }
+      const selected = String(value || "").trim();
+      if (selected) out[key] = selected;
+    }
+    return out;
+  } catch (_error) {
+    return {};
+  }
+}
+
+function saveCollectionArtPrefs() {
+  try {
+    localStorage.setItem(COLLECTION_ART_PREFS_STORAGE_KEY, JSON.stringify(state.collectionArtPrefs || {}));
+  } catch (_error) {
+    // Ignore localStorage failures.
+  }
+}
+
+function defaultCardArtChoices(baseImageUrl, alternateArtUrls) {
+  const available = [String(baseImageUrl || "").trim(), ...(Array.isArray(alternateArtUrls) ? alternateArtUrls : [])]
+    .map((url) => String(url || "").trim())
+    .filter(Boolean);
+  const dedupedAvailable = [];
+  const seen = new Set();
+  for (const url of available) {
+    if (seen.has(url)) continue;
+    seen.add(url);
+    dedupedAvailable.push(url);
+  }
+  return dedupedAvailable;
+}
+
+function normalizeAlternateArts(rawAlternateArts) {
+  const out = [];
+  const seen = new Set();
+  const rows = Array.isArray(rawAlternateArts) ? rawAlternateArts : [];
+  for (const row of rows) {
+    if (!row || typeof row !== "object") continue;
+    const imageUrl = String(row.image_url || "").trim();
+    if (!imageUrl || seen.has(imageUrl)) continue;
+    seen.add(imageUrl);
+    out.push({
+      image_url: imageUrl,
+      label: String(row.label || "").trim(),
+      name: String(row.name || "").trim(),
+    });
+  }
+  return out;
+}
+
+function selectedCardArtUrl(cardNumber, baseImageUrl, alternateArtUrls) {
+  const key = String(cardNumber || "").trim().toUpperCase();
+  const choices = defaultCardArtChoices(baseImageUrl, alternateArtUrls);
+  const preferred = String(state.collectionArtPrefs[key] || "").trim();
+  if (preferred && choices.includes(preferred)) return preferred;
+  return choices[0] || "";
+}
+
+function setPreferredCardArt(cardNumber, imageUrl) {
+  const key = String(cardNumber || "").trim().toUpperCase();
+  const selected = String(imageUrl || "").trim();
+  if (!key || !selected) return;
+  state.collectionArtPrefs[key] = selected;
+  saveCollectionArtPrefs();
+}
+
 function openMissingCardDetail(row) {
   if (!row) return;
+  const cardNumber = String(row.card_number || "").trim().toUpperCase();
+  const meta = state.collectionCardLookup[cardNumber] || {};
+  const alternateArts = normalizeAlternateArts(meta.alternate_arts);
+  const alternateArtUrls = alternateArts.map((item) => item.image_url).filter(Boolean);
   const imageUrl = missingCardImageUrl(row);
   const imageHtml = imageUrl
     ? `<img class="watchlist-detail-poster" src="${escapeHtml(imageUrl)}" alt="${escapeHtml(row.card_number)}">`
     : `<div class="watchlist-detail-poster watchlist-entry-poster-empty">No image</div>`;
+  const alternateArtsHtml = alternateArtUrls.length
+    ? `<div class="watchlist-detail-alt-arts">
+        <p class="watchlist-detail-meta">Alternate Arts (${alternateArtUrls.length})</p>
+        <div class="watchlist-detail-alt-grid">
+          ${alternateArtUrls
+            .map((url, index) => `<a href="${escapeHtml(url)}" target="_blank" rel="noreferrer"><img src="${escapeHtml(url)}" alt="${escapeHtml(`${cardNumber} alternate art ${index + 1}`)}" loading="lazy" onerror="this.style.display='none'"></a>`)
+            .join("")}
+        </div>
+      </div>`
+    : "";
   showDetailPanel(`
     <div class="watchlist-detail-layout">
       ${imageHtml}
@@ -634,6 +733,7 @@ function openMissingCardDetail(row) {
         ${row.set_name ? `<p class="watchlist-detail-meta">${escapeHtml(row.set_name)}</p>` : ""}
         ${row.condition ? `<p class="watchlist-detail-meta">Condition: ${escapeHtml(row.condition)}</p>` : ""}
         ${row.stock ? `<p class="watchlist-detail-meta">Stock: ${escapeHtml(row.stock)}</p>` : ""}
+        ${alternateArtsHtml}
         <div class="watchlist-detail-links">
           <a href="${escapeHtml(row.url)}" target="_blank" rel="noreferrer">Buy now</a>
         </div>
@@ -4865,6 +4965,8 @@ function buildCollectionCardLookup(collectionSets) {
         rarity: String(card.rarity || "").trim(),
         set_name: String(card.set_name || setCode || "").trim(),
         name: String(card.name || "").trim(),
+        alternate_arts: normalizeAlternateArts(card.alternate_arts),
+        image_url: String(card.image_url || "").trim(),
       };
     }
   }
@@ -4974,7 +5076,10 @@ function renderCollectionGrid() {
 
     const rarityClass = card.rarity ? `collection-card-rarity--${slugify(card.rarity)}` : "";
     const num = card.card_number.split("-").pop() || card.card_number;
-    const imgUrl = String(card.image_url || "").trim() || collectionCardImageUrl(card.card_number);
+    const baseImageUrl = String(card.image_url || "").trim() || collectionCardImageUrl(card.card_number);
+    const altUrls = normalizeAlternateArts(card.alternate_arts).map((item) => item.image_url).filter(Boolean);
+    const selectedUrl = selectedCardArtUrl(card.card_number, baseImageUrl, altUrls);
+    const imgUrl = card.owned && selectedUrl ? selectedUrl : baseImageUrl;
     const listings = state.missingListingsByCard[card.card_number] || [];
     const showAvailability = state.collectionShowMissing && state.collectionShowAvailableMissing && !card.owned;
     const hasAvailability = showAvailability && listings.length > 0;
@@ -5026,6 +5131,7 @@ async function loadCollection() {
     const response = await fetchFresh(COLLECTION_PATH);
     if (!response.ok) throw new Error("Could not load collection");
     const payload = await response.json();
+    state.collectionArtPrefs = loadCollectionArtPrefs();
     state.collectionSets = payload.sets || {};
     const sets = Object.keys(state.collectionSets).sort();
     if (sets.length && !state.collectionSets[state.collectionSet]) {
@@ -5418,6 +5524,7 @@ async function loadOnePieceCards() {
     const payload = await missingResponse.json();
     const collectionPayload = collectionResponse.ok ? await collectionResponse.json() : { sets: {} };
     const cardLookup = buildCollectionCardLookup(collectionPayload.sets || {});
+    state.collectionCardLookup = cardLookup;
 
     state.rows = (payload.listings || []).map((raw) => {
       const row = { ...raw };
@@ -6359,9 +6466,20 @@ if (elements.collectionGrid) {
       ? setData.cards
       : (setData.owned || []).map((c) => ({ ...c, owned: true }));
     const row = cards.find((c) => c.card_number === cardNumber);
+    const lookupMeta = state.collectionCardLookup[String(cardNumber || "").trim().toUpperCase()] || {};
     const rarity = row?.rarity || "";
     const isOwned = Boolean(row?.owned);
-    const imgUrl = String(row?.image_url || "").trim() || collectionCardImageUrl(cardNumber);
+    const baseImageUrl = String(row?.image_url || "").trim() || String(lookupMeta.image_url || "").trim() || collectionCardImageUrl(cardNumber);
+    const alternateArts = normalizeAlternateArts(
+      row?.alternate_arts
+    );
+    const alternateArtUrls = alternateArts.map((item) => item.image_url).filter(Boolean);
+    const artChoices = defaultCardArtChoices(baseImageUrl, alternateArtUrls);
+    const selectedUrl = selectedCardArtUrl(cardNumber, baseImageUrl, alternateArtUrls);
+    const imgUrl = selectedUrl || baseImageUrl;
+    const artLabelByUrl = Object.fromEntries(
+      alternateArts.map((item) => [item.image_url, item])
+    );
     const setCode = cardNumber.split("-")[0];
     const borderColor = rarityBorderColor(rarity);
     const posterHtml = `<img class="watchlist-detail-poster" src="${escapeHtml(imgUrl)}" alt="${escapeHtml(cardNumber)}" onerror="this.style.display='none'">`;
@@ -6385,6 +6503,25 @@ if (elements.collectionGrid) {
           })
           .join("")}</div>`
       : "";
+    const alternateArtsHtml = artChoices.length
+      ? `<div class="watchlist-detail-alt-arts">
+          <p class="watchlist-detail-meta">Art Choices (${artChoices.length})</p>
+          <div class="watchlist-detail-alt-grid">
+            ${artChoices
+              .map((url, index) => {
+                const selectedClass = url === selectedUrl ? " is-selected" : "";
+                const disabledAttr = isOwned ? "" : " disabled";
+                const meta = artLabelByUrl[url] || {};
+                const text = index === 0
+                  ? "Original"
+                  : (String(meta.label || "").trim() || String(meta.name || "").trim() || `Art ${index + 1}`);
+                return `<button type="button" class="watchlist-detail-alt-choice${selectedClass}" data-action="select-card-art" data-card-number="${escapeHtml(cardNumber)}" data-image-url="${escapeHtml(url)}"${disabledAttr}><img src="${escapeHtml(url)}" alt="${escapeHtml(`${cardNumber} art ${index + 1}`)}" loading="lazy" onerror="this.style.display='none'"><span class="watchlist-detail-alt-label">${escapeHtml(text)}</span></button>`;
+              })
+              .join("")}
+          </div>
+          ${isOwned ? `<p class="watchlist-detail-meta">Click an art to set it as your main card image.</p>` : ""}
+        </div>`
+      : "";
     showDetailPanel(`
       <div class="watchlist-detail-layout">
         ${posterHtml}
@@ -6398,11 +6535,47 @@ if (elements.collectionGrid) {
           ${family ? `<p class="watchlist-detail-meta">${escapeHtml(family)}</p>` : ""}
           ${description ? `<p class="watchlist-detail-meta">${escapeHtml(description)}</p>` : ""}
           <p class="watchlist-detail-meta">${isOwned ? "✓ In your collection" : "✗ Not owned"}</p>
+          ${alternateArtsHtml}
           ${listings.length ? `<p class="watchlist-detail-meta">${escapeHtml(`${listings.length} listing(s) available`)}</p>` : ""}
           ${listingsHtml}
         </div>
       </div>
     `);
+  });
+}
+
+if (elements.watchlistDetailContent) {
+  elements.watchlistDetailContent.addEventListener("click", (event) => {
+    const button = event.target.closest('[data-action="select-card-art"]');
+    if (!button) return;
+    const cardNumber = String(button.getAttribute("data-card-number") || "").trim().toUpperCase();
+    const imageUrl = String(button.getAttribute("data-image-url") || "").trim();
+    if (!cardNumber || !imageUrl) return;
+    const setCode = cardNumber.split("-")[0];
+    const setData = state.collectionSets[setCode];
+    const cards = Array.isArray(setData?.cards) ? setData.cards : [];
+    const row = cards.find((card) => String(card?.card_number || "").trim().toUpperCase() === cardNumber);
+    if (!row || !row.owned) return;
+    const lookupMeta = state.collectionCardLookup[cardNumber] || {};
+    const baseImageUrl = String(row.image_url || "").trim() || String(lookupMeta.image_url || "").trim() || collectionCardImageUrl(cardNumber);
+    const alternateArts = normalizeAlternateArts(
+      row.alternate_arts
+    );
+    const alternateArtUrls = alternateArts.map((item) => item.image_url).filter(Boolean);
+    const artChoices = defaultCardArtChoices(baseImageUrl, alternateArtUrls);
+    if (!artChoices.includes(imageUrl)) return;
+    setPreferredCardArt(cardNumber, imageUrl);
+    renderCollectionGrid();
+    const panel = elements.watchlistDetailContent;
+    const poster = panel.querySelector(".watchlist-detail-poster");
+    if (poster) {
+      poster.src = imageUrl;
+      poster.alt = cardNumber;
+    }
+    panel.querySelectorAll('[data-action="select-card-art"]').forEach((node) => {
+      const nodeUrl = String(node.getAttribute("data-image-url") || "").trim();
+      node.classList.toggle("is-selected", nodeUrl === imageUrl);
+    });
   });
 }
 

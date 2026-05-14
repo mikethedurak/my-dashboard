@@ -3879,6 +3879,59 @@ td.card-number {
   text-decoration: underline;
 }
 
+.watchlist-detail-alt-arts {
+  margin-top: 10px;
+}
+
+.watchlist-detail-alt-grid {
+  margin-top: 8px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(88px, 1fr));
+  gap: 8px;
+}
+
+.watchlist-detail-alt-grid a {
+  display: block;
+}
+
+.watchlist-detail-alt-choice {
+  appearance: none;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.watchlist-detail-alt-choice:disabled {
+  cursor: default;
+  opacity: 0.75;
+}
+
+.watchlist-detail-alt-choice.is-selected {
+  border-color: var(--accent-strong);
+}
+
+.watchlist-detail-alt-label {
+  display: block;
+  margin-top: 4px;
+  padding: 0 4px 4px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.25;
+}
+
+.watchlist-detail-alt-grid img {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: transparent;
+}
+
 :root[data-theme="dark"] .watchlist-entry-rating {
   color: #93c5fd;
 }

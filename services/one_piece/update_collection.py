@@ -33,6 +33,10 @@ RARITY_CODE_TO_NAME = {
     "L": "Leader",
     "P": "Promo",
 }
+STYLE_CODE_TO_NAME = {
+    "AA": "Alternate Art",
+    "FA": "Full Art",
+}
 
 
 def fetch_text(url: str) -> str:
@@ -67,6 +71,17 @@ def collection_card_image_url(card_number: str) -> str:
     set_code = str(card_number or "").split("-")[0]
     return f"https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/{set_code}/{card_number}_EN.webp"
 
+def collection_card_alt_image_url(card_number: str, variant: int) -> str:
+    set_code = str(card_number or "").split("-")[0]
+    return f"https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/{set_code}/{card_number}_p{variant}_EN.webp"
+
+
+def card_api_url(card_number: str, variant: int = 0) -> str:
+    base = LIMITLESS_CARD_API_URL.format(card_number=card_number)
+    if variant <= 0:
+        return base
+    return f"{base}?v={variant}"
+
 
 def avg_hash(image_bytes: bytes, hash_size: int = 16) -> str:
     img = Image.open(io.BytesIO(image_bytes)).convert("L").resize((hash_size, hash_size), Image.Resampling.LANCZOS)
@@ -79,7 +94,7 @@ def avg_hash(image_bytes: bytes, hash_size: int = 16) -> str:
 
 def fetch_card_metadata(card_number: str) -> dict[str, str]:
     # Prefer structured API fields.
-    api_url = LIMITLESS_CARD_API_URL.format(card_number=card_number)
+    api_url = card_api_url(card_number, variant=0)
     req = urllib.request.Request(api_url, headers={"User-Agent": "Mozilla/5.0", "Accept": "application/json"})
     with urllib.request.urlopen(req, timeout=30) as response:
         data = json.loads(response.read().decode("utf-8"))
@@ -99,6 +114,37 @@ def fetch_card_metadata(card_number: str) -> dict[str, str]:
         "life": "" if data.get("life") is None else str(data.get("life")),
         "power": "" if data.get("power") is None else str(data.get("power")),
     }
+
+
+def fetch_alternate_arts(card_number: str, max_variants: int = 6) -> list[dict[str, str]]:
+    out: list[dict[str, str]] = []
+    for variant in range(1, max_variants + 1):
+        req = urllib.request.Request(
+            card_api_url(card_number, variant=variant),
+            headers={"User-Agent": "Mozilla/5.0", "Accept": "application/json"},
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=30) as response:
+                data = json.loads(response.read().decode("utf-8"))
+        except Exception:  # noqa: BLE001
+            break
+        image_url = collection_card_alt_image_url(card_number, variant)
+        rarity_code = str(data.get("rarity") or "").strip().upper()
+        style_code = str(data.get("style") or "").strip().upper()
+        label = RARITY_CODE_TO_NAME.get(rarity_code, rarity_code) if rarity_code else ""
+        if not label:
+            label = STYLE_CODE_TO_NAME.get(style_code, style_code.title() if style_code else "")
+        set_name = str(data.get("set_name") or "").strip()
+        set_code = str(data.get("set") or "").strip().upper()
+        name = f"{set_name} ({set_code})".strip() if set_name and set_code else set_name or set_code
+        out.append(
+            {
+                "image_url": image_url,
+                "label": label,
+                "name": name,
+            }
+        )
+    return out
 
 
 def load_existing() -> dict:
@@ -130,7 +176,7 @@ def has_missing_fields(card: dict) -> bool:
     card_number = str(card.get("card_number") or "").strip().upper()
     if card_number.startswith("P-") and not str(card.get("rarity") or "").strip():
         card["rarity"] = "Promo"
-    return any(not str(card.get(field) or "").strip() for field in DESIRED_FIELDS)
+    return any(not str(card.get(field) or "").strip() for field in DESIRED_FIELDS) or not bool(card.get("alternate_art_checked"))
 
 
 def merge_preserving_existing(new_payload: dict, old_payload: dict) -> dict:
@@ -153,6 +199,19 @@ def merge_preserving_existing(new_payload: dict, old_payload: dict) -> dict:
             for field in ["card_type", "name", "color", "attribute", "description", "family", "life", "power", "image_url", "image_hash"]:
                 if not str(card.get(field) or "").strip() and str(prev.get(field) or "").strip():
                     card[field] = prev[field]
+            if isinstance(prev.get("alternate_arts"), list):
+                card["alternate_arts"] = [
+                    {
+                        "image_url": str(item.get("image_url") or "").strip(),
+                        "label": str(item.get("label") or "").strip(),
+                        "name": str(item.get("name") or "").strip(),
+                    }
+                    for item in prev["alternate_arts"]
+                    if isinstance(item, dict) and str(item.get("image_url") or "").strip()
+                ]
+            elif not isinstance(card.get("alternate_arts"), list):
+                card["alternate_arts"] = []
+            card["alternate_art_checked"] = bool(prev.get("alternate_art_checked"))
             # Keep existing scraped rarity as source of truth when already present.
             # Overview sheet rarity is used for audit only.
             if str(prev.get("rarity") or "").strip():
@@ -194,6 +253,9 @@ def main() -> int:
                 image_hash = avg_hash(fetch_bytes(image_url))
             card["image_url"] = image_url
             card["image_hash"] = image_hash
+            alternate_arts = fetch_alternate_arts(card_number)
+            card["alternate_arts"] = alternate_arts
+            card["alternate_art_checked"] = True
             for field in ["rarity", "card_type", "name", "color", "attribute", "description", "family", "life", "power"]:
                 value = str(meta.get(field) or "").strip()
                 if value:
