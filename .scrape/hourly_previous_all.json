@@ -785,6 +785,20 @@
       "scraped_at": "2026-05-14T08:04:04Z"
     },
     {
+      "card_number": "OP10-071",
+      "price": "82.0",
+      "title": "Donquixote Doflamingo [Royal Blood]",
+      "rarity": "Super Rare",
+      "store": "Knightly Gaming",
+      "set_name": "Royal Blood",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R82.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-royal-blood",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/617115.jpg?v=1758380198",
+      "scraped_at": "2026-05-13T13:13:39Z"
+    },
+    {
       "card_number": "ST08-001",
       "price": "85.0",
       "title": "Monkey.D.Luffy [Starter Deck: Monkey.D.Luffy]",
@@ -797,20 +811,6 @@
       "url": "https://www.bobshop.co.za/monkey-d-luffy-starter-deck-monkey-d-luffy/p/676860777",
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/503233_1024x1024_2x_2s87ejRtD.webp",
       "scraped_at": "2026-05-14T12:05:37Z"
-    },
-    {
-      "card_number": "OP10-071",
-      "price": "88.0",
-      "title": "Donquixote Doflamingo [Royal Blood]",
-      "rarity": "Super Rare",
-      "store": "Knightly Gaming",
-      "set_name": "Royal Blood",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R88.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-royal-blood",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/617115.jpg?v=1758380198",
-      "scraped_at": "2026-05-13T13:13:39Z"
     },
     {
       "card_number": "EB02-041",
@@ -1304,14 +1304,14 @@
     },
     {
       "card_number": "OP14-091",
-      "price": "353.0",
+      "price": "350.0",
       "title": "Mr.2.Bon.Kurei (Bentham) (Alternate Art) [The Azure Sea's Seven]",
       "rarity": "Super Rare",
       "store": "Knightly Gaming",
       "set_name": "The Azure Sea's Seven",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R353.00",
+      "available_variants": "Near Mint Foil R350.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/mr-2-bon-kurei-bentham-alternate-art-the-azure-seas-seven",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/670640.jpg?v=1769205276",
       "scraped_at": "2026-05-13T13:13:39Z"
@@ -1472,14 +1472,14 @@
     },
     {
       "card_number": "OP11-054",
-      "price": "661.0",
+      "price": "662.0",
       "title": "Nami (054) (Alternate Art) [A Fist of Divine Speed]",
       "rarity": "Super Rare",
       "store": "Knightly Gaming",
       "set_name": "A Fist of Divine Speed",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R661.00",
+      "available_variants": "Near Mint Foil R662.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-054-alternate-art-a-fist-of-divine-speed",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/632422.jpg?v=1757718637",
       "scraped_at": "2026-05-13T13:13:39Z"
@@ -1514,14 +1514,14 @@
     },
     {
       "card_number": "OP14-084",
-      "price": "845.0",
+      "price": "852.0",
       "title": "Ms. All Sunday (Alternate Art) [The Azure Sea's Seven]",
       "rarity": "Super Rare",
       "store": "Knightly Gaming",
       "set_name": "The Azure Sea's Seven",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R845.00",
+      "available_variants": "Near Mint Foil R852.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ms-all-sunday-alternate-art-the-azure-seas-seven",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/666913.jpg?v=1769205349",
       "scraped_at": "2026-05-13T13:13:39Z"
@@ -1654,14 +1654,14 @@
     },
     {
       "card_number": "OP14-096",
-      "price": "1907.0",
+      "price": "1914.0",
       "title": "Ground Death (Alternate Art) [The Azure Sea's Seven]",
       "rarity": "Rare",
       "store": "Knightly Gaming",
       "set_name": "The Azure Sea's Seven",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R1907.00",
+      "available_variants": "Near Mint Foil R1914.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-alternate-art-the-azure-seas-seven",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/670874.jpg?v=1769205424",
       "scraped_at": "2026-05-13T13:13:39Z"
