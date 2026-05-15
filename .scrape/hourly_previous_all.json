@@ -990,20 +990,6 @@
       "condition": "Second Hand",
       "stock": "In stock",
       "available_variants": "",
-      "url": "https://www.bobshop.co.za/hody-jones-wings-of-the-captain/p/679685199",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/539772_1024x1024_2x_IkCMlmur7.webp",
-      "scraped_at": "2026-05-14T14:41:56Z"
-    },
-    {
-      "card_number": "OP06-035",
-      "price": "125.0",
-      "title": "Hody Jones [Wings of the Captain]",
-      "rarity": "",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
       "url": "https://www.bobshop.co.za/hody-jones-wings-of-the-captain/p/679747451",
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/539772_1024x1024_2x_IkCMlmur7.webp",
       "scraped_at": "2026-05-14T14:41:56Z"
@@ -1668,14 +1654,14 @@
     },
     {
       "card_number": "OP06-106",
-      "price": "2680.0",
+      "price": "2765.0",
       "title": "Kouzuki Hiyori (Alternate Art) [Premium Booster -The Best-]",
       "rarity": "Super Rare",
       "store": "Big Bang Shop",
       "set_name": "Premium Booster -The Best-",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R2680.00",
+      "available_variants": "Near Mint Foil R2765.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/kouzuki-hiyori-alternate-art-premium-booster-the-best",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/586547_f8443361-1276-4ecb-b96f-7a9a73f8d367.jpg?v=1763495074",
       "scraped_at": "2026-05-13T14:41:45Z"
