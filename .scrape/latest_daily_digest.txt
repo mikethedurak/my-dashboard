@@ -4,38 +4,38 @@ One Piece Cards
 ---------------
 Added: 0
 
-Updated: 37
-1. Nami (P-053) (Jolly Roger Foil) [Premium Booster -The Best-] | GeekHaven | 35.0
-https://www.bobshop.co.za/nami-p-053-jolly-roger-foil-premium-booster-the-best/p/680357603
-2. Monkey.D.Luffy (P-055) (Reprint) [Premium Booster -The Best-] | GeekHaven | 8.0
-https://www.bobshop.co.za/monkey-d-luffy-p-055-reprint-premium-booster-the-best/p/680357604
-3. Kaido [Romance Dawn] | GeekHaven | 10.0
-https://www.bobshop.co.za/kaido-romance-dawn/p/676859364
-4. Dracule Mihawk (OP01-070) (Reprint) [Premium Booster -The Best-] | GeekHaven | 16.0
-https://www.bobshop.co.za/dracule-mihawk-op01-070-reprint-premium-booster-the-best/p/680358950
-5. Morgan (Pirates Party Vol. 2) [One Piece Promotion Cards] | Knightly Gaming | 18.0
+Updated: 26
+1. Morgan (Pirates Party Vol. 2) [One Piece Promotion Cards] | Knightly Gaming | 18.0
 https://www.knightlygaming.co.za/collections/one-piece-singles/products/morgan-pirates-party-vol-2-one-piece-promotion-cards
-6. Boa Hancock (OP01-078) (Reprint) [Premium Booster -The Best-] | GeekHaven | 22.0
-https://www.bobshop.co.za/boa-hancock-op01-078-reprint-premium-booster-the-best/p/680357572
-7. Perfume Femur (Premium Card Collection -Best Selection Vol. 4-) [One Piece Promotion Cards] | Big Bang Shop | 385.0
+2. Perfume Femur (Premium Card Collection -Best Selection Vol. 4-) [One Piece Promotion Cards] | Big Bang Shop | 385.0
 https://bigbangshop.co.za/collections/one-piece-single-cards/products/perfume-femur-premium-card-collection-best-selection-vol-4-one-piece-promotion-cards
-8. I'm Gonna Be King of the Pirates!! [One Piece Promotion Cards] | Knightly Gaming | 47.0
+3. I'm Gonna Be King of the Pirates!! [One Piece Promotion Cards] | Knightly Gaming | 47.0
 https://www.knightlygaming.co.za/collections/one-piece-singles/products/im-gonna-be-king-of-the-pirates-one-piece-promotion-cards
-9. Monkey.D.Luffy [Starter Deck EX: Gear 5] | GeekHaven | 100.0
-https://www.bobshop.co.za/monkey-d-luffy-starter-deck-ex-gear-5/p/676860911
-10. Perona (Alternate Art) [The Azure Sea's Seven] | Knightly Gaming | 520.0
+4. Perona (Alternate Art) [The Azure Sea's Seven] | Knightly Gaming | 522.0
 https://www.knightlygaming.co.za/collections/one-piece-singles/products/perona-alternate-art-the-azure-seas-seven
-...and 27 more
+5. Trafalgar Law [Starter Deck: Worst Generation] | Knightly Gaming | 62.0
+https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-starter-deck-worst-generation
+6. Donquixote Doflamingo [Royal Blood] | Knightly Gaming | 67.0
+https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-royal-blood
+7. Nami (054) (Alternate Art) [A Fist of Divine Speed] | Knightly Gaming | 662.0
+https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-054-alternate-art-a-fist-of-divine-speed
+8. Uso-Hachi (Alternate Art) [Premium Booster -The Best- Vol. 2] | Big Bang Shop | 560.0
+https://bigbangshop.co.za/collections/one-piece-single-cards/products/uso-hachi-alternate-art-premium-booster-the-best-vol-2
+9. Dracule Mihawk [Live Action Edition] | Big Bang Shop | 100.0
+https://bigbangshop.co.za/collections/one-piece-single-cards/products/dracule-mihawk-live-action-edition
+10. Kouzuki Hiyori (Alternate Art) [Premium Booster -The Best-] | Big Bang Shop | 2765.0
+https://bigbangshop.co.za/collections/one-piece-single-cards/products/kouzuki-hiyori-alternate-art-premium-booster-the-best
+...and 16 more
 
-Removed: 2
-1. Alvida [Starter Deck: Blue Buggy] | GeekHaven | 18.0
-https://www.bobshop.co.za/alvida-starter-deck-blue-buggy/p/676701052
-2. Kuzan [Starter Deck: Black Marshall.D.Teach] | GeekHaven | 90.0
-https://www.bobshop.co.za/kuzan-starter-deck-black-marshall-d-teach/p/676699851
+Removed: 1
+1. Jewelry Bonney [Carrying On His Will] | GeekHaven | 72.0
+https://www.bobshop.co.za/jewelry-bonney-carrying-on-his-will/p/676766888
 
 New Releases
 ------------
-Added: 0
+Added: 1
+1. Lee Cronin’s The Mummy
+https://pahe.ink/lee-cronins-the-mummy-2026-web-dl-480p-720p-1080p/
 
 Updated: 0
 
@@ -59,25 +59,17 @@ Removed: 0
 
 New Game Releases
 -----------------
-Added: 3
-1. Black Jacket | 2026-05-13
-https://rawg.io/games/black-jacket
-2. Call of the Elder Gods | 2026-05-12
-https://rawg.io/games/call-of-the-elder-gods
-3. Corsairs - Battle of the Caribbean | 2026-05-17
-https://rawg.io/games/corsairs-battle-of-the-caribbean
+Added: 1
+1. Vultures - Scavengers of Death | 2026-05-13
+https://rawg.io/games/vultures-scavengers-of-death
 
 Updated: 1
-1. Mixtape | 2026-05-07
-https://rawg.io/games/mixtape
+1. Directive 8020 | 2026-05-12
+https://rawg.io/games/the-dark-pictures-directive-8020
 
-Removed: 3
-1. The Last Gas Station | 2026-04-27
-https://rawg.io/games/the-last-gas-station
-2. Elementallis | 2026-04-27
-https://rawg.io/games/elementallis-2
-3. [RANDOM] | 2026-04-27
-https://rawg.io/games/random-2
+Removed: 1
+1. Magin: The Rat Project Stories | 2026-04-28
+https://rawg.io/games/magin-the-rat-project-stories
 
 Coming Soon Games
 -----------------
@@ -85,9 +77,7 @@ Added: 0
 
 Updated: 0
 
-Removed: 1
-1. Corsairs - Battle of the Caribbean | 2026-05-17
-https://rawg.io/games/corsairs-battle-of-the-caribbean
+Removed: 0
 
 Bandsintown Events
 ------------------
@@ -99,81 +89,49 @@ Removed: 0
 
 Quicket Events
 --------------
-Added: 12
-1. The Two Oceans Aquarium: The Waterfront Duck Co Tours: Jan - March 2027 | 2027-01-01T10:00:00+02:00 | Two Oceans Aquarium - The Duck Boat
-https://www.quicket.co.za/events/369652-the-two-oceans-aquarium-the-waterfront-duck-co-tours-jan-march-2027/
-2. REAL Women's Konferensie | 2026-06-05T19:00:00+02:00 | Vriend van God Vredekloof Kampus
-https://www.quicket.co.za/events/367481-real-womens-konferensie/
-3. DEFYING POP: 2000's vs 2010's 2.0 | 2026-05-30T20:00:00+02:00 | Botanik Social House
-https://www.quicket.co.za/events/363550-defying-pop-2000s-vs-2010s-20/
-4. DISTRICT SIX MUSEUM: JANUARY 2027 ADMISSION TICKETS | 2027-01-02T09:00:00+02:00 | 25A Buitenkant St
-https://www.quicket.co.za/events/365067-district-six-museum-january-2027-admission-tickets/
-5. DinnerOnUs Menu Tasting Event | 2026-06-13T16:00:00+02:00 | Makers Landing
-https://www.quicket.co.za/events/369597-dinneronus-menu-tasting-event/
-6. Constantiaberg Business Co. | 2026-05-29T07:15:00+02:00 | CHS Life Centre
-https://www.quicket.co.za/events/373579-constantiaberg-business-co/
-7. Careers & Cocktails: For the career-pivoting SAHM | 2026-05-23T12:00:00+02:00 | InUWell
-https://www.quicket.co.za/events/328936-careers-cocktails-for-the-career-pivoting-sahm/
-8. B*tchy Bingo | 2026-05-19T19:00:00+02:00 | Duchess Lounge
-https://www.quicket.co.za/events/370378-btchy-bingo/
-9. Watershed Stripped Down @ café Roux | 2026-06-05T18:00:00+02:00 | Cafe Roux
-https://www.quicket.co.za/events/369440-watershed-stripped-down-caf-roux/
-10. WUCT Drumming Fundraising Evening | 2026-05-30T18:30:00+02:00 | Westlake United Church Trust
-https://www.quicket.co.za/events/370560-wuct-drumming-fundraising-evening/
-...and 2 more
-
-Updated: 2
-1. The Good News - Live Concert | 2026-05-30T16:00:00+02:00 | 240 Retreat Rd
-https://www.quicket.co.za/events/369910-the-good-news-live-concert/
-2. Mr Gold Coast Continental and Miss South Africa Continental 2026 Preliminary Pageant | 2026-05-30T18:00:00+02:00 | Joseph Stone Auditorium
-https://www.quicket.co.za/events/368425-mr-gold-coast-continental-and-miss-south-africa-continental-2026-preliminary-pa/
-
-Removed: 12
-1. World Belly Dance Day, Cape Town, 2026 | 2026-05-16T11:15:00+02:00 | THE WAVE THEATRE
-https://www.quicket.co.za/events/363063-world-belly-dance-day-cape-town-2026/
-2. Mother City Meetup (16 May 2026) | 2026-05-16T09:00:00+02:00 | Durbanville Town Hall
-https://www.quicket.co.za/events/363893-mother-city-meetup-16-may-2026/
-3. MERKT @ The Electric | 2026-05-16T18:00:00+02:00 | THE ELECTRIC
-https://www.quicket.co.za/events/373320-merkt-the-electric/
-4. HOTEL CALIFORNIA THE ULIMATE EAGLES TRIBUTE AT SIMONS | 2026-05-16T18:00:00+02:00 | Simons at Groot Constantia
-https://www.quicket.co.za/events/358184-hotel-california-the-ulimate-eagles-tribute-at-simons/
-5. From Trauma to Lasting Wellbeing: Self Empowerment for Transformation & Healing | 2026-05-16T14:00:00+02:00 | Path to Health Centre
-https://www.quicket.co.za/events/373175-from-trauma-to-lasting-wellbeing-self-empowerment-for-transformation-healing/
-6. Unwind in colour-a mixed media crafternoon | 2026-05-16T15:00:00+02:00 | Moosh Artspace
-https://www.quicket.co.za/events/371501-unwind-in-colour-a-mixed-media-crafternoon/
-7. Bad Behaviour presented by Oh So 2000 & URBN Takeover | 2026-05-16T21:00:00+02:00 | Destiny Cape Town
-https://www.quicket.co.za/events/375187-bad-behaviour-presented-by-oh-so-2000-urbn-takeover/
-8. Cape Town SAGA Regional General Meeting | 2026-05-16T10:00:00+02:00 | Artscape Theatre Centre
-https://www.quicket.co.za/events/370555-cape-town-saga-regional-general-meeting/
-9. Selective Live — Music Experience with Mikhale Jones | 2026-05-24T15:00:00+02:00 | 2 Roodehek St
-https://www.quicket.co.za/events/369263-selective-live-music-experience-with-mikhale-jones/
-10. Stellenbosch OPSKOP inni Kaap | 2026-05-16T14:00:00+02:00 | Ongetem Restaurant & Bar
-https://www.quicket.co.za/events/368791-stellenbosch-opskop-inni-kaap/
-...and 2 more
-
-Webtickets Events
------------------
 Added: 4
-1. Cape Town Abseil | From 17 May 2026 | Table Mountain | R995 - R1100
-https://www.webtickets.co.za/v2/event.aspx?itemid=1531472391
-2. Carmen | From 19 May 2026 19:00 | Artscape, Opera House, Cape Town | R180 - R950
-https://www.webtickets.co.za/v2/event.aspx?itemid=1587944448
-3. Alfred Adriaan - Positive Strokes ‘BACK BY POPULAR DEMAND’ | 17 May 2026 15:00 | Drostdy Theatre, Cnr Alexander St &, Bird St, Stellenbosch | R210
-https://www.webtickets.co.za/v2/event.aspx?itemid=1589569742
-4. Richard O'Brien's The Rocky Horror Show (CPT) | From 17 May 2026 15:00 | Theatre On The Bay, Camps Bay | R295 - R495
-https://www.webtickets.co.za/v2/event.aspx?itemid=1588915971
+1. The Red Cup Party - Birthday Edition | 2026-06-06T19:00:00+02:00 | Zevolis Bar & Kitchen
+https://www.quicket.co.za/events/363419-the-red-cup-party-birthday-edition/
+2. Broadway to Blockbuster | 2026-06-12T19:30:00+02:00 | City Hall
+https://www.quicket.co.za/events/368748-broadway-to-blockbuster/
+3. DISTRICT SIX MUSEUM: FEBRUARY 2027 ADMISSION TICKETS | 2027-02-01T09:00:00+02:00 | 25A Buitenkant St
+https://www.quicket.co.za/events/365070-district-six-museum-february-2027-admission-tickets/
+4. SOLD OUT! The Voice of Hind Rajab - Cape Town Canal Walk 2PM | 2026-05-23T14:00:00+02:00 | Nu Metro Canal Walk Shopping Centre
+https://www.quicket.co.za/events/374727-sold-out-the-voice-of-hind-rajab-cape-town-canal-walk-2pm/
 
 Updated: 0
 
 Removed: 4
-1. Stellenbosch FC vs Orbit College FC | From 16 May 2026 15:00 | Danie Craven Stadium, Stellenbosch, Western Cape | R40
-https://www.webtickets.co.za/v2/event.aspx?itemid=1574731337
-2. KILLARNEY KART RACERS REV IT TO THE MAX! | 16 May 2026 09:00 | Killarney International Raceway, 6 Potsdam Road, Table View | R10 - R100
-https://www.webtickets.co.za/v2/event.aspx?itemid=1595546472
-3. Dance Mosaic: Dancing for Dogs | From 16 May 2026 15:00 | The George Arts Theatre, 125 York Street, George Central | R100 - R250
-https://www.webtickets.co.za/v2/event.aspx?itemid=1593200173
-4. Betway Premiership: Chippa United FC vs Lamontville Golden Arrows | From 16 May 2026 15:00 | Nelson Mandela Bay Stadium, Prince Alfred Road, North End, Gqeberha | R30 - R60
-https://www.webtickets.co.za/v2/event.aspx?itemid=1593176543
+1. Crosby, Stills, Nash & Young: The CSNY Experience | 2026-05-17T18:00:00+02:00 | The Alma Cafe
+https://www.quicket.co.za/events/369632-crosby-stills-nash-young-the-csny-experience/
+2. Journey To Neverland | 2026-05-17T15:00:00+02:00 | Homecoming Centre
+https://www.quicket.co.za/events/365054-journey-to-neverland/
+3. Freddy L LIVE! @ café Roux | 2026-05-17T16:00:00+02:00 | Cafe Roux
+https://www.quicket.co.za/events/365300-freddy-l-live-caf-roux/
+4. The Voice of Hind Rajab - Cape Town Canal Walk 2PM | 2026-05-23T14:00:00+02:00 | Nu Metro Canal Walk Shopping Centre
+https://www.quicket.co.za/events/374727-the-voice-of-hind-rajab-cape-town-canal-walk-2pm/
+
+Webtickets Events
+-----------------
+Added: 2
+1. The Prince of Egypt - The Musical | From 20 May 2026 19:00 | The George Arts Theatre, 125 York St, George Central, George, 6529 | R170
+https://www.webtickets.co.za/v2/event.aspx?itemid=1586944542
+2. Africa Day DJ Night | 22 May 2026 18:00 | Iziko South African National Gallery | R250 - R400
+https://www.webtickets.co.za/v2/event.aspx?itemid=1595130257
+
+Updated: 3
+1. Cape Town Abseil | From 18 May 2026 | Table Mountain | R995 - R1100
+https://www.webtickets.co.za/v2/event.aspx?itemid=1531472391
+2. Carmen | From 19 May 2026 19:00 | Artscape, Opera House, Cape Town | R180 - R950
+https://www.webtickets.co.za/v2/event.aspx?itemid=1587944448
+3. Richard O'Brien's The Rocky Horror Show (CPT) | From 19 May 2026 20:00 | Theatre On The Bay, Camps Bay | R295 - R495
+https://www.webtickets.co.za/v2/event.aspx?itemid=1588915971
+
+Removed: 2
+1. Franschhoek Literary Festival 2026 | 15 - 17 May 2026 | various prices
+https://www.webtickets.co.za/v2/event.aspx?itemid=1589974554
+2. Alfred Adriaan - Positive Strokes ‘BACK BY POPULAR DEMAND’ | 17 May 2026 15:00 | Drostdy Theatre, Cnr Alexander St &, Bird St, Stellenbosch | R210
+https://www.webtickets.co.za/v2/event.aspx?itemid=1589569742
 
 Google Calendar
 ---------------

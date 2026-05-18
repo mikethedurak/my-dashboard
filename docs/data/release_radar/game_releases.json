@@ -42,6 +42,14 @@
       "platforms": "PC"
     },
     {
+      "title": "Vultures - Scavengers of Death",
+      "url": "https://rawg.io/games/vultures-scavengers-of-death",
+      "image": "https://media.rawg.io/media/screenshots/de0/de0325bbad5c0ce779a0d956c7fb61a0.jpg",
+      "release_date": "2026-05-13",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
       "title": "Black Jacket",
       "url": "https://rawg.io/games/black-jacket",
       "image": "https://media.rawg.io/media/screenshots/16b/16b3b24cebc56923449cb2396517adfa.jpg",
@@ -86,7 +94,7 @@
       "url": "https://rawg.io/games/the-dark-pictures-directive-8020",
       "image": "https://media.rawg.io/media/games/10d/10dd957940dbaedc77a08730995194c7.jpg",
       "release_date": "2026-05-12",
-      "rating": "2.9",
+      "rating": "3.0",
       "platforms": "PC, PlayStation 5, Xbox Series S/X"
     },
     {
@@ -234,20 +242,20 @@
       "platforms": "PC, macOS, Linux"
     },
     {
-      "title": "Saros",
-      "url": "https://rawg.io/games/saros",
-      "image": "https://media.rawg.io/media/games/be8/be86ee5cf3a427c784efec1661f9b194.jpg",
-      "release_date": "2026-04-30",
-      "rating": "0.0",
-      "platforms": "PlayStation 5"
-    },
-    {
       "title": "Librarian: Tidy Up the Arcane Library!",
       "url": "https://rawg.io/games/librarian-tidy-up-the-arcane-library",
       "image": "https://media.rawg.io/media/screenshots/f55/f55e26672d03de9bf9e974d03159fc5e.jpg",
       "release_date": "2026-04-30",
       "rating": "0.0",
       "platforms": "PC"
+    },
+    {
+      "title": "Saros",
+      "url": "https://rawg.io/games/saros",
+      "image": "https://media.rawg.io/media/games/be8/be86ee5cf3a427c784efec1661f9b194.jpg",
+      "release_date": "2026-04-30",
+      "rating": "0.0",
+      "platforms": "PlayStation 5"
     },
     {
       "title": "Crossed Tiles",
@@ -274,17 +282,17 @@
       "platforms": "PC, PlayStation 5, Xbox Series S/X"
     },
     {
-      "title": "Heroes of Might & Magic: Olden Era",
-      "url": "https://rawg.io/games/heroes-of-might-magic-olden-era",
-      "image": "https://media.rawg.io/media/screenshots/69e/69ece38d22dcc1c44de7ddb7901a1a41.jpg",
+      "title": "Magical Blush Demo",
+      "url": "https://rawg.io/games/magical-blush-demo",
+      "image": "https://media.rawg.io/media/screenshots/2fb/2fbc0b1f2fda6a32ed349397d6f0511d.jpg",
       "release_date": "2026-04-30",
       "rating": "0.0",
       "platforms": "PC"
     },
     {
-      "title": "Magical Blush Demo",
-      "url": "https://rawg.io/games/magical-blush-demo",
-      "image": "https://media.rawg.io/media/screenshots/2fb/2fbc0b1f2fda6a32ed349397d6f0511d.jpg",
+      "title": "Heroes of Might & Magic: Olden Era",
+      "url": "https://rawg.io/games/heroes-of-might-magic-olden-era",
+      "image": "https://media.rawg.io/media/screenshots/69e/69ece38d22dcc1c44de7ddb7901a1a41.jpg",
       "release_date": "2026-04-30",
       "rating": "0.0",
       "platforms": "PC"
@@ -392,14 +400,6 @@
       "release_date": "2026-04-28",
       "rating": "0.0",
       "platforms": "PC, PlayStation 5, Xbox Series S/X"
-    },
-    {
-      "title": "Magin: The Rat Project Stories",
-      "url": "https://rawg.io/games/magin-the-rat-project-stories",
-      "image": "https://media.rawg.io/media/screenshots/870/870f74d67e143700f93c288324da9ae9.jpg",
-      "release_date": "2026-04-28",
-      "rating": "0.0",
-      "platforms": "PC"
     }
   ],
   "coming_soon": [

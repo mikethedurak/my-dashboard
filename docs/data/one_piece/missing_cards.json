@@ -785,6 +785,20 @@
       "scraped_at": "2026-05-14T08:04:04Z"
     },
     {
+      "card_number": "P-052",
+      "price": 100.0,
+      "title": "Dracule Mihawk [Live Action Edition]",
+      "rarity": "Promo",
+      "store": "Big Bang Shop",
+      "set_name": "Live Action Edition",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R100.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/dracule-mihawk-live-action-edition",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/546713_ed599c5b-3ea8-4f54-b724-6e273d6ef740.jpg?v=1763495310",
+      "scraped_at": "2026-05-17T21:42:49Z"
+    },
+    {
       "card_number": "ST21-014",
       "price": 100.0,
       "title": "Monkey.D.Luffy [Starter Deck EX: Gear 5]",
@@ -797,20 +811,6 @@
       "url": "https://www.bobshop.co.za/monkey-d-luffy-starter-deck-ex-gear-5/p/676860911",
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/615564_1024x1024_2x_oGJzN0Ciz.jpg",
       "scraped_at": "2026-05-16T17:44:36Z"
-    },
-    {
-      "card_number": "P-052",
-      "price": 105.0,
-      "title": "Dracule Mihawk [Live Action Edition]",
-      "rarity": "Promo",
-      "store": "Big Bang Shop",
-      "set_name": "Live Action Edition",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R105.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/dracule-mihawk-live-action-edition",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/546713_ed599c5b-3ea8-4f54-b724-6e273d6ef740.jpg?v=1763495310",
-      "scraped_at": "2026-05-17T21:42:49Z"
     },
     {
       "card_number": "OP10-118",

@@ -1151,6 +1151,23 @@
       "Mamoru Hosoda"
     ]
   },
+  "anime_movie:one piece clockwork island adventure": {
+    "title": "One Piece: Clockwork Island Adventure",
+    "media_type": "anime_movie",
+    "overview": null,
+    "poster_url": null,
+    "directors": null,
+    "genres": null,
+    "number_of_seasons": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "release_date": null,
+    "trailer_url": null,
+    "actors": null,
+    "tmdb_url": null,
+    "tmdb_id": null
+  },
   "anime_movie:one piece gold": {
     "title": "One Piece: Gold",
     "media_type": "anime_movie",
@@ -10403,22 +10420,22 @@
       "Science Fiction"
     ]
   },
-  "movie:how to train your dragon liveaction collection": {
-    "title": "How to Train Your Dragon (Live-Action) Collection",
+  "movie:how to train your dragon liveaction": {
+    "title": "How to Train Your Dragon (Live-Action)",
     "media_type": "movie",
     "overview": null,
-    "runtime_minutes": null,
-    "genres": null,
-    "actors": null,
-    "directors": null,
-    "tmdb_id": null,
-    "trailer_url": null,
     "poster_url": null,
+    "directors": null,
+    "genres": null,
     "number_of_seasons": null,
-    "tmdb_url": null,
-    "release_date": null,
     "description": null,
-    "rating": null
+    "rating": null,
+    "runtime_minutes": null,
+    "release_date": null,
+    "trailer_url": null,
+    "actors": null,
+    "tmdb_url": null,
+    "tmdb_id": null
   },
   "movie:i like movies": {
     "title": "I Like Movies!",
@@ -11381,37 +11398,22 @@
     "media_type": "movie",
     "number_of_seasons": null
   },
-  "movie:lilo  stitch": {
-    "title": "Lilo & Stitch",
+  "movie:lilo  stitch live action": {
+    "title": "Lilo & Stitch (Live Action)",
     "media_type": "movie",
-    "overview": "The wildly funny and touching story of a lonely Hawaiian girl and the fugitive alien who helps to mend her broken family.",
-    "runtime_minutes": 108,
-    "genres": [
-      "Family",
-      "Science Fiction",
-      "Comedy"
-    ],
-    "actors": [
-      "Maia Kealoha",
-      "Sydney Agudong",
-      "Chris Sanders",
-      "Zach Galifianakis",
-      "Billy Magnussen",
-      "Courtney B. Vance",
-      "Amy Hill",
-      "Tia Carrere"
-    ],
-    "directors": [
-      "Dean Fleischer Camp"
-    ],
-    "tmdb_id": 552524,
-    "trailer_url": "https://www.youtube.com/watch?v=zYqZ18i-ktE",
-    "poster_url": "https://image.tmdb.org/t/p/w342/ckQzKpQJO4ZQDCN5evdpKcfm7Ys.jpg",
+    "overview": null,
+    "poster_url": null,
+    "directors": null,
+    "genres": null,
     "number_of_seasons": null,
-    "tmdb_url": "https://www.themoviedb.org/movie/552524",
-    "release_date": "2025-05-17",
-    "description": "The wildly funny and touching story of a lonely Hawaiian girl and the fugitive alien who helps to mend her broken family.",
-    "rating": 7.2
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "release_date": null,
+    "trailer_url": null,
+    "actors": null,
+    "tmdb_url": null,
+    "tmdb_id": null
   },
   "movie:longlegs": {
     "title": "Longlegs",
@@ -16014,38 +16016,6 @@
     ],
     "trailer_url": "https://www.youtube.com/watch?v=T76K3RxJY0A"
   },
-  "movie:the frog prince": {
-    "title": "The Frog Prince",
-    "rating": 6.4,
-    "poster_url": "https://image.tmdb.org/t/p/w342/13pKq7HqlaBtU2OurMU3zRCtooi.jpg",
-    "tmdb_id": 71747,
-    "release_date": "1986-10-05",
-    "overview": "Children's musical based on Grimm's fairy tale of The Frog-King. A young girl learns how to be a good friend and princess with the help of a \"tall frog.\"",
-    "trailer_url": "",
-    "genres": [
-      "Family",
-      "Fantasy",
-      "Music"
-    ],
-    "actors": [
-      "Aileen Quinn",
-      "Helen Hunt",
-      "John Paragon",
-      "Clive Revill",
-      "Seagull Cohen",
-      "Shmuel Atzmon",
-      "Jeff Gerner",
-      "Aaron Kaplan"
-    ],
-    "tmdb_url": "https://www.themoviedb.org/movie/71747",
-    "description": "Children's musical based on Grimm's fairy tale of The Frog-King. A young girl learns how to be a good friend and princess with the help of a \"tall frog.\"",
-    "directors": [
-      "Jackson Hunsicker"
-    ],
-    "runtime_minutes": 86,
-    "media_type": "movie",
-    "number_of_seasons": null
-  },
   "movie:the game": {
     "title": "The Game",
     "rating": 8.0,
@@ -17100,6 +17070,23 @@
     "runtime_minutes": 130,
     "media_type": "movie",
     "number_of_seasons": null
+  },
+  "movie:the princess and the frog": {
+    "title": "The Princess and the Frog",
+    "media_type": "movie",
+    "overview": null,
+    "poster_url": null,
+    "directors": null,
+    "genres": null,
+    "number_of_seasons": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "release_date": null,
+    "trailer_url": null,
+    "actors": null,
+    "tmdb_url": null,
+    "tmdb_id": null
   },
   "movie:the rat catcher": {
     "title": "The Rat Catcher",
@@ -24277,36 +24264,6 @@
       "David Leitch"
     ],
     "runtime_minutes": 127
-  },
-  "the frog prince": {
-    "title": "The Frog Prince",
-    "rating": 6.4,
-    "poster_url": "https://image.tmdb.org/t/p/w342/13pKq7HqlaBtU2OurMU3zRCtooi.jpg",
-    "tmdb_id": 71747,
-    "release_date": "1986-10-05",
-    "overview": "Children's musical based on Grimm's fairy tale of The Frog-King. A young girl learns how to be a good friend and princess with the help of a \"tall frog.\"",
-    "trailer_url": "",
-    "genres": [
-      "Family",
-      "Fantasy",
-      "Music"
-    ],
-    "actors": [
-      "Aileen Quinn",
-      "Helen Hunt",
-      "John Paragon",
-      "Clive Revill",
-      "Seagull Cohen",
-      "Shmuel Atzmon",
-      "Jeff Gerner",
-      "Aaron Kaplan"
-    ],
-    "tmdb_url": "https://www.themoviedb.org/movie/71747",
-    "description": "Children's musical based on Grimm's fairy tale of The Frog-King. A young girl learns how to be a good friend and princess with the help of a \"tall frog.\"",
-    "directors": [
-      "Jackson Hunsicker"
-    ],
-    "runtime_minutes": 86
   },
   "the game": {
     "title": "The Game",

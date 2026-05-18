@@ -820,7 +820,7 @@
         },
         {
           "type": "movie",
-          "title": "Lilo & Stitch",
+          "title": "Lilo & Stitch (Live Action)",
           "opinion": ""
         },
         {
@@ -835,7 +835,7 @@
         },
         {
           "type": "movie",
-          "title": "How to Train Your Dragon (Live-Action) Collection",
+          "title": "How to Train Your Dragon (Live-Action)",
           "opinion": "Liked"
         },
         {
@@ -1190,7 +1190,7 @@
         },
         {
           "type": "movie",
-          "title": "The Frog Prince",
+          "title": "The Princess and the Frog",
           "opinion": ""
         },
         {
@@ -2580,11 +2580,6 @@
         },
         {
           "type": "anime_movie",
-          "title": "Ghost in the Shell",
-          "opinion": ""
-        },
-        {
-          "type": "anime_movie",
           "title": "Wolf Children",
           "opinion": ""
         },
@@ -2765,7 +2760,17 @@
         },
         {
           "type": "anime_movie",
+          "title": "Meters",
+          "opinion": ""
+        },
+        {
+          "type": "anime_movie",
           "title": "One Piece: The Movie",
+          "opinion": ""
+        },
+        {
+          "type": "anime_movie",
+          "title": "One Piece: Clockwork Island Adventure",
           "opinion": ""
         },
         {
@@ -2796,11 +2801,6 @@
         {
           "type": "anime_movie",
           "title": "One Piece: Red",
-          "opinion": ""
-        },
-        {
-          "type": "anime_movie",
-          "title": "Meters",
           "opinion": ""
         },
         {

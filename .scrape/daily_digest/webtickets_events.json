@@ -1,60 +1,9 @@
 [
   {
-    "title": "Franschhoek Literary Festival 2026",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1589974554",
-    "image": "https://content.webtickets.co.za/flf/panel_FLF2025_20240605_122127.JPG",
-    "date_text": "15 - 17 May 2026",
-    "venue": "",
-    "price": "various prices",
-    "source": "Webtickets",
-    "region": "Western Cape",
-    "categories": [
-      "festival"
-    ],
-    "missing_location": true,
-    "location_key": "",
-    "missing_place": true,
-    "place_key": ""
-  },
-  {
-    "title": "Alfred Adriaan - Positive Strokes ‘BACK BY POPULAR DEMAND’",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1589569742",
-    "image": "https://content.webtickets.co.za/DrostdyTheatre/panel_alfred.webtickets_20260227_141506.jpg",
-    "date_text": "17 May 2026 15:00",
-    "venue": "Drostdy Theatre, Cnr Alexander St &, Bird St, Stellenbosch",
-    "price": "R210",
-    "source": "Webtickets",
-    "region": "Western Cape",
-    "categories": [
-      "theatre"
-    ],
-    "missing_location": true,
-    "location_key": "",
-    "missing_place": true,
-    "place_key": ""
-  },
-  {
-    "title": "Richard O'Brien's The Rocky Horror Show (CPT)",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1588915971",
-    "image": "https://content.webtickets.co.za/PTProductions/panel_Webtickets 2026_20260211_164743.jpg",
-    "date_text": "From 17 May 2026 15:00",
-    "venue": "Theatre On The Bay, Camps Bay",
-    "price": "R295 - R495",
-    "source": "Webtickets",
-    "region": "Western Cape",
-    "categories": [
-      "theatre"
-    ],
-    "missing_location": true,
-    "location_key": "",
-    "missing_place": true,
-    "place_key": ""
-  },
-  {
     "title": "Cape Town Abseil",
     "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1531472391",
     "image": "https://content.webtickets.co.za/WildHorizons/panel_DSC06292_20230725_105701.jpg",
-    "date_text": "From 17 May 2026",
+    "date_text": "From 18 May 2026",
     "venue": "Table Mountain",
     "price": "R995 - R1100",
     "source": "Webtickets",
@@ -68,7 +17,7 @@
   {
     "title": "Carmen",
     "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1587944448",
-    "image": "https://content.webtickets.co.za/artscape/panel_Webtickets_Carmen_20260311_094401.jpg",
+    "image": "https://content.webtickets.co.za/artscape/panel_Webtickets_Carmen_20260518_084950.png",
     "date_text": "From 19 May 2026 19:00",
     "venue": "Artscape, Opera House, Cape Town",
     "price": "R180 - R950",
@@ -78,6 +27,60 @@
       "dj",
       "art",
       "theatre"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Richard O'Brien's The Rocky Horror Show (CPT)",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1588915971",
+    "image": "https://content.webtickets.co.za/PTProductions/panel_Webtickets 2026_20260211_164743.jpg",
+    "date_text": "From 19 May 2026 20:00",
+    "venue": "Theatre On The Bay, Camps Bay",
+    "price": "R295 - R495",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "theatre"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "The Prince of Egypt - The Musical",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1586944542",
+    "image": "https://content.webtickets.co.za/WhitePeacockStudio/panel_A White Peacock Studio_20260121_134711.jpg",
+    "date_text": "From 20 May 2026 19:00",
+    "venue": "The George Arts Theatre, 125 York St, George Central, George, 6529",
+    "price": "R170",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "music",
+      "art",
+      "theatre"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Africa Day DJ Night",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1595130257",
+    "image": "https://content.webtickets.co.za/Izikomuseum/panel_Afrika DayFB banner_20260518_095010.jpg",
+    "date_text": "22 May 2026 18:00",
+    "venue": "Iziko South African National Gallery",
+    "price": "R250 - R400",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "dj",
+      "art"
     ],
     "missing_location": true,
     "location_key": "",
