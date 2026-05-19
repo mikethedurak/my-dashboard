@@ -484,8 +484,8 @@
     "title": "Centimetres Per Second",
     "media_type": "anime_movie",
     "runtime_minutes": 121,
-    "tmdb_url": "https://www.themoviedb.org/movie/1359916",
-    "tmdb_id": 1359916,
+    "tmdb_url": "https://www.themoviedb.org/movie/38142",
+    "tmdb_id": 38142,
     "genres": [
       "Romance",
       "Drama"
@@ -676,8 +676,8 @@
     "title": "Dragon Ball Z: Battle of the Gods",
     "media_type": "anime_movie",
     "runtime_minutes": null,
-    "tmdb_url": null,
-    "tmdb_id": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/126963",
+    "tmdb_id": 126963,
     "genres": null,
     "actors": null,
     "rating": null,
@@ -867,8 +867,8 @@
     "title": "Ghost in the Shell",
     "media_type": "anime_movie",
     "runtime_minutes": 107,
-    "tmdb_url": "https://www.themoviedb.org/movie/315837",
-    "tmdb_id": 315837,
+    "tmdb_url": "https://www.themoviedb.org/movie/9323",
+    "tmdb_id": 9323,
     "genres": [
       "Science Fiction",
       "Drama",
@@ -6382,7 +6382,7 @@
     "title": "Animal Farm",
     "rating": 0.0,
     "poster_url": "https://image.tmdb.org/t/p/w342/6pzI1DIlxwAFffw9OZcG6cr031U.jpg",
-    "tmdb_id": 539745,
+    "tmdb_id": 11848,
     "release_date": "2026-04-30",
     "overview": "A satirical fable following an animal revolution as pigs seize power and the farm descends into a ruthless dictatorship—fulfilling Orwell’s warning about the dangers of communism.",
     "trailer_url": "https://www.youtube.com/watch?v=NN6J7l6ulYk",
@@ -6402,7 +6402,7 @@
       "Steve Buscemi",
       "Kathleen Turner"
     ],
-    "tmdb_url": "https://www.themoviedb.org/movie/539745",
+    "tmdb_url": "https://www.themoviedb.org/movie/11848",
     "description": "A satirical fable following an animal revolution as pigs seize power and the farm descends into a ruthless dictatorship—fulfilling Orwell’s warning about the dangers of communism.",
     "directors": [
       "Andy Serkis"
@@ -7522,8 +7522,8 @@
     "rating": null,
     "number_of_seasons": null,
     "poster_url": null,
-    "tmdb_url": null,
-    "tmdb_id": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/744746",
+    "tmdb_id": 744746,
     "trailer_url": null,
     "directors": null,
     "release_date": null,
@@ -7577,10 +7577,10 @@
     "number_of_seasons": null,
     "tmdb_url": "https://www.themoviedb.org/movie/1498563",
     "rating": 0.0,
-    "poster_url": "",
+    "poster_url": null,
     "description": "A live performance of the comedy duo filmed at Spanky's Nightclub in 1978.  Was original released on the Meda Home video label.",
-    "directors": [],
-    "trailer_url": ""
+    "directors": null,
+    "trailer_url": null
   },
   "movie:chip n dale rescue rangers": {
     "title": "Chip ’n Dale: Rescue Rangers",
@@ -10434,8 +10434,8 @@
     "release_date": null,
     "trailer_url": null,
     "actors": null,
-    "tmdb_url": null,
-    "tmdb_id": null
+    "tmdb_url": "https://www.themoviedb.org/movie/1087192",
+    "tmdb_id": 1087192
   },
   "movie:i like movies": {
     "title": "I Like Movies!",
@@ -11412,8 +11412,8 @@
     "release_date": null,
     "trailer_url": null,
     "actors": null,
-    "tmdb_url": null,
-    "tmdb_id": null
+    "tmdb_url": "https://www.themoviedb.org/movie/552524",
+    "tmdb_id": 552524
   },
   "movie:longlegs": {
     "title": "Longlegs",
@@ -14961,7 +14961,7 @@
     "title": "Teenage Mutant Ninja Turtles",
     "rating": 5.9,
     "poster_url": "https://image.tmdb.org/t/p/w342/azL2ThbJMIkts3ZMt3j1YgBUeDB.jpg",
-    "tmdb_id": 98566,
+    "tmdb_id": 614930,
     "release_date": "2014-08-07",
     "overview": "When a kingpin threatens New York City, a group of mutated turtle warriors must emerge from the shadows to protect their home.",
     "trailer_url": "https://www.youtube.com/watch?v=dwXFsrp6WBs",
@@ -14981,7 +14981,7 @@
       "William Fichtner",
       "Danny Woodburn"
     ],
-    "tmdb_url": "https://www.themoviedb.org/movie/98566",
+    "tmdb_url": "https://www.themoviedb.org/movie/614930",
     "description": "When a kingpin threatens New York City, a group of mutated turtle warriors must emerge from the shadows to protect their home.",
     "directors": [
       "Jonathan Liebesman"
@@ -17085,8 +17085,8 @@
     "release_date": null,
     "trailer_url": null,
     "actors": null,
-    "tmdb_url": null,
-    "tmdb_id": null
+    "tmdb_url": "https://www.themoviedb.org/movie/10198",
+    "tmdb_id": 10198
   },
   "movie:the rat catcher": {
     "title": "The Rat Catcher",

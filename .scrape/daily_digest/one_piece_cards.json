@@ -71,20 +71,6 @@
       "scraped_at": "2026-05-16T17:44:36Z"
     },
     {
-      "card_number": "OP01-061",
-      "price": 10.0,
-      "title": "Kaido [Romance Dawn]",
-      "rarity": "",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/kaido-romance-dawn/p/676859364",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/632380_1024x1024_2x_kFDBEMlAb.jpg",
-      "scraped_at": "2026-05-16T17:44:36Z"
-    },
-    {
       "card_number": "OP15-108",
       "price": 10.0,
       "title": "Nami OP15-108",
@@ -152,7 +138,7 @@
       "available_variants": "Near Mint R18.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/morgan-pirates-party-vol-2-one-piece-promotion-cards",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/cc4c8ea9-4e6a-507b-8b36-4bd0f8ff4a20.jpg?v=1771365687",
-      "scraped_at": "2026-05-17T21:42:49Z"
+      "scraped_at": "2026-05-18T19:20:14Z"
     },
     {
       "card_number": "EB04-048",
@@ -278,7 +264,7 @@
       "available_variants": "Near Mint Foil R35.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/porche-500-years-in-the-future",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/545865.jpg?v=1763507856",
-      "scraped_at": "2026-05-17T21:42:49Z"
+      "scraped_at": "2026-05-18T17:26:23Z"
     },
     {
       "card_number": "P-053",
@@ -293,6 +279,20 @@
       "url": "https://www.bobshop.co.za/nami-p-053-jolly-roger-foil-premium-booster-the-best/p/680357603",
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/586408_1024x1024_2x_ZG8qBbFvh.jpg",
       "scraped_at": "2026-05-16T17:44:36Z"
+    },
+    {
+      "card_number": "ST06-004",
+      "price": 35.0,
+      "title": "Smoker [Starter Deck: Absolute Justice]",
+      "rarity": "Super Rare",
+      "store": "Big Bang Shop",
+      "set_name": "Starter Deck: Absolute Justice",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R35.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/smoker-starter-deck-absolute-justice",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/485250.jpg?v=1763511471",
+      "scraped_at": "2026-05-18T19:20:14Z"
     },
     {
       "card_number": "EB02-045",
@@ -362,7 +362,7 @@
       "available_variants": "Near Mint R47.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/im-gonna-be-king-of-the-pirates-one-piece-promotion-cards",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/3f6dc017-b6eb-5be5-84de-c15de1756cbb.jpg?v=1771366031",
-      "scraped_at": "2026-05-17T21:42:49Z"
+      "scraped_at": "2026-05-18T19:20:14Z"
     },
     {
       "card_number": "OP14-069",
@@ -530,7 +530,7 @@
       "available_variants": "Near Mint Foil R62.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-starter-deck-worst-generation",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/62495d31-36b5-5900-8eec-5fb6701af1d1.jpg?v=1733912470",
-      "scraped_at": "2026-05-17T21:42:49Z"
+      "scraped_at": "2026-05-18T19:20:14Z"
     },
     {
       "card_number": "OP15-032",
@@ -559,20 +559,6 @@
       "url": "https://www.bobshop.co.za/trafalgar-law-st10-010-reprint-premium-booster-the-best/p/680361780",
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/594320_1024x1024_2x_060R0Aiu9.jpg",
       "scraped_at": "2026-05-16T17:44:36Z"
-    },
-    {
-      "card_number": "OP10-071",
-      "price": 67.0,
-      "title": "Donquixote Doflamingo [Royal Blood]",
-      "rarity": "Super Rare",
-      "store": "Knightly Gaming",
-      "set_name": "Royal Blood",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R67.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-royal-blood",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/617115.jpg?v=1758380198",
-      "scraped_at": "2026-05-17T21:42:49Z"
     },
     {
       "card_number": "OP07-072",
@@ -673,6 +659,20 @@
       "scraped_at": "2026-05-14T08:04:04Z"
     },
     {
+      "card_number": "OP10-071",
+      "price": 77.0,
+      "title": "Donquixote Doflamingo [Royal Blood]",
+      "rarity": "Super Rare",
+      "store": "Knightly Gaming",
+      "set_name": "Royal Blood",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R77.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-royal-blood",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/617115.jpg?v=1758380198",
+      "scraped_at": "2026-05-18T19:20:14Z"
+    },
+    {
       "card_number": "ST13-017",
       "price": 80.0,
       "title": "Flame Dragon King ST13-017",
@@ -699,20 +699,6 @@
       "url": "https://www.toadtradertcg.com/product-page/uso-hachi-st18-001",
       "image_url": "",
       "scraped_at": "2026-05-14T08:04:04Z"
-    },
-    {
-      "card_number": "ST08-001",
-      "price": 85.0,
-      "title": "Monkey.D.Luffy [Starter Deck: Monkey.D.Luffy]",
-      "rarity": "Leader",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/monkey-d-luffy-starter-deck-monkey-d-luffy/p/676860777",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/503233_1024x1024_2x_2s87ejRtD.webp",
-      "scraped_at": "2026-05-16T17:44:36Z"
     },
     {
       "card_number": "EB02-041",
@@ -796,21 +782,7 @@
       "available_variants": "Near Mint Foil R100.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/dracule-mihawk-live-action-edition",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/546713_ed599c5b-3ea8-4f54-b724-6e273d6ef740.jpg?v=1763495310",
-      "scraped_at": "2026-05-17T21:42:49Z"
-    },
-    {
-      "card_number": "ST21-014",
-      "price": 100.0,
-      "title": "Monkey.D.Luffy [Starter Deck EX: Gear 5]",
-      "rarity": "",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/monkey-d-luffy-starter-deck-ex-gear-5/p/676860911",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/615564_1024x1024_2x_oGJzN0Ciz.jpg",
-      "scraped_at": "2026-05-16T17:44:36Z"
+      "scraped_at": "2026-05-18T17:26:23Z"
     },
     {
       "card_number": "OP10-118",
@@ -908,7 +880,7 @@
       "available_variants": "Near Mint Foil R150.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-st05-004-premium-card-collection-uta-one-piece-promotion-cards",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/564140.jpg?v=1763498337",
-      "scraped_at": "2026-05-17T21:42:49Z"
+      "scraped_at": "2026-05-18T17:26:23Z"
     },
     {
       "card_number": "OP14-104",
@@ -978,21 +950,7 @@
       "available_variants": "Near Mint Foil R170.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/sanji-one-piece-film-red",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/504475_b4cb5f29-dda4-49c8-a463-da4917de213b.jpg?v=1763500244",
-      "scraped_at": "2026-05-17T21:42:49Z"
-    },
-    {
-      "card_number": "OP02-120",
-      "price": 175.0,
-      "title": "Uta (OP02-120) (Premium Card Collection -Uta-) [One Piece Promotion Cards]",
-      "rarity": "Secret Rare",
-      "store": "Big Bang Shop",
-      "set_name": "One Piece Promotion Cards",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R175.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-op02-120-premium-card-collection-uta-one-piece-promotion-cards",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/564143.jpg?v=1763508739",
-      "scraped_at": "2026-05-17T21:42:49Z"
+      "scraped_at": "2026-05-18T17:26:23Z"
     },
     {
       "card_number": "EB02-011",
@@ -1009,32 +967,18 @@
       "scraped_at": "2026-05-14T08:04:04Z"
     },
     {
-      "card_number": "OP01-003",
-      "price": 190.0,
-      "title": "Monkey.D.Luffy [Romance Dawn]",
-      "rarity": "Leader",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
+      "card_number": "OP02-120",
+      "price": 180.0,
+      "title": "Uta (OP02-120) (Premium Card Collection -Uta-) [One Piece Promotion Cards]",
+      "rarity": "Secret Rare",
+      "store": "Big Bang Shop",
+      "set_name": "One Piece Promotion Cards",
+      "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/monkey-d-luffy-romance-dawn/p/676860695",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/dcc3121a-c45c-54cd-b4f7-b3af64606265_1024x1024_2x_BrPjMsXeV.webp",
-      "scraped_at": "2026-05-16T17:44:36Z"
-    },
-    {
-      "card_number": "ST12-001",
-      "price": 190.0,
-      "title": "Roronoa Zoro & Sanji [Starter Deck: Zoro and Sanji]",
-      "rarity": "",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/roronoa-zoro-sanji-starter-deck-zoro-and-sanji/p/676863064",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/539151_1024x1024_2x_nGdVHkb8sc.webp",
-      "scraped_at": "2026-05-16T17:44:36Z"
+      "available_variants": "Near Mint Foil R180.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-op02-120-premium-card-collection-uta-one-piece-promotion-cards",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/564143.jpg?v=1763508739",
+      "scraped_at": "2026-05-18T17:26:23Z"
     },
     {
       "card_number": "EB02-017",
@@ -1076,7 +1020,7 @@
       "available_variants": "Near Mint Foil R205.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-paramount-war",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/482718.jpg?v=1763507216",
-      "scraped_at": "2026-05-17T21:42:49Z"
+      "scraped_at": "2026-05-18T17:26:23Z"
     },
     {
       "card_number": "OP07-051",
@@ -1104,7 +1048,7 @@
       "available_variants": "Near Mint Foil R270.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-p-031-premium-card-collection-uta-one-piece-promotion-cards",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/564141_4828aadc-eb41-4593-8273-5c70ce628952.jpg?v=1763491710",
-      "scraped_at": "2026-05-17T21:42:49Z"
+      "scraped_at": "2026-05-18T17:26:23Z"
     },
     {
       "card_number": "OP05-074",
@@ -1118,21 +1062,21 @@
       "available_variants": "Near Mint Foil R299.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/eustasscaptainkid-op05-074-alternate-art-premium-booster-the-best",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/586959.jpg?v=1766590772",
-      "scraped_at": "2026-05-17T21:42:49Z"
+      "scraped_at": "2026-05-18T19:20:14Z"
     },
     {
       "card_number": "OP14-091",
-      "price": 340.0,
+      "price": 334.0,
       "title": "Mr.2.Bon.Kurei (Bentham) (Alternate Art) [The Azure Sea's Seven]",
       "rarity": "Super Rare",
       "store": "Knightly Gaming",
       "set_name": "The Azure Sea's Seven",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R340.00",
+      "available_variants": "Near Mint Foil R334.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/mr-2-bon-kurei-bentham-alternate-art-the-azure-seas-seven",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/670640.jpg?v=1769205276",
-      "scraped_at": "2026-05-17T21:42:49Z"
+      "scraped_at": "2026-05-18T19:20:14Z"
     },
     {
       "card_number": "EB02-035",
@@ -1160,7 +1104,7 @@
       "available_variants": "Near Mint Foil R385.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/perfume-femur-premium-card-collection-best-selection-vol-4-one-piece-promotion-cards",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/649684.jpg?v=1763494111",
-      "scraped_at": "2026-05-17T21:42:49Z"
+      "scraped_at": "2026-05-18T17:26:23Z"
     },
     {
       "card_number": "OP06-101",
@@ -1174,7 +1118,7 @@
       "available_variants": "Near Mint Foil R430.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/o-nami-alternate-art-wings-of-the-captain",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/539492_fcdae740-d037-4797-8283-6dd08d77a25a.jpg?v=1763488954",
-      "scraped_at": "2026-05-17T21:42:49Z"
+      "scraped_at": "2026-05-18T17:26:23Z"
     },
     {
       "card_number": "OP11-067",
@@ -1202,7 +1146,7 @@
       "available_variants": "Near Mint Foil R460.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-alternate-art-paramount-war",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/483360.jpg?v=1763495611",
-      "scraped_at": "2026-05-17T21:42:49Z"
+      "scraped_at": "2026-05-18T17:26:23Z"
     },
     {
       "card_number": "P-072",
@@ -1216,7 +1160,7 @@
       "available_variants": "Near Mint Foil R465.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/ryuma-premium-card-collection-best-selection-vol-3-one-piece-promotion-cards",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/626673_11f6a9c1-377b-40b8-a596-533eecb3b794.jpg?v=1763508518",
-      "scraped_at": "2026-05-17T21:42:49Z"
+      "scraped_at": "2026-05-18T17:26:23Z"
     },
     {
       "card_number": "EB02-052",
@@ -1248,17 +1192,17 @@
     },
     {
       "card_number": "OP14-033",
-      "price": 522.0,
+      "price": 520.0,
       "title": "Perona (Alternate Art) [The Azure Sea's Seven]",
       "rarity": "Super Rare",
       "store": "Knightly Gaming",
       "set_name": "The Azure Sea's Seven",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R522.00",
+      "available_variants": "Near Mint Foil R520.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/perona-alternate-art-the-azure-seas-seven",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/666527.jpg?v=1769205424",
-      "scraped_at": "2026-05-17T21:42:49Z"
+      "scraped_at": "2026-05-18T19:20:14Z"
     },
     {
       "card_number": "ST18-001",
@@ -1272,7 +1216,7 @@
       "available_variants": "Near Mint Foil R560.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/uso-hachi-alternate-art-premium-booster-the-best-vol-2",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/656031.jpg?v=1763491324",
-      "scraped_at": "2026-05-17T21:42:49Z"
+      "scraped_at": "2026-05-18T17:26:23Z"
     },
     {
       "card_number": "OP15-119",
@@ -1300,7 +1244,7 @@
       "available_variants": "Near Mint Foil R652.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/edward-newgate-special-goods-set-former-four-emperors-one-piece-promotion-cards",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/546699.jpg?v=1772488366",
-      "scraped_at": "2026-05-17T21:42:49Z"
+      "scraped_at": "2026-05-18T19:20:14Z"
     },
     {
       "card_number": "OP04-056",
@@ -1314,21 +1258,21 @@
       "available_variants": "Near Mint Foil R660.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/gum-gum-red-roc-alternate-art-premium-booster-the-best",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/586197_e84d3ed9-cb2c-4233-8dec-b6d68f7f13da.jpg?v=1763494368",
-      "scraped_at": "2026-05-17T21:42:49Z"
+      "scraped_at": "2026-05-18T17:26:23Z"
     },
     {
       "card_number": "OP11-054",
-      "price": 662.0,
+      "price": 665.0,
       "title": "Nami (054) (Alternate Art) [A Fist of Divine Speed]",
       "rarity": "Super Rare",
       "store": "Knightly Gaming",
       "set_name": "A Fist of Divine Speed",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R662.00",
+      "available_variants": "Near Mint Foil R665.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-054-alternate-art-a-fist-of-divine-speed",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/632422.jpg?v=1757718637",
-      "scraped_at": "2026-05-17T21:42:49Z"
+      "scraped_at": "2026-05-18T19:20:14Z"
     },
     {
       "card_number": "EB03-053",
@@ -1346,17 +1290,17 @@
     },
     {
       "card_number": "OP14-084",
-      "price": 851.0,
+      "price": 850.0,
       "title": "Ms. All Sunday (Alternate Art) [The Azure Sea's Seven]",
       "rarity": "Super Rare",
       "store": "Knightly Gaming",
       "set_name": "The Azure Sea's Seven",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R851.00",
+      "available_variants": "Near Mint Foil R850.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ms-all-sunday-alternate-art-the-azure-seas-seven",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/666913.jpg?v=1769205349",
-      "scraped_at": "2026-05-17T21:42:49Z"
+      "scraped_at": "2026-05-18T19:20:14Z"
     },
     {
       "card_number": "OP01-035",
@@ -1370,7 +1314,7 @@
       "available_variants": "Near Mint Foil R915.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/okiku-sp-500-years-in-the-future",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/545922_9fd2abba-1373-4311-89a8-55cfc63694d8.jpg?v=1763493691",
-      "scraped_at": "2026-05-17T21:42:49Z"
+      "scraped_at": "2026-05-18T17:26:23Z"
     },
     {
       "card_number": "ST18-004",
@@ -1384,7 +1328,7 @@
       "available_variants": "Near Mint Foil R995.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/zoro-juurou-emperors-in-the-new-world",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/600658.jpg?v=1763491099",
-      "scraped_at": "2026-05-17T21:42:49Z"
+      "scraped_at": "2026-05-18T17:26:23Z"
     },
     {
       "card_number": "OP03-114",
@@ -1398,7 +1342,7 @@
       "available_variants": "Near Mint Foil R1040.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/charlotte-linlin-sp-wings-of-the-captain",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/541666.jpg?v=1763513131",
-      "scraped_at": "2026-05-17T21:42:49Z"
+      "scraped_at": "2026-05-18T17:26:23Z"
     },
     {
       "card_number": "ST12-012",
@@ -1412,7 +1356,7 @@
       "available_variants": "Near Mint Foil R1180.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/charlotte-pudding-sp-royal-blood",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/617174_783cc0ae-36fb-4503-b00d-d8b59054d187.jpg?v=1763506693",
-      "scraped_at": "2026-05-17T21:42:49Z"
+      "scraped_at": "2026-05-18T17:26:23Z"
     },
     {
       "card_number": "EB02-035",
@@ -1440,7 +1384,7 @@
       "available_variants": "1 in stock",
       "url": "https://tanukitrader.co.za/product/gecko-moria-sp/",
       "image_url": "https://tanukitrader.co.za/wp-content/uploads/2024/09/ST03-004SP.jpg",
-      "scraped_at": "2026-05-13T17:58:07Z"
+      "scraped_at": "2026-05-19T07:54:15Z"
     },
     {
       "card_number": "OP06-101",
@@ -1468,7 +1412,7 @@
       "available_variants": "Near Mint Foil R1328.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-alternate-art-the-azure-seas-seven",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/670254.jpg?v=1769205406",
-      "scraped_at": "2026-05-17T21:42:49Z"
+      "scraped_at": "2026-05-18T19:20:14Z"
     },
     {
       "card_number": "OP13-118",
@@ -1496,7 +1440,7 @@
       "available_variants": "Near Mint Foil R1938.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-alternate-art-the-azure-seas-seven",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/670874.jpg?v=1769205424",
-      "scraped_at": "2026-05-17T21:42:49Z"
+      "scraped_at": "2026-05-18T19:20:14Z"
     },
     {
       "card_number": "OP06-106",
@@ -1510,7 +1454,7 @@
       "available_variants": "Near Mint Foil R2765.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/kouzuki-hiyori-alternate-art-premium-booster-the-best",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/586547_f8443361-1276-4ecb-b96f-7a9a73f8d367.jpg?v=1763495074",
-      "scraped_at": "2026-05-17T21:42:49Z"
+      "scraped_at": "2026-05-18T17:26:23Z"
     },
     {
       "card_number": "ST01-007",
@@ -1524,7 +1468,7 @@
       "available_variants": "1 in stock",
       "url": "https://tanukitrader.co.za/product/nami-tr/",
       "image_url": "https://tanukitrader.co.za/wp-content/uploads/2024/09/ST01-007TR.jpeg",
-      "scraped_at": "2026-05-13T14:41:45Z"
+      "scraped_at": "2026-05-19T07:54:15Z"
     },
     {
       "card_number": "ST18-004",
@@ -1538,7 +1482,7 @@
       "available_variants": "Near Mint Foil R3615.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/zoro-juurou-sp-legacy-of-the-master",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/646566_6ff3f551-62c5-4c2d-a265-0b03b6d23163.jpg?v=1763510818",
-      "scraped_at": "2026-05-17T21:42:49Z"
+      "scraped_at": "2026-05-18T17:26:23Z"
     },
     {
       "card_number": "ST01-006",

@@ -1373,6 +1373,20 @@
       "scraped_at": "2026-05-14T08:04:04Z"
     },
     {
+      "card_number": "ST03-004",
+      "price": 1235.0,
+      "title": "Gecko Moria (SP)",
+      "rarity": "Common",
+      "store": "Tanuki Trader",
+      "set_name": "Two Legends (OP08)",
+      "condition": "",
+      "stock": "1 in stock",
+      "available_variants": "1 in stock",
+      "url": "https://tanukitrader.co.za/product/gecko-moria-sp/",
+      "image_url": "https://tanukitrader.co.za/wp-content/uploads/2024/09/ST03-004SP.jpg",
+      "scraped_at": "2026-05-19T07:54:15Z"
+    },
+    {
       "card_number": "OP06-101",
       "price": 1300.0,
       "title": "O-Nami OP06-101 Event Pack",
@@ -1441,6 +1455,20 @@
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/kouzuki-hiyori-alternate-art-premium-booster-the-best",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/586547_f8443361-1276-4ecb-b96f-7a9a73f8d367.jpg?v=1763495074",
       "scraped_at": "2026-05-18T17:26:23Z"
+    },
+    {
+      "card_number": "ST01-007",
+      "price": 3485.0,
+      "title": "Nami (TR)",
+      "rarity": "",
+      "store": "Tanuki Trader",
+      "set_name": "Wings of the Captain (OP06)",
+      "condition": "",
+      "stock": "1 in stock",
+      "available_variants": "1 in stock",
+      "url": "https://tanukitrader.co.za/product/nami-tr/",
+      "image_url": "https://tanukitrader.co.za/wp-content/uploads/2024/09/ST01-007TR.jpeg",
+      "scraped_at": "2026-05-19T07:54:15Z"
     },
     {
       "card_number": "ST18-004",

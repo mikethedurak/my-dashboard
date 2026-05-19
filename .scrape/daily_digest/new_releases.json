@@ -410,7 +410,8 @@
         "Janeane Garofalo"
       ],
       "trailer_url": "https://www.youtube.com/watch?v=PF3dDdeSIVc",
-      "poster_url": "https://image.tmdb.org/t/p/w342/eW1s6omXIfVkTlmKVe9y9Dwwt4u.jpg"
+      "poster_url": "https://image.tmdb.org/t/p/w342/eW1s6omXIfVkTlmKVe9y9Dwwt4u.jpg",
+      "is_new": false
     },
     {
       "title": "Slanted",
