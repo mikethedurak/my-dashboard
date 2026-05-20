@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-20T17:48:33Z",
+  "updated_at": "2026-05-20T19:58:29Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -2940,6 +2940,30 @@
       "stock": "In stock",
       "observed_on": "2026-05-20",
       "captured_at": "2026-05-20T17:48:33Z"
+    },
+    {
+      "card_number": "OP02-120",
+      "art_variant": "original",
+      "price": 210.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-paramount-war",
+      "title": "Uta [Paramount War]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-05-20",
+      "captured_at": "2026-05-20T19:58:29Z"
+    },
+    {
+      "card_number": "OP04-056",
+      "art_variant": "alternate",
+      "price": 675.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/gum-gum-red-roc-alternate-art-premium-booster-the-best",
+      "title": "Gum-Gum Red Roc (Alternate Art) [Premium Booster -The Best-]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-05-20",
+      "captured_at": "2026-05-20T19:58:29Z"
     }
   ]
 }
