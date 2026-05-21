@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-21T01:53:29Z",
+  "updated_at": "2026-05-21T05:59:10Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -4680,6 +4680,54 @@
       "stock": "",
       "observed_on": "2026-05-21",
       "captured_at": "2026-05-21T01:53:29Z"
+    },
+    {
+      "card_number": "OP10-071",
+      "art_variant": "original",
+      "price": 79.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-royal-blood",
+      "title": "Donquixote Doflamingo [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-05-21",
+      "captured_at": "2026-05-21T05:59:10Z"
+    },
+    {
+      "card_number": "OP14-091",
+      "art_variant": "alternate",
+      "price": 329.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/mr-2-bon-kurei-bentham-alternate-art-the-azure-seas-seven",
+      "title": "Mr.2.Bon.Kurei (Bentham) (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-05-21",
+      "captured_at": "2026-05-21T05:59:10Z"
+    },
+    {
+      "card_number": "OP14-031",
+      "art_variant": "alternate",
+      "price": 1328.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-alternate-art-the-azure-seas-seven",
+      "title": "Nami (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-05-21",
+      "captured_at": "2026-05-21T05:59:10Z"
+    },
+    {
+      "card_number": "OP14-096",
+      "art_variant": "alternate",
+      "price": 1946.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-alternate-art-the-azure-seas-seven",
+      "title": "Ground Death (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-05-21",
+      "captured_at": "2026-05-21T05:59:10Z"
     }
   ]
 }
