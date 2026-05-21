@@ -35,7 +35,7 @@ const TIMELINE_MANIFEST_PATH = "./data/timeline/manifest.json";
 const GAME_LAB_MANIFEST_PATH = "./data/game_lab/manifest.json";
 const STATE_API_BASE = String(window.DASHBOARD_STATE_API || "").trim();
 const STATE_API_KEY = "main";
-const STATE_SYNC_DEBOUNCE_MS = 700;
+const STATE_SYNC_DEBOUNCE_MS = 5000;
 const WEEK_DAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 const WATCHLIST_MEDIA_CONFIG = {
   screen: { label: "Movies + Series", types: ["movie", "series"] },
@@ -995,7 +995,6 @@ function saveOnePieceScrollPreference() {
   } catch {
     // Ignore storage failures.
   }
-  queueRemoteStateSync();
 }
 
 function loadAlmostFridayTvCurrentVideoPreference() {
@@ -3866,7 +3865,7 @@ function collectDashboardSyncState() {
   };
 }
 
-async function saveRemoteDashboardState() {
+async function saveRemoteDashboardState({ keepalive = false } = {}) {
   const url = stateApiUrl();
   if (!url) {
     return;
@@ -3876,10 +3875,22 @@ async function saveRemoteDashboardState() {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(collectDashboardSyncState()),
+      keepalive,
     });
   } catch {
     // Ignore remote save failures.
   }
+}
+
+function flushStateToCloudflare() {
+  if (!remoteStateLoaded) {
+    return;
+  }
+  if (remoteStateSaveTimer) {
+    clearTimeout(remoteStateSaveTimer);
+    remoteStateSaveTimer = null;
+  }
+  void saveRemoteDashboardState({ keepalive: true });
 }
 
 function queueRemoteStateSync() {
@@ -8269,6 +8280,11 @@ if (elements.collectionSetButtons) {
 }
 
 syncCollectionMissingOptionVisibility();
+
+document.addEventListener("visibilitychange", () => {
+  if (document.visibilityState === "hidden") flushStateToCloudflare();
+});
+window.addEventListener("pagehide", flushStateToCloudflare);
 
 // ── Daily Goals ───────────────────────────────────────────────────────────
 
