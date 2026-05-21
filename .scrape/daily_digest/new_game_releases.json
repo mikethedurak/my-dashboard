@@ -2,6 +2,54 @@
   "source": "https://api.rawg.io/api/games",
   "new_releases": [
     {
+      "title": "Bubsy 4D",
+      "url": "https://rawg.io/games/bubsy-4d",
+      "image": "https://media.rawg.io/media/screenshots/3f5/3f56e79671e3e144fefb3ad30e924c2d.jpg",
+      "release_date": "2026-05-21",
+      "rating": "0.0",
+      "platforms": "PC, PlayStation 5, Xbox Series S/X, Nintendo Switch"
+    },
+    {
+      "title": "Zero Parades: For Dead Spies",
+      "url": "https://rawg.io/games/zero-parades-for-dead-spies",
+      "image": "https://media.rawg.io/media/games/52b/52bc4034309ecefe64b25e4c75a6b525.jpg",
+      "release_date": "2026-05-21",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Yoshi and the Mysterious Book",
+      "url": "https://rawg.io/games/yoshi-and-the-mysterious-book",
+      "image": "https://media.rawg.io/media/games/25a/25a256ab63823d3ed3eea8207730d074.jpg",
+      "release_date": "2026-05-21",
+      "rating": "0.0",
+      "platforms": "Nintendo Switch"
+    },
+    {
+      "title": "Luna Abyss",
+      "url": "https://rawg.io/games/luna-abyss",
+      "image": "https://media.rawg.io/media/games/759/75938a44d83af478a137a8a2298c0f47.jpg",
+      "release_date": "2026-05-21",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Coffee Talk Tokyo",
+      "url": "https://rawg.io/games/coffee-talk-tokyo",
+      "image": "https://media.rawg.io/media/screenshots/8ee/8eed3221af05ce5dc058bc1ecf148695.jpg",
+      "release_date": "2026-05-20",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Phonopolis",
+      "url": "https://rawg.io/games/phonopolis",
+      "image": "https://media.rawg.io/media/games/044/044e2732dc470c41a6a2ac074bdf7fb0.jpg",
+      "release_date": "2026-05-20",
+      "rating": "0.0",
+      "platforms": "PC, macOS"
+    },
+    {
       "title": "Forza Horizon 6",
       "url": "https://rawg.io/games/forza-horizon-6",
       "image": "https://media.rawg.io/media/games/d74/d744a3b0f6f0f0bc63f5ceb9b5e63230.jpeg",
@@ -174,7 +222,7 @@
       "url": "https://rawg.io/games/mixtape",
       "image": "https://media.rawg.io/media/games/a57/a571fcbc2b2ef30fb3e13a4272ef3a93.jpeg",
       "release_date": "2026-05-07",
-      "rating": "4.4",
+      "rating": "4.5",
       "platforms": "PC, Xbox Series S/X"
     },
     {
@@ -258,6 +306,14 @@
       "platforms": "PC"
     },
     {
+      "title": "This is Fine: Maximum Cope",
+      "url": "https://rawg.io/games/this-is-fine-maximum-cope",
+      "image": "https://media.rawg.io/media/screenshots/cee/cee81a1bda8f8e09c45ca8fb2ed2bf5a.jpg",
+      "release_date": "2026-05-01",
+      "rating": "0.0",
+      "platforms": "PC, PlayStation 5, Xbox Series S/X"
+    },
+    {
       "title": "Omniquarium",
       "url": "https://rawg.io/games/omniquarium",
       "image": "https://media.rawg.io/media/screenshots/80e/80eb78bb20bdd8e76cd5ff535e45a863.jpg",
@@ -274,20 +330,20 @@
       "platforms": "PC, macOS, Linux"
     },
     {
-      "title": "Librarian: Tidy Up the Arcane Library!",
-      "url": "https://rawg.io/games/librarian-tidy-up-the-arcane-library",
-      "image": "https://media.rawg.io/media/screenshots/f55/f55e26672d03de9bf9e974d03159fc5e.jpg",
-      "release_date": "2026-04-30",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
       "title": "Saros",
       "url": "https://rawg.io/games/saros",
       "image": "https://media.rawg.io/media/games/be8/be86ee5cf3a427c784efec1661f9b194.jpg",
       "release_date": "2026-04-30",
       "rating": "0.0",
       "platforms": "PlayStation 5"
+    },
+    {
+      "title": "Librarian: Tidy Up the Arcane Library!",
+      "url": "https://rawg.io/games/librarian-tidy-up-the-arcane-library",
+      "image": "https://media.rawg.io/media/screenshots/f55/f55e26672d03de9bf9e974d03159fc5e.jpg",
+      "release_date": "2026-04-30",
+      "rating": "0.0",
+      "platforms": "PC"
     },
     {
       "title": "Crossed Tiles",
@@ -314,14 +370,6 @@
       "platforms": "PC"
     },
     {
-      "title": "Heroes of Might & Magic: Olden Era",
-      "url": "https://rawg.io/games/heroes-of-might-magic-olden-era",
-      "image": "https://media.rawg.io/media/screenshots/69e/69ece38d22dcc1c44de7ddb7901a1a41.jpg",
-      "release_date": "2026-04-30",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
       "title": "Centre 18",
       "url": "https://rawg.io/games/centre-18",
       "image": "https://media.rawg.io/media/screenshots/1f1/1f1c3940c64596f892db1cc178309037.jpg",
@@ -338,119 +386,23 @@
       "platforms": "PC, PlayStation 5, Xbox Series S/X"
     },
     {
+      "title": "Heroes of Might & Magic: Olden Era",
+      "url": "https://rawg.io/games/heroes-of-might-magic-olden-era",
+      "image": "https://media.rawg.io/media/screenshots/69e/69ece38d22dcc1c44de7ddb7901a1a41.jpg",
+      "release_date": "2026-04-30",
+      "rating": "4.5",
+      "platforms": "PC"
+    },
+    {
       "title": "\u56e2\u6218\u4e0d\u80fd\u8f93",
       "url": "https://rawg.io/games/tuan-zhan-bu-neng-shu",
       "image": "https://media.rawg.io/media/screenshots/8e4/8e4a488f57390a1bc12e8c435e0bcae5.jpg",
       "release_date": "2026-04-30",
       "rating": "0.0",
       "platforms": "PC"
-    },
-    {
-      "title": "Dream at Dead of Century",
-      "url": "https://rawg.io/games/dream-at-dead-of-century",
-      "image": "https://media.rawg.io/media/screenshots/032/03275564b14977c27f0fa0ee6de29242.jpg",
-      "release_date": "2026-04-29",
-      "rating": "0.0",
-      "platforms": "PC, macOS"
-    },
-    {
-      "title": "Forbidden Solitaire",
-      "url": "https://rawg.io/games/forbidden-solitaire",
-      "image": "https://media.rawg.io/media/screenshots/748/7485dd9175996dc1870ea23978dbca9e.jpg",
-      "release_date": "2026-04-29",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Demon Lord: Just a Block",
-      "url": "https://rawg.io/games/demon-lord-just-a-block",
-      "image": "https://media.rawg.io/media/screenshots/c69/c697ed1bd6900f30a4b821b48c43ae2d.jpg",
-      "release_date": "2026-04-29",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "\u6b21\u5143\u6218\u59ecol",
-      "url": "https://rawg.io/games/ci-yuan-zhan-ji-ol",
-      "image": "https://media.rawg.io/media/screenshots/ab1/ab1115af06a913b340666d3c811508ba.jpg",
-      "release_date": "2026-04-29",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Hell Storage",
-      "url": "https://rawg.io/games/hell-storage",
-      "image": "https://media.rawg.io/media/screenshots/86a/86ad3d529f07a62655a7e0d796706029.jpg",
-      "release_date": "2026-04-29",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Goddess of Destiny: Waifu",
-      "url": "https://rawg.io/games/goddess-of-destiny-waifu",
-      "image": "https://media.rawg.io/media/screenshots/7cd/7cd81fdcf1a53445eceba9e8c4be308d.jpg",
-      "release_date": "2026-04-29",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Citadel Remonstered",
-      "url": "https://rawg.io/games/citadel-remonstered",
-      "image": "https://media.rawg.io/media/screenshots/693/693da95f7043afb40416ec23d7ba1662.jpg",
-      "release_date": "2026-04-29",
-      "rating": "0.0",
-      "platforms": "PC, Linux"
     }
   ],
   "coming_soon": [
-    {
-      "title": "Coffee Talk Tokyo",
-      "url": "https://rawg.io/games/coffee-talk-tokyo",
-      "image": "https://media.rawg.io/media/screenshots/8ee/8eed3221af05ce5dc058bc1ecf148695.jpg",
-      "release_date": "2026-05-20",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Phonopolis",
-      "url": "https://rawg.io/games/phonopolis",
-      "image": "https://media.rawg.io/media/games/044/044e2732dc470c41a6a2ac074bdf7fb0.jpg",
-      "release_date": "2026-05-20",
-      "rating": "0.0",
-      "platforms": "PC, macOS"
-    },
-    {
-      "title": "Bubsy 4D",
-      "url": "https://rawg.io/games/bubsy-4d",
-      "image": "https://media.rawg.io/media/screenshots/3f5/3f56e79671e3e144fefb3ad30e924c2d.jpg",
-      "release_date": "2026-05-21",
-      "rating": "0.0",
-      "platforms": "PC, PlayStation 5, Xbox Series S/X, Nintendo Switch"
-    },
-    {
-      "title": "Zero Parades: For Dead Spies",
-      "url": "https://rawg.io/games/zero-parades-for-dead-spies",
-      "image": "https://media.rawg.io/media/games/52b/52bc4034309ecefe64b25e4c75a6b525.jpg",
-      "release_date": "2026-05-21",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Yoshi and the Mysterious Book",
-      "url": "https://rawg.io/games/yoshi-and-the-mysterious-book",
-      "image": "https://media.rawg.io/media/games/25a/25a256ab63823d3ed3eea8207730d074.jpg",
-      "release_date": "2026-05-21",
-      "rating": "0.0",
-      "platforms": "Nintendo Switch"
-    },
-    {
-      "title": "Luna Abyss",
-      "url": "https://rawg.io/games/luna-abyss",
-      "image": "https://media.rawg.io/media/games/759/75938a44d83af478a137a8a2298c0f47.jpg",
-      "release_date": "2026-05-21",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
     {
       "title": "Lego Batman: Legacy of the Dark Knight",
       "url": "https://rawg.io/games/lego-batman-legacy-of-the-dark-knight",

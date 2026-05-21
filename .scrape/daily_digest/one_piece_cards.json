@@ -1,6 +1,246 @@
 {
   "listings": [
     {
+      "card_number": "ST12-009",
+      "price": 3.0,
+      "title": "Elephant True Bluefin [Starter Deck: Zoro and Sanji]",
+      "rarity": "Common",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/elephant-true-bluefin-starter-deck-zoro-and-sanji/p/680357563",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/542115_1024x1024_2x_1og8PDsMQ.webp",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
+    },
+    {
+      "card_number": "ST12-004",
+      "price": 4.0,
+      "title": "Humandrill [Starter Deck: Zoro and Sanji]",
+      "rarity": "Common",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/humandrill-starter-deck-zoro-and-sanji/p/680359790",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/542110_1024x1024_2x_bdMYC46Hn.webp",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
+    },
+    {
+      "card_number": "ST12-015",
+      "price": 4.0,
+      "title": "Patty & Carne [Starter Deck: Zoro and Sanji]",
+      "rarity": "Common",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/patty-carne-starter-deck-zoro-and-sanji/p/680357570",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/542125_1024x1024_2x_jZxccAc5l.webp",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
+    },
+    {
+      "card_number": "ST22-012",
+      "price": 4.0,
+      "title": "Marco [Starter Deck: Ace & Newgate]",
+      "rarity": "Common",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/marco-starter-deck-ace-newgate/p/680358933",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/647705_1024x1024_2x_TOWv3m7kR.jpg",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
+    },
+    {
+      "card_number": "ST25-002",
+      "price": 4.0,
+      "title": "Cabaji [Starter Deck: Blue Buggy]",
+      "rarity": "Common",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/cabaji-starter-deck-blue-buggy/p/680358930",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/634307_1024x1024_2x_apYUFBYDT.jpg",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
+    },
+    {
+      "card_number": "ST03-004",
+      "price": 5.0,
+      "title": "Gecko Moria [Starter Deck: The Seven Warlords of The Sea]",
+      "rarity": "Common",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/gecko-moria-starter-deck-the-seven-warlords-of-the-sea/p/680358953",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/cc4ce9be-48bc-506e-ba75-89e2d18a447c_1024x1024_2x_NkKSHCpX8H.webp",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
+    },
+    {
+      "card_number": "ST04-016",
+      "price": 5.0,
+      "title": "Blast Breath [Starter Deck: Animal Kingdom Pirates]",
+      "rarity": "Common",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/blast-breath-starter-deck-animal-kingdom-pirates/p/680361769",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/b637d23b-5102-5af2-8574-f41f523c1ccc_1024x1024_2x_8rKz3JYyo.webp",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
+    },
+    {
+      "card_number": "ST08-012",
+      "price": 5.0,
+      "title": "Laboon [Starter Deck: Monkey.D.Luffy]",
+      "rarity": "Common",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/laboon-starter-deck-monkey-d-luffy/p/680359878",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/503239_1024x1024_2x_SYOycAPNO.webp",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
+    },
+    {
+      "card_number": "ST08-013",
+      "price": 5.0,
+      "title": "Mr.2.Bon.Kurei (Bentham) [Starter Deck: Monkey.D.Luffy]",
+      "rarity": "Common",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/mr-2-bon-kurei-bentham-starter-deck-monkey-d-luffy/p/680359862",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/503238_1024x1024_2x_UYIfw-FG2.webp",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
+    },
+    {
+      "card_number": "ST10-009",
+      "price": 5.0,
+      "title": "Jean Bart [Ultra Deck - The Three Captains]",
+      "rarity": "Common",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/jean-bart-ultra-deck-the-three-captains/p/680360370",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/525052_1024x1024_2x_oOmzhtzqp.webp",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
+    },
+    {
+      "card_number": "ST10-012",
+      "price": 5.0,
+      "title": "Bepo [Ultra Deck - The Three Captains]",
+      "rarity": "Common",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/bepo-ultra-deck-the-three-captains/p/680360369",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/525055_1024x1024_2x_IsL_4p0wS.webp",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
+    },
+    {
+      "card_number": "ST15-003",
+      "price": 5.0,
+      "title": "Kingdew [Starter Deck: Red Edward.Newgate]",
+      "rarity": "Common",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/kingdew-starter-deck-red-edward-newgate/p/680355844",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/580988_1024x1024_2x_lbB4jdo6Qd.jpg",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
+    },
+    {
+      "card_number": "ST17-001",
+      "price": 5.0,
+      "title": "Crocodile [Starter Deck: Blue Donquixote Doflamingo]",
+      "rarity": "Common",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/crocodile-starter-deck-blue-donquixote-doflamingo/p/680357910",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/581016_1024x1024_2x_Xip785KuX.jpg",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
+    },
+    {
+      "card_number": "ST21-012",
+      "price": 5.0,
+      "title": "Brook [Starter Deck EX: Gear 5]",
+      "rarity": "Common",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/brook-starter-deck-ex-gear-5/p/680355871",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/615586_1024x1024_2x_RTh6ZbUPG.jpg",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
+    },
+    {
+      "card_number": "ST21-016",
+      "price": 5.0,
+      "title": "Gum-Gum Dawn Whip [Starter Deck EX: Gear 5]",
+      "rarity": "Common",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/gum-gum-dawn-whip-starter-deck-ex-gear-5/p/680355870",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/615594_1024x1024_2x_gHjQtyzo7.jpg",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
+    },
+    {
+      "card_number": "ST25-005",
+      "price": 5.0,
+      "title": "Mohji [Starter Deck: Blue Buggy]",
+      "rarity": "Common",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/mohji-starter-deck-blue-buggy/p/680358923",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/634309_1024x1024_2x_vSvjvgfw5.jpg",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
+    },
+    {
       "card_number": "OP05-076",
       "price": 6.0,
       "title": "When You're at Sea You Fight against Pirates!! OP05-076",
@@ -12,7 +252,53 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/when-you-re-at-sea-you-fight-against-pirates-op05-076",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
+    },
+    {
+      "card_number": "ST01-006",
+      "price": 7.0,
+      "title": "Tony Tony.Chopper [Starter Deck: Straw Hat Crew]",
+      "rarity": "Common",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/tony-tony-chopper-starter-deck-straw-hat-crew/p/680355856",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/ab3ecc5b-ca27-5c0b-87dc-64512617f072_1024x1024_2x_sKUFV0y_T.webp",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
+    },
+    {
+      "card_number": "ST04-005",
+      "price": 7.0,
+      "title": "Queen [Starter Deck: Animal Kingdom Pirates]",
+      "rarity": "Common",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/queen-starter-deck-animal-kingdom-pirates/p/680360381",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/dd99bc3e-ca5a-535c-afdc-f4910ab9064a_1024x1024_2x__vHQL6RyJ.webp",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
+    },
+    {
+      "card_number": "ST06-002",
+      "price": 7.0,
+      "title": "Koby [Starter Deck: Absolute Justice]",
+      "rarity": "Common",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/koby-starter-deck-absolute-justice/p/680359805",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/0dc545e0-3c50-5204-86f7-b2d3c32e3cf1_1024x1024_2x_0BUNMGdqji.webp",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
     },
     {
       "card_number": "ST29-005",
@@ -26,21 +312,8 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/jinbe-st29-005",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
-    },
-    {
-      "card_number": "OP13-066",
-      "price": 8.0,
-      "title": "Silvers Rayleigh OP13-066",
-      "rarity": "",
-      "store": "Toad Trader TCG",
-      "set_name": "",
-      "condition": "",
-      "stock": "",
-      "available_variants": "",
-      "url": "https://www.toadtradertcg.com/product-page/silvers-rayleigh-op13-066",
-      "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
     },
     {
       "card_number": "P-053",
@@ -54,6 +327,7 @@
       "available_variants": "",
       "url": "https://www.bobshop.co.za/nami-p-053-reprint-premium-booster-the-best/p/680357552",
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/596377_1024x1024_2x_KxcGxYO-2.jpg",
+      "art_variant": "original",
       "scraped_at": "2026-05-16T17:44:36Z"
     },
     {
@@ -68,21 +342,68 @@
       "available_variants": "",
       "url": "https://www.bobshop.co.za/monkey-d-luffy-p-055-reprint-premium-booster-the-best/p/680357604",
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/596376_1024x1024_2x_k_bCN80rD.jpg",
+      "art_variant": "original",
       "scraped_at": "2026-05-16T17:44:36Z"
     },
     {
-      "card_number": "OP15-108",
-      "price": 10.0,
-      "title": "Nami OP15-108",
-      "rarity": "",
-      "store": "Toad Trader TCG",
+      "card_number": "ST08-014",
+      "price": 8.0,
+      "title": "Gum-Gum Bell [Starter Deck: Monkey.D.Luffy]",
+      "rarity": "Common",
+      "store": "GeekHaven",
       "set_name": "",
-      "condition": "",
-      "stock": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
       "available_variants": "",
-      "url": "https://www.toadtradertcg.com/product-page/nami-op15-108",
-      "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "url": "https://www.bobshop.co.za/gum-gum-bell-starter-deck-monkey-d-luffy/p/680359860",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/503231_1024x1024_2x_sSd-llm5-.webp",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
+    },
+    {
+      "card_number": "P-030",
+      "price": 9.0,
+      "title": "Jinbe [Starter Deck: Blue Donquixote Doflamingo]",
+      "rarity": "Promo",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/jinbe-starter-deck-blue-donquixote-doflamingo/p/680357914",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/581011_1024x1024_2x_q1NRsR6-n.jpg",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
+    },
+    {
+      "card_number": "ST04-016",
+      "price": 10.0,
+      "title": "Blast Breath (Jolly Roger Foil) [Premium Booster -The Best-]",
+      "rarity": "Common",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/blast-breath-jolly-roger-foil-premium-booster-the-best/p/680361770",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/593589_1024x1024_2x_g13ijhtlq.jpg",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
+    },
+    {
+      "card_number": "ST04-017",
+      "price": 10.0,
+      "title": "Onigashima Island [Starter Deck: Animal Kingdom Pirates]",
+      "rarity": "Common",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/onigashima-island-starter-deck-animal-kingdom-pirates/p/680360376",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/6c57b185-c5c5-5cc0-ae0d-3145df8198ec_1024x1024_2x_Smo_GO27P.webp",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
     },
     {
       "card_number": "ST22-015",
@@ -96,21 +417,38 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/i-am-whitebeard-st22-015",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
     },
     {
-      "card_number": "OP01-070",
-      "price": 16.0,
-      "title": "Dracule Mihawk (OP01-070) (Reprint) [Premium Booster -The Best-]",
-      "rarity": "",
+      "card_number": "P-071",
+      "price": 15.0,
+      "title": "Marco [One Piece Promotion Cards]",
+      "rarity": "Promo",
       "store": "GeekHaven",
       "set_name": "",
       "condition": "Second Hand",
       "stock": "In stock",
       "available_variants": "",
-      "url": "https://www.bobshop.co.za/dracule-mihawk-op01-070-reprint-premium-booster-the-best/p/680358950",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/594314_1024x1024_2x_wUMXIULe8G.jpg",
-      "scraped_at": "2026-05-16T17:44:36Z"
+      "url": "https://www.bobshop.co.za/marco-one-piece-promotion-cards/p/680358917",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/577142_1024x1024_2x_kFraRaUw7.jpg",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
+    },
+    {
+      "card_number": "ST12-008",
+      "price": 15.0,
+      "title": "Roronoa Zoro [Starter Deck: Zoro and Sanji]",
+      "rarity": "Common",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/roronoa-zoro-starter-deck-zoro-and-sanji/p/680359783",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/539152_1024x1024_2x_3FhJZ9HIg.webp",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
     },
     {
       "card_number": "OP15-020",
@@ -124,7 +462,23 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/fire-fist-op15-020",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
+    },
+    {
+      "card_number": "ST19-004",
+      "price": 17.0,
+      "title": "Hina [Starter Deck: Black Smoker]",
+      "rarity": "Super Rare",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/hina-starter-deck-black-smoker/p/680359891",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/581049_1024x1024_2x_u4xdggARz.jpg",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
     },
     {
       "card_number": "P-026",
@@ -138,7 +492,23 @@
       "available_variants": "Near Mint R18.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/morgan-pirates-party-vol-2-one-piece-promotion-cards",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/cc4c8ea9-4e6a-507b-8b36-4bd0f8ff4a20.jpg?v=1771365687",
+      "art_variant": "original",
       "scraped_at": "2026-05-18T19:20:14Z"
+    },
+    {
+      "card_number": "ST25-001",
+      "price": 18.0,
+      "title": "Alvida [Starter Deck: Blue Buggy]",
+      "rarity": "Common",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/alvida-starter-deck-blue-buggy/p/680521001",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/634305_1024x1024_2x_unCV3nQrq.jpg",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
     },
     {
       "card_number": "EB04-048",
@@ -152,35 +522,8 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/rob-lucci-eb04-048",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
-    },
-    {
-      "card_number": "OP15-007",
-      "price": 20.0,
-      "title": "Gin OP15-007",
-      "rarity": "",
-      "store": "Toad Trader TCG",
-      "set_name": "",
-      "condition": "",
-      "stock": "",
-      "available_variants": "",
-      "url": "https://www.toadtradertcg.com/product-page/gin-op15-007",
-      "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
-    },
-    {
-      "card_number": "OP01-078",
-      "price": 22.0,
-      "title": "Boa Hancock (OP01-078) (Reprint) [Premium Booster -The Best-]",
-      "rarity": "",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/boa-hancock-op01-078-reprint-premium-booster-the-best/p/680357572",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/594315_1024x1024_2x_TGJ0QKfO0.jpg",
-      "scraped_at": "2026-05-16T17:44:36Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
     },
     {
       "card_number": "ST15-004",
@@ -194,7 +537,23 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/thatch-st15-004",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
+    },
+    {
+      "card_number": "OP04-056",
+      "price": 30.0,
+      "title": "Gum-Gum Red Roc [Kingdoms of Intrigue]",
+      "rarity": "Rare",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/gum-gum-red-roc-kingdoms-of-intrigue/p/680358919",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/516772_1024x1024_2x_neSlPD7cj.webp",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
     },
     {
       "card_number": "OP05-082",
@@ -208,6 +567,7 @@
       "available_variants": "",
       "url": "https://www.bobshop.co.za/shirahoshi-op05-082-reprint-premium-booster-the-best/p/680521013",
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/594334_1024x1024_2x_GWY_xcpk8.jpg",
+      "art_variant": "original",
       "scraped_at": "2026-05-16T19:56:51Z"
     },
     {
@@ -222,21 +582,8 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/krieg-op15-008",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
-    },
-    {
-      "card_number": "OP15-047",
-      "price": 30.0,
-      "title": "Sanji OP15-047",
-      "rarity": "",
-      "store": "Toad Trader TCG",
-      "set_name": "",
-      "condition": "",
-      "stock": "",
-      "available_variants": "",
-      "url": "https://www.toadtradertcg.com/product-page/sanji-op15-047",
-      "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
     },
     {
       "card_number": "OP05-082",
@@ -250,7 +597,8 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/shirahoshi-op05-082",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
     },
     {
       "card_number": "OP07-072",
@@ -264,6 +612,7 @@
       "available_variants": "Near Mint Foil R35.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/porche-500-years-in-the-future",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/545865.jpg?v=1763507856",
+      "art_variant": "original",
       "scraped_at": "2026-05-18T17:26:23Z"
     },
     {
@@ -278,6 +627,7 @@
       "available_variants": "",
       "url": "https://www.bobshop.co.za/nami-p-053-jolly-roger-foil-premium-booster-the-best/p/680357603",
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/586408_1024x1024_2x_ZG8qBbFvh.jpg",
+      "art_variant": "original",
       "scraped_at": "2026-05-16T17:44:36Z"
     },
     {
@@ -292,6 +642,7 @@
       "available_variants": "Near Mint Foil R35.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/smoker-starter-deck-absolute-justice",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/485250.jpg?v=1763511471",
+      "art_variant": "original",
       "scraped_at": "2026-05-18T19:20:14Z"
     },
     {
@@ -306,7 +657,23 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/trafalgar-law-eb02-045",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
+    },
+    {
+      "card_number": "OP05-006",
+      "price": 40.0,
+      "title": "Koala [Awakening of the New Era]",
+      "rarity": "Super Rare",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/koala-awakening-of-the-new-era/p/680355852",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/527663_1024x1024_2x_2YJSybPS7.webp",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
     },
     {
       "card_number": "OP06-058",
@@ -320,7 +687,23 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/gravity-blade-raging-tiger-op06-058",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
+    },
+    {
+      "card_number": "OP07-057",
+      "price": 40.0,
+      "title": "Perfume Femur [500 Years in the Future]",
+      "rarity": "Rare",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/perfume-femur-500-years-in-the-future/p/680357584",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/545847_1024x1024_2x_7tT97SKnt.jpg",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
     },
     {
       "card_number": "OP07-057",
@@ -334,7 +717,8 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/perfume-femur-op07-057",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
     },
     {
       "card_number": "OP15-092",
@@ -348,7 +732,8 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/monkey-d-luffy-op15-092",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
     },
     {
       "card_number": "P-024",
@@ -362,6 +747,7 @@
       "available_variants": "Near Mint R47.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/im-gonna-be-king-of-the-pirates-one-piece-promotion-cards",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/3f6dc017-b6eb-5be5-84de-c15de1756cbb.jpg?v=1771366031",
+      "art_variant": "original",
       "scraped_at": "2026-05-18T19:20:14Z"
     },
     {
@@ -376,7 +762,8 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/donquixote-doflamingo-op14-069",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
     },
     {
       "card_number": "ST21-014",
@@ -390,7 +777,8 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/monkey-d-luffy-st21-014",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
     },
     {
       "card_number": "ST22-001",
@@ -404,7 +792,8 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/ace-newgate-st22-001",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
     },
     {
       "card_number": "ST29-001",
@@ -418,7 +807,8 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/monkey-d-luffy-st29-001",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
     },
     {
       "card_number": "ST29-004",
@@ -432,7 +822,23 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/sanji-st29-004",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
+    },
+    {
+      "card_number": "OP11-067",
+      "price": 55.0,
+      "title": "Charlotte Katakuri (067) [A Fist of Divine Speed]",
+      "rarity": "Super Rare",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/charlotte-katakuri-067-a-fist-of-divine-speed/p/680360355",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/632436_1024x1024_2x__XvN_Vbkm.jpg",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
     },
     {
       "card_number": "OP15-114",
@@ -446,7 +852,8 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/wyper-op15-114",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
     },
     {
       "card_number": "ST10-006",
@@ -460,7 +867,8 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/monkey-d-luffy-st10-006",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
     },
     {
       "card_number": "EB02-011",
@@ -474,7 +882,23 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/arlong-eb02-011-1",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
+    },
+    {
+      "card_number": "EB02-044",
+      "price": 60.0,
+      "title": "Sengoku [Extra Booster: Anime 25th Collection]",
+      "rarity": "Super Rare",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/sengoku-extra-booster-anime-25th-collection/p/680444300",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/629142_1024x1024_2x_loW6hCHwK.jpg",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
     },
     {
       "card_number": "EB02-044",
@@ -488,7 +912,8 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/sengoku-eb02-044",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
     },
     {
       "card_number": "OP08-023",
@@ -502,7 +927,23 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/carrot-op08-023",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
+    },
+    {
+      "card_number": "OP08-047",
+      "price": 60.0,
+      "title": "Jozu [Two Legends]",
+      "rarity": "Rare",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/jozu-two-legends/p/680358902",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/558075_1024x1024_2x_wfByjhWBU.jpg",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
     },
     {
       "card_number": "OP14-033",
@@ -516,20 +957,22 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/perona-op14-033",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
     },
     {
       "card_number": "ST02-009",
-      "price": 62.0,
+      "price": 61.0,
       "title": "Trafalgar Law [Starter Deck: Worst Generation]",
       "rarity": "Super Rare",
       "store": "Knightly Gaming",
       "set_name": "Starter Deck: Worst Generation",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R62.00",
+      "available_variants": "Near Mint Foil R61.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-starter-deck-worst-generation",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/62495d31-36b5-5900-8eec-5fb6701af1d1.jpg?v=1733912470",
+      "art_variant": "original",
       "scraped_at": "2026-05-18T19:20:14Z"
     },
     {
@@ -544,7 +987,8 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/brook-op15-032",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
     },
     {
       "card_number": "ST10-010",
@@ -558,6 +1002,7 @@
       "available_variants": "",
       "url": "https://www.bobshop.co.za/trafalgar-law-st10-010-reprint-premium-booster-the-best/p/680361780",
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/594320_1024x1024_2x_060R0Aiu9.jpg",
+      "art_variant": "original",
       "scraped_at": "2026-05-16T17:44:36Z"
     },
     {
@@ -572,7 +1017,8 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/porche-op07-072",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
     },
     {
       "card_number": "OP08-106",
@@ -586,7 +1032,8 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/nami-op08-106",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
     },
     {
       "card_number": "OP11-054",
@@ -600,7 +1047,8 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/nami-op11-054",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
     },
     {
       "card_number": "ST21-001",
@@ -614,7 +1062,23 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/monkey-d-luffy-st21-001",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
+    },
+    {
+      "card_number": "OP13-108",
+      "price": 72.0,
+      "title": "Jewelry Bonney [Carrying On His Will]",
+      "rarity": "Super Rare",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/jewelry-bonney-carrying-on-his-will/p/680647261",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/657386_1024x1024_2x_RUIbBDrIv.jpg",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
     },
     {
       "card_number": "EB01-003",
@@ -628,7 +1092,53 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/kid-killer-eb01-003",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
+    },
+    {
+      "card_number": "EB02-011",
+      "price": 75.0,
+      "title": "Arlong [Extra Booster: Anime 25th Collection]",
+      "rarity": "Super Rare",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/arlong-extra-booster-anime-25th-collection/p/680359721",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/629102_1024x1024_2x_lT4iSoc_U.jpg",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
+    },
+    {
+      "card_number": "EB02-011",
+      "price": 75.0,
+      "title": "Arlong [Extra Booster: Anime 25th Collection]",
+      "rarity": "Super Rare",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/arlong-extra-booster-anime-25th-collection/p/680359798",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/629102_1024x1024_2x_lT4iSoc_U.jpg",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
+    },
+    {
+      "card_number": "OP06-058",
+      "price": 75.0,
+      "title": "Gravity Blade Raging Tiger [Wings of the Captain]",
+      "rarity": "Rare",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/gravity-blade-raging-tiger-wings-of-the-captain/p/680358911",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/541073_1024x1024_2x_b5XTWQvsV.webp",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
     },
     {
       "card_number": "OP10-005",
@@ -642,7 +1152,8 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/sanji-op10-005",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
     },
     {
       "card_number": "OP15-086",
@@ -656,21 +1167,98 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/nami-op15-086",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
+    },
+    {
+      "card_number": "ST12-010",
+      "price": 75.0,
+      "title": "Emporio.Ivankov [Starter Deck: Zoro and Sanji]",
+      "rarity": "Super Rare",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/emporio-ivankov-starter-deck-zoro-and-sanji/p/680359693",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/542117_1024x1024_2x_g8vGnbIL_.webp",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
+    },
+    {
+      "card_number": "ST14-006",
+      "price": 75.0,
+      "title": "Nami [Starter Deck: 3D2Y]",
+      "rarity": "Super Rare",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/nami-starter-deck-3d2y/p/680359772",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/548417_1024x1024_2x_IG7ReFFH7.jpg",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
+    },
+    {
+      "card_number": "ST24-004",
+      "price": 75.0,
+      "title": "Law & Bepo [Starter Deck: GREEN Jewelry Bonney]",
+      "rarity": "Super Rare",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/law-bepo-starter-deck-green-jewelry-bonney/p/680456764",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/634621_1024x1024_2x_XjrEylz3I.jpg",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
     },
     {
       "card_number": "OP10-071",
-      "price": 77.0,
+      "price": 79.0,
       "title": "Donquixote Doflamingo [Royal Blood]",
       "rarity": "Super Rare",
       "store": "Knightly Gaming",
       "set_name": "Royal Blood",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R77.00",
+      "available_variants": "Near Mint Foil R79.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-royal-blood",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/617115.jpg?v=1758380198",
+      "art_variant": "original",
       "scraped_at": "2026-05-18T19:20:14Z"
+    },
+    {
+      "card_number": "EB01-003",
+      "price": 80.0,
+      "title": "Kid & Killer [Extra Booster: Memorial Collection]",
+      "rarity": "Rare",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/kid-killer-extra-booster-memorial-collection/p/680355850",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/544526_1024x1024_2x_EghMylw1Z.webp",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
+    },
+    {
+      "card_number": "OP01-094",
+      "price": 80.0,
+      "title": "Kaido [Romance Dawn]",
+      "rarity": "Super Rare",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/kaido-romance-dawn/p/680360348",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/ddb3db2e-fc8b-5f3e-a29a-3aafa8f3f098_1024x1024_2x_RAfT8ENqq.webp",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
     },
     {
       "card_number": "ST13-017",
@@ -684,21 +1272,38 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/flame-dragon-king-st13-017",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
     },
     {
-      "card_number": "ST18-001",
-      "price": 80.0,
-      "title": "Uso-Hachi ST18-001",
-      "rarity": "",
-      "store": "Toad Trader TCG",
+      "card_number": "OP11-054",
+      "price": 85.0,
+      "title": "Nami (054) [A Fist of Divine Speed]",
+      "rarity": "Super Rare",
+      "store": "GeekHaven",
       "set_name": "",
-      "condition": "",
-      "stock": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
       "available_variants": "",
-      "url": "https://www.toadtradertcg.com/product-page/uso-hachi-st18-001",
-      "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "url": "https://www.bobshop.co.za/nami-054-a-fist-of-divine-speed/p/680359685",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/632421_1024x1024_2x_K3SpNAB6M.jpg",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
+    },
+    {
+      "card_number": "ST08-001",
+      "price": 85.0,
+      "title": "Monkey.D.Luffy [Starter Deck: Monkey.D.Luffy]",
+      "rarity": "Leader",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/monkey-d-luffy-starter-deck-monkey-d-luffy/p/680705417",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/503233_1024x1024_2x_2s87ejRtD.webp",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
     },
     {
       "card_number": "EB02-041",
@@ -712,7 +1317,23 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/merry-go-eb02-041",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
+    },
+    {
+      "card_number": "OP02-011",
+      "price": 90.0,
+      "title": "Vista [Paramount War]",
+      "rarity": "Rare",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/vista-paramount-war/p/680357510",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/b16d56b1-3b69-551d-a88b-5c030c096ec3_1024x1024_2x_rHNgap255.webp",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
     },
     {
       "card_number": "ST24-004",
@@ -726,7 +1347,23 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/law-bepo-st24-004",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
+    },
+    {
+      "card_number": "ST27-003",
+      "price": 90.0,
+      "title": "Kuzan [Starter Deck: Black Marshall.D.Teach]",
+      "rarity": "Super Rare",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/kuzan-starter-deck-black-marshall-d-teach/p/680520993",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/images__1__Jql6WXB4A.jpeg",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
     },
     {
       "card_number": "ST10-010",
@@ -740,7 +1377,8 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/trafalgar-law-st10-010",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
     },
     {
       "card_number": "OP01-021",
@@ -754,21 +1392,23 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/franky-op01-021",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
     },
     {
-      "card_number": "OP04-060",
+      "card_number": "OP10-005",
       "price": 100.0,
-      "title": "Crocodile OP04-060",
-      "rarity": "",
-      "store": "Toad Trader TCG",
+      "title": "Sanji [Royal Blood]",
+      "rarity": "Super Rare",
+      "store": "GeekHaven",
       "set_name": "",
-      "condition": "",
-      "stock": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
       "available_variants": "",
-      "url": "https://www.toadtradertcg.com/product-page/crocodile-op04-060",
-      "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "url": "https://www.bobshop.co.za/sanji-royal-blood/p/680521027",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/617037_1024x1024_2x_OENGoYcHEz.jpg",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
     },
     {
       "card_number": "P-052",
@@ -782,7 +1422,38 @@
       "available_variants": "Near Mint Foil R100.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/dracule-mihawk-live-action-edition",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/546713_ed599c5b-3ea8-4f54-b724-6e273d6ef740.jpg?v=1763495310",
+      "art_variant": "original",
       "scraped_at": "2026-05-18T17:26:23Z"
+    },
+    {
+      "card_number": "ST21-001",
+      "price": 100.0,
+      "title": "Monkey.D.Luffy [Starter Deck EX: Gear 5]",
+      "rarity": "Leader",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/monkey-d-luffy-starter-deck-ex-gear-5/p/680708038",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/615564_1024x1024_2x_oGJzN0Ciz.jpg",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
+    },
+    {
+      "card_number": "OP07-072",
+      "price": 110.0,
+      "title": "Porche [500 Years in the Future]",
+      "rarity": "Super Rare",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/porche-500-years-in-the-future/p/680360483",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/545865_1024x1024_2x__2JFhf36V.webp",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
     },
     {
       "card_number": "OP10-118",
@@ -796,7 +1467,23 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/monkey-d-luffy-op10-118",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
+    },
+    {
+      "card_number": "OP06-106",
+      "price": 120.0,
+      "title": "Kouzuki Hiyori [Wings of the Captain]",
+      "rarity": "Super Rare",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/kouzuki-hiyori-wings-of-the-captain/p/680646070",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/539501_1024x1024_2x_sUH7Ioc79.webp",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
     },
     {
       "card_number": "OP06-106",
@@ -810,7 +1497,53 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/kouzuki-hiyori-op06-106",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
+    },
+    {
+      "card_number": "OP06-035",
+      "price": 125.0,
+      "title": "Hody Jones [Wings of the Captain]",
+      "rarity": "Super Rare",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/hody-jones-wings-of-the-captain/p/680386780",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/539772_1024x1024_2x_IkCMlmur7.webp",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
+    },
+    {
+      "card_number": "OP06-035",
+      "price": 125.0,
+      "title": "Hody Jones [Wings of the Captain]",
+      "rarity": "Super Rare",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/hody-jones-wings-of-the-captain/p/680444255",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/539772_1024x1024_2x_IkCMlmur7.webp",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
+    },
+    {
+      "card_number": "OP10-071",
+      "price": 125.0,
+      "title": "Donquixote Doflamingo [Royal Blood]",
+      "rarity": "Super Rare",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/donquixote-doflamingo-royal-blood/p/680361767",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/617115_1024x1024_2x_iiZDNMjZT.jpg",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
     },
     {
       "card_number": "OP14-031",
@@ -824,7 +1557,23 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/nami-op14-031",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
+    },
+    {
+      "card_number": "EB01-013",
+      "price": 140.0,
+      "title": "Kouzuki Hiyori [Extra Booster: Memorial Collection]",
+      "rarity": "Rare",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/kouzuki-hiyori-extra-booster-memorial-collection/p/680359789",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/544540_1024x1024_2x_p2h9bBLQe.webp",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
     },
     {
       "card_number": "EB02-026",
@@ -838,7 +1587,8 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/nefeltari-vivi-eb02-026",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
     },
     {
       "card_number": "OP14-112",
@@ -852,7 +1602,8 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/boa-hancock-op14-112",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
     },
     {
       "card_number": "OP15-078",
@@ -866,7 +1617,8 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/mamaragan-op15-078",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
     },
     {
       "card_number": "ST05-004",
@@ -880,6 +1632,7 @@
       "available_variants": "Near Mint Foil R150.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-st05-004-premium-card-collection-uta-one-piece-promotion-cards",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/564140.jpg?v=1763498337",
+      "art_variant": "original",
       "scraped_at": "2026-05-18T17:26:23Z"
     },
     {
@@ -894,7 +1647,8 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/gecko-moria-op14-104",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
     },
     {
       "card_number": "OP15-053",
@@ -908,7 +1662,8 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/rebecca-op15-053",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
     },
     {
       "card_number": "ST17-004",
@@ -922,7 +1677,8 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/boa-hancock-st17-004",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
     },
     {
       "card_number": "OP15-113",
@@ -936,7 +1692,8 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/roronoa-zoro-op15-113",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
     },
     {
       "card_number": "ST01-004",
@@ -950,6 +1707,7 @@
       "available_variants": "Near Mint Foil R170.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/sanji-one-piece-film-red",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/504475_b4cb5f29-dda4-49c8-a463-da4917de213b.jpg?v=1763500244",
+      "art_variant": "original",
       "scraped_at": "2026-05-18T17:26:23Z"
     },
     {
@@ -964,7 +1722,8 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/arlong-eb02-011",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
     },
     {
       "card_number": "OP02-120",
@@ -978,7 +1737,23 @@
       "available_variants": "Near Mint Foil R180.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-op02-120-premium-card-collection-uta-one-piece-promotion-cards",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/564143.jpg?v=1763508739",
+      "art_variant": "original",
       "scraped_at": "2026-05-18T17:26:23Z"
+    },
+    {
+      "card_number": "ST12-001",
+      "price": 190.0,
+      "title": "Roronoa Zoro & Sanji [Starter Deck: Zoro and Sanji]",
+      "rarity": "Leader",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/roronoa-zoro-sanji-starter-deck-zoro-and-sanji/p/680708045",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/539151_1024x1024_2x_nGdVHkb8sc.webp",
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T09:04:14Z"
     },
     {
       "card_number": "EB02-017",
@@ -992,7 +1767,8 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/nami-eb02-017",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
     },
     {
       "card_number": "P-048",
@@ -1006,76 +1782,52 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/arlong-p-048-alternate-art-live-action-collection",
       "image_url": "",
-      "scraped_at": "2026-05-14T12:05:37Z"
+      "art_variant": "alternate",
+      "scraped_at": "2026-05-20T14:26:17Z"
     },
     {
       "card_number": "OP02-120",
-      "price": 205.0,
+      "price": 210.0,
       "title": "Uta [Paramount War]",
       "rarity": "Secret Rare",
       "store": "Big Bang Shop",
       "set_name": "Paramount War",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R205.00",
+      "available_variants": "Near Mint Foil R210.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-paramount-war",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/482718.jpg?v=1763507216",
+      "art_variant": "original",
       "scraped_at": "2026-05-18T17:26:23Z"
     },
     {
-      "card_number": "OP07-051",
-      "price": 250.0,
-      "title": "Boa Hancock OP07-051",
-      "rarity": "",
-      "store": "Toad Trader TCG",
-      "set_name": "",
-      "condition": "",
-      "stock": "",
-      "available_variants": "",
-      "url": "https://www.toadtradertcg.com/product-page/boa-hancock-op07-051",
-      "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
-    },
-    {
       "card_number": "P-031",
-      "price": 270.0,
+      "price": 275.0,
       "title": "Uta (P-031) (Premium Card Collection -Uta-) [One Piece Promotion Cards]",
       "rarity": "Promo",
       "store": "Big Bang Shop",
       "set_name": "One Piece Promotion Cards",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R270.00",
+      "available_variants": "Near Mint Foil R275.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-p-031-premium-card-collection-uta-one-piece-promotion-cards",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/564141_4828aadc-eb41-4593-8273-5c70ce628952.jpg?v=1763491710",
+      "art_variant": "original",
       "scraped_at": "2026-05-18T17:26:23Z"
     },
     {
-      "card_number": "OP05-074",
-      "price": 299.0,
-      "title": "Eustass\"Captain\"Kid (OP05-074) (Alternate Art) [Premium Booster -The Best-]",
-      "rarity": "Super Rare",
-      "store": "Knightly Gaming",
-      "set_name": "Premium Booster -The Best-",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R299.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/eustasscaptainkid-op05-074-alternate-art-premium-booster-the-best",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/586959.jpg?v=1766590772",
-      "scraped_at": "2026-05-18T19:20:14Z"
-    },
-    {
       "card_number": "OP14-091",
-      "price": 334.0,
+      "price": 329.0,
       "title": "Mr.2.Bon.Kurei (Bentham) (Alternate Art) [The Azure Sea's Seven]",
       "rarity": "Super Rare",
       "store": "Knightly Gaming",
       "set_name": "The Azure Sea's Seven",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R334.00",
+      "available_variants": "Near Mint Foil R329.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/mr-2-bon-kurei-bentham-alternate-art-the-azure-seas-seven",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/670640.jpg?v=1769205276",
+      "art_variant": "alternate",
       "scraped_at": "2026-05-18T19:20:14Z"
     },
     {
@@ -1090,34 +1842,22 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/sanji-pudding-eb02-035",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
     },
     {
       "card_number": "OP07-057",
-      "price": 385.0,
+      "price": 390.0,
       "title": "Perfume Femur (Premium Card Collection -Best Selection Vol. 4-) [One Piece Promotion Cards]",
       "rarity": "Rare",
       "store": "Big Bang Shop",
       "set_name": "One Piece Promotion Cards",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R385.00",
+      "available_variants": "Near Mint Foil R390.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/perfume-femur-premium-card-collection-best-selection-vol-4-one-piece-promotion-cards",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/649684.jpg?v=1763494111",
-      "scraped_at": "2026-05-18T17:26:23Z"
-    },
-    {
-      "card_number": "OP06-101",
-      "price": 430.0,
-      "title": "O-Nami (Alternate Art) [Wings of the Captain]",
-      "rarity": "Rare",
-      "store": "Big Bang Shop",
-      "set_name": "Wings of the Captain",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R430.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/o-nami-alternate-art-wings-of-the-captain",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/539492_fcdae740-d037-4797-8283-6dd08d77a25a.jpg?v=1763488954",
+      "art_variant": "original",
       "scraped_at": "2026-05-18T17:26:23Z"
     },
     {
@@ -1132,34 +1872,37 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/charlotte-katakuri-op11-067",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
     },
     {
       "card_number": "OP02-120",
-      "price": 460.0,
+      "price": 465.0,
       "title": "Uta (Alternate Art) [Paramount War]",
       "rarity": "Secret Rare",
       "store": "Big Bang Shop",
       "set_name": "Paramount War",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R460.00",
+      "available_variants": "Near Mint Foil R465.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-alternate-art-paramount-war",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/483360.jpg?v=1763495611",
+      "art_variant": "alternate",
       "scraped_at": "2026-05-18T17:26:23Z"
     },
     {
       "card_number": "P-072",
-      "price": 465.0,
+      "price": 470.0,
       "title": "Ryuma (Premium Card Collection -Best Selection Vol. 3-) [One Piece Promotion Cards]",
       "rarity": "Promo",
       "store": "Big Bang Shop",
       "set_name": "One Piece Promotion Cards",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R465.00",
+      "available_variants": "Near Mint Foil R470.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/ryuma-premium-card-collection-best-selection-vol-3-one-piece-promotion-cards",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/626673_11f6a9c1-377b-40b8-a596-533eecb3b794.jpg?v=1763508518",
+      "art_variant": "original",
       "scraped_at": "2026-05-18T17:26:23Z"
     },
     {
@@ -1174,7 +1917,8 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/enel-eb02-052",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
     },
     {
       "card_number": "OP12-119",
@@ -1188,7 +1932,8 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/bartholomew-kuma-op12-119",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
     },
     {
       "card_number": "OP14-033",
@@ -1202,21 +1947,8 @@
       "available_variants": "Near Mint Foil R520.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/perona-alternate-art-the-azure-seas-seven",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/666527.jpg?v=1769205424",
+      "art_variant": "alternate",
       "scraped_at": "2026-05-18T19:20:14Z"
-    },
-    {
-      "card_number": "ST18-001",
-      "price": 560.0,
-      "title": "Uso-Hachi (Alternate Art) [Premium Booster -The Best- Vol. 2]",
-      "rarity": "Common",
-      "store": "Big Bang Shop",
-      "set_name": "Premium Booster -The Best- Vol. 2",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R560.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/uso-hachi-alternate-art-premium-booster-the-best-vol-2",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/656031.jpg?v=1763491324",
-      "scraped_at": "2026-05-18T17:26:23Z"
     },
     {
       "card_number": "OP15-119",
@@ -1230,132 +1962,67 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/monkey-d-luffy-op15-119",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
-    },
-    {
-      "card_number": "OP02-001",
-      "price": 652.0,
-      "title": "Edward.Newgate (Special Goods Set -Former Four Emperors-) [One Piece Promotion Cards]",
-      "rarity": "Leader",
-      "store": "Knightly Gaming",
-      "set_name": "One Piece Promotion Cards",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R652.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/edward-newgate-special-goods-set-former-four-emperors-one-piece-promotion-cards",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/546699.jpg?v=1772488366",
-      "scraped_at": "2026-05-18T19:20:14Z"
-    },
-    {
-      "card_number": "OP04-056",
-      "price": 660.0,
-      "title": "Gum-Gum Red Roc (Alternate Art) [Premium Booster -The Best-]",
-      "rarity": "Rare",
-      "store": "Big Bang Shop",
-      "set_name": "Premium Booster -The Best-",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R660.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/gum-gum-red-roc-alternate-art-premium-booster-the-best",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/586197_e84d3ed9-cb2c-4233-8dec-b6d68f7f13da.jpg?v=1763494368",
-      "scraped_at": "2026-05-18T17:26:23Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
     },
     {
       "card_number": "OP11-054",
-      "price": 665.0,
+      "price": 666.0,
       "title": "Nami (054) (Alternate Art) [A Fist of Divine Speed]",
       "rarity": "Super Rare",
       "store": "Knightly Gaming",
       "set_name": "A Fist of Divine Speed",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R665.00",
+      "available_variants": "Near Mint Foil R666.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-054-alternate-art-a-fist-of-divine-speed",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/632422.jpg?v=1757718637",
+      "art_variant": "alternate",
       "scraped_at": "2026-05-18T19:20:14Z"
     },
     {
-      "card_number": "EB03-053",
-      "price": 700.0,
-      "title": "Nami EB03-053",
-      "rarity": "",
-      "store": "Toad Trader TCG",
-      "set_name": "",
-      "condition": "",
-      "stock": "",
-      "available_variants": "",
-      "url": "https://www.toadtradertcg.com/product-page/nami-eb03-053",
-      "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "card_number": "OP04-056",
+      "price": 675.0,
+      "title": "Gum-Gum Red Roc (Alternate Art) [Premium Booster -The Best-]",
+      "rarity": "Rare",
+      "store": "Big Bang Shop",
+      "set_name": "Premium Booster -The Best-",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R675.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/gum-gum-red-roc-alternate-art-premium-booster-the-best",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/586197_e84d3ed9-cb2c-4233-8dec-b6d68f7f13da.jpg?v=1763494368",
+      "art_variant": "alternate",
+      "scraped_at": "2026-05-18T17:26:23Z"
     },
     {
       "card_number": "OP14-084",
-      "price": 850.0,
+      "price": 842.0,
       "title": "Ms. All Sunday (Alternate Art) [The Azure Sea's Seven]",
       "rarity": "Super Rare",
       "store": "Knightly Gaming",
       "set_name": "The Azure Sea's Seven",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R850.00",
+      "available_variants": "Near Mint Foil R842.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ms-all-sunday-alternate-art-the-azure-seas-seven",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/666913.jpg?v=1769205349",
+      "art_variant": "alternate",
       "scraped_at": "2026-05-18T19:20:14Z"
     },
     {
-      "card_number": "OP01-035",
-      "price": 915.0,
-      "title": "Okiku (SP) [500 Years in the Future]",
-      "rarity": "Rare",
-      "store": "Big Bang Shop",
-      "set_name": "500 Years in the Future",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R915.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/okiku-sp-500-years-in-the-future",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/545922_9fd2abba-1373-4311-89a8-55cfc63694d8.jpg?v=1763493691",
-      "scraped_at": "2026-05-18T17:26:23Z"
-    },
-    {
       "card_number": "ST18-004",
-      "price": 995.0,
+      "price": 1010.0,
       "title": "Zoro-Juurou [Emperors in the New World]",
       "rarity": "Super Rare",
       "store": "Big Bang Shop",
       "set_name": "Emperors in the New World",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R995.00",
+      "available_variants": "Near Mint Foil R1010.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/zoro-juurou-emperors-in-the-new-world",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/600658.jpg?v=1763491099",
-      "scraped_at": "2026-05-18T17:26:23Z"
-    },
-    {
-      "card_number": "OP03-114",
-      "price": 1040.0,
-      "title": "Charlotte Linlin (SP) [Wings of the Captain]",
-      "rarity": "Super Rare",
-      "store": "Big Bang Shop",
-      "set_name": "Wings of the Captain",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R1040.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/charlotte-linlin-sp-wings-of-the-captain",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/541666.jpg?v=1763513131",
-      "scraped_at": "2026-05-18T17:26:23Z"
-    },
-    {
-      "card_number": "ST12-012",
-      "price": 1180.0,
-      "title": "Charlotte Pudding (SP) [Royal Blood]",
-      "rarity": "Common",
-      "store": "Big Bang Shop",
-      "set_name": "Royal Blood",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R1180.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/charlotte-pudding-sp-royal-blood",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/617174_783cc0ae-36fb-4503-b00d-d8b59054d187.jpg?v=1763506693",
+      "art_variant": "original",
       "scraped_at": "2026-05-18T17:26:23Z"
     },
     {
@@ -1370,7 +2037,8 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/sanji-pudding-eb02-035-alternate-art",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "alternate",
+      "scraped_at": "2026-05-20T14:26:17Z"
     },
     {
       "card_number": "ST03-004",
@@ -1384,21 +2052,8 @@
       "available_variants": "1 in stock",
       "url": "https://tanukitrader.co.za/product/gecko-moria-sp/",
       "image_url": "https://tanukitrader.co.za/wp-content/uploads/2024/09/ST03-004SP.jpg",
+      "art_variant": "original",
       "scraped_at": "2026-05-19T07:54:15Z"
-    },
-    {
-      "card_number": "OP06-101",
-      "price": 1300.0,
-      "title": "O-Nami OP06-101 Event Pack",
-      "rarity": "",
-      "store": "Toad Trader TCG",
-      "set_name": "",
-      "condition": "",
-      "stock": "",
-      "available_variants": "",
-      "url": "https://www.toadtradertcg.com/product-page/o-nami-op06-101-event-pack",
-      "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
     },
     {
       "card_number": "OP14-031",
@@ -1412,48 +2067,37 @@
       "available_variants": "Near Mint Foil R1328.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-alternate-art-the-azure-seas-seven",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/670254.jpg?v=1769205406",
+      "art_variant": "alternate",
       "scraped_at": "2026-05-18T19:20:14Z"
     },
     {
-      "card_number": "OP13-118",
-      "price": 1700.0,
-      "title": "Monkey.D.Luffy OP13-118",
-      "rarity": "",
-      "store": "Toad Trader TCG",
-      "set_name": "",
-      "condition": "",
-      "stock": "",
-      "available_variants": "",
-      "url": "https://www.toadtradertcg.com/product-page/monkey-d-luffy-op13-118",
-      "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
-    },
-    {
       "card_number": "OP14-096",
-      "price": 1938.0,
+      "price": 1946.0,
       "title": "Ground Death (Alternate Art) [The Azure Sea's Seven]",
       "rarity": "Rare",
       "store": "Knightly Gaming",
       "set_name": "The Azure Sea's Seven",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R1938.00",
+      "available_variants": "Near Mint Foil R1946.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-alternate-art-the-azure-seas-seven",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/670874.jpg?v=1769205424",
+      "art_variant": "alternate",
       "scraped_at": "2026-05-18T19:20:14Z"
     },
     {
       "card_number": "OP06-106",
-      "price": 2765.0,
+      "price": 2810.0,
       "title": "Kouzuki Hiyori (Alternate Art) [Premium Booster -The Best-]",
       "rarity": "Super Rare",
       "store": "Big Bang Shop",
       "set_name": "Premium Booster -The Best-",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R2765.00",
+      "available_variants": "Near Mint Foil R2810.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/kouzuki-hiyori-alternate-art-premium-booster-the-best",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/586547_f8443361-1276-4ecb-b96f-7a9a73f8d367.jpg?v=1763495074",
+      "art_variant": "alternate",
       "scraped_at": "2026-05-18T17:26:23Z"
     },
     {
@@ -1468,20 +2112,22 @@
       "available_variants": "1 in stock",
       "url": "https://tanukitrader.co.za/product/nami-tr/",
       "image_url": "https://tanukitrader.co.za/wp-content/uploads/2024/09/ST01-007TR.jpeg",
+      "art_variant": "original",
       "scraped_at": "2026-05-19T07:54:15Z"
     },
     {
       "card_number": "ST18-004",
-      "price": 3615.0,
+      "price": 3670.0,
       "title": "Zoro-Juurou (SP) [Legacy of the Master]",
       "rarity": "Super Rare",
       "store": "Big Bang Shop",
       "set_name": "Legacy of the Master",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R3615.00",
+      "available_variants": "Near Mint Foil R3670.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/zoro-juurou-sp-legacy-of-the-master",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/646566_6ff3f551-62c5-4c2d-a265-0b03b6d23163.jpg?v=1763510818",
+      "art_variant": "original",
       "scraped_at": "2026-05-18T17:26:23Z"
     },
     {
@@ -1496,7 +2142,8 @@
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/tony-tony-chopper-st01-006-gift-collection",
       "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "art_variant": "original",
+      "scraped_at": "2026-05-20T14:26:17Z"
     }
   ]
 }

@@ -3568,23 +3568,11 @@
     "metacritic": null,
     "description": "Uncover the origins of organized crime in Mafia: The Old Country, a gritty mob story set in the brutal underworld of 1900s Sicily. Fight to survive in this dangerous and unforgiving era, with action brought to life by the authentic realism and rich storytelling that the critically acclaimed Mafia series is known for."
   },
-  "game_aaa:mario  rabbids kingdom battle": {
+  "game_aaa:mario rabbids kingdom battle": {
     "title": "Mario + Rabbids Kingdom Battle",
     "media_type": "game_aaa",
-    "rating": 4.1,
-    "poster_url": "https://media.rawg.io/media/games/5be/5befaab8379bd48b8e9b97cc60b0f5e6.jpg",
-    "platforms": [
-      "Nintendo Switch"
-    ],
     "website_url": "https://rabbids.ubisoft.com/portal/en-us/games/mario-rabbids-kingdom-battle.aspx",
-    "release_date": "2017-08-29",
-    "description": "The Mushroom Kingdom has been torn apart by a mysterious vortex,\ntransporting the chaotic Rabbids into this once-peaceful land. To\nrestore order, Mario, Luigi, Princess Peach, and Yoshi must team up with\na whole new crew: four Rabbids heroes! Together, they will battle with\nweapons through four worlds filled with combat, puzzles, and\nunpredictable enemies.\n\nDeveloped exclusively for the Nintendo Switch™ system, Mario + Rabbids\nKingdom Battle is the best of the Mario and Rabbids franchises,\ncombining all that you love about Mario's iconic universe with the\nside-splitting antics of the Rabbids.\n\nMario & Rabbids universes collide in this new adventure that combines\nthe best of these two worlds!\n\nMario, Luigi, Princess Peach, and Yoshi join forces with four Rabbids\nheroes with their own unique personalities.\n\nEasy to play, difficult to master. Solo and co-op turn-based combat is a\nfresh gameplay experience.\n\nBattle with an arsenal of weapons through four new worlds filled with\nenemies, puzzles, and humorous fun!\n\nPick up and play anywhere exclusively on the Nintendo Switch system,\neven on the go.",
-    "genres": [
-      "Strategy",
-      "Adventure"
-    ],
     "rawg_url": "https://rawg.io/games/mario-rabbids-kingdom-battle",
-    "metacritic": 85,
     "publishers": [
       "Ubisoft Entertainment"
     ],
@@ -3592,7 +3580,19 @@
       "Ubisoft Paris",
       "Ubisoft Milan"
     ],
-    "playtime_hours": 0
+    "poster_url": "https://media.rawg.io/media/games/5be/5befaab8379bd48b8e9b97cc60b0f5e6.jpg",
+    "metacritic": 85,
+    "playtime_hours": 0,
+    "release_date": "2017-08-29",
+    "rating": 4.1,
+    "description": "The Mushroom Kingdom has been torn apart by a mysterious vortex, transporting the chaotic Rabbids into this once-peaceful land. To restore order, Mario, Luigi, Princess Peach, and Yoshi must team up with a whole new crew: four Rabbids heroes! Together, they will battle with weapons through four worlds filled with combat, puzzles, and unpredictable enemies. Developed exclusively for the Nintendo Switch™ system, Mario + Rabbids Kingdom Battle is the best of the Mario and Rabbids franchises, combining all that you love about Mario's iconic universe with the side-splitting antics of the Rabbids. Mario & Rabbids universes collide in this new adventure that combines the best of these two worlds! Mario, Luigi, Princess Peach, and Yoshi join forces with four Rabbids heroes with their own unique personalities. Easy to play, difficult to master. Solo and co-op turn-based combat is a fresh gameplay experience. Battle with an arsenal of weapons through four new worlds filled with enemies, puzzles, and humorous fun! Pick up and play anywhere exclusively on the Nintendo Switch system, even on the go.",
+    "platforms": [
+      "Nintendo Switch"
+    ],
+    "genres": [
+      "Adventure",
+      "Strategy"
+    ]
   },
   "game_aaa:metal gear solid delta snake eater": {
     "title": "Metal Gear Solid Delta: Snake Eater",
@@ -5438,28 +5438,11 @@
     ],
     "playtime_hours": 5
   },
-  "game_aaa:tony hawks pro skater 1  2": {
-    "title": "Tony Hawk’s Pro Skater 1 + 2",
+  "game_aaa:tony hawks pro skater 1 2": {
+    "title": "Tony Hawk's Pro Skater 1 + 2",
     "media_type": "game_aaa",
-    "rating": 4.3,
-    "poster_url": "https://media.rawg.io/media/games/088/0885c48293746aad6df30735f30d0836.jpg",
-    "platforms": [
-      "PC",
-      "PlayStation 5",
-      "Xbox One",
-      "PlayStation 4",
-      "Xbox Series S/X",
-      "Nintendo Switch"
-    ],
     "website_url": "https://www.tonyhawkthegame.com/",
-    "release_date": "2020-09-04",
-    "description": "Play the fully-remastered Tony Hawk’s™ Pro Skater™ & Tony Hawk’s™ Pro Skater™ 2 games in one epic collection, rebuilt from the ground up in incredible HD.\r\n\r\nDrop Back In With The Most Iconic Skateboarding Games Ever Made\r\nSkate as the legendary Tony Hawk and the full pro roster. Listen to songs from the era-defining soundtrack. Hit insane trick combos with the iconic handling of the Tony Hawk’s™ Pro Skater™ series.\r\n\r\nAll The Original Game Modes And More\r\nPlay all the original modes and go head-to-head with local 2-Player modes. Show off your style and creativity with upgraded Create-A-Park and Create-A-Skater features. Compete against players from around the world in Multiplayer modes and leaderboards.",
-    "genres": [
-      "Arcade",
-      "Sports"
-    ],
     "rawg_url": "https://rawg.io/games/tony-hawks-pro-skater-12",
-    "metacritic": 88,
     "publishers": [
       "Activision Blizzard",
       "Activision Value Publishing"
@@ -5468,27 +5451,30 @@
       "Vicarious Visions",
       "Iron Galaxy Studios"
     ],
-    "playtime_hours": 2
-  },
-  "game_aaa:tony hawks pro skater 3  4": {
-    "title": "Tony Hawk’s Pro Skater 3 + 4<<<",
-    "media_type": "game_aaa",
-    "rating": 3.2,
-    "poster_url": "https://media.rawg.io/media/games/fb5/fb5453ec554d23caa221a6c8c4fd9279.jpg",
+    "poster_url": "https://media.rawg.io/media/games/088/0885c48293746aad6df30735f30d0836.jpg",
+    "metacritic": 88,
+    "playtime_hours": 2,
+    "release_date": "2020-09-04",
+    "rating": 4.3,
+    "description": "Play the fully-remastered Tony Hawk’s™ Pro Skater™ & Tony Hawk’s™ Pro Skater™ 2 games in one epic collection, rebuilt from the ground up in incredible HD. Drop Back In With The Most Iconic Skateboarding Games Ever Made Skate as the legendary Tony Hawk and the full pro roster. Listen to songs from the era-defining soundtrack. Hit insane trick combos with the iconic handling of the Tony Hawk’s™ Pro Skater™ series. All The Original Game Modes And More Play all the original modes and go head-to-head with local 2-Player modes. Show off your style and creativity with upgraded Create-A-Park and Create-A-Skater features. Compete against players from around the world in Multiplayer modes and leaderboards.",
     "platforms": [
       "PC",
-      "PlayStation 5",
-      "Nintendo Switch"
+      "Xbox One",
+      "Nintendo Switch",
+      "PlayStation 4",
+      "Xbox Series S/X",
+      "PlayStation 5"
     ],
-    "website_url": "https://www.tonyhawkthegame.com/",
-    "release_date": "2025-07-10",
-    "description": "Digital Deluxe EditionPurchase the Digital Deluxe Edition to skate as the Doom Slayer and rip and tear through a ton of additional content.The Digital Deluxe Edition includes:The Doom Slayer and The Revenant playable skaters, each includes 2 secret moves. The Doom Slayer includes 2 unique outfits and the Unmaykr Hoverboard skate deck.Additional songs included with the in-game soundtrackExclusive Doom Slayer, Revenant, and Create-a-Skater skate decksExclusive themed Create-a-Skater ItemsWireframe Tony Shader\nAbout the GameGet hyped for the legendary franchise to return with Tony Hawk’s™ Pro Skater™ 3 + 4. Everything you loved is back, but revamped with more skaters, new parks, gnarlier tricks, eardrum shattering music, plus a whole lot more.Reunite the crew with cross-platform online Multiplayer* for up to 8 skaters in new and returning game modes.Drop in to new parks or tear it up across the timeless parks from both Tony Hawk’s™ Pro Skater™ 3 & Tony Hawk’s™ Pro Skater™ 4, authentically remade in jaw dropping 4K** resolution with streamlined goals and the epic 2-minute format.Hit ‘em with some drip in the expanded Create-A-Skater and Create-A-Park modes, including the ability to create custom goals to share with friends for the first time ever.Shred harder than ever with more challenging goals and an enhanced New Game+ mode.Whether you’re a total casual or a grungy pro, the same smooth handling and simple-to-learn controls from Tony Hawk’s™ Pro Skater™ 1 + 2 will have you shredding like a Pro.Alert the neighborhood watch and grab your skate buddies because the shred’s not dead. It’s back and better than ever.",
     "genres": [
-      "Simulation",
-      "Sports"
-    ],
+      "Sports",
+      "Arcade"
+    ]
+  },
+  "game_aaa:tony hawks pro skater 3 4": {
+    "title": "Tony Hawk’s Pro Skater 3 + 4",
+    "media_type": "game_aaa",
+    "website_url": "https://www.tonyhawkthegame.com/",
     "rawg_url": "https://rawg.io/games/tony-hawks-pro-skater-3-4",
-    "metacritic": null,
     "publishers": [
       "Activision Blizzard",
       "Activision Value Publishing"
@@ -5496,7 +5482,21 @@
     "developers": [
       "Iron Galaxy Studios"
     ],
-    "playtime_hours": 0
+    "poster_url": "https://media.rawg.io/media/games/fb5/fb5453ec554d23caa221a6c8c4fd9279.jpg",
+    "metacritic": null,
+    "playtime_hours": 0,
+    "release_date": "2025-07-10",
+    "rating": 3.0,
+    "description": "Digital Deluxe EditionPurchase the Digital Deluxe Edition to skate as the Doom Slayer and rip and tear through a ton of additional content.The Digital Deluxe Edition includes:The Doom Slayer and The Revenant playable skaters, each includes 2 secret moves. The Doom Slayer includes 2 unique outfits and the Unmaykr Hoverboard skate deck.Additional songs included with the in-game soundtrackExclusive Doom Slayer, Revenant, and Create-a-Skater skate decksExclusive themed Create-a-Skater ItemsWireframe Tony Shader About the GameGet hyped for the legendary franchise to return with Tony Hawk’s™ Pro Skater™ 3 + 4. Everything you loved is back, but revamped with more skaters, new parks, gnarlier tricks, eardrum shattering music, plus a whole lot more.Reunite the crew with cross-platform online Multiplayer* for up to 8 skaters in new and returning game modes.Drop in to new parks or tear it up across the timeless parks from both Tony Hawk’s™ Pro Skater™ 3 & Tony Hawk’s™ Pro Skater™ 4, authentically remade in jaw dropping 4K** resolution with streamlined goals and the epic 2-minute format.Hit ‘em with some drip in the expanded Create-A-Skater and Create-A-Park modes, including the ability to create custom goals to share with friends for the first time ever.Shred harder than ever with more challenging goals and an enhanced New Game+ mode.Whether you’re a total casual or a grungy pro, the same smooth handling and simple-to-learn controls from Tony Hawk’s™ Pro Skater™ 1 + 2 will have you shredding like a Pro.Alert the neighborhood watch and grab your skate buddies because the shred’s not dead. It’s back and better than ever.",
+    "platforms": [
+      "PC",
+      "Nintendo Switch",
+      "PlayStation 5"
+    ],
+    "genres": [
+      "Simulation",
+      "Sports"
+    ]
   },
   "game_aaa:transformers the game": {
     "title": "Transformers: The Game",
@@ -8014,36 +8014,36 @@
     ],
     "playtime_hours": 5
   },
-  "game_indie:convergence  a league of legends story": {
+  "game_indie:convergence a league of legends story": {
     "title": "Convergence - A League of Legends Story",
     "media_type": "game_indie",
-    "rating": 3.3,
-    "poster_url": "https://media.rawg.io/media/games/f3f/f3faac7c2ab5217a265f0356a64c08b8.jpeg",
-    "platforms": [
-      "PC",
-      "PlayStation 5",
-      "Xbox One",
-      "PlayStation 4",
-      "Xbox Series S/X",
-      "Nintendo Switch"
-    ],
     "website_url": "https://convrgencegame.com/",
-    "release_date": "2023-05-23",
-    "description": "Explore and traverse through the spectacular city of Zaun as Ekko, a young inventor with an ingenious device to manipulate time, in this story-driven action platformer. Play as a young Ekko and realize the full potential of one of League's fan-favorite Champions.\nDiscover different environments with parkour-style traversal while you level up a variety of combat and time abilities to defeat a wide range of enemies in Zaun.\nDeveloped by Double Stallion Games, CONV/RGENCE: A League Of Legends Story is a 2D Action Platformer with an incredible art style that focuses on tight dynamic combat and unique exploration opportunities afforded by Ekko's ability to travel in space and time.",
-    "genres": [
-      "Platformer",
-      "Adventure",
-      "Action"
-    ],
     "rawg_url": "https://rawg.io/games/convrgence-a-league-of-legends-story",
-    "metacritic": null,
     "publishers": [
       "Riot Forge"
     ],
     "developers": [
       "Double Stallion"
     ],
-    "playtime_hours": 3
+    "poster_url": "https://media.rawg.io/media/games/f3f/f3faac7c2ab5217a265f0356a64c08b8.jpeg",
+    "metacritic": null,
+    "playtime_hours": 3,
+    "release_date": "2023-05-23",
+    "rating": 3.3,
+    "description": "Explore and traverse through the spectacular city of Zaun as Ekko, a young inventor with an ingenious device to manipulate time, in this story-driven action platformer. Play as a young Ekko and realize the full potential of one of League's fan-favorite Champions. Discover different environments with parkour-style traversal while you level up a variety of combat and time abilities to defeat a wide range of enemies in Zaun. Developed by Double Stallion Games, CONV/RGENCE: A League Of Legends Story is a 2D Action Platformer with an incredible art style that focuses on tight dynamic combat and unique exploration opportunities afforded by Ekko's ability to travel in space and time.",
+    "platforms": [
+      "PC",
+      "Nintendo Switch",
+      "Xbox One",
+      "Xbox Series S/X",
+      "PlayStation 5",
+      "PlayStation 4"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Platformer"
+    ]
   },
   "game_indie:creature kitchen": {
     "title": "Creature Kitchen",
@@ -8840,27 +8840,11 @@
     ],
     "playtime_hours": 13
   },
-  "game_indie:hextech mayhem  a league of legends story": {
+  "game_indie:hextech mayhem a league of legends story": {
     "title": "Hextech Mayhem - A League of Legends Story",
     "media_type": "game_indie",
-    "rating": 3.5,
-    "poster_url": "https://media.rawg.io/media/games/b22/b225aa835ce31dcb1d012e8e93153d3c.jpg",
-    "platforms": [
-      "PC",
-      "Nintendo Switch",
-      "iOS",
-      "Android"
-    ],
     "website_url": "https://hextechmayhem.com/",
-    "release_date": "2021-11-15",
-    "description": "Pre-order today to receive an exclusive Ruined Ziggs Skin in Hextech Mayhem.\nIn this fast-paced rhythm runner, every action has an explosive reaction and no amount of mayhem is too much. Take on the role of yordle and Hexplosives expert Ziggs as you rampage through the neighborhoods of Piltover.\nBomb, bounce, and bop to the beat of the music to avoid obstacles, disarm enemies, and light fuses to achieve maximum chaos. Cause musical mayhem while outrunning no-fun-allowed Heimerdinger in your quest to build the greatest bomb the world has ever seen!\nUse the Freestyle Mayhem System to create spontaneous blasts and grab bonus points… all while dodging the fun police and showing them what they’re really missing.\nLeave no fuse unlit in Hextech Mayhem: A League of Legends Story.",
-    "genres": [
-      "Platformer",
-      "Indie",
-      "Action"
-    ],
     "rawg_url": "https://rawg.io/games/hextech-mayhem-a-league-of-legends-story",
-    "metacritic": null,
     "publishers": [
       "Riot Games",
       "Riot Forge"
@@ -8868,7 +8852,23 @@
     "developers": [
       "Choice Provisions"
     ],
-    "playtime_hours": 2
+    "poster_url": "https://media.rawg.io/media/games/b22/b225aa835ce31dcb1d012e8e93153d3c.jpg",
+    "metacritic": null,
+    "playtime_hours": 2,
+    "release_date": "2021-11-15",
+    "rating": 3.5,
+    "description": "Pre-order today to receive an exclusive Ruined Ziggs Skin in Hextech Mayhem. In this fast-paced rhythm runner, every action has an explosive reaction and no amount of mayhem is too much. Take on the role of yordle and Hexplosives expert Ziggs as you rampage through the neighborhoods of Piltover. Bomb, bounce, and bop to the beat of the music to avoid obstacles, disarm enemies, and light fuses to achieve maximum chaos. Cause musical mayhem while outrunning no-fun-allowed Heimerdinger in your quest to build the greatest bomb the world has ever seen! Use the Freestyle Mayhem System to create spontaneous blasts and grab bonus points… all while dodging the fun police and showing them what they’re really missing. Leave no fuse unlit in Hextech Mayhem: A League of Legends Story.",
+    "platforms": [
+      "Nintendo Switch",
+      "PC",
+      "Android",
+      "iOS"
+    ],
+    "genres": [
+      "Action",
+      "Indie",
+      "Platformer"
+    ]
   },
   "game_indie:hollow knight": {
     "title": "Hollow Knight",
@@ -10179,31 +10179,31 @@
     ],
     "playtime_hours": 5
   },
-  "game_indie:the mageseeker  a league of legends story": {
+  "game_indie:the mageseeker a league of legends story": {
     "title": "The Mageseeker - A League of Legends Story",
     "media_type": "game_indie",
-    "rating": 3.3,
-    "poster_url": "https://media.rawg.io/media/screenshots/6e2/6e255d703ec5483978693453af35efd4.jpg",
-    "platforms": [
-      "PC"
-    ],
     "website_url": "https://themageseeker.com",
-    "release_date": "2023-04-17",
-    "description": "Digital Deluxe Edition\nThe Mageseeker: A League of Legends Story™ Deluxe Edition includes the Silverwing Supply Station Pack, the Home Sweet Cave Pack, the Hijacked Spells Pack, and the Unchained Skins Pack.\nAbout the GameDeveloped by Digital Sun, creators of Moonlighter, The Mageseeker: A League of Legends Story™ is an action RPG that takes place in the League of Legends universe. In the kingdom of Demacia, the Mageseekers hold the power to oppress magic-using citizens in the name of public order–by inducting and indoctrinating them, locking them away, or driving them into hiding.\nPlay as Sylas, a spell-stealing mage who has just broken free of his unjust captivity at the Mageseekers’ hands. Wielding the chains that once bound you, you must liberate your homeland from tyranny, one Mageseeker at a time.\nIt’s time to unshackle the magic.\nCommand the Magic\nMagic is everywhere, including on the battlefield. From searing flames to deadly ice, master a variety of spells and customize your unique play style. Brandish your chains and use your enemies’ magic against them, or bash them with your fists–the choice is yours.\nRaise a Rebellion\nDemacia is ripe for a revolution, but can you rise to the challenge of leading it? It’s up to you to find mages across the land and recruit them to your cause. Harness the power of your growing army to upgrade your base and unlock unique abilities.\nForge Your Legacy\nYou see the Mageseekers for the criminals they are, but not everyone is ready for the truth. Battle formidable foes and align with unforgettable allies, both new and old. Only you can uncover the buried secrets of Demacia’s past, and use them to change the course of its future.",
-    "genres": [
-      "Indie",
-      "Action",
-      "RPG"
-    ],
     "rawg_url": "https://rawg.io/games/the-mageseeker-a-league-of-legends-story",
-    "metacritic": null,
     "publishers": [
       "Riot Forge"
     ],
     "developers": [
       "Digital Sun"
     ],
-    "playtime_hours": 5
+    "poster_url": "https://media.rawg.io/media/screenshots/6e2/6e255d703ec5483978693453af35efd4.jpg",
+    "metacritic": null,
+    "playtime_hours": 5,
+    "release_date": "2023-04-17",
+    "rating": 3.3,
+    "description": "Digital Deluxe Edition The Mageseeker: A League of Legends Story™ Deluxe Edition includes the Silverwing Supply Station Pack, the Home Sweet Cave Pack, the Hijacked Spells Pack, and the Unchained Skins Pack. About the GameDeveloped by Digital Sun, creators of Moonlighter, The Mageseeker: A League of Legends Story™ is an action RPG that takes place in the League of Legends universe. In the kingdom of Demacia, the Mageseekers hold the power to oppress magic-using citizens in the name of public order–by inducting and indoctrinating them, locking them away, or driving them into hiding. Play as Sylas, a spell-stealing mage who has just broken free of his unjust captivity at the Mageseekers’ hands. Wielding the chains that once bound you, you must liberate your homeland from tyranny, one Mageseeker at a time. It’s time to unshackle the magic. Command the Magic Magic is everywhere, including on the battlefield. From searing flames to deadly ice, master a variety of spells and customize your unique play style. Brandish your chains and use your enemies’ magic against them, or bash them with your fists–the choice is yours. Raise a Rebellion Demacia is ripe for a revolution, but can you rise to the challenge of leading it? It’s up to you to find mages across the land and recruit them to your cause. Harness the power of your growing army to upgrade your base and unlock unique abilities. Forge Your Legacy You see the Mageseekers for the criminals they are, but not everyone is ready for the truth. Battle formidable foes and align with unforgettable allies, both new and old. Only you can uncover the buried secrets of Demacia’s past, and use them to change the course of its future.",
+    "platforms": [
+      "PC"
+    ],
+    "genres": [
+      "Action",
+      "RPG",
+      "Indie"
+    ]
   },
   "game_indie:the midnight walk": {
     "title": "The Midnight Walk",
