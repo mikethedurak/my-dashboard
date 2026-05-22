@@ -36,6 +36,7 @@ const GAME_LAB_MANIFEST_PATH = "./data/game_lab/manifest.json";
 const STATE_API_BASE = String(window.DASHBOARD_STATE_API || "").trim();
 const STATE_API_KEY = "main";
 const STATE_SYNC_DEBOUNCE_MS = 5000;
+const STATE_PULL_INTERVAL_MS = 15000;
 const WEEK_DAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 const WATCHLIST_MEDIA_CONFIG = {
   screen: { label: "Movies + Series", types: ["movie", "series"] },
@@ -356,6 +357,7 @@ let timelineLightboxIndex = -1;
 let onePieceStripDragBound = false;
 let remoteStateLoaded = false;
 let remoteStateSaveTimer = null;
+let remoteStatePullTimer = null;
 const readingPrefetchCache = new Map();
 const markerIcons = {
   places: L.icon({
@@ -3901,6 +3903,81 @@ function queueRemoteStateSync() {
   }, STATE_SYNC_DEBOUNCE_MS);
 }
 
+function applyRemoteDailyGoalsState(payload, { render = false } = {}) {
+  if (!payload || typeof payload !== "object") {
+    return false;
+  }
+
+  let changed = false;
+  const localGoalsTs = Number(localStorage.getItem(DAILY_GOALS_TS_KEY) || "0");
+  const remoteGoalsTs = Number(payload.daily_goals_ts || 0);
+  if (remoteGoalsTs > localGoalsTs && Array.isArray(payload.daily_goals)) {
+    state.dailyGoals = payload.daily_goals;
+    state.dailyGoalsSavedAt = remoteGoalsTs;
+    changed = true;
+    try {
+      localStorage.setItem(DAILY_GOALS_KEY, JSON.stringify(state.dailyGoals));
+      localStorage.setItem(DAILY_GOALS_TS_KEY, String(remoteGoalsTs));
+    } catch {
+      // Ignore storage failures.
+    }
+  }
+
+  const localProgress = loadDailyGoalsProgressFromStorage();
+  const remoteProgressTs = Number(payload.daily_goals_progress?._ts || 0);
+  if (remoteProgressTs > localProgress._ts && payload.daily_goals_progress && typeof payload.daily_goals_progress === "object") {
+    state.dailyGoalsProgress = {
+      total_points: Number(payload.daily_goals_progress.total_points || 0),
+      daily: payload.daily_goals_progress.daily && typeof payload.daily_goals_progress.daily === "object"
+        ? payload.daily_goals_progress.daily : {},
+      once_off_done: Array.isArray(payload.daily_goals_progress.once_off_done)
+        ? payload.daily_goals_progress.once_off_done : [],
+      once_off_dates: payload.daily_goals_progress.once_off_dates && typeof payload.daily_goals_progress.once_off_dates === "object"
+        ? payload.daily_goals_progress.once_off_dates : {},
+      _ts: remoteProgressTs,
+    };
+    changed = true;
+    try {
+      localStorage.setItem(DAILY_GOALS_PROGRESS_KEY, JSON.stringify(state.dailyGoalsProgress));
+    } catch {
+      // Ignore storage failures.
+    }
+  }
+
+  if (changed && render) {
+    renderDailyGoals();
+  }
+  return changed;
+}
+
+async function pullRemoteDailyGoalsState() {
+  const url = stateApiUrl();
+  if (!url || remoteStateSaveTimer) {
+    return;
+  }
+  try {
+    const response = await fetch(url, { cache: "no-store" });
+    if (!response.ok) {
+      return;
+    }
+    const payload = await response.json();
+    applyRemoteDailyGoalsState(payload, { render: true });
+  } catch {
+    // Ignore remote pull failures.
+  }
+}
+
+function startRemoteStatePull() {
+  if (!stateApiUrl() || remoteStatePullTimer) {
+    return;
+  }
+  remoteStatePullTimer = setInterval(() => {
+    if (document.visibilityState !== "hidden") {
+      void pullRemoteDailyGoalsState();
+    }
+  }, STATE_PULL_INTERVAL_MS);
+}
+
 async function loadRemoteDashboardState() {
   const url = stateApiUrl();
   if (!url) {
@@ -3976,37 +4053,7 @@ async function loadRemoteDashboardState() {
       }
       applySubsectionOpenStatePreference();
     }
-    const localGoalsTs = Number(localStorage.getItem(DAILY_GOALS_TS_KEY) || "0");
-    const remoteGoalsTs = Number(payload.daily_goals_ts || 0);
-    if (remoteGoalsTs > localGoalsTs && Array.isArray(payload.daily_goals) && payload.daily_goals.length > 0) {
-      state.dailyGoals = payload.daily_goals;
-      state.dailyGoalsSavedAt = remoteGoalsTs;
-      try {
-        localStorage.setItem(DAILY_GOALS_KEY, JSON.stringify(state.dailyGoals));
-        localStorage.setItem(DAILY_GOALS_TS_KEY, String(remoteGoalsTs));
-      } catch {
-        // Ignore storage failures.
-      }
-    }
-    const localProgress = loadDailyGoalsProgressFromStorage();
-    const remoteProgressTs = Number(payload.daily_goals_progress?._ts || 0);
-    if (remoteProgressTs > localProgress._ts && payload.daily_goals_progress && typeof payload.daily_goals_progress === "object") {
-      state.dailyGoalsProgress = {
-        total_points: Number(payload.daily_goals_progress.total_points || 0),
-        daily: payload.daily_goals_progress.daily && typeof payload.daily_goals_progress.daily === "object"
-          ? payload.daily_goals_progress.daily : {},
-        once_off_done: Array.isArray(payload.daily_goals_progress.once_off_done)
-          ? payload.daily_goals_progress.once_off_done : [],
-        once_off_dates: payload.daily_goals_progress.once_off_dates && typeof payload.daily_goals_progress.once_off_dates === "object"
-          ? payload.daily_goals_progress.once_off_dates : {},
-        _ts: remoteProgressTs,
-      };
-      try {
-        localStorage.setItem(DAILY_GOALS_PROGRESS_KEY, JSON.stringify(state.dailyGoalsProgress));
-      } catch {
-        // Ignore storage failures.
-      }
-    }
+    applyRemoteDailyGoalsState(payload, { render: true });
     if (payload.collection_art_prefs && typeof payload.collection_art_prefs === "object") {
       try {
         localStorage.setItem(COLLECTION_ART_PREFS_STORAGE_KEY, JSON.stringify(payload.collection_art_prefs));
@@ -8472,12 +8519,14 @@ function addDailyGoal(name, points, type) {
   const id = Date.now().toString(36) + Math.random().toString(36).slice(2);
   state.dailyGoals.push({ id, name: name.trim(), points: Number(points) || 0, type });
   saveDailyGoalsToStorage();
+  queueRemoteStateSync();
   renderDailyGoals();
 }
 
 function deleteDailyGoal(goalId) {
   state.dailyGoals = state.dailyGoals.filter((g) => g.id !== goalId);
   saveDailyGoalsToStorage();
+  queueRemoteStateSync();
   renderDailyGoals();
 }
 
@@ -8529,6 +8578,7 @@ function moveDailyGoal(goalId, dir) {
   if (swapIdx < 0 || swapIdx >= state.dailyGoals.length) return;
   [state.dailyGoals[idx], state.dailyGoals[swapIdx]] = [state.dailyGoals[swapIdx], state.dailyGoals[idx]];
   saveDailyGoalsToStorage();
+  queueRemoteStateSync();
   renderDailyGoals();
 }
 
@@ -8776,6 +8826,7 @@ async function bootstrapDashboard() {
     state.readingCurrentPage = Number(localReadingProgress.page);
   }
   await loadRemoteDashboardState();
+  startRemoteStatePull();
   syncOnePieceVideoTabs();
   syncOnePieceTimelineTabs();
   renderReadingViewerState();
