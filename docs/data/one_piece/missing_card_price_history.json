@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-23T18:49:45Z",
+  "updated_at": "2026-05-23T20:00:20Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -7368,6 +7368,42 @@
       "stock": "In stock",
       "observed_on": "2026-05-23",
       "captured_at": "2026-05-23T18:49:45Z"
+    },
+    {
+      "card_number": "OP02-120",
+      "art_variant": "original",
+      "price": 190.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-op02-120-premium-card-collection-uta-one-piece-promotion-cards",
+      "title": "Uta (OP02-120) (Premium Card Collection -Uta-) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-05-23",
+      "captured_at": "2026-05-23T20:00:20Z"
+    },
+    {
+      "card_number": "P-031",
+      "art_variant": "original",
+      "price": 280.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-p-031-premium-card-collection-uta-one-piece-promotion-cards",
+      "title": "Uta (P-031) (Premium Card Collection -Uta-) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-05-23",
+      "captured_at": "2026-05-23T20:00:20Z"
+    },
+    {
+      "card_number": "ST18-004",
+      "art_variant": "original",
+      "price": 3735.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/zoro-juurou-sp-legacy-of-the-master",
+      "title": "Zoro-Juurou (SP) [Legacy of the Master]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-05-23",
+      "captured_at": "2026-05-23T20:00:20Z"
     }
   ]
 }
