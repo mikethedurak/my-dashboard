@@ -646,21 +646,6 @@
       "scraped_at": "2026-05-20T09:04:14Z"
     },
     {
-      "card_number": "OP10-071",
-      "price": 89.0,
-      "title": "Donquixote Doflamingo [Royal Blood]",
-      "rarity": "Super Rare",
-      "store": "Knightly Gaming",
-      "set_name": "Royal Blood",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R89.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-royal-blood",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/617115.jpg?v=1758380198",
-      "art_variant": "original",
-      "scraped_at": "2026-05-18T19:20:14Z"
-    },
-    {
       "card_number": "EB02-041",
       "price": 90.0,
       "title": "Merry Go EB02-041",
@@ -704,6 +689,21 @@
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/images__1__Jql6WXB4A.jpeg",
       "art_variant": "original",
       "scraped_at": "2026-05-20T09:04:14Z"
+    },
+    {
+      "card_number": "OP10-071",
+      "price": 92.0,
+      "title": "Donquixote Doflamingo [Royal Blood]",
+      "rarity": "Super Rare",
+      "store": "Knightly Gaming",
+      "set_name": "Royal Blood",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R92.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-royal-blood",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/617115.jpg?v=1758380198",
+      "art_variant": "original",
+      "scraped_at": "2026-05-18T19:20:14Z"
     },
     {
       "card_number": "ST10-010",
@@ -1216,21 +1216,6 @@
       "scraped_at": "2026-05-20T14:26:17Z"
     },
     {
-      "card_number": "OP11-054",
-      "price": 671.0,
-      "title": "Nami (054) (Alternate Art) [A Fist of Divine Speed]",
-      "rarity": "Super Rare",
-      "store": "Knightly Gaming",
-      "set_name": "A Fist of Divine Speed",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R671.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-054-alternate-art-a-fist-of-divine-speed",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/632422.jpg?v=1757718637",
-      "art_variant": "alternate",
-      "scraped_at": "2026-05-18T19:20:14Z"
-    },
-    {
       "card_number": "OP04-056",
       "price": 675.0,
       "title": "Gum-Gum Red Roc (Alternate Art) [Premium Booster -The Best-]",
@@ -1244,6 +1229,21 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/586197_e84d3ed9-cb2c-4233-8dec-b6d68f7f13da.jpg?v=1763494368",
       "art_variant": "alternate",
       "scraped_at": "2026-05-18T17:26:23Z"
+    },
+    {
+      "card_number": "OP11-054",
+      "price": 677.0,
+      "title": "Nami (054) (Alternate Art) [A Fist of Divine Speed]",
+      "rarity": "Super Rare",
+      "store": "Knightly Gaming",
+      "set_name": "A Fist of Divine Speed",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R677.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-054-alternate-art-a-fist-of-divine-speed",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/632422.jpg?v=1757718637",
+      "art_variant": "alternate",
+      "scraped_at": "2026-05-18T19:20:14Z"
     },
     {
       "card_number": "OP14-084",
@@ -1307,14 +1307,14 @@
     },
     {
       "card_number": "OP14-031",
-      "price": 1326.0,
+      "price": 1332.0,
       "title": "Nami (Alternate Art) [The Azure Sea's Seven]",
       "rarity": "Super Rare",
       "store": "Knightly Gaming",
       "set_name": "The Azure Sea's Seven",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R1326.00",
+      "available_variants": "Near Mint Foil R1332.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-alternate-art-the-azure-seas-seven",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/670254.jpg?v=1769205406",
       "art_variant": "alternate",
