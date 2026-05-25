@@ -1156,6 +1156,21 @@
       "scraped_at": "2026-05-20T14:26:17Z"
     },
     {
+      "card_number": "ST03-004",
+      "price": "1235.0",
+      "title": "Gecko Moria (SP)",
+      "rarity": "Common",
+      "store": "Tanuki Trader",
+      "set_name": "Two Legends (OP08)",
+      "condition": "",
+      "stock": "1 in stock",
+      "available_variants": "1 in stock",
+      "url": "https://tanukitrader.co.za/product/gecko-moria-sp/",
+      "image_url": "https://tanukitrader.co.za/wp-content/uploads/2024/09/ST03-004SP.jpg",
+      "art_variant": "original",
+      "scraped_at": "2026-05-25T21:59:39Z"
+    },
+    {
       "card_number": "OP14-031",
       "price": "1335.0",
       "title": "Nami (Alternate Art) [The Azure Sea's Seven]",
@@ -1199,6 +1214,21 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/586547_f8443361-1276-4ecb-b96f-7a9a73f8d367.jpg?v=1763495074",
       "art_variant": "alternate",
       "scraped_at": "2026-05-25T14:27:07Z"
+    },
+    {
+      "card_number": "ST01-007",
+      "price": "3485.0",
+      "title": "Nami (TR)",
+      "rarity": "",
+      "store": "Tanuki Trader",
+      "set_name": "Wings of the Captain (OP06)",
+      "condition": "",
+      "stock": "1 in stock",
+      "available_variants": "1 in stock",
+      "url": "https://tanukitrader.co.za/product/nami-tr/",
+      "image_url": "https://tanukitrader.co.za/wp-content/uploads/2024/09/ST01-007TR.jpeg",
+      "art_variant": "original",
+      "scraped_at": "2026-05-25T21:59:39Z"
     },
     {
       "card_number": "ST18-004",
