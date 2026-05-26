@@ -1,11 +1,20 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-05-25T08:27:58.641638Z",
+  "generated_at": "2026-05-26T07:57:11.898228Z",
   "channel_name": "gameranx",
   "channel_id": "UCNvzD7Z-g64bPXxGzaQaa4g",
   "channel_url": "https://www.youtube.com/@gameranxTV",
   "items_count": 15,
   "items": [
+    {
+      "id": "yt-G2xUaiz2RH8",
+      "video_id": "G2xUaiz2RH8",
+      "title": "10 Games That CHANGE If You Play Them WRONG",
+      "url": "https://www.youtube.com/watch?v=G2xUaiz2RH8",
+      "published_at": "2026-05-25T15:38:21+00:00",
+      "updated_at": "2026-05-26T07:43:44+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/G2xUaiz2RH8/hqdefault.jpg"
+    },
     {
       "id": "yt-pNBbvHPb-qQ",
       "video_id": "pNBbvHPb-qQ",
@@ -39,7 +48,7 @@
       "title": "15 Games With The Most REALISTIC NPCs",
       "url": "https://www.youtube.com/watch?v=pFqJBngRQM4",
       "published_at": "2026-05-21T15:55:11+00:00",
-      "updated_at": "2026-05-23T18:12:57+00:00",
+      "updated_at": "2026-05-24T22:42:20+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/pFqJBngRQM4/hqdefault.jpg"
     },
     {
@@ -102,7 +111,7 @@
       "title": "Forza Horizon 6 - Before You Buy",
       "url": "https://www.youtube.com/watch?v=jvMJGFxPbJI",
       "published_at": "2026-05-14T22:28:01+00:00",
-      "updated_at": "2026-05-19T11:07:21+00:00",
+      "updated_at": "2026-05-25T14:00:44+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/jvMJGFxPbJI/hqdefault.jpg"
     },
     {
@@ -131,15 +140,6 @@
       "published_at": "2026-05-12T16:40:11+00:00",
       "updated_at": "2026-05-22T13:54:11+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/2iVH9yBcUsQ/hqdefault.jpg"
-    },
-    {
-      "id": "yt-ULWzfUkvKDw",
-      "video_id": "ULWzfUkvKDw",
-      "title": "Directive 8020 - Before You Buy",
-      "url": "https://www.youtube.com/watch?v=ULWzfUkvKDw",
-      "published_at": "2026-05-11T23:16:47+00:00",
-      "updated_at": "2026-05-16T03:30:01+00:00",
-      "thumbnail_url": "https://i.ytimg.com/vi/ULWzfUkvKDw/hqdefault.jpg"
     }
   ]
 }

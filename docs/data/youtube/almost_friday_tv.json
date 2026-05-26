@@ -1,11 +1,20 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-05-25T08:27:57.985423Z",
+  "generated_at": "2026-05-26T07:57:11.650263Z",
   "channel_name": "Almost Friday TV",
   "channel_id": "UCCgK6peZI5-FKDCWzMIFk2A",
   "channel_url": "https://www.youtube.com/@AlmostFridayTV",
-  "items_count": 106,
+  "items_count": 107,
   "items": [
+    {
+      "id": "yt-lJMuJsdj96c",
+      "video_id": "lJMuJsdj96c",
+      "title": "Is it gonna be bad",
+      "url": "https://www.youtube.com/shorts/lJMuJsdj96c",
+      "published_at": "2026-05-26T01:23:11+00:00",
+      "updated_at": "2026-05-26T01:26:14+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/lJMuJsdj96c/hqdefault.jpg"
+    },
     {
       "id": "yt-zE2M-QK_ZRA",
       "video_id": "zE2M-QK_ZRA",

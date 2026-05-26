@@ -1,20 +1,5 @@
 [
   {
-    "title": "Cape Town Abseil",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1531472391",
-    "image": "https://content.webtickets.co.za/WildHorizons/panel_DSC06292_20230725_105701.jpg",
-    "date_text": "From 25 May 2026",
-    "venue": "Table Mountain",
-    "price": "R995 - R1100",
-    "source": "Webtickets",
-    "region": "Western Cape",
-    "categories": [],
-    "missing_location": true,
-    "location_key": "",
-    "missing_place": true,
-    "place_key": ""
-  },
-  {
     "title": "Cape Town City FC vs Milford FC",
     "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1595757441",
     "image": "https://content.webtickets.co.za/capetownfc/panel_play offs 1_20260520_101504.jpg",
@@ -41,6 +26,21 @@
     "categories": [
       "theatre"
     ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Cape Town Abseil",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1531472391",
+    "image": "https://content.webtickets.co.za/WildHorizons/panel_DSC06292_20230725_105701.jpg",
+    "date_text": "From 26 May 2026",
+    "venue": "Table Mountain",
+    "price": "R995 - R1100",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [],
     "missing_location": true,
     "location_key": "",
     "missing_place": true,

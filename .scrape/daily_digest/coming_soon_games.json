@@ -2,6 +2,14 @@
   "source": "https://api.rawg.io/api/games",
   "new_releases": [
     {
+      "title": "Paralives",
+      "url": "https://rawg.io/games/paralives",
+      "image": "https://media.rawg.io/media/screenshots/64a/64a39ca3b3be03ed98fa8dfe9d0df860.jpg",
+      "release_date": "2026-05-25",
+      "rating": "0.0",
+      "platforms": "PC, macOS"
+    },
+    {
       "title": "Lego Batman: Legacy of the Dark Knight",
       "url": "https://rawg.io/games/lego-batman-legacy-of-the-dark-knight",
       "image": "https://media.rawg.io/media/games/69a/69a6a1097f82210dbf8583f8e0d09123.jpg",
@@ -82,20 +90,20 @@
       "platforms": "PC"
     },
     {
-      "title": "Phonopolis",
-      "url": "https://rawg.io/games/phonopolis",
-      "image": "https://media.rawg.io/media/games/044/044e2732dc470c41a6a2ac074bdf7fb0.jpg",
-      "release_date": "2026-05-20",
-      "rating": "0.0",
-      "platforms": "PC, macOS"
-    },
-    {
       "title": "ZERO PARADES: For Dead Spies Bundle",
       "url": "https://rawg.io/games/zero-parades-for-dead-spies-bundle",
       "image": "https://media.rawg.io/media/screenshots/6f0/6f00ca365527633a9c05fc25025fa38f.jpg",
       "release_date": "2026-05-20",
       "rating": "0.0",
       "platforms": "PC"
+    },
+    {
+      "title": "Phonopolis",
+      "url": "https://rawg.io/games/phonopolis",
+      "image": "https://media.rawg.io/media/games/044/044e2732dc470c41a6a2ac074bdf7fb0.jpg",
+      "release_date": "2026-05-20",
+      "rating": "0.0",
+      "platforms": "PC, macOS"
     },
     {
       "title": "Forza Horizon 6",
@@ -392,14 +400,6 @@
       "release_date": "2026-05-01",
       "rating": "0.0",
       "platforms": "PC, PlayStation 5, Xbox Series S/X"
-    },
-    {
-      "title": "Omniquarium",
-      "url": "https://rawg.io/games/omniquarium",
-      "image": "https://media.rawg.io/media/screenshots/80e/80eb78bb20bdd8e76cd5ff535e45a863.jpg",
-      "release_date": "2026-05-01",
-      "rating": "0.0",
-      "platforms": "PC"
     }
   ],
   "coming_soon": [
@@ -442,6 +442,14 @@
       "release_date": "2026-06-05",
       "rating": "3.5",
       "platforms": "PC, PlayStation 5, Xbox One, PlayStation 4"
+    },
+    {
+      "title": "Atre: Dominance Wars",
+      "url": "https://rawg.io/games/atre-dominance-wars",
+      "image": "https://media.rawg.io/media/screenshots/f7a/f7a430ca85ac908d75733e8b058ae063.jpg",
+      "release_date": "2026-06-07",
+      "rating": "0.0",
+      "platforms": "PC"
     },
     {
       "title": "NBA THE RUN",

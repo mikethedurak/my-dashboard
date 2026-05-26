@@ -3,15 +3,7 @@
   "currently_watching": {
     "movies": [
       {
-        "title": "Mortal Kombat 2",
-        "opinion": ""
-      },
-      {
         "title": "Good Luck, Have Fun, Don’t Die",
-        "opinion": ""
-      },
-      {
-        "title": "One Battle After Another",
         "opinion": ""
       },
       {
@@ -27,7 +19,12 @@
         "opinion": ""
       }
     ],
-    "series": [],
+    "series": [
+      {
+        "title": "Rick and Morty",
+        "opinion": ""
+      }
+    ],
     "anime_movies": [
       {
         "title": "One Piece: Baron Omatsuri and the Secret Island",
@@ -1095,6 +1092,16 @@
           "opinion": ""
         },
         {
+          "type": "movie",
+          "title": "Mortal Kombat 2",
+          "opinion": ""
+        },
+        {
+          "type": "movie",
+          "title": "One Battle After Another",
+          "opinion": ""
+        },
+        {
           "type": "series",
           "title": "Stranger Things",
           "opinion": ""
@@ -1462,11 +1469,6 @@
         {
           "type": "series",
           "title": "Secret Level",
-          "opinion": ""
-        },
-        {
-          "type": "series",
-          "title": "Rick and Morty",
           "opinion": ""
         },
         {

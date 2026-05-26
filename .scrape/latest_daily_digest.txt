@@ -2,31 +2,36 @@ Daily dashboard digest
 
 One Piece Cards
 ---------------
-Added: 1
-1. Monkey.D.Luffy (P-055) (Reprint) [Premium Booster -The Best-] | GeekHaven | 8.0
-https://www.bobshop.co.za/monkey-d-luffy-p-055-reprint-premium-booster-the-best/p/681353501
+Added: 0
 
-Updated: 7
-1. I'm Gonna Be King of the Pirates!! [One Piece Promotion Cards] | Knightly Gaming | 46.0
+Updated: 19
+1. Smoker [Starter Deck: Absolute Justice] | Big Bang Shop | 35.0
+https://bigbangshop.co.za/collections/one-piece-single-cards/products/smoker-starter-deck-absolute-justice
+2. Perfume Femur (Premium Card Collection -Best Selection Vol. 4-) [One Piece Promotion Cards] | Big Bang Shop | 390.0
+https://bigbangshop.co.za/collections/one-piece-single-cards/products/perfume-femur-premium-card-collection-best-selection-vol-4-one-piece-promotion-cards
+3. I'm Gonna Be King of the Pirates!! [One Piece Promotion Cards] | Knightly Gaming | 48.0
 https://www.knightlygaming.co.za/collections/one-piece-singles/products/im-gonna-be-king-of-the-pirates-one-piece-promotion-cards
-2. Perona (Alternate Art) [The Azure Sea's Seven] | Knightly Gaming | 520.0
+4. Perona (Alternate Art) [The Azure Sea's Seven] | Knightly Gaming | 522.0
 https://www.knightlygaming.co.za/collections/one-piece-singles/products/perona-alternate-art-the-azure-seas-seven
-3. Trafalgar Law [Starter Deck: Worst Generation] | Knightly Gaming | 61.0
-https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-starter-deck-worst-generation
-4. Nami (054) (Alternate Art) [A Fist of Divine Speed] | Knightly Gaming | 678.0
+5. Nami (054) (Alternate Art) [A Fist of Divine Speed] | Knightly Gaming | 674.0
 https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-054-alternate-art-a-fist-of-divine-speed
-5. Donquixote Doflamingo [Royal Blood] | Knightly Gaming | 85.0
+6. Monkey.D.Luffy ST21-001 | Toad Trader TCG | 70.0
+https://www.toadtradertcg.com/product-page/monkey-d-luffy-st21-001
+7. Donquixote Doflamingo [Royal Blood] | Knightly Gaming | 79.0
 https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-royal-blood
-6. Nami (Alternate Art) [The Azure Sea's Seven] | Knightly Gaming | 1335.0
-https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-alternate-art-the-azure-seas-seven
-7. Ground Death (Alternate Art) [The Azure Sea's Seven] | Knightly Gaming | 1993.0
-https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-alternate-art-the-azure-seas-seven
+8. Dracule Mihawk [Live Action Edition] | Big Bang Shop | 100.0
+https://bigbangshop.co.za/collections/one-piece-single-cards/products/dracule-mihawk-live-action-edition
+9. Kouzuki Hiyori (Alternate Art) [Premium Booster -The Best-] | Big Bang Shop | 2810.0
+https://bigbangshop.co.za/collections/one-piece-single-cards/products/kouzuki-hiyori-alternate-art-premium-booster-the-best
+10. Uta (ST05-004) (Premium Card Collection -Uta-) [One Piece Promotion Cards] | Big Bang Shop | 165.0
+https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-st05-004-premium-card-collection-uta-one-piece-promotion-cards
+...and 9 more
 
 Removed: 2
-1. Jewelry Bonney [Carrying On His Will] | GeekHaven | 72.0
-https://www.bobshop.co.za/jewelry-bonney-carrying-on-his-will/p/680647261
-2. Fire Fist OP15-020 | Toad Trader TCG | 17.0
-https://www.toadtradertcg.com/product-page/fire-fist-op15-020
+1. Monkey.D.Luffy [Starter Deck: Monkey.D.Luffy] | GeekHaven | 85.0
+https://www.bobshop.co.za/monkey-d-luffy-starter-deck-monkey-d-luffy/p/680705417
+2. Roronoa Zoro & Sanji [Starter Deck: Zoro and Sanji] | GeekHaven | 190.0
+https://www.bobshop.co.za/roronoa-zoro-sanji-starter-deck-zoro-and-sanji/p/680708045
 
 New Releases
 ------------
@@ -41,12 +46,10 @@ Coming Soon Movies
 Added: 0
 
 Updated: 1
-1. Masters of the Universe | 2026-06-05
-https://www.themoviedb.org/movie/454639
+1. Disclosure Day | 2026-06-12
+https://www.themoviedb.org/movie/1275779
 
-Removed: 1
-1. 2026 TXT Moa Con in Japan: Live Viewing | 2026-05-24
-https://www.themoviedb.org/movie/1685309
+Removed: 0
 
 Open Air Cinema
 ---------------
@@ -58,19 +61,21 @@ Removed: 0
 
 New Game Releases
 -----------------
-Added: 0
+Added: 1
+1. Paralives | 2026-05-25
+https://rawg.io/games/paralives
 
-Updated: 2
-1. Lego Batman: Legacy of the Dark Knight | 2026-05-22
-https://rawg.io/games/lego-batman-legacy-of-the-dark-knight
-2. Mixtape | 2026-05-07
-https://rawg.io/games/mixtape
+Updated: 0
 
-Removed: 0
+Removed: 1
+1. Omniquarium | 2026-05-01
+https://rawg.io/games/omniquarium
 
 Coming Soon Games
 -----------------
-Added: 0
+Added: 1
+1. Atre: Dominance Wars | 2026-06-07
+https://rawg.io/games/atre-dominance-wars
 
 Updated: 0
 
@@ -80,70 +85,49 @@ Bandsintown Events
 ------------------
 Added: 0
 
-Updated: 1
-1. Spoegwolf | 2026-05-23T18:00:00+02:00 | The Daisy Jones Bar
-https://www.bandsintown.com/e/108138901-spoegwolf-at-the-daisy-jones-bar?came_from=209
+Updated: 0
 
-Removed: 128
-1. Elandré | 2026-05-27T18:00:00+02:00 | Kapstadt Brauhaus Paarl
-https://www.bandsintown.com/e/108323267-elandre-at-kapstadt-brauhaus-paarl?came_from=209
-2. Ruhan du Toit Amanzi Private Game Reserve calendarIcon | Aug 08 - 6:00 PM
-https://www.bandsintown.com/e/1037971294-ruhan-du-toit-at-amanzi-private-game-reserve?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event
-3. Spoegwolf | 2026-05-30T10:00:00+02:00 | Sandringham Farm
-https://www.bandsintown.com/e/108335743-spoegwolf-at-sandringham-farm?came_from=209
-4. Hector Madolo | 2026-05-23T12:00:00+02:00 | The Old Biscuit Mill
-https://www.bandsintown.com/e/108362483-hector-madolo-at-the-old-biscuit-mill?came_from=209
-5. Dave Grand Arena at GrandWest calendarIcon peopleIcon 40 | Oct 06 - 8:00 PM
-https://www.bandsintown.com/e/108128206-dave-at-grand-arena-at-grandwest?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event
-6. Chris Steyn | 2026-05-14T18:00:00+02:00 | Kapstadt Brauhaus Stellenbosch
-https://www.bandsintown.com/e/1038581300-chris-steyn-at-kapstadt-brauhaus-stellenbosch?came_from=209
-7. The Boxer The Ring | 2026-06-05T18:00:00+02:00 | The Hart
-https://www.bandsintown.com/e/107997940-the-boxer-the-ring-at-the-hart?came_from=209
-8. Bongeziwe Mabandla | 2026-05-29T20:00:00+02:00 | HEARTY COLLECTIVE
-https://www.bandsintown.com/e/108004150-bongeziwe-mabandla-at-hearty-collective?came_from=209
-9. Tanika Paschke-Moloi | 2026-05-14T19:00:00+02:00 | Artvark Gallery
-https://www.bandsintown.com/e/108314994-tanika-paschke-moloi-at-artvark-gallery?came_from=209
-10. Watershed Watershed | Jun 06 - 6:00 PM | Elgin Railway Market calendarIcon
-https://www.bandsintown.com/e/108169348-watershed-at-elgin-railway-market?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event
-...and 118 more
+Removed: 0
 
 Quicket Events
 --------------
-Added: 5
-1. Khanyiso Kenqa in 'Kuthwe ndingayithethi ke le' LIVE in Cape Town at The Protea Hotel Fire & Ice! 29 May 2026 | 2026-05-29T20:00:00+02:00 | Protea Hotel Fire & Ice! Cape Town
-https://www.quicket.co.za/events/368966-khanyiso-kenqa-in-kuthwe-ndingayithethi-ke-le-live-in-cape-town-at-the-protea-h/
-2. Elandré live by Kapstadt Brauhaus Bloubergstrand | 2026-05-25T19:30:00+02:00 | Kapstadt Brauhaus Blouberg
-https://www.quicket.co.za/events/374349-elandr-live-by-kapstadt-brauhaus-bloubergstrand/
-3. Alderman JP Smith - Mayoral Committee Member for Safety and Security City of Cape Town | 2026-05-28T17:30:00+02:00 | Erinvale Golf Club
-https://www.quicket.co.za/events/369425-alderman-jp-smith-mayoral-committee-member-for-safety-and-security-city-of-cape/
-4. DISTRICT SIX MUSEUM: FEBRUARY 2027 ADMISSION TICKETS | 2027-02-01T09:00:00+02:00 | 25A Buitenkant St
-https://www.quicket.co.za/events/365070-district-six-museum-february-2027-admission-tickets/
-5. DISTRICT SIX MUSEUM: JANUARY 2027 ADMISSION TICKETS | 2027-01-02T09:00:00+02:00 | 25A Buitenkant St
-https://www.quicket.co.za/events/365067-district-six-museum-january-2027-admission-tickets/
+Added: 6
+1. As Above So Below - Chapter One: The First Frequency | 2026-05-29T21:00:00+02:00 | 50 Hout St
+https://www.quicket.co.za/events/375710-as-above-so-below-chapter-one-the-first-frequency/
+2. The Aftermath | 2026-06-05T20:00:00+02:00 | Maroon | Restaurant & Lounge Bar
+https://www.quicket.co.za/events/371175-the-aftermath/
+3. The Curious Exchange 27 May: Food for a good mood: based on Ayurvedic principles | 2026-05-27T18:30:00+02:00 | Axminster House
+https://www.quicket.co.za/events/374209-the-curious-exchange-27-may-food-for-a-good-mood-based-on-ayurvedic-principles/
+4. That ’70s Band – Greatest Hits | 2026-05-30T18:00:00+02:00 | Cafe Roux
+https://www.quicket.co.za/events/365334-that-70s-band-greatest-hits/
+5. Feel, Sense & Write: A Guided Writing & Self-Expression Experience | 2026-06-06T18:15:00+02:00 | Allure Sensuality Emporium
+https://www.quicket.co.za/events/372052-feel-sense-write-a-guided-writing-self-expression-experience/
+6. Craft Shop: Assorted Edition | 2026-05-31T10:00:00+02:00 | 114 Lower Main Rd
+https://www.quicket.co.za/events/368664-craft-shop-assorted-edition/
 
 Updated: 0
 
-Removed: 5
-1. The Princess Tea Party | 2026-05-24T10:00:00+02:00 | Giggles and Grow Play Studio Table Bay Mall
-https://www.quicket.co.za/events/370799-the-princess-tea-party/
-2. Medals Sunset & Soul | 2026-05-24T15:00:00+02:00 | Rooftop on Bree
-https://www.quicket.co.za/events/369335-medals-sunset-soul/
-3. SOLD OUT! The Voice of Hind Rajab - Cape Town Islamia College | 2026-05-24T14:00:00+02:00 | Islamia College
-https://www.quicket.co.za/events/371822-sold-out-the-voice-of-hind-rajab-cape-town-islamia-college/
-4. Mastandi Brunch Experience | 2026-05-24T14:00:00+02:00 | Si Cantina Sociale
-https://www.quicket.co.za/events/373180-mastandi-brunch-experience/
-5. A Celebration of Coldplay with Me & Mr Green | 2026-05-24T16:00:00+02:00 | Cafe Roux
-https://www.quicket.co.za/events/363748-a-celebration-of-coldplay-with-me-mr-green/
+Removed: 6
+1. Khanyiso Kenqa in 'Kuthwe ndingayithethi ke le' LIVE in Cape Town at The Protea Hotel Fire & Ice! 29 May 2026 | 2026-05-29T20:00:00+02:00 | Protea Hotel Fire & Ice! Cape Town
+https://www.quicket.co.za/events/368966-khanyiso-kenqa-in-kuthwe-ndingayithethi-ke-le-live-in-cape-town-at-the-protea-h/
+2. LITTLE FOREST NYE FESTIVAL 2026 | 2026-12-31T10:00:00+02:00 | Kromrivier Farm
+https://www.quicket.co.za/events/359325-little-forest-nye-festival-2026/
+3. Elandré live by Kapstadt Brauhaus Bloubergstrand | 2026-05-25T19:30:00+02:00 | Kapstadt Brauhaus Blouberg
+https://www.quicket.co.za/events/374349-elandr-live-by-kapstadt-brauhaus-bloubergstrand/
+4. Foul Play & Breakneck Bookings Presents: Peasant, The Talon and Hi Anxious at District | 2026-06-20T20:00:00+02:00 | District
+https://www.quicket.co.za/events/368977-foul-play-breakneck-bookings-presents-peasant-the-talon-and-hi-anxious-at-distr/
+5. DISTRICT SIX MUSEUM: JANUARY 2027 ADMISSION TICKETS | 2027-01-02T09:00:00+02:00 | 25A Buitenkant St
+https://www.quicket.co.za/events/365067-district-six-museum-january-2027-admission-tickets/
+6. DISTRICT SIX MUSEUM: FEBRUARY 2027 ADMISSION TICKETS | 2027-02-01T09:00:00+02:00 | 25A Buitenkant St
+https://www.quicket.co.za/events/365070-district-six-museum-february-2027-admission-tickets/
 
 Webtickets Events
 -----------------
 Added: 0
 
-Updated: 2
-1. Cape Town Abseil | From 25 May 2026 | Table Mountain | R995 - R1100
+Updated: 1
+1. Cape Town Abseil | From 26 May 2026 | Table Mountain | R995 - R1100
 https://www.webtickets.co.za/v2/event.aspx?itemid=1531472391
-2. Richard O'Brien's The Rocky Horror Show (CPT) | From 26 May 2026 20:00 | Theatre On The Bay, Camps Bay | R295 - R495
-https://www.webtickets.co.za/v2/event.aspx?itemid=1588915971
 
 Removed: 0
 
@@ -153,9 +137,7 @@ Added: 0
 
 Updated: 0
 
-Removed: 1
-1. John's Birthday | 2026-05-24
-https://www.google.com/calendar/event?eid=NmZnNWY2Ym90aXEwYjkwdDlmcDUybjNkbzNfMjAyNjA1MjQgMGczYTA5cmJmdjZwMTg0MHJidmJodGZmZjRAZw
+Removed: 0
 
 Specials & Places
 -----------------
