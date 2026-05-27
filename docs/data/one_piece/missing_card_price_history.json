@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-27T00:03:11Z",
+  "updated_at": "2026-05-27T05:08:35Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -11988,6 +11988,54 @@
       "stock": "",
       "observed_on": "2026-05-27",
       "captured_at": "2026-05-27T00:03:11Z"
+    },
+    {
+      "card_number": "OP10-071",
+      "art_variant": "original",
+      "price": 71.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-royal-blood",
+      "title": "Donquixote Doflamingo [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-05-27",
+      "captured_at": "2026-05-27T05:08:35Z"
+    },
+    {
+      "card_number": "OP14-033",
+      "art_variant": "alternate",
+      "price": 522.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/perona-alternate-art-the-azure-seas-seven",
+      "title": "Perona (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-05-27",
+      "captured_at": "2026-05-27T05:08:35Z"
+    },
+    {
+      "card_number": "OP14-084",
+      "art_variant": "alternate",
+      "price": 853.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ms-all-sunday-alternate-art-the-azure-seas-seven",
+      "title": "Ms. All Sunday (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-05-27",
+      "captured_at": "2026-05-27T05:08:35Z"
+    },
+    {
+      "card_number": "OP14-096",
+      "art_variant": "alternate",
+      "price": 1999.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-alternate-art-the-azure-seas-seven",
+      "title": "Ground Death (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-05-27",
+      "captured_at": "2026-05-27T05:08:35Z"
     }
   ]
 }
