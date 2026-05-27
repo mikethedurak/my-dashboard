@@ -6,6 +6,7 @@ import os
 import urllib.parse
 import urllib.error
 import urllib.request
+import time
 from datetime import date, datetime, timedelta
 from pathlib import Path
 import sys
@@ -24,6 +25,9 @@ FUTURE_WINDOW_DAYS = max(1, int(env_get("SCRAPE_GAME_RELEASES_WINDOW_DAYS", "90"
 PAST_WINDOW_DAYS = max(1, int(env_get("SCRAPE_GAME_RELEASES_PAST_DAYS", "45") or "45"))
 MAX_PAGES = max(1, int(env_get("SCRAPE_GAME_RELEASES_MAX_PAGES", "6") or "6"))
 PLATFORMS = (env_get("SCRAPE_GAME_RELEASES_PLATFORMS", "") or "").strip()
+RETRYABLE_HTTP_CODES = {429, 500, 502, 503, 504}
+REQUEST_RETRIES = max(1, int(env_get("SCRAPE_GAME_RELEASES_REQUEST_RETRIES", "3") or "3"))
+REQUEST_RETRY_DELAY_SECONDS = max(0.0, float(env_get("SCRAPE_GAME_RELEASES_RETRY_DELAY_SECONDS", "2") or "2"))
 
 REPO_DIR = Path(__file__).resolve().parents[2]
 LOCAL_SECRETS_FILE = REPO_DIR / "secrets.env"
@@ -64,8 +68,29 @@ def fetch_games(page: int, start: date, end: date, ordering: str) -> dict:
         f"{API_URL}?{query}",
         headers={"Accept": "application/json", "User-Agent": "Mozilla/5.0"},
     )
-    with urllib.request.urlopen(request, timeout=30) as response:
-        return json.loads(response.read().decode("utf-8"))
+    for attempt in range(1, REQUEST_RETRIES + 1):
+        try:
+            with urllib.request.urlopen(request, timeout=30) as response:
+                return json.loads(response.read().decode("utf-8"))
+        except urllib.error.HTTPError as error:
+            if error.code not in RETRYABLE_HTTP_CODES or attempt >= REQUEST_RETRIES:
+                raise
+            print(
+                f"RAWG request failed with HTTP {error.code}; retrying "
+                f"{attempt}/{REQUEST_RETRIES} after {REQUEST_RETRY_DELAY_SECONDS:g}s...",
+                flush=True,
+            )
+        except urllib.error.URLError as error:
+            if attempt >= REQUEST_RETRIES:
+                raise
+            print(
+                f"RAWG request failed: {error.reason}; retrying "
+                f"{attempt}/{REQUEST_RETRIES} after {REQUEST_RETRY_DELAY_SECONDS:g}s...",
+                flush=True,
+            )
+        if REQUEST_RETRY_DELAY_SECONDS:
+            time.sleep(REQUEST_RETRY_DELAY_SECONDS)
+    raise RuntimeError("RAWG request failed after retries")
 
 
 def to_item(game: dict) -> dict[str, str] | None:
