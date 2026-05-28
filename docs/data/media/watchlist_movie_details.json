@@ -23200,6 +23200,23 @@
     ],
     "number_of_seasons": 28
   },
+  "series:spidernoir": {
+    "title": "Spider-Noir",
+    "media_type": "series",
+    "poster_url": null,
+    "trailer_url": null,
+    "release_date": null,
+    "directors": null,
+    "runtime_minutes": null,
+    "actors": null,
+    "tmdb_url": null,
+    "genres": null,
+    "tmdb_id": null,
+    "rating": null,
+    "number_of_seasons": null,
+    "description": null,
+    "overview": null
+  },
   "series:squid game": {
     "title": "Squid Game",
     "media_type": "series",

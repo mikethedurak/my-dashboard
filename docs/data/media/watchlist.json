@@ -7,10 +7,6 @@
         "opinion": ""
       },
       {
-        "title": "Valley Uprising",
-        "opinion": ""
-      },
-      {
         "title": "Iron Lung",
         "opinion": ""
       },
@@ -22,6 +18,10 @@
     "series": [
       {
         "title": "Rick and Morty",
+        "opinion": ""
+      },
+      {
+        "title": "Spider-Noir",
         "opinion": ""
       }
     ],
@@ -1099,6 +1099,11 @@
         {
           "type": "movie",
           "title": "One Battle After Another",
+          "opinion": ""
+        },
+        {
+          "type": "movie",
+          "title": "Valley Uprising",
           "opinion": ""
         },
         {

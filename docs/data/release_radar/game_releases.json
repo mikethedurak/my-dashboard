@@ -2,6 +2,22 @@
   "source": "https://api.rawg.io/api/games",
   "new_releases": [
     {
+      "title": "Mina the Hollower",
+      "url": "https://rawg.io/games/mina-the-hollower",
+      "image": "https://media.rawg.io/media/games/9e5/9e5914a9b6537391752af07412cd8ce3.jpg",
+      "release_date": "2026-05-28",
+      "rating": "0.0",
+      "platforms": "PC, macOS, Linux"
+    },
+    {
+      "title": "007 First Light",
+      "url": "https://rawg.io/games/007-first-light",
+      "image": "https://media.rawg.io/media/games/86f/86f2dc1b9671f25a13ff92e069b51786.jpg",
+      "release_date": "2026-05-27",
+      "rating": "4.1",
+      "platforms": "PC, PlayStation 5, Xbox Series S/X, Nintendo Switch"
+    },
+    {
       "title": "Paralives",
       "url": "https://rawg.io/games/paralives",
       "image": "https://media.rawg.io/media/screenshots/64a/64a39ca3b3be03ed98fa8dfe9d0df860.jpg",
@@ -14,7 +30,7 @@
       "url": "https://rawg.io/games/lego-batman-legacy-of-the-dark-knight",
       "image": "https://media.rawg.io/media/games/69a/69a6a1097f82210dbf8583f8e0d09123.jpg",
       "release_date": "2026-05-22",
-      "rating": "4.0",
+      "rating": "4.1",
       "platforms": "PC, PlayStation 5, Xbox Series S/X, Nintendo Switch"
     },
     {
@@ -82,14 +98,6 @@
       "platforms": "PC"
     },
     {
-      "title": "Coffee Talk Tokyo",
-      "url": "https://rawg.io/games/coffee-talk-tokyo",
-      "image": "https://media.rawg.io/media/screenshots/8ee/8eed3221af05ce5dc058bc1ecf148695.jpg",
-      "release_date": "2026-05-20",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
       "title": "ZERO PARADES: For Dead Spies Bundle",
       "url": "https://rawg.io/games/zero-parades-for-dead-spies-bundle",
       "image": "https://media.rawg.io/media/screenshots/6f0/6f00ca365527633a9c05fc25025fa38f.jpg",
@@ -106,11 +114,19 @@
       "platforms": "PC, macOS"
     },
     {
+      "title": "Coffee Talk Tokyo",
+      "url": "https://rawg.io/games/coffee-talk-tokyo",
+      "image": "https://media.rawg.io/media/screenshots/ab8/ab8b7f365180a440529ceed4b7276c6d.jpg",
+      "release_date": "2026-05-20",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
       "title": "Forza Horizon 6",
       "url": "https://rawg.io/games/forza-horizon-6",
       "image": "https://media.rawg.io/media/games/d74/d744a3b0f6f0f0bc63f5ceb9b5e63230.jpeg",
       "release_date": "2026-05-19",
-      "rating": "4.1",
+      "rating": "4.2",
       "platforms": "PC, Xbox Series S/X"
     },
     {
@@ -290,6 +306,14 @@
       "platforms": "PC, macOS"
     },
     {
+      "title": "Wardrum",
+      "url": "https://rawg.io/games/wardrum",
+      "image": "https://media.rawg.io/media/screenshots/38a/38a7f212737e4fd7b30f4032aa666688.jpg",
+      "release_date": "2026-05-08",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
       "title": "Mixtape (2025)",
       "url": "https://rawg.io/games/mixtape-2025",
       "image": "https://media.rawg.io/media/screenshots/2e1/2e1a19d938c0e7a4a396924125923c38.jpg",
@@ -376,49 +400,9 @@
       "release_date": "2026-05-03",
       "rating": "0.0",
       "platforms": "PC"
-    },
-    {
-      "title": "A Bumpy Ride",
-      "url": "https://rawg.io/games/a-bumpy-ride",
-      "image": "https://media.rawg.io/media/screenshots/959/9592e21ee37af0f3cb29dba595ee2f51.jpg",
-      "release_date": "2026-05-02",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Koloboke Sickness Simulator",
-      "url": "https://rawg.io/games/koloboke-sickness-simulator",
-      "image": "https://media.rawg.io/media/screenshots/13f/13f275a270e2fa00543dc80a9d6f1288.jpg",
-      "release_date": "2026-05-01",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "This is Fine: Maximum Cope",
-      "url": "https://rawg.io/games/this-is-fine-maximum-cope",
-      "image": "https://media.rawg.io/media/screenshots/cee/cee81a1bda8f8e09c45ca8fb2ed2bf5a.jpg",
-      "release_date": "2026-05-01",
-      "rating": "0.0",
-      "platforms": "PC, PlayStation 5, Xbox Series S/X"
     }
   ],
   "coming_soon": [
-    {
-      "title": "007 First Light",
-      "url": "https://rawg.io/games/007-first-light",
-      "image": "https://media.rawg.io/media/games/86f/86f2dc1b9671f25a13ff92e069b51786.jpg",
-      "release_date": "2026-05-27",
-      "rating": "0.0",
-      "platforms": "PC, PlayStation 5, Xbox Series S/X, Nintendo Switch"
-    },
-    {
-      "title": "Mina the Hollower",
-      "url": "https://rawg.io/games/mina-the-hollower",
-      "image": "https://media.rawg.io/media/games/9e5/9e5914a9b6537391752af07412cd8ce3.jpg",
-      "release_date": "2026-05-28",
-      "rating": "0.0",
-      "platforms": "PC, macOS, Linux"
-    },
     {
       "title": "Eternal Palace Sakura",
       "url": "https://rawg.io/games/eternal-palace-sakura",

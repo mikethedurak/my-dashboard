@@ -1,14 +1,54 @@
 [
   {
-    "title": "Cape Town City FC vs Milford FC",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1595757441",
-    "image": "https://content.webtickets.co.za/capetownfc/panel_play offs 1_20260520_101504.jpg",
-    "date_text": "26 May 2026 15:00",
-    "venue": "Athlone Stadium, Athlone",
-    "price": "FREE",
+    "title": "All Access Opera - Carmen",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1591073661",
+    "image": "https://content.webtickets.co.za/artscape/panel_Webtickets_AccessCarmen_20260518_085425.png",
+    "date_text": "From 28 May 2026 11:00",
+    "venue": "Artscape, Opera House, Cape Town",
+    "price": "R80",
     "source": "Webtickets",
     "region": "Western Cape",
-    "categories": [],
+    "categories": [
+      "dj",
+      "art",
+      "theatre"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "The Prince of Egypt - The Musical",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1586944542",
+    "image": "https://content.webtickets.co.za/WhitePeacockStudio/panel_A White Peacock Studio_20260121_134711.jpg",
+    "date_text": "From 28 May 2026 19:00",
+    "venue": "The George Arts Theatre, 125 York St, George Central, George, 6529",
+    "price": "R170",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "music",
+      "art",
+      "theatre"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "The Jive Cape Town Funny Festival",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1582738777",
+    "image": "https://content.webtickets.co.za/baxtertheatre/panel_AC_ FunnyFest_Auditorium_20251202_103850.jpg",
+    "date_text": "from 28 May 2026 20:00",
+    "venue": "",
+    "price": "R190 - R250",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "festival"
+    ],
     "missing_location": true,
     "location_key": "",
     "missing_place": true,
@@ -18,7 +58,7 @@
     "title": "Richard O'Brien's The Rocky Horror Show (CPT)",
     "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1588915971",
     "image": "https://content.webtickets.co.za/PTProductions/panel_Webtickets 2026_20260211_164743.jpg",
-    "date_text": "From 26 May 2026 20:00",
+    "date_text": "From 28 May 2026 20:00",
     "venue": "Theatre On The Bay, Camps Bay",
     "price": "R295 - R495",
     "source": "Webtickets",
@@ -35,46 +75,12 @@
     "title": "Cape Town Abseil",
     "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1531472391",
     "image": "https://content.webtickets.co.za/WildHorizons/panel_DSC06292_20230725_105701.jpg",
-    "date_text": "From 26 May 2026",
+    "date_text": "From 28 May 2026",
     "venue": "Table Mountain",
     "price": "R995 - R1100",
     "source": "Webtickets",
     "region": "Western Cape",
     "categories": [],
-    "missing_location": true,
-    "location_key": "",
-    "missing_place": true,
-    "place_key": ""
-  },
-  {
-    "title": "Boyz II Men Live in South Africa Tour - Cape Town",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1588352772",
-    "image": "https://content.webtickets.co.za/Remoakantseholdings/panel_boyzz1111_20260429_092435.jpg",
-    "date_text": "27 May 2026 18:00",
-    "venue": "Grand Arena,GrandWest,  1 Jakes Gerwel Dr, Acacia Park, Cape Town",
-    "price": "R750 - R1450",
-    "source": "Webtickets",
-    "region": "Western Cape",
-    "categories": [
-      "outdoors"
-    ],
-    "missing_location": true,
-    "location_key": "",
-    "missing_place": true,
-    "place_key": ""
-  },
-  {
-    "title": "FEED YOUR NEED FOR SPEED AT KILLARNEY ROBOT RACING!",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1595767919",
-    "image": "https://content.webtickets.co.za/KillarneyEvents/panel_260527 Robot Racing Webtickets 1110 x 740_20260520_102720.jpg",
-    "date_text": "27 May 2026 18:30",
-    "venue": "Killarney International Raceway, 6 Potsdam Road, Table View",
-    "price": "R70",
-    "source": "Webtickets",
-    "region": "Western Cape",
-    "categories": [
-      "sports"
-    ],
     "missing_location": true,
     "location_key": "",
     "missing_place": true,

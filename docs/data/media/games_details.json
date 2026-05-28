@@ -1,4 +1,31 @@
 {
+  "game_aaa:007 first light": {
+    "title": "007: First Light",
+    "media_type": "game_aaa",
+    "playtime_hours": 0,
+    "platforms": [
+      "Xbox Series S/X",
+      "Nintendo Switch",
+      "PC",
+      "PlayStation 5"
+    ],
+    "publishers": [
+      "IO Interactive"
+    ],
+    "release_date": "2026-05-27",
+    "genres": [
+      "Action"
+    ],
+    "developers": [
+      "IO Interactive"
+    ],
+    "rating": 4.1,
+    "website_url": "https://ioi.dk/007firstlightgame",
+    "rawg_url": "https://rawg.io/games/007-first-light",
+    "metacritic": null,
+    "poster_url": "https://media.rawg.io/media/games/86f/86f2dc1b9671f25a13ff92e069b51786.jpg",
+    "description": "007 First Light is a brand new James Bond video game developed and published by IO Interactive. Featuring a wholly original Bond origin story, players will step into the shoes of the world's favorite Secret Agent to earn their 00 status."
+  },
   "game_aaa:a plague tale innocence": {
     "title": "A Plague Tale:  Innocence",
     "media_type": "game_aaa",
