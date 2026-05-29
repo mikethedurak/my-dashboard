@@ -571,21 +571,6 @@
       "scraped_at": "2026-05-20T14:26:17Z"
     },
     {
-      "card_number": "OP10-005",
-      "price": "75.0",
-      "title": "Sanji OP10-005",
-      "rarity": "",
-      "store": "Toad Trader TCG",
-      "set_name": "",
-      "condition": "",
-      "stock": "",
-      "available_variants": "",
-      "url": "https://www.toadtradertcg.com/product-page/sanji-op10-005",
-      "image_url": "",
-      "art_variant": "original",
-      "scraped_at": "2026-05-20T14:26:17Z"
-    },
-    {
       "card_number": "OP15-086",
       "price": "75.0",
       "title": "Nami OP15-086",
@@ -644,6 +629,21 @@
       "image_url": "",
       "art_variant": "original",
       "scraped_at": "2026-05-20T14:26:17Z"
+    },
+    {
+      "card_number": "ST10-010",
+      "price": "95.0",
+      "title": "Trafalgar Law ST10-010",
+      "rarity": "",
+      "store": "Toad Trader TCG",
+      "set_name": "",
+      "condition": "",
+      "stock": "",
+      "available_variants": "",
+      "url": "https://www.toadtradertcg.com/product-page/trafalgar-law-st10-010",
+      "image_url": "",
+      "art_variant": "original",
+      "scraped_at": "2026-05-29T13:52:44Z"
     },
     {
       "card_number": "OP01-021",
