@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-31T07:49:30Z",
+  "updated_at": "2026-05-31T09:40:01Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -16104,6 +16104,18 @@
       "stock": "In stock",
       "observed_on": "2026-05-31",
       "captured_at": "2026-05-31T06:15:23Z"
+    },
+    {
+      "card_number": "OP14-031",
+      "art_variant": "alternate",
+      "price": 1301.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-alternate-art-the-azure-seas-seven",
+      "title": "Nami (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-05-31",
+      "captured_at": "2026-05-31T09:40:01Z"
     }
   ]
 }
