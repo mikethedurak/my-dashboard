@@ -1,11 +1,20 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-06-01T09:31:20.462767Z",
+  "generated_at": "2026-06-02T08:42:59.150433Z",
   "channel_name": "gameranx",
   "channel_id": "UCNvzD7Z-g64bPXxGzaQaa4g",
   "channel_url": "https://www.youtube.com/@gameranxTV",
   "items_count": 15,
   "items": [
+    {
+      "id": "yt-a8FPXI8jUP0",
+      "video_id": "a8FPXI8jUP0",
+      "title": "30 RPGs of 2026 That Look Too Good to Ignore",
+      "url": "https://www.youtube.com/watch?v=a8FPXI8jUP0",
+      "published_at": "2026-06-01T17:11:29+00:00",
+      "updated_at": "2026-06-02T08:31:33+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/a8FPXI8jUP0/hqdefault.jpg"
+    },
     {
       "id": "yt-SMwXRhhRwXA",
       "video_id": "SMwXRhhRwXA",
@@ -75,7 +84,7 @@
       "title": "10 Games That CHANGE If You Play Them WRONG",
       "url": "https://www.youtube.com/watch?v=G2xUaiz2RH8",
       "published_at": "2026-05-25T15:38:21+00:00",
-      "updated_at": "2026-05-26T07:43:44+00:00",
+      "updated_at": "2026-06-01T16:13:31+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/G2xUaiz2RH8/hqdefault.jpg"
     },
     {
@@ -131,15 +140,6 @@
       "published_at": "2026-05-19T17:36:31+00:00",
       "updated_at": "2026-05-28T23:20:29+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/ElBSzgTCh84/hqdefault.jpg"
-    },
-    {
-      "id": "yt-kC4Z4lh3D5Y",
-      "video_id": "kC4Z4lh3D5Y",
-      "title": "Assassin's Creed Black Flag DESPERATELY Wants You Back",
-      "url": "https://www.youtube.com/watch?v=kC4Z4lh3D5Y",
-      "published_at": "2026-05-18T16:17:28+00:00",
-      "updated_at": "2026-05-29T23:46:24+00:00",
-      "thumbnail_url": "https://i.ytimg.com/vi/kC4Z4lh3D5Y/hqdefault.jpg"
     }
   ]
 }

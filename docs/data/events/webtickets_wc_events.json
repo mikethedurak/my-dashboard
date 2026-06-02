@@ -1,20 +1,5 @@
 [
   {
-    "title": "Cape Town Abseil",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1531472391",
-    "image": "https://content.webtickets.co.za/WildHorizons/panel_DSC06292_20230725_105701.jpg",
-    "date_text": "From 01 Jun 2026",
-    "venue": "Table Mountain",
-    "price": "R995 - R1100",
-    "source": "Webtickets",
-    "region": "Western Cape",
-    "categories": [],
-    "missing_location": true,
-    "location_key": "",
-    "missing_place": true,
-    "place_key": ""
-  },
-  {
     "title": "Please, don’t call me moffie",
     "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1591455210",
     "image": "https://content.webtickets.co.za/artscape/panel_web tickets 1110x740px_20260530_225137.png",
@@ -43,6 +28,21 @@
     "categories": [
       "festival"
     ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Cape Town Abseil",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1531472391",
+    "image": "https://content.webtickets.co.za/WildHorizons/panel_DSC06292_20230725_105701.jpg",
+    "date_text": "From 02 Jun 2026",
+    "venue": "Table Mountain",
+    "price": "R995 - R1100",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [],
     "missing_location": true,
     "location_key": "",
     "missing_place": true,

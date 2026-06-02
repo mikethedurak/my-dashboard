@@ -242,14 +242,14 @@
     },
     {
       "card_number": "OP07-057",
-      "price": 390.0,
+      "price": 375.0,
       "title": "Perfume Femur (Premium Card Collection -Best Selection Vol. 4-) [One Piece Promotion Cards]",
       "rarity": "Rare",
       "store": "Big Bang Shop",
       "set_name": "One Piece Promotion Cards",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R390.00",
+      "available_variants": "Near Mint Foil R375.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/perfume-femur-premium-card-collection-best-selection-vol-4-one-piece-promotion-cards",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/649684.jpg?v=1763494111",
       "art_variant": "original",
@@ -286,21 +286,6 @@
       "scraped_at": "2026-05-29T08:03:09Z"
     },
     {
-      "card_number": "P-072",
-      "price": 470.0,
-      "title": "Ryuma (Premium Card Collection -Best Selection Vol. 3-) [One Piece Promotion Cards]",
-      "rarity": "Promo",
-      "store": "Big Bang Shop",
-      "set_name": "One Piece Promotion Cards",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R470.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/ryuma-premium-card-collection-best-selection-vol-3-one-piece-promotion-cards",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/626673_11f6a9c1-377b-40b8-a596-533eecb3b794.jpg?v=1763508518",
-      "art_variant": "original",
-      "scraped_at": "2026-05-29T08:03:09Z"
-    },
-    {
       "card_number": "OP14-033",
       "price": 526.0,
       "title": "Perona (Alternate Art) [The Azure Sea's Seven]",
@@ -316,18 +301,18 @@
       "scraped_at": "2026-05-30T15:56:53Z"
     },
     {
-      "card_number": "OP04-056",
-      "price": 675.0,
-      "title": "Gum-Gum Red Roc (Alternate Art) [Premium Booster -The Best-]",
-      "rarity": "Rare",
+      "card_number": "P-072",
+      "price": 530.0,
+      "title": "Ryuma (Premium Card Collection -Best Selection Vol. 3-) [One Piece Promotion Cards]",
+      "rarity": "Promo",
       "store": "Big Bang Shop",
-      "set_name": "Premium Booster -The Best-",
+      "set_name": "One Piece Promotion Cards",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R675.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/gum-gum-red-roc-alternate-art-premium-booster-the-best",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/586197_e84d3ed9-cb2c-4233-8dec-b6d68f7f13da.jpg?v=1763494368",
-      "art_variant": "alternate",
+      "available_variants": "Near Mint Foil R530.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/ryuma-premium-card-collection-best-selection-vol-3-one-piece-promotion-cards",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/626673_11f6a9c1-377b-40b8-a596-533eecb3b794.jpg?v=1763508518",
+      "art_variant": "original",
       "scraped_at": "2026-05-29T08:03:09Z"
     },
     {
@@ -344,6 +329,21 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/632422.jpg?v=1757718637",
       "art_variant": "alternate",
       "scraped_at": "2026-05-30T15:56:53Z"
+    },
+    {
+      "card_number": "OP04-056",
+      "price": 740.0,
+      "title": "Gum-Gum Red Roc (Alternate Art) [Premium Booster -The Best-]",
+      "rarity": "Rare",
+      "store": "Big Bang Shop",
+      "set_name": "Premium Booster -The Best-",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R740.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/gum-gum-red-roc-alternate-art-premium-booster-the-best",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/586197_e84d3ed9-cb2c-4233-8dec-b6d68f7f13da.jpg?v=1763494368",
+      "art_variant": "alternate",
+      "scraped_at": "2026-05-29T08:03:09Z"
     },
     {
       "card_number": "OP14-084",

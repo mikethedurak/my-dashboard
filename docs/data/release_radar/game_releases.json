@@ -10,12 +10,36 @@
       "platforms": "PC"
     },
     {
+      "title": "Backrooms: The Wrong Door",
+      "url": "https://rawg.io/games/backrooms-the-wrong-door",
+      "image": "https://media.rawg.io/media/screenshots/f48/f4812f4f3a6cd7dae8030a405626c961.jpg",
+      "release_date": "2026-05-30",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Secrets of the Heart",
+      "url": "https://rawg.io/games/secrets-of-the-heart",
+      "image": "https://media.rawg.io/media/screenshots/f84/f84b82b70eac54e21c93ded78b4992a7.jpg",
+      "release_date": "2026-05-29",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
       "title": "N.E.R.D",
       "url": "https://rawg.io/games/nerd-2",
       "image": "https://media.rawg.io/media/screenshots/12c/12c7bf17be556afb272996f1b5ae2d50.jpg",
       "release_date": "2026-05-28",
       "rating": "0.0",
       "platforms": ""
+    },
+    {
+      "title": "Kim's Farm",
+      "url": "https://rawg.io/games/kims-farm",
+      "image": "https://media.rawg.io/media/screenshots/812/81296e02806f699a7a00497ae96a9feb.jpg",
+      "release_date": "2026-05-28",
+      "rating": "0.0",
+      "platforms": "PC"
     },
     {
       "title": "Mina the Hollower",
@@ -54,7 +78,7 @@
       "url": "https://rawg.io/games/007-first-light",
       "image": "https://media.rawg.io/media/games/86f/86f2dc1b9671f25a13ff92e069b51786.jpg",
       "release_date": "2026-05-27",
-      "rating": "4.4",
+      "rating": "4.5",
       "platforms": "PC, PlayStation 5, Xbox Series S/X, Nintendo Switch"
     },
     {
@@ -64,6 +88,14 @@
       "release_date": "2026-05-26",
       "rating": "0.0",
       "platforms": "PC, macOS"
+    },
+    {
+      "title": "Stonemachia",
+      "url": "https://rawg.io/games/stonemachia",
+      "image": "https://media.rawg.io/media/screenshots/4f1/4f1d378b9c3a90b08b69c0b742def519.jpg",
+      "release_date": "2026-05-26",
+      "rating": "0.0",
+      "platforms": "PC"
     },
     {
       "title": "Paralives",
@@ -318,7 +350,7 @@
       "url": "https://rawg.io/games/the-dark-pictures-directive-8020",
       "image": "https://media.rawg.io/media/games/10d/10dd957940dbaedc77a08730995194c7.jpg",
       "release_date": "2026-05-12",
-      "rating": "2.9",
+      "rating": "3.0",
       "platforms": "PC, PlayStation 5, Xbox Series S/X"
     },
     {
@@ -368,38 +400,6 @@
       "release_date": "2026-05-07",
       "rating": "0.0",
       "platforms": "PC, PlayStation 5, Xbox Series S/X"
-    },
-    {
-      "title": "Mixtape",
-      "url": "https://rawg.io/games/mixtape",
-      "image": "https://media.rawg.io/media/games/a57/a571fcbc2b2ef30fb3e13a4272ef3a93.jpeg",
-      "release_date": "2026-05-07",
-      "rating": "4.2",
-      "platforms": "PC, Xbox Series S/X"
-    },
-    {
-      "title": "Will: Follow the Light",
-      "url": "https://rawg.io/games/will-follow-the-light",
-      "image": "https://media.rawg.io/media/games/300/3001ccfd69be0255b346e1b03269008c.jpg",
-      "release_date": "2026-05-07",
-      "rating": "0.0",
-      "platforms": ""
-    },
-    {
-      "title": "B.E.S.T 2",
-      "url": "https://rawg.io/games/best-2",
-      "image": "https://media.rawg.io/media/screenshots/901/9018172ee1dee4db4e87f81b93c439fe.jpg",
-      "release_date": "2026-05-06",
-      "rating": "0.0",
-      "platforms": "PC, macOS, Linux"
-    },
-    {
-      "title": "Brigador Killers Demo",
-      "url": "https://rawg.io/games/brigador-killers-demo",
-      "image": "https://media.rawg.io/media/screenshots/4dc/4dc0a63bc87a10610aec0c19f6454bc4.jpg",
-      "release_date": "2026-05-06",
-      "rating": "0.0",
-      "platforms": "PC"
     }
   ],
   "coming_soon": [
@@ -452,6 +452,14 @@
       "platforms": "PC, PlayStation 5, Xbox Series S/X, Nintendo Switch"
     },
     {
+      "title": "Maseylia: Echoes of the past",
+      "url": "https://rawg.io/games/maseylia-echoes-of-the-past",
+      "image": "https://media.rawg.io/media/screenshots/ec8/ec841b0fe2c72b88decf71502ff77bd6.jpg",
+      "release_date": "2026-06-19",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
       "title": "Star Fox",
       "url": "https://rawg.io/games/star-fox-2",
       "image": "https://media.rawg.io/media/games/bac/bacf2182d40d3785051a2161f7a3aa84.jpg",
@@ -498,6 +506,14 @@
       "release_date": "2026-08-06",
       "rating": "0.0",
       "platforms": "PC, PlayStation 5"
+    },
+    {
+      "title": "Lords of the Fallen 2",
+      "url": "https://rawg.io/games/lords-of-the-fallen-2-2",
+      "image": "https://media.rawg.io/media/screenshots/887/887f377d7e4fc503bb345aac6e62eb2a.jpg",
+      "release_date": "2026-08-31",
+      "rating": "0.0",
+      "platforms": "PC, PlayStation 5, Xbox Series S/X"
     }
   ]
 }

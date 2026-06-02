@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-02T05:19:59Z",
+  "updated_at": "2026-06-02T08:42:36Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -17016,6 +17016,42 @@
       "stock": "In stock",
       "observed_on": "2026-06-02",
       "captured_at": "2026-06-02T05:19:59Z"
+    },
+    {
+      "card_number": "OP07-057",
+      "art_variant": "original",
+      "price": 375.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/perfume-femur-premium-card-collection-best-selection-vol-4-one-piece-promotion-cards",
+      "title": "Perfume Femur (Premium Card Collection -Best Selection Vol. 4-) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-02",
+      "captured_at": "2026-06-02T08:42:36Z"
+    },
+    {
+      "card_number": "P-072",
+      "art_variant": "original",
+      "price": 530.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/ryuma-premium-card-collection-best-selection-vol-3-one-piece-promotion-cards",
+      "title": "Ryuma (Premium Card Collection -Best Selection Vol. 3-) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-02",
+      "captured_at": "2026-06-02T08:42:36Z"
+    },
+    {
+      "card_number": "OP04-056",
+      "art_variant": "alternate",
+      "price": 740.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/gum-gum-red-roc-alternate-art-premium-booster-the-best",
+      "title": "Gum-Gum Red Roc (Alternate Art) [Premium Booster -The Best-]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-02",
+      "captured_at": "2026-06-02T08:42:36Z"
     }
   ]
 }
