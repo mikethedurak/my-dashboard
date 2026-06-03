@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-03T10:30:02Z",
+  "updated_at": "2026-06-03T15:24:34Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -17676,6 +17676,42 @@
       "stock": "In stock",
       "observed_on": "2026-06-03",
       "captured_at": "2026-06-03T08:59:41Z"
+    },
+    {
+      "card_number": "ST02-009",
+      "art_variant": "original",
+      "price": 59.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-starter-deck-worst-generation",
+      "title": "Trafalgar Law [Starter Deck: Worst Generation]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-03",
+      "captured_at": "2026-06-03T15:24:34Z"
+    },
+    {
+      "card_number": "OP11-054",
+      "art_variant": "alternate",
+      "price": 683.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-054-alternate-art-a-fist-of-divine-speed",
+      "title": "Nami (054) (Alternate Art) [A Fist of Divine Speed]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-03",
+      "captured_at": "2026-06-03T15:24:34Z"
+    },
+    {
+      "card_number": "OP14-084",
+      "art_variant": "alternate",
+      "price": 902.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ms-all-sunday-alternate-art-the-azure-seas-seven",
+      "title": "Ms. All Sunday (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-03",
+      "captured_at": "2026-06-03T15:24:34Z"
     }
   ]
 }
