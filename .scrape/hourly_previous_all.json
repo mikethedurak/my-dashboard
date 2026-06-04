@@ -77,14 +77,14 @@
     },
     {
       "card_number": "P-024",
-      "price": "51.0",
+      "price": "52.0",
       "title": "I'm Gonna Be King of the Pirates!! [One Piece Promotion Cards]",
       "rarity": "Promo",
       "store": "Knightly Gaming",
       "set_name": "One Piece Promotion Cards",
       "condition": "Near Mint",
       "stock": "In stock",
-      "available_variants": "Near Mint R51.00",
+      "available_variants": "Near Mint R52.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/im-gonna-be-king-of-the-pirates-one-piece-promotion-cards",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/3f6dc017-b6eb-5be5-84de-c15de1756cbb.jpg?v=1771366031",
       "art_variant": "original",
@@ -359,6 +359,21 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/586547_f8443361-1276-4ecb-b96f-7a9a73f8d367.jpg?v=1763495074",
       "art_variant": "alternate",
       "scraped_at": "2026-05-29T08:03:09Z"
+    },
+    {
+      "card_number": "ST01-007",
+      "price": "3485.0",
+      "title": "Nami (TR)",
+      "rarity": "",
+      "store": "Tanuki Trader",
+      "set_name": "Wings of the Captain (OP06)",
+      "condition": "",
+      "stock": "1 in stock",
+      "available_variants": "1 in stock",
+      "url": "https://tanukitrader.co.za/product/nami-tr/",
+      "image_url": "https://tanukitrader.co.za/wp-content/uploads/2024/09/ST01-007TR.jpeg",
+      "art_variant": "original",
+      "scraped_at": "2026-06-04T16:15:17Z"
     },
     {
       "card_number": "ST18-004",
