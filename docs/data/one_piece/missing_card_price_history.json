@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-04T00:25:45Z",
+  "updated_at": "2026-06-04T05:31:55Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -18084,6 +18084,30 @@
       "stock": "In stock",
       "observed_on": "2026-06-04",
       "captured_at": "2026-06-04T00:25:45Z"
+    },
+    {
+      "card_number": "P-024",
+      "art_variant": "original",
+      "price": 51.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/im-gonna-be-king-of-the-pirates-one-piece-promotion-cards",
+      "title": "I'm Gonna Be King of the Pirates!! [One Piece Promotion Cards]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-06-04",
+      "captured_at": "2026-06-04T05:31:55Z"
+    },
+    {
+      "card_number": "OP14-096",
+      "art_variant": "alternate",
+      "price": 2105.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-alternate-art-the-azure-seas-seven",
+      "title": "Ground Death (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-04",
+      "captured_at": "2026-06-04T05:31:55Z"
     }
   ]
 }
