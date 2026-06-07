@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-07T02:04:35Z",
+  "updated_at": "2026-06-07T06:55:22Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -19152,6 +19152,30 @@
       "stock": "In stock",
       "observed_on": "2026-06-07",
       "captured_at": "2026-06-07T02:04:35Z"
+    },
+    {
+      "card_number": "P-024",
+      "art_variant": "original",
+      "price": 53.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/im-gonna-be-king-of-the-pirates-one-piece-promotion-cards",
+      "title": "I'm Gonna Be King of the Pirates!! [One Piece Promotion Cards]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-06-07",
+      "captured_at": "2026-06-07T06:55:22Z"
+    },
+    {
+      "card_number": "EB02-011",
+      "art_variant": "alternate",
+      "price": 115.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/arlong-alternate-art-extra-booster-memorial-collection",
+      "title": "Arlong (Alternate Art) [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-07",
+      "captured_at": "2026-06-07T06:55:22Z"
     }
   ]
 }
