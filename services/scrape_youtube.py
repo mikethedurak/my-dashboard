@@ -25,7 +25,11 @@ DEFAULT_CHANNELS = [
     }
 ]
 
-ATOM_NS = {"atom": "http://www.w3.org/2005/Atom", "yt": "http://www.youtube.com/xml/schemas/2015"}
+ATOM_NS = {
+    "atom": "http://www.w3.org/2005/Atom",
+    "media": "http://search.yahoo.com/mrss/",
+    "yt": "http://www.youtube.com/xml/schemas/2015",
+}
 ONE_PIECE_CHAPTER_PATTERNS = [
     re.compile(r"\bone\s*piece\b.*?\bchapter\s*(\d{3,4})\b", re.IGNORECASE),
     re.compile(r"\bone\s*piece\b[^0-9]{0,20}(\d{3,4})\b", re.IGNORECASE),
@@ -134,6 +138,30 @@ def atom_text(node: ET.Element | None, path: str) -> str:
     return (found.text or "").strip() if found is not None and found.text else ""
 
 
+def item_search_text(item: dict) -> str:
+    parts = [
+        str(item.get("title", "") or ""),
+        str(item.get("description", "") or ""),
+    ]
+    tags = item.get("tags", [])
+    if isinstance(tags, list):
+        parts.extend(str(tag) for tag in tags)
+    elif tags:
+        parts.append(str(tags))
+    return "\n".join(part for part in parts if part).strip()
+
+
+def one_piece_chapter_from_item(item: dict) -> int | None:
+    search_text = item_search_text(item)
+    if not search_text:
+        return None
+    for pattern in ONE_PIECE_CHAPTER_PATTERNS:
+        match = pattern.search(search_text)
+        if match:
+            return int(match.group(1))
+    return None
+
+
 def parse_feed(channel_name: str, channel_id: str, xml_text: str, limit: int) -> dict:
     root = ET.fromstring(xml_text)
     feed_title = atom_text(root, "atom:title") or channel_name
@@ -146,6 +174,7 @@ def parse_feed(channel_name: str, channel_id: str, xml_text: str, limit: int) ->
     for entry in root.findall("atom:entry", ATOM_NS):
         video_id = atom_text(entry, "yt:videoId")
         title = atom_text(entry, "atom:title")
+        description = atom_text(entry, "media:group/media:description") or atom_text(entry, "atom:summary")
         published_at = atom_text(entry, "atom:published")
         updated_at = atom_text(entry, "atom:updated")
         link = ""
@@ -159,6 +188,7 @@ def parse_feed(channel_name: str, channel_id: str, xml_text: str, limit: int) ->
                 "id": f"yt-{video_id}" if video_id else "",
                 "video_id": video_id,
                 "title": title,
+                "description": description,
                 "url": link,
                 "published_at": published_at,
                 "updated_at": updated_at,
@@ -180,18 +210,14 @@ def one_piece_chapter_entry(item: dict, channel: dict) -> dict | None:
     title = str(item.get("title", "")).strip()
     if not title:
         return None
-    chapter_number = None
-    for pattern in ONE_PIECE_CHAPTER_PATTERNS:
-        match = pattern.search(title)
-        if match:
-            chapter_number = int(match.group(1))
-            break
+    chapter_number = one_piece_chapter_from_item(item)
     if chapter_number is None:
         return None
     return {
         "id": item.get("id", ""),
         "video_id": item.get("video_id", ""),
         "title": title,
+        "description": item.get("description", ""),
         "url": item.get("url", ""),
         "published_at": item.get("published_at", ""),
         "updated_at": item.get("updated_at", ""),
@@ -205,15 +231,15 @@ def one_piece_chapter_entry(item: dict, channel: dict) -> dict | None:
 def one_piece_video_entry(item: dict, channel: dict) -> dict | None:
     title = str(item.get("title", "")).strip()
     tags = item.get("tags", [])
-    tag_text = " ".join(str(tag) for tag in tags) if isinstance(tags, list) else str(tags or "")
     if not title:
         return None
-    if not ONE_PIECE_TITLE_RE.search(title) and not ONE_PIECE_TITLE_RE.search(tag_text):
+    if not ONE_PIECE_TITLE_RE.search(item_search_text(item)):
         return None
     return {
         "id": item.get("id", ""),
         "video_id": item.get("video_id", ""),
         "title": title,
+        "description": item.get("description", ""),
         "url": item.get("url", ""),
         "published_at": item.get("published_at", ""),
         "updated_at": item.get("updated_at", ""),
@@ -256,11 +282,13 @@ def metadata_for_video_url(url: str, timeout: int) -> dict:
     thumbnail_url = str(payload.get("thumbnail", "")).strip()
     if not thumbnail_url and video_id:
         thumbnail_url = f"https://i.ytimg.com/vi/{video_id}/hqdefault.jpg"
+    description = str(payload.get("description", "")).strip()
 
     return {
         "id": f"yt-{video_id}" if video_id else "",
         "video_id": video_id,
         "title": title,
+        "description": description,
         "url": url,
         "published_at": published_at,
         "updated_at": "",
@@ -657,6 +685,7 @@ def scrape_channel_via_ytdlp(
             continue
         video_id = str(entry.get("id", "")).strip()
         title = str(entry.get("title", "")).strip()
+        description = str(entry.get("description", "")).strip()
         video_url = str(entry.get("url", "")).strip()
         if not video_url and video_id:
             video_url = f"https://www.youtube.com/watch?v={video_id}"
@@ -671,6 +700,7 @@ def scrape_channel_via_ytdlp(
                 "id": f"yt-{video_id}" if video_id else "",
                 "video_id": video_id,
                 "title": title,
+                "description": description,
                 "url": video_url,
                 "published_at": published_at,
                 "updated_at": "",
