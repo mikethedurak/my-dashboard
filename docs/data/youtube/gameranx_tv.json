@@ -1,11 +1,20 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-06-07T07:58:24.005398Z",
+  "generated_at": "2026-06-08T08:59:03.016136Z",
   "channel_name": "gameranx",
   "channel_id": "UCNvzD7Z-g64bPXxGzaQaa4g",
   "channel_url": "https://www.youtube.com/@gameranxTV",
   "items_count": 15,
   "items": [
+    {
+      "id": "yt-LQ6lVC72sb0",
+      "video_id": "LQ6lVC72sb0",
+      "title": "10 GOTY Games That ARE STILL WORTH PLAYING",
+      "url": "https://www.youtube.com/watch?v=LQ6lVC72sb0",
+      "published_at": "2026-06-07T18:38:37+00:00",
+      "updated_at": "2026-06-08T06:37:26+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/LQ6lVC72sb0/hqdefault.jpg"
+    },
     {
       "id": "yt-j_-oXPAxou8",
       "video_id": "j_-oXPAxou8",
@@ -30,7 +39,7 @@
       "title": "10 Games That Are DEEPER THAN WE THOUGHT",
       "url": "https://www.youtube.com/watch?v=sNHzh7MYc90",
       "published_at": "2026-06-04T16:50:02+00:00",
-      "updated_at": "2026-06-05T09:04:51+00:00",
+      "updated_at": "2026-06-05T21:29:14+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/sNHzh7MYc90/hqdefault.jpg"
     },
     {
@@ -57,7 +66,7 @@
       "title": "Why This Witcher 3 Expansion Is Such A Big Deal",
       "url": "https://www.youtube.com/watch?v=ZRpbtvbT9Aw",
       "published_at": "2026-06-02T15:00:39+00:00",
-      "updated_at": "2026-06-03T08:22:08+00:00",
+      "updated_at": "2026-06-05T21:34:33+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/ZRpbtvbT9Aw/hqdefault.jpg"
     },
     {
@@ -75,7 +84,7 @@
       "title": "Top 20 NEW Story Based Games of 2026",
       "url": "https://www.youtube.com/watch?v=SMwXRhhRwXA",
       "published_at": "2026-05-31T18:09:06+00:00",
-      "updated_at": "2026-06-01T09:21:58+00:00",
+      "updated_at": "2026-06-05T21:34:16+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/SMwXRhhRwXA/hqdefault.jpg"
     },
     {
@@ -84,7 +93,7 @@
       "title": "10 WEIRD Gaming Stories of May 2026",
       "url": "https://www.youtube.com/watch?v=cvoB4X4sJmU",
       "published_at": "2026-05-30T16:05:05+00:00",
-      "updated_at": "2026-06-03T22:15:44+00:00",
+      "updated_at": "2026-06-04T20:02:49+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/cvoB4X4sJmU/hqdefault.jpg"
     },
     {
@@ -102,7 +111,7 @@
       "title": "10 SNEAKY Tricks Games USE WITHOUT TELLING YOU",
       "url": "https://www.youtube.com/watch?v=zHZA0x5sB7Y",
       "published_at": "2026-05-28T15:00:33+00:00",
-      "updated_at": "2026-05-29T08:25:49+00:00",
+      "updated_at": "2026-06-05T21:28:13+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/zHZA0x5sB7Y/hqdefault.jpg"
     },
     {
@@ -120,7 +129,7 @@
       "title": "State of Play June 2026 - 10 Predictions We ARE DESPERATE FOR",
       "url": "https://www.youtube.com/watch?v=Crjse-HoP5I",
       "published_at": "2026-05-27T15:00:09+00:00",
-      "updated_at": "2026-06-03T21:17:15+00:00",
+      "updated_at": "2026-06-05T21:33:16+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/Crjse-HoP5I/hqdefault.jpg"
     },
     {
@@ -129,17 +138,8 @@
       "title": "007 First Light - Before You Buy",
       "url": "https://www.youtube.com/watch?v=oTJSHLRYBhE",
       "published_at": "2026-05-26T21:09:14+00:00",
-      "updated_at": "2026-06-05T14:12:35+00:00",
+      "updated_at": "2026-06-06T00:49:39+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/oTJSHLRYBhE/hqdefault.jpg"
-    },
-    {
-      "id": "yt-G2xUaiz2RH8",
-      "video_id": "G2xUaiz2RH8",
-      "title": "10 Games That CHANGE If You Play Them WRONG",
-      "url": "https://www.youtube.com/watch?v=G2xUaiz2RH8",
-      "published_at": "2026-05-25T15:38:21+00:00",
-      "updated_at": "2026-06-01T16:13:31+00:00",
-      "thumbnail_url": "https://i.ytimg.com/vi/G2xUaiz2RH8/hqdefault.jpg"
     }
   ]
 }

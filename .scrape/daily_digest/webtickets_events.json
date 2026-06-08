@@ -1,9 +1,24 @@
 [
   {
+    "title": "VISIT TO FISH HOEK VALLEY MUSEUM",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1595766943",
+    "image": "https://content.webtickets.co.za/samfriends/panel_image001_20260520_101640.png",
+    "date_text": "08 Jun 2026 10:00",
+    "venue": "Fish Hoek Valley Museum",
+    "price": "R120 - R150",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
     "title": "FynArts Festival 2026",
     "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1588256840",
     "image": "https://content.webtickets.co.za/fynarts/panel_FYNARTS2026_20260429_163009.jpg",
-    "date_text": "From 07 Jun 2026 12:00",
+    "date_text": "From 08 Jun 2026 11:00",
     "venue": "",
     "price": "From R120",
     "source": "Webtickets",
@@ -18,35 +33,15 @@
     "place_key": ""
   },
   {
-    "title": "Makin’ Magic – Family Magic Show",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1590797635",
-    "image": "https://content.webtickets.co.za/artscape/panel_makin-magic-poster-promo-image-wt_20260314_103830.jpg",
-    "date_text": "From 07 Jun 2026 12:00",
-    "venue": "Artscape, Theatre, Cape Town",
-    "price": "R165 - R180",
+    "title": "Killer Queen - A LAMTA Dance Production",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1590419134",
+    "image": "https://content.webtickets.co.za/PTProductions/panel_2fa14078-fa95-4083-9b94-0f282e084bf5_20260311_171208.jpeg",
+    "date_text": "From 08 Jun 2026 20:00",
+    "venue": "Theatre On The Bay, Camps Bay",
+    "price": "R200 - R320",
     "source": "Webtickets",
     "region": "Western Cape",
     "categories": [
-      "art",
-      "theatre",
-      "family"
-    ],
-    "missing_location": true,
-    "location_key": "",
-    "missing_place": true,
-    "place_key": ""
-  },
-  {
-    "title": "Seun",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1595285107",
-    "image": "https://content.webtickets.co.za/TGSA/panel_Copy of Seun_20260510_115909.jpg",
-    "date_text": "07 Jun 2026 15:00",
-    "venue": "The George Arts Theatre, 125 York Street, George Central",
-    "price": "R200",
-    "source": "Webtickets",
-    "region": "Western Cape",
-    "categories": [
-      "art",
       "theatre"
     ],
     "missing_location": true,
@@ -58,7 +53,7 @@
     "title": "Cape Town Abseil",
     "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1531472391",
     "image": "https://content.webtickets.co.za/WildHorizons/panel_DSC06292_20230725_105701.jpg",
-    "date_text": "From 07 Jun 2026",
+    "date_text": "From 08 Jun 2026",
     "venue": "Table Mountain",
     "price": "R995 - R1100",
     "source": "Webtickets",
@@ -70,15 +65,17 @@
     "place_key": ""
   },
   {
-    "title": "VISIT TO FISH HOEK VALLEY MUSEUM",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1595766943",
-    "image": "https://content.webtickets.co.za/samfriends/panel_image001_20260520_101640.png",
-    "date_text": "08 Jun 2026 10:00",
-    "venue": "Fish Hoek Valley Museum",
-    "price": "R120 - R150",
+    "title": "The Jive Cape Town Funny Festival",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1582738777",
+    "image": "https://content.webtickets.co.za/baxtertheatre/panel_AC_ FunnyFest_Auditorium_20251202_103850.jpg",
+    "date_text": "from 28 May 2026 20:00",
+    "venue": "",
+    "price": "R190 - R250",
     "source": "Webtickets",
     "region": "Western Cape",
-    "categories": [],
+    "categories": [
+      "festival"
+    ],
     "missing_location": true,
     "location_key": "",
     "missing_place": true,

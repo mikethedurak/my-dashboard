@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-08T05:22:21Z",
+  "updated_at": "2026-06-08T08:58:39Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -20772,6 +20772,18 @@
       "stock": "In stock",
       "observed_on": "2026-06-08",
       "captured_at": "2026-06-08T05:22:21Z"
+    },
+    {
+      "card_number": "OP11-054",
+      "art_variant": "alternate",
+      "price": 686.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-054-alternate-art-a-fist-of-divine-speed",
+      "title": "Nami (054) (Alternate Art) [A Fist of Divine Speed]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-08",
+      "captured_at": "2026-06-08T08:58:39Z"
     }
   ]
 }

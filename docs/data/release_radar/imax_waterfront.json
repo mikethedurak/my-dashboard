@@ -5,8 +5,8 @@
     {
       "tmdb_id": 936075,
       "tmdb_url": "https://www.themoviedb.org/movie/936075",
-      "tmdb_rating": "7.601",
-      "tmdb_votes": "919",
+      "tmdb_rating": "7.6",
+      "tmdb_votes": "926",
       "release_date": "2026-04-22",
       "overview": "The story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music. His journey from the discovery of his extraordinary talent as the lead of the Jackson Five, to the visionary artist whose creative ambition fueled a relentless pursuit to become the biggest entertainer in the world, highlighting both his life off-stage and some of the most iconic performances from his early solo career.",
       "runtime_minutes": "128",
@@ -43,8 +43,8 @@
     {
       "tmdb_id": 454639,
       "tmdb_url": "https://www.themoviedb.org/movie/454639",
-      "tmdb_rating": "7.506",
-      "tmdb_votes": "86",
+      "tmdb_rating": "7.398",
+      "tmdb_votes": "113",
       "release_date": "2026-06-03",
       "overview": "After being separated for 15 years, the Sword of Power leads Prince Adam back to Eternia, where he discovers his home shattered under the fiendish rule of Skeletor. To save his family and his world, Adam must join forces with his closest allies, Teela and Duncan/Man-At-Arms, and embrace his true destiny as He-Man — the most powerful man in the universe.",
       "runtime_minutes": "141",
@@ -58,15 +58,15 @@
       ],
       "actors": [
         "Nicholas Galitzine",
-        "Jared Leto",
         "Camila Mendes",
         "Idris Elba",
+        "Jared Leto",
         "Alison Brie",
-        "Kristen Wiig",
-        "James Purefoy",
+        "Jóhannes Haukur Jóhannesson",
+        "Jon Xue Zhang",
+        "Sam C. Wilson",
         "Charlotte Riley",
-        "Morena Baccarin",
-        "Jóhannes Haukur Jóhannesson"
+        "James Purefoy"
       ],
       "trailer_url": "https://www.youtube.com/watch?v=rJSmz-zhDxE",
       "poster_url": "https://image.tmdb.org/t/p/w342/3YMd9Ogae4rDKLWuAZFuse9xhc5.jpg",

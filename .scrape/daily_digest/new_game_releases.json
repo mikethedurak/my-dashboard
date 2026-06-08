@@ -74,17 +74,17 @@
       "platforms": ""
     },
     {
-      "title": "Kim's Farm",
-      "url": "https://rawg.io/games/kims-farm",
-      "image": "https://media.rawg.io/media/screenshots/812/81296e02806f699a7a00497ae96a9feb.jpg",
+      "title": "Cardburners",
+      "url": "https://rawg.io/games/cardburners",
+      "image": "https://media.rawg.io/media/screenshots/7b1/7b19d65479a13336f4977e83a7295b2f.jpg",
       "release_date": "2026-05-28",
       "rating": "0.0",
       "platforms": "PC"
     },
     {
-      "title": "Cardburners",
-      "url": "https://rawg.io/games/cardburners",
-      "image": "https://media.rawg.io/media/screenshots/7b1/7b19d65479a13336f4977e83a7295b2f.jpg",
+      "title": "Kim's Farm",
+      "url": "https://rawg.io/games/kims-farm",
+      "image": "https://media.rawg.io/media/screenshots/812/81296e02806f699a7a00497ae96a9feb.jpg",
       "release_date": "2026-05-28",
       "rating": "0.0",
       "platforms": "PC"
@@ -202,14 +202,6 @@
       "platforms": "PC, PlayStation 5, Xbox Series S/X, Nintendo Switch"
     },
     {
-      "title": "Bubsy 4D",
-      "url": "https://rawg.io/games/bubsy-4d",
-      "image": "https://media.rawg.io/media/screenshots/3f5/3f56e79671e3e144fefb3ad30e924c2d.jpg",
-      "release_date": "2026-05-21",
-      "rating": "0.0",
-      "platforms": "PC, PlayStation 5, Xbox Series S/X, Nintendo Switch"
-    },
-    {
       "title": "Schrodinger's Cat Burglar",
       "url": "https://rawg.io/games/schrodingers-cat-burglar",
       "image": "https://media.rawg.io/media/screenshots/e12/e12c5e4f72c8edb76a7c35c621dde509.jpg",
@@ -226,6 +218,14 @@
       "platforms": "PC"
     },
     {
+      "title": "Bubsy 4D",
+      "url": "https://rawg.io/games/bubsy-4d",
+      "image": "https://media.rawg.io/media/screenshots/3f5/3f56e79671e3e144fefb3ad30e924c2d.jpg",
+      "release_date": "2026-05-21",
+      "rating": "0.0",
+      "platforms": "PC, PlayStation 5, Xbox Series S/X, Nintendo Switch"
+    },
+    {
       "title": "Yoshi and the Mysterious Book",
       "url": "https://rawg.io/games/yoshi-and-the-mysterious-book",
       "image": "https://media.rawg.io/media/games/25a/25a256ab63823d3ed3eea8207730d074.jpg",
@@ -234,17 +234,17 @@
       "platforms": "Nintendo Switch"
     },
     {
-      "title": "Luna Abyss",
-      "url": "https://rawg.io/games/luna-abyss",
-      "image": "https://media.rawg.io/media/games/759/75938a44d83af478a137a8a2298c0f47.jpg",
+      "title": "a weird game about sausage",
+      "url": "https://rawg.io/games/a-weird-game-about-sausage",
+      "image": "https://media.rawg.io/media/screenshots/f59/f594a3004451ece29df08842269973b1.jpg",
       "release_date": "2026-05-21",
       "rating": "0.0",
       "platforms": "PC"
     },
     {
-      "title": "a weird game about sausage",
-      "url": "https://rawg.io/games/a-weird-game-about-sausage",
-      "image": "https://media.rawg.io/media/screenshots/f59/f594a3004451ece29df08842269973b1.jpg",
+      "title": "Luna Abyss",
+      "url": "https://rawg.io/games/luna-abyss",
+      "image": "https://media.rawg.io/media/games/759/75938a44d83af478a137a8a2298c0f47.jpg",
       "release_date": "2026-05-21",
       "rating": "0.0",
       "platforms": "PC"
@@ -302,7 +302,7 @@
       "url": "https://rawg.io/games/forza-horizon-6",
       "image": "https://media.rawg.io/media/games/d74/d744a3b0f6f0f0bc63f5ceb9b5e63230.jpeg",
       "release_date": "2026-05-19",
-      "rating": "4.4",
+      "rating": "4.3",
       "platforms": "PC, Xbox Series S/X"
     },
     {
@@ -468,6 +468,14 @@
       "platforms": ""
     },
     {
+      "title": "Halo Campaign Evolved",
+      "url": "https://rawg.io/games/halo-campaign-evolved",
+      "image": "https://media.rawg.io/media/screenshots/cea/cea7e2e717aa3c66d4f3197d5b901866.jpg",
+      "release_date": "2026-07-28",
+      "rating": "0.0",
+      "platforms": "PC, PlayStation 5, Xbox Series S/X"
+    },
+    {
       "title": "Truxton Extreme",
       "url": "https://rawg.io/games/truxton-extreme",
       "image": "https://media.rawg.io/media/screenshots/16d/16d5119ee87b3a1f22d29f7ef07b3b6c.jpg",
@@ -490,6 +498,22 @@
       "release_date": "2026-08-06",
       "rating": "0.0",
       "platforms": "PC, PlayStation 5"
+    },
+    {
+      "title": "Sinking City 2",
+      "url": "https://rawg.io/games/sinking-city-2-2",
+      "image": "https://media.rawg.io/media/screenshots/8f5/8f55c6c590a4eb8d97facbadfd8f605e.jpg",
+      "release_date": "2026-08-18",
+      "rating": "0.0",
+      "platforms": "PC, PlayStation 5, Xbox Series S/X"
+    },
+    {
+      "title": "Resonance: A Plague Tale Legacy",
+      "url": "https://rawg.io/games/resonance-a-plague-tale-legacy",
+      "image": "https://media.rawg.io/media/screenshots/5c3/5c3db4df4bbff72b83626a7328bdaf20.jpg",
+      "release_date": "2026-08-27",
+      "rating": "0.0",
+      "platforms": "PC, PlayStation 5, Xbox Series S/X"
     },
     {
       "title": "Star Wars Zero Company",
