@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-09T08:57:56Z",
+  "updated_at": "2026-06-09T11:56:02Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -21840,6 +21840,42 @@
       "stock": "In stock",
       "observed_on": "2026-06-09",
       "captured_at": "2026-06-09T08:57:56Z"
+    },
+    {
+      "card_number": "OP07-057",
+      "art_variant": "original",
+      "price": 380.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/perfume-femur-premium-card-collection-best-selection-vol-4-one-piece-promotion-cards",
+      "title": "Perfume Femur (Premium Card Collection -Best Selection Vol. 4-) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-09",
+      "captured_at": "2026-06-09T11:56:02Z"
+    },
+    {
+      "card_number": "OP08-023",
+      "art_variant": "alternate",
+      "price": 445.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/carrot-parallel-two-legends",
+      "title": "Carrot (Parallel) [Two Legends]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-09",
+      "captured_at": "2026-06-09T11:56:02Z"
+    },
+    {
+      "card_number": "ST18-004",
+      "art_variant": "original",
+      "price": 1510.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/zoro-juurou-emperors-in-the-new-world",
+      "title": "Zoro-Juurou [Emperors in the New World]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-09",
+      "captured_at": "2026-06-09T11:56:02Z"
     }
   ]
 }
