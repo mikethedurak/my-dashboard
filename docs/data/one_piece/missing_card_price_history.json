@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-11T05:17:25Z",
+  "updated_at": "2026-06-11T09:58:34Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -23832,6 +23832,78 @@
       "stock": "In stock",
       "observed_on": "2026-06-11",
       "captured_at": "2026-06-11T05:17:25Z"
+    },
+    {
+      "card_number": "P-055",
+      "art_variant": "original",
+      "price": 8.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/monkey-d-luffy-p-055-reprint-premium-booster-the-best/p/683187312",
+      "title": "Monkey.D.Luffy (P-055) (Reprint) [Premium Booster -The Best-]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-06-11",
+      "captured_at": "2026-06-11T09:58:34Z"
+    },
+    {
+      "card_number": "OP05-082",
+      "art_variant": "original",
+      "price": 30.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/shirahoshi-op05-082-reprint-premium-booster-the-best/p/683134494",
+      "title": "Shirahoshi (OP05-082) (Reprint) [Premium Booster -The Best-]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-06-11",
+      "captured_at": "2026-06-11T09:58:34Z"
+    },
+    {
+      "card_number": "P-053",
+      "art_variant": "original",
+      "price": 35.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/nami-p-053-jolly-roger-foil-premium-booster-the-best/p/682898062",
+      "title": "Nami (P-053) (Jolly Roger Foil) [Premium Booster -The Best-]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-06-11",
+      "captured_at": "2026-06-11T09:58:34Z"
+    },
+    {
+      "card_number": "ST05-004",
+      "art_variant": "original",
+      "price": 205.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-st05-004-premium-card-collection-uta-one-piece-promotion-cards",
+      "title": "Uta (ST05-004) (Premium Card Collection -Uta-) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-11",
+      "captured_at": "2026-06-11T09:58:34Z"
+    },
+    {
+      "card_number": "ST01-004",
+      "art_variant": "original",
+      "price": 355.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/sanji-one-piece-film-red",
+      "title": "Sanji [One Piece Film: Red]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-11",
+      "captured_at": "2026-06-11T09:58:34Z"
+    },
+    {
+      "card_number": "P-072",
+      "art_variant": "original",
+      "price": 1345.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/ryuma-premium-card-collection-best-selection-vol-3-one-piece-promotion-cards",
+      "title": "Ryuma (Premium Card Collection -Best Selection Vol. 3-) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-11",
+      "captured_at": "2026-06-11T09:58:34Z"
     }
   ]
 }
