@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-11T00:06:24Z",
+  "updated_at": "2026-06-11T05:17:25Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -23796,6 +23796,42 @@
       "stock": "In stock",
       "observed_on": "2026-06-11",
       "captured_at": "2026-06-11T00:06:24Z"
+    },
+    {
+      "card_number": "EB02-011",
+      "art_variant": "alternate",
+      "price": 125.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/arlong-alternate-art-extra-booster-memorial-collection",
+      "title": "Arlong (Alternate Art) [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-11",
+      "captured_at": "2026-06-11T05:17:25Z"
+    },
+    {
+      "card_number": "OP14-033",
+      "art_variant": "alternate",
+      "price": 525.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/perona-alternate-art-the-azure-seas-seven",
+      "title": "Perona (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-11",
+      "captured_at": "2026-06-11T05:17:25Z"
+    },
+    {
+      "card_number": "OP14-031",
+      "art_variant": "alternate",
+      "price": 1284.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-alternate-art-the-azure-seas-seven",
+      "title": "Nami (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-11",
+      "captured_at": "2026-06-11T05:17:25Z"
     }
   ]
 }
