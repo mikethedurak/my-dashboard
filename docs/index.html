@@ -481,9 +481,17 @@
                 <option value="">All rarities</option>
               </select>
             </label>
-            <label class="collection-missing-toggle">
-              <input id="show-only-new-cards" type="checkbox">
-              Show only new cards
+            <label>
+              Show
+              <select id="missing-card-display-filter">
+                <option value="all">Show all</option>
+                <option value="new">Show only new</option>
+                <option value="op">Show OP</option>
+                <option value="eb">Show EB</option>
+                <option value="st">Show ST</option>
+                <option value="promo">Show Promo</option>
+                <option value="op-eb">Show OP and EB</option>
+              </select>
             </label>
             </section>
             <div id="cards-grid" class="cards-grid" aria-live="polite">

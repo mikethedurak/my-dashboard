@@ -127,7 +127,7 @@ const state = {
   collectionShowMissing: false,
   collectionShowAvailableMissing: false,
   collectionShowMissingRarity: false,
-  showOnlyNewCards: false,
+  missingCardDisplayFilter: "all",
   missingListingsByCard: {},
   missingPriceHistory: [],
   onePieceProductType: "boosters",
@@ -227,7 +227,7 @@ const elements = {
   storeFilter: document.querySelector("#store-filter"),
   setFilter: document.querySelector("#set-filter"),
   rarityFilter: document.querySelector("#rarity-filter"),
-  showOnlyNewCardsToggle: document.querySelector("#show-only-new-cards"),
+  missingCardDisplayFilter: document.querySelector("#missing-card-display-filter"),
   onePieceProductTypeFilters: document.querySelector("#one-piece-product-type-filters"),
   onePieceProductStrip: document.querySelector("#one-piece-product-strip"),
   collectionSetButtons: document.querySelector("#collection-set-buttons"),
@@ -1545,6 +1545,37 @@ function cardSetKey(cardNumber) {
   return `${match[1]}${String(Number(match[2])).padStart(2, "0")}`;
 }
 
+function cardFamily(row) {
+  const cardNumber = String(row?.card_number || "").trim().toUpperCase();
+  const rarity = String(row?.rarity || "").trim().toLowerCase();
+  const setName = String(row?.set_name || "").trim().toLowerCase();
+  if (/^P(?:-|$)/.test(cardNumber) || rarity === "promo" || setName.includes("promotion")) {
+    return "promo";
+  }
+  const match = cardNumber.match(/^([A-Z]+)/);
+  return match ? match[1].toLowerCase() : "";
+}
+
+function matchesMissingCardDisplayFilter(row) {
+  switch (state.missingCardDisplayFilter) {
+    case "new":
+      return isNewListing(row);
+    case "op":
+      return cardFamily(row) === "op";
+    case "eb":
+      return cardFamily(row) === "eb";
+    case "st":
+      return cardFamily(row) === "st";
+    case "promo":
+      return cardFamily(row) === "promo";
+    case "op-eb":
+      return ["op", "eb"].includes(cardFamily(row));
+    case "all":
+    default:
+      return true;
+  }
+}
+
 function optionList(select, values, label) {
   select.innerHTML = `<option value="">${label}</option>`;
   for (const value of values) {
@@ -1561,7 +1592,7 @@ function filteredRows() {
     const matchesStore = !state.store || row.store === state.store;
     const matchesSet = !state.set || cardSetKey(row.card_number) === state.set;
     const matchesRarity = !state.rarity || row.rarity === state.rarity;
-    const matchesNewOnly = !state.showOnlyNewCards || isNewListing(row);
+    const matchesDisplayFilter = matchesMissingCardDisplayFilter(row);
     const haystack = [
       row.card_number,
       row.title,
@@ -1573,7 +1604,7 @@ function filteredRows() {
       .join(" ")
       .toLowerCase();
     const matchesSearch = !term || haystack.includes(term);
-    return matchesStore && matchesSet && matchesRarity && matchesNewOnly && matchesSearch;
+    return matchesStore && matchesSet && matchesRarity && matchesDisplayFilter && matchesSearch;
   });
 }
 
@@ -7341,9 +7372,9 @@ elements.rarityFilter.addEventListener("change", (event) => {
   renderOnePieceCards();
 });
 
-if (elements.showOnlyNewCardsToggle) {
-  elements.showOnlyNewCardsToggle.addEventListener("change", (event) => {
-    state.showOnlyNewCards = Boolean(event.target.checked);
+if (elements.missingCardDisplayFilter) {
+  elements.missingCardDisplayFilter.addEventListener("change", (event) => {
+    state.missingCardDisplayFilter = event.target.value || "all";
     renderOnePieceCards();
   });
 }
