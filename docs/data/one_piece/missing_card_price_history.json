@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-12T18:56:01Z",
+  "updated_at": "2026-06-12T20:59:13Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -24852,6 +24852,30 @@
       "stock": "In stock",
       "observed_on": "2026-06-12",
       "captured_at": "2026-06-12T16:02:03Z"
+    },
+    {
+      "card_number": "ST10-010",
+      "art_variant": "original",
+      "price": 172.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-ultra-deck-the-three-captains",
+      "title": "Trafalgar Law [Ultra Deck - The Three Captains]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-12",
+      "captured_at": "2026-06-12T20:59:13Z"
+    },
+    {
+      "card_number": "EB02-035",
+      "art_variant": "original",
+      "price": 272.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-pudding-extra-booster-memorial-collection",
+      "title": "Sanji & Pudding [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-12",
+      "captured_at": "2026-06-12T20:59:13Z"
     }
   ]
 }
