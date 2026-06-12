@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-12T00:12:44Z",
+  "updated_at": "2026-06-12T05:23:28Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -24720,6 +24720,30 @@
       "stock": "In stock",
       "observed_on": "2026-06-12",
       "captured_at": "2026-06-12T00:12:44Z"
+    },
+    {
+      "card_number": "P-024",
+      "art_variant": "original",
+      "price": 56.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/im-gonna-be-king-of-the-pirates-one-piece-promotion-cards",
+      "title": "I'm Gonna Be King of the Pirates!! [One Piece Promotion Cards]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-06-12",
+      "captured_at": "2026-06-12T05:23:28Z"
+    },
+    {
+      "card_number": "ST01-007",
+      "art_variant": "original",
+      "price": 3485.0,
+      "store": "Tanuki Trader",
+      "url": "https://tanukitrader.co.za/product/nami-tr/",
+      "title": "Nami (TR)",
+      "condition": "",
+      "stock": "1 in stock",
+      "observed_on": "2026-06-12",
+      "captured_at": "2026-06-12T05:23:28Z"
     }
   ]
 }
