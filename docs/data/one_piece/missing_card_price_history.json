@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-12T12:47:56Z",
+  "updated_at": "2026-06-12T16:02:03Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -24804,6 +24804,54 @@
       "stock": "In stock",
       "observed_on": "2026-06-12",
       "captured_at": "2026-06-12T12:47:56Z"
+    },
+    {
+      "card_number": "P-026",
+      "art_variant": "original",
+      "price": 15.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/morgan-pirates-party-vol-2-one-piece-promotion-cards",
+      "title": "Morgan (Pirates Party Vol. 2) [One Piece Promotion Cards]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-06-12",
+      "captured_at": "2026-06-12T16:02:03Z"
+    },
+    {
+      "card_number": "ST10-010",
+      "art_variant": "original",
+      "price": 175.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-ultra-deck-the-three-captains",
+      "title": "Trafalgar Law [Ultra Deck - The Three Captains]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-12",
+      "captured_at": "2026-06-12T16:02:03Z"
+    },
+    {
+      "card_number": "OP14-031",
+      "art_variant": "alternate",
+      "price": 1269.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-alternate-art-the-azure-seas-seven",
+      "title": "Nami (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-12",
+      "captured_at": "2026-06-12T16:02:03Z"
+    },
+    {
+      "card_number": "OP14-096",
+      "art_variant": "alternate",
+      "price": 2350.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-alternate-art-the-azure-seas-seven",
+      "title": "Ground Death (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-12",
+      "captured_at": "2026-06-12T16:02:03Z"
     }
   ]
 }
