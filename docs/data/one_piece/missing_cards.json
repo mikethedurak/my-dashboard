@@ -376,6 +376,21 @@
       "scraped_at": "2026-06-07T20:58:34Z"
     },
     {
+      "card_number": "ST02-009",
+      "price": 55.0,
+      "title": "Trafalgar Law [Starter Deck: Worst Generation]",
+      "rarity": "Super Rare",
+      "store": "Knightly Gaming",
+      "set_name": "Starter Deck: Worst Generation",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R55.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-starter-deck-worst-generation",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/62495d31-36b5-5900-8eec-5fb6701af1d1.jpg?v=1733912470",
+      "art_variant": "original",
+      "scraped_at": "2026-06-10T10:46:23Z"
+    },
+    {
       "card_number": "P-024",
       "price": 56.0,
       "title": "I'm Gonna Be King of the Pirates!! [One Piece Promotion Cards]",
@@ -404,21 +419,6 @@
       "image_url": "",
       "art_variant": "original",
       "scraped_at": "2026-06-07T20:58:34Z"
-    },
-    {
-      "card_number": "ST02-009",
-      "price": 57.0,
-      "title": "Trafalgar Law [Starter Deck: Worst Generation]",
-      "rarity": "Super Rare",
-      "store": "Knightly Gaming",
-      "set_name": "Starter Deck: Worst Generation",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R57.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-starter-deck-worst-generation",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/62495d31-36b5-5900-8eec-5fb6701af1d1.jpg?v=1733912470",
-      "art_variant": "original",
-      "scraped_at": "2026-06-10T10:46:23Z"
     },
     {
       "card_number": "ST26-005",
@@ -887,14 +887,14 @@
     },
     {
       "card_number": "OP14-031",
-      "price": 1269.0,
+      "price": 1270.0,
       "title": "Nami (Alternate Art) [The Azure Sea's Seven]",
       "rarity": "Super Rare",
       "store": "Knightly Gaming",
       "set_name": "The Azure Sea's Seven",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R1269.00",
+      "available_variants": "Near Mint Foil R1270.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-alternate-art-the-azure-seas-seven",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/670254.jpg?v=1769205406",
       "art_variant": "alternate",

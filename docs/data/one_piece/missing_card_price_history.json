@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-13T00:11:30Z",
+  "updated_at": "2026-06-13T05:13:50Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -25668,6 +25668,30 @@
       "stock": "In stock",
       "observed_on": "2026-06-13",
       "captured_at": "2026-06-13T00:11:30Z"
+    },
+    {
+      "card_number": "ST02-009",
+      "art_variant": "original",
+      "price": 55.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-starter-deck-worst-generation",
+      "title": "Trafalgar Law [Starter Deck: Worst Generation]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-13",
+      "captured_at": "2026-06-13T05:13:50Z"
+    },
+    {
+      "card_number": "OP14-031",
+      "art_variant": "alternate",
+      "price": 1270.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-alternate-art-the-azure-seas-seven",
+      "title": "Nami (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-13",
+      "captured_at": "2026-06-13T05:13:50Z"
     }
   ]
 }
