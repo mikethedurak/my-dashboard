@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-14T02:10:06Z",
+  "updated_at": "2026-06-14T07:12:30Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -26544,6 +26544,18 @@
       "stock": "In stock",
       "observed_on": "2026-06-14",
       "captured_at": "2026-06-14T02:10:06Z"
+    },
+    {
+      "card_number": "EB02-035",
+      "art_variant": "original",
+      "price": 275.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-pudding-extra-booster-memorial-collection",
+      "title": "Sanji & Pudding [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-14",
+      "captured_at": "2026-06-14T07:12:30Z"
     }
   ]
 }
