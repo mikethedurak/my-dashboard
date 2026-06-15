@@ -1117,6 +1117,16 @@
           "opinion": "Loved"
         },
         {
+          "type": "movie",
+          "title": "GOAT",
+          "opinion": ""
+        },
+        {
+          "type": "movie",
+          "title": "The Others",
+          "opinion": ""
+        },
+        {
           "type": "series",
           "title": "Stranger Things",
           "opinion": ""
@@ -1199,6 +1209,11 @@
         {
           "type": "series",
           "title": "Die Kantoor",
+          "opinion": ""
+        },
+        {
+          "type": "series",
+          "title": "The Digital Circus",
           "opinion": ""
         }
       ]

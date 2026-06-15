@@ -1,45 +1,5 @@
 {
   "source": "https://mydorpie.com/Cinemas/Cape-Town/Ster-Kinekor/VA-Waterfront-Movies/IMAX",
   "theatre": "Ster-Kinekor V&A Waterfront IMAX",
-  "items": [
-    {
-      "tmdb_id": 1275779,
-      "tmdb_url": "https://www.themoviedb.org/movie/1275779",
-      "tmdb_rating": "7.0",
-      "tmdb_votes": "231",
-      "release_date": "2026-06-10",
-      "overview": "If you found out we weren’t alone, if someone showed you, proved it to you, would that frighten you?",
-      "runtime_minutes": "145",
-      "genres": [
-        "Action",
-        "Science Fiction",
-        "Thriller"
-      ],
-      "directors": [
-        "Steven Spielberg"
-      ],
-      "actors": [
-        "Emily Blunt",
-        "Josh O'Connor",
-        "Colin Firth",
-        "Eve Hewson",
-        "Colman Domingo",
-        "Wyatt Russell",
-        "Elizabeth Marvel",
-        "Henry Lloyd-Hughes",
-        "Courtney Grace",
-        "Michael Gaston"
-      ],
-      "trailer_url": "https://www.youtube.com/watch?v=icDuEHSxE-w",
-      "poster_url": "https://image.tmdb.org/t/p/w342/3o5YPjDGDTcTDL5ftDA9NwN9dLd.jpg",
-      "title": "Disclosure Day",
-      "url": "https://mydorpie.com/m/?page=m_waterimax_disclosureday2d",
-      "source": "IMAX Waterfront",
-      "status": "now_playing",
-      "status_label": "Now playing",
-      "showtimes": [],
-      "format": "IMAX 2D",
-      "image": "https://image.tmdb.org/t/p/w342/3o5YPjDGDTcTDL5ftDA9NwN9dLd.jpg"
-    }
-  ]
+  "items": []
 }

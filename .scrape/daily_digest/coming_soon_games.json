@@ -10,17 +10,17 @@
       "platforms": "PC"
     },
     {
-      "title": "SPORTAL",
-      "url": "https://rawg.io/games/sportal",
-      "image": "https://media.rawg.io/media/screenshots/40c/40c77e273f69b2e2b081bbcc6d7bfb19.jpg",
+      "title": "Crushed In Time",
+      "url": "https://rawg.io/games/crushed-in-time",
+      "image": "https://media.rawg.io/media/games/67b/67b8ca361688922a71e441445fe892d4.jpg",
       "release_date": "2026-06-10",
       "rating": "0.0",
       "platforms": ""
     },
     {
-      "title": "Crushed In Time",
-      "url": "https://rawg.io/games/crushed-in-time",
-      "image": "https://media.rawg.io/media/games/67b/67b8ca361688922a71e441445fe892d4.jpg",
+      "title": "SPORTAL",
+      "url": "https://rawg.io/games/sportal",
+      "image": "https://media.rawg.io/media/screenshots/40c/40c77e273f69b2e2b081bbcc6d7bfb19.jpg",
       "release_date": "2026-06-10",
       "rating": "0.0",
       "platforms": ""
@@ -86,7 +86,7 @@
       "url": "https://rawg.io/games/gothic-1-remake",
       "image": "https://media.rawg.io/media/games/f24/f24d20c6fddb77fe83d39cbfd7d4687f.jpg",
       "release_date": "2026-06-05",
-      "rating": "3.6",
+      "rating": "3.5",
       "platforms": "PC, PlayStation 5, Xbox One, PlayStation 4"
     },
     {
@@ -218,20 +218,20 @@
       "platforms": "PC"
     },
     {
-      "title": "Mina the Hollower",
-      "url": "https://rawg.io/games/mina-the-hollower",
-      "image": "https://media.rawg.io/media/games/9e5/9e5914a9b6537391752af07412cd8ce3.jpg",
-      "release_date": "2026-05-28",
-      "rating": "0.0",
-      "platforms": "PC, macOS, Linux"
-    },
-    {
       "title": "The Remake the End of the Greatest RPG of All Time_Data",
       "url": "https://rawg.io/games/the-remake-the-end-of-the-greatest-rpg-of-all-time",
       "image": "https://media.rawg.io/media/screenshots/d51/d51dc17fc02738fce2dd56442e0b3b7d.jpg",
       "release_date": "2026-05-28",
       "rating": "0.0",
       "platforms": "PC"
+    },
+    {
+      "title": "Mina the Hollower",
+      "url": "https://rawg.io/games/mina-the-hollower",
+      "image": "https://media.rawg.io/media/games/9e5/9e5914a9b6537391752af07412cd8ce3.jpg",
+      "release_date": "2026-05-28",
+      "rating": "0.0",
+      "platforms": "PC, macOS, Linux"
     },
     {
       "title": "Echo Generation 2",
@@ -270,7 +270,7 @@
       "url": "https://rawg.io/games/007-first-light",
       "image": "https://media.rawg.io/media/games/86f/86f2dc1b9671f25a13ff92e069b51786.jpg",
       "release_date": "2026-05-27",
-      "rating": "4.5",
+      "rating": "4.4",
       "platforms": "PC, PlayStation 5, Xbox Series S/X, Nintendo Switch"
     },
     {

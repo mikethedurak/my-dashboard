@@ -1,11 +1,20 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-06-14T08:20:35.006147Z",
+  "generated_at": "2026-06-15T10:29:06.943769Z",
   "channel_name": "gameranx",
   "channel_id": "UCNvzD7Z-g64bPXxGzaQaa4g",
   "channel_url": "https://www.youtube.com/@gameranxTV",
   "items_count": 15,
   "items": [
+    {
+      "id": "yt-c46KMTqwRiA",
+      "video_id": "c46KMTqwRiA",
+      "title": "Top 20 NEW Games of 2026 [Second Half]",
+      "url": "https://www.youtube.com/watch?v=c46KMTqwRiA",
+      "published_at": "2026-06-14T16:54:58+00:00",
+      "updated_at": "2026-06-15T07:16:20+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/c46KMTqwRiA/hqdefault.jpg"
+    },
     {
       "id": "yt-ad9eRo_KCFI",
       "video_id": "ad9eRo_KCFI",
@@ -66,7 +75,7 @@
       "title": "10 BRAND NEW Games of XBOX GAMES SHOWCASE 2026",
       "url": "https://www.youtube.com/watch?v=4zozsPPgpvY",
       "published_at": "2026-06-08T15:02:16+00:00",
-      "updated_at": "2026-06-09T07:13:11+00:00",
+      "updated_at": "2026-06-14T11:42:26+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/4zozsPPgpvY/hqdefault.jpg"
     },
     {
@@ -131,15 +140,6 @@
       "published_at": "2026-06-02T15:00:39+00:00",
       "updated_at": "2026-06-09T21:08:04+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/ZRpbtvbT9Aw/hqdefault.jpg"
-    },
-    {
-      "id": "yt-a8FPXI8jUP0",
-      "video_id": "a8FPXI8jUP0",
-      "title": "30 RPGs of 2026 That Look Too Good to Ignore",
-      "url": "https://www.youtube.com/watch?v=a8FPXI8jUP0",
-      "published_at": "2026-06-01T17:11:29+00:00",
-      "updated_at": "2026-06-10T11:54:27+00:00",
-      "thumbnail_url": "https://i.ytimg.com/vi/a8FPXI8jUP0/hqdefault.jpg"
     }
   ]
 }

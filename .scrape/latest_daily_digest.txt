@@ -2,34 +2,58 @@ Daily dashboard digest
 
 One Piece Cards
 ---------------
-Added: 0
+Added: 7
+1. Merry Go EB02-041 | Toad Trader TCG | 12.0
+https://www.toadtradertcg.com/product-page/merry-go-eb02-041
+2. Hope EB02-031 | Toad Trader TCG | 13.0
+https://www.toadtradertcg.com/product-page/hope-eb02-031
+3. Nami OP11-054 | Toad Trader TCG | 36.0
+https://www.toadtradertcg.com/product-page/nami-op11-054
+4. Arlong EB02-011 | Toad Trader TCG | 119.0
+https://www.toadtradertcg.com/product-page/arlong-eb02-011-1
+5. Gravity Blade Raging Tiger OP06-058 | Toad Trader TCG | 38.0
+https://www.toadtradertcg.com/product-page/gravity-blade-raging-tiger-op06-058
+6. Sengoku EB02-044 | Toad Trader TCG | 42.0
+https://www.toadtradertcg.com/product-page/sengoku-eb02-044
+7. Shirahoshi (OP05-082) (Reprint) [Premium Booster -The Best-] | GeekHaven | 30.0
+https://www.bobshop.co.za/shirahoshi-op05-082-reprint-premium-booster-the-best/p/683788727
 
-Updated: 18
-1. When You're at Sea You Fight against Pirates!! [Awakening of the New Era] | Knightly Gaming | 7.0
-https://www.knightlygaming.co.za/collections/one-piece-singles/products/when-youre-at-sea-you-fight-against-pirates-awakening-of-the-new-era
-2. Morgan (Pirates Party Vol. 2) [One Piece Promotion Cards] | Knightly Gaming | 15.0
-https://www.knightlygaming.co.za/collections/one-piece-singles/products/morgan-pirates-party-vol-2-one-piece-promotion-cards
-3. Perfume Femur (Premium Card Collection -Best Selection Vol. 4-) [One Piece Promotion Cards] | Big Bang Shop | 380.0
-https://bigbangshop.co.za/collections/one-piece-single-cards/products/perfume-femur-premium-card-collection-best-selection-vol-4-one-piece-promotion-cards
-4. Carrot (Parallel) [Two Legends] | Big Bang Shop | 445.0
-https://bigbangshop.co.za/collections/one-piece-single-cards/products/carrot-parallel-two-legends
-5. Smoker [Starter Deck: Absolute Justice] | Big Bang Shop | 30.0
-https://bigbangshop.co.za/collections/one-piece-single-cards/products/smoker-starter-deck-absolute-justice
-6. Trafalgar Law [Starter Deck: Worst Generation] | Knightly Gaming | 55.0
-https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-starter-deck-worst-generation
-7. I'm Gonna Be King of the Pirates!! [One Piece Promotion Cards] | Knightly Gaming | 56.0
-https://www.knightlygaming.co.za/collections/one-piece-singles/products/im-gonna-be-king-of-the-pirates-one-piece-promotion-cards
-8. Kouzuki Hiyori (Alternate Art) [Premium Booster -The Best-] | Big Bang Shop | 2665.0
-https://bigbangshop.co.za/collections/one-piece-single-cards/products/kouzuki-hiyori-alternate-art-premium-booster-the-best
-9. Dracule Mihawk [Live Action Edition] | Big Bang Shop | 95.0
+Updated: 6
+1. Monkey.D.Luffy (P-055) (Reprint) [Premium Booster -The Best-] | GeekHaven | 8.0
+https://www.bobshop.co.za/monkey-d-luffy-p-055-reprint-premium-booster-the-best/p/683847439
+2. Perfume Femur OP07-057 | Toad Trader TCG | 26.0
+https://www.toadtradertcg.com/product-page/perfume-femur-op07-057
+3. Carrot OP08-023 | Toad Trader TCG | 30.0
+https://www.toadtradertcg.com/product-page/carrot-op08-023
+4. Kouzuki Hiyori OP06-106 | Toad Trader TCG | 78.0
+https://www.toadtradertcg.com/product-page/kouzuki-hiyori-op06-106
+5. Ground Death OP14-096 | Toad Trader TCG | 102.0
+https://www.toadtradertcg.com/product-page/ground-death-op14-096
+6. Nami (TR) | Tanuki Trader | 3485.0
+https://tanukitrader.co.za/product/nami-tr/
+
+Removed: 13
+1. Dracule Mihawk [Live Action Edition] | Big Bang Shop | 95.0
 https://bigbangshop.co.za/collections/one-piece-single-cards/products/dracule-mihawk-live-action-edition
-10. Ground Death (Alternate Art) [The Azure Sea's Seven] | Knightly Gaming | 2350.0
-https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-alternate-art-the-azure-seas-seven
-...and 8 more
-
-Removed: 1
-1. Gum-Gum Red Roc (Alternate Art) [Premium Booster -The Best-] | Big Bang Shop | 765.0
-https://bigbangshop.co.za/collections/one-piece-single-cards/products/gum-gum-red-roc-alternate-art-premium-booster-the-best
+2. Uta (ST05-004) (Premium Card Collection -Uta-) [One Piece Promotion Cards] | Big Bang Shop | 210.0
+https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-st05-004-premium-card-collection-uta-one-piece-promotion-cards
+3. Morgan (Pirates Party Vol. 2) [One Piece Promotion Cards] | Knightly Gaming | 15.0
+https://www.knightlygaming.co.za/collections/one-piece-singles/products/morgan-pirates-party-vol-2-one-piece-promotion-cards
+4. Trafalgar Law [Starter Deck: Worst Generation] | Knightly Gaming | 55.0
+https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-starter-deck-worst-generation
+5. Sanji & Pudding [Extra Booster: Anime 25th Collection] | Knightly Gaming | 275.0
+https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-pudding-extra-booster-memorial-collection
+6. Perona (Alternate Art) [The Azure Sea's Seven] | Knightly Gaming | 517.0
+https://www.knightlygaming.co.za/collections/one-piece-singles/products/perona-alternate-art-the-azure-seas-seven
+7. Ryuma (Premium Card Collection -Best Selection Vol. 3-) [One Piece Promotion Cards] | Big Bang Shop | 1450.0
+https://bigbangshop.co.za/collections/one-piece-single-cards/products/ryuma-premium-card-collection-best-selection-vol-3-one-piece-promotion-cards
+8. Nami (Alternate Art) [The Azure Sea's Seven] | Knightly Gaming | 1261.0
+https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-alternate-art-the-azure-seas-seven
+9. When You're at Sea You Fight against Pirates!! [Awakening of the New Era] | Knightly Gaming | 7.0
+https://www.knightlygaming.co.za/collections/one-piece-singles/products/when-youre-at-sea-you-fight-against-pirates-awakening-of-the-new-era
+10. I'm Gonna Be King of the Pirates!! [One Piece Promotion Cards] | Knightly Gaming | 56.0
+https://www.knightlygaming.co.za/collections/one-piece-singles/products/im-gonna-be-king-of-the-pirates-one-piece-promotion-cards
+...and 3 more
 
 New Releases
 ------------
@@ -43,11 +67,7 @@ Coming Soon Movies
 ------------------
 Added: 0
 
-Updated: 2
-1. Moana | 2026-07-10
-https://www.themoviedb.org/movie/1108427
-2. Spider-Man: Brand New Day | 2026-07-31
-https://www.themoviedb.org/movie/969681
+Updated: 0
 
 Removed: 0
 
@@ -61,23 +81,15 @@ Removed: 0
 
 New Game Releases
 -----------------
-Added: 3
-1. Beastro (2026) | 2026-06-12
-https://rawg.io/games/beastro-2026
-2. Unbound Drift | 2026-05-26
-https://rawg.io/games/unbound-drift
-3. The Remake the End of the Greatest RPG of All Time_Data | 2026-05-28
-https://rawg.io/games/the-remake-the-end-of-the-greatest-rpg-of-all-time
+Added: 0
 
-Updated: 0
+Updated: 2
+1. Gothic 1 Remake | 2026-06-05
+https://rawg.io/games/gothic-1-remake
+2. 007 First Light | 2026-05-27
+https://rawg.io/games/007-first-light
 
-Removed: 3
-1. Holy Valkyrie ExS-TIA F Parallel Episode 2: Reunion | 2026-05-20
-https://rawg.io/games/holy-valkyrie-exs-tia-f-parallel-episode-2-reunion
-2. Holy Valkyrie ExS-TIA P Parallel Episode 1: Magical Girl Pastel Marie | 2026-05-20
-https://rawg.io/games/holy-valkyrie-exs-tia-p-parallel-episode-1-magical
-3. Holy Valkyrie ExS-TIA TS Parallel Episode 3: Twilight Sabre | 2026-05-20
-https://rawg.io/games/holy-valkyrie-exs-tia-ts-parallel-episode-3-twilig
+Removed: 0
 
 Coming Soon Games
 -----------------
@@ -97,77 +109,75 @@ Removed: 0
 
 Quicket Events
 --------------
-Added: 18
-1. CRC Cape Town Run For Me Fun Run/Walk | 2026-06-16T09:00:00+02:00 | Jack Muller Park
-https://www.quicket.co.za/events/362644-crc-cape-town-run-for-me-fun-runwalk/
-2. Phil de Lange: Why are you like this? LIVE in Cape Town at The Protea Hotel Fire & Ice! 10 & 11 July 2026 | 2026-07-10T19:30:00+02:00 | Protea Hotel Fire & Ice! Cape Town
-https://www.quicket.co.za/events/378456-phil-de-lange-why-are-you-like-this-live-in-cape-town-at-the-protea-hotel-fire/
-3. Earthdance Cape Town 2026 | 2026-09-18T14:00:00+02:00 | Kromrivier Farm Riviersonderend
-https://www.quicket.co.za/events/368787-earthdance-cape-town-2026/
-4. Kultura Fees: Ek is nie Danie | 2026-07-31T19:00:00+02:00 | Curro Durbanville Theatre
-https://www.quicket.co.za/events/375519-kultura-fees-ek-is-nie-danie/
-5. Nagskof with HelderbergFM | 2026-06-15T18:30:00+02:00 | Lord Charles Hotel, Somerset West, a Tribute Portfolio Hotel
-https://www.quicket.co.za/events/376763-nagskof-with-helderbergfm/
-6. Kultura Fees: Liewe Heksie en die Wals | 2026-08-01T10:00:00+02:00 | Curro Durbanville Theatre
-https://www.quicket.co.za/events/375540-kultura-fees-liewe-heksie-en-die-wals/
-7. Musical Mondays July | 2026-07-27T19:30:00+02:00 | The Outlore Base
-https://www.quicket.co.za/events/371861-musical-mondays-july/
-8. Steve Graham's Monsters of Rock show - Simon's Restaurant, Groot Constantia | 2026-06-27T20:00:00+02:00 | Simon's Restaurant
-https://www.quicket.co.za/events/361683-steve-grahams-monsters-of-rock-show-simons-restaurant-groot-constantia/
-9. The Biz presents Motown Memoirs LIVE! @ café Roux | 2026-06-25T18:00:00+02:00 | Cafe Roux
-https://www.quicket.co.za/events/371003-the-biz-presents-motown-memoirs-live-caf-roux/
-10. Pilates with Lynn | 2026-06-20T12:15:00+02:00 | The Ivy Room
-https://www.quicket.co.za/events/377857-pilates-with-lynn/
-...and 8 more
+Added: 13
+1. DISTRICT SIX MUSEUM: MARCH 2027 ADMISSION TICKETS | 2027-03-01T09:00:00+02:00 | 25A Buitenkant St
+https://www.quicket.co.za/events/365072-district-six-museum-march-2027-admission-tickets/
+2. JUNE by Improguise | 2026-06-20T19:30:00+02:00 | The Galloway Theatre
+https://www.quicket.co.za/events/378088-june-by-improguise/
+3. James Stewart & John Ellis Explore the Music of Sting & The Police | 2026-06-20T18:00:00+02:00 | Cafe Roux
+https://www.quicket.co.za/events/374485-james-stewart-john-ellis-explore-the-music-of-sting-the-police/
+4. #Action4Inclusion Social Justice Walk | 2026-06-16T07:30:00+02:00 | Kruiskerk
+https://www.quicket.co.za/events/357298-action4inclusion-social-justice-walk/
+5. Takeaways by Nate Levinrad | 2026-06-18T20:00:00+02:00 | The Outlore Base
+https://www.quicket.co.za/events/377891-takeaways-by-nate-levinrad/
+6. Mobility & Stretch | 2026-06-16T10:00:00+02:00 | Virgin Active Gym Constantia
+https://www.quicket.co.za/events/376362-mobility-stretch/
+7. Paint a DOOS | 2026-06-20T16:00:00+02:00 | 10A Kloof Nek Rd
+https://www.quicket.co.za/events/378061-paint-a-doos/
+8. Unofficial Pink Party 03.07.26 | 2026-07-03T21:00:00+02:00 | Botanik Social House
+https://www.quicket.co.za/events/377355-unofficial-pink-party-030726/
+9. DISTRICT SIX MUSEUM: FEBRUARY 2027 ADMISSION TICKETS | 2027-02-01T09:00:00+02:00 | 25A Buitenkant St
+https://www.quicket.co.za/events/365070-district-six-museum-february-2027-admission-tickets/
+10. Dead Dreams and a Drinking Problem | 2026-06-18T19:30:00+02:00 | The Masque Theatre
+https://www.quicket.co.za/events/373178-dead-dreams-and-a-drinking-problem/
+...and 3 more
 
 Updated: 2
 1. Majik Forest: Run, walk, refresh | 2026-06-16T07:00:00+02:00 | Majik Forest Shopping Centre
 https://www.quicket.co.za/events/371411-majik-forest-run-walk-refresh/
-2. NIGHT IN KIN CPT | 2026-06-17T17:00:00+02:00 | Roxy Woodstock
-https://www.quicket.co.za/events/373784-night-in-kin-cpt/
+2. Bafunny Bafunny: South African Festival of Comedy Live at GrandWest | 2026-09-25T18:00:00+02:00 | Grand Arena at GrandWest
+https://www.quicket.co.za/events/370576-bafunny-bafunny-south-african-festival-of-comedy-live-at-grandwest/
 
-Removed: 18
-1. Wild Food Land Foraging Talk, Walk & Tasting - 13 June | 2026-06-13T11:00:00+02:00 | Veld and Sea
-https://www.quicket.co.za/events/370292-wild-food-land-foraging-talk-walk-tasting-13-june/
-2. RockSteady's 80's Tribute & Trivia Show | 2026-06-13T18:00:00+02:00 | Cafe Roux
-https://www.quicket.co.za/events/368423-rocksteadys-80s-tribute-trivia-show/
-3. Sanctum | The Year of the Horse | 2026-06-13T20:00:00+02:00 | Apollo Warehouse
-https://www.quicket.co.za/events/357726-sanctum-the-year-of-the-horse/
-4. Hallelujah Anyway #1 | 2026-06-13T19:00:00+02:00 | Merchant & Maker – Kommetjie
-https://www.quicket.co.za/events/375760-hallelujah-anyway-1/
-5. Breathing on the Bend | 2026-06-13T15:00:00+02:00 | Breathing on the Bend
-https://www.quicket.co.za/events/378045-breathing-on-the-bend/
-6. The Evening Tease | 2026-06-13T18:00:00+02:00 | 24 Somerset Rd
-https://www.quicket.co.za/events/375320-the-evening-tease/
-7. Love, No Labels | 2026-06-13T18:00:00+02:00 | Natural Mystic
-https://www.quicket.co.za/events/302421-love-no-labels/
-8. Flower Pressing Workshop & Creative Session | 2026-06-13T15:00:00+02:00 | 136 Bree St
-https://www.quicket.co.za/events/371415-flower-pressing-workshop-creative-session/
-9. The Alignment Conversation with Lali Tokwe | 2026-06-13T12:00:00+02:00 | FaithPoint Church - Cape Town
-https://www.quicket.co.za/events/373326-the-alignment-conversation-with-lali-tokwe/
-10. DinnerOnUs Menu Tasting Event | 2026-06-13T16:00:00+02:00 | Makers Landing
-https://www.quicket.co.za/events/369597-dinneronus-menu-tasting-event/
-...and 8 more
+Removed: 13
+1. Kultura Fees: Ek is nie Danie | 2026-07-31T19:00:00+02:00 | Curro Durbanville Theatre
+https://www.quicket.co.za/events/375519-kultura-fees-ek-is-nie-danie/
+2. Crosby, Stills, Nash & Young: A Tribute to the Songs of a Generation | 2026-06-14T16:00:00+02:00 | Cafe Roux
+https://www.quicket.co.za/events/370140-crosby-stills-nash-young-a-tribute-to-the-songs-of-a-generation/
+3. The Biz presents Motown Memoirs LIVE! @ café Roux | 2026-06-25T18:00:00+02:00 | Cafe Roux
+https://www.quicket.co.za/events/371003-the-biz-presents-motown-memoirs-live-caf-roux/
+4. Baked Shakespeare Presents: Romeo and Juliet at THE ELECTRIC | 2026-06-26T20:00:00+02:00 | THE ELECTRIC
+https://www.quicket.co.za/events/378290-baked-shakespeare-presents-romeo-and-juliet-at-the-electric/
+5. Earthdance Cape Town 2026 | 2026-09-18T14:00:00+02:00 | Kromrivier Farm Riviersonderend
+https://www.quicket.co.za/events/368787-earthdance-cape-town-2026/
+6. FOKOFPOLISIEKAR @ WOODSTOCK BREWERY | 2026-08-14T20:00:00+02:00 | Woodstock Brewery
+https://www.quicket.co.za/events/375753-fokofpolisiekar-woodstock-brewery/
+7. Nagskof with HelderbergFM | 2026-06-15T18:30:00+02:00 | Lord Charles Hotel, Somerset West, a Tribute Portfolio Hotel
+https://www.quicket.co.za/events/376763-nagskof-with-helderbergfm/
+8. Phil de Lange: Why are you like this? LIVE in Cape Town at The Protea Hotel Fire & Ice! 10 & 11 July 2026 | 2026-07-10T19:30:00+02:00 | Protea Hotel Fire & Ice! Cape Town
+https://www.quicket.co.za/events/378456-phil-de-lange-why-are-you-like-this-live-in-cape-town-at-the-protea-hotel-fire/
+9. Kultura Fees: Liewe Heksie en die Wals | 2026-08-01T10:00:00+02:00 | Curro Durbanville Theatre
+https://www.quicket.co.za/events/375540-kultura-fees-liewe-heksie-en-die-wals/
+10. Protein Party | Hot Chocolate Edition | 2026-06-14T15:00:00+02:00 | The Ladder
+https://www.quicket.co.za/events/377013-protein-party-hot-chocolate-edition/
+...and 3 more
 
 Webtickets Events
 -----------------
 Added: 2
-1. State Of the Youth Address | 15 Jun 2026 18:00 | The Star Theatre District Six Homecoming Centre, Cape Town | R100
-https://www.webtickets.co.za/v2/event.aspx?itemid=1594842153
-2. Cape Town Abseil | From 14 Jun 2026 | Table Mountain | R995 - R1100
+1. Centre Stage - Dancing into the future | 16 Jun 2026 19:00 | Artscape, Opera House, Cape Town | R180 - R300
+https://www.webtickets.co.za/v2/event.aspx?itemid=1582360886
+2. Killer Queen - A LAMTA Dance Production | From 15 Jun 2026 20:00 | Theatre On The Bay, Camps Bay | R200 - R320
+https://www.webtickets.co.za/v2/event.aspx?itemid=1590419134
+
+Updated: 1
+1. Cape Town Abseil | From 15 Jun 2026 | Table Mountain | R995 - R1100
 https://www.webtickets.co.za/v2/event.aspx?itemid=1531472391
 
-Updated: 2
-1. FynArts Festival 2026 | From 14 Jun 2026 12:00 | From R120
-https://www.webtickets.co.za/v2/event.aspx?itemid=1588256840
-2. ORPHEUS IN THE UNDERWORLD | From 14 Jun 2026 14:00 | Artscape, Opera House, Cape Town | R225 - R650
-https://www.webtickets.co.za/v2/event.aspx?itemid=1582354185
-
 Removed: 2
-1. Killer Queen - A LAMTA Dance Production | From 13 Jun 2026 15:00 | Theatre On The Bay, Camps Bay | R200 - R320
-https://www.webtickets.co.za/v2/event.aspx?itemid=1590419134
-2. BEAT THE MIDWINTER BLUES AT KILLARNEY’S DRAG DAY! | 13 Jun 2026 09:00 | Killarney International Raceway, 6 Potsdam Road, Table View | R10 - R100
-https://www.webtickets.co.za/v2/event.aspx?itemid=1596828557
+1. ORPHEUS IN THE UNDERWORLD | From 14 Jun 2026 14:00 | Artscape, Opera House, Cape Town | R225 - R650
+https://www.webtickets.co.za/v2/event.aspx?itemid=1582354185
+2. FynArts Festival 2026 | From 14 Jun 2026 12:00 | From R120
+https://www.webtickets.co.za/v2/event.aspx?itemid=1588256840
 
 Google Calendar
 ---------------

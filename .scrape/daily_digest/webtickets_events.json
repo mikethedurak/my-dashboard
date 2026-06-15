@@ -1,16 +1,15 @@
 [
   {
-    "title": "FynArts Festival 2026",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1588256840",
-    "image": "https://content.webtickets.co.za/fynarts/panel_FYNARTS2026_20260429_163009.jpg",
-    "date_text": "From 14 Jun 2026 12:00",
-    "venue": "",
-    "price": "From R120",
+    "title": "State Of the Youth Address",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1594842153",
+    "image": "https://content.webtickets.co.za/Citizencode/panel_3ee50728-ce45-428c-83ac-d0db7f5ab504_20260506_114708.jfif",
+    "date_text": "15 Jun 2026 18:00",
+    "venue": "The Star Theatre District Six Homecoming Centre, Cape Town",
+    "price": "R100",
     "source": "Webtickets",
     "region": "Western Cape",
     "categories": [
-      "festival",
-      "art"
+      "theatre"
     ],
     "missing_location": true,
     "location_key": "",
@@ -18,12 +17,44 @@
     "place_key": ""
   },
   {
-    "title": "ORPHEUS IN THE UNDERWORLD",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1582354185",
-    "image": "https://content.webtickets.co.za/artscape/panel_ORPHEUS_20251202_164045.png",
-    "date_text": "From 14 Jun 2026 14:00",
+    "title": "Killer Queen - A LAMTA Dance Production",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1590419134",
+    "image": "https://content.webtickets.co.za/PTProductions/panel_2fa14078-fa95-4083-9b94-0f282e084bf5_20260311_171208.jpeg",
+    "date_text": "From 15 Jun 2026 20:00",
+    "venue": "Theatre On The Bay, Camps Bay",
+    "price": "R200 - R320",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "theatre"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Cape Town Abseil",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1531472391",
+    "image": "https://content.webtickets.co.za/WildHorizons/panel_DSC06292_20230725_105701.jpg",
+    "date_text": "From 15 Jun 2026",
+    "venue": "Table Mountain",
+    "price": "R995 - R1100",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Centre Stage - Dancing into the future",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1582360886",
+    "image": "https://content.webtickets.co.za/artscape/panel_CENTRE STAGE_20251202_164141.png",
+    "date_text": "16 Jun 2026 19:00",
     "venue": "Artscape, Opera House, Cape Town",
-    "price": "R225 - R650",
+    "price": "R180 - R300",
     "source": "Webtickets",
     "region": "Western Cape",
     "categories": [
@@ -47,38 +78,6 @@
     "region": "Western Cape",
     "categories": [
       "festival"
-    ],
-    "missing_location": true,
-    "location_key": "",
-    "missing_place": true,
-    "place_key": ""
-  },
-  {
-    "title": "Cape Town Abseil",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1531472391",
-    "image": "https://content.webtickets.co.za/WildHorizons/panel_DSC06292_20230725_105701.jpg",
-    "date_text": "From 14 Jun 2026",
-    "venue": "Table Mountain",
-    "price": "R995 - R1100",
-    "source": "Webtickets",
-    "region": "Western Cape",
-    "categories": [],
-    "missing_location": true,
-    "location_key": "",
-    "missing_place": true,
-    "place_key": ""
-  },
-  {
-    "title": "State Of the Youth Address",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1594842153",
-    "image": "https://content.webtickets.co.za/Citizencode/panel_3ee50728-ce45-428c-83ac-d0db7f5ab504_20260506_114708.jfif",
-    "date_text": "15 Jun 2026 18:00",
-    "venue": "The Star Theatre District Six Homecoming Centre, Cape Town",
-    "price": "R100",
-    "source": "Webtickets",
-    "region": "Western Cape",
-    "categories": [
-      "theatre"
     ],
     "missing_location": true,
     "location_key": "",
