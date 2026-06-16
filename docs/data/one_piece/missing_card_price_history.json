@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-16T18:25:25Z",
+  "updated_at": "2026-06-16T21:39:10Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -28308,6 +28308,42 @@
       "stock": "In stock",
       "observed_on": "2026-06-16",
       "captured_at": "2026-06-16T18:25:25Z"
+    },
+    {
+      "card_number": "OP15-092",
+      "art_variant": "original",
+      "price": 30.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-adventure-on-kamis-island-1",
+      "title": "Monkey.D.Luffy [Adventure on Kami's Island]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-16",
+      "captured_at": "2026-06-16T21:39:10Z"
+    },
+    {
+      "card_number": "EB02-011",
+      "art_variant": "alternate",
+      "price": 120.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/arlong-alternate-art-extra-booster-memorial-collection",
+      "title": "Arlong (Alternate Art) [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-16",
+      "captured_at": "2026-06-16T21:39:10Z"
+    },
+    {
+      "card_number": "ST10-010",
+      "art_variant": "original",
+      "price": 173.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-ultra-deck-the-three-captains",
+      "title": "Trafalgar Law [Ultra Deck - The Three Captains]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-16",
+      "captured_at": "2026-06-16T21:39:10Z"
     }
   ]
 }
