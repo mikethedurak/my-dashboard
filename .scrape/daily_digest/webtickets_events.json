@@ -1,32 +1,15 @@
 [
   {
-    "title": "RACING4CHANGE GYMKHANA REVS UP AT KILLARNEY!",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1597180635",
-    "image": "https://content.webtickets.co.za/KillarneyEvents/panel_260620 Racing4Change Gymkhana Webtickets 1110 x 740_20260611_144545.jpg",
-    "date_text": "20 Jun 2026 09:00",
-    "venue": "Killarney International Raceway, 6 Potsdam Road, Table View",
-    "price": "R10 - R100",
+    "title": "PROTEA HOTEL FIRE AND ICE CAPE TOWN: FATHER'S DAY LUNCHEON",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1597091123",
+    "image": "https://content.webtickets.co.za/FirenIce/panel_MENU (1)_20260611_115343.jpg",
+    "date_text": "21 Jun 2026 12:30",
+    "venue": "Protea Hotel Fire & Ice",
+    "price": "R400 (excl service fee)",
     "source": "Webtickets",
     "region": "Western Cape",
     "categories": [
-      "sports"
-    ],
-    "missing_location": true,
-    "location_key": "",
-    "missing_place": true,
-    "place_key": ""
-  },
-  {
-    "title": "CATCH THE DRIFT WITH DRIFT OUTLAWS AT KILLARNEY",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1597212660",
-    "image": "https://content.webtickets.co.za/KillarneyEvents/panel_260620 Drift Outlaws Webtickets 1110 x 740_20260612_090324.jpg",
-    "date_text": "20 Jun 2026 09:00",
-    "venue": "Killarney International Raceway, 6 Potsdam Road, Table View",
-    "price": "R10 - R100",
-    "source": "Webtickets",
-    "region": "Western Cape",
-    "categories": [
-      "sports"
+      "food"
     ],
     "missing_location": true,
     "location_key": "",
@@ -37,7 +20,7 @@
     "title": "ORPHEUS IN THE UNDERWORLD",
     "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1582354185",
     "image": "https://content.webtickets.co.za/artscape/panel_ORPHEUS_20251202_164045.png",
-    "date_text": "From 20 Jun 2026 14:00",
+    "date_text": "21 Jun 2026 14:00",
     "venue": "Artscape, Opera House, Cape Town",
     "price": "R225 - R650",
     "source": "Webtickets",
@@ -53,17 +36,15 @@
     "place_key": ""
   },
   {
-    "title": "Killer Queen - A LAMTA Dance Production",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1590419134",
-    "image": "https://content.webtickets.co.za/PTProductions/panel_2fa14078-fa95-4083-9b94-0f282e084bf5_20260311_171208.jpeg",
-    "date_text": "From 20 Jun 2026 15:00",
-    "venue": "Theatre On The Bay, Camps Bay",
-    "price": "R200 - R320",
+    "title": "Broadway Baby!",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1596932145",
+    "image": "https://content.webtickets.co.za/JennaDeBeerDance/panel_Poster_Landscape_20260609_145550.jpg",
+    "date_text": "For One Night Only! 21 June 15:30 and 18:00",
+    "venue": "The Homecoming Centre, Cape Town",
+    "price": "R180 - R250",
     "source": "Webtickets",
     "region": "Western Cape",
-    "categories": [
-      "theatre"
-    ],
+    "categories": [],
     "missing_location": true,
     "location_key": "",
     "missing_place": true,
@@ -80,6 +61,23 @@
     "region": "Western Cape",
     "categories": [
       "festival"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Moyo Kirstenbosch Indoor Concert Classics",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1595900430",
+    "image": "https://content.webtickets.co.za/moyo/panel_Ray copy_20260525_141456.jpg",
+    "date_text": "From 21 Jun 2026 18:00",
+    "venue": "Moyo, Kirstenbosch Gardens, Cape Town",
+    "price": "R225 - R385",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "music"
     ],
     "missing_location": true,
     "location_key": "",

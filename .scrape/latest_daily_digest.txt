@@ -2,34 +2,34 @@ Daily dashboard digest
 
 One Piece Cards
 ---------------
-Added: 1
-1. Enel [Extra Booster: Anime 25th Collection] | Big Bang Shop | 385.0
-https://bigbangshop.co.za/collections/one-piece-single-cards/products/enel-extra-booster-memorial-collection
+Added: 0
 
-Updated: 19
-1. Morgan (Pirates Party Vol. 2) [One Piece Promotion Cards] | Knightly Gaming | 15.0
+Updated: 31
+1. Monkey.D.Luffy (P-055) (Reprint) [Premium Booster -The Best-] | GeekHaven | 8.0
+https://www.bobshop.co.za/monkey-d-luffy-p-055-reprint-premium-booster-the-best/p/683847439
+2. Morgan (Pirates Party Vol. 2) [One Piece Promotion Cards] | Knightly Gaming | 15.0
 https://www.knightlygaming.co.za/collections/one-piece-singles/products/morgan-pirates-party-vol-2-one-piece-promotion-cards
-2. Gravity Blade Raging Tiger (Reprint) [Premium Booster -The Best- Vol. 2] | Knightly Gaming | 31.0
+3. Shirahoshi (OP05-082) (Reprint) [Premium Booster -The Best-] | GeekHaven | 30.0
+https://www.bobshop.co.za/shirahoshi-op05-082-reprint-premium-booster-the-best/p/684521606
+4. Smoker [Starter Deck: Absolute Justice] | Big Bang Shop | 30.0
+https://bigbangshop.co.za/collections/one-piece-single-cards/products/smoker-starter-deck-absolute-justice
+5. Gravity Blade Raging Tiger (Reprint) [Premium Booster -The Best- Vol. 2] | Knightly Gaming | 31.0
 https://www.knightlygaming.co.za/collections/one-piece-singles/products/gravity-blade-raging-tiger-reprint-premium-booster-the-best-vol-2
-3. Izo [Starter Deck: Ace & Newgate] | Knightly Gaming | 43.0
+6. Nami (P-053) (Jolly Roger Foil) [Premium Booster -The Best-] | GeekHaven | 35.0
+https://www.bobshop.co.za/nami-p-053-jolly-roger-foil-premium-booster-the-best/p/684318802
+7. Izo [Starter Deck: Ace & Newgate] | Knightly Gaming | 43.0
 https://www.knightlygaming.co.za/collections/one-piece-singles/products/izo-starter-deck-ace-newgate
-4. Jozu [Two Legends] | Knightly Gaming | 47.0
+8. Jozu [Two Legends] | Knightly Gaming | 48.0
 https://www.knightlygaming.co.za/collections/one-piece-singles/products/jozu-two-legends
-5. Trafalgar Law [Starter Deck: Worst Generation] | Knightly Gaming | 55.0
+9. Trafalgar Law [Starter Deck: Worst Generation] | Knightly Gaming | 55.0
 https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-starter-deck-worst-generation
-6. I'm Gonna Be King of the Pirates!! [One Piece Promotion Cards] | Knightly Gaming | 58.0
+10. I'm Gonna Be King of the Pirates!! [One Piece Promotion Cards] | Knightly Gaming | 58.0
 https://www.knightlygaming.co.za/collections/one-piece-singles/products/im-gonna-be-king-of-the-pirates-one-piece-promotion-cards
-7. Sanji [Royal Blood] | Knightly Gaming | 65.0
-https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-royal-blood
-8. Thatch [Starter Deck: Red Edward.Newgate] | Knightly Gaming | 66.0
-https://www.knightlygaming.co.za/collections/one-piece-singles/products/thatch-starter-deck-red-edward-newgate
-9. Dracule Mihawk (Illustration Box Vol.4) [One Piece Promotion Cards] | Knightly Gaming | 68.0
-https://www.knightlygaming.co.za/collections/one-piece-singles/products/dracule-mihawk-illustration-box-vol-4-one-piece-promotion-cards
-10. Merry Go [One Piece Promotion Cards] | Knightly Gaming | 70.0
-https://www.knightlygaming.co.za/collections/one-piece-singles/products/merry-go-one-piece-promotion-cards
-...and 9 more
+...and 21 more
 
-Removed: 0
+Removed: 1
+1. Sanji [Royal Blood] | Knightly Gaming | 65.0
+https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-royal-blood
 
 New Releases
 ------------
@@ -43,15 +43,11 @@ Coming Soon Movies
 ------------------
 Added: 0
 
-Updated: 2
-1. Moana | 2026-07-10
-https://www.themoviedb.org/movie/1108427
-2. The Odyssey | 2026-07-17
-https://www.themoviedb.org/movie/1368337
+Updated: 1
+1. Evil Dead Burn | 2026-07-10
+https://www.themoviedb.org/movie/1212763
 
-Removed: 1
-1. Cocktail 2 | 2026-06-19
-https://www.themoviedb.org/movie/1392469
+Removed: 0
 
 Open Air Cinema
 ---------------
@@ -63,35 +59,19 @@ Removed: 0
 
 New Game Releases
 -----------------
-Added: 3
-1. The Cornerman | 2026-06-15
-https://rawg.io/games/the-cornerman
-2. Arcadie II: Cold Lands | 2026-06-18
-https://rawg.io/games/arcadie-ii-cold-lands
-3. Wingspan: Bird Packs Season Pass | 2026-06-14
-https://rawg.io/games/wingspan-bird-packs-season-pass
+Added: 0
 
-Updated: 1
-1. 007 First Light | 2026-05-27
-https://rawg.io/games/007-first-light
+Updated: 0
 
-Removed: 3
-1. Lego Batman: Legacy of the Dark Knight | 2026-05-22
-https://rawg.io/games/lego-batman-legacy-of-the-dark-knight
-2. Bubsy 4D | 2026-05-21
-https://rawg.io/games/bubsy-4d
-3. The Meter is Running | 2026-05-23
-https://rawg.io/games/the-meter-is-running
+Removed: 0
 
 Coming Soon Games
 -----------------
-Added: 2
-1. Fogpiercer | 2026-07-16
-https://rawg.io/games/fogpiercer
-2. Order Automatica | 2026-07-26
-https://rawg.io/games/order-automatica-2
+Added: 0
 
-Updated: 0
+Updated: 1
+1. Marvel's Wolverine | 2026-09-15
+https://rawg.io/games/wolverine-2022
 
 Removed: 0
 
@@ -105,63 +85,75 @@ Removed: 0
 
 Quicket Events
 --------------
-Added: 8
-1. Exclusive culinary event brought to you by Woolworths TASTE and Blue Elephant Royal Thai cuisine | 2026-06-25T17:00:00+02:00 | Food Fanatics & The Homestead Venue
-https://www.quicket.co.za/events/376184-exclusive-culinary-event-brought-to-you-by-woolworths-taste-and-blue-elephant-r/
-2. Headliners Only | 2026-06-20T19:30:00+02:00 | Ground Culture Cafe
-https://www.quicket.co.za/events/377296-headliners-only/
-3. NERVE 001 | 2026-06-26T20:00:00+02:00 | Biblio Nightclub
-https://www.quicket.co.za/events/377725-nerve-001/
-4. A Pink Room Games Night EXTRAvaganza! | 2026-06-25T19:00:00+02:00 | The Gorgeous George Hotel
-https://www.quicket.co.za/events/379607-a-pink-room-games-night-extravaganza/
-5. Heart | 2026-06-20T11:00:00+02:00 | Love in a Bowl
-https://www.quicket.co.za/events/379576-heart/
-6. Ndumiso Lindi LIVE in Cape Town at Protea Hotel Fire & Ice! 26 & 27 June 2026 | 2026-06-26T20:00:00+02:00 | Protea Hotel Fire & Ice! Cape Town
-https://www.quicket.co.za/events/374247-ndumiso-lindi-live-in-cape-town-at-protea-hotel-fire-ice-26-27-june-2026/
-7. Emmylou & Jennifer Eaves | 2026-06-21T18:00:00+02:00 | The Alma Cafe
-https://www.quicket.co.za/events/375644-emmylou-jennifer-eaves/
-8. Cape Town Mushroom walk with leading Ethnomycologist | 2026-06-27T08:30:00+02:00 | Newlands Forest
-https://www.quicket.co.za/events/381278-cape-town-mushroom-walk-with-leading-ethnomycologist/
+Added: 15
+1. Wren Hinds Band LIVE @ The Imaginarium | 2026-06-27T17:30:00+02:00 | The Imaginarium, Baskloof Fynbos Nature Reserve
+https://www.quicket.co.za/events/375830-wren-hinds-band-live-the-imaginarium/
+2. Musical Mondays July | 2026-07-27T19:30:00+02:00 | The Outlore Base
+https://www.quicket.co.za/events/371861-musical-mondays-july/
+3. Paint 'n Sip portrait series on pre-designed canvas board | 2026-06-27T19:30:00+02:00 | Woodstock Brewery
+https://www.quicket.co.za/events/380335-paint-n-sip-portrait-series-on-pre-designed-canvas-board/
+4. Crushing On Movie Club Presents: Police Academy | 2026-06-24T18:00:00+02:00 | Stoep Startup Coworking Space
+https://www.quicket.co.za/events/381067-crushing-on-movie-club-presents-police-academy/
+5. Zuke Demo Day | 2026-06-25T16:00:00+02:00 | Parow Golf Club
+https://www.quicket.co.za/events/376681-zuke-demo-day/
+6. Steve Graham's Monsters of Rock show - Simon's Restaurant, Groot Constantia | 2026-06-27T20:00:00+02:00 | Simon's Restaurant
+https://www.quicket.co.za/events/361683-steve-grahams-monsters-of-rock-show-simons-restaurant-groot-constantia/
+7. Fantasia Ft Headroom, Geometric Flux, Mac Attack - Father's Day Special - Today Only - Super Limited - 26 June - Warehouse Rave - Book Now | 2026-06-26T20:00:00+02:00 | 41A Mansell Rd
+https://www.quicket.co.za/events/376530-fantasia-ft-headroom-geometric-flux-mac-attack-fathers-day-special-today-only-s/
+8. Pelagos Cape Town Grand Opening | Acoustic Sessions featuring Hannah Ray | 2026-07-01T18:00:00+02:00 | Cape Town Club
+https://www.quicket.co.za/events/376374-pelagos-cape-town-grand-opening-acoustic-sessions-featuring-hannah-ray/
+9. FOKOFPOLISIEKAR @ WOODSTOCK BREWERY | 2026-08-14T20:00:00+02:00 | Woodstock Brewery
+https://www.quicket.co.za/events/375753-fokofpolisiekar-woodstock-brewery/
+10. Dinner with Olifantsberg - CPT | 2026-06-24T18:30:00+02:00 | Tannin
+https://www.quicket.co.za/events/375759-dinner-with-olifantsberg-cpt/
+...and 5 more
 
 Updated: 0
 
-Removed: 8
-1. Pelagos Cape Town Grand Opening | Acoustic Sessions featuring Hannah Ray | 2026-07-01T18:00:00+02:00 | Cape Town Club
-https://www.quicket.co.za/events/376374-pelagos-cape-town-grand-opening-acoustic-sessions-featuring-hannah-ray/
-2. Bad Jews: Live Podcast Event (Cape Town) | 2026-06-23T19:00:00+02:00 | Neuroscience Institute, University of Cape Town
-https://www.quicket.co.za/events/380399-bad-jews-live-podcast-event-cape-town/
-3. Dinner with Olifantsberg - CPT | 2026-06-24T18:30:00+02:00 | Tannin
-https://www.quicket.co.za/events/375759-dinner-with-olifantsberg-cpt/
-4. Menu 001 | 2026-06-19T18:00:00+02:00 | The Loft Houtbay
-https://www.quicket.co.za/events/379964-menu-001/
-5. Palestine '36 | 2026-06-19T18:30:00+02:00 | Homecoming Centre
-https://www.quicket.co.za/events/377967-palestine-36/
-6. NOMADIC ORCHESTRA & DREAMEATER @ WOODSTOCK BREWERY | 2026-06-19T20:00:00+02:00 | Woodstock Brewery
-https://www.quicket.co.za/events/377828-nomadic-orchestra-dreameater-woodstock-brewery/
-7. LIAM UNDRUGGED | 2026-06-19T20:00:00+02:00 | Kalk Bay Theatre
-https://www.quicket.co.za/events/381065-liam-undrugged/
-8. School of Rock presents Pop Punk Emo, Funk, The Who, Blondie, The Black Keys vs The White Stripes, Pop Legends, Joan Jett vs Pat Benatar, Radiohead | 2026-06-20T09:00:00+02:00 | The Loft
-https://www.quicket.co.za/events/375416-school-of-rock-presents-pop-punk-emo-funk-the-who-blondie-the-black-keys-vs-the/
+Removed: 15
+1. Father's Day Fire & Flavour | 2026-06-20T12:00:00+02:00 | Nova Zonnestraal
+https://www.quicket.co.za/events/375906-fathers-day-fire-flavour/
+2. Headliners Only | 2026-06-20T19:30:00+02:00 | Ground Culture Cafe
+https://www.quicket.co.za/events/377296-headliners-only/
+3. Pilates with Lynn | 2026-06-20T12:15:00+02:00 | The Ivy Room
+https://www.quicket.co.za/events/377857-pilates-with-lynn/
+4. Radisson Red Father's Day | 2026-06-20T16:00:00+02:00 | OUIBAR + Kitchn, Radisson RED V&A Waterfront Cape Town
+https://www.quicket.co.za/events/380710-radisson-red-fathers-day/
+5. A Gallery Evening By Scape Events | 2026-06-20T17:00:00+02:00 | Scape Events
+https://www.quicket.co.za/events/377580-a-gallery-evening-by-scape-events/
+6. Tafelberg Comedy Night | 2026-06-20T18:00:00+02:00 | Tafelberg School
+https://www.quicket.co.za/events/364476-tafelberg-comedy-night/
+7. Ian Burgess-Simpson Pianos presents William Berger, Louise Howlett & Albert Combrink | 2026-06-20T19:00:00+02:00 | Ian Burgess-Simpson Pianos
+https://www.quicket.co.za/events/379928-ian-burgess-simpson-pianos-presents-william-berger-louise-howlett-albert-combri/
+8. Heart | 2026-06-20T11:00:00+02:00 | Love in a Bowl
+https://www.quicket.co.za/events/379576-heart/
+9. James Stewart & John Ellis Explore the Music of Sting & The Police | 2026-06-20T18:00:00+02:00 | Cafe Roux
+https://www.quicket.co.za/events/374485-james-stewart-john-ellis-explore-the-music-of-sting-the-police/
+10. Third Wheel Improv | 2026-06-20T19:30:00+02:00 | The Masque Theatre
+https://www.quicket.co.za/events/372156-third-wheel-improv/
+...and 5 more
 
 Webtickets Events
 -----------------
-Added: 2
-1. RACING4CHANGE GYMKHANA REVS UP AT KILLARNEY! | 20 Jun 2026 09:00 | Killarney International Raceway, 6 Potsdam Road, Table View | R10 - R100
-https://www.webtickets.co.za/v2/event.aspx?itemid=1597180635
-2. CATCH THE DRIFT WITH DRIFT OUTLAWS AT KILLARNEY | 20 Jun 2026 09:00 | Killarney International Raceway, 6 Potsdam Road, Table View | R10 - R100
-https://www.webtickets.co.za/v2/event.aspx?itemid=1597212660
+Added: 3
+1. Moyo Kirstenbosch Indoor Concert Classics | From 21 Jun 2026 18:00 | Moyo, Kirstenbosch Gardens, Cape Town | R225 - R385
+https://www.webtickets.co.za/v2/event.aspx?itemid=1595900430
+2. Broadway Baby! | For One Night Only! 21 June 15:30 and 18:00 | The Homecoming Centre, Cape Town | R180 - R250
+https://www.webtickets.co.za/v2/event.aspx?itemid=1596932145
+3. PROTEA HOTEL FIRE AND ICE CAPE TOWN: FATHER'S DAY LUNCHEON | 21 Jun 2026 12:30 | Protea Hotel Fire & Ice | R400 (excl service fee)
+https://www.webtickets.co.za/v2/event.aspx?itemid=1597091123
 
-Updated: 2
-1. ORPHEUS IN THE UNDERWORLD | From 20 Jun 2026 14:00 | Artscape, Opera House, Cape Town | R225 - R650
+Updated: 1
+1. ORPHEUS IN THE UNDERWORLD | 21 Jun 2026 14:00 | Artscape, Opera House, Cape Town | R225 - R650
 https://www.webtickets.co.za/v2/event.aspx?itemid=1582354185
-2. Killer Queen - A LAMTA Dance Production | From 20 Jun 2026 15:00 | Theatre On The Bay, Camps Bay | R200 - R320
-https://www.webtickets.co.za/v2/event.aspx?itemid=1590419134
 
-Removed: 2
-1. Dozi @ Bush Lapa | 19 Jun 2026 18:00 | Die Bush Lapa at Herold's Bay Resort, George | From R250
-https://www.webtickets.co.za/v2/event.aspx?itemid=1596625853
-2. Cape Town Abseil | From 19 Jun 2026 | Table Mountain | R995 - R1100
-https://www.webtickets.co.za/v2/event.aspx?itemid=1531472391
+Removed: 3
+1. Killer Queen - A LAMTA Dance Production | From 20 Jun 2026 15:00 | Theatre On The Bay, Camps Bay | R200 - R320
+https://www.webtickets.co.za/v2/event.aspx?itemid=1590419134
+2. RACING4CHANGE GYMKHANA REVS UP AT KILLARNEY! | 20 Jun 2026 09:00 | Killarney International Raceway, 6 Potsdam Road, Table View | R10 - R100
+https://www.webtickets.co.za/v2/event.aspx?itemid=1597180635
+3. CATCH THE DRIFT WITH DRIFT OUTLAWS AT KILLARNEY | 20 Jun 2026 09:00 | Killarney International Raceway, 6 Potsdam Road, Table View | R10 - R100
+https://www.webtickets.co.za/v2/event.aspx?itemid=1597212660
 
 Google Calendar
 ---------------

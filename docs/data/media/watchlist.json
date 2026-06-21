@@ -3,10 +3,6 @@
   "currently_watching": {
     "movies": [
       {
-        "title": "Good Luck, Have Fun, Don’t Die",
-        "opinion": ""
-      },
-      {
         "title": "Backrooms",
         "opinion": ""
       },
@@ -86,10 +82,6 @@
       },
       {
         "title": "A Minecraft Movie",
-        "opinion": ""
-      },
-      {
-        "title": "Goat",
         "opinion": ""
       },
       {
@@ -1119,12 +1111,17 @@
         {
           "type": "movie",
           "title": "GOAT",
-          "opinion": ""
+          "opinion": "Disliked"
         },
         {
           "type": "movie",
           "title": "The Others",
-          "opinion": ""
+          "opinion": "Liked"
+        },
+        {
+          "type": "movie",
+          "title": "Good Luck, Have Fun, Don’t Die",
+          "opinion": "Liked"
         },
         {
           "type": "series",

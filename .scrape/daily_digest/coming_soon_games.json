@@ -74,17 +74,17 @@
       "platforms": "PC"
     },
     {
-      "title": "SPORTAL",
-      "url": "https://rawg.io/games/sportal",
-      "image": "https://media.rawg.io/media/screenshots/40c/40c77e273f69b2e2b081bbcc6d7bfb19.jpg",
+      "title": "Crushed In Time",
+      "url": "https://rawg.io/games/crushed-in-time",
+      "image": "https://media.rawg.io/media/games/67b/67b8ca361688922a71e441445fe892d4.jpg",
       "release_date": "2026-06-10",
       "rating": "0.0",
       "platforms": ""
     },
     {
-      "title": "Crushed In Time",
-      "url": "https://rawg.io/games/crushed-in-time",
-      "image": "https://media.rawg.io/media/games/67b/67b8ca361688922a71e441445fe892d4.jpg",
+      "title": "SPORTAL",
+      "url": "https://rawg.io/games/sportal",
+      "image": "https://media.rawg.io/media/screenshots/40c/40c77e273f69b2e2b081bbcc6d7bfb19.jpg",
       "release_date": "2026-06-10",
       "rating": "0.0",
       "platforms": ""
@@ -122,17 +122,17 @@
       "platforms": "PC, PlayStation 5, Xbox Series S/X"
     },
     {
-      "title": "Duppy Detective Tashia",
-      "url": "https://rawg.io/games/duppy-detective-tashia",
-      "image": "https://media.rawg.io/media/screenshots/4a4/4a46c81fbe1a72a0ed4defbfd8a050d0.jpg",
+      "title": "Insomnia: Chapter One",
+      "url": "https://rawg.io/games/insomnia-chapter-one",
+      "image": "https://media.rawg.io/media/screenshots/5f1/5f1e699ed57b28e5bd5ca115919ab905.jpg",
       "release_date": "2026-06-08",
       "rating": "0.0",
       "platforms": "PC"
     },
     {
-      "title": "Insomnia: Chapter One",
-      "url": "https://rawg.io/games/insomnia-chapter-one",
-      "image": "https://media.rawg.io/media/screenshots/5f1/5f1e699ed57b28e5bd5ca115919ab905.jpg",
+      "title": "Duppy Detective Tashia",
+      "url": "https://rawg.io/games/duppy-detective-tashia",
+      "image": "https://media.rawg.io/media/screenshots/4a4/4a46c81fbe1a72a0ed4defbfd8a050d0.jpg",
       "release_date": "2026-06-08",
       "rating": "0.0",
       "platforms": "PC"
@@ -592,7 +592,7 @@
       "url": "https://rawg.io/games/wolverine-2022",
       "image": "https://media.rawg.io/media/games/28d/28d61be51ec0411e24c28f71122dcaaf.jpeg",
       "release_date": "2026-09-15",
-      "rating": "0.0",
+      "rating": "4.5",
       "platforms": "PlayStation 5"
     },
     {
