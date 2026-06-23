@@ -2,9 +2,49 @@
   "source": "https://api.rawg.io/api/games",
   "new_releases": [
     {
+      "title": "Space Grunts: Chrono Shard",
+      "url": "https://rawg.io/games/space-grunts-chrono-shard",
+      "image": "https://media.rawg.io/media/screenshots/edc/edcb9e46a8987a123d64c89f93c9159d.jpg",
+      "release_date": "2026-06-21",
+      "rating": "0.0",
+      "platforms": ""
+    },
+    {
+      "title": "Castles and Manors - Escape Room Bundle",
+      "url": "https://rawg.io/games/castles-and-manors-escape-room-bundle",
+      "image": "https://media.rawg.io/media/screenshots/803/80364628e8eb32de77d9a0857d9d1513.jpg",
+      "release_date": "2026-06-21",
+      "rating": "0.0",
+      "platforms": ""
+    },
+    {
+      "title": "mc2games Escape Room Marathon",
+      "url": "https://rawg.io/games/mc2games-escape-room-marathon",
+      "image": "https://media.rawg.io/media/screenshots/b3a/b3af615f8363146f14814954d96fad31.jpg",
+      "release_date": "2026-06-21",
+      "rating": "0.0",
+      "platforms": ""
+    },
+    {
       "title": "Maseylia: Echoes of the past",
       "url": "https://rawg.io/games/maseylia-echoes-of-the-past",
       "image": "https://media.rawg.io/media/screenshots/ec8/ec841b0fe2c72b88decf71502ff77bd6.jpg",
+      "release_date": "2026-06-19",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "MAK: Survival",
+      "url": "https://rawg.io/games/mak-survival",
+      "image": "https://media.rawg.io/media/screenshots/4e8/4e8f8c446a291d5ee7bc1f0efe8969bc.jpg",
+      "release_date": "2026-06-19",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Space Ends",
+      "url": "https://rawg.io/games/space-ends",
+      "image": "https://media.rawg.io/media/screenshots/6b3/6b3f9d0ad7744f95f953db2d365756a0.jpg",
       "release_date": "2026-06-19",
       "rating": "0.0",
       "platforms": "PC"
@@ -24,6 +64,14 @@
       "release_date": "2026-06-18",
       "rating": "0.0",
       "platforms": "PC, macOS, Linux"
+    },
+    {
+      "title": "Junkster",
+      "url": "https://rawg.io/games/junkster",
+      "image": "https://media.rawg.io/media/screenshots/1c8/1c8151e70c5ed8b376a72143dc3f8cc1.jpg",
+      "release_date": "2026-06-16",
+      "rating": "0.0",
+      "platforms": "PC"
     },
     {
       "title": "Mole",
@@ -352,54 +400,6 @@
       "release_date": "2026-05-27",
       "rating": "0.0",
       "platforms": "PC"
-    },
-    {
-      "title": "7 Days Before the End",
-      "url": "https://rawg.io/games/7-days-before-the-end",
-      "image": "https://media.rawg.io/media/screenshots/ef1/ef1249b51d519c6fc87b0d6c8744a008.jpg",
-      "release_date": "2026-05-26",
-      "rating": "0.0",
-      "platforms": "PC, macOS"
-    },
-    {
-      "title": "Unbound Drift",
-      "url": "https://rawg.io/games/unbound-drift",
-      "image": "https://media.rawg.io/media/screenshots/77b/77b275b6e6ad51aa798b88153b7bacf4.jpg",
-      "release_date": "2026-05-26",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Stonemachia",
-      "url": "https://rawg.io/games/stonemachia",
-      "image": "https://media.rawg.io/media/screenshots/4f1/4f1d378b9c3a90b08b69c0b742def519.jpg",
-      "release_date": "2026-05-26",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Yerba Buena",
-      "url": "https://rawg.io/games/yerba-buena",
-      "image": "https://media.rawg.io/media/screenshots/e59/e59e2cd6bdad241b7f142c2ebe23ce3b.jpg",
-      "release_date": "2026-05-26",
-      "rating": "0.0",
-      "platforms": "PC, PlayStation 5"
-    },
-    {
-      "title": "Vortica",
-      "url": "https://rawg.io/games/vortica",
-      "image": "https://media.rawg.io/media/screenshots/753/753866358d7cbc05d491b08a3d90d6cd.jpg",
-      "release_date": "2026-05-25",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Paralives",
-      "url": "https://rawg.io/games/paralives",
-      "image": "https://media.rawg.io/media/screenshots/64a/64a39ca3b3be03ed98fa8dfe9d0df860.jpg",
-      "release_date": "2026-05-25",
-      "rating": "0.0",
-      "platforms": "PC, macOS"
     }
   ],
   "coming_soon": [

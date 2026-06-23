@@ -1,21 +1,6 @@
 {
   "listings": [
     {
-      "card_number": "P-055",
-      "price": 8.0,
-      "title": "Monkey.D.Luffy (P-055) (Reprint) [Premium Booster -The Best-]",
-      "rarity": "",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/monkey-d-luffy-p-055-reprint-premium-booster-the-best/p/684621708",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/596376_1024x1024_2x_k_bCN80rD.jpg",
-      "art_variant": "original",
-      "scraped_at": "2026-06-21T15:44:22Z"
-    },
-    {
       "card_number": "P-026",
       "price": 14.0,
       "title": "Morgan (Pirates Party Vol. 2) [One Piece Promotion Cards]",
@@ -46,21 +31,6 @@
       "scraped_at": "2026-06-22T17:23:09Z"
     },
     {
-      "card_number": "OP05-082",
-      "price": 30.0,
-      "title": "Shirahoshi (OP05-082) (Reprint) [Premium Booster -The Best-]",
-      "rarity": "",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/shirahoshi-op05-082-reprint-premium-booster-the-best/p/684521606",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/594334_1024x1024_2x_GWY_xcpk8.jpg",
-      "art_variant": "original",
-      "scraped_at": "2026-06-21T02:30:44Z"
-    },
-    {
       "card_number": "ST06-004",
       "price": 30.0,
       "title": "Smoker [Starter Deck: Absolute Justice]",
@@ -89,21 +59,6 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/656129.jpg?v=1760629865",
       "art_variant": "original",
       "scraped_at": "2026-06-21T08:39:01Z"
-    },
-    {
-      "card_number": "P-053",
-      "price": 35.0,
-      "title": "Nami (P-053) (Jolly Roger Foil) [Premium Booster -The Best-]",
-      "rarity": "",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/nami-p-053-jolly-roger-foil-premium-booster-the-best/p/684318802",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/586408_1024x1024_2x_ZG8qBbFvh.jpg",
-      "art_variant": "original",
-      "scraped_at": "2026-06-21T02:30:44Z"
     },
     {
       "card_number": "ST22-002",

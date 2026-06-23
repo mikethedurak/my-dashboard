@@ -1,29 +1,9 @@
 [
   {
-    "title": "Behind The Music with Rodney Trudgeon – The Second Movement",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1593803194",
-    "image": "https://content.webtickets.co.za/artscape/panel_rodney webtickets_20260507_102536.jpg",
-    "date_text": "22 Jun 2026 18:30",
-    "venue": "Artscape Opera Bar",
-    "price": "R180 - R200",
-    "source": "Webtickets",
-    "region": "Western Cape",
-    "categories": [
-      "music",
-      "bar",
-      "art",
-      "theatre"
-    ],
-    "missing_location": true,
-    "location_key": "",
-    "missing_place": true,
-    "place_key": ""
-  },
-  {
     "title": "Cape Town Abseil",
     "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1531472391",
     "image": "https://content.webtickets.co.za/WildHorizons/panel_DSC06292_20230725_105701.jpg",
-    "date_text": "From 22 Jun 2026",
+    "date_text": "From 23 Jun 2026",
     "venue": "Table Mountain",
     "price": "R995 - R1100",
     "source": "Webtickets",
@@ -79,6 +59,23 @@
     "region": "Western Cape",
     "categories": [
       "theatre"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Tulbagh Christmas in Winter 2026",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1583490083",
+    "image": "https://content.webtickets.co.za/TulbaghTourism/panel_tulbagh_20251215_094622.jpg",
+    "date_text": "From 26 Jun 2026 16:00",
+    "venue": "Church Street Tulbagh and surrounding wine farms",
+    "price": "From R225",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "bar"
     ],
     "missing_location": true,
     "location_key": "",
