@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-25T18:59:39Z",
+  "updated_at": "2026-06-25T20:54:50Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -37644,6 +37644,102 @@
       "stock": "In stock",
       "observed_on": "2026-06-25",
       "captured_at": "2026-06-25T18:59:39Z"
+    },
+    {
+      "card_number": "OP16-097",
+      "art_variant": "original",
+      "price": 12.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/yamato-the-time-of-battle-3",
+      "title": "Yamato [The Time of Battle]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-25",
+      "captured_at": "2026-06-25T20:54:50Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 26.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-double-pack-set-vol-11-impel-down-the-time-of-battle",
+      "title": "DON!! Card (Double Pack Set Vol. 11) (Impel Down) [The Time of Battle]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-25",
+      "captured_at": "2026-06-25T20:54:50Z"
+    },
+    {
+      "card_number": "OP06-058",
+      "art_variant": "original",
+      "price": 47.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/gravity-blade-raging-tiger-reprint-premium-booster-the-best-vol-2",
+      "title": "Gravity Blade Raging Tiger (Reprint) [Premium Booster -The Best- Vol. 2]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-25",
+      "captured_at": "2026-06-25T20:54:50Z"
+    },
+    {
+      "card_number": "OP08-047",
+      "art_variant": "original",
+      "price": 49.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/jozu-two-legends",
+      "title": "Jozu [Two Legends]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-25",
+      "captured_at": "2026-06-25T20:54:50Z"
+    },
+    {
+      "card_number": "EB02-041",
+      "art_variant": "original",
+      "price": 91.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/merry-go-one-piece-promotion-cards",
+      "title": "Merry Go [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-25",
+      "captured_at": "2026-06-25T20:54:50Z"
+    },
+    {
+      "card_number": "OP14-096",
+      "art_variant": "original",
+      "price": 181.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-the-azure-seas-seven",
+      "title": "Ground Death [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-25",
+      "captured_at": "2026-06-25T20:54:50Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "art_variant": "original",
+      "price": 252.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-25",
+      "captured_at": "2026-06-25T20:54:50Z"
+    },
+    {
+      "card_number": "OP16-032",
+      "art_variant": "alternate",
+      "price": 1386.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/boa-hancock-alternate-art-the-time-of-battle",
+      "title": "Boa Hancock (Alternate Art) [The Time of Battle]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-25",
+      "captured_at": "2026-06-25T20:54:50Z"
     }
   ]
 }
