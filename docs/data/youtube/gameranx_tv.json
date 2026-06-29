@@ -1,11 +1,20 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-06-28T07:53:23.603943Z",
+  "generated_at": "2026-06-29T09:01:32.229498Z",
   "channel_name": "gameranx",
   "channel_id": "UCNvzD7Z-g64bPXxGzaQaa4g",
   "channel_url": "https://www.youtube.com/@gameranxTV",
   "items_count": 15,
   "items": [
+    {
+      "id": "yt-uAuMEd8e14I",
+      "video_id": "uAuMEd8e14I",
+      "title": "20 Emotional Story Games You Can GET LOST IN",
+      "url": "https://www.youtube.com/watch?v=uAuMEd8e14I",
+      "published_at": "2026-06-28T19:02:01+00:00",
+      "updated_at": "2026-06-29T07:28:42+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/uAuMEd8e14I/hqdefault.jpg"
+    },
     {
       "id": "yt-v3HfKcRqhf8",
       "video_id": "v3HfKcRqhf8",
@@ -75,7 +84,7 @@
       "title": "10 Games That'll Actually SAVE YOU MONEY",
       "url": "https://www.youtube.com/watch?v=UMYYCpoB1cs",
       "published_at": "2026-06-21T16:40:27+00:00",
-      "updated_at": "2026-06-22T06:55:49+00:00",
+      "updated_at": "2026-06-25T06:17:01+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/UMYYCpoB1cs/hqdefault.jpg"
     },
     {
@@ -131,15 +140,6 @@
       "published_at": "2026-06-16T16:38:36+00:00",
       "updated_at": "2026-06-20T06:11:59+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/3PQ4G85SjTo/hqdefault.jpg"
-    },
-    {
-      "id": "yt-wp-gi69_CkE",
-      "video_id": "wp-gi69_CkE",
-      "title": "Skyrim in 2026 is A COMPLETELY DIFFERENT GAME",
-      "url": "https://www.youtube.com/watch?v=wp-gi69_CkE",
-      "published_at": "2026-06-15T16:22:10+00:00",
-      "updated_at": "2026-06-19T00:58:27+00:00",
-      "thumbnail_url": "https://i.ytimg.com/vi/wp-gi69_CkE/hqdefault.jpg"
     }
   ]
 }

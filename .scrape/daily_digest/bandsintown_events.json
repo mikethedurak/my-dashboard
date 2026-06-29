@@ -51,6 +51,7 @@
     "lng": 18.8463973,
     "google_address": "Summerhill Wine Estate, Stellenbosch, 7615, South Africa",
     "google_short_address": "Summerhill Wine Estate, Stellenbosch",
-    "google_maps_url": "https://maps.google.com/?cid=6507504519132047937&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    "google_maps_url": "https://maps.google.com/?cid=6507504519132047937&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "is_new": false
   }
 ]

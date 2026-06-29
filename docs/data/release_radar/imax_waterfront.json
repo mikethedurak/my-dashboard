@@ -3,84 +3,43 @@
   "theatre": "Ster-Kinekor V&A Waterfront IMAX",
   "items": [
     {
-      "tmdb_id": 1275779,
-      "tmdb_url": "https://www.themoviedb.org/movie/1275779",
-      "tmdb_rating": "6.716",
-      "tmdb_votes": "618",
-      "release_date": "2026-06-10",
-      "overview": "A cybersecurity expert becomes a whistleblower after uncovering secrets about aliens, putting him on the run from a corporation. Meanwhile, a meteorologist experiencing strange phenomena joins forces with him to prove there's life beyond our understanding.",
-      "runtime_minutes": "145",
+      "tmdb_id": 1081003,
+      "tmdb_url": "https://www.themoviedb.org/movie/1081003",
+      "tmdb_rating": "6.2",
+      "tmdb_votes": "208",
+      "release_date": "2026-06-24",
+      "overview": "When an unexpected and ruthless adversary strikes too close to home, Kara Zor-El, aka Supergirl, reluctantly joins forces with an unlikely companion on an epic, interstellar journey of vengeance and justice.",
+      "runtime_minutes": "108",
       "genres": [
-        "Science Fiction",
-        "Thriller"
+        "Action",
+        "Adventure",
+        "Science Fiction"
       ],
       "directors": [
-        "Steven Spielberg"
+        "Craig Gillespie"
       ],
       "actors": [
-        "Emily Blunt",
-        "Josh O'Connor",
-        "Colin Firth",
-        "Colman Domingo",
-        "Eve Hewson",
-        "Wyatt Russell",
-        "Elizabeth Marvel",
-        "Henry Lloyd-Hughes",
-        "Courtney Grace",
-        "Jeremy Shamos"
+        "Milly Alcock",
+        "Eve Ridley",
+        "Matthias Schoenaerts",
+        "Jason Momoa",
+        "David Krumholtz",
+        "Emily Beecham",
+        "David Corenswet",
+        "Kadiff Kirwan",
+        "Thalissa Teixeira",
+        "Ferdinand Kingsley"
       ],
-      "trailer_url": "https://www.youtube.com/watch?v=icDuEHSxE-w",
-      "poster_url": "https://image.tmdb.org/t/p/w342/3o5YPjDGDTcTDL5ftDA9NwN9dLd.jpg",
-      "title": "Disclosure Day",
-      "url": "https://mydorpie.com/m/?page=m_waterimax_disclosureday2d",
+      "trailer_url": "https://www.youtube.com/watch?v=tzlY8XD1CGg",
+      "poster_url": "https://image.tmdb.org/t/p/w342/niSvU02l2BONH9ivubV6K1a5QiK.jpg",
+      "title": "Supergirl",
+      "url": "https://mydorpie.com/m/?page=m_waterimax_supergirl2d",
       "source": "IMAX Waterfront",
       "status": "now_playing",
       "status_label": "Now playing",
       "showtimes": [],
       "format": "IMAX 2D",
-      "image": "https://image.tmdb.org/t/p/w342/3o5YPjDGDTcTDL5ftDA9NwN9dLd.jpg",
-      "is_new": false
-    },
-    {
-      "tmdb_id": 1084244,
-      "tmdb_url": "https://www.themoviedb.org/movie/1084244",
-      "tmdb_rating": "7.482",
-      "tmdb_votes": "219",
-      "release_date": "2026-06-17",
-      "overview": "When Bonnie receives a Lilypad tablet as a gift and becomes obsessed, Buzz, Woody, Jessie and the rest of the gang's jobs become exponentially harder when they have to go head to head with the all-new threat to playtime.",
-      "runtime_minutes": "102",
-      "genres": [
-        "Animation",
-        "Family",
-        "Comedy",
-        "Adventure"
-      ],
-      "directors": [
-        "Andrew Stanton"
-      ],
-      "actors": [
-        "Tom Hanks",
-        "Tim Allen",
-        "Joan Cusack",
-        "Greta Lee",
-        "Conan O'Brien",
-        "Craig Robinson",
-        "Shelby Rabara",
-        "Tony Hale",
-        "Scarlett Spears",
-        "Jay Hernandez"
-      ],
-      "trailer_url": "https://www.youtube.com/watch?v=QftAW9TTmuQ",
-      "poster_url": "https://image.tmdb.org/t/p/w342/a6H2U7pjibMia41TwyFVd1PVQw3.jpg",
-      "title": "Toy Story 5",
-      "url": "https://mydorpie.com/m/?page=m_waterimax_toystory53d",
-      "source": "IMAX Waterfront",
-      "status": "now_playing",
-      "status_label": "Now playing",
-      "showtimes": [],
-      "format": "IMAX 3D",
-      "image": "https://image.tmdb.org/t/p/w342/a6H2U7pjibMia41TwyFVd1PVQw3.jpg",
-      "is_new": false
+      "image": "https://image.tmdb.org/t/p/w342/niSvU02l2BONH9ivubV6K1a5QiK.jpg"
     }
   ]
 }

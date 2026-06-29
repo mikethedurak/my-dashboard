@@ -26,6 +26,14 @@
       "platforms": ""
     },
     {
+      "title": "Deer and Boy",
+      "url": "https://rawg.io/games/deer-and-boy",
+      "image": "https://media.rawg.io/media/screenshots/dd4/dd41c41d3531f2c4f843d774f67f161c.jpg",
+      "release_date": "2026-06-23",
+      "rating": "0.0",
+      "platforms": "PC, PlayStation 5, Xbox Series S/X, Nintendo Switch"
+    },
+    {
       "title": "Iron Sky: Invasion UHD Director's Cut",
       "url": "https://rawg.io/games/iron-sky-invasion-uhd-directors-cut",
       "image": "https://media.rawg.io/media/screenshots/ff7/ff7aee50082603a4a33aa28aa4bbd7f1.jpg",
@@ -189,6 +197,14 @@
       "title": "Beastro (2026)",
       "url": "https://rawg.io/games/beastro-2026",
       "image": "https://media.rawg.io/media/screenshots/03b/03b44a6d72afeb61f3d386bff4dbcb60.jpg",
+      "release_date": "2026-06-12",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Teller's Duty",
+      "url": "https://rawg.io/games/tellers-duty",
+      "image": "https://media.rawg.io/media/screenshots/46e/46e0921190226de2fa11011c0120e815.jpg",
       "release_date": "2026-06-12",
       "rating": "0.0",
       "platforms": "PC"
@@ -384,22 +400,6 @@
       "release_date": "2026-05-30",
       "rating": "0.0",
       "platforms": "PC"
-    },
-    {
-      "title": "Secrets of the Heart",
-      "url": "https://rawg.io/games/secrets-of-the-heart",
-      "image": "https://media.rawg.io/media/screenshots/f84/f84b82b70eac54e21c93ded78b4992a7.jpg",
-      "release_date": "2026-05-29",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "One Move Away",
-      "url": "https://rawg.io/games/one-move-away",
-      "image": "https://media.rawg.io/media/screenshots/53c/53cc0537f8582c4168baa3138bbbae41.jpg",
-      "release_date": "2026-05-29",
-      "rating": "0.0",
-      "platforms": "PC"
     }
   ],
   "coming_soon": [
@@ -585,7 +585,8 @@
       "image": "https://media.rawg.io/media/screenshots/887/887f377d7e4fc503bb345aac6e62eb2a.jpg",
       "release_date": "2026-08-31",
       "rating": "0.0",
-      "platforms": "PC, PlayStation 5, Xbox Series S/X"
+      "platforms": "PC, PlayStation 5, Xbox Series S/X",
+      "is_new": false
     },
     {
       "title": "The Blood Of Dawnwalker",

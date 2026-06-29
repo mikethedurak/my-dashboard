@@ -22190,6 +22190,23 @@
     ],
     "number_of_seasons": 2
   },
+  "series:gravity falls": {
+    "title": "Gravity Falls",
+    "media_type": "series",
+    "poster_url": null,
+    "tmdb_url": null,
+    "rating": null,
+    "description": null,
+    "directors": null,
+    "runtime_minutes": null,
+    "trailer_url": null,
+    "genres": null,
+    "overview": null,
+    "actors": null,
+    "release_date": null,
+    "number_of_seasons": null,
+    "tmdb_id": null
+  },
   "series:haha you clowns": {
     "title": "Haha, You Clowns",
     "media_type": "series",

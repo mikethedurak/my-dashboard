@@ -1,43 +1,9 @@
 [
   {
-    "title": "Cape Town Abseil",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1531472391",
-    "image": "https://content.webtickets.co.za/WildHorizons/panel_DSC06292_20230725_105701.jpg",
-    "date_text": "From 23 Jun 2026",
-    "venue": "Table Mountain",
-    "price": "R995 - R1100",
-    "source": "Webtickets",
-    "region": "Western Cape",
-    "categories": [],
-    "missing_location": true,
-    "location_key": "",
-    "missing_place": true,
-    "place_key": "",
-    "is_new": false
-  },
-  {
-    "title": "FEED YOUR NEED FOR SPEED AT KILLARNEY ROBOT RACING!",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1597396069",
-    "image": "https://content.webtickets.co.za/KillarneyEvents/panel_260624 Robot Racing Webtickets 1110 x 740_20260615_151705.jpg",
-    "date_text": "24 Jun 2026 18:30",
-    "venue": "Killarney International Raceway, 6 Potsdam Road, Table View",
-    "price": "R70",
-    "source": "Webtickets",
-    "region": "Western Cape",
-    "categories": [
-      "sports"
-    ],
-    "missing_location": true,
-    "location_key": "",
-    "missing_place": true,
-    "place_key": "",
-    "is_new": false
-  },
-  {
     "title": "CG Ice Rink",
     "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1595691483",
     "image": "https://content.webtickets.co.za/CapegateShoppingCentre/panel_CG_Ice Rink_Social_Webtickets Image_20260518_113654.png",
-    "date_text": "From 26 Jun 2026 10:00",
+    "date_text": "From 29 Jun 2026 10:00",
     "venue": "Capegate Shopping Centre, Ent 6 Undercover Parking, Cape Town, Western Cape",
     "price": "R70",
     "source": "Webtickets",
@@ -48,8 +14,25 @@
     "missing_location": true,
     "location_key": "",
     "missing_place": true,
-    "place_key": "",
-    "is_new": false
+    "place_key": ""
+  },
+  {
+    "title": "Zeitz MOCAA Children's Winter Holiday Programme - One Press Wonders",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1597592889",
+    "image": "https://content.webtickets.co.za/zeitzmocaa/panel_RMZ_4977_20260619_152411.jpg",
+    "date_text": "From 29 Jun 2026 10:00",
+    "venue": "Zeitz Museum of Contemporary Art Africa, Cape Town",
+    "price": "R150",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "art",
+      "family"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
   },
   {
     "title": "Puss in Boots",
@@ -66,25 +49,41 @@
     "missing_location": true,
     "location_key": "",
     "missing_place": true,
-    "place_key": "",
-    "is_new": false
+    "place_key": ""
   },
   {
-    "title": "Tulbagh Christmas in Winter 2026",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1583490083",
-    "image": "https://content.webtickets.co.za/TulbaghTourism/panel_tulbagh_20251215_094622.jpg",
-    "date_text": "From 26 Jun 2026 16:00",
-    "venue": "Church Street Tulbagh and surrounding wine farms",
-    "price": "From R225",
+    "title": "Abdullah Ibrahim Memorial Concert",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1597814479",
+    "image": "https://content.webtickets.co.za/artscape/panel_AbdulIah Ibrahim Memorial Concert Poster_page-0001_20260624_171317.jpg",
+    "date_text": "29 Jun 2026 19:00",
+    "venue": "Artscape, Opera House, Cape Town",
+    "price": "Free",
     "source": "Webtickets",
     "region": "Western Cape",
     "categories": [
-      "bar"
+      "music",
+      "dj",
+      "art",
+      "theatre"
     ],
     "missing_location": true,
     "location_key": "",
     "missing_place": true,
-    "place_key": "",
-    "is_new": false
+    "place_key": ""
+  },
+  {
+    "title": "Cape Town Abseil",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1531472391",
+    "image": "https://content.webtickets.co.za/WildHorizons/panel_DSC06292_20230725_105701.jpg",
+    "date_text": "From 29 Jun 2026",
+    "venue": "Table Mountain",
+    "price": "R995 - R1100",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
   }
 ]

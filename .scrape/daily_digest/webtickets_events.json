@@ -1,26 +1,9 @@
 [
   {
-    "title": "Tulbagh Christmas in Winter 2026",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1583490083",
-    "image": "https://content.webtickets.co.za/TulbaghTourism/panel_tulbagh_20251215_094622.jpg",
-    "date_text": "From 28 Jun 2026 10:00",
-    "venue": "Church Street Tulbagh and surrounding wine farms",
-    "price": "From R225",
-    "source": "Webtickets",
-    "region": "Western Cape",
-    "categories": [
-      "bar"
-    ],
-    "missing_location": true,
-    "location_key": "",
-    "missing_place": true,
-    "place_key": ""
-  },
-  {
     "title": "CG Ice Rink",
     "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1595691483",
     "image": "https://content.webtickets.co.za/CapegateShoppingCentre/panel_CG_Ice Rink_Social_Webtickets Image_20260518_113654.png",
-    "date_text": "From 28 Jun 2026 10:00",
+    "date_text": "From 29 Jun 2026 10:00",
     "venue": "Capegate Shopping Centre, Ent 6 Undercover Parking, Cape Town, Western Cape",
     "price": "R70",
     "source": "Webtickets",
@@ -28,38 +11,6 @@
     "categories": [
       "outdoors"
     ],
-    "missing_location": true,
-    "location_key": "",
-    "missing_place": true,
-    "place_key": ""
-  },
-  {
-    "title": "Canal Walk Theatre presents Peter Pan",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1595763497",
-    "image": "https://content.webtickets.co.za/hyprop/panel_Peter Pan - JPG_20260520_145845.jpg",
-    "date_text": "From 28 Jun 2026 11:00",
-    "venue": "Centre Court, Canal Walk Shopping Centre, Cape Town",
-    "price": "R75 - R130",
-    "source": "Webtickets",
-    "region": "Western Cape",
-    "categories": [
-      "theatre"
-    ],
-    "missing_location": true,
-    "location_key": "",
-    "missing_place": true,
-    "place_key": ""
-  },
-  {
-    "title": "Cape Town Abseil",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1531472391",
-    "image": "https://content.webtickets.co.za/WildHorizons/panel_DSC06292_20230725_105701.jpg",
-    "date_text": "From 28 Jun 2026",
-    "venue": "Table Mountain",
-    "price": "R995 - R1100",
-    "source": "Webtickets",
-    "region": "Western Cape",
-    "categories": [],
     "missing_location": true,
     "location_key": "",
     "missing_place": true,
@@ -78,6 +29,58 @@
       "art",
       "family"
     ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Puss in Boots",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1591358060",
+    "image": "https://content.webtickets.co.za/baxtertheatre/panel_Webtickets PIB_20260325_111953.jpg",
+    "date_text": "26 June - 18 July 2026",
+    "venue": "The Pam Golding Theatre at The Baxter",
+    "price": "R250 - R300",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "theatre"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Abdullah Ibrahim Memorial Concert",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1597814479",
+    "image": "https://content.webtickets.co.za/artscape/panel_AbdulIah Ibrahim Memorial Concert Poster_page-0001_20260624_171317.jpg",
+    "date_text": "29 Jun 2026 19:00",
+    "venue": "Artscape, Opera House, Cape Town",
+    "price": "Free",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "music",
+      "dj",
+      "art",
+      "theatre"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Cape Town Abseil",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1531472391",
+    "image": "https://content.webtickets.co.za/WildHorizons/panel_DSC06292_20230725_105701.jpg",
+    "date_text": "From 29 Jun 2026",
+    "venue": "Table Mountain",
+    "price": "R995 - R1100",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [],
     "missing_location": true,
     "location_key": "",
     "missing_place": true,
