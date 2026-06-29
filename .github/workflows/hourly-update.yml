@@ -44,10 +44,7 @@ jobs:
           --max-price 100
 
       - name: Update metadata
-        run: >
-          python -c "import json, datetime;
-          json.dump({'last_scraped_at': datetime.datetime.now(datetime.timezone.utc).isoformat()},
-          open('docs/data/metadata.json', 'w', encoding='utf-8'), indent=2)"
+        run: python services/write_metadata.py
 
       - name: Commit updated data
         run: |

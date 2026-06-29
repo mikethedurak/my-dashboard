@@ -126,10 +126,7 @@ jobs:
         run: python services/events/scrape_google_calendar.py
 
       - name: Update metadata
-        run: >
-          python -c "import json, datetime;
-          json.dump({'last_scraped_at': datetime.datetime.now(datetime.timezone.utc).isoformat()},
-          open('docs/data/metadata.json', 'w', encoding='utf-8'), indent=2)"
+        run: python services/write_metadata.py
 
       - name: Send daily dashboard digest
         if: ${{ github.event_name == 'schedule' || inputs.task == 'all' || inputs.task == 'digest' }}

@@ -1,13 +1,14 @@
 from __future__ import annotations
 
 import argparse
-import json
 import shutil
 import subprocess
 import sys
-from datetime import datetime, timezone
 from pathlib import Path
 
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from services.write_metadata import write_metadata  # noqa: E402
 
 REPO_DIR = Path(__file__).resolve().parent
 DATA_DIR = REPO_DIR / "docs" / "data"
@@ -27,7 +28,7 @@ TASKS = {
     "gamelist": [[sys.executable, "services/scrape_media.py", "--source", "games", "--type", "games"]],
     "news": [[sys.executable, "services/scrape_news.py"]],
     "youtube": [[sys.executable, "services/scrape_youtube.py", "--mode", "daily"]],
-    "reading": [[sys.executable, "services/scrape_reading_manifest.py"]],
+    "reading": [[sys.executable, "services/scrape_reading_list.py"]],
     "digest": [[sys.executable, "services/daily_digest/send_daily_digest.py", "--no-email"]],
 }
 
@@ -78,12 +79,6 @@ def run_commands(task: str) -> None:
         print(f"[{index}/{total}] Running ({task_name}): {command_text}")
         subprocess.run(command, cwd=REPO_DIR, check=True)
         print(f"[{index}/{total}] Done ({task_name})")
-
-
-def write_metadata() -> None:
-    metadata_path = DATA_DIR / "metadata.json"
-    metadata = {"last_scraped_at": datetime.now(timezone.utc).isoformat()}
-    metadata_path.write_text(json.dumps(metadata, indent=2), encoding="utf-8")
 
 
 def main() -> int:
