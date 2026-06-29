@@ -5,7 +5,6 @@ import html
 import json
 import os
 import re
-import time
 import unicodedata
 import urllib.error
 import urllib.parse
@@ -15,9 +14,10 @@ import sys
 
 sys.path.append(str(Path(__file__).resolve().parents[2]))
 from env import get as env_get
+from services.common.notion import get_block_children, request as notion_request, rich_text_plain
+from services.common.secrets import secret
 
 
-NOTION_VERSION = "2022-06-28"
 DEFAULT_WATCHLIST_PAGE_ID = "1d757df8191880aeb859c1402a2154c8"
 DEFAULT_WATCHLIST_URL = "https://www.notion.so/My-Watchlist-1d757df8191880aeb859c1402a2154c8"
 DEFAULT_GAMES_PAGE_ID = "3c29c9884aae41859c33bdafcc1de628"
@@ -30,11 +30,6 @@ GAMES_OUTPUT_FILE = DATA_DIR / "gameslist.json"
 MOVIE_DETAILS_CACHE_FILE = DATA_DIR / "watchlist_movie_details.json"
 GAMES_DETAILS_CACHE_FILE = DATA_DIR / "games_details.json"
 TMDB_MANUAL_OVERRIDES_FILE = DATA_DIR / "tmdb_manual_overrides.json"
-LOCAL_SECRETS_FILE = REPO_DIR / "secrets.env"
-NOTION_API_BASE_URL = env_get("SCRAPE_NOTION_API_BASE_URL", "https://api.notion.com/v1")
-NOTION_TIMEOUT_SECONDS = int(env_get("SCRAPE_NOTION_TIMEOUT_SECONDS", "60") or "60")
-NOTION_MAX_RETRIES = int(env_get("SCRAPE_NOTION_MAX_RETRIES", "4") or "4")
-NOTION_RETRY_BACKOFF_SECONDS = float(env_get("SCRAPE_NOTION_RETRY_BACKOFF_SECONDS", "2") or "2")
 TMDB_API_BASE_URL = env_get("SCRAPE_TMDB_API_BASE_URL", "https://api.themoviedb.org/3")
 TMDB_IMAGE_BASE = env_get("SCRAPE_TMDB_IMAGE_BASE_URL", "https://image.tmdb.org/t/p/w342")
 TMDB_SITE_MOVIE_BASE = env_get("SCRAPE_TMDB_SITE_MOVIE_BASE_URL", "https://www.themoviedb.org/movie")
@@ -97,77 +92,12 @@ OPINION_EMOJI_MAP = {
 }
 
 
-def local_secret(name: str) -> str:
-    if not LOCAL_SECRETS_FILE.exists():
-        return ""
-    for line in LOCAL_SECRETS_FILE.read_text(encoding="utf-8").splitlines():
-        line = line.strip()
-        if not line or line.startswith("#") or "=" not in line:
-            continue
-        key, value = line.split("=", 1)
-        if key.strip() == name:
-            return value.strip().strip('"').strip("'")
-    return ""
-
-
-def secret(name: str) -> str:
-    return env_get(name, "") or local_secret(name)
-
-
-def rich_text_plain(rich_text: list[dict]) -> str:
-    return "".join(part.get("plain_text", "") for part in rich_text).strip()
-
-
 def rich_text_has_bold(rich_text: list[dict]) -> bool:
     for part in rich_text:
         annotations = part.get("annotations") or {}
         if annotations.get("bold"):
             return True
     return False
-
-
-def notion_retry_delay(error: BaseException, attempt: int) -> float:
-    if isinstance(error, urllib.error.HTTPError):
-        retry_after = error.headers.get("Retry-After")
-        if retry_after:
-            try:
-                return max(0.0, float(retry_after))
-            except ValueError:
-                pass
-    return NOTION_RETRY_BACKOFF_SECONDS * attempt
-
-
-def is_retryable_notion_error(error: BaseException) -> bool:
-    if isinstance(error, TimeoutError):
-        return True
-    if isinstance(error, urllib.error.HTTPError):
-        return error.code == 429 or 500 <= error.code < 600
-    if isinstance(error, urllib.error.URLError):
-        return True
-    return False
-
-
-def notion_request(path: str, token: str) -> dict:
-    request = urllib.request.Request(
-        f"{NOTION_API_BASE_URL}/{path}",
-        headers={
-            "Authorization": f"Bearer {token}",
-            "Notion-Version": NOTION_VERSION,
-            "Accept": "application/json",
-            "User-Agent": "Mozilla/5.0",
-        },
-    )
-    for attempt in range(1, NOTION_MAX_RETRIES + 1):
-        try:
-            with urllib.request.urlopen(request, timeout=NOTION_TIMEOUT_SECONDS) as response:
-                return json.loads(response.read().decode("utf-8"))
-        except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError) as error:
-            if attempt >= NOTION_MAX_RETRIES or not is_retryable_notion_error(error):
-                raise
-            delay = notion_retry_delay(error, attempt)
-            print(f"[notion] Request failed ({error}); retrying in {delay:g}s ({attempt}/{NOTION_MAX_RETRIES})")
-            time.sleep(delay)
-    raise TimeoutError(f"Notion request timed out after {NOTION_MAX_RETRIES} attempts: {path}")
 
 
 def tmdb_request(path: str, token: str, query: dict[str, str] | None = None) -> dict:
@@ -230,23 +160,6 @@ def block_is_bold(block: dict) -> bool:
 def console_text(value: str) -> str:
     encoding = sys.stdout.encoding or "utf-8"
     return str(value).encode(encoding, errors="replace").decode(encoding, errors="replace")
-
-
-def get_block_children(block_id: str, token: str, log_label: str = "") -> list[dict]:
-    blocks: list[dict] = []
-    cursor = ""
-    page = 0
-    while True:
-        page += 1
-        query = f"?page_size=100&start_cursor={cursor}" if cursor else "?page_size=100"
-        payload = notion_request(f"blocks/{block_id}/children{query}", token)
-        results = payload.get("results", [])
-        blocks.extend(results)
-        if log_label:
-            print(f"[notion] {log_label}: page {page}, +{len(results)} blocks (total {len(blocks)})")
-        if not payload.get("has_more"):
-            return blocks
-        cursor = payload.get("next_cursor") or ""
 
 
 def should_descend(block: dict, depth: int, mode: str) -> bool:

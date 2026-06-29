@@ -12,7 +12,7 @@ sys.path.append(str(REPO_DIR / "services" / "events"))
 
 import scrape_bandsintown_events as bt  # noqa: E402
 
-CACHE_PATH = REPO_DIR / "tests" / "bandsintown_genre_catalog.json"
+CACHE_PATH = REPO_DIR / "tests" / "events" / "bandsintown_genre_catalog.json"
 
 
 def load_catalog() -> dict:
@@ -79,7 +79,7 @@ def main() -> int:
     parser.add_argument(
         "--no-catalog",
         action="store_true",
-        help="Do not update tests/bandsintown_genre_catalog.json for this run.",
+        help="Do not update tests/events/bandsintown_genre_catalog.json for this run.",
     )
     args = parser.parse_args()
 

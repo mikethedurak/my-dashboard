@@ -1,3 +1,6 @@
 __pycache__/
 *.py[cod]
 secrets.env
+.cache/
+.scrape/
+.venv/

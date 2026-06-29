@@ -11,12 +11,12 @@ import sys
 
 sys.path.append(str(Path(__file__).resolve().parents[2]))
 from env import get as env_get
+from services.common.notion import get_block_children, post as notion_post, request as notion_request, rich_text_plain
+from services.common.secrets import secret
 from sync_docs import sync_events_data_to_docs
 
 
-NOTION_VERSION = "2022-06-28"
 PAGE_URL = env_get("NOTION_SPECIALS_PAGE_URL", "https://www.notion.so/Places-082fa9625a9f4f949d03a8d1517c76f8")
-NOTION_API_BASE_URL = env_get("SCRAPE_NOTION_API_BASE_URL", "https://api.notion.com/v1")
 GOOGLE_PLACES_SEARCH_URL = env_get("SCRAPE_GOOGLE_PLACES_SEARCH_URL", "https://places.googleapis.com/v1/places:searchText")
 PAGE_ID = "082fa9625a9f4f949d03a8d1517c76f8"
 SPECIALS_DATABASE_ID = "NOTION_SPECIALS_DATABASE_ID"
@@ -26,7 +26,6 @@ REPO_DIR = Path(__file__).resolve().parents[2]
 DATA_DIR = REPO_DIR / "docs" / "data" / "events"
 OUTPUT_FILE = DATA_DIR / "specials.json"
 PLACES_OUTPUT_FILE = DATA_DIR / "places.json"
-LOCAL_SECRETS_FILE = REPO_DIR / "secrets.env"
 TAGS_CONFIG_FILE = Path(__file__).resolve().parent / "allowed_location_tags.json"
 CATEGORY_TAGS_CONFIG_FILE = Path(__file__).resolve().parent / "allowed_location_category_tags.json"
 
@@ -81,24 +80,6 @@ DAY_ALIASES = {
     "sunday": "Sunday",
 }
 
-def local_secret(name: str) -> str:
-    if not LOCAL_SECRETS_FILE.exists():
-        return ""
-
-    for line in LOCAL_SECRETS_FILE.read_text(encoding="utf-8").splitlines():
-        line = line.strip()
-        if not line or line.startswith("#") or "=" not in line:
-            continue
-        key, value = line.split("=", 1)
-        if key.strip() == name:
-            return value.strip().strip('"').strip("'")
-    return ""
-
-
-def secret(name: str) -> str:
-    return env_get(name, "") or local_secret(name)
-
-
 def allowed_location_tags() -> set[str]:
     if TAGS_CONFIG_FILE.exists():
         try:
@@ -129,30 +110,6 @@ def allowed_location_category_tags() -> set[str]:
     return {part.strip().lower() for part in raw.split(",") if part.strip()}
 
 
-def rich_text_plain(rich_text: list[dict], include_strikethrough: bool = False) -> str:
-    parts: list[str] = []
-    for part in rich_text:
-        annotations = part.get("annotations") or {}
-        if annotations.get("strikethrough") and not include_strikethrough:
-            continue
-        parts.append(part.get("plain_text", ""))
-    return "".join(parts).strip()
-
-
-def notion_request(path: str, token: str) -> dict:
-    request = urllib.request.Request(
-        f"{NOTION_API_BASE_URL}/{path}",
-        headers={
-            "Authorization": f"Bearer {token}",
-            "Notion-Version": NOTION_VERSION,
-            "Accept": "application/json",
-            "User-Agent": "Mozilla/5.0",
-        },
-    )
-    with urllib.request.urlopen(request, timeout=30) as response:
-        return json.loads(response.read().decode("utf-8"))
-
-
 def fetch_json_url(url: str) -> dict:
     request = urllib.request.Request(
         url,
@@ -174,23 +131,6 @@ def fetch_json_post(url: str, headers: dict[str, str], body: dict) -> dict:
             "Content-Type": "application/json",
             "User-Agent": "Mozilla/5.0",
             **headers,
-        },
-        method="POST",
-    )
-    with urllib.request.urlopen(request, timeout=30) as response:
-        return json.loads(response.read().decode("utf-8"))
-
-
-def notion_post(path: str, token: str, body: dict) -> dict:
-    request = urllib.request.Request(
-        f"{NOTION_API_BASE_URL}/{path}",
-        data=json.dumps(body).encode("utf-8"),
-        headers={
-            "Authorization": f"Bearer {token}",
-            "Notion-Version": NOTION_VERSION,
-            "Accept": "application/json",
-            "Content-Type": "application/json",
-            "User-Agent": "Mozilla/5.0",
         },
         method="POST",
     )
@@ -285,18 +225,6 @@ def block_text(block: dict) -> str:
         checked = "x" if value.get("checked") else " "
         return f"[{checked}] {text}" if text else ""
     return text
-
-
-def get_block_children(block_id: str, token: str) -> list[dict]:
-    blocks: list[dict] = []
-    cursor = ""
-    while True:
-        query = f"?page_size=100&start_cursor={cursor}" if cursor else "?page_size=100"
-        payload = notion_request(f"blocks/{block_id}/children{query}", token)
-        blocks.extend(payload.get("results", []))
-        if not payload.get("has_more"):
-            return blocks
-        cursor = payload.get("next_cursor") or ""
 
 
 def flatten_blocks(blocks: list[dict], token: str) -> list[dict]:

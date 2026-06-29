@@ -3,7 +3,6 @@ from __future__ import annotations
 import json
 import re
 import sys
-import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -11,10 +10,10 @@ from pathlib import Path
 from typing import Any
 
 sys.path.append(str(Path(__file__).resolve().parents[1]))
-from env import get as env_get
+from services.common.notion import get_block_children, request as notion_request, rich_text_plain
+from services.common.secrets import secret
 
 
-NOTION_VERSION = "2022-06-28"
 DEFAULT_READING_PAGE_ID = "2d157df8191880a7a23dfc431800dbe6"
 DEFAULT_READING_URL = "https://app.notion.com/p/My-Reading-2d157df8191880a7a23dfc431800dbe6"
 OPEN_LIBRARY_SEARCH_URL = "https://openlibrary.org/search.json"
@@ -22,11 +21,6 @@ OPEN_LIBRARY_SEARCH_URL = "https://openlibrary.org/search.json"
 REPO_DIR = Path(__file__).resolve().parents[1]
 OUTPUT_PATH = REPO_DIR / "docs" / "data" / "reading_list.json"
 DETAILS_OUTPUT_PATH = REPO_DIR / "docs" / "data" / "media" / "reading_details.json"
-LOCAL_SECRETS_FILE = REPO_DIR / "secrets.env"
-NOTION_API_BASE_URL = env_get("SCRAPE_NOTION_API_BASE_URL", "https://api.notion.com/v1")
-NOTION_TIMEOUT_SECONDS = int(env_get("SCRAPE_NOTION_TIMEOUT_SECONDS", "60") or "60")
-NOTION_MAX_RETRIES = int(env_get("SCRAPE_NOTION_MAX_RETRIES", "4") or "4")
-NOTION_RETRY_BACKOFF_SECONDS = float(env_get("SCRAPE_NOTION_RETRY_BACKOFF_SECONDS", "2") or "2")
 
 TEXT_BLOCK_TYPES = {
     "paragraph",
@@ -77,67 +71,6 @@ FALLBACK_PAYLOAD = {
 }
 
 
-def local_secret(name: str) -> str:
-    if not LOCAL_SECRETS_FILE.exists():
-        return ""
-    for raw_line in LOCAL_SECRETS_FILE.read_text(encoding="utf-8").splitlines():
-        line = raw_line.strip()
-        if not line or line.startswith("#") or "=" not in line:
-            continue
-        key, value = line.split("=", 1)
-        if key.strip() == name:
-            return value.strip().strip('"').strip("'")
-    return ""
-
-
-def secret(name: str) -> str:
-    return env_get(name, "") or local_secret(name)
-
-
-def notion_retry_delay(error: BaseException, attempt: int) -> float:
-    if isinstance(error, urllib.error.HTTPError):
-        retry_after = error.headers.get("Retry-After")
-        if retry_after:
-            try:
-                return max(0.0, float(retry_after))
-            except ValueError:
-                pass
-    return NOTION_RETRY_BACKOFF_SECONDS * attempt
-
-
-def is_retryable_notion_error(error: BaseException) -> bool:
-    if isinstance(error, TimeoutError):
-        return True
-    if isinstance(error, urllib.error.HTTPError):
-        return error.code == 429 or 500 <= error.code < 600
-    if isinstance(error, urllib.error.URLError):
-        return True
-    return False
-
-
-def notion_request(path: str, token: str) -> dict[str, Any]:
-    request = urllib.request.Request(
-        f"{NOTION_API_BASE_URL}/{path}",
-        headers={
-            "Authorization": f"Bearer {token}",
-            "Notion-Version": NOTION_VERSION,
-            "Accept": "application/json",
-            "User-Agent": "Mozilla/5.0",
-        },
-    )
-    for attempt in range(1, NOTION_MAX_RETRIES + 1):
-        try:
-            with urllib.request.urlopen(request, timeout=NOTION_TIMEOUT_SECONDS) as response:
-                return json.loads(response.read().decode("utf-8"))
-        except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError) as error:
-            if attempt >= NOTION_MAX_RETRIES or not is_retryable_notion_error(error):
-                raise
-            delay = notion_retry_delay(error, attempt)
-            print(f"[notion] Request failed ({error}); retrying in {delay:g}s ({attempt}/{NOTION_MAX_RETRIES})")
-            time.sleep(delay)
-    raise TimeoutError(f"Notion request timed out after {NOTION_MAX_RETRIES} attempts: {path}")
-
-
 def fetch_json(url: str) -> dict[str, Any]:
     request = urllib.request.Request(
         url,
@@ -159,10 +92,6 @@ def extract_page_id() -> str:
     return match.group(1) if match else DEFAULT_READING_PAGE_ID
 
 
-def rich_text_plain(rich_text: list[dict[str, Any]]) -> str:
-    return "".join(str(part.get("plain_text", "")) for part in rich_text).strip()
-
-
 def block_text(block: dict[str, Any]) -> str:
     block_type = str(block.get("type", ""))
     if block_type not in TEXT_BLOCK_TYPES:
@@ -174,24 +103,6 @@ def block_text(block: dict[str, Any]) -> str:
         prefix = "[x] " if checked else "[ ] "
         return f"{prefix}{text}".strip() if text else ""
     return text
-
-
-def get_block_children(block_id: str, token: str, log_label: str = "") -> list[dict[str, Any]]:
-    blocks: list[dict[str, Any]] = []
-    cursor = ""
-    page = 0
-    while True:
-        page += 1
-        query = f"?page_size=100&start_cursor={cursor}" if cursor else "?page_size=100"
-        payload = notion_request(f"blocks/{block_id}/children{query}", token)
-        results = payload.get("results", [])
-        if isinstance(results, list):
-            blocks.extend(item for item in results if isinstance(item, dict))
-        if log_label:
-            print(f"[notion] {log_label}: page {page}, +{len(results)} blocks (total {len(blocks)})")
-        if not payload.get("has_more"):
-            return blocks
-        cursor = str(payload.get("next_cursor") or "")
 
 
 def flatten_blocks(blocks: list[dict[str, Any]], token: str, depth: int = 0) -> list[tuple[dict[str, Any], int]]:
