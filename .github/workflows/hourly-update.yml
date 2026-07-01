@@ -36,7 +36,7 @@ jobs:
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
           EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
         run: >
-          python services/one_piece/notify_new_cards.py
+          python -m services.one_piece.notify_new_cards
           --store all
           --mode new
           --snapshot-scope hourly

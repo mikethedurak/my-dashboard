@@ -10,11 +10,14 @@ import sys
 from email.message import EmailMessage
 from pathlib import Path
 
+REPO_DIR = Path(__file__).resolve().parents[2]
+if str(REPO_DIR) not in sys.path:
+    sys.path.append(str(REPO_DIR))
+
 from services.common.scrape_metadata import run_and_record
 
 
 ONE_PIECE_DIR = Path(__file__).resolve().parent
-REPO_DIR = Path(__file__).resolve().parents[2]
 ONE_PIECE_DATA_DIR = REPO_DIR / "docs" / "data" / "one_piece"
 
 STORE_NAMES = {
