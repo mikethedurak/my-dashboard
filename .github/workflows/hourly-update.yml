@@ -50,6 +50,7 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add .scrape docs/data/one_piece docs/data/metadata.json
+          git add -f .scrape
+          git add docs/data/one_piece docs/data/metadata.json
           git diff --cached --quiet || git commit -m "Hourly dashboard update"
           git push
