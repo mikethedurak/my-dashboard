@@ -2,9 +2,10 @@ from __future__ import annotations
 
 import argparse
 import shutil
-import subprocess
 import sys
 from pathlib import Path
+
+from services.common.scrape_metadata import run_and_record
 
 
 REPO_DIR = Path(__file__).resolve().parents[1]
@@ -30,16 +31,34 @@ def main() -> int:
     if args.hard:
         update_command.append("--hard")
     print(f"Updating One Piece collection: {' '.join(update_command)}", flush=True)
-    subprocess.run(update_command, cwd=REPO_DIR, check=True)
+    run_and_record(
+        update_command,
+        cwd=REPO_DIR,
+        outputs=[DATA_DIR / "collection.json"],
+        module="one-piece",
+        source="collection",
+    )
 
     command = [sys.executable, "services/one_piece/find_missing_cards.py", args.source]
     print(f"Running One Piece scrape: {' '.join(command)}", flush=True)
-    subprocess.run(command, cwd=REPO_DIR, check=True)
+    run_and_record(
+        command,
+        cwd=REPO_DIR,
+        outputs=[DATA_DIR / "missing_cards.json"],
+        module="one-piece",
+        source=args.source,
+    )
     product_command = [sys.executable, "services/one_piece/scrape_products.py", "--pages", "1"]
     if args.hard:
         product_command.append("--hard")
     print(f"Running One Piece products scrape: {' '.join(product_command)}", flush=True)
-    subprocess.run(product_command, cwd=REPO_DIR, check=True)
+    run_and_record(
+        product_command,
+        cwd=REPO_DIR,
+        outputs=[DATA_DIR / "products.json"],
+        module="one-piece",
+        source="products",
+    )
     return 0
 
 

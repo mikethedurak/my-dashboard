@@ -2,9 +2,10 @@ from __future__ import annotations
 
 import argparse
 import shutil
-import subprocess
 import sys
 from pathlib import Path
+
+from services.common.scrape_metadata import run_and_record
 
 
 REPO_DIR = Path(__file__).resolve().parents[1]
@@ -66,7 +67,13 @@ def run_source(source: str, args: argparse.Namespace) -> None:
         command.extend(["--places-limit", str(args.places_limit)])
 
     print(f"\nRunning {source}: {' '.join(command)}", flush=True)
-    subprocess.run(command, cwd=REPO_DIR, check=True)
+    run_and_record(
+        command,
+        cwd=REPO_DIR,
+        outputs=[DATA_DIR / name for name in SOURCES[source]["outputs"]],
+        module="events",
+        source=source,
+    )
 
 
 def run_geocode_pass(args: argparse.Namespace) -> None:
@@ -74,7 +81,13 @@ def run_geocode_pass(args: argparse.Namespace) -> None:
     if args.hard:
         command.append("--hard")
     print(f"\nRunning geocode pass: {' '.join(command)}", flush=True)
-    subprocess.run(command, cwd=REPO_DIR, check=True)
+    run_and_record(
+        command,
+        cwd=REPO_DIR,
+        outputs=[DATA_DIR / "locations.json"],
+        module="events",
+        source="geocode",
+    )
 
 
 def main() -> int:

@@ -2,9 +2,10 @@ from __future__ import annotations
 
 import argparse
 import shutil
-import subprocess
 import sys
 from pathlib import Path
+
+from services.common.scrape_metadata import run_and_record
 
 
 REPO_DIR = Path(__file__).resolve().parents[1]
@@ -40,12 +41,17 @@ def main() -> int:
         if args.hard:
             command.append("--hard")
         print(f"Running media scrape: {' '.join(command)}", flush=True)
-        subprocess.run(command, cwd=REPO_DIR, check=True)
+        outputs = [DATA_DIR / name for name in OUTPUTS]
+        if args.source == "watchlist":
+            outputs = [DATA_DIR / "watchlist.json", DATA_DIR / "watchlist_movie_details.json"]
+        elif args.source == "games":
+            outputs = [DATA_DIR / "gameslist.json", DATA_DIR / "games_details.json"]
+        run_and_record(command, cwd=REPO_DIR, outputs=outputs, module="media", source=scope)
 
     if args.source in {"all", "reading"}:
         command = [sys.executable, "services/scrape_reading_list.py"]
         print(f"Running reading scrape: {' '.join(command)}", flush=True)
-        subprocess.run(command, cwd=REPO_DIR, check=True)
+        run_and_record(command, cwd=REPO_DIR, outputs=READING_OUTPUTS, module="media", source="reading")
     return 0
 
 

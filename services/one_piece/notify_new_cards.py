@@ -6,14 +6,16 @@ import os
 import re
 import shutil
 import smtplib
-import subprocess
 import sys
 from email.message import EmailMessage
 from pathlib import Path
 
+from services.common.scrape_metadata import run_and_record
+
 
 ONE_PIECE_DIR = Path(__file__).resolve().parent
-ONE_PIECE_DATA_DIR = Path(__file__).resolve().parents[2] / "docs" / "data" / "one_piece"
+REPO_DIR = Path(__file__).resolve().parents[2]
+ONE_PIECE_DATA_DIR = REPO_DIR / "docs" / "data" / "one_piece"
 
 STORE_NAMES = {
     "bigbang": "Big Bang Shop",
@@ -50,9 +52,12 @@ def previous_snapshot_path(store: str, snapshot_scope: str = "") -> Path:
 
 
 def run_scraper(store: str) -> None:
-    subprocess.run(
+    run_and_record(
         [sys.executable, str(ONE_PIECE_DIR / "find_missing_cards.py"), store],
-        check=True,
+        cwd=REPO_DIR,
+        outputs=[COMBINED_JSON],
+        module="one-piece",
+        source=store,
     )
 
 

@@ -2,9 +2,10 @@ from __future__ import annotations
 
 import argparse
 import shutil
-import subprocess
 import sys
 from pathlib import Path
+
+from services.common.scrape_metadata import run_and_record
 
 
 REPO_DIR = Path(__file__).resolve().parents[1]
@@ -67,7 +68,13 @@ def main() -> int:
         if args.max_pages > 0:
             command.extend(["--max-pages", str(args.max_pages)])
         print(f"Running release radar scrape: {' '.join(command)}", flush=True)
-        subprocess.run(command, cwd=REPO_DIR, check=True)
+        run_and_record(
+            command,
+            cwd=REPO_DIR,
+            outputs=[output],
+            module="release-radar",
+            source=source,
+        )
 
     return 0
 

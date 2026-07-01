@@ -30,12 +30,15 @@ const WEATHER_PATH =
   "https://api.open-meteo.com/v1/forecast?latitude=-33.9249&longitude=18.4241&daily=weathercode,temperature_2m_max,temperature_2m_min&timezone=Africa%2FJohannesburg&forecast_days=7";
 const HOLIDAYS_PATH = "https://date.nager.at/api/v3/publicholidays/{year}/ZA";
 const METADATA_PATH = "./data/metadata.json";
+const SCRAPE_METADATA_PATH = "./data/scrape_metadata.json";
 const GOOGLE_CALENDAR_EVENTS_PATH = "./data/events/google_calendar_events.json";
 const GAME_HUB_CONFIG_PATH = "./data/game_hub/config.json";
 const TIMELINE_MANIFEST_PATH = "./data/timeline/manifest.json";
 const GAME_LAB_MANIFEST_PATH = "./data/game_lab/manifest.json";
 const STATE_API_BASE = String(window.DASHBOARD_STATE_API || "").trim();
 const STATE_API_KEY = "main";
+const SCRAPE_CONTROLS_STATE_KEY = "scrape-controls";
+const SCRAPE_CONTROLS_STORAGE_KEY = "my-dashboard:scrape-controls:v1";
 const STATE_SYNC_DEBOUNCE_MS = 5000;
 const STATE_PULL_INTERVAL_MS = 15000;
 const WEEK_DAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
@@ -107,6 +110,127 @@ const EVENT_GEO_BOUNDS = {
   minLng: 14.0,
   maxLng: 36.0,
 };
+const SCRAPE_SCHEDULES = [
+  { value: "ten-minute", label: "10 minute scrape" },
+  { value: "hourly", label: "Hourly scrape" },
+  { value: "daily", label: "Daily scrape" },
+  { value: "weekly", label: "1 week scrape" },
+  { value: "manual", label: "Manual only" },
+];
+const SCRAPE_MODULES = [
+  {
+    id: "one-piece",
+    label: "One Piece Cards",
+    runner: "python services/scrape_one_piece.py --source {source}",
+    defaultSchedule: "hourly",
+    notes: "Finds missing card listings, updates the collection, and refreshes product releases.",
+    options: [
+      { key: "hard", label: "Hard refresh", type: "checkbox", defaultValue: false },
+      { key: "max_price", label: "Email max card price", type: "number", defaultValue: 100, suffix: "R" },
+    ],
+    sources: [
+      { id: "bigbang", label: "Big Bang", output: "docs/data/one_piece/missing_cards.json", sourceUrl: "Store search via find_missing_cards.py" },
+      { id: "collectiverse", label: "Collectiverse", output: "docs/data/one_piece/missing_cards.json", sourceUrl: "Store search via find_missing_cards.py" },
+      { id: "geekhaven", label: "Geek Haven", output: "docs/data/one_piece/missing_cards.json", sourceUrl: "Store search via find_missing_cards.py" },
+      { id: "knightly", label: "Knightly Gaming", output: "docs/data/one_piece/missing_cards.json", sourceUrl: "Store search via find_missing_cards.py" },
+      { id: "marvellous", label: "Marvellous Gaming", output: "docs/data/one_piece/missing_cards.json", sourceUrl: "Store search via find_missing_cards.py" },
+      { id: "tanuki", label: "Tanuki Games", output: "docs/data/one_piece/missing_cards.json", sourceUrl: "Store search via find_missing_cards.py" },
+      { id: "products", label: "Official products", output: "docs/data/one_piece/products.json", sourceUrl: "One Piece Card Game products" },
+    ],
+  },
+  {
+    id: "release-radar",
+    label: "Release Radar",
+    runner: "python services/scrape_release_radar.py --source {source}",
+    defaultSchedule: "daily",
+    notes: "Refreshes new releases, upcoming movies, local cinemas, and game releases.",
+    options: [
+      { key: "limit", label: "Item limit", type: "number", defaultValue: 0, suffix: "0 = default" },
+      { key: "max_pages", label: "Max pages", type: "number", defaultValue: 0, suffix: "0 = default" },
+      { key: "hard", label: "Hard refresh", type: "checkbox", defaultValue: false },
+    ],
+    sources: [
+      { id: "pahe", label: "Pahe latest movies", output: "docs/data/release_radar/pahe_latest.json", sourceUrl: "https://pahe.ink/" },
+      { id: "coming-soon", label: "TMDB coming soon", output: "docs/data/release_radar/coming_soon.json", sourceUrl: "https://api.themoviedb.org/3" },
+      { id: "games", label: "RAWG game releases", output: "docs/data/release_radar/game_releases.json", sourceUrl: "https://api.rawg.io/api/games" },
+      { id: "imax", label: "V&A Waterfront IMAX", output: "docs/data/release_radar/imax_waterfront.json", sourceUrl: "https://mydorpie.com/Cinemas/Cape-Town/Ster-Kinekor/VA-Waterfront-Movies/IMAX" },
+      { id: "galileo", label: "Galileo open air cinema", output: "docs/data/release_radar/galileo_movies.json", sourceUrl: "https://thegalileo.co.za/" },
+      { id: "labia", label: "Labia Theatre", output: "docs/data/release_radar/labia_showtimes.json", sourceUrl: "https://www.webtickets.co.za/v2/client.aspx?clientcode=labia" },
+    ],
+  },
+  {
+    id: "events",
+    label: "Events and Specials",
+    runner: "python services/scrape_events.py --source {source}",
+    defaultSchedule: "daily",
+    notes: "Pulls specials, event listings, calendar items, places, and geocoded locations.",
+    options: [
+      { key: "limit", label: "Item limit", type: "number", defaultValue: 0, suffix: "0 = no limit" },
+      { key: "max_pages", label: "Max pages", type: "number", defaultValue: 0, suffix: "0 = default" },
+      { key: "genre", label: "Bandsintown genre", type: "text", defaultValue: "" },
+      { key: "skip_geocode", label: "Skip geocode", type: "checkbox", defaultValue: false },
+      { key: "hard", label: "Hard refresh", type: "checkbox", defaultValue: false },
+    ],
+    sources: [
+      { id: "specials", label: "Notion specials + places", output: "docs/data/events/specials.json", sourceUrl: "Notion specials database" },
+      { id: "bandsintown", label: "Bandsintown concerts", output: "docs/data/events/bandsintown_events.json", sourceUrl: "https://www.bandsintown.com/" },
+      { id: "quicket", label: "Quicket events", output: "docs/data/events/quicket_events.json", sourceUrl: "https://www.quicket.co.za/" },
+      { id: "webtickets", label: "Webtickets events", output: "docs/data/events/webtickets_wc_events.json", sourceUrl: "https://www.webtickets.co.za/" },
+      { id: "google-calendar", label: "Google Calendar", output: "docs/data/events/google_calendar_events.json", sourceUrl: "Configured Google calendars" },
+      { id: "geocode", label: "Geocode locations", output: "docs/data/events/locations.json", sourceUrl: "Google geocoding pass" },
+    ],
+  },
+  {
+    id: "news",
+    label: "News",
+    runner: "python services/scrape_news.py --source {source}",
+    defaultSchedule: "daily",
+    notes: "Reads configured RSS feeds, scraped event feeds, and generated F1 snapshot data.",
+    options: [
+      { key: "limit", label: "Items per category", type: "number", defaultValue: 0, suffix: "0 = config" },
+    ],
+    sources: [
+      { id: "rss", label: "RSS and Atom feeds", output: "docs/data/news/news.json", sourceUrl: "BBC, Al Jazeera, Guardian, IOL, games, F1, entertainment, climbing feeds" },
+      { id: "local-file", label: "Local file merge", output: "docs/data/news/news.json", sourceUrl: "docs/data/news/config.json" },
+      { id: "f1-snapshot", label: "F1 snapshot", output: "docs/data/news/news.json", sourceUrl: "Jolpica/Ergast, Wikipedia summaries, F1 reports" },
+    ],
+  },
+  {
+    id: "media",
+    label: "My Media",
+    runner: "python services/scrape_media.py --source {source}",
+    defaultSchedule: "daily",
+    notes: "Syncs Notion watchlists, reading list data, TMDB details, and RAWG game details.",
+    options: [
+      { key: "type", label: "Media type", type: "select", defaultValue: "all", choices: ["all", "movies", "series", "anime", "games"] },
+      { key: "hard", label: "Hard refresh", type: "checkbox", defaultValue: false },
+    ],
+    sources: [
+      { id: "watchlist", label: "Notion watchlist", output: "docs/data/media/watchlist.json", sourceUrl: "Notion watchlist page" },
+      { id: "games", label: "Notion games", output: "docs/data/media/gameslist.json", sourceUrl: "Notion games page" },
+      { id: "reading", label: "Notion reading list", output: "docs/data/reading_list.json", sourceUrl: "Notion reading page + Open Library" },
+      { id: "tmdb", label: "TMDB enrichment", output: "docs/data/media/watchlist_movie_details.json", sourceUrl: "https://api.themoviedb.org/3" },
+      { id: "rawg", label: "RAWG enrichment", output: "docs/data/media/games_details.json", sourceUrl: "https://api.rawg.io/api/games" },
+    ],
+  },
+  {
+    id: "youtube",
+    label: "YouTube",
+    runner: "python services/scrape_youtube.py --mode daily",
+    defaultSchedule: "daily",
+    notes: "Uses channel RSS for frequent updates and yt-dlp for richer backfills where needed.",
+    options: [
+      { key: "limit", label: "Recent video limit", type: "number", defaultValue: 12, suffix: "videos" },
+      { key: "mode", label: "Mode", type: "select", defaultValue: "daily", choices: ["daily", "backfill"] },
+    ],
+    sources: [
+      { id: "one-piece", label: "One Piece channels", output: "docs/data/youtube/latest_uploads.json", sourceUrl: "Configured One Piece YouTube channels" },
+      { id: "almost-friday-tv", label: "Almost Friday TV", output: "docs/data/youtube/almost_friday_tv.json", sourceUrl: "https://www.youtube.com/@AlmostFridayTV" },
+      { id: "thats-a-bad-idea", label: "That's A Bad Idea", output: "docs/data/youtube/thats_a_bad_idea.json", sourceUrl: "https://www.youtube.com/@thats_a_bad_idea" },
+      { id: "gameranx-tv", label: "gameranx", output: "docs/data/youtube/gameranx_tv.json", sourceUrl: "https://www.youtube.com/@gameranxTV" },
+    ],
+  },
+];
 
 function fetchFresh(url) {
   return fetch(url, { cache: "no-store" });
@@ -213,6 +337,12 @@ const state = {
   dailyGoalsAddOpen: false,
   dailyGoalsViewDate: "",
   dailyGoalsSidebarId: "",
+  scrapeControls: null,
+  scrapeStatusByOutput: {},
+  scrapeDurationByOutput: {},
+  scrapeItemCountByOutput: {},
+  scrapeControlsLoaded: false,
+  scrapeControlsSaving: false,
 };
 
 const elements = {
@@ -314,6 +444,18 @@ const elements = {
   lastScraped: document.querySelector("#last-scraped"),
   themeToggle: document.querySelector("#theme-toggle"),
   layoutEditToggle: document.querySelector("#layout-edit-toggle"),
+  scrapeControlToggle: document.querySelector("#scrape-control-toggle"),
+  scrapeControlPanel: document.querySelector("#scrape-control-panel"),
+  scrapeControlClose: document.querySelector("#scrape-control-close"),
+  scrapeControlStatus: document.querySelector("#scrape-control-status"),
+  scrapeDefaultSchedule: document.querySelector("#scrape-default-schedule"),
+  scrapeEmailEnabled: document.querySelector("#scrape-email-enabled"),
+  scrapeModuleList: document.querySelector("#scrape-module-list"),
+  newsletterPreviewToggle: document.querySelector("#newsletter-preview-toggle"),
+  newsletterPreviewPanel: document.querySelector("#newsletter-preview-panel"),
+  newsletterPreviewClose: document.querySelector("#newsletter-preview-close"),
+  newsletterPreviewStatus: document.querySelector("#newsletter-preview-status"),
+  newsletterPreviewContent: document.querySelector("#newsletter-preview-content"),
   timelineList: document.querySelector("#timeline-list"),
   timelineLightbox: document.querySelector("#timeline-lightbox"),
   timelineLightboxImage: document.querySelector("#timeline-lightbox-image"),
@@ -3560,6 +3702,14 @@ function stateApiUrl() {
   }
   const joiner = STATE_API_BASE.includes("?") ? "&" : "?";
   return `${STATE_API_BASE}${joiner}key=${encodeURIComponent(STATE_API_KEY)}`;
+}
+
+function cloudflareStateUrl(key) {
+  if (!STATE_API_BASE) {
+    return "";
+  }
+  const joiner = STATE_API_BASE.includes("?") ? "&" : "?";
+  return `${STATE_API_BASE}${joiner}key=${encodeURIComponent(key || STATE_API_KEY)}`;
 }
 
 function collectDashboardSyncState() {
@@ -8029,6 +8179,849 @@ document.addEventListener("visibilitychange", () => {
   if (document.visibilityState === "hidden") flushStateToCloudflare();
 });
 window.addEventListener("pagehide", flushStateToCloudflare);
+
+// Scrape controls
+
+function getDefaultScrapeControls() {
+  const modules = {};
+  for (const moduleConfig of SCRAPE_MODULES) {
+    const sources = {};
+    for (const source of moduleConfig.sources) {
+      sources[source.id] = {
+        enabled: true,
+        schedule: moduleConfig.defaultSchedule,
+        email: {
+          added: moduleConfig.id === "one-piece",
+          updated: false,
+          removed: false,
+        },
+      };
+    }
+    const options = {};
+    for (const option of moduleConfig.options || []) {
+      options[option.key] = option.defaultValue;
+    }
+    modules[moduleConfig.id] = {
+      enabled: true,
+      schedule: moduleConfig.defaultSchedule,
+      sources,
+      options,
+      email: {
+        added: moduleConfig.id === "one-piece",
+        updated: false,
+        removed: false,
+      },
+    };
+  }
+  return {
+    version: 1,
+    updated_at: new Date().toISOString(),
+    default_schedule: "daily",
+    interval_enabled: {
+      "ten-minute": true,
+      hourly: true,
+      daily: true,
+      weekly: true,
+    },
+    interval_email_enabled: {
+      "ten-minute": true,
+      hourly: true,
+      daily: true,
+      weekly: true,
+    },
+    email_enabled: true,
+    modules,
+  };
+}
+
+function normalizeScrapeControls(raw) {
+  const defaults = getDefaultScrapeControls();
+  const payload = raw && typeof raw === "object" ? raw : {};
+  defaults.default_schedule = SCRAPE_SCHEDULES.some((item) => item.value === payload.default_schedule)
+    ? payload.default_schedule
+    : defaults.default_schedule;
+  const intervalEnabled = payload.interval_enabled && typeof payload.interval_enabled === "object"
+    ? payload.interval_enabled
+    : {};
+  for (const key of Object.keys(defaults.interval_enabled)) {
+    defaults.interval_enabled[key] = typeof intervalEnabled[key] === "boolean"
+      ? intervalEnabled[key]
+      : defaults.interval_enabled[key];
+  }
+  const intervalEmailEnabled = payload.interval_email_enabled && typeof payload.interval_email_enabled === "object"
+    ? payload.interval_email_enabled
+    : {};
+  for (const key of Object.keys(defaults.interval_email_enabled)) {
+    defaults.interval_email_enabled[key] = typeof intervalEmailEnabled[key] === "boolean"
+      ? intervalEmailEnabled[key]
+      : defaults.interval_email_enabled[key];
+  }
+  defaults.email_enabled = typeof payload.email_enabled === "boolean" ? payload.email_enabled : defaults.email_enabled;
+  defaults.updated_at = String(payload.updated_at || defaults.updated_at);
+
+  const modules = payload.modules && typeof payload.modules === "object" ? payload.modules : {};
+  for (const moduleConfig of SCRAPE_MODULES) {
+    const moduleState = modules[moduleConfig.id] && typeof modules[moduleConfig.id] === "object" ? modules[moduleConfig.id] : {};
+    const target = defaults.modules[moduleConfig.id];
+    target.enabled = typeof moduleState.enabled === "boolean" ? moduleState.enabled : target.enabled;
+    target.schedule = SCRAPE_SCHEDULES.some((item) => item.value === moduleState.schedule)
+      ? moduleState.schedule
+      : target.schedule;
+    if (moduleState.email && typeof moduleState.email === "object") {
+      target.email = {
+        added: Boolean(moduleState.email.added),
+        updated: Boolean(moduleState.email.updated),
+        removed: Boolean(moduleState.email.removed),
+      };
+    }
+    if (moduleState.options && typeof moduleState.options === "object") {
+      for (const option of moduleConfig.options || []) {
+        if (option.key in moduleState.options) {
+          target.options[option.key] = option.type === "checkbox"
+            ? Boolean(moduleState.options[option.key])
+            : moduleState.options[option.key];
+        }
+      }
+    }
+    const sourceStates = moduleState.sources && typeof moduleState.sources === "object" ? moduleState.sources : {};
+    for (const source of moduleConfig.sources) {
+      const sourceState = sourceStates[source.id] && typeof sourceStates[source.id] === "object" ? sourceStates[source.id] : {};
+      const targetSource = target.sources[source.id];
+      targetSource.enabled = typeof sourceState.enabled === "boolean" ? sourceState.enabled : targetSource.enabled;
+      targetSource.schedule = SCRAPE_SCHEDULES.some((item) => item.value === sourceState.schedule)
+        ? sourceState.schedule
+        : targetSource.schedule;
+      if (sourceState.email && typeof sourceState.email === "object") {
+        targetSource.email = {
+          added: Boolean(sourceState.email.added),
+          updated: Boolean(sourceState.email.updated),
+          removed: Boolean(sourceState.email.removed),
+        };
+      }
+    }
+  }
+  return defaults;
+}
+
+function saveScrapeControlsLocal() {
+  if (!state.scrapeControls) return;
+  try {
+    localStorage.setItem(SCRAPE_CONTROLS_STORAGE_KEY, JSON.stringify(state.scrapeControls));
+  } catch {
+    // Ignore local save failures.
+  }
+}
+
+function loadScrapeControlsLocal() {
+  try {
+    const raw = localStorage.getItem(SCRAPE_CONTROLS_STORAGE_KEY);
+    return normalizeScrapeControls(raw ? JSON.parse(raw) : null);
+  } catch {
+    return normalizeScrapeControls(null);
+  }
+}
+
+async function saveScrapeControlsRemote() {
+  if (!state.scrapeControls) return;
+  const url = cloudflareStateUrl(SCRAPE_CONTROLS_STATE_KEY);
+  state.scrapeControls.updated_at = new Date().toISOString();
+  saveScrapeControlsLocal();
+  renderScrapeControlsStatus("Saving to Cloudflare...");
+  renderScrapeControls();
+  if (!url) {
+    renderScrapeControlsStatus("Saved locally. Cloudflare state URL is not configured.");
+    return;
+  }
+  state.scrapeControlsSaving = true;
+  try {
+    const response = await fetch(url, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(state.scrapeControls),
+    });
+    renderScrapeControlsStatus(response.ok ? "Saved to Cloudflare." : "Cloudflare save failed.");
+  } catch {
+    renderScrapeControlsStatus("Saved locally. Cloudflare save failed.");
+  } finally {
+    state.scrapeControlsSaving = false;
+  }
+}
+
+async function loadScrapeControlsRemote() {
+  state.scrapeControls = loadScrapeControlsLocal();
+  const url = cloudflareStateUrl(SCRAPE_CONTROLS_STATE_KEY);
+  if (!url) {
+    state.scrapeControlsLoaded = true;
+    renderScrapeControlsStatus("Using local scrape settings.");
+    renderScrapeControls();
+    return;
+  }
+  try {
+    const response = await fetch(url, { cache: "no-store" });
+    if (response.ok) {
+      const payload = await response.json();
+      if (payload && typeof payload === "object" && Object.keys(payload).length > 0) {
+        state.scrapeControls = normalizeScrapeControls(payload);
+        saveScrapeControlsLocal();
+      }
+    }
+    renderScrapeControlsStatus("Scrape settings synced from Cloudflare.");
+  } catch {
+    renderScrapeControlsStatus("Using local scrape settings. Cloudflare load failed.");
+  }
+  state.scrapeControlsLoaded = true;
+  renderScrapeControls();
+}
+
+function scrapeScheduleLabel(value) {
+  return SCRAPE_SCHEDULES.find((item) => item.value === value)?.label || value || "Daily scrape";
+}
+
+function isScrapeIntervalEnabled(schedule) {
+  if (schedule === "manual") return true;
+  const enabled = state.scrapeControls?.interval_enabled;
+  if (!enabled || typeof enabled !== "object") return true;
+  return enabled[schedule] !== false;
+}
+
+function isScrapeIntervalEmailEnabled(schedule) {
+  if (schedule === "manual") return true;
+  const enabled = state.scrapeControls?.interval_email_enabled;
+  if (!enabled || typeof enabled !== "object") return true;
+  return enabled[schedule] !== false;
+}
+
+function renderScheduleOptions(selected) {
+  return SCRAPE_SCHEDULES.map((item) => (
+    `<option value="${escapeHtml(item.value)}"${item.value === selected ? " selected" : ""}>${escapeHtml(item.label)}</option>`
+  )).join("");
+}
+
+function renderScrapeControlsStatus(message) {
+  if (!elements.scrapeControlStatus) return;
+  const updatedAt = state.scrapeControls?.updated_at ? formatScrapeDateTime(state.scrapeControls.updated_at) : "";
+  elements.scrapeControlStatus.textContent = updatedAt ? `${message} Last saved ${updatedAt}.` : message;
+}
+
+function latestTimestamp(values) {
+  return values
+    .filter(Boolean)
+    .sort((a, b) => new Date(b) - new Date(a))[0] || "";
+}
+
+function sumDurations(values) {
+  const numeric = values.map(Number).filter((value) => Number.isFinite(value) && value >= 0);
+  return numeric.length ? numeric.reduce((total, value) => total + value, 0) : null;
+}
+
+function sumItemCounts(values) {
+  const numeric = values.map(Number).filter((value) => Number.isFinite(value) && value >= 0);
+  return numeric.length ? numeric.reduce((total, value) => total + value, 0) : null;
+}
+
+function formatItemCount(value) {
+  const count = Number(value);
+  if (!Number.isFinite(count) || count < 0) return "Unknown";
+  return String(Math.round(count));
+}
+
+function formatDuration(seconds) {
+  const value = Number(seconds);
+  if (!Number.isFinite(value) || value < 0) return "Unknown";
+  if (value < 1) return "<1s";
+  const rounded = Math.round(value);
+  const hours = Math.floor(rounded / 3600);
+  const minutes = Math.floor((rounded % 3600) / 60);
+  const secs = rounded % 60;
+  if (hours > 0) return `${hours}h ${minutes}m`;
+  if (minutes > 0) return secs > 0 ? `${minutes}m ${secs}s` : `${minutes}m`;
+  return `${secs}s`;
+}
+
+function activeScrapeSourcesForInterval(interval) {
+  if (!state.scrapeControls) return [];
+  const rows = [];
+  for (const moduleConfig of SCRAPE_MODULES) {
+    const moduleState = state.scrapeControls.modules[moduleConfig.id];
+    if (!moduleState?.enabled) continue;
+    for (const source of moduleConfig.sources) {
+      const sourceState = moduleState.sources[source.id];
+      if (!sourceState?.enabled || sourceState.schedule !== interval) continue;
+      if (!isScrapeIntervalEnabled(sourceState.schedule)) continue;
+      rows.push({
+        moduleConfig,
+        source,
+        sourceState,
+        lastScraped: state.scrapeStatusByOutput[source.output] || "",
+        durationSeconds: state.scrapeDurationByOutput[source.output],
+        itemCount: state.scrapeItemCountByOutput[source.output],
+      });
+    }
+  }
+  return rows;
+}
+
+function activeScrapeSourcesForModule(moduleConfig, moduleState) {
+  if (!moduleState?.enabled) return [];
+  return moduleConfig.sources
+    .map((source) => {
+      const sourceState = moduleState.sources[source.id];
+      if (!sourceState?.enabled || !isScrapeIntervalEnabled(sourceState.schedule)) return null;
+      return {
+        source,
+        sourceState,
+        lastScraped: state.scrapeStatusByOutput[source.output] || "",
+        durationSeconds: state.scrapeDurationByOutput[source.output],
+        itemCount: state.scrapeItemCountByOutput[source.output],
+      };
+    })
+    .filter(Boolean);
+}
+
+function renderIntervalSummaries() {
+  const allActiveSources = [];
+  for (const interval of ["ten-minute", "hourly", "daily", "weekly"]) {
+    const activeSources = activeScrapeSourcesForInterval(interval);
+    allActiveSources.push(...activeSources);
+    const latest = latestTimestamp(activeSources.map((item) => item.lastScraped));
+    const duration = sumDurations(activeSources.map((item) => item.durationSeconds));
+    const itemCount = sumItemCounts(activeSources.map((item) => item.itemCount));
+    const label = `${activeSources.length} active · ${formatItemCount(itemCount)} items · ${formatDuration(duration)}${latest ? ` · ${formatScrapeDateTime(latest)}` : ""}`;
+    document.querySelectorAll(`[data-scrape-interval-summary="${interval}"]`).forEach((el) => {
+      el.textContent = label;
+    });
+  }
+  const overall = document.querySelector("#scrape-overall-summary");
+  if (overall) {
+    const latest = latestTimestamp(allActiveSources.map((item) => item.lastScraped));
+    const duration = sumDurations(allActiveSources.map((item) => item.durationSeconds));
+    const itemCount = sumItemCounts(allActiveSources.map((item) => item.itemCount));
+    overall.textContent = `Overall: ${allActiveSources.length} active · ${formatItemCount(itemCount)} items · ${formatDuration(duration)}${latest ? ` · ${formatScrapeDateTime(latest)}` : ""}`;
+  }
+}
+
+function formatScrapeDateTime(value) {
+  const raw = String(value || "").trim();
+  if (!raw) return "";
+  const date = new Date(raw);
+  if (Number.isNaN(date.getTime())) return raw;
+  return date.toLocaleString("en-ZA", {
+    day: "numeric",
+    month: "short",
+    hour: "2-digit",
+    minute: "2-digit",
+  });
+}
+
+function outputPathToFetchPath(output) {
+  const raw = String(output || "").replace(/\\/g, "/");
+  if (raw.startsWith("docs/data/")) return `./data/${raw.slice("docs/data/".length)}`;
+  if (raw.startsWith("data/")) return `./${raw}`;
+  return "";
+}
+
+function findLatestTimestamp(value, depth = 0) {
+  if (!value || depth > 4) return "";
+  if (typeof value === "string") {
+    const trimmed = value.trim();
+    return /^\d{4}-\d{2}-\d{2}T/.test(trimmed) ? trimmed : "";
+  }
+  if (Array.isArray(value)) {
+    let latest = "";
+    for (const item of value.slice(0, 150)) {
+      const found = findLatestTimestamp(item, depth + 1);
+      if (found && (!latest || new Date(found) > new Date(latest))) latest = found;
+    }
+    return latest;
+  }
+  if (typeof value === "object") {
+    for (const key of ["last_scraped_at", "scraped_at", "generated_at", "updated_at", "first_seen_at"]) {
+      const found = findLatestTimestamp(value[key], depth + 1);
+      if (found) return found;
+    }
+    let latest = "";
+    for (const item of Object.values(value).slice(0, 150)) {
+      const found = findLatestTimestamp(item, depth + 1);
+      if (found && (!latest || new Date(found) > new Date(latest))) latest = found;
+    }
+    return latest;
+  }
+  return "";
+}
+
+function findDurationSeconds(value, depth = 0) {
+  if (!value || depth > 4) return null;
+  if (typeof value !== "object") return null;
+
+  const secondsKeys = ["duration_seconds", "elapsed_seconds", "scrape_duration_seconds", "runtime_seconds", "took_seconds"];
+  for (const key of secondsKeys) {
+    const raw = Number(value[key]);
+    if (Number.isFinite(raw) && raw >= 0) return raw;
+  }
+
+  const msKeys = ["duration_ms", "elapsed_ms", "scrape_duration_ms", "runtime_ms"];
+  for (const key of msKeys) {
+    const raw = Number(value[key]);
+    if (Number.isFinite(raw) && raw >= 0) return raw / 1000;
+  }
+
+  const started = value.started_at || value.start_time || value.scrape_started_at;
+  const finished = value.finished_at || value.completed_at || value.ended_at || value.scrape_finished_at;
+  if (started && finished) {
+    const startDate = new Date(String(started));
+    const finishDate = new Date(String(finished));
+    if (!Number.isNaN(startDate.getTime()) && !Number.isNaN(finishDate.getTime()) && finishDate >= startDate) {
+      return (finishDate.getTime() - startDate.getTime()) / 1000;
+    }
+  }
+
+  if (Array.isArray(value)) {
+    for (const item of value.slice(0, 80)) {
+      const found = findDurationSeconds(item, depth + 1);
+      if (found !== null) return found;
+    }
+    return null;
+  }
+
+  for (const item of Object.values(value).slice(0, 80)) {
+    const found = findDurationSeconds(item, depth + 1);
+    if (found !== null) return found;
+  }
+  return null;
+}
+
+function countScrapeItems(value) {
+  if (Array.isArray(value)) return value.length;
+  if (!value || typeof value !== "object") return null;
+  for (const key of ["items", "new_releases", "coming_soon", "entries", "videos", "rows"]) {
+    if (Array.isArray(value[key])) return value[key].length;
+  }
+  if (Array.isArray(value.groups)) {
+    return value.groups.reduce((total, group) => (
+      total + (Array.isArray(group?.items) ? group.items.length : 0)
+    ), 0);
+  }
+  let total = 0;
+  for (const nested of Object.values(value)) {
+    if (Array.isArray(nested)) total += nested.length;
+  }
+  return total || Object.keys(value).length || null;
+}
+
+async function loadScrapeStatus() {
+  const outputs = [...new Set(SCRAPE_MODULES.flatMap((moduleConfig) => moduleConfig.sources.map((source) => source.output)))];
+  try {
+    const response = await fetchFresh(SCRAPE_METADATA_PATH);
+    if (response.ok) {
+      const payload = await response.json();
+      const outputMetadata = payload?.outputs && typeof payload.outputs === "object" ? payload.outputs : {};
+      for (const output of outputs) {
+        const entry = outputMetadata[output];
+        if (!entry || typeof entry !== "object") continue;
+        state.scrapeStatusByOutput[output] = String(entry.last_scraped_at || "");
+        state.scrapeDurationByOutput[output] = Number.isFinite(Number(entry.duration_seconds))
+          ? Number(entry.duration_seconds)
+          : null;
+        state.scrapeItemCountByOutput[output] = Number.isFinite(Number(entry.item_count))
+          ? Number(entry.item_count)
+          : null;
+      }
+    }
+  } catch {
+    // Fall back to output files below.
+  }
+  await Promise.all(outputs.map(async (output) => {
+    if (state.scrapeStatusByOutput[output]) return;
+    const fetchPath = outputPathToFetchPath(output);
+    if (!fetchPath) return;
+    try {
+      const response = await fetchFresh(fetchPath);
+      if (!response.ok) return;
+      const payload = await response.json();
+      state.scrapeStatusByOutput[output] = findLatestTimestamp(payload) || "";
+      state.scrapeDurationByOutput[output] = findDurationSeconds(payload);
+      state.scrapeItemCountByOutput[output] = countScrapeItems(payload);
+    } catch {
+      state.scrapeStatusByOutput[output] = "";
+      state.scrapeDurationByOutput[output] = null;
+      state.scrapeItemCountByOutput[output] = null;
+    }
+  }));
+  renderScrapeControls();
+  if (elements.newsletterPreviewPanel && !elements.newsletterPreviewPanel.hidden) {
+    renderNewsletterPreview();
+  }
+}
+
+function renderScrapeOption(moduleConfig, option, value) {
+  const inputName = `data-scrape-option="${escapeHtml(option.key)}" data-scrape-module="${escapeHtml(moduleConfig.id)}"`;
+  if (option.type === "checkbox") {
+    return `<label class="scrape-check"><input type="checkbox" ${inputName}${value ? " checked" : ""}> ${escapeHtml(option.label)}</label>`;
+  }
+  if (option.type === "select") {
+    const choices = (option.choices || []).map((choice) => (
+      `<option value="${escapeHtml(choice)}"${choice === value ? " selected" : ""}>${escapeHtml(choice)}</option>`
+    )).join("");
+    return `<label>${escapeHtml(option.label)}<select ${inputName}>${choices}</select></label>`;
+  }
+  return `<label>${escapeHtml(option.label)}<input ${inputName} type="${option.type === "number" ? "number" : "text"}" value="${escapeHtml(value)}" min="0"><span>${escapeHtml(option.suffix || "")}</span></label>`;
+}
+
+function renderScrapeControls() {
+  if (!elements.scrapeModuleList) return;
+  if (!state.scrapeControls) {
+    state.scrapeControls = loadScrapeControlsLocal();
+  }
+  if (elements.scrapeDefaultSchedule) {
+    elements.scrapeDefaultSchedule.innerHTML = renderScheduleOptions(state.scrapeControls.default_schedule);
+  }
+  if (elements.scrapeEmailEnabled) {
+    elements.scrapeEmailEnabled.checked = Boolean(state.scrapeControls.email_enabled);
+  }
+  document.querySelectorAll("[data-scrape-interval-enabled]").forEach((input) => {
+    const interval = input.getAttribute("data-scrape-interval-enabled") || "";
+    input.checked = state.scrapeControls.interval_enabled?.[interval] !== false;
+  });
+  document.querySelectorAll("[data-scrape-interval-email-enabled]").forEach((input) => {
+    const interval = input.getAttribute("data-scrape-interval-email-enabled") || "";
+    input.checked = state.scrapeControls.interval_email_enabled?.[interval] !== false;
+  });
+  renderIntervalSummaries();
+
+  const rows = SCRAPE_MODULES.map((moduleConfig) => {
+    const moduleState = state.scrapeControls.modules[moduleConfig.id];
+    const moduleIntervalActive = isScrapeIntervalEnabled(moduleState.schedule);
+    const optionByKey = Object.fromEntries((moduleConfig.options || []).map((option) => [option.key, option]));
+    const activeModuleSources = activeScrapeSourcesForModule(moduleConfig, moduleState);
+    const moduleLastScraped = latestTimestamp(activeModuleSources.map((item) => item.lastScraped));
+    const moduleDuration = sumDurations(activeModuleSources.map((item) => item.durationSeconds));
+    const moduleItemCount = sumItemCounts(activeModuleSources.map((item) => item.itemCount));
+    const moduleRow = `
+      <tr class="scrape-table-row scrape-table-row--module${moduleIntervalActive ? "" : " scrape-table-row--interval-off"}">
+        <th scope="row">
+          <span class="scrape-target-name">${escapeHtml(moduleConfig.label)}</span>
+        </th>
+        <td><input type="checkbox" data-scrape-module-enabled="${escapeHtml(moduleConfig.id)}"${moduleState.enabled ? " checked" : ""}></td>
+        <td><select data-scrape-module-schedule="${escapeHtml(moduleConfig.id)}">${renderScheduleOptions(moduleState.schedule)}</select></td>
+        <td><input type="checkbox" data-scrape-module-email="added" data-scrape-module="${escapeHtml(moduleConfig.id)}"${moduleState.email.added ? " checked" : ""}></td>
+        <td><input type="checkbox" data-scrape-module-email="updated" data-scrape-module="${escapeHtml(moduleConfig.id)}"${moduleState.email.updated ? " checked" : ""}></td>
+        <td><input type="checkbox" data-scrape-module-email="removed" data-scrape-module="${escapeHtml(moduleConfig.id)}"${moduleState.email.removed ? " checked" : ""}></td>
+        <td>${renderScrapeTableOption(moduleConfig, optionByKey.max_price, moduleState.options?.max_price)}</td>
+        <td>${renderScrapeTableOption(moduleConfig, optionByKey.limit, moduleState.options?.limit)}</td>
+        <td>${renderScrapeTableOption(moduleConfig, optionByKey.max_pages, moduleState.options?.max_pages)}</td>
+        <td class="scrape-count-cell">${escapeHtml(formatItemCount(moduleItemCount))}</td>
+        <td class="scrape-duration-cell">${escapeHtml(formatDuration(moduleDuration))}</td>
+        <td class="scrape-last-cell">${escapeHtml(formatScrapeDateTime(moduleLastScraped) || "Unknown")}</td>
+      </tr>`;
+    const sourceRows = moduleConfig.sources.map((source) => {
+      const sourceState = moduleState.sources[source.id];
+      const sourceIntervalActive = isScrapeIntervalEnabled(sourceState.schedule);
+      const lastScraped = state.scrapeStatusByOutput[source.output] || "";
+      const duration = state.scrapeDurationByOutput[source.output];
+      const itemCount = state.scrapeItemCountByOutput[source.output];
+      return `
+        <tr class="scrape-table-row scrape-table-row--source${sourceIntervalActive ? "" : " scrape-table-row--interval-off"}">
+          <th scope="row">
+            <span class="scrape-target-name">${escapeHtml(source.label)}</span>
+          </th>
+          <td><input type="checkbox" data-scrape-source-enabled="${escapeHtml(source.id)}" data-scrape-module="${escapeHtml(moduleConfig.id)}"${sourceState.enabled ? " checked" : ""}></td>
+          <td><select data-scrape-source-schedule="${escapeHtml(source.id)}" data-scrape-module="${escapeHtml(moduleConfig.id)}">${renderScheduleOptions(sourceState.schedule)}</select></td>
+          <td><input type="checkbox" data-scrape-source-email="added" data-scrape-source="${escapeHtml(source.id)}" data-scrape-module="${escapeHtml(moduleConfig.id)}"${sourceState.email.added ? " checked" : ""}></td>
+          <td><input type="checkbox" data-scrape-source-email="updated" data-scrape-source="${escapeHtml(source.id)}" data-scrape-module="${escapeHtml(moduleConfig.id)}"${sourceState.email.updated ? " checked" : ""}></td>
+          <td><input type="checkbox" data-scrape-source-email="removed" data-scrape-source="${escapeHtml(source.id)}" data-scrape-module="${escapeHtml(moduleConfig.id)}"${sourceState.email.removed ? " checked" : ""}></td>
+          <td class="scrape-muted-cell">-</td>
+          <td class="scrape-muted-cell">-</td>
+          <td class="scrape-muted-cell">-</td>
+          <td class="scrape-count-cell">${escapeHtml(formatItemCount(itemCount))}</td>
+          <td class="scrape-duration-cell">${escapeHtml(formatDuration(duration))}</td>
+          <td class="scrape-last-cell">${escapeHtml(formatScrapeDateTime(lastScraped) || "Unknown")}</td>
+        </tr>`;
+    }).join("");
+    return moduleRow + sourceRows;
+  }).join("");
+
+  elements.scrapeModuleList.innerHTML = `
+    <div class="scrape-table-wrap">
+      <table class="scrape-table">
+        <thead>
+          <tr>
+            <th scope="col">Module / Source</th>
+            <th scope="col">On</th>
+            <th scope="col">Scrape interval</th>
+            <th scope="col">Email added</th>
+            <th scope="col">Email updated</th>
+            <th scope="col">Email removed</th>
+            <th scope="col">Max price</th>
+            <th scope="col">Limit</th>
+            <th scope="col">Max pages</th>
+            <th scope="col">Items found</th>
+            <th scope="col">Time elapsed</th>
+            <th scope="col">Last scraped</th>
+          </tr>
+        </thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>`;
+}
+
+function renderScrapeTableOption(moduleConfig, option, value) {
+  if (!option) return `<span class="scrape-muted-cell">-</span>`;
+  const actualValue = value ?? option.defaultValue;
+  const inputName = `data-scrape-option="${escapeHtml(option.key)}" data-scrape-module="${escapeHtml(moduleConfig.id)}"`;
+  if (option.type === "checkbox") {
+    return `<input type="checkbox" ${inputName}${actualValue ? " checked" : ""} title="${escapeHtml(option.label)}">`;
+  }
+  if (option.type === "select") {
+    return `<select ${inputName} title="${escapeHtml(option.label)}">${(option.choices || []).map((choice) => (
+      `<option value="${escapeHtml(choice)}"${choice === actualValue ? " selected" : ""}>${escapeHtml(choice)}</option>`
+    )).join("")}</select>`;
+  }
+  return `<input ${inputName} title="${escapeHtml(option.label)}" type="${option.type === "number" ? "number" : "text"}" value="${escapeHtml(actualValue)}" min="0">`;
+}
+
+function updateScrapeControlsFromInput(target) {
+  if (!state.scrapeControls || !target) return false;
+  const intervalKey = target.getAttribute("data-scrape-interval-enabled");
+  if (intervalKey) {
+    if (!state.scrapeControls.interval_enabled || typeof state.scrapeControls.interval_enabled !== "object") {
+      state.scrapeControls.interval_enabled = {};
+    }
+    state.scrapeControls.interval_enabled[intervalKey] = target.checked;
+    return true;
+  }
+  const intervalEmailKey = target.getAttribute("data-scrape-interval-email-enabled");
+  if (intervalEmailKey) {
+    if (!state.scrapeControls.interval_email_enabled || typeof state.scrapeControls.interval_email_enabled !== "object") {
+      state.scrapeControls.interval_email_enabled = {};
+    }
+    state.scrapeControls.interval_email_enabled[intervalEmailKey] = target.checked;
+    return true;
+  }
+  if (target === elements.scrapeDefaultSchedule) {
+    state.scrapeControls.default_schedule = target.value;
+    return true;
+  }
+  if (target === elements.scrapeEmailEnabled) {
+    state.scrapeControls.email_enabled = target.checked;
+    return true;
+  }
+  const moduleId = target.getAttribute("data-scrape-module") || target.getAttribute("data-scrape-module-enabled") || target.getAttribute("data-scrape-module-schedule");
+  const moduleState = moduleId ? state.scrapeControls.modules[moduleId] : null;
+  if (!moduleState) return false;
+
+  if (target.hasAttribute("data-scrape-module-enabled")) {
+    moduleState.enabled = target.checked;
+    for (const sourceState of Object.values(moduleState.sources || {})) {
+      sourceState.enabled = target.checked;
+    }
+    return true;
+  }
+  if (target.hasAttribute("data-scrape-module-schedule")) {
+    moduleState.schedule = target.value;
+    for (const sourceState of Object.values(moduleState.sources || {})) {
+      sourceState.schedule = target.value;
+    }
+    return true;
+  }
+  const moduleEmailType = target.getAttribute("data-scrape-module-email");
+  if (moduleEmailType) {
+    moduleState.email[moduleEmailType] = target.checked;
+    for (const sourceState of Object.values(moduleState.sources || {})) {
+      if (sourceState.email && typeof sourceState.email === "object") {
+        sourceState.email[moduleEmailType] = target.checked;
+      }
+    }
+    return true;
+  }
+  const optionKey = target.getAttribute("data-scrape-option");
+  if (optionKey) {
+    const moduleConfig = SCRAPE_MODULES.find((item) => item.id === moduleId);
+    const option = moduleConfig?.options?.find((item) => item.key === optionKey);
+    moduleState.options[optionKey] = option?.type === "checkbox"
+      ? target.checked
+      : option?.type === "number"
+        ? Number(target.value || 0)
+        : target.value;
+    return true;
+  }
+  const sourceEnabled = target.getAttribute("data-scrape-source-enabled");
+  const sourceSchedule = target.getAttribute("data-scrape-source-schedule");
+  const sourceEmail = target.getAttribute("data-scrape-source-email");
+  const sourceId = sourceEnabled || sourceSchedule || target.getAttribute("data-scrape-source");
+  const sourceState = sourceId ? moduleState.sources[sourceId] : null;
+  if (!sourceState) return false;
+  if (sourceEnabled) {
+    sourceState.enabled = target.checked;
+    return true;
+  }
+  if (sourceSchedule) {
+    sourceState.schedule = target.value;
+    return true;
+  }
+  if (sourceEmail) {
+    sourceState.email[sourceEmail] = target.checked;
+    return true;
+  }
+  return false;
+}
+
+function openScrapeControls() {
+  if (!elements.scrapeControlPanel) return;
+  elements.scrapeControlPanel.hidden = false;
+  document.body.classList.add("scrape-control-open");
+  renderScrapeControls();
+  if (!state.scrapeControlsLoaded) void loadScrapeControlsRemote();
+  void loadScrapeStatus();
+}
+
+function closeScrapeControls() {
+  if (!elements.scrapeControlPanel) return;
+  elements.scrapeControlPanel.hidden = true;
+  document.body.classList.remove("scrape-control-open");
+}
+
+function newsletterEventsForEmail(email) {
+  const events = [];
+  if (email?.added) events.push("newly added");
+  if (email?.updated) events.push("updated");
+  if (email?.removed) events.push("removed");
+  return events;
+}
+
+function buildNewsletterPreviewSections() {
+  if (!state.scrapeControls) {
+    state.scrapeControls = loadScrapeControlsLocal();
+  }
+  const sections = [];
+  for (const moduleConfig of SCRAPE_MODULES) {
+    const moduleState = state.scrapeControls.modules[moduleConfig.id];
+    if (!moduleState || !moduleState.enabled) continue;
+
+    const moduleEvents = isScrapeIntervalEnabled(moduleState.schedule) && isScrapeIntervalEmailEnabled(moduleState.schedule)
+      ? newsletterEventsForEmail(moduleState.email)
+      : [];
+    const sourceSections = moduleConfig.sources
+      .map((source) => {
+        const sourceState = moduleState.sources[source.id];
+        if (!sourceState || !sourceState.enabled) return null;
+        if (!isScrapeIntervalEnabled(sourceState.schedule)) return null;
+        if (!isScrapeIntervalEmailEnabled(sourceState.schedule)) return null;
+        const events = newsletterEventsForEmail(sourceState.email);
+        if (!events.length) return null;
+        return {
+          label: source.label,
+          schedule: sourceState.schedule,
+          events,
+          lastScraped: state.scrapeStatusByOutput[source.output] || "",
+        };
+      })
+      .filter(Boolean);
+
+    if (!moduleEvents.length && !sourceSections.length) continue;
+    sections.push({
+      label: moduleConfig.label,
+      schedule: moduleState.schedule,
+      events: moduleEvents,
+      sourceSections,
+      maxPrice: moduleState.options?.max_price,
+    });
+  }
+  return sections;
+}
+
+function renderNewsletterPreview() {
+  if (!elements.newsletterPreviewContent) return;
+  const sections = buildNewsletterPreviewSections();
+  const enabledEmail = Boolean(state.scrapeControls?.email_enabled);
+  const totalSources = sections.reduce((total, section) => total + section.sourceSections.length, 0);
+  const subject = enabledEmail
+    ? `Dashboard scrape newsletter: ${totalSources} watched source${totalSources === 1 ? "" : "s"}`
+    : "Dashboard scrape newsletter: email disabled";
+
+  if (elements.newsletterPreviewStatus) {
+    elements.newsletterPreviewStatus.textContent = enabledEmail
+      ? "Previewing from current scrape settings."
+      : "Email is currently disabled in scrape settings.";
+  }
+
+  const sectionHtml = sections.length
+    ? sections.map((section) => `
+      <section class="newsletter-preview-section">
+        <div class="newsletter-preview-section-head">
+          <h3>${escapeHtml(section.label)}</h3>
+          <span>${escapeHtml(scrapeScheduleLabel(section.schedule))}</span>
+        </div>
+        ${section.events.length ? `<p class="newsletter-preview-line">Module email: ${escapeHtml(section.events.join(", "))}</p>` : ""}
+        ${section.maxPrice !== undefined ? `<p class="newsletter-preview-line">One Piece card email price limit: R${escapeHtml(section.maxPrice)}</p>` : ""}
+        <div class="newsletter-preview-source-list">
+          ${section.sourceSections.length ? section.sourceSections.map((source) => `
+            <div class="newsletter-preview-source">
+              <strong>${escapeHtml(source.label)}</strong>
+              <span>${escapeHtml(source.events.join(", "))}</span>
+              <em>${escapeHtml(scrapeScheduleLabel(source.schedule))}${source.lastScraped ? ` · last scraped ${escapeHtml(formatScrapeDateTime(source.lastScraped))}` : ""}</em>
+            </div>
+          `).join("") : `<p class="newsletter-preview-line">No source-level email notifications are enabled.</p>`}
+        </div>
+      </section>
+    `).join("")
+    : `<p class="empty">No newsletter sections are enabled by the current scrape settings.</p>`;
+
+  elements.newsletterPreviewContent.innerHTML = `
+    <article class="newsletter-preview-message">
+      <div class="newsletter-preview-subject">
+        <span>Subject</span>
+        <strong>${escapeHtml(subject)}</strong>
+      </div>
+      <div class="newsletter-preview-intro">
+        <p>Dashboard scrape newsletter</p>
+        <p>This preview follows the current scrape-control email settings. Actual emails will include the matching newly added, updated, and removed items found during the scrape run.</p>
+      </div>
+      ${sectionHtml}
+    </article>`;
+}
+
+async function openNewsletterPreview() {
+  if (!elements.newsletterPreviewPanel) return;
+  elements.newsletterPreviewPanel.hidden = false;
+  document.body.classList.add("newsletter-preview-open");
+  if (!state.scrapeControlsLoaded) {
+    await loadScrapeControlsRemote();
+  }
+  void loadScrapeStatus();
+  renderNewsletterPreview();
+}
+
+function closeNewsletterPreview() {
+  if (!elements.newsletterPreviewPanel) return;
+  elements.newsletterPreviewPanel.hidden = true;
+  document.body.classList.remove("newsletter-preview-open");
+}
+
+if (elements.scrapeControlToggle) {
+  elements.scrapeControlToggle.addEventListener("click", openScrapeControls);
+}
+
+if (elements.scrapeControlClose) {
+  elements.scrapeControlClose.addEventListener("click", closeScrapeControls);
+}
+
+if (elements.scrapeControlPanel) {
+  elements.scrapeControlPanel.addEventListener("change", (event) => {
+    if (updateScrapeControlsFromInput(event.target)) {
+      void saveScrapeControlsRemote();
+    }
+  });
+}
+
+if (elements.newsletterPreviewToggle) {
+  elements.newsletterPreviewToggle.addEventListener("click", () => {
+    void openNewsletterPreview();
+  });
+}
+
+if (elements.newsletterPreviewClose) {
+  elements.newsletterPreviewClose.addEventListener("click", closeNewsletterPreview);
+}
 
 // ── Daily Goals ───────────────────────────────────────────────────────────
 
