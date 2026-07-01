@@ -17,17 +17,9 @@ from pathlib import Path
 from zipfile import ZipFile
 
 try:
-    from PIL import Image, ImageEnhance, ImageFilter, ImageOps
+    from PIL import Image
 except Exception:  # noqa: BLE001
     Image = None  # type: ignore[assignment]
-    ImageEnhance = None  # type: ignore[assignment]
-    ImageFilter = None  # type: ignore[assignment]
-    ImageOps = None  # type: ignore[assignment]
-
-try:
-    import pytesseract
-except Exception:  # noqa: BLE001
-    pytesseract = None  # type: ignore[assignment]
 
 sys.path.append(str(Path(__file__).resolve().parents[2]))
 from env import get as env_get
@@ -784,89 +776,6 @@ def resolve_card_info_from_image(product: dict, card_number: str = "", rarity: s
         "updated_at": _now_iso(),
     }
     return best_card, best_rarity
-
-
-_OCR_CARD_RE = re.compile(r"\b(?:OP|ST|EB|PRB)\d{1,2}-\d{1,3}\b", re.IGNORECASE)
-_OCR_CODE_RE = re.compile(r"\b(?:C|UC|R|SR|SEC|L)\b", re.IGNORECASE)
-_RARITY_CODE_MAP = {
-    "C": "Common",
-    "UC": "Uncommon",
-    "R": "Rare",
-    "SR": "Super Rare",
-    "SEC": "Secret Rare",
-    "L": "Leader",
-}
-
-
-def _ocr_available() -> bool:
-    if Image is None or pytesseract is None:
-        return False
-    try:
-        _ = pytesseract.get_tesseract_version()  # type: ignore[union-attr]
-    except Exception:
-        return False
-    return True
-
-
-def _configure_tesseract_cmd() -> None:
-    if pytesseract is None:
-        return
-    configured = setting("SCRAPE_TESSERACT_CMD")
-    if configured:
-        pytesseract.pytesseract.tesseract_cmd = configured  # type: ignore[union-attr]
-        return
-    common_paths = [
-        r"C:\Program Files\Tesseract-OCR\tesseract.exe",
-        r"C:\Program Files (x86)\Tesseract-OCR\tesseract.exe",
-    ]
-    for path in common_paths:
-        if Path(path).exists():
-            pytesseract.pytesseract.tesseract_cmd = path  # type: ignore[union-attr]
-            return
-
-
-def _extract_card_and_rarity_from_text(text: str) -> tuple[str, str]:
-    card = ""
-    rarity = ""
-    card_match = _OCR_CARD_RE.search(text or "")
-    if card_match:
-        card = normalize_card_number(card_match.group(0)) or ""
-    if card:
-        tail = (text or "")[card_match.end() : card_match.end() + 10]
-        rarity_match = _OCR_CODE_RE.search(tail)
-        if rarity_match:
-            rarity = _RARITY_CODE_MAP.get(rarity_match.group(0).upper(), "")
-    return card, rarity
-
-
-def _ocr_card_from_geek_image(image_url: str) -> tuple[str, str]:
-    if not _ocr_available() or not image_url:
-        return "", ""
-    req = urllib.request.Request(image_url, headers={"User-Agent": "Mozilla/5.0"})
-    with urllib.request.urlopen(req, timeout=30) as response:
-        image_bytes = response.read()
-
-    img = Image.open(io.BytesIO(image_bytes)).convert("RGB")
-    w, h = img.size
-    crop = img.crop((int(w * 0.68), int(h * 0.78), w, h))
-
-    gray = ImageOps.grayscale(crop)
-    variants = [
-        gray.resize((gray.width * 2, gray.height * 2), Image.Resampling.LANCZOS),
-        gray.resize((gray.width * 3, gray.height * 3), Image.Resampling.LANCZOS),
-    ]
-    variants.append(variants[-1].filter(ImageFilter.SHARPEN))
-    variants.append(ImageEnhance.Contrast(variants[-1]).enhance(2.4))
-    variants.append(variants[-1].point(lambda p: 255 if p > 145 else 0))
-
-    for variant in variants:
-        for psm in (6, 7, 11, 13):
-            config = f"--oem 3 --psm {psm} -c tessedit_char_whitelist=OPSTEBPRBCUL0123456789-"
-            text = pytesseract.image_to_string(variant, config=config)  # type: ignore[union-attr]
-            card, rarity = _extract_card_and_rarity_from_text(text)
-            if card:
-                return card, rarity
-    return "", ""
 
 
 def fetch_knightly_products() -> list[dict]:
