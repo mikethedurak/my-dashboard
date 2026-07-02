@@ -1,11 +1,47 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-06-29T09:01:32.229498Z",
+  "generated_at": "2026-07-02T07:40:30.672531Z",
   "channel_name": "gameranx",
   "channel_id": "UCNvzD7Z-g64bPXxGzaQaa4g",
   "channel_url": "https://www.youtube.com/@gameranxTV",
-  "items_count": 15,
+  "items_count": 19,
   "items": [
+    {
+      "id": "yt-6FoxODUQW-M",
+      "video_id": "6FoxODUQW-M",
+      "title": "10 WEIRD Gaming Stories of June 2026",
+      "url": "https://www.youtube.com/watch?v=6FoxODUQW-M",
+      "published_at": "2026-07-01T22:30:26+00:00",
+      "updated_at": "2026-07-02T07:03:32+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/6FoxODUQW-M/hqdefault.jpg"
+    },
+    {
+      "id": "yt-SJsmgioNX0E",
+      "video_id": "SJsmgioNX0E",
+      "title": "10 Highest Rated Games You HAVEN'T Played",
+      "url": "https://www.youtube.com/watch?v=SJsmgioNX0E",
+      "published_at": "2026-07-01T15:17:35+00:00",
+      "updated_at": "2026-07-02T01:30:20+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/SJsmgioNX0E/hqdefault.jpg"
+    },
+    {
+      "id": "yt-RO1YoGs6DTE",
+      "video_id": "RO1YoGs6DTE",
+      "title": "Meccha Chameleon - Before You Buy",
+      "url": "https://www.youtube.com/watch?v=RO1YoGs6DTE",
+      "published_at": "2026-06-30T18:59:33+00:00",
+      "updated_at": "2026-07-01T07:25:37+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/RO1YoGs6DTE/hqdefault.jpg"
+    },
+    {
+      "id": "yt-GiNxWqSyFco",
+      "video_id": "GiNxWqSyFco",
+      "title": "10 Games We Don't REGRET Playing 100%",
+      "url": "https://www.youtube.com/watch?v=GiNxWqSyFco",
+      "published_at": "2026-06-29T17:11:29+00:00",
+      "updated_at": "2026-06-30T08:26:00+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/GiNxWqSyFco/hqdefault.jpg"
+    },
     {
       "id": "yt-uAuMEd8e14I",
       "video_id": "uAuMEd8e14I",

@@ -12,7 +12,7 @@
       "outdoors"
     ],
     "missing_location": true,
-    "location_key": "",
+    "location_key": "Capegate Shopping Centre, Ent 6 Undercover Parking, Cape Town, Western Cape",
     "missing_place": true,
     "place_key": ""
   },
@@ -29,8 +29,8 @@
       "art",
       "family"
     ],
-    "missing_location": true,
-    "location_key": "",
+    "missing_location": false,
+    "location_key": "Zeitz Museum of Contemporary Art Africa, Cape Town",
     "missing_place": true,
     "place_key": ""
   },
@@ -47,7 +47,7 @@
       "theatre"
     ],
     "missing_location": true,
-    "location_key": "",
+    "location_key": "The Pam Golding Theatre at The Baxter",
     "missing_place": true,
     "place_key": ""
   },
@@ -67,7 +67,7 @@
       "theatre"
     ],
     "missing_location": true,
-    "location_key": "",
+    "location_key": "Artscape, Opera House, Cape Town",
     "missing_place": true,
     "place_key": ""
   },
@@ -81,8 +81,8 @@
     "source": "Webtickets",
     "region": "Western Cape",
     "categories": [],
-    "missing_location": true,
-    "location_key": "",
+    "missing_location": false,
+    "location_key": "Table Mountain",
     "missing_place": true,
     "place_key": ""
   }

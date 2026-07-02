@@ -16,36 +16,11 @@
     "categories": [
       "bar"
     ],
-    "location_key": "r44 klapmuts rd, Stellenbosch, The Daisy Jones Bar, Cape Town, Western Cape, South Africa",
+    "location_key": "The Daisy Jones Bar",
     "missing_location": false,
     "place_key": "The Daisy Jones Bar",
     "missing_place": false,
-    "place": {
-      "google_place_id": "ChIJxY0OoKytzR0RQWodxeFMT1o",
-      "name": "The Daisy Jones Bar",
-      "types": [
-        "live_music_venue",
-        "bar",
-        "event_venue",
-        "point_of_interest",
-        "establishment"
-      ],
-      "address": "Summerhill Wine Estate, Stellenbosch, 7615, South Africa",
-      "short_address": "Summerhill Wine Estate, Stellenbosch",
-      "location": {
-        "lat": -33.883808099999996,
-        "lng": 18.8463973
-      },
-      "rating": 4.7,
-      "rating_count": 433,
-      "map_url": "https://maps.google.com/?cid=6507504519132047937&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo_preview": {
-        "name": "places/ChIJxY0OoKytzR0RQWodxeFMT1o/photos/Ab43m-tfVRygq5qjURyRip5eMqsdXEXlVm-4EgCAEpwkrrnO6wLcrusUumJwjEnG2NH6mfZSplJbBXOYDAagck45WIEsocdWPJ5tqg8R4Uxz0CUextO5r0mlpZWTkU5LIsm2tNl74b4Tj3u4Z-T_2du7mzWa9wABPoAxWwkDLJ35t2eE_i91GBcxNgwFBNUcoFULHf_N0AE6nM8SSFvpt3nO7Lb9HM0UfWQmrUuxLTtl-zMVWbtqj3Fnsf40t-dwRWdxFtCN7xqNlm2iY4KM7TIULQvF5aXRaxswGulHzo-fTGEd_A",
-        "width": 4800,
-        "height": 3200,
-        "author": "The Daisy Jones Bar"
-      }
-    },
+    "place": "The Daisy Jones Bar",
     "google_place_id": "ChIJxY0OoKytzR0RQWodxeFMT1o",
     "lat": -33.883808099999996,
     "lng": 18.8463973,

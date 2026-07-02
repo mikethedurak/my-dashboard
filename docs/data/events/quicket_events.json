@@ -14,7 +14,7 @@
     "categories": [
       "bar"
     ],
-    "location_key": "64A Wale Street, Cape Town City Centre, 8000, Cape Town, Western Cape, South Africa, Honest Chocolate/The Gin Bar, Cape Town, Western Cape, South Africa",
+    "location_key": "Honest Chocolate/The Gin Bar",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -32,7 +32,7 @@
     "image": "https://images.quicket.co.za/0916574_247_247.jpeg",
     "url": "https://www.quicket.co.za/events/373397-wesley-paulse-live/",
     "categories": [],
-    "location_key": "1 Avocado Street, , Westridge, 7802, Cape Town, Western Cape, South Africa, 1 Avocado St, Cape Town, Western Cape, South Africa",
+    "location_key": "1 Avocado St",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -53,7 +53,7 @@
       "club",
       "comedy"
     ],
-    "location_key": "257B Blaauwberg Road, , Table View, 7439, Cape Town, Western Cape, South Africa, Infusion Social Club Table View, Cape Town, Western Cape, South Africa",
+    "location_key": "Infusion Social Club Table View",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -71,7 +71,7 @@
     "image": "https://images.quicket.co.za/0918367_247_247.png",
     "url": "https://www.quicket.co.za/events/374510-financial-future-summit/",
     "categories": [],
-    "location_key": ", Woodstock, Cape Town, Western Cape, South Africa, Woodstock, Cape Town, Western Cape, South Africa",
+    "location_key": "Woodstock",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -89,7 +89,7 @@
     "image": "https://images.quicket.co.za/0893373_247_247.jpeg",
     "url": "https://www.quicket.co.za/events/365059-district-six-museum-july-2026-admission-tickets/",
     "categories": [],
-    "location_key": "25A Buitenkant Street, , District Six, 8000, Cape Town, Western Cape, South Africa, 25A Buitenkant St, Cape Town, Western Cape, South Africa",
+    "location_key": "25A Buitenkant St",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -110,8 +110,8 @@
       "bar",
       "art"
     ],
-    "location_key": "199 Loop Street, , Cape Town City Centre, 8000, Cape Town, Western Cape, South Africa, The Wine Shop Cape Town, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
+    "location_key": "The Wine Shop Cape Town",
+    "missing_location": true,
     "place_key": "",
     "missing_place": true
   },
@@ -130,7 +130,7 @@
     "categories": [
       "club"
     ],
-    "location_key": "18 Queen Victoria St, Gardens, Cape Town, 8001, 8000, Cape Town, Western Cape, South Africa, Cape Town Club, Cape Town, Western Cape, South Africa",
+    "location_key": "Cape Town Club",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -150,7 +150,7 @@
     "categories": [
       "theatre"
     ],
-    "location_key": "Buitenkant Street, , District Six, 7800, Cape Town, Western Cape, South Africa, Star Theatre, Cape Town, Western Cape, South Africa",
+    "location_key": "Star Theatre",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -171,7 +171,7 @@
       "club",
       "sports"
     ],
-    "location_key": "52 Park Road, Rondebosch, 7700, Cape Town, Western Cape, South Africa, Rondebosch Sports Club, Cape Town, Western Cape, South Africa",
+    "location_key": "Rondebosch Sports Club",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -191,7 +191,7 @@
     "categories": [
       "dj"
     ],
-    "location_key": "70a Kloof Street, Gardens, 8001, Cape Town, Western Cape, South Africa, 70a Kloof St, Cape Town, Western Cape, South Africa",
+    "location_key": "70a Kloof St",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -211,10 +211,11 @@
     "categories": [
       "bar"
     ],
-    "location_key": "103 Bree Street, , Cape Town City Centre, 8001, Cape Town, Western Cape, South Africa, Culture Wine Bar, Cape Town, Western Cape, South Africa",
+    "location_key": "Culture Wine Bar",
     "missing_location": false,
-    "place_key": "",
-    "missing_place": true
+    "place_key": "Culture Wine Bar",
+    "missing_place": false,
+    "place": "Culture Wine Bar"
   },
   {
     "title": "The Strangers Supper Club: 2 July",
@@ -231,7 +232,7 @@
     "categories": [
       "club"
     ],
-    "location_key": "40 Palmer Road, , Muizenberg, 7950, Cape Town, Western Cape, South Africa, 40 Palmer Rd, Cape Town, Western Cape, South Africa",
+    "location_key": "40 Palmer Rd",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -251,7 +252,7 @@
     "categories": [
       "comedy"
     ],
-    "location_key": "Grotto Road, , Rondebosch, 7700, Cape Town, Western Cape, South Africa, Infusion Rondebosch, Cape Town, Western Cape, South Africa",
+    "location_key": "Infusion Rondebosch",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -271,7 +272,7 @@
     "categories": [
       "theatre"
     ],
-    "location_key": "Main Road 71a, 7990, Cape Town, Western Cape, South Africa, Kalk Bay Theatre, Cape Town, Western Cape, South Africa",
+    "location_key": "Kalk Bay Theatre",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -289,7 +290,7 @@
     "image": "https://images.quicket.co.za/0936006_247_247.jpeg",
     "url": "https://www.quicket.co.za/events/380899-first-friday-at-cape-point-vineyards/",
     "categories": [],
-    "location_key": "Silvermine Road , Cape Point Vineyards Estate, 7979, Cape Town, Western Cape, South Africa, Cape Point Vineyards, Cape Town, Western Cape, South Africa",
+    "location_key": "Cape Point Vineyards",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -309,7 +310,7 @@
     "categories": [
       "theatre"
     ],
-    "location_key": "37 Main Road, Muizenberg, 7945, Cape Town, Western Cape, South Africa, The Masque Theatre, Cape Town, Western Cape, South Africa",
+    "location_key": "The Masque Theatre",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -329,8 +330,8 @@
     "categories": [
       "bar"
     ],
-    "location_key": "Skilpadvlei Farm M12 Polkadraai Road Stellenbosch, Cape Town, 7604, South Africa, 7604, Cape Town, Western Cape, South Africa, Skilpadvlei Wine Farm, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
+    "location_key": "Skilpadvlei Wine Farm",
+    "missing_location": true,
     "place_key": "",
     "missing_place": true
   },
@@ -351,10 +352,11 @@
       "club",
       "art"
     ],
-    "location_key": "Queen Victoria Street 54, Cape Town City Centre, 8000, Cape Town, Western Cape, South Africa, Botanik Social House, Cape Town, Western Cape, South Africa",
+    "location_key": "Botanik Social House",
     "missing_location": false,
-    "place_key": "",
-    "missing_place": true
+    "place_key": "Botanik Social House",
+    "missing_place": false,
+    "place": "Botanik Social House"
   },
   {
     "title": "Bespoke Session winter edition",
@@ -369,7 +371,7 @@
     "image": "https://images.quicket.co.za/Q10_247_247.jpg",
     "url": "https://www.quicket.co.za/events/381162-bespoke-session-winter-edition/",
     "categories": [],
-    "location_key": "61 Bree Street, , Cape Town City Centre, 8000, Cape Town, Western Cape, South Africa, 61 Bree St, Cape Town, Western Cape, South Africa",
+    "location_key": "61 Bree St",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -389,8 +391,8 @@
     "categories": [
       "festival"
     ],
-    "location_key": "Devon Valley Road, Stellenbosch, 7600, Cape Town, Western Cape, South Africa, The Salene Hotel and Venue, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
+    "location_key": "The Salene Hotel and Venue",
+    "missing_location": true,
     "place_key": "",
     "missing_place": true
   },
@@ -410,7 +412,7 @@
       "bar",
       "food"
     ],
-    "location_key": "Westlake Drive, , Westlake, 7945, Cape Town, Western Cape, South Africa, Cattle Baron Westlake, Cape Town, Western Cape, South Africa",
+    "location_key": "Cattle Baron Westlake",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -431,7 +433,7 @@
       "dj",
       "bar"
     ],
-    "location_key": "111 Sir Lowry Road, Foreshore, 6273, Cape Town, Western Cape, South Africa, Cellar Collective Wine Bar, Cape Town, Western Cape, South Africa",
+    "location_key": "Cellar Collective Wine Bar",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -452,7 +454,7 @@
       "dj",
       "market"
     ],
-    "location_key": "54 Shortmarket Street, , Cape Town City Centre, 8000, Cape Town, Western Cape, South Africa, 54 Shortmarket St, Cape Town, Western Cape, South Africa",
+    "location_key": "54 Shortmarket St",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -470,7 +472,7 @@
     "image": "https://images.quicket.co.za/0921567_247_247.png",
     "url": "https://www.quicket.co.za/events/375461-at-the-altar/",
     "categories": [],
-    "location_key": "56 Main Road, , Claremont, 7708, Cape Town, Western Cape, South Africa, 56 Main Rd, Cape Town, Western Cape, South Africa",
+    "location_key": "56 Main Rd",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -491,7 +493,7 @@
       "food",
       "date-night"
     ],
-    "location_key": "The Cruise Terminal, Victoria & Alfred Waterfront, Cape Town, 8001, South Africa, , Victoria & Alfred Waterfront, 8001, Cape Town, Western Cape, South Africa, Makers Landing, Cape Town, Western Cape, South Africa",
+    "location_key": "Makers Landing",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -509,7 +511,7 @@
     "image": "https://images.quicket.co.za/0916821_247_247.jpeg",
     "url": "https://www.quicket.co.za/events/338829-suitssneakerz-homecoming-2026/",
     "categories": [],
-    "location_key": "Lower Long Street 9, Foreshore, 8000, Cape Town, Western Cape, South Africa, Hotel Sky, 27th Floor, Cape Town, Western Cape, South Africa",
+    "location_key": "Hotel Sky, 27th Floor",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -529,7 +531,7 @@
     "categories": [
       "art"
     ],
-    "location_key": "15 Arthurs Road, Sea Point, 8060, Cape Town, Western Cape, South Africa, Arthur's Mini Super, Cape Town, Western Cape, South Africa",
+    "location_key": "Arthur's Mini Super",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -550,10 +552,11 @@
       "music",
       "outdoors"
     ],
-    "location_key": "69 Hope Street, , Cape Town City Centre, 8001, Cape Town, Western Cape, South Africa, EVOL, Cape Town, Western Cape, South Africa",
+    "location_key": "Evol",
     "missing_location": false,
-    "place_key": "",
-    "missing_place": true
+    "place_key": "Evol",
+    "missing_place": false,
+    "place": "Evol"
   },
   {
     "title": "Prime - CPT - Earth Tones Edition - Club Paradise - 4 July 2026",
@@ -571,10 +574,11 @@
       "club",
       "art"
     ],
-    "location_key": "Albertus Street 9, District Six, 7925, Cape Town, Western Cape, South Africa, Club Paradise, Cape Town, Western Cape, South Africa",
+    "location_key": "Club Paradise",
     "missing_location": false,
-    "place_key": "",
-    "missing_place": true
+    "place_key": "Club Paradise",
+    "missing_place": false,
+    "place": "Club Paradise"
   },
   {
     "title": "Dirty Mary presents DIRTY DISCO",
@@ -591,7 +595,7 @@
     "categories": [
       "bar"
     ],
-    "location_key": "12 Cobern Street, De Waterkant, 8001, Cape Town, Western Cape, South Africa, Crew Bar, Cape Town, Western Cape, South Africa",
+    "location_key": "Crew Bar",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -611,7 +615,7 @@
     "categories": [
       "theatre"
     ],
-    "location_key": "68 Orange Street, , Gardens, 8000, Cape Town, Western Cape, South Africa, The Labia Theatre, Cape Town, Western Cape, South Africa",
+    "location_key": "The Labia Theatre",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -632,7 +636,7 @@
       "club",
       "sports"
     ],
-    "location_key": "52 Park Road, Rondebosch, 7700, Cape Town, Western Cape, South Africa, Rondebosch Sports Club, Cape Town, Western Cape, South Africa",
+    "location_key": "Rondebosch Sports Club",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -650,7 +654,7 @@
     "image": "https://images.quicket.co.za/0924009_247_247.png",
     "url": "https://www.quicket.co.za/events/376215-mediatech-highlights-cape-town/",
     "categories": [],
-    "location_key": "1 Glynnville Terrace, , Gardens, 8001, Cape Town, Western Cape, South Africa, Media Hive Studio, Cape Town, Western Cape, South Africa",
+    "location_key": "Media Hive Studio",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -668,8 +672,8 @@
     "image": "https://images.quicket.co.za/0943790_247_247.png",
     "url": "https://www.quicket.co.za/events/383469-suits-sneakers-presents-the-blueprint-of-a-comeback-with-gord-laws/",
     "categories": [],
-    "location_key": "224 Sir Lowry Road, Woodstock, 7925, Cape Town, Western Cape, South Africa, The Tryst Woodstock, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
+    "location_key": "The Tryst Woodstock",
+    "missing_location": true,
     "place_key": "",
     "missing_place": true
   },
@@ -686,7 +690,7 @@
     "image": "https://images.quicket.co.za/0926097_247_247.jpeg",
     "url": "https://www.quicket.co.za/events/376885-washington-dc-youth-orchestra-at-st-georges-cathedral/",
     "categories": [],
-    "location_key": "5 Wale Street, 8001, Cape Town, South Africa, St. George's Cathedral, Cape Town, South Africa",
+    "location_key": "St. George's Cathedral",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -706,7 +710,7 @@
     "categories": [
       "theatre"
     ],
-    "location_key": "37 Main Road, Muizenberg, 7945, Cape Town, Western Cape, South Africa, The Masque Theatre, Cape Town, Western Cape, South Africa",
+    "location_key": "37 Main Road, Muizenberg, 7945, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -724,8 +728,8 @@
     "image": "https://images.quicket.co.za/0925836_247_247.jpeg",
     "url": "https://www.quicket.co.za/events/376068-pechakucha-69-come-in-out-the-cold/",
     "categories": [],
-    "location_key": "Corner Buitenkant St &, Caledon St, District Six, 7925, Cape Town, Western Cape, South Africa, Homecoming Centre, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
+    "location_key": "Homecoming Centre",
+    "missing_location": true,
     "place_key": "",
     "missing_place": true
   },
@@ -745,7 +749,7 @@
       "art",
       "sports"
     ],
-    "location_key": "Christopher Starke Street, , Wesfleur, 7349, Cape Town, Western Cape, South Africa, Atlantis Multipurpose Sports Centre, Cape Town, Western Cape, South Africa",
+    "location_key": "Atlantis Multipurpose Sports Centre",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -763,7 +767,7 @@
     "image": "https://images.quicket.co.za/0922432_247_247.jpeg",
     "url": "https://www.quicket.co.za/events/375741-take-cover-presents-put-another-dime-in-the-jukebox/",
     "categories": [],
-    "location_key": "Chapmans Peak Dr , Noordhoek, 7979, Cape Town, Western Cape, South Africa, Cafe Roux, Cape Town, Western Cape, South Africa",
+    "location_key": "Cafe Roux",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -781,7 +785,7 @@
     "image": "https://images.quicket.co.za/0925946_247_247.jpeg",
     "url": "https://www.quicket.co.za/events/376829-willowbridge-shopping-centre-bubble-planet/",
     "categories": [],
-    "location_key": "39 Carl Cronje Drive, Tyger Valley, 7440, Cape Town, South Africa, Willowbridge Shopping Centre, Cape Town, South Africa",
+    "location_key": "Willowbridge Shopping Centre",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -801,7 +805,7 @@
     "categories": [
       "outdoors"
     ],
-    "location_key": "1 Lagoon Gate Drive, Lagoon Beach, 7441, Cape Town, Western Cape, Wes-Kaap, South Africa, Lagoon Beach Hotel & Spa, Cape Town, Western Cape, Wes-Kaap, South Africa",
+    "location_key": "Lagoon Beach Hotel & Spa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -819,7 +823,7 @@
     "image": "https://images.quicket.co.za/0923924_247_247.jpeg",
     "url": "https://www.quicket.co.za/events/374435-origami-cup/",
     "categories": [],
-    "location_key": "36 Buitenkant Street, , Cape Town City Centre, 8000, Cape Town, Western Cape, South Africa, African School of Coffee, Cape Town, Western Cape, South Africa",
+    "location_key": "African School of Coffee",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -837,7 +841,7 @@
     "image": "https://images.quicket.co.za/0905192_247_247.png",
     "url": "https://www.quicket.co.za/events/369950-habitat-the-butterfly-effect-26/",
     "categories": [],
-    "location_key": "Auckland Street 85, Paarden Eiland, 7405, Cape Town, Western Cape, South Africa, The Alley, Cape Town, Western Cape, South Africa",
+    "location_key": "The Alley",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -855,7 +859,7 @@
     "image": "https://images.quicket.co.za/0935812_247_247.jpeg",
     "url": "https://www.quicket.co.za/events/380832-crous-carstens-springbok-nude-girls-unplugged-live-at-triggerfish-brewing/",
     "categories": [],
-    "location_key": "Unit 9 W.R. Quinan Boulevard, , Paardevlei, 7130, Cape Town, Western Cape, South Africa, Triggerfish Brewing, Cape Town, Western Cape, South Africa",
+    "location_key": "Triggerfish Brewing",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -876,7 +880,7 @@
       "club",
       "sports"
     ],
-    "location_key": "52 Park Road, Rondebosch, 7700, Cape Town, Western Cape, South Africa, Rondebosch Sports Club, Cape Town, Western Cape, South Africa",
+    "location_key": "Rondebosch Sports Club",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -894,7 +898,7 @@
     "image": "https://images.quicket.co.za/0915582_247_247.jpeg",
     "url": "https://www.quicket.co.za/events/367971-cape-town-encounter-conference-junior-high-grade-7-9/",
     "categories": [],
-    "location_key": "1 Kinetic Way, , Century City, 7446, Cape Town, Western Cape, South Africa, Hillsong Church, Century City, Cape Town, Western Cape, South Africa",
+    "location_key": "Hillsong Church, Century City",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -915,7 +919,7 @@
       "club",
       "sports"
     ],
-    "location_key": "52 Park Road, Rondebosch, 7700, Cape Town, Western Cape, South Africa, Rondebosch Sports Club, Cape Town, Western Cape, South Africa",
+    "location_key": "Rondebosch Sports Club",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -933,7 +937,7 @@
     "image": "https://images.quicket.co.za/Q1_247_247.jpg",
     "url": "https://www.quicket.co.za/events/376958-insomnia/",
     "categories": [],
-    "location_key": "354 Albert Road, , Woodstock, 7925, Cape Town, Western Cape, South Africa, Roxy Woodstock, Cape Town, Western Cape, South Africa",
+    "location_key": "Roxy Woodstock",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -953,7 +957,7 @@
     "categories": [
       "music"
     ],
-    "location_key": "Chapmans Peak Dr , Noordhoek, 7979, Cape Town, Western Cape, South Africa, Cafe Roux, Cape Town, Western Cape, South Africa",
+    "location_key": "Cafe Roux",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -971,7 +975,7 @@
     "image": "https://images.quicket.co.za/0939338_247_247.jpeg",
     "url": "https://www.quicket.co.za/events/361197-almost-famous/",
     "categories": [],
-    "location_key": "12 Wingate Crescent, Sunningdale, 7441, Cape Town, Western Cape, South Africa, Joshua Generation, Cape Town, Western Cape, South Africa",
+    "location_key": "Joshua Generation",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -989,7 +993,7 @@
     "image": "https://images.quicket.co.za/0924199_247_247.jpeg",
     "url": "https://www.quicket.co.za/events/368869-concept-presents-a-soft-landing-fundraiser/",
     "categories": [],
-    "location_key": "10 Natal Street, Paarden Eiland, 7405, Cape Town, Western Cape, South Africa, Apollo AV - 10 Natal St, Paarden Eiland, Cape Town, Western Cape, South Africa",
+    "location_key": "Apollo AV - 10 Natal St, Paarden Eiland",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1009,7 +1013,7 @@
     "categories": [
       "music"
     ],
-    "location_key": "2 Roodehek Street, , Gardens, 8001, Cape Town, Western Cape, South Africa, 2 Roodehek St, Cape Town, Western Cape, South Africa",
+    "location_key": "2 Roodehek St",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1027,7 +1031,7 @@
     "image": "https://images.quicket.co.za/0925862_247_247.png",
     "url": "https://www.quicket.co.za/events/374650-astronaut-dorothy-metcalf-lindenburger-at-the-german-international-school-cape/",
     "categories": [],
-    "location_key": "28 Bay View, Tamboerskloof, 8001, Cape Town, Western Cape, South Africa, German International School, Cape Town, Western Cape, South Africa",
+    "location_key": "German International School",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1047,8 +1051,8 @@
     "categories": [
       "art"
     ],
-    "location_key": "31 Harbour Road, Hout Bay Harbour, 7806, Cape Town, Western Cape, South Africa, The Loft, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
+    "location_key": "The Loft",
+    "missing_location": true,
     "place_key": "",
     "missing_place": true
   },
@@ -1068,8 +1072,8 @@
       "music",
       "theatre"
     ],
-    "location_key": "6 Langeberg Road, Off Lords Walk, Durbanville, 7551, Cape Town, Western Cape, South Africa, El Shaddai Christian School Hall, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
+    "location_key": "El Shaddai Christian School Hall",
+    "missing_location": true,
     "place_key": "",
     "missing_place": true
   },
@@ -1086,7 +1090,7 @@
     "image": "https://images.quicket.co.za/0908514_247_247.jpeg",
     "url": "https://www.quicket.co.za/events/371077-jireh-parents-night-out-the-wild-edition/",
     "categories": [],
-    "location_key": "1 Jakes Gerwel Drive, , Ruyterwacht, 7460, Cape Town, Western Cape, South Africa, Destino GrandWest, Cape Town, Western Cape, South Africa",
+    "location_key": "Destino GrandWest",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1106,7 +1110,7 @@
     "categories": [
       "theatre"
     ],
-    "location_key": "Buitenkant Street, District Six, 7800, Cape Town, Western Cape, South Africa, Star Theatre – Homecoming Centre, Cape Town, Western Cape, South Africa",
+    "location_key": "Star Theatre – Homecoming Centre",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1126,7 +1130,7 @@
     "categories": [
       "theatre"
     ],
-    "location_key": "37 Main Road, Muizenberg, 7945, Cape Town, Western Cape, South Africa, The Masque Theatre, Cape Town, Western Cape, South Africa",
+    "location_key": "37 Main Road, Muizenberg, 7945, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1144,7 +1148,7 @@
     "image": "https://images.quicket.co.za/Q1_247_247.jpg",
     "url": "https://www.quicket.co.za/events/381803-sweaty-peach-20/",
     "categories": [],
-    "location_key": "5 Edison Way, , Century City, 7441, Cape Town, Western Cape, South Africa, 5 Edison Way, Cape Town, Western Cape, South Africa",
+    "location_key": "5 Edison Way",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1162,7 +1166,7 @@
     "image": "https://images.quicket.co.za/Q12_247_247.jpg",
     "url": "https://www.quicket.co.za/events/376673-zuke-launch-hackathon-2026/",
     "categories": [],
-    "location_key": "Cape Town, South Africa, Cape Town, Western Cape, South Africa, Cape Town, Cape Town, Western Cape, South Africa",
+    "location_key": "Cape Town",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1183,7 +1187,7 @@
       "music",
       "theatre"
     ],
-    "location_key": "Hout Street 80, Cape Town City Centre, 8000, Cape Town, Western Cape, South Africa, The Outlore Base, Cape Town, Western Cape, South Africa",
+    "location_key": "The Outlore Base",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1201,8 +1205,8 @@
     "image": "https://images.quicket.co.za/0928194_247_247.png",
     "url": "https://www.quicket.co.za/events/377638-irreplaceably-human-cape-town/",
     "categories": [],
-    "location_key": "1 Silo Square, Victoria & Alfred Waterfront, Cape Town, 8001, Victoria & Alfred Waterfront, 8001, Cape Town, Western Cape, South Africa, Allan Gray, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
+    "location_key": "Allan Gray",
+    "missing_location": true,
     "place_key": "",
     "missing_place": true
   },
@@ -1222,7 +1226,7 @@
       "music",
       "festival"
     ],
-    "location_key": "20 Picton Street, , Parow, 7500, Cape Town, Western Cape, South Africa, Hugo Lambrechts Music Centre., Cape Town, Western Cape, South Africa",
+    "location_key": "Hugo Lambrechts Music Centre.",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1240,8 +1244,8 @@
     "image": "https://images.quicket.co.za/0943542_247_247.jpeg",
     "url": "https://www.quicket.co.za/events/381689-safma-western-cape-networking-event-at-discovery-century-city/",
     "categories": [],
-    "location_key": "Sable Park, Bridgeways, Century City, Cape Town, 7446, South Africa, Century City, 7446, Cape Town, Western Cape, South Africa, Discovery Group (Cape Town Head Office), Cape Town, Western Cape, South Africa",
-    "missing_location": false,
+    "location_key": "Discovery Group (Cape Town Head Office)",
+    "missing_location": true,
     "place_key": "",
     "missing_place": true
   },
@@ -1260,7 +1264,7 @@
     "categories": [
       "date-night"
     ],
-    "location_key": "170 Bree Street, , Cape Town City Centre, 8000, Cape Town, Western Cape, South Africa, Rooftop on Bree, Cape Town, Western Cape, South Africa",
+    "location_key": "Rooftop on Bree",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1281,7 +1285,7 @@
       "food",
       "date-night"
     ],
-    "location_key": "338 Main Road, , Retreat, 7945, Cape Town, Western Cape, South Africa, Zwaanswyk Academy, Cape Town, Western Cape, South Africa",
+    "location_key": "Zwaanswyk Academy",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1302,10 +1306,11 @@
       "music",
       "market"
     ],
-    "location_key": "30 Regent Road, Sea Point, 8060, Cape Town, Western Cape, South Africa, Mojo  Market, Cape Town, Western Cape, South Africa",
+    "location_key": "Mojo Market",
     "missing_location": false,
-    "place_key": "",
-    "missing_place": true
+    "place_key": "Mojo Market",
+    "missing_place": false,
+    "place": "Mojo Market"
   },
   {
     "title": "RUN FOR DIGNITY 5KM & 10 KM Fun Run/Walk",
@@ -1323,7 +1328,7 @@
       "dj",
       "outdoors"
     ],
-    "location_key": "Beach Road 100, Mouille Point, 8005, Cape Town, Western Cape, South Africa, Green Point (the Lighthouse), Cape Town, Western Cape, South Africa",
+    "location_key": "Green Point (the Lighthouse)",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1341,7 +1346,7 @@
     "image": "https://images.quicket.co.za/0893376_247_247.jpeg",
     "url": "https://www.quicket.co.za/events/365060-district-six-museum-august-2026-admission-tickets/",
     "categories": [],
-    "location_key": "25A Buitenkant Street, , District Six, 8000, Cape Town, Western Cape, South Africa, 25A Buitenkant St, Cape Town, Western Cape, South Africa",
+    "location_key": "25A Buitenkant St",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1362,8 +1367,8 @@
       "music",
       "outdoors"
     ],
-    "location_key": "12 South Arm Road, , Victoria & Alfred Waterfront, 8002, Cape Town, Western Cape, South Africa, Cabo Beach, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
+    "location_key": "Cabo Beach",
+    "missing_location": true,
     "place_key": "",
     "missing_place": true
   },
@@ -1380,7 +1385,7 @@
     "image": "https://images.quicket.co.za/0942129_247_247.jpeg",
     "url": "https://www.quicket.co.za/events/377631-afrikaburn-decompression-2026/",
     "categories": [],
-    "location_key": "Castle Street, Foreshore, 8001, Cape Town, Western Cape, South Africa, Castle of Good Hope, Cape Town, Western Cape, South Africa",
+    "location_key": "Castle of Good Hope",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1400,8 +1405,8 @@
     "categories": [
       "theatre"
     ],
-    "location_key": "2 Akademia Avenue, Groot Phesantekraal Estate, Durbanville, Cape Town, 7550, Cape Farms, 7550, Cape Town, Western Cape, South Africa, Curro Durbanville Theatre, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
+    "location_key": "Curro Durbanville Theatre",
+    "missing_location": true,
     "place_key": "",
     "missing_place": true
   },
@@ -1421,7 +1426,7 @@
       "club",
       "art"
     ],
-    "location_key": "Main Road 338, Retreat, 7945, Cape Town, Western Cape, South Africa, Zwaanswyk Academy Hall, Cape Town, Western Cape, South Africa",
+    "location_key": "Zwaanswyk Academy Hall",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1441,8 +1446,8 @@
     "categories": [
       "theatre"
     ],
-    "location_key": "2 Akademia Avenue, Groot Phesantekraal Estate, Durbanville, Cape Town, 7550, Cape Farms, 7550, Cape Town, Western Cape, South Africa, Curro Durbanville Theatre, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
+    "location_key": "Curro Durbanville Theatre",
+    "missing_location": true,
     "place_key": "",
     "missing_place": true
   },
@@ -1461,7 +1466,7 @@
     "categories": [
       "outdoors"
     ],
-    "location_key": "College Avenue 1, Sandown, 7441, Cape Town, Western Cape, South Africa, Parklands College,Secondary Faculty, Curie Hall, Cape Town, Western Cape, South Africa",
+    "location_key": "Parklands College,Secondary Faculty, Curie Hall",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1482,7 +1487,7 @@
       "music",
       "theatre"
     ],
-    "location_key": "Lovers Walk , Wynberg, 7800, Cape Town, Western Cape, South Africa, Clegg Hall (WBHS), Cape Town, Western Cape, South Africa",
+    "location_key": "Clegg Hall (WBHS)",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1500,8 +1505,8 @@
     "image": "https://images.quicket.co.za/0942713_247_247.jpeg",
     "url": "https://www.quicket.co.za/events/325141-the-weight-we-carry-pink-high-tea/",
     "categories": [],
-    "location_key": "Spes Bona Road, , Cape Farms, Cape Town, Western Cape, South Africa, Botterblommetjies Plaas skool, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
+    "location_key": "Botterblommetjies Plaas skool",
+    "missing_location": true,
     "place_key": "",
     "missing_place": true
   },
@@ -1518,7 +1523,7 @@
     "image": "https://images.quicket.co.za/0926434_247_247.jpeg",
     "url": "https://www.quicket.co.za/events/374420-swat-in-the-city/",
     "categories": [],
-    "location_key": "Old Mutual, , Pinelands, 7405, Cape Town, Western Cape, South Africa, Old Mutual, Cape Town, Western Cape, South Africa",
+    "location_key": "Old Mutual",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1536,7 +1541,7 @@
     "image": "https://images.quicket.co.za/0930753_247_247.png",
     "url": "https://www.quicket.co.za/events/367878-la-jol-6-lets-celebrate-love/",
     "categories": [],
-    "location_key": "3 Industry Street, , Paarden Eiland, 7405, Cape Town, Western Cape, South Africa, ColorBox Studios, Cape Town, Western Cape, South Africa",
+    "location_key": "ColorBox Studios",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1558,7 +1563,7 @@
       "sports",
       "date-night"
     ],
-    "location_key": "12 Kremer Road, , Salt River, 7925, Cape Town, Western Cape, South Africa, The Terrace Rooftop, Cape Town, Western Cape, South Africa",
+    "location_key": "The Terrace Rooftop",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1578,7 +1583,7 @@
     "categories": [
       "club"
     ],
-    "location_key": "Raapenberg Road, , Mowbray, 7450, Cape Town, Western Cape, South Africa, King David Mowbray Golf Club, Cape Town, Western Cape, South Africa",
+    "location_key": "King David Mowbray Golf Club",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1598,8 +1603,8 @@
     "categories": [
       "bar"
     ],
-    "location_key": "Lourensford Road, Somerset West, Cape Town, 7130, 7130, Somerset West, Western Cape, South Africa, Lourensford Wine Cellar, Somerset West, Western Cape, South Africa",
-    "missing_location": false,
+    "location_key": "Lourensford Wine Cellar",
+    "missing_location": true,
     "place_key": "",
     "missing_place": true
   },
@@ -1618,7 +1623,7 @@
     "categories": [
       "bar"
     ],
-    "location_key": "252 Albert Road, , Woodstock, 7925, Cape Town, Western Cape, South Africa, Woodstock Brewery, Cape Town, Western Cape, South Africa",
+    "location_key": "Woodstock Brewery",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1638,7 +1643,7 @@
     "categories": [
       "art"
     ],
-    "location_key": "39 Carl Cronje Drive, 7530, Cape Town, Western Cape, South Africa, Die Bron Kerk, Cape Town, Western Cape, South Africa",
+    "location_key": "Die Bron Kerk",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1656,7 +1661,7 @@
     "image": "https://images.quicket.co.za/0944322_247_247.png",
     "url": "https://www.quicket.co.za/events/362138-jenkins-stabat-mater/",
     "categories": [],
-    "location_key": "Darling Street , Cape Town City Centre, 8001, Cape Town, Western Cape, South Africa, Cape Town City Hall, Cape Town, Western Cape, South Africa",
+    "location_key": "Cape Town City Hall",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1674,7 +1679,7 @@
     "image": "https://images.quicket.co.za/0942197_247_247.jpeg",
     "url": "https://www.quicket.co.za/events/381471-paneelbespreking-die-krag-in-kort-panel-discussion-the-power-of-short-onafhankl/",
     "categories": [],
-    "location_key": "Victoria Road 69, Camps Bay, 8001, Cape Town, Western Cape, South Africa, Rotunda at The Bay Hotel, Cape Town, Western Cape, South Africa",
+    "location_key": "Rotunda at The Bay Hotel",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1694,7 +1699,7 @@
     "categories": [
       "bar"
     ],
-    "location_key": "Victoria Road 69, Camps Bay, 8001, Cape Town, Western Cape, South Africa, Rotunda at The Bay Hotel, Cape Town, Western Cape, South Africa",
+    "location_key": "Victoria Road 69, Camps Bay, 8001, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1714,7 +1719,7 @@
     "categories": [
       "theatre"
     ],
-    "location_key": "Link Street , Camps Bay, 8005, Cape Town, Western Cape, South Africa, Theatre on The Bay, Cape Town, Western Cape, South Africa",
+    "location_key": "Theatre on The Bay",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1732,7 +1737,7 @@
     "image": "https://images.quicket.co.za/0937863_247_247.jpeg",
     "url": "https://www.quicket.co.za/events/381078-speelfilm-feature-film-al-wat-ek-weet/",
     "categories": [],
-    "location_key": "Victoria Road 69, Camps Bay, 8001, Cape Town, Western Cape, South Africa, Rotunda at The Bay Hotel, Cape Town, Western Cape, South Africa",
+    "location_key": "Victoria Road 69, Camps Bay, 8001, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1750,7 +1755,7 @@
     "image": "https://images.quicket.co.za/0941133_247_247.jpeg",
     "url": "https://www.quicket.co.za/events/375481-hey-girl-conference-2026/",
     "categories": [],
-    "location_key": "Vasco Boulevard, Tygerdal, 7460, Cape Town, Western Cape, South Africa, Friend of God Church - Goodwood Campus, Cape Town, Western Cape, South Africa",
+    "location_key": "Friend of God Church - Goodwood Campus",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1770,8 +1775,8 @@
     "categories": [
       "food"
     ],
-    "location_key": "Corner of Hans Strijdom Avenue & Long Street, 1 Thibault Square, Cape Town City Centre, Cape Town, 8000, 1st Floor, One Thibault Building, Cape Town City Centre, Cape Town, 8001, South Africa, , Cape Town City Centre, 8001, Cape Town, Western Cape, South Africa, The Annex Restaurant & Venue, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
+    "location_key": "The Annex Restaurant & Venue",
+    "missing_location": true,
     "place_key": "",
     "missing_place": true
   },
@@ -1788,7 +1793,7 @@
     "image": "https://images.quicket.co.za/0893379_247_247.jpeg",
     "url": "https://www.quicket.co.za/events/365061-district-six-museum-september-2026-admission-tickets/",
     "categories": [],
-    "location_key": "25A Buitenkant Street, , District Six, 8000, Cape Town, Western Cape, South Africa, 25A Buitenkant St, Cape Town, Western Cape, South Africa",
+    "location_key": "25A Buitenkant St",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1808,8 +1813,8 @@
     "categories": [
       "art"
     ],
-    "location_key": "https://maps.app.goo.gl/faot8uHwVU1aqxD6A?g_st=iw, Riviersonderend, 7250, Riviersonderend, Western Cape, South Africa, Kromrivier Farm Riviersonderend, Riviersonderend, Western Cape, South Africa",
-    "missing_location": false,
+    "location_key": "Kromrivier Farm Riviersonderend",
+    "missing_location": true,
     "place_key": "",
     "missing_place": true
   },
@@ -1829,7 +1834,7 @@
       "festival",
       "comedy"
     ],
-    "location_key": "1 Jakes Gerwel Dr, Acacia Park, 7460, Cape Town, Western Cape, South Africa, Grand Arena at GrandWest, Cape Town, Western Cape, South Africa",
+    "location_key": "Grand Arena at GrandWest",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1849,7 +1854,7 @@
     "categories": [
       "bar"
     ],
-    "location_key": "7345, Cape Town, South Africa, Cloof Wine Estate, Cape Town, South Africa",
+    "location_key": "Cloof Wine Estate",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1870,8 +1875,8 @@
       "outdoors",
       "date-night"
     ],
-    "location_key": "31 Harbour Road, Hout Bay Harbour, 7806, Cape Town, Western Cape, South Africa, The Loft, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
+    "location_key": "The Loft",
+    "missing_location": true,
     "place_key": "",
     "missing_place": true
   },
@@ -1888,7 +1893,7 @@
     "image": "https://images.quicket.co.za/0893383_247_247.jpeg",
     "url": "https://www.quicket.co.za/events/365063-district-six-museum-november-2026-admission-tickets/",
     "categories": [],
-    "location_key": "25A Buitenkant Street, , District Six, 8000, Cape Town, Western Cape, South Africa, 25A Buitenkant St, Cape Town, Western Cape, South Africa",
+    "location_key": "25A Buitenkant St",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1906,7 +1911,7 @@
     "image": "https://images.quicket.co.za/0935588_247_247.jpeg",
     "url": "https://www.quicket.co.za/events/363702-sarie-kersfeesetes-2026-aangebied-deur-today/",
     "categories": [],
-    "location_key": "Montague Drive 7, Montague Gardens, 7441, Cape Town, Western Cape, South Africa, Atlantic Studios, Cape Town, Western Cape, South Africa",
+    "location_key": "Atlantic Studios",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1924,7 +1929,7 @@
     "image": "https://images.quicket.co.za/0893385_247_247.jpeg",
     "url": "https://www.quicket.co.za/events/365064-district-six-museum-december-2026-admission-tickets/",
     "categories": [],
-    "location_key": "25A Buitenkant Street, , District Six, 8000, Cape Town, Western Cape, South Africa, 25A Buitenkant St, Cape Town, Western Cape, South Africa",
+    "location_key": "25A Buitenkant St",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1945,7 +1950,7 @@
       "festival",
       "sports"
     ],
-    "location_key": "118 Royal Road, , Maitland, 7405, Cape Town, Western Cape, South Africa, Royal Road Sports Ground, Cape Town, Western Cape, South Africa",
+    "location_key": "Royal Road Sports Ground",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
